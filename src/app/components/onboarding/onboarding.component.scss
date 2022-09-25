@@ -1,0 +1,57 @@
+.header {
+  background: #410ff8;
+  color: white;
+  min-height: 200px;
+  padding: 50px;
+  padding-bottom: 20px;
+
+  .logo {
+    margin-top: -150px;
+    margin-bottom: -120px;
+  }
+
+  h1 {
+    font-size: 5em;
+    padding-left: 50px;
+    span {
+      font-size: 1.1em;
+    }
+  }
+
+  a {
+    color: white;
+
+    &:hover {
+      color: yellow;
+    }
+  }
+}
+
+.content {
+  & > div {
+    margin-bottom: 20px;
+  }
+  .pin-extension {
+    img {
+      margin-left: -20px;
+    }
+  }
+}
+
+.footer {
+  margin-top: -4px;
+  bottom: 0px;
+
+  background: #410ff8;
+  color: white;
+  min-height: 200px;
+  padding: 50px;
+
+  a {
+    color: white;
+
+    &:hover {
+      color: yellow;
+    }
+  }
+}

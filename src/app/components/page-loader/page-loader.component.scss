@@ -1,0 +1,68 @@
+/* This component is rendered in a ShadowDom and these styles are not accessible
+from inside it so including directly. */
+@import "../../../../node_modules/primeng/resources/themes/saga-blue/theme.css";
+@import "../../../../node_modules/primeng/resources/primeng.min.css";
+@import "../../../../node_modules/primeicons/primeicons.css";
+
+.p-dialog {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  transition: width 0.1s ease 0s, margin-right 0.1s ease 0.1s;
+
+  &.parked {
+    // !important necessary to override inline styles.
+    width: 50px !important;
+    margin-right: -10px !important;
+    left: auto !important;
+    right: 0;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transition-property: width, margin-right;
+    transition-delay: 2s;
+    transition-duration: 1s;
+
+    .p-dialog-header-icons {
+      visibility: hidden;
+    }
+  }
+
+  > div.p-resizable-handle {
+    height: 30px;
+    right: 0px;
+    bottom: -10px;
+    transform: rotate(45deg);
+    &:hover {
+      background-color: #aaa;
+    }
+  }
+}
+
+.p-dialog-header {
+  padding: 0 !important;
+  transition-duration: 0.5s;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+}
+.p-dialog-content {
+  padding: 0 !important;
+  overflow: hidden;
+
+  &.transparent {
+    opacity: 10% !important;
+    transition-property: opacity;
+    transition-delay: 2s;
+    transition-duration: 5s;
+  }
+}
+
+.p-card-body {
+  background: lightyellow;
+}
+
+iframe {
+  min-height: 700px;
+  border: none;
+}

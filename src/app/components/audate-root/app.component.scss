@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../../../assets/Inter-VariableFont.ttf") format("truetype");
+}
+
+body,
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,101 @@
+{
+  "name": "__MSG_appName__",
+  "description": "__MSG_appDesc__",
+  "homepage_url": "https://github.com/justiceo/audate",
+  "version": "22.08.12",
+  "manifest_version": 3,
+  "default_locale": "en",
+  "author": "Justice Ogbonna",
+  "short_name": "Audate",
+  "permissions": ["storage", "declarativeNetRequest"],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "host_permissions": ["*://*/*"],
+  "action": {
+    "default_icon": {
+      "16": "assets/images/logo-16x16.png",
+      "24": "assets/images/logo-24x24.png",
+      "32": "assets/images/logo-32x32.png"
+    },
+    "default_title": "Audate",
+    "default_popup": "index.html#popup"
+  },
+  "icons": {
+    "16": "assets/images/logo-16x16.png",
+    "32": "assets/images/logo-32x32.png",
+    "48": "assets/images/logo-48x48.png",
+    "128": "assets/images/logo-128x128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["index.html"],
+      "matches": ["<all_urls>"]
+    },
+    {
+      "resources": ["main.js"],
+      "matches": ["<all_urls>"]
+    },
+    {
+      "resources": ["polyfills.js"],
+      "matches": ["<all_urls>"]
+    },
+    {
+      "resources": ["runtime.js"],
+      "matches": ["<all_urls>"]
+    },
+    {
+      "resources": ["vendor.js"],
+      "matches": ["<all_urls>"]
+    },
+    {
+      "resources": ["assets/icons/search-icon.jpeg"],
+      "matches": ["<all_urls>"]
+    },
+    {
+      "resources": ["primeicons.eot"],
+      "matches": ["<all_urls>"]
+    },
+    {
+      "resources": ["primeicons.svg"],
+      "matches": ["<all_urls>"]
+    },
+    {
+      "resources": ["primeicons.ttf"],
+      "matches": ["<all_urls>"]
+    },
+    {
+      "resources": ["primeicons.woff"],
+      "matches": ["<all_urls>"]
+    },
+    {
+      "resources": ["content-style.css"],
+      "matches": ["<all_urls>"]
+    },
+    {
+      "resources": ["primeicons.css"],
+      "matches": ["<all_urls>"]
+    },
+    {
+      "resources": ["styles.css"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "all_frames": true,
+      "js": ["content-script.js"],
+      "css": ["content-style.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  }
+}

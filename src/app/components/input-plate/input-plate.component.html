@@ -1,0 +1,25 @@
+<div id="audate-input-plate">
+  <div id="record-button-wrapper">
+    <i
+      [ngClass]="{ listening: listening === true }"
+      class="pi pi-circle-on"
+      (click)="micTap()"
+    ></i>
+  </div>
+
+  <audate-quick-settings
+    [ngClass]="{ 'show-settings': showSettings === true }"
+  ></audate-quick-settings>
+
+  <div id="more-button-wrapper">
+    <button style="visibility: hidden">Voice Search</button>
+    <i
+      (click)="onGearTap()"
+      [ngClass]="{
+        'pi-angle-up': showSettings === true,
+        'pi-angle-down': showSettings === false
+      }"
+      class="pi"
+    ></i>
+  </div>
+</div>

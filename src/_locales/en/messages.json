@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Audate - Voice Search",
+    "description": "The name of the extension"
+  },
+  "appDesc": {
+    "message": "Search the web with your voice",
+    "description": "A description of its function"
+  }
+}

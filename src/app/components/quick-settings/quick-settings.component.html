@@ -1,0 +1,84 @@
+<section class="settings-wrapper" [hidden]="activeSection !== 'quick-settings'">
+  <div class="setting" (click)="activeSection = 'language'">
+    <h5 class="label">Speech Language</h5>
+    <p class="value">{{ currentLocale.name }}</p>
+  </div>
+  <hr />
+  <div class="setting" (click)="activeSection = 'search-engine'">
+    <h5 class="label">Search Engine</h5>
+    <p class="value">
+      <img src="{{ currentSearchEngine.iconPath }}" />
+      {{ currentSearchEngine.name }}
+    </p>
+  </div>
+  <hr />
+  <div class="setting" (click)="activeSection = 'microphone'">
+    <h5 class="label">Microphone</h5>
+    <p class="value">{{ currentInputDevice?.label }}</p>
+  </div>
+</section>
+
+<section
+  [hidden]="activeSection !== 'language'"
+  class="listbox language-selection"
+>
+  <p class="header" (click)="activeSection = 'quick-settings'">
+    <i class="selected pi pi-angle-left"></i> Go back
+  </p>
+  <div class="items">
+    <p
+      class="item"
+      *ngFor="let locale of locales"
+      (click)="setLocale(locale); activeSection = 'quick-settings'"
+    >
+      <span class="label">{{ locale.name }}</span>
+      <i class="selected pi pi-check" *ngIf="locale === currentLocale"></i>
+    </p>
+  </div>
+</section>
+
+<section
+  [hidden]="activeSection !== 'search-engine'"
+  class="listbox search-engine-selection"
+>
+  <p class="header" (click)="activeSection = 'quick-settings'">
+    <i class="selected pi pi-angle-left"></i> Go back
+  </p>
+  <div class="items">
+    <p
+      class="item"
+      *ngFor="let se of searchEngines"
+      (click)="setSearchEngine(se); activeSection = 'quick-settings'"
+    >
+      <img src="{{ se.iconPath }}" />
+      <span class="label">{{ se.name }}</span>
+      <i class="selected pi pi-check" *ngIf="se === currentSearchEngine"></i>
+    </p>
+  </div>
+</section>
+
+<section
+  [hidden]="activeSection !== 'microphone'"
+  class="listbox microphone-selection"
+>
+  <p class="header" (click)="activeSection = 'quick-settings'">
+    <i class="selected pi pi-angle-left"></i> Go back
+  </p>
+  <div class="items">
+    <p
+      class="item"
+      *ngFor="let device of inputDevices"
+      (click)="activeSection = 'quick-settings'"
+    >
+      <span class="label">{{ device.label }}</span>
+      <i class="selected pi pi-check" *ngIf="device === currentInputDevice"></i>
+    </p>
+  </div>
+  <p *ngIf="inputDevices.length > 1" class="notice">
+    This extension cannot change your microphone, see
+    <a
+      href="https://support.google.com/chrome/answer/2693767?hl=en&co=GENIE.Platform%3DDesktop#zippy=%2Cselect-a-default-microphone"
+      >guide here</a
+    >
+  </p>
+</section>

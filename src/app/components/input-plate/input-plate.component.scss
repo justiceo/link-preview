@@ -1,0 +1,65 @@
+#audate-input-plate {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  padding-bottom: 0;
+  background-color: #2136bb;
+  color: white;
+
+  #record-button-wrapper {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    i {
+      font-size: 3rem;
+      border: 1.5px solid;
+      border-radius: 50%;
+      padding: 3px;
+      transition: all 0.2s ease-in;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      &.listening {
+        color: yellow;
+        opacity: 0.95;
+      }
+    }
+  }
+
+  #more-button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .p-dropdown-label,
+    .p-dropdown-trigger-icon {
+      font-size: 0.6rem;
+    }
+
+    i {
+      font-size: 1.2rem;
+      padding: 10px;
+      transition-duration: 0.5s;
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
+}
+
+audate-quick-settings {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+
+  &.show-settings {
+    max-height: 300px;
+    transition: max-height 0.5s ease-out;
+  }
+}

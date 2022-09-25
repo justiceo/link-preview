@@ -1,0 +1,17 @@
+.p-dialog {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+.p-dialog-header {
+  padding: 0 !important;
+  transition-duration: 0.5s;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+}
+.p-dialog-content {
+  padding: 0 !important;
+}

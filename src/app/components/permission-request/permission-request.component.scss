@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+section {
+  display: flex;
+  padding: 30px;
+
+  &.logo {
+    background-color: #4010f8;
+    justify-content: center;
+  }
+
+  &.content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    p {
+      margin-bottom: 40px;
+    }
+
+    .p-button {
+      background: #4010f8;
+      border: 1px solid #4010f8;
+    }
+  }
+}

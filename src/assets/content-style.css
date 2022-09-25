@@ -1,0 +1,32 @@
+/* Styles added here affect every page the extension is loaded on
+ * Use this style sparingly and with justification. */
+
+/* It is currently not possible to load fonts in ShadowDom or web components, 
+the existing hack is adding it to the parent document, which this css file achieves.
+
+The rule below defines a new font primeicons and does not override any existing
+font definitions on the page. */
+@font-face {
+  font-family: "primeicons";
+  font-display: block;
+  src: url("primeicons.eot");
+  src: url("primeicons.eot?#iefix") format("embedded-opentype"),
+    url("primeicons.ttf") format("truetype"),
+    url("primeicons.woff") format("woff"),
+    url("primeicons.svg?#primeicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.audate-floatie {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background-size: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 10000;
+  display: none;
+}

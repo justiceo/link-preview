@@ -1,0 +1,4 @@
+{
+  "permissions": ["contextMenus", "storage", "management"],
+  "options_page": "index.html#options"
+}

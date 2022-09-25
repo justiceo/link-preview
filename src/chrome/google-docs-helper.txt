@@ -1,0 +1,40 @@
+const observer = new MutationObserver((mutations_list) => {
+  mutations_list.forEach((mutation) => {
+    mutation.addedNodes.forEach((added_node) => {
+      if (added_node.nodeName.toLocaleLowerCase() === 'rect') {
+        const tileSelectionEl = added_node.parentElement?.parentElement;
+        if (
+          !tileSelectionEl ||
+          tileSelectionEl.className.indexOf('kix-canvas-tile-selection')
+        ) {
+          return;
+        }
+        const contentSibling = getContentSibling(tileSelectionEl);
+        if (!contentSibling) {
+          return;
+        }
+        console.log('content sibling contains: ', contentSibling.textContent);
+      }
+    });
+  });
+});
+
+const getContentSibling = (el: Element): Element | null => {
+  if (!el.previousElementSibling) {
+    return null;
+  }
+
+  const prev = el.previousElementSibling;
+  if (
+    prev.className == 'kix-canvas-tile-context' &&
+    prev.nodeName.toLowerCase() === 'div'
+  ) {
+    return prev;
+  }
+  return getContentSibling(prev);
+};
+
+observer.observe(document.querySelector('body'), {
+  subtree: true,
+  childList: true,
+});

@@ -1,0 +1,18 @@
+<!-- Split the page into two and on the left
+ - show the popup permission icon
+ - show the blocked mic icon for previously dismissed permission
+ - show how to manually enable from site settings.
+ - tailor this for firefox
+-->
+<div class="wrapper">
+  <section class="logo">
+    <img src="../../../assets/images/logo-128x128.png" />
+  </section>
+  <section class="content">
+    <p>We need microphone access to record audio for transcription.</p>
+    <button pRipple class="p-button" (click)="requestPermission()">
+      Grant permission
+    </button>
+    <p>{{ notice }}</p>
+  </section>
+</div>

@@ -55,13 +55,11 @@ function addSearchButton(
   ev: MouseEvent | KeyboardEvent,
   selectedText: string
 ) {
-  chrome.runtime.sendMessage({
-    key: 'create_search_url_for_query',
-    value: selectedText,
-  });
-
   floating.setAttribute('alt', 'Search for ' + selectedText);
   floating.style.display = 'block';
+  floating.onclick = (unusedClick) => {
+    displayPreview(selectedText);
+  };
   getMaxZIndex().then((maxZ: number) => {
     floating.style.zIndex = '' + (maxZ + 10);
   });
@@ -146,12 +144,6 @@ function setUpVoiceSearchListener() {
     if (message.key == 'voice_search_query') {
       displayPreview(message.value);
       callback();
-    }
-
-    if (message.key === 'encoded_search_url') {
-      floating.onclick = (unusedClick) => {
-        displayPreview(message.value);
-      };
     }
 
     if (message.key === 'ping') {

@@ -20,7 +20,7 @@ function insertPageLoader(url: string) {
   document.body.appendChild(styleFragment);
 
   const tagString = `
-    <audate-page-loader url="${url}"></audate-page-loader>
+    <sp-page-loader url="${url}"></sp-page-loader>
     <script src="${getExtensionUrl('runtime.js')}"></script>
     <script src="${getExtensionUrl('polyfills.js')}"></script>
     <script src="${getExtensionUrl('vendor.js')}"></script>

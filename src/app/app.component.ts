@@ -5,7 +5,7 @@ import { Logger } from 'src/shared/logging/logger';
 import { LoggingService } from 'src/app/services/logging/logging.service';
 
 @Component({
-  selector: 'audate-root',
+  selector: 'sp-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   encapsulation: ViewEncapsulation.None,
@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
     private primengConfig: PrimeNGConfig,
     loggingService: LoggingService
   ) {
-    this.logger = loggingService.getLogger('audate-root');
+    this.logger = loggingService.getLogger('sp-root');
   }
 
   ngOnInit() {

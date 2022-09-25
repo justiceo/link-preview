@@ -24,7 +24,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "audate",
+            "prefix": "sp",
             "style": "camelCase"
           }
         ],
@@ -32,7 +32,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "audate",
+            "prefix": "sp",
             "style": "kebab-case"
           }
         ],

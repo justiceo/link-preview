@@ -58,13 +58,13 @@ export class AppModule implements DoBootstrap {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   constructor(private injector: Injector, trace: Sentry.TraceService) {}
   ngDoBootstrap(appRef: ApplicationRef) {
-    if (document.querySelector('audate-root')) {
+    if (document.querySelector('sp-root')) {
       appRef.bootstrap(AppComponent);
     }
 
     const el = createCustomElement(PageLoaderComponent, {
       injector: this.injector,
     });
-    customElements.define('audate-page-loader', el);
+    customElements.define('sp-page-loader', el);
   }
 }

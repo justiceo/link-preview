@@ -33,7 +33,7 @@ module.exports = (env) => {
       ],
     },
     output: {
-      path: join(__dirname, "./dist/audate"),
+      path: join(__dirname, "./dist/search-preview"),
       filename: "[name].js",
     },
     resolve: {

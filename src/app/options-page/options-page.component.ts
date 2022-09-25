@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'audate-options-page',
+  selector: 'sp-options-page',
   templateUrl: './options-page.component.html',
   styleUrls: ['./options-page.component.scss'],
 })

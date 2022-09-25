@@ -10,7 +10,7 @@ import { Logger } from 'src/shared/logging/logger';
 import { LoggingService } from 'src/app/services/logging/logging.service';
 
 @Component({
-  selector: 'audate-page-loader',
+  selector: 'sp-page-loader',
   templateUrl: './page-loader.component.html',
   styleUrls: ['./page-loader.component.scss'],
   encapsulation: ViewEncapsulation.ShadowDom,

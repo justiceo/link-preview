@@ -1,8 +1,8 @@
 /* This component is rendered in a ShadowDom and these styles are not accessible
 from inside it so including directly. */
-@import "../../../../node_modules/primeng/resources/themes/saga-blue/theme.css";
-@import "../../../../node_modules/primeng/resources/primeng.min.css";
-@import "../../../../node_modules/primeicons/primeicons.css";
+@import "../../../node_modules/primeng/resources/themes/saga-blue/theme.css";
+@import "../../../node_modules/primeng/resources/primeng.min.css";
+@import "../../../node_modules/primeicons/primeicons.css";
 
 .p-dialog {
   border-radius: 8px;

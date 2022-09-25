@@ -20,32 +20,12 @@ import * as Sentry from '@sentry/angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { VoiceSearchComponent } from '../voice-search/voice-search.component';
-import { InputPlateComponent } from '../input-plate/input-plate.component';
-import { TranscriptComponent } from '../transcript/transcript.component';
-import { AudioWavesComponent } from '../audio-waves/audio-waves.component';
-import { QuickSettingsComponent } from '../quick-settings/quick-settings.component';
 import { OptionsPageComponent } from '../options-page/options-page.component';
-import { ContentPopupComponent } from '../content-popup/content-popup.component';
-import { PermissionRequestComponent } from '../permission-request/permission-request.component';
 import { Router } from '@angular/router';
 import { PageLoaderComponent } from '../page-loader/page-loader.component';
-import { OnboardingComponent } from '../onboarding/onboarding.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    VoiceSearchComponent,
-    InputPlateComponent,
-    OnboardingComponent,
-    TranscriptComponent,
-    AudioWavesComponent,
-    QuickSettingsComponent,
-    OptionsPageComponent,
-    ContentPopupComponent,
-    PermissionRequestComponent,
-    PageLoaderComponent,
-  ],
+  declarations: [AppComponent, OptionsPageComponent, PageLoaderComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

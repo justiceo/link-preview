@@ -4,7 +4,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import * as Sentry from '@sentry/angular';
 import { BrowserTracing } from '@sentry/tracing';
 
-import { AppModule } from './app/components/audate-root/app.module';
+import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
 if (environment.production) {

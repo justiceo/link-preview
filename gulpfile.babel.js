@@ -1,7 +1,7 @@
 import Jimp from "jimp";
 
 // Prefer png, it scales better than jpeg for resizing purposes.
-const originalIconPath = "src/assets/images/audate-logo.png";
+const originalIconPath = "src/assets/images/logo.png";
 const generateIcons = () => {
   return new Promise((resolve, reject) => {
     Jimp.read(originalIconPath, (err, icon) => {

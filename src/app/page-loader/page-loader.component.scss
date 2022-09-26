@@ -12,6 +12,11 @@ from inside it so including directly. */
   // direction: rtl;
   box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
   transition: width 0.1s ease 0s, margin-right 0.1s ease 0.1s;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 
   &.parked {
     // !important necessary to override inline styles.

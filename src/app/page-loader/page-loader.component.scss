@@ -7,6 +7,9 @@ from inside it so including directly. */
 .p-dialog {
   border-radius: 8px;
   overflow: hidden;
+  // TODO: Check on https://github.com/primefaces/primeng/issues/11972
+  // resize: both;
+  // direction: rtl;
   box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
   transition: width 0.1s ease 0s, margin-right 0.1s ease 0.1s;
 

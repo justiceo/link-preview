@@ -13,7 +13,7 @@ import { LoggingService } from 'src/app/services/logging/logging.service';
   selector: 'sp-page-loader',
   templateUrl: './page-loader.component.html',
   styleUrls: ['./page-loader.component.scss'],
-  encapsulation: ViewEncapsulation.ShadowDom,
+  encapsulation: ViewEncapsulation.None, // TODO:change to shadow dom.
 })
 export class PageLoaderComponent {
   logger: Logger;

@@ -106,6 +106,7 @@ function maybeSuggestSearch(
     return;
   }
   if (getLinkTarget(ev)) {
+    // TODO: Add preview button instead of search button.
     return;
   }
 
@@ -113,6 +114,8 @@ function maybeSuggestSearch(
   if (selectedText.length == 0 || selectedText.length > 100) {
     return;
   }
+
+  // TODO: Show the copy button instead. (See opera).
 
   if (validateEmail(selectedText)) {
     return;
@@ -160,6 +163,8 @@ function redirectLinks() {
     function (e) {
       var targetEl: any = getLinkTarget(e);
       if (targetEl) {
+        // TODO: Publish this event to the containing document, which can reset the iframe src.
+        logger.log('Click on link detected inside iframe', targetEl);
         targetEl.target = '_parent';
       }
     },
@@ -212,7 +217,7 @@ floating.style.backgroundImage = `url(${getExtensionUrl(
 
 function init() {
   if (inIframe()) {
-    // redirectLinks();
+    redirectLinks();
     return;
   }
 

@@ -104,4 +104,12 @@ export class PageLoaderComponent {
     this.focusClass = 'transparent';
     this.drawerClass = 'parked';
   }
+
+  /*
+   *- Information you'd like to show (remember, even chrome couldn't fit all of them in)
+   *- Window controls: Close, Maximize, Pull-aside (style by OS?) Remember windows vs mac is 74:14
+   *- Tab actions: Copy-page address, Reload page, Navigate forward/back
+   *- Tab data: Page favicon, Page title, hostname
+   *- Checkout opera for inspiration.
+   */
 }

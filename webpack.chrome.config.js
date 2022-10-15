@@ -1,4 +1,4 @@
-// Run using `webpack --config webpack.config.js --env production`.
+// Run using `webpack --config webpack.chrome.config.js --env production`.
 const { join } = require("path");
 const webpack = require("webpack");
 

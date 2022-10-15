@@ -10,4 +10,4 @@ import { PreviewComponent } from "./preview.component";
     exports: [PreviewComponent, SharedModule],
     declarations: [PreviewComponent]
 })
-export class DialogModule { }
+export class PreviewModule { }

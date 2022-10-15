@@ -13,7 +13,7 @@ import { APP_BASE_HREF } from '@angular/common';
 
 import { ButtonModule } from 'primeng/button';
 import { DropdownModule } from 'primeng/dropdown';
-import { DialogModule } from 'primeng/dialog';
+import { PreviewModule } from './preview/preview.module';
 import { CardModule } from 'primeng/card';
 import { CarouselModule } from 'primeng/carousel';
 import * as Sentry from '@sentry/angular';
@@ -33,7 +33,7 @@ import { PageLoaderComponent } from './page-loader/page-loader.component';
     CardModule,
     CarouselModule,
     DropdownModule,
-    DialogModule,
+    PreviewModule,
     AppRoutingModule,
     FormsModule,
   ],
@@ -56,7 +56,7 @@ import { PageLoaderComponent } from './page-loader/page-loader.component';
 })
 export class AppModule implements DoBootstrap {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  constructor(private injector: Injector, trace: Sentry.TraceService) {}
+  constructor(private injector: Injector, trace: Sentry.TraceService) { }
   ngDoBootstrap(appRef: ApplicationRef) {
     if (document.querySelector('sp-root')) {
       appRef.bootstrap(AppComponent);

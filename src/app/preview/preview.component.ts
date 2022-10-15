@@ -38,7 +38,7 @@ const hideAnimation = animation([
 })
 export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
 
-    @Input() header: string;
+    @Input() header: string = "";
 
     @Input() draggable: boolean = true;
 
@@ -62,15 +62,15 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
 
     @Input() contentStyle: any;
 
-    @Input() contentStyleClass: string;
+    @Input() contentStyleClass: string = "";
 
-    @Input() modal: boolean;
+    @Input() modal: boolean = false;
 
     @Input() closeOnEscape: boolean = true;
 
-    @Input() dismissableMask: boolean;
+    @Input() dismissableMask: boolean = false;
 
-    @Input() rtl: boolean;
+    @Input() rtl: boolean = false;
 
     @Input() closable: boolean = true;
 
@@ -86,9 +86,9 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
 
     @Input() breakpoints: any;
 
-    @Input() styleClass: string;
+    @Input() styleClass: string = "";
 
-    @Input() maskStyleClass: string;
+    @Input() maskStyleClass: string = "";
 
     @Input() showHeader: boolean = true;
 
@@ -112,7 +112,7 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
 
     @Input() focusOnShow: boolean = true;
 
-    @Input() maximizable: boolean;
+    @Input() maximizable: boolean = false;
 
     @Input() keepInViewport: boolean = true;
 
@@ -122,7 +122,7 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
 
     @Input() closeIcon: string = 'pi pi-times';
 
-    @Input() closeAriaLabel: string;
+    @Input() closeAriaLabel: string = "";
 
     @Input() closeTabindex: string = "-1";
 
@@ -130,17 +130,17 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
 
     @Input() maximizeIcon: string = 'pi pi-window-maximize';
 
-    @ContentChild(Header) headerFacet: QueryList<Header>;
+    @ContentChild(Header) headerFacet!: QueryList<Header>;
 
-    @ContentChild(Footer) footerFacet: QueryList<Footer>;
+    @ContentChild(Footer) footerFacet!: QueryList<Footer>;
 
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
+    @ContentChildren(PrimeTemplate) templates!: QueryList<any>;
 
-    @ViewChild('titlebar') headerViewChild: ElementRef;
+    @ViewChild('titlebar') headerViewChild!: ElementRef;
 
-    @ViewChild('content') contentViewChild: ElementRef;
+    @ViewChild('content') contentViewChild!: ElementRef;
 
-    @ViewChild('footer') footerViewChild: ElementRef;
+    @ViewChild('footer') footerViewChild!: ElementRef;
 
     @Output() onShow: EventEmitter<any> = new EventEmitter();
 
@@ -156,53 +156,41 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
 
     @Output() onMaximize: EventEmitter<any> = new EventEmitter();
 
-    headerTemplate: TemplateRef<any>;
+    headerTemplate!: TemplateRef<any>;
 
-    contentTemplate: TemplateRef<any>;
+    contentTemplate!: TemplateRef<any>;
 
-    footerTemplate: TemplateRef<any>;
+    footerTemplate!: TemplateRef<any>;
 
-    _visible: boolean;
+    _visible!: boolean;
 
-    maskVisible: boolean;
+    maskVisible!: boolean;
 
-    container: HTMLDivElement;
+    container!: HTMLDivElement;
 
-    wrapper: HTMLElement;
+    wrapper!: HTMLElement;
 
-    dragging: boolean;
+    dragging: boolean = false;
 
     documentDragListener: any;
 
     documentDragEndListener: any;
 
-    resizing: boolean;
+    resizing: boolean = false;
 
     documentResizeListener: any;
 
     documentResizeEndListener: any;
 
-    documentEscapeListener: Function;
+    documentEscapeListener?: Function;
 
-    maskClickListener: Function;
+    maskClickListener?: Function;
 
-    lastPageX: number;
+    lastPageX: number = 0;
 
-    lastPageY: number;
+    lastPageY: number = 0;
 
-    preventVisibleChangePropagation: boolean;
-
-    maximized: boolean;
-
-    preMaximizeContentHeight: number;
-
-    preMaximizeContainerWidth: number;
-
-    preMaximizeContainerHeight: number;
-
-    preMaximizePageX: number;
-
-    preMaximizePageY: number;
+    maximized: boolean = false;
 
     id: string = UniqueComponentId();
 
@@ -216,7 +204,9 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
 
     styleElement: any;
 
-    constructor(public el: ElementRef, public renderer: Renderer2, public zone: NgZone, private cd: ChangeDetectorRef, public config: PrimeNGConfig) { }
+    constructor(public el: ElementRef, public renderer: Renderer2, public zone: NgZone, private cd: ChangeDetectorRef, public config: PrimeNGConfig) {
+
+    }
 
     ngAfterContentInit() {
         this.templates.forEach((item) => {
@@ -357,7 +347,7 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
     unbindMaskClickListener() {
         if (this.maskClickListener) {
             this.maskClickListener();
-            this.maskClickListener = null;
+            this.maskClickListener = undefined;
         }
     }
 
@@ -540,7 +530,7 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
         }
     }
 
-    resizeEnd(event) {
+    resizeEnd(event: any) {
         if (this.resizing) {
             this.resizing = false;
             DomHandler.removeClass(document.body, 'p-unselectable-text');
@@ -629,7 +619,7 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
     unbindDocumentEscapeListener() {
         if (this.documentEscapeListener) {
             this.documentEscapeListener();
-            this.documentEscapeListener = null;
+            this.documentEscapeListener = undefined;
         }
     }
 
@@ -652,7 +642,7 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
         switch (event.toState) {
             case 'visible':
                 this.container = event.element;
-                this.wrapper = this.container.parentElement;
+                this.wrapper = event.element.parentElement;
                 this.appendContainer();
                 this.moveOnTop();
                 this.bindGlobalListeners();
@@ -714,8 +704,8 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
             ZIndexUtils.clear(this.container);
         }
 
-        this.container = null;
-        this.wrapper = null;
+        this.container = null as unknown as HTMLDivElement;
+        this.wrapper = null as unknown as HTMLElement;
 
         this._style = this.originalStyle ? { ...this.originalStyle } : {};
     }

@@ -92,7 +92,7 @@
       "matches": ["http://*/*", "https://*/*"],
       "all_frames": true,
       "js": ["content-script.js"],
-      "css": ["content-style.css"]
+      "css": ["content-style.css", "floatie.css"]
     }
   ],
   "background": {

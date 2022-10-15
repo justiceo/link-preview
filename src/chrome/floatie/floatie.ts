@@ -1,5 +1,5 @@
 import { arrow, computePosition, flip, offset, shift } from '@floating-ui/dom';
-import "./floatie.css";
+import "./floatie.scss";
 
 /*
  * This component is responsible for rendering 

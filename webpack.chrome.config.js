@@ -53,7 +53,7 @@ module.exports = (env) => {
         envFilePath
       ),
       new MiniCssExtractPlugin({
-        filename: 'content-script.css'
+        filename: 'floatie.css'
       }),
     ],
   };

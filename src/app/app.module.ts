@@ -20,12 +20,11 @@ import * as Sentry from '@sentry/angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { OptionsPageComponent } from './options-page/options-page.component';
 import { Router } from '@angular/router';
 import { PageLoaderComponent } from './page-loader/page-loader.component';
 
 @NgModule({
-  declarations: [AppComponent, OptionsPageComponent, PageLoaderComponent],
+  declarations: [AppComponent, PageLoaderComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

@@ -20,7 +20,7 @@ printer took a galley of type and scrambled it to make a type specimen book. It 
   `
 
 const f = new Floatie();
-const bc = new BroadcastChannel("floatie_broadcast");
+const bc = new BroadcastChannel(f.getChannelName());
 bc.onmessage = (ev) => {
     console.log("Demo received message: ", ev);
     const notice =  document.getElementById("notice");
@@ -28,4 +28,3 @@ bc.onmessage = (ev) => {
         notice.innerHTML = `Action result: ${ev.data.action} "${ev.data.data}"`;
     }
 };
-console.log("Demo created floatie: ", f);

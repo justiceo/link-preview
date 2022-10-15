@@ -8,7 +8,8 @@ import "./floatie.css";
  * avoid interference from parent document.
  */
 export class Floatie {
-    channel = new BroadcastChannel('floatie_broadcast');
+    channelName = "floatie_broadcast";
+    channel = new BroadcastChannel(this.channelName);
     container: HTMLElement;
     copyButton: HTMLElement;
     searchButton: HTMLElement;
@@ -50,6 +51,10 @@ export class Floatie {
         this.registerListeners();
 
         console.debug("Initialized floatie");
+    }
+
+    getChannelName(): string {
+        return this.channelName;
     }
 
     registerListeners(): void {

@@ -1,5 +1,5 @@
-import { StorageMessage } from 'src/shared/storage-message';
-import { ChromeStorageProvider } from '../shared/chrome-storage-provider';
+import { StorageMessage } from 'src/app/services/storage/storage-message';
+import { ChromeStorageProvider } from '../app/services/storage/chrome-storage-provider';
 import { ContextMenu } from './context-menu';
 import { SearchEngine } from 'src/app/model/search-engine';
 import { LoggingService } from './logging-service';

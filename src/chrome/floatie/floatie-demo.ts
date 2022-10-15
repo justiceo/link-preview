@@ -20,6 +20,7 @@ printer took a galley of type and scrambled it to make a type specimen book. It 
   `
 
 const f = new Floatie();
+f.startListening();
 const bc = new BroadcastChannel(f.getChannelName());
 bc.onmessage = (ev) => {
     console.log("Demo received message: ", ev);

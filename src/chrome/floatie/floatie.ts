@@ -15,6 +15,7 @@ export class Floatie {
     searchButton: HTMLElement;
     previewButton: HTMLElement;
     tooltipArrow: HTMLElement;
+    documentFragment: DocumentFragment;
 
     constructor() {
         const markup = `
@@ -28,14 +29,14 @@ export class Floatie {
         // Parse markup.
         const range = document.createRange();
         range.selectNode(document.getElementsByTagName('body').item(0)!);
-        const documentFragment = range.createContextualFragment(markup);
+        this.documentFragment = range.createContextualFragment(markup);
 
         // Extract actions buttons.
-        const container = documentFragment.getElementById("sp-floatie-container");
-        const searchButton = documentFragment.getElementById("sp-floatie-search");
-        const previewButton = documentFragment.getElementById("sp-floatie-preview");
-        const copyButton = documentFragment.getElementById("sp-floatie-copy");
-        const tooltipArrow = documentFragment.getElementById("sp-floatie-arrow");
+        const container = this.documentFragment.getElementById("sp-floatie-container");
+        const searchButton = this.documentFragment.getElementById("sp-floatie-search");
+        const previewButton = this.documentFragment.getElementById("sp-floatie-preview");
+        const copyButton = this.documentFragment.getElementById("sp-floatie-copy");
+        const tooltipArrow = this.documentFragment.getElementById("sp-floatie-arrow");
         if (!container || !searchButton || !previewButton || !copyButton || !tooltipArrow) {
             throw new Error("Impossible error obtaining action buttons from DOM");
         }
@@ -45,11 +46,6 @@ export class Floatie {
         this.copyButton = copyButton;
         this.tooltipArrow = tooltipArrow;
 
-        document.body.appendChild(documentFragment);
-
-        // Register event listeners on UI elements.
-        this.registerListeners();
-
         console.debug("Initialized floatie");
     }
 
@@ -57,7 +53,9 @@ export class Floatie {
         return this.channelName;
     }
 
-    registerListeners(): void {
+    startListening(): void {
+        document.body.appendChild(this.documentFragment);
+
         // Window level events.
         window.onscroll = () => this.hideAll();
         window.onresize = () => this.hideAll();
@@ -66,7 +64,14 @@ export class Floatie {
         document.onmouseup = (e) => this.maybeShow(e);
     }
 
-    unregisterListeners(): void {
+    stopListening(): void {
+        // Remove all UI elements.
+        document.body.removeChild(this.documentFragment);
+
+        // Close channel to stop any broadcasts.
+        this.channel.close();
+
+        // Remove window/document. listeners.
         document.removeEventListener('onmouseup', (e) => { });
         window.removeEventListener('onscroll', (e) => { });
         window.removeEventListener('onresize', (e) => { });

@@ -2,9 +2,9 @@ import { StorageProvider } from './storage-provider';
 
 /** Wrapper for chrome.storage.sync. */
 export class ChromeStorageProvider implements StorageProvider {
-  storageService!: chrome.storage.SyncStorageArea;
+  storageService!: chrome.storage.LocalStorageArea;
   constructor() {
-    this.storageService = chrome.storage.sync;
+    this.storageService = chrome.storage.local;
   }
   put(key: string, value: any): Promise<void> {
     if (!value) {

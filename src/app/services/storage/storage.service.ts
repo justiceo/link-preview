@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { ChromeStorageProvider } from '../../../shared/chrome-storage-provider';
+import { ChromeStorageProvider } from './chrome-storage-provider';
 import { LocalStorageProvider } from './local-storage-provider';
-import { RelayStorageProvider } from './relay-storage-provider';
-import { StorageProvider } from '../../../shared/storage-provider';
+import { StorageProvider } from './storage-provider';
 
 /**
  * Provides abstraction over different storage mechanisms and contexts for the app.
@@ -17,10 +16,8 @@ import { StorageProvider } from '../../../shared/storage-provider';
 export class StorageService implements StorageProvider {
   storageProvider: StorageProvider;
   constructor(private router: Router) {
-    if (chrome?.storage?.sync) {
+    if (chrome?.storage) {
       this.storageProvider = new ChromeStorageProvider();
-    } else if (this.router.url == '/popup') {
-      this.storageProvider = new RelayStorageProvider();
     } else {
       this.storageProvider = new LocalStorageProvider();
     }

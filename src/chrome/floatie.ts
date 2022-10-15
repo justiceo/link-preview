@@ -156,7 +156,7 @@ export class Floatie {
                 this.hideAll();
             }
         });
-        buttons[0].eventListeners
+        // buttons[0].eventListeners
     }
 
     // It should be a no-op to call this multiple times.
@@ -181,7 +181,7 @@ export class Floatie {
         });
 
         // Position over reference element
-        computePosition(ev.target, this.container, {
+        computePosition(ev.target as HTMLElement, this.container, {
             placement: 'top',
         }).then(() => {
             Object.assign(this.container.style, {

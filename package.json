@@ -11,6 +11,7 @@
     "lint": "ng lint",
     "start:chrome": "gulp ChromeDemo",
     "start:firefox": "web-ext run --source-dir ./extension/",
+    "floatie": "webpack serve --config webpack.floatie-demo.config.js",
     "package": "ng build --configuration=development && webpack --config webpack.chrome.config.js --env development && zip -r dist/sp-dev.zip dist/search-preview",
     "package-prod": "ng build --configuration=production && webpack --config webpack.chrome.config.js --env production && zip -r dist/sp-prod.zip dist/search-preview",
     "prettier": "prettier --write \"src/**/*.{js,json,css,scss,less,md,ts,html}\""
@@ -79,6 +80,7 @@
     "eslint": "^8.18.0",
     "eslint-config-prettier": "^8.5.0",
     "gulp": "^4.0.2",
+    "html-webpack-plugin": "^5.5.0",
     "jasmine-core": "~4.0.0",
     "jimp": "^0.16.1",
     "karma": "~6.3.0",

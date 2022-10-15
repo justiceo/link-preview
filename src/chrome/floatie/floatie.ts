@@ -1,4 +1,5 @@
 import { computePosition } from '@floating-ui/dom';
+import "./floatie.css";
 
 /*
  * This component is responsible for rendering 

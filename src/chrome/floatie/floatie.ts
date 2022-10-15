@@ -17,10 +17,10 @@ export class Floatie {
 
     constructor() {
         const markup = `
-        <div id="sp-floatie-search" class="action" data-action="search"></div>
-        <div id="sp-floatie-preview" class="action" data-action="preview"></div>
-        <div id="sp-floatie-copy" class="action" data-action="copy"></div>
-        <div id="sp-floatie-arrow"></div>
+        <div id="sp-floatie-search" class="action" data-action="search">Search</div>
+        <div id="sp-floatie-preview" class="action" data-action="preview">Preview</div>
+        <div id="sp-floatie-copy" class="action" data-action="copy">Copy</div>
+        <div id="sp-floatie-arrow">Arrow</div>
         <style>
             .action {
                 display: inline-block;
@@ -35,9 +35,9 @@ export class Floatie {
         const documentFragment = range.createContextualFragment(markup);
 
         // Extract actions buttons.
-        const searchButton = documentFragment.getElementById("sp-floatie-preview");
+        const searchButton = documentFragment.getElementById("sp-floatie-search");
         const previewButton = documentFragment.getElementById("sp-floatie-preview");
-        const copyButton = documentFragment.getElementById("sp-floatie-preview");
+        const copyButton = documentFragment.getElementById("sp-floatie-copy");
         const tooltipArrow = documentFragment.getElementById("sp-floatie-arrow");
         if (!searchButton || !previewButton || !copyButton || !tooltipArrow) {
             throw new Error("Impossible error obtaining action buttons from DOM");
@@ -53,6 +53,7 @@ export class Floatie {
         const shadow = this.container.attachShadow({ mode: 'open' });
         shadow.appendChild(documentFragment);
         document.body.appendChild(this.container);
+        this.hideAll();
 
         console.error("created floatie");
 
@@ -76,7 +77,6 @@ export class Floatie {
     }
 
     maybeShow(e: MouseEvent): void {
-        console.log("floatie :", e);
         // Ensure button is hidden by default.
         this.hideAll();
 
@@ -91,6 +91,7 @@ export class Floatie {
 
         // Show appropriate buttons.
         const selectedText = selection.toString().trim();
+        console.debug("Selected: ", selectedText);
         if (this.shouldShowPreview(e, selectedText)) {
             this.showActions(e, selectedText, [this.previewButton, this.copyButton])
         } else if (this.shouldShowSearch(e, selectedText)) {
@@ -105,7 +106,14 @@ export class Floatie {
     }
 
     shouldShowPreview(e: MouseEvent | KeyboardEvent, selectedText: string): boolean {
-        const isUrl = (text: string) => false;
+        const isUrl = (text: string) => {
+            try {
+                const unused = new URL(text);
+                return true;
+              } catch (_) {
+                return false;  
+              }
+        };
 
         const isHyperlink = (e: MouseEvent | KeyboardEvent) => {
             var target: any = e.target;
@@ -134,7 +142,7 @@ export class Floatie {
         }
 
         const isDate = (dataStr: string) => {
-            return !isNaN(Date.parse(selectedText))
+            return !isNaN(Date.parse(dataStr))
         }
 
         const hasLetters = (text: string) => {
@@ -149,6 +157,7 @@ export class Floatie {
     }
 
     showActions(e: MouseEvent, text: string, buttons: HTMLElement[]) {
+        console.debug("#showActions: ", buttons, text, e);
         this.showContainer(e);
         buttons.forEach(b => {
             b.style.display = 'inline-block';

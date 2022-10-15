@@ -23,4 +23,4 @@ bc.onmessage = (ev) => {
         notice.innerHTML = `Action result: ${ev.data.action} "${ev.data.data}"`;
     }
 };
-console.log("Floatie: ", f);
+console.log("Demo created floatie: ", f);

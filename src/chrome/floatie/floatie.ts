@@ -54,11 +54,11 @@ export class Floatie {
         shadow.appendChild(documentFragment);
         document.body.appendChild(this.container);
         this.hideAll();
-
-        console.error("created floatie");
-
+        
         // Register event listeners on UI elements.
         this.registerListeners();
+
+        console.debug("Initialized floatie");
     }
 
     registerListeners(): void {
@@ -157,7 +157,6 @@ export class Floatie {
     }
 
     showActions(e: MouseEvent, text: string, buttons: HTMLElement[]) {
-        console.debug("#showActions: ", buttons, text, e);
         this.showContainer(e);
         buttons.forEach(b => {
             b.style.display = 'inline-block';

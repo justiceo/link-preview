@@ -225,18 +225,28 @@ export class Floatie {
 
             // Handle arrow placement.
             const coords = middlewareData.arrow;
-            const staticSide = {
-                top: 'bottom',
-                right: 'left',
-                bottom: 'top',
-                left: 'right',
-            }[placement.split('-')[0]];
+            
+            let staticSide = "bottom";
+            switch(placement.split('-')[0]) {
+                case "top":
+                    staticSide = 'bottom';
+                    break;
+                case "left":
+                    staticSide = "right";
+                    break;
+                case "bottom":
+                    staticSide = "top";
+                    break;
+                case "right":
+                    staticSide = "left";
+                    break;
+            }
             Object.assign(this.tooltipArrow.style, {
                 left: coords?.x != null ? `${coords.x}px` : '',
                 top: coords?.y != null ? `${coords.y}px` : '',
                 right: '',
                 bottom: '',
-                [staticSide]: '-4px',
+                [staticSide]: '-4px', // If you update this, update height and width of arrow.
             });
 
             getMaxZIndex().then((maxZ: number) => {

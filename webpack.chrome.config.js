@@ -1,6 +1,7 @@
 // Run using `webpack --config webpack.chrome.config.js --env production`.
 const { join } = require("path");
 const webpack = require("webpack");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = (env) => {
   let mode = "development";
@@ -30,6 +31,13 @@ module.exports = (env) => {
           ],
           exclude: /node_modules/,
         },
+        {
+          test: /\.(sa|sc|c)ss$/,
+          use: [
+            MiniCssExtractPlugin.loader,
+            { loader: "css-loader", options: { sourceMap: true } },
+          ],
+        }
       ],
     },
     output: {
@@ -44,6 +52,9 @@ module.exports = (env) => {
         /src\/environments\/environment\.ts/,
         envFilePath
       ),
+      new MiniCssExtractPlugin({
+        filename: 'content-script.css'
+      }),
     ],
   };
 

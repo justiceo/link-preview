@@ -1,11 +1,9 @@
 import { Floatie } from './floatie/floatie';
-import { LoggingService } from './logging-service';
 
 class ContentScript {
   floatie: Floatie;
   floatieChannel: BroadcastChannel;
   getExtensionUrl = chrome.runtime.getURL;
-  logger = new LoggingService().getLogger('content-script');
 
   constructor() {
     this.floatie = new Floatie();
@@ -75,23 +73,11 @@ class ContentScript {
       (e) => {
         var targetEl: any = this.getLinkTarget(e);
         if (targetEl) {
-          // TODO: Publish this event to the containing document, which can reset the iframe src.
-          this.logger.log('Click on link detected inside iframe', targetEl);
           targetEl.target = '_parent';
         }
       },
       true
     );
-  }
-
-  displayPreview(url: string) {
-    if (document.getElementById('audate-preview-container')) {
-      this.logger.debug('broadcasting the url');
-      this.channel.postMessage(url);
-    } else {
-      this.logger.debug('inserting audate preview');
-      this.insertPageLoader(url);
-    }
   }
 
   // Returns a truthy value (the link element) if event target is a link.

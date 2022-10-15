@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { PrimeNGConfig } from 'primeng/api';
-import { Logger } from 'src/shared/logging/logger';
+import { Logger } from 'src/app/services/logging/logger';
 import { LoggingService } from 'src/app/services/logging/logging.service';
 
 @Component({

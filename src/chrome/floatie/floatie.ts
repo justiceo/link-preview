@@ -1,4 +1,4 @@
-import { computePosition } from '@floating-ui/dom';
+import { arrow, computePosition, flip, offset, shift } from '@floating-ui/dom';
 import "./floatie.css";
 
 /*
@@ -17,17 +17,12 @@ export class Floatie {
 
     constructor() {
         const markup = `
-        <div id="sp-floatie-search" class="action" data-action="search">Search</div>
-        <div id="sp-floatie-preview" class="action" data-action="preview">Preview</div>
-        <div id="sp-floatie-copy" class="action" data-action="copy">Copy</div>
-        <div id="sp-floatie-arrow">Arrow</div>
-        <style>
-            .action {
-                display: inline-block;
-                color: white;
-                background-color: black;
-            }
-        </style>
+        <div id="sp-floatie-container">
+            <div id="sp-floatie-arrow"></div>
+            <div id="sp-floatie-search" class="sp-floatie-action" data-action="search">Search</div>
+            <div id="sp-floatie-preview" class="sp-floatie-action" data-action="preview">Preview</div>
+            <div id="sp-floatie-copy" class="sp-floatie-action" data-action="copy">Copy</div>
+        </div>
         `
         // Parse markup.
         const range = document.createRange();
@@ -35,26 +30,22 @@ export class Floatie {
         const documentFragment = range.createContextualFragment(markup);
 
         // Extract actions buttons.
+        const container = documentFragment.getElementById("sp-floatie-container");
         const searchButton = documentFragment.getElementById("sp-floatie-search");
         const previewButton = documentFragment.getElementById("sp-floatie-preview");
         const copyButton = documentFragment.getElementById("sp-floatie-copy");
         const tooltipArrow = documentFragment.getElementById("sp-floatie-arrow");
-        if (!searchButton || !previewButton || !copyButton || !tooltipArrow) {
+        if (!container || !searchButton || !previewButton || !copyButton || !tooltipArrow) {
             throw new Error("Impossible error obtaining action buttons from DOM");
         }
+        this.container = container;
         this.searchButton = searchButton;
         this.previewButton = previewButton;
         this.copyButton = copyButton;
         this.tooltipArrow = tooltipArrow;
 
-        // Create the wrapping container and attach shadow dom.
-        this.container = document.createElement('div');
-        this.container.id = 'sp-floatie-container';
-        const shadow = this.container.attachShadow({ mode: 'open' });
-        shadow.appendChild(documentFragment);
-        document.body.appendChild(this.container);
-        this.hideAll();
-        
+        document.body.appendChild(documentFragment);
+
         // Register event listeners on UI elements.
         this.registerListeners();
 
@@ -110,9 +101,9 @@ export class Floatie {
             try {
                 const unused = new URL(text);
                 return true;
-              } catch (_) {
-                return false;  
-              }
+            } catch (_) {
+                return false;
+            }
         };
 
         const isHyperlink = (e: MouseEvent | KeyboardEvent) => {
@@ -185,17 +176,62 @@ export class Floatie {
                 resolve(z);
             });
         };
-        getMaxZIndex().then((maxZ: number) => {
-            this.container.style.zIndex = '' + (maxZ + 10);
-        });
+
+        const virtualEl = {
+            getBoundingClientRect() {
+              return {
+                width: 0,
+                height: 0,
+                x: ev.clientX,
+                y: ev.clientY,
+                top: ev.clientY,
+                left: ev.clientX,
+                right: ev.clientX,
+                bottom: ev.clientY,
+              };
+            },
+          };
 
         // Position over reference element
-        computePosition(ev.target as HTMLElement, this.container, {
-            placement: 'top',
-        }).then(() => {
+        computePosition(virtualEl, this.container, {
+            placement: "top",
+            strategy: 'absolute', // If you use "fixed", x, y would change to clientX/Y.
+            middleware: [
+                offset(17), // Space between mouse and tooltip.
+                flip(), 
+                shift({ padding: 5 }), // Space from the edge of the browser.
+                arrow({ element: this.tooltipArrow }),],
+        }).then(({ x, y, placement, middlewareData }) => {
+            /*
+             * TODO: Consider using ev.target instead of mouseevent like opera.
+             * screenX/Y - relative to physical screen.
+             * clientX/Y - relative to browser viewport. Use with position:fixed.
+             * pageX/Y - relative to page. Use this with position:absolute.
+             */
             Object.assign(this.container.style, {
-                top: `${ev.pageY - 55}px`,
-                left: `${ev.pageX - 20}px`,
+                top: `${y}px`,
+                left: `${x}px`,
+            });
+
+            // Handle arrow placement.
+            const coords = middlewareData.arrow;
+            const staticSide = {
+                top: 'bottom',
+                right: 'left',
+                bottom: 'top',
+                left: 'right',
+            }[placement.split('-')[0]];
+            Object.assign(this.tooltipArrow.style, {
+                left: coords?.x != null ? `${coords.x}px` : '',
+                top: coords?.y != null ? `${coords.y}px` : '',
+                right: '',
+                bottom: '',
+                [staticSide]: '-4px',
+            });
+
+            getMaxZIndex().then((maxZ: number) => {
+                this.container.style.zIndex = '' + (maxZ + 10);
+                this.tooltipArrow.style.zIndex = '' + (maxZ - 1);
             });
         });
     }

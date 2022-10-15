@@ -1,8 +1,37 @@
 
-body {
-    background-color: lightblue;
+/* Floatie CSS */
+#sp-floatie-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #222222;
+    color: white;
+    border-radius: 4px;
+    padding: 2px;
+    font-size: 11px;
+    font-family: sans-serif;
 }
 
-#notice {
-    background-color: lightyellow;
+#sp-floatie-arrow {
+    position: absolute;
+    background: rgb(255,34,34);
+    background: linear-gradient(-45deg, rgba(34,34,34,1) 0%, rgba(34,34,34,1) 51%, rgba(0,0,0,0) 53%, rgba(0,0,0,0) 80%);  
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+}
+
+.sp-floatie-action {
+    display: block;
+    background-color: #222222;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 0 0 !important;
+}
+
+.sp-floatie-action:hover {
+    background-color: #777;
 }

@@ -35,11 +35,12 @@ from inside it so including directly. */
     }
   }
 
-  > div.p-resizable-handle {
+  >div.p-resizable-handle {
     height: 30px;
     right: 0px;
     bottom: -10px;
     transform: rotate(45deg);
+
     &:hover {
       background-color: #aaa;
     }
@@ -54,9 +55,10 @@ from inside it so including directly. */
     background-color: #f0f0f0;
   }
 }
+
 .p-dialog-content {
   padding: 0 !important;
-  overflow: hidden;
+  overflow: hidden !important;
 
   &.transparent {
     opacity: 10% !important;

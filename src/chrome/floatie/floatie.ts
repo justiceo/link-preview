@@ -6,6 +6,7 @@ import "./floatie.scss";
  * the floatie and managing its lifecycle.
  * The floatie is rendered in a shadow dom to
  * avoid interference from parent document.
+ * TODO: rename to Popover.ts.
  */
 export class Floatie {
     channelName = "floatie_broadcast";
@@ -62,6 +63,14 @@ export class Floatie {
 
         // Listen for mouse up events and suggest search if there's a selection.
         document.onmouseup = (e) => this.maybeShow(e);
+
+        /*
+         * TODO: Listen for hover on link elements and display preview
+         * The link must have text and be of http(s) scheme.
+         * On search pages, only wire for search results. 
+         * On normal pages, display floatie on all links.
+         */
+
     }
 
     stopListening(): void {
@@ -189,18 +198,18 @@ export class Floatie {
 
         const virtualEl = {
             getBoundingClientRect() {
-              return {
-                width: 0,
-                height: 0,
-                x: ev.clientX,
-                y: ev.clientY,
-                top: ev.clientY,
-                left: ev.clientX,
-                right: ev.clientX,
-                bottom: ev.clientY,
-              };
+                return {
+                    width: 0,
+                    height: 0,
+                    x: ev.clientX,
+                    y: ev.clientY,
+                    top: ev.clientY,
+                    left: ev.clientX,
+                    right: ev.clientX,
+                    bottom: ev.clientY,
+                };
             },
-          };
+        };
 
         // Position over reference element
         computePosition(virtualEl, this.container, {
@@ -208,7 +217,7 @@ export class Floatie {
             strategy: 'absolute', // If you use "fixed", x, y would change to clientX/Y.
             middleware: [
                 offset(17), // Space between mouse and tooltip.
-                flip(), 
+                flip(),
                 shift({ padding: 5 }), // Space from the edge of the browser.
                 arrow({ element: this.tooltipArrow }),],
         }).then(({ x, y, placement, middlewareData }) => {
@@ -225,9 +234,9 @@ export class Floatie {
 
             // Handle arrow placement.
             const coords = middlewareData.arrow;
-            
+
             let staticSide = "bottom";
-            switch(placement.split('-')[0]) {
+            switch (placement.split('-')[0]) {
                 case "top":
                     staticSide = 'bottom';
                     break;

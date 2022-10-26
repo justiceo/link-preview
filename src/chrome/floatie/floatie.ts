@@ -64,13 +64,53 @@ export class Floatie {
         // Listen for mouse up events and suggest search if there's a selection.
         document.onmouseup = (e) => this.maybeShow(e);
 
-        /*
-         * TODO: Listen for hover on link elements and display preview
-         * The link must have text and be of http(s) scheme.
-         * On search pages, only wire for search results. 
-         * On normal pages, display floatie on all links.
-         */
+        this.setupLinkPreviews();
+    }
 
+    /*
+     * TODO: On search pages, only wire for search results. 
+     * On normal pages, display floatie on all links.
+     */
+    setupLinkPreviews() {
+        const anchors = document.querySelectorAll("a");
+        anchors.forEach((a: HTMLAnchorElement) => {
+            const absoluteUrlMatcher = new RegExp('^(?:[a-z+]+:)?//', 'i');
+
+            let url: URL;
+            try {
+                if (absoluteUrlMatcher.test(a.href)) {
+                    url = new URL(a.href);
+                } else {
+                    url = new URL(a.href, document.location.href);
+                }
+                if (url.protocol !== "http:" && url.protocol !== "https:") {
+                    // We don't want to preview other schemes like tel:
+                    return;
+                }
+            } catch (e) {
+                // href is an invalid URL
+                return;
+            }
+
+            if (!a.innerText.trim()) {
+                // There is no text, we may be highlighting an image.
+                return;
+            }
+
+            // TODO: check if computed display is 'none', i.e. link is hidden.
+
+            let timeout: any = null;
+            a.addEventListener('mouseover', (e) => {
+                if (timeout) {
+                    clearTimeout(timeout);
+                }
+                console.log("hover", e);
+                this.showActions(a.getBoundingClientRect(), url.href, [this.previewButton]);
+            });
+            a.addEventListener('mouseout', (e) => {
+                timeout = setTimeout(() => this.hideAll(), 2000);
+            });
+        });
     }
 
     stopListening(): void {
@@ -101,13 +141,15 @@ export class Floatie {
 
         // Show appropriate buttons.
         const selectedText = selection.toString().trim();
+        const range = selection.getRangeAt(0);
+        const boundingRect = range.getBoundingClientRect();
         console.debug("Selected: ", selectedText);
         if (this.shouldShowPreview(e, selectedText)) {
-            this.showActions(e, selectedText, [this.previewButton, this.copyButton])
+            this.showActions(boundingRect, selectedText, [this.previewButton, this.copyButton])
         } else if (this.shouldShowSearch(e, selectedText)) {
-            this.showActions(e, selectedText, [this.searchButton, this.copyButton])
+            this.showActions(boundingRect, selectedText, [this.searchButton, this.copyButton])
         } else if (this.shouldShowCopy(selectedText)) {
-            this.showActions(e, selectedText, [this.copyButton]);
+            this.showActions(boundingRect, selectedText, [this.copyButton]);
         }
     }
 
@@ -166,8 +208,9 @@ export class Floatie {
             && !this.shouldShowPreview(e, selectedText);
     }
 
-    showActions(e: MouseEvent, text: string, buttons: HTMLElement[]) {
-        this.showContainer(e);
+    showActions(boundingRect: DOMRect, text: string, buttons: HTMLElement[]) {
+        this.hideAll();
+        this.showContainer(boundingRect);
         buttons.forEach(b => {
             b.style.display = 'inline-block';
             b.onclick = () => {
@@ -179,7 +222,7 @@ export class Floatie {
     }
 
     // It should be a no-op to call this multiple times.
-    showContainer(ev: MouseEvent): void {
+    showContainer(boundingRect: DOMRect): void {
         // Make container visible.
         this.container.style.display = 'block';
 
@@ -196,17 +239,18 @@ export class Floatie {
             });
         };
 
+        // We cannot pass boundRect directly as the library treats it as an HTMLElement.
         const virtualEl = {
             getBoundingClientRect() {
                 return {
-                    width: 0,
-                    height: 0,
-                    x: ev.clientX,
-                    y: ev.clientY,
-                    top: ev.clientY,
-                    left: ev.clientX,
-                    right: ev.clientX,
-                    bottom: ev.clientY,
+                    width: boundingRect.width,
+                    height: boundingRect.height,
+                    x: boundingRect.x,
+                    y: boundingRect.y,
+                    top: boundingRect.top,
+                    left: boundingRect.left,
+                    right: boundingRect.right,
+                    bottom: boundingRect.bottom
                 };
             },
         };
@@ -216,13 +260,12 @@ export class Floatie {
             placement: "top",
             strategy: 'absolute', // If you use "fixed", x, y would change to clientX/Y.
             middleware: [
-                offset(17), // Space between mouse and tooltip.
+                offset(12), // Space between mouse and tooltip.
                 flip(),
                 shift({ padding: 5 }), // Space from the edge of the browser.
                 arrow({ element: this.tooltipArrow }),],
         }).then(({ x, y, placement, middlewareData }) => {
             /*
-             * TODO: Consider using ev.target instead of mouseevent like opera.
              * screenX/Y - relative to physical screen.
              * clientX/Y - relative to browser viewport. Use with position:fixed.
              * pageX/Y - relative to page. Use this with position:absolute.

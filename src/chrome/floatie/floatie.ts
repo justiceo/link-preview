@@ -74,21 +74,7 @@ export class Floatie {
     setupLinkPreviews() {
         const anchors = document.querySelectorAll("a");
         anchors.forEach((a: HTMLAnchorElement) => {
-            const absoluteUrlMatcher = new RegExp('^(?:[a-z+]+:)?//', 'i');
-
-            let url: URL;
-            try {
-                if (absoluteUrlMatcher.test(a.href)) {
-                    url = new URL(a.href);
-                } else {
-                    url = new URL(a.href, document.location.href);
-                }
-                if (url.protocol !== "http:" && url.protocol !== "https:") {
-                    // We don't want to preview other schemes like tel:
-                    return;
-                }
-            } catch (e) {
-                // href is an invalid URL
+            if (!this.isGoodUrl(a.href)) {
                 return;
             }
 
@@ -105,7 +91,7 @@ export class Floatie {
                     clearTimeout(timeout);
                 }
                 console.log("hover", e);
-                this.showActions(a.getBoundingClientRect(), url.href, [this.previewButton]);
+                this.showActions(a.getBoundingClientRect(), a.href, [this.previewButton]);
             });
             a.addEventListener('mouseout', (e) => {
                 timeout = setTimeout(() => this.hideAll(), 2000);
@@ -153,31 +139,62 @@ export class Floatie {
         }
     }
 
+    getAbsoluteUrl(urlStr: string): URL | null {
+        const absoluteUrlMatcher = new RegExp('^(?:[a-z+]+:)?//', 'i');
+        let url: URL;
+        try {
+            if (absoluteUrlMatcher.test(urlStr)) {
+                url = new URL(urlStr);
+            } else {
+                url = new URL(urlStr, document.location.href);
+            }
+        } catch (e) {
+            // href is an invalid URL
+            return null;
+        }
+        return url;
+    }
+
+    isGoodUrl(urlStr: string): boolean {
+        if (!urlStr || !urlStr.trim()) {
+            // There is no link.
+            return false;
+        }
+
+        const url = this.getAbsoluteUrl(urlStr);
+        if (url === null) {
+            return false;
+        }
+
+        if (url.protocol !== "http:" && url.protocol !== "https:") {
+            // We don't want to preview other schemes like tel:
+            return false;
+        }
+
+        if (url.hostname === window.location.hostname) {
+            // Don't preview URLs of the same origin, not useful and potentially introduces bugs to the page.
+            return false;
+        }
+
+        return true;
+    }
+
     shouldShowCopy(selectedText: string): boolean {
         return selectedText.length > 0;
     }
 
     shouldShowPreview(e: MouseEvent | KeyboardEvent, selectedText: string): boolean {
-        const isUrl = (text: string) => {
-            try {
-                const unused = new URL(text);
-                return true;
-            } catch (_) {
-                return false;
-            }
-        };
-
-        const isHyperlink = (e: MouseEvent | KeyboardEvent) => {
+        const isGoodHyperlink = (e: MouseEvent | KeyboardEvent) => {
             var target: any = e.target;
             do {
-                if (target.nodeName.toUpperCase() === 'A' && target.href) {
+                if (target.nodeName.toUpperCase() === 'A' && this.isGoodUrl(target.href)) {
                     return true;
                 }
             } while ((target = target.parentElement));
             return false;
         }
 
-        return isUrl(selectedText) || isHyperlink(e);
+        return this.isGoodUrl(selectedText) || isGoodHyperlink(e);
     }
 
     shouldShowSearch(e: MouseEvent, selectedText: string): boolean {

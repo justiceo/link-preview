@@ -93,7 +93,7 @@ export class Floatie {
                 console.log("hover", e);
                 this.showActions(a.getBoundingClientRect(), a.href, [this.previewButton]);
             });
-            a.addEventListener('mouseout', (e) => {
+            a.addEventListener('mouseout', () => {
                 timeout = setTimeout(() => this.hideAll(), 2000);
             });
         });
@@ -107,9 +107,9 @@ export class Floatie {
         this.channel.close();
 
         // Remove window/document. listeners.
-        document.removeEventListener('onmouseup', (e) => { });
-        window.removeEventListener('onscroll', (e) => { });
-        window.removeEventListener('onresize', (e) => { });
+        document.removeEventListener('onmouseup', () => { });
+        window.removeEventListener('onscroll', () => { });
+        window.removeEventListener('onresize', () => { });
     }
 
     maybeShow(e: MouseEvent): void {
@@ -175,6 +175,8 @@ export class Floatie {
             // Don't preview URLs of the same origin, not useful and potentially introduces bugs to the page.
             return false;
         }
+
+        // TODO: investigate potential issues with displaying https over http and vice versa.
 
         return true;
     }

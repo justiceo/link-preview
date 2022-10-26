@@ -63,6 +63,7 @@ export class Floatie {
 
         // Listen for mouse up events and suggest search if there's a selection.
         document.onmouseup = (e) => this.maybeShow(e);
+        document.onkeydown = () => this.hideAll();
 
         this.setupLinkPreviews();
     }

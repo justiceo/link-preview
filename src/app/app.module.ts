@@ -21,11 +21,10 @@ import * as Sentry from '@sentry/angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Router } from '@angular/router';
-import { PageLoaderComponent } from './page-loader/page-loader.component';
 import { IFramerComponent } from './iframer/iframer.component';
 
 @NgModule({
-  declarations: [AppComponent, PageLoaderComponent, IFramerComponent],
+  declarations: [AppComponent, IFramerComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -62,9 +61,9 @@ export class AppModule implements DoBootstrap {
       appRef.bootstrap(AppComponent);
     }
 
-    const el = createCustomElement(PageLoaderComponent, {
+    const el = createCustomElement(IFramerComponent, {
       injector: this.injector,
     });
-    customElements.define('sp-page-loader', el);
+    customElements.define('sp-iframer', el);
   }
 }

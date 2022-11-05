@@ -9,7 +9,7 @@ class ContentScript {
     this.floatie = new Floatie();
     this.floatieChannel = new BroadcastChannel(this.floatie.getChannelName());
     this.floatieChannel.onmessage = (ev) => {
-        console.log( `Action result: ${ev.data.action} "${ev.data.data}"`);
+      console.log(`Action result: ${ev.data.action} "${ev.data.data}"`);
     };
   }
 
@@ -36,7 +36,7 @@ class ContentScript {
     document.body.appendChild(styleFragment);
 
     const tagString = `
-    <sp-page-loader url="${url}"></sp-page-loader>
+    <sp-iframer url="${url}"></sp-iframer>
     <script src="${this.getExtensionUrl('runtime.js')}"></script>
     <script src="${this.getExtensionUrl('polyfills.js')}"></script>
     <script src="${this.getExtensionUrl('vendor.js')}"></script>

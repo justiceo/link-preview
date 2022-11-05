@@ -8,7 +8,7 @@
   [contentStyleClass]="focusClass"
   [baseZIndex]="10000"
   [breakpoints]="{ '700px': '70vw' }"
-  [style]="{ width: '45vw', height: '70vh' }"
+  [style]="{ width: width, height: height }"
   (onResizeInit)="onResizeStart($event)"
   (onResizeEnd)="onResizeEnd($event)"
   (onDragEnd)="onDragEnd($event)"
@@ -20,7 +20,7 @@
   (onOpenInNewTab)="onOpenInNewTab($event)"
 >
   <iframe
-    *ngIf="!unsupportedHost"
+    *ngIf="url && !unsupportedHost"
     #iframe
     [src]="trustedUrl"
     width="100%"

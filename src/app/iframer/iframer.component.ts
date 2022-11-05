@@ -1,4 +1,5 @@
 import {
+  AfterViewInit,
   Component,
   ElementRef,
   NgZone,
@@ -13,13 +14,15 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
   styleUrls: ['./iframer.component.scss'],
   encapsulation: ViewEncapsulation.ShadowDom,
 })
-export class IFramerComponent {
+export class IFramerComponent implements AfterViewInit {
   url?: URL;
   trustedUrl?: SafeResourceUrl;
   unsupportedHost = '';
-  isVisible = false;
+  isVisible = true; // It is important that the dialog is visible at the start, even if no iframe. (width/heigh = 0px)
   focusClass = '';
   drawerClass = '';
+  width = '0px';
+  height = '0px';
   headerText: string = "";
   headerIconUrlBase = "http://www.google.com/s2/favicons?domain=";
   headerIconUrl: string = "";
@@ -28,14 +31,16 @@ export class IFramerComponent {
   constructor(
     private sanitizer: DomSanitizer,
     private ngZone: NgZone,
-  ) {
+  ) {}
+
+  ngAfterViewInit() {
+    this.isVisible = false; // Hide the tiny dialog that was shown during init.
     this.listenForCspError();
     this.listenForUrlUpdates();
-    this.url = new URL("https://example.org");
-    this.trustedUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
-      this.url.href
-    );
-    this.isVisible = true;
+    setTimeout(() => {
+      const channel = new BroadcastChannel('floatie_broadcast');
+      channel.postMessage({ action: 'preview', data: 'https://example.com' });
+    }, 2000)
   }
 
   listenForCspError() {
@@ -74,6 +79,8 @@ export class IFramerComponent {
 
         this.headerText = this.url.hostname;
         this.headerIconUrl = this.headerIconUrlBase + this.url.hostname;
+        this.width = '50vw';
+        this.height = '70vh';
         this.isVisible = true;
         this.focusClass = '';
         this.drawerClass = '';

@@ -1,4 +1,3 @@
-import { CurrencyPipe } from '@angular/common';
 import {
   Component,
   ElementRef,
@@ -7,13 +6,12 @@ import {
   ViewEncapsulation,
 } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-import { PrimeNGConfig } from 'primeng/api';
 
 @Component({
   selector: 'sp-iframer',
   templateUrl: './iframer.component.html',
   styleUrls: ['./iframer.component.scss'],
-  encapsulation: ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.ShadowDom,
 })
 export class IFramerComponent {
   url?: URL;
@@ -33,6 +31,11 @@ export class IFramerComponent {
   ) {
     this.listenForCspError();
     this.listenForUrlUpdates();
+    this.url = new URL("https://example.org");
+    this.trustedUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
+      this.url.href
+    );
+    this.isVisible = true;
   }
 
   listenForCspError() {
@@ -51,7 +54,7 @@ export class IFramerComponent {
     const channel = new BroadcastChannel('floatie_broadcast');
     channel.onmessage = (e) => {
       this.ngZone.run(() => {
-        if(e.data.action !== 'preview') {
+        if (e.data.action !== 'preview') {
           return;
         }
         console.log('Received broadcast to preview', e.data.data);
@@ -94,8 +97,10 @@ export class IFramerComponent {
     console.debug('onDragEnd: ', e);
   }
   onOpenInNewTab(e: any) {
-    // This is susceptible to cross original issues.
-    // Use message-passing as a work-around.
+    /*
+     * This is susceptible to cross original issues.
+     * Use message-passing as a work-around.
+     */
     try {
       const currentFrameUrl = this.iframe.nativeElement.contentWindow?.location?.href;
       window.open(currentFrameUrl, '_blank');
@@ -118,9 +123,11 @@ export class IFramerComponent {
     if (window.visualViewport.width - e.clientX < 100) {
       return;
     }
-    // TODO: Disable hiding the panel for easier development.
-    // this.focusClass = 'transparent';
-    // this.drawerClass = 'parked';
+    /*
+     * TODO: Disable hiding the panel for easier development.
+     * this.focusClass = 'transparent';
+     * this.drawerClass = 'parked';
+     */
   }
 
   /*

@@ -1,10 +1,10 @@
 import {
     Component, ElementRef, OnDestroy, Input, Output, EventEmitter, Renderer2,
-    ContentChildren, QueryList, ViewChild, NgZone, ChangeDetectorRef, ViewRef, ChangeDetectionStrategy, ViewEncapsulation, AfterContentInit, TemplateRef, ContentChild, OnInit
+    ContentChildren, QueryList, ViewChild, NgZone, ChangeDetectorRef, ChangeDetectionStrategy, ViewEncapsulation, AfterContentInit, TemplateRef, ContentChild, OnInit
 } from '@angular/core';
 import { trigger, style, transition, animate, AnimationEvent, animation, useAnimation } from '@angular/animations';
 import { DomHandler } from 'primeng/dom';
-import { Header, Footer, PrimeTemplate, PrimeNGConfig } from 'primeng/api';
+import { Footer, PrimeTemplate, PrimeNGConfig } from 'primeng/api';
 import { UniqueComponentId, ZIndexUtils } from 'primeng/utils';
 
 const showAnimation = animation([
@@ -291,7 +291,7 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
             this.lastPageX = event.pageX;
             this.lastPageY = event.pageY;
 
-            if(this.container.style.margin !== '0px') {
+            if (this.container.style.margin !== '0px') {
                 this.container.style.top = '12px';
             }
             this.container.style.margin = '0';
@@ -424,7 +424,7 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
         // Do the same for height.
         if ((!minHeight || newHeight > parseInt(minHeight)) && (offset.top + newHeight) < viewport.height) {
             this._style.height = newHeight + 'px';
-            this.container.style.height = this._style.height;     
+            this.container.style.height = this._style.height;
         }
 
     }
@@ -549,7 +549,7 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
                 this.bindGlobalListeners();
                 this.container.setAttribute(this.id, '');
 
-               
+
 
                 if (this.blockScroll) {
                     DomHandler.addClass(document.body, 'p-overflow-hidden');

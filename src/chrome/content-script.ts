@@ -1,3 +1,4 @@
+import { ContextMenu } from './context-menu';
 import { Floatie } from './floatie/floatie';
 
 class ContentScript {
@@ -22,8 +23,9 @@ class ContentScript {
   }
 
   /* This function inserts an Angular custom element (web component) into the DOM. */
-  insertPageLoader(url: string) {
+  insertPageLoader() {
     if (this.inIframe()) {
+      console.log("Not inserting page-loader in iframe");
       return;
     }
 
@@ -36,7 +38,8 @@ class ContentScript {
     document.body.appendChild(styleFragment);
 
     const tagString = `
-    <sp-iframer url="${url}"></sp-iframer>
+    <sp-iframer></sp-iframer>
+    <link href="${this.getExtensionUrl('styles.css')}" rel="stylesheet">
     <script src="${this.getExtensionUrl('runtime.js')}"></script>
     <script src="${this.getExtensionUrl('polyfills.js')}"></script>
     <script src="${this.getExtensionUrl('vendor.js')}"></script>
@@ -91,4 +94,9 @@ class ContentScript {
     return null;
   }
 }
-new ContentScript();
+const cs = new ContentScript();
+cs.start();
+cs.insertPageLoader();
+
+const cm = new ContextMenu();
+cm.init();

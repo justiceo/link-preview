@@ -1,0 +1,39 @@
+<sp-preview
+  position="top"
+  [headerText]="headerText"
+  [headerIconUrl]="headerIconUrl"
+  [draggable]="true"
+  [visible]="isVisible"
+  [styleClass]="drawerClass"
+  [contentStyleClass]="focusClass"
+  [baseZIndex]="10000"
+  [breakpoints]="{ '700px': '70vw' }"
+  [style]="{ width: '45vw', height: '70vh' }"
+  (onResizeInit)="onResizeStart($event)"
+  (onResizeEnd)="onResizeEnd($event)"
+  (onDragEnd)="onDragEnd($event)"
+  (onHide)="onHide($event)"
+  (onShow)="onShow($event)"
+  (mouseenter)="onMouseOver($event)"
+  (mouseleave)="onMouseOut($event)"
+  (visibleChange)="onVisibleChange($event)"
+  (onOpenInNewTab)="onOpenInNewTab($event)"
+>
+  <iframe
+    *ngIf="!unsupportedHost"
+    #iframe
+    [src]="trustedUrl"
+    width="100%"
+    height="100%"
+  ></iframe>
+  <p-card *ngIf="unsupportedHost" header="Incompatible Host">
+    <p>
+      You are on a page
+      <i>
+        <u>{{ unsupportedHost }}</u>
+      </i>
+      that does not support previews
+    </p>
+    <p>Taking you to a new tab.</p>
+  </p-card>
+</sp-preview>

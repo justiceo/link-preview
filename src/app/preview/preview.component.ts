@@ -16,9 +16,12 @@ const hideAnimation = animation([
     animate('{{transition}}', style({ transform: '{{transform}}', opacity: 0 }))
 ]);
 
+
+type ResizeDirection = 'sw' | 'se';
+
 @Component({
     selector: 'sp-preview',
-    styleUrls: ['preview.component.css'],
+    styleUrls: ['preview.component.scss'],
     templateUrl: "./preview.component.html",
     animations: [
         trigger('animation', [
@@ -38,49 +41,24 @@ const hideAnimation = animation([
 })
 export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
 
-    @Input() header: string = "";
+    @Input() headerText: string = "";
+
+    @Input() headerIconUrl: string = "";
 
     @Input() draggable: boolean = true;
 
     @Input() resizable: boolean = true;
-
-    @Input() get positionLeft(): number {
-        return 0;
-    };
-
-    set positionLeft(_positionLeft: number) {
-        console.log("positionLeft property is deprecated.");
-    }
-
-    @Input() get positionTop(): number {
-        return 0;
-    };
-
-    set positionTop(_positionTop: number) {
-        console.log("positionTop property is deprecated.");
-    }
+    resizeDirection: ResizeDirection = 'sw';
 
     @Input() contentStyle: any;
 
     @Input() contentStyleClass: string = "";
 
-    @Input() modal: boolean = false;
-
     @Input() closeOnEscape: boolean = true;
-
-    @Input() dismissableMask: boolean = false;
 
     @Input() rtl: boolean = false;
 
     @Input() closable: boolean = true;
-
-    @Input() get responsive(): boolean {
-        return false;
-    };
-
-    set responsive(_responsive: boolean) {
-        console.log("Responsive property is deprecated.");
-    }
 
     @Input() appendTo: any;
 
@@ -88,17 +66,7 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
 
     @Input() styleClass: string = "";
 
-    @Input() maskStyleClass: string = "";
-
     @Input() showHeader: boolean = true;
-
-    @Input() get breakpoint(): number {
-        return 649;
-    };
-
-    set breakpoint(_breakpoint: number) {
-        console.log("Breakpoint property is not utilized and deprecated, use breakpoints or CSS media queries instead.");
-    }
 
     @Input() blockScroll: boolean = false;
 
@@ -112,25 +80,19 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
 
     @Input() focusOnShow: boolean = true;
 
-    @Input() maximizable: boolean = false;
-
     @Input() keepInViewport: boolean = true;
 
     @Input() focusTrap: boolean = true;
 
     @Input() transitionOptions: string = '150ms cubic-bezier(0, 0, 0.2, 1)';
 
+    newTabIcon: string = "pi pi-arrow-up-right";
+
     @Input() closeIcon: string = 'pi pi-times';
 
     @Input() closeAriaLabel: string = "";
 
     @Input() closeTabindex: string = "-1";
-
-    @Input() minimizeIcon: string = 'pi pi-window-minimize';
-
-    @Input() maximizeIcon: string = 'pi pi-window-maximize';
-
-    @ContentChild(Header) headerFacet!: QueryList<Header>;
 
     @ContentChild(Footer) footerFacet!: QueryList<Footer>;
 
@@ -154,17 +116,13 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
 
     @Output() onDragEnd: EventEmitter<any> = new EventEmitter();
 
-    @Output() onMaximize: EventEmitter<any> = new EventEmitter();
-
-    headerTemplate!: TemplateRef<any>;
+    @Output() onOpenInNewTab: EventEmitter<any> = new EventEmitter();
 
     contentTemplate!: TemplateRef<any>;
 
     footerTemplate!: TemplateRef<any>;
 
     _visible!: boolean;
-
-    maskVisible!: boolean;
 
     container!: HTMLDivElement;
 
@@ -184,13 +142,9 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
 
     documentEscapeListener?: Function;
 
-    maskClickListener?: Function;
-
     lastPageX: number = 0;
 
     lastPageY: number = 0;
-
-    maximized: boolean = false;
 
     id: string = UniqueComponentId();
 
@@ -212,7 +166,6 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
         this.templates.forEach((item) => {
             switch (item.getType()) {
                 case 'header':
-                    this.headerTemplate = item.template;
                     break;
 
                 case 'content':
@@ -241,10 +194,6 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
     }
     set visible(value: any) {
         this._visible = value;
-
-        if (this._visible && !this.maskVisible) {
-            this.maskVisible = true;
-        }
     }
 
     @Input() get style(): any {
@@ -301,54 +250,8 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
         event.preventDefault();
     }
 
-    enableModality() {
-        if (this.closable && this.dismissableMask) {
-            this.maskClickListener = this.renderer.listen(this.wrapper, 'mousedown', (event: any) => {
-                if (this.wrapper && this.wrapper.isSameNode(event.target)) {
-                    this.close(event);
-                }
-            });
-        }
-
-        if (this.modal) {
-            DomHandler.addClass(document.body, 'p-overflow-hidden');
-        }
-    }
-
-    disableModality() {
-        if (this.wrapper) {
-            if (this.dismissableMask) {
-                this.unbindMaskClickListener();
-            }
-
-            if (this.modal) {
-                DomHandler.removeClass(document.body, 'p-overflow-hidden');
-            }
-
-            if (!(this.cd as ViewRef).destroyed) {
-                this.cd.detectChanges();
-            }
-        }
-    }
-
-    maximize() {
-        this.maximized = !this.maximized;
-
-        if (!this.modal && !this.blockScroll) {
-            if (this.maximized)
-                DomHandler.addClass(document.body, 'p-overflow-hidden');
-            else
-                DomHandler.removeClass(document.body, 'p-overflow-hidden');
-        }
-
-        this.onMaximize.emit({ 'maximized': this.maximized });
-    }
-
-    unbindMaskClickListener() {
-        if (this.maskClickListener) {
-            this.maskClickListener();
-            this.maskClickListener = undefined;
-        }
+    openInNewTab() {
+        this.onOpenInNewTab.emit("new_tab_click");
     }
 
     moveOnTop() {
@@ -388,6 +291,9 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
             this.lastPageX = event.pageX;
             this.lastPageY = event.pageY;
 
+            if(this.container.style.margin !== '0px') {
+                this.container.style.top = '12px';
+            }
             this.container.style.margin = '0';
             DomHandler.addClass(document.body, 'p-unselectable-text');
         }
@@ -481,9 +387,10 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
         this.resetPosition();
     }
 
-    initResize(event: MouseEvent) {
+    initResize(event: MouseEvent, direction: ResizeDirection) {
         if (this.resizable) {
             this.resizing = true;
+            this.resizeDirection = direction;
             this.lastPageX = event.pageX;
             this.lastPageY = event.pageY;
             DomHandler.addClass(document.body, 'p-unselectable-text');
@@ -492,49 +399,43 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
     }
 
     onResize(event: MouseEvent) {
-        if (this.resizing) {
-            let deltaX = event.pageX - this.lastPageX;
-            let deltaY = event.pageY - this.lastPageY;
-            let containerWidth = DomHandler.getOuterWidth(this.container);
-            let containerHeight = DomHandler.getOuterHeight(this.container);
-            let contentHeight = DomHandler.getOuterHeight(this.contentViewChild.nativeElement);
-            let newWidth = containerWidth + deltaX;
-            let newHeight = containerHeight + deltaY;
-            let minWidth = this.container.style.minWidth;
-            let minHeight = this.container.style.minHeight;
-            let offset = this.container.getBoundingClientRect();
-            let viewport = DomHandler.getViewport();
-            let hasBeenDragged = !parseInt(this.container.style.top) || !parseInt(this.container.style.left);
-
-            if (hasBeenDragged) {
-                newWidth += deltaX;
-                newHeight += deltaY;
-            }
-
-            if ((!minWidth || newWidth > parseInt(minWidth)) && (offset.left + newWidth) < viewport.width) {
-                this._style.width = newWidth + 'px';
-                this.container.style.width = this._style.width;
-            }
-
-            if ((!minHeight || newHeight > parseInt(minHeight)) && (offset.top + newHeight) < viewport.height) {
-                this.contentViewChild.nativeElement.style.height = contentHeight + newHeight - containerHeight + 'px';
-
-                if (this._style.height) {
-                    this._style.height = newHeight + 'px';
-                    this.container.style.height = this._style.height;
-                }
-            }
-
-            this.lastPageX = event.pageX;
-            this.lastPageY = event.pageY;
+        if (!this.resizing) {
+            return;
         }
+
+        // Get existing dimensions.
+        let offset = this.container.getBoundingClientRect();
+        let minWidth = this.container.style.minWidth;
+        let minHeight = this.container.style.minHeight;
+        let viewport = DomHandler.getViewport();
+
+        // TODO: Handle sw direction.
+
+        // Compute new dimensions.
+        let newWidth = event.pageX - offset.x;
+        let newHeight = event.pageY - offset.y;
+
+        // Check that newWidth is greater than minWidth and doesn't shoot off viewport.
+        if ((!minWidth || newWidth > parseInt(minWidth)) && (offset.left + newWidth) < viewport.width) {
+            this._style.width = newWidth + 'px';
+            this.container.style.width = this._style.width;
+        }
+
+        // Do the same for height.
+        if ((!minHeight || newHeight > parseInt(minHeight)) && (offset.top + newHeight) < viewport.height) {
+            this._style.height = newHeight + 'px';
+            this.container.style.height = this._style.height;     
+        }
+
     }
 
     resizeEnd(event: any) {
         if (this.resizing) {
-            this.resizing = false;
-            DomHandler.removeClass(document.body, 'p-unselectable-text');
-            this.onResizeEnd.emit(event);
+            this.zone.run(() => {
+                this.resizing = false;
+                DomHandler.removeClass(document.body, 'p-unselectable-text');
+                this.onResizeEnd.emit(event);
+            })
         }
     }
 
@@ -648,11 +549,9 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
                 this.bindGlobalListeners();
                 this.container.setAttribute(this.id, '');
 
-                if (this.modal) {
-                    this.enableModality();
-                }
+               
 
-                if (!this.modal && this.blockScroll) {
+                if (this.blockScroll) {
                     DomHandler.addClass(document.body, 'p-overflow-hidden');
                 }
 
@@ -662,9 +561,6 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
                 break;
 
             case 'void':
-                if (this.wrapper && this.modal) {
-                    DomHandler.addClass(this.wrapper, 'p-component-overlay-leave');
-                }
                 break;
         }
     }
@@ -684,17 +580,6 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
     onContainerDestroy() {
         this.unbindGlobalListeners();
         this.dragging = false;
-
-        this.maskVisible = false;
-
-        if (this.maximized) {
-            DomHandler.removeClass(document.body, 'p-overflow-hidden');
-            this.maximized = false;
-        }
-
-        if (this.modal) {
-            this.disableModality();
-        }
 
         if (this.blockScroll) {
             DomHandler.removeClass(document.body, 'p-overflow-hidden');

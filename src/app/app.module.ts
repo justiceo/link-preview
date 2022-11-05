@@ -22,9 +22,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Router } from '@angular/router';
 import { PageLoaderComponent } from './page-loader/page-loader.component';
+import { IFramerComponent } from './iframer/iframer.component';
 
 @NgModule({
-  declarations: [AppComponent, PageLoaderComponent],
+  declarations: [AppComponent, PageLoaderComponent, IFramerComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

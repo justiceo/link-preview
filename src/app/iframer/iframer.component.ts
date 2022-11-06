@@ -26,7 +26,7 @@ export class IFramerComponent implements AfterViewInit {
   headerText: string = "";
   headerIconUrlBase = "https://www.google.com/s2/favicons?domain=";
   headerIconUrl: string = "";
-  @ViewChild("iframe") iframe!: ElementRef;
+  @ViewChild("iframe") iframe!: ElementRef<HTMLIFrameElement>;
 
   constructor(
     private sanitizer: DomSanitizer,
@@ -62,7 +62,7 @@ export class IFramerComponent implements AfterViewInit {
         } else if (e.data.action === 'search') {
           url = 'https://google.com/search?igu=1&q=' + e.data.data;
         } else if (e.data.action === 'load') {
-          this.headerText = new URL(e.data.data.href).hostname;
+          this.headerText = new URL(e.data.href).hostname;
           this.headerIconUrl = this.headerIconUrlBase + this.headerText;
         } else if (e.data.action === 'navigate') {
           url = e.data.href;

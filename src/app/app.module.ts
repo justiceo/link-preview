@@ -1,5 +1,6 @@
 import {
   ApplicationRef,
+  APP_INITIALIZER,
   DoBootstrap,
   ErrorHandler,
   Injector,
@@ -22,7 +23,28 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Router } from '@angular/router';
 import { IFramerComponent } from './iframer/iframer.component';
+import { environment } from 'src/environments/environment';
 
+let sentryProviders: any[] = [];
+if (environment.production) {
+  sentryProviders = [{
+    provide: ErrorHandler,
+    useValue: Sentry.createErrorHandler({
+      showDialog: true,
+    }),
+  },
+  {
+    provide: Sentry.TraceService,
+    deps: [Router],
+  },
+  {
+    provide: APP_INITIALIZER,
+    useFactory: () => () => { },
+    deps: [Sentry.TraceService],
+    multi: true,
+  },
+  ];
+}
 @NgModule({
   declarations: [AppComponent, IFramerComponent],
   imports: [
@@ -38,24 +60,15 @@ import { IFramerComponent } from './iframer/iframer.component';
   ],
   providers: [
     {
-      provide: ErrorHandler,
-      useValue: Sentry.createErrorHandler({
-        showDialog: true,
-      }),
-    },
-    {
-      provide: Sentry.TraceService,
-      deps: [Router],
-    },
-    {
       provide: APP_BASE_HREF,
       useValue: '/',
     },
+    ...sentryProviders
   ],
 })
 export class AppModule implements DoBootstrap {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  constructor(private injector: Injector, trace: Sentry.TraceService) { }
+  constructor(private injector: Injector) { }
   ngDoBootstrap(appRef: ApplicationRef) {
     if (document.querySelector('sp-root')) {
       appRef.bootstrap(AppComponent);

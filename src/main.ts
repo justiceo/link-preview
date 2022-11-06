@@ -9,29 +9,32 @@ import { environment } from './environments/environment';
 
 if (environment.production) {
   enableProdMode();
+  initSentry();
 }
 
-Sentry.init({
-  dsn: 'https://e3cc3436f33741a996dbfdd7f2f3ed59@o526305.ingest.sentry.io/6371071',
-  integrations: [
-    /*
-     * Registers and configures the Tracing integration,
-     * which automatically instruments your application to monitor its
-     * performance, including custom Angular routing instrumentation
-     */
-    new BrowserTracing({
-      tracingOrigins: ['localhost', 'https://yourserver.io/api'],
-      routingInstrumentation: Sentry.routingInstrumentation,
-    }),
-  ],
+function initSentry() {
+  Sentry.init({
+    dsn: 'https://e3cc3436f33741a996dbfdd7f2f3ed59@o526305.ingest.sentry.io/6371071',
+    integrations: [
+      /*
+       * Registers and configures the Tracing integration,
+       * which automatically instruments your application to monitor its
+       * performance, including custom Angular routing instrumentation
+       */
+      new BrowserTracing({
+        tracingOrigins: ['localhost', 'https://yourserver.io/api'],
+        routingInstrumentation: Sentry.routingInstrumentation,
+      }),
+    ],
 
-  /*
-   * Set tracesSampleRate to 1.0 to capture 100%
-   * of transactions for performance monitoring.
-   * We recommend adjusting this value in production
-   */
-  tracesSampleRate: 1.0,
-});
+    /*
+     * Set tracesSampleRate to 1.0 to capture 100%
+     * of transactions for performance monitoring.
+     * We recommend adjusting this value in production
+     */
+    tracesSampleRate: 1.0,
+  });
+}
 
 platformBrowserDynamic()
   .bootstrapModule(AppModule)

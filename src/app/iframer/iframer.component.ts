@@ -36,11 +36,7 @@ export class IFramerComponent implements AfterViewInit {
   ngAfterViewInit() {
     this.isVisible = false; // Hide the tiny dialog that was shown during init.
     this.listenForCspError();
-    this.listenForUrlUpdates();
-    setTimeout(() => {
-      const channel = new BroadcastChannel('floatie_broadcast');
-      channel.postMessage({ action: 'preview', data: 'https://example.com' });
-    }, 2000)
+    this.listenForBroadcasts();
   }
 
   listenForCspError() {
@@ -55,37 +51,46 @@ export class IFramerComponent implements AfterViewInit {
     });
   }
 
-  listenForUrlUpdates() {
+  listenForBroadcasts() {
     const channel = new BroadcastChannel('floatie_broadcast');
     channel.onmessage = (e) => {
+      console.log('ng: received broadcast ', e.data);
       this.ngZone.run(() => {
-        if (e.data.action !== 'preview') {
-          return;
+        let url;
+        if (e.data.action === 'preview') {
+          url = e.data.data;
+        } else if (e.data.action === 'search') {
+          url = 'https://google.com/search?igu=1&q=' + e.data.data;
         }
-        console.log('Received broadcast to preview', e.data.data);
-        try {
-          this.url = new URL(e.data.data);
-        } catch (e) {
-          console.error(e);
-          return;
+        if(url) {
+          this.previewUrl(url);
         }
-        this.trustedUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
-          this.url.href
-        );
-        if (this.unsupportedHost) {
-          window.open(this.url, '_blank');
-          return;
-        }
-
-        this.headerText = this.url.hostname;
-        this.headerIconUrl = this.headerIconUrlBase + this.url.hostname;
-        this.width = '50vw';
-        this.height = '70vh';
-        this.isVisible = true;
-        this.focusClass = '';
-        this.drawerClass = '';
       });
     };
+  }
+
+  previewUrl(url: string) {
+    try {
+      this.url = new URL(url);
+    } catch (e) {
+      console.error(e);
+      return;
+    }
+    this.trustedUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
+      this.url.href
+    );
+    if (this.unsupportedHost) {
+      window.open(this.url, '_blank');
+      return;
+    }
+
+    this.headerText = this.url.hostname;
+    this.headerIconUrl = this.headerIconUrlBase + this.url.hostname;
+    this.width = '50vw';
+    this.height = '70vh';
+    this.isVisible = true;
+    this.focusClass = '';
+    this.drawerClass = '';
   }
 
   onResizeStart(e: any) {

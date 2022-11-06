@@ -23,9 +23,9 @@ const f = new Floatie();
 f.startListening();
 const bc = new BroadcastChannel(f.getChannelName());
 bc.onmessage = (ev) => {
-    console.log("Demo received message: ", ev);
-    const notice =  document.getElementById("notice");
-    if(notice) {
-        notice.innerHTML = `Action result: ${ev.data.action} "${ev.data.data}"`;
-    }
+  console.log("Demo received message: ", ev);
+  const notice = document.getElementById("notice");
+  if (notice) {
+    notice.innerHTML = `Action result: ${ev.data.action} "${ev.data.data}"`;
+  }
 };

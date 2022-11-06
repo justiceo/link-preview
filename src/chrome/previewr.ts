@@ -2,7 +2,7 @@
 // This class is responsible to loading/reloading/unloading the angular app into the UI.
 export class Previewr {
     getExtensionUrl = chrome.runtime.getURL;
-    
+
     /* This function inserts an Angular custom element (web component) into the DOM. */
     insertPageLoader() {
         if (this.inIframe()) {

@@ -3,7 +3,7 @@ export class IFrameHelper {
     channelName = "iframe-helper";
     channel?: chrome.runtime.Port;
     constructor() {
-        if(this.inIframe()) {
+        if (this.inIframe()) {
             this.channel = chrome.runtime.connect({ name: this.channelName });
         }
 
@@ -42,9 +42,9 @@ export class IFrameHelper {
                     console.error("Prevented click propagation and posting navigate");
                     // TODO: Add target origin instead of "*". https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage
                     this.sendMessage({
-                        action: 'navigate', 
-                        href: targetEl.href, 
-                        source: window.location.href, 
+                        action: 'navigate',
+                        href: targetEl.href,
+                        source: window.location.href,
                         sourceFrame: this.getFrameName(),
                     });
                 }
@@ -71,7 +71,7 @@ export class IFrameHelper {
     }
 
 
-  // Returns a truthy value (the link element) if event target is a link.
+    // Returns a truthy value (the link element) if event target is a link.
     getLinkTarget(e: MouseEvent | KeyboardEvent): EventTarget | null {
         var target: any = e.target;
         // If the <a> element contains other elements, we traverse the tree to find the anchor element clicked:

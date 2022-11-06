@@ -24,7 +24,7 @@ class ContentScript {
     this.iframeHelper.registerListeners();
 
     window.addEventListener('message', (e) => {
-      if(e.data.sourceFrame !== 'iframer') {
+      if (e.data.sourceFrame !== 'iframer') {
         console.log("Ignoring message not from iframer");
         return;
       }

@@ -31,7 +31,7 @@ export class IFramerComponent implements AfterViewInit {
   constructor(
     private sanitizer: DomSanitizer,
     private ngZone: NgZone,
-  ) {}
+  ) { }
 
   ngAfterViewInit() {
     this.isVisible = false; // Hide the tiny dialog that was shown during init.
@@ -69,7 +69,7 @@ export class IFramerComponent implements AfterViewInit {
         } else {
           console.error("Unhandled action", e.data);
         }
-        if(url) {
+        if (url) {
           this.previewUrl(url);
         }
       });
@@ -150,7 +150,7 @@ export class IFramerComponent implements AfterViewInit {
      */
   }
 
-  onLoaded(e:any) {
+  onLoaded(e: any) {
     console.info("#onLoaded", e);
     /*
      * While this does not tell us which URL is loaded,

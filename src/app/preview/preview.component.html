@@ -15,19 +15,19 @@
         [@animation]="{value: 'visible', params: {transform: transformOptions, transition: transitionOptions}}"
         (@animation.start)="onAnimationStart($event)" (@animation.done)="onAnimationEnd($event)" role="dialog"
         [attr.aria-labelledby]="id + '-label'">
-        <div *ngIf="resizable" class="p-resizable-handle p-resize-sw" style="z-index: 90;" (mousedown)="initResize($event, 'sw')"></div>
-        <div *ngIf="resizable" class="p-resizable-handle p-resize-se" style="z-index: 90;" (mousedown)="initResize($event, 'se')"></div>
+        <div *ngIf="resizable" class="p-resizable-handle p-resize-sw" style="z-index: 90;"
+            (mousedown)="initResize($event, 'sw')"></div>
+        <div *ngIf="resizable" class="p-resizable-handle p-resize-se" style="z-index: 90;"
+            (mousedown)="initResize($event, 'se')"></div>
         <div #titlebar class="p-dialog-header" (mousedown)="initDrag($event)" *ngIf="showHeader">
             <span [attr.id]="id + '-label'" class="p-dialog-title">
-                <img class="p-dialog-title-icon" [src]="headerIconUrl"/>
+                <img class="p-dialog-title-icon" [src]="headerIconUrl" />
                 <span class="p-dialog-title-text">{{headerText}}</span>
             </span>
             <div class="p-dialog-header-icons">
-                <button type="button"
-                    [ngClass]="{'p-dialog-header-icon p-dialog-header-new-tab p-link':true}" (click)="openInNewTab()"
-                    (keydown.enter)="openInNewTab()" tabindex="-1" pRipple>
-                    <span class="p-dialog-header-new-tab-icon"
-                        [ngClass]="newTabIcon"></span>
+                <button type="button" [ngClass]="{'p-dialog-header-icon p-dialog-header-new-tab p-link':true}"
+                    (click)="openInNewTab()" (keydown.enter)="openInNewTab()" tabindex="-1" pRipple>
+                    <span class="p-dialog-header-new-tab-icon" [ngClass]="newTabIcon"></span>
                 </button>
                 <button *ngIf="closable" type="button"
                     [ngClass]="{'p-dialog-header-icon p-dialog-header-close p-link':true}"

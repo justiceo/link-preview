@@ -23,22 +23,13 @@ class ContentScript {
     this.cMenu.init();
     this.iframeHelper.registerListeners();
 
-    window.addEventListener('message', (e) => {
-      if (e.data.sourceFrame !== 'iframer') {
-        console.log("Ignoring message not from iframer");
-        return;
+    chrome.runtime.onMessage.addListener(
+      (request, sender, sendResponse) => {
+        console.log("cs: received", request, 'from', sender);
+        this.floatieChannel.postMessage(request);
+        sendResponse("ok");
       }
-      console.log("cs: broadcasting window message: ", e.data, 'from: ', window.location.href);
-      this.floatieChannel.postMessage(e.data);
-    }, true);
-
-    // Or.
-
-    var port = chrome.runtime.connect({ name: this.iframeHelper.getChannelName() });
-    port.onMessage.addListener((m) => {
-      console.log("cs: broadcasting extension message: ", m, 'from: ', window.location.href);
-      this.floatieChannel.postMessage(m);
-    })
+    );
   }
 
   stop() {
@@ -48,3 +39,4 @@ class ContentScript {
 
 const cs = new ContentScript();
 cs.start();
+console.log("initialized cs on window:", window.location, "for document:", document.location)

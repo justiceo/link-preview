@@ -40,11 +40,18 @@ chrome.runtime.onInstalled.addListener(onInstalled);
 
 const storageProvider = new ChromeStorageProvider();
 const onMessage = (
-  message: StorageMessage,
+  message: any,
   sender: chrome.runtime.MessageSender,
   callback: (response?: any) => void
 ) => {
   console.log('Received message: ', message, ' from: ', sender);
+
+  // For now, bounce-back message to the content script.
+  chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+    chrome.tabs.sendMessage(tabs[0].id!, message, (response) => {
+      callback(response);
+    });
+  });
 
   // TODO Ensure sender.id is this extension. Confirm works for content-script.
   switch (message.type) {

@@ -1,12 +1,6 @@
 // This script is executed inside the preview (i.e. document is iframe).
 export class IFrameHelper {
-    channelName = "iframe-helper";
-    channel?: chrome.runtime.Port;
     constructor() {
-        if (this.inIframe()) {
-            this.channel = chrome.runtime.connect({ name: this.channelName });
-        }
-
         /*
          * Favicon URL request, Window.Title request, apply custom CSS.
          * Redirect clicks.
@@ -14,23 +8,10 @@ export class IFrameHelper {
 
     }
 
-    getChannelName() {
-        return this.channelName;
-    }
-
-    inIframe() {
-        try {
-            return window.self !== window.top;
-        } catch (e) {
-            return true;
-        }
-    }
-
-    getFrameName() {
-        return window.name;
-    }
-
     registerListeners() {
+        if (!this.inIframe()) {
+            return;
+        }
         document.addEventListener(
             'click',
             (e) => {
@@ -61,15 +42,37 @@ export class IFrameHelper {
             })
         });
 
-        window.addEventListener('unload', () => {
-            console.error(this.getFrameName(), 'unload fired')
+        window.addEventListener('unload', (e) => {
+            console.error(this.getFrameName(), 'unload fired', e)
             this.sendMessage({
                 action: 'unload',
                 href: document.location.href,
             })
         });
+
+        addEventListener('readystatechange', (e) => {
+            switch (document.readyState) {
+                case 'loading':
+                    this.sendMessage({
+                        action: 'loading',
+                        href: document.location.href,
+                    });
+            }
+
+        });
     }
 
+    inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    getFrameName() {
+        return window.name;
+    }
 
     // Returns a truthy value (the link element) if event target is a link.
     getLinkTarget(e: MouseEvent | KeyboardEvent): EventTarget | null {
@@ -84,8 +87,8 @@ export class IFrameHelper {
     }
 
     sendMessage(message: any) {
-        window.postMessage(message, "*");
-        // or.
-        this.channel?.postMessage(message);
+        chrome.runtime.sendMessage(message, function (response) {
+            console.log(response);
+        });
     }
 }

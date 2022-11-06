@@ -24,7 +24,7 @@ export class IFramerComponent implements AfterViewInit {
   width = '0px';
   height = '0px';
   headerText: string = "";
-  headerIconUrlBase = "http://www.google.com/s2/favicons?domain=";
+  headerIconUrlBase = "https://www.google.com/s2/favicons?domain=";
   headerIconUrl: string = "";
   @ViewChild("iframe") iframe!: ElementRef;
 
@@ -61,6 +61,13 @@ export class IFramerComponent implements AfterViewInit {
           url = e.data.data;
         } else if (e.data.action === 'search') {
           url = 'https://google.com/search?igu=1&q=' + e.data.data;
+        } else if (e.data.action === 'load') {
+          this.headerText = new URL(e.data.data.href).hostname;
+          this.headerIconUrl = this.headerIconUrlBase + this.headerText;
+        } else if (e.data.action === 'navigate') {
+          url = e.data.data;
+        } else {
+          console.error("Unhandled action", e.data);
         }
         if(url) {
           this.previewUrl(url);
@@ -80,6 +87,7 @@ export class IFramerComponent implements AfterViewInit {
       this.url.href
     );
     if (this.unsupportedHost) {
+      console.warn("unsupported host: ", this.unsupportedHost);
       window.open(this.url, '_blank');
       return;
     }
@@ -139,6 +147,18 @@ export class IFramerComponent implements AfterViewInit {
      * TODO: Disable hiding the panel for easier development.
      * this.focusClass = 'transparent';
      * this.drawerClass = 'parked';
+     */
+  }
+
+  onLoaded(e:any) {
+    console.info("#onLoaded", e);
+    /*
+     * While this does not tell us which URL is loaded,
+     * It can be used to:
+     * 1. Measure time taken to load the page.
+     * 2. End any running 'loading' animation.
+     * 3. Inform that "Open in New Tab" button may not open the expected URL.
+     * 4. Display a backward navigation button.
      */
   }
 

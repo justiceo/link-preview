@@ -22,9 +22,11 @@
   <iframe
     *ngIf="url && !unsupportedHost"
     #iframe
+    (load)="onLoaded($event)"
     [src]="trustedUrl"
     width="100%"
     height="100%"
+    name="iframer"
   ></iframe>
   <p-card *ngIf="unsupportedHost" header="Incompatible Host">
     <p>

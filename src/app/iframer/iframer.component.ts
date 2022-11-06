@@ -141,7 +141,8 @@ export class IFramerComponent implements AfterViewInit {
   onMouseOut(e: MouseEvent) {
     console.debug('onMouseOut: ', e);
     // Ignore mouseout when it's from the right corner.
-    if (window.visualViewport.width - e.clientX < 100) {
+    const viewportWidth = window?.visualViewport?.width ?? 0;
+    if (viewportWidth - e.clientX < 100) {
       return;
     }
     /*

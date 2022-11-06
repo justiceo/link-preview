@@ -17,7 +17,7 @@
   (mouseenter)="onMouseOver($event)"
   (mouseleave)="onMouseOut($event)"
   (visibleChange)="onVisibleChange($event)"
-  (onOpenInNewTab)="onOpenInNewTab($event)"
+  (onOpenInNewTab)="onOpenInNewTab()"
 >
   <iframe
     *ngIf="url && !unsupportedHost"

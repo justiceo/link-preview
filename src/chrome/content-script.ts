@@ -5,17 +5,12 @@ import { Previewr } from './previewr';
 
 class ContentScript {
   floatie = new Floatie();
-  floatieChannel: BroadcastChannel;
+  floatieChannel = new BroadcastChannel(this.floatie.getChannelName());
   cMenu = new ContextMenu();
   iframeHelper = new IFrameHelper();
   previewr = new Previewr();
 
-  constructor() {
-    this.floatieChannel = new BroadcastChannel(this.floatie.getChannelName());
-    this.floatieChannel.onmessage = (ev) => {
-      console.log(`Action result: ${ev.data.action} "${ev.data.data}"`);
-    };
-  }
+  constructor() { }
 
   start() {
     this.floatie.startListening();
@@ -24,10 +19,9 @@ class ContentScript {
     this.iframeHelper.registerListeners();
 
     chrome.runtime.onMessage.addListener(
-      (request, sender, sendResponse) => {
-        console.log("cs: received", request, 'from', sender);
+      (request, sender, callback) => {
         this.floatieChannel.postMessage(request);
-        sendResponse("ok");
+        callback("ok");
       }
     );
   }
@@ -39,4 +33,6 @@ class ContentScript {
 
 const cs = new ContentScript();
 cs.start();
-console.log("initialized cs on window:", window.location, "for document:", document.location)
+
+// There are many iframes in a window. Uncomment below to see.
+// console.log("cs: initialized on window:", window.location)

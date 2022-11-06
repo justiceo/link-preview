@@ -37,7 +37,7 @@
           }
         ],
         "multiline-comment-style": [
-          "warn",
+          "off",
           "starred-block"
         ],
         "no-unused-vars": "off",

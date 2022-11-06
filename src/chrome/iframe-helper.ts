@@ -15,12 +15,11 @@ export class IFrameHelper {
         document.addEventListener(
             'click',
             (e) => {
-                console.error(this.getFrameName(), 'click fired')
                 var targetEl: any = this.getLinkTarget(e);
                 if (targetEl && targetEl.href) {
                     e.stopImmediatePropagation();
                     e.preventDefault();
-                    console.error("Prevented click propagation and posting navigate");
+                    console.debug("Prevented click propagation and posting navigate");
                     // TODO: Add target origin instead of "*". https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage
                     this.sendMessage({
                         action: 'navigate',
@@ -34,7 +33,6 @@ export class IFrameHelper {
         );
 
         window.addEventListener('load', () => {
-            console.error(this.getFrameName(), 'load fired')
             this.sendMessage({
                 action: 'load',
                 href: document.location.href,
@@ -42,11 +40,11 @@ export class IFrameHelper {
             })
         });
 
-        window.addEventListener('unload', (e) => {
-            console.error(this.getFrameName(), 'unload fired', e)
+        window.addEventListener('unload', () => {
             this.sendMessage({
                 action: 'unload',
                 href: document.location.href,
+                sourceFrame: this.getFrameName(),
             })
         });
 
@@ -56,9 +54,9 @@ export class IFrameHelper {
                     this.sendMessage({
                         action: 'loading',
                         href: document.location.href,
+                        sourceFrame: this.getFrameName(),
                     });
             }
-
         });
     }
 
@@ -87,8 +85,7 @@ export class IFrameHelper {
     }
 
     sendMessage(message: any) {
-        chrome.runtime.sendMessage(message, function (response) {
-            console.log(response);
-        });
+        console.debug("#sendMessage", message);
+        chrome.runtime.sendMessage(message);
     }
 }

@@ -7,6 +7,8 @@ import {
   ViewEncapsulation,
 } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { Logger } from '../services/logging/logger';
+import { LoggingService } from '../services/logging/logging.service';
 
 @Component({
   selector: 'sp-iframer',
@@ -27,11 +29,15 @@ export class IFramerComponent implements AfterViewInit {
   headerIconUrlBase = "https://www.google.com/s2/favicons?domain=";
   headerIconUrl: string = "";
   @ViewChild("iframe") iframe!: ElementRef<HTMLIFrameElement>;
+  logger: Logger;
 
   constructor(
     private sanitizer: DomSanitizer,
     private ngZone: NgZone,
-  ) { }
+    loggingService: LoggingService,
+  ) {
+    this.logger = loggingService.getLogger('sp-iframer');
+  }
 
   ngAfterViewInit() {
     this.isVisible = false; // Hide the tiny dialog that was shown during init.
@@ -41,7 +47,7 @@ export class IFramerComponent implements AfterViewInit {
 
   listenForCspError() {
     document.addEventListener('securitypolicyviolation', (e) => {
-      console.error('CSP error', e, e.blockedURI);
+      this.logger.error('CSP error', e, e.blockedURI);
       this.unsupportedHost = window.location.origin;
       // TODO: send a message to background script to open url, there might not be a popup running.
       setTimeout(() => {
@@ -54,7 +60,7 @@ export class IFramerComponent implements AfterViewInit {
   listenForBroadcasts() {
     const channel = new BroadcastChannel('floatie_broadcast');
     channel.onmessage = (e) => {
-      console.log('ng: received broadcast ', e.data);
+      this.logger.log('#onmessage:', e.data);
       this.ngZone.run(() => {
         let url;
         if (e.data.action === 'preview') {
@@ -67,7 +73,7 @@ export class IFramerComponent implements AfterViewInit {
         } else if (e.data.action === 'navigate') {
           url = e.data.href;
         } else {
-          console.error("Unhandled action", e.data);
+          this.logger.warn("Unhandled action", e.data);
         }
         if (url) {
           this.previewUrl(url);
@@ -77,19 +83,18 @@ export class IFramerComponent implements AfterViewInit {
   }
 
   previewUrl(url: string) {
-    console.info("previewing url: ", url);
     try {
       this.url = new URL(url);
     } catch (e) {
-      console.error(e);
+      this.logger.error(e);
       return;
     }
     this.trustedUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
       this.url.href
     );
     if (this.unsupportedHost) {
-      console.warn("unsupported host: ", this.unsupportedHost);
-      window.open(this.url, '_blank');
+      this.logger.warn("Unsupported host: ", this.unsupportedHost);
+      // TODO: Display button to open in new tab.
       return;
     }
 
@@ -103,43 +108,32 @@ export class IFramerComponent implements AfterViewInit {
   }
 
   onResizeStart(e: any) {
-    console.debug('onResizeStart: ', e);
+    this.logger.debug('#onResizeStart: ', e);
   }
   onResizeEnd(e: any) {
-    console.debug('onResizeEnd: ', e);
+    this.logger.debug('#onResizeEnd: ', e);
   }
   onShow(e: any) {
-    console.debug('onShow: ', e);
+    this.logger.debug('#onShow: ', e);
   }
   onHide(e: any) {
-    console.debug('onHide: ', e);
+    this.logger.debug('#onHide: ', e);
   }
   onDragEnd(e: any) {
-    console.debug('onDragEnd: ', e);
+    this.logger.debug('#onDragEnd: ', e);
   }
-  onOpenInNewTab(e: any) {
-    /*
-     * This is susceptible to cross original issues.
-     * Use message-passing as a work-around.
-     */
-    try {
-      const currentFrameUrl = this.iframe.nativeElement.contentWindow?.location?.href;
-      window.open(currentFrameUrl, '_blank');
-    } catch (e) {
-      console.warn(e);
-      window.open(this.url, '_blank');
-    }
+  onOpenInNewTab() {
+    this.logger.log('#onOpenInNewTab: url', this.url);
+    window.open(this.url, '_blank');
   }
   onVisibleChange(isVisible: boolean) {
     this.isVisible = isVisible;
   }
-  onMouseOver(e: MouseEvent) {
-    console.debug('onMouseOver: ', e);
+  onMouseOver(unused: MouseEvent) {
     this.focusClass = '';
     this.drawerClass = '';
   }
   onMouseOut(e: MouseEvent) {
-    console.debug('onMouseOut: ', e);
     // Ignore mouseout when it's from the right corner.
     const viewportWidth = window?.visualViewport?.width ?? 0;
     if (viewportWidth - e.clientX < 100) {
@@ -153,7 +147,7 @@ export class IFramerComponent implements AfterViewInit {
   }
 
   onLoaded(e: any) {
-    console.info("#onLoaded", e);
+    this.logger.debug("#onLoaded", e);
     /*
      * While this does not tell us which URL is loaded,
      * It can be used to:

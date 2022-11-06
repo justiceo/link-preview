@@ -40,8 +40,6 @@ export class AppComponent implements OnInit {
 
     if (matchingRoute) {
       this.router.navigateByUrl(fragment, { skipLocationChange: true });
-    } else {
-      this.logger.error('Invalid fragment ', fragment);
     }
   }
 }

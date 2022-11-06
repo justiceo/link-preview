@@ -91,7 +91,6 @@ export class Floatie {
                 if (timeout) {
                     clearTimeout(timeout);
                 }
-                console.log("hover", e);
                 this.showActions(a.getBoundingClientRect(), a.href, [this.previewButton]);
             });
             a.addEventListener('mouseout', () => {

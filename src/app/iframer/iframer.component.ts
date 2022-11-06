@@ -65,7 +65,7 @@ export class IFramerComponent implements AfterViewInit {
           this.headerText = new URL(e.data.data.href).hostname;
           this.headerIconUrl = this.headerIconUrlBase + this.headerText;
         } else if (e.data.action === 'navigate') {
-          url = e.data.data;
+          url = e.data.href;
         } else {
           console.error("Unhandled action", e.data);
         }
@@ -77,6 +77,7 @@ export class IFramerComponent implements AfterViewInit {
   }
 
   previewUrl(url: string) {
+    console.info("previewing url: ", url);
     try {
       this.url = new URL(url);
     } catch (e) {

@@ -25,6 +25,7 @@ export class IFramerComponent implements AfterViewInit {
   drawerClass = '';
   width = '0px';
   height = '0px';
+  loading = false;
   headerText: string = "";
   headerIconUrlBase = "https://www.google.com/s2/favicons?domain=";
   headerIconUrl: string = "";
@@ -103,6 +104,7 @@ export class IFramerComponent implements AfterViewInit {
     this.width = '50vw';
     this.height = '70vh';
     this.isVisible = true;
+    this.loading = true;
     this.focusClass = '';
     this.drawerClass = '';
   }
@@ -148,6 +150,7 @@ export class IFramerComponent implements AfterViewInit {
 
   onLoaded(e: any) {
     this.logger.debug("#onLoaded", e);
+    this.loading = false;
     /*
      * While this does not tell us which URL is loaded,
      * It can be used to:

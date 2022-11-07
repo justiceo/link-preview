@@ -37,6 +37,9 @@
                 </button>
             </div>
         </div>
+        <div *ngIf="loading" class="p-header-loading-bar">
+            <span class="bar-animation"></span>
+        </div>
         <div #content [ngClass]="'p-dialog-content'" [ngStyle]="contentStyle" [class]="contentStyleClass">
             <ng-content></ng-content>
             <ng-container *ngTemplateOutlet="contentTemplate"></ng-container>

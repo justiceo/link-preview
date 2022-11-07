@@ -94,6 +94,8 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
 
     @Input() closeTabindex: string = "-1";
 
+    @Input() loading = false;
+
     @ContentChild(Footer) footerFacet!: QueryList<Footer>;
 
     @ContentChildren(PrimeTemplate) templates!: QueryList<any>;

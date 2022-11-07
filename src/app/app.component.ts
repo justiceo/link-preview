@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, isDevMode, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { PrimeNGConfig } from 'primeng/api';
 import { Logger } from 'src/app/services/logging/logger';
@@ -24,6 +24,13 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.primengConfig.ripple = true;
     this.addExtensionRedirects();
+
+    if (isDevMode()) {
+      setTimeout(() => {
+        const b = new BroadcastChannel("floatie_broadcast");
+        b.postMessage({ action: 'preview', data: "https://example.org" });
+      }, 2000);
+    }
   }
 
   /**

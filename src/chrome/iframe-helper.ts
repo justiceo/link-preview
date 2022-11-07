@@ -12,22 +12,30 @@ export class IFrameHelper {
         if (!this.inIframe()) {
             return;
         }
+        if (this.getFrameName() !== 'iframer') {
+            return;
+        }
         document.addEventListener(
             'click',
             (e) => {
                 var targetEl: any = this.getLinkTarget(e);
-                if (targetEl && targetEl.href) {
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    console.debug("Prevented click propagation and posting navigate");
-                    // TODO: Add target origin instead of "*". https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage
-                    this.sendMessage({
-                        action: 'navigate',
-                        href: targetEl.href,
-                        source: window.location.href,
-                        sourceFrame: this.getFrameName(),
-                    });
+                if (!targetEl || !targetEl.href) {
+                    return;
                 }
+                if ((targetEl.href as string).startsWith("#")) {
+                    // This is common for internal/fragment navigation.
+                    return;
+                }
+                e.stopImmediatePropagation();
+                e.preventDefault();
+                console.debug("Prevented click propagation and posting navigate");
+                // TODO: Add target origin instead of "*". https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage
+                this.sendMessage({
+                    action: 'navigate',
+                    href: targetEl.href,
+                    source: window.location.href,
+                    sourceFrame: this.getFrameName(),
+                });
             },
             true
         );

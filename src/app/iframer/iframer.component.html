@@ -4,6 +4,7 @@
   [headerIconUrl]="headerIconUrl"
   [draggable]="true"
   [loading]="loading"
+  [showBackButton]="showBackButton"
   [visible]="isVisible"
   [styleClass]="drawerClass"
   [contentStyleClass]="focusClass"
@@ -19,6 +20,7 @@
   (mouseleave)="onMouseOut($event)"
   (visibleChange)="onVisibleChange($event)"
   (onOpenInNewTab)="onOpenInNewTab()"
+  (onBackNav)="onBackNav()"
 >
   <iframe
     *ngIf="url && !unsupportedHost"

@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
       setTimeout(() => {
         const b = new BroadcastChannel("floatie_broadcast");
         b.postMessage({ action: 'preview', data: "https://example.org" });
-      }, 2000);
+      }, 500);
     }
   }
 

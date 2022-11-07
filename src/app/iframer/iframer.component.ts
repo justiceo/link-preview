@@ -31,6 +31,8 @@ export class IFramerComponent implements AfterViewInit {
   headerIconUrl: string = "";
   @ViewChild("iframe") iframe!: ElementRef<HTMLIFrameElement>;
   logger: Logger;
+  navStack: URL[] = [];
+  showBackButton = false;
 
   constructor(
     private sanitizer: DomSanitizer,
@@ -63,39 +65,54 @@ export class IFramerComponent implements AfterViewInit {
     channel.onmessage = (e) => {
       this.logger.log('#onmessage:', e.data);
       this.ngZone.run(() => {
-        let url;
+        // Extract the url from the broadcast.
+        let urlStr;
         if (e.data.action === 'preview') {
-          url = e.data.data;
+          urlStr = e.data.data;
         } else if (e.data.action === 'search') {
-          url = 'https://google.com/search?igu=1&q=' + e.data.data;
+          urlStr = 'https://google.com/search?igu=1&q=' + e.data.data;
         } else if (e.data.action === 'load') {
           this.headerText = new URL(e.data.href).hostname;
           this.headerIconUrl = this.headerIconUrlBase + this.headerText;
         } else if (e.data.action === 'navigate') {
-          url = e.data.href;
+          urlStr = e.data.href;
         } else {
           this.logger.warn("Unhandled action", e.data);
         }
-        if (url) {
-          this.previewUrl(url);
+
+        // Ensure it is valid.
+        if (!urlStr) {
+          return;
         }
+        let newUrl;
+        try {
+          newUrl = new URL(urlStr);
+        } catch (e) {
+          this.logger.error(e);
+          return;
+        }
+
+        // Move the old URL to backstack.
+        if (this.url && this.url.href !== newUrl.href) {
+          this.navStack.push(this.url);
+          this.showBackButton = true;
+        }
+
+        // Preview new URL.
+        this.previewUrl(newUrl);
       });
     };
   }
 
-  previewUrl(url: string) {
-    try {
-      this.url = new URL(url);
-    } catch (e) {
-      this.logger.error(e);
-      return;
-    }
+  previewUrl(url: URL) {
+    this.url = url;
     this.trustedUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
       this.url.href
     );
     if (this.unsupportedHost) {
       this.logger.warn("Unsupported host: ", this.unsupportedHost);
       // TODO: Display button to open in new tab.
+      this.isVisible = true;
       return;
     }
 
@@ -127,6 +144,13 @@ export class IFramerComponent implements AfterViewInit {
   onOpenInNewTab() {
     this.logger.log('#onOpenInNewTab: url', this.url);
     window.open(this.url, '_blank');
+  }
+  onBackNav() {
+    let url = this.navStack.pop();
+    if (url) {
+      this.previewUrl(url);
+    }
+    this.showBackButton = this.navStack.length > 0;
   }
   onVisibleChange(isVisible: boolean) {
     this.isVisible = isVisible;

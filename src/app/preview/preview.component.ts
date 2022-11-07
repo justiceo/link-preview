@@ -87,6 +87,7 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
     @Input() transitionOptions: string = '150ms cubic-bezier(0, 0, 0.2, 1)';
 
     newTabIcon: string = "pi pi-arrow-up-right";
+    backButtonIcon = "pi pi-arrow-left";
 
     @Input() closeIcon: string = 'pi pi-times';
 
@@ -95,6 +96,8 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
     @Input() closeTabindex: string = "-1";
 
     @Input() loading = false;
+
+    @Input() showBackButton = false;
 
     @ContentChild(Footer) footerFacet!: QueryList<Footer>;
 
@@ -119,6 +122,8 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
     @Output() onDragEnd: EventEmitter<any> = new EventEmitter();
 
     @Output() onOpenInNewTab: EventEmitter<any> = new EventEmitter();
+
+    @Output() onBackNav: EventEmitter<any> = new EventEmitter();
 
     contentTemplate!: TemplateRef<any>;
 
@@ -254,6 +259,10 @@ export class PreviewComponent implements AfterContentInit, OnInit, OnDestroy {
 
     openInNewTab() {
         this.onOpenInNewTab.emit("new_tab_click");
+    }
+
+    backButtonClick() {
+        this.onBackNav.emit("on_back_nav");
     }
 
     moveOnTop() {

@@ -60,6 +60,12 @@ from inside it so including directly. */
 
         .p-dialog-title {
             display: inline-flex;
+            align-items: center;
+
+            button {
+                margin-right: 0;
+                margin-left: 0.5rem;
+            }
         }
 
         img.p-dialog-title-icon {

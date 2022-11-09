@@ -69,7 +69,11 @@ export class IFramerComponent implements AfterViewInit {
       this.ngZone.run(() => {
         // Extract the url from the broadcast.
         let urlStr;
-        if (e.data.action === 'preview') {
+        if (e.data.action === 'copy') {
+          navigator.clipboard.writeText(e.data.data);
+          return;
+        }
+        else if (e.data.action === 'preview') {
           urlStr = e.data.data;
         } else if (e.data.action === 'search') {
           urlStr = 'https://google.com/search?igu=1&q=' + e.data.data;

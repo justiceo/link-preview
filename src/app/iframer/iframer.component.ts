@@ -50,11 +50,13 @@ export class IFramerComponent implements AfterViewInit {
 
   listenForCspError() {
     document.addEventListener('securitypolicyviolation', (e) => {
+      if (window.name !== 'iframer') {
+        return;
+      }
       this.logger.error('CSP error', e, e.blockedURI);
       this.unsupportedHost = window.location.origin;
       // TODO: send a message to background script to open url, there might not be a popup running.
       setTimeout(() => {
-        window.open(this.url, '_blank');
         this.isVisible = false;
       }, 1000);
     });

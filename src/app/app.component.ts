@@ -27,8 +27,7 @@ export class AppComponent implements OnInit {
 
     if (isDevMode()) {
       setTimeout(() => {
-        const b = new BroadcastChannel("floatie_broadcast");
-        b.postMessage({ action: 'preview', data: "https://example.org" });
+        window.postMessage({ action: 'preview', data: "https://example.org" }, window.location.origin);
       }, 500);
     }
   }

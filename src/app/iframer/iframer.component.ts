@@ -10,6 +10,8 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { Logger } from '../services/logging/logger';
 import { LoggingService } from '../services/logging/logging.service';
 
+type Message = { action: string, data: any, href: string };
+
 @Component({
   selector: 'sp-iframer',
   templateUrl: './iframer.component.html',
@@ -45,7 +47,7 @@ export class IFramerComponent implements AfterViewInit {
   ngAfterViewInit() {
     this.isVisible = false; // Hide the tiny dialog that was shown during init.
     this.listenForCspError();
-    this.listenForBroadcasts();
+    this.listenForWindowMessages();
   }
 
   listenForCspError() {
@@ -62,52 +64,58 @@ export class IFramerComponent implements AfterViewInit {
     });
   }
 
-  listenForBroadcasts() {
-    const channel = new BroadcastChannel('floatie_broadcast');
-    channel.onmessage = (e) => {
-      this.logger.log('#onmessage:', e.data);
-      this.ngZone.run(() => {
-        // Extract the url from the broadcast.
-        let urlStr;
-        if (e.data.action === 'copy') {
-          navigator.clipboard.writeText(e.data.data);
-          return;
-        }
-        else if (e.data.action === 'preview') {
-          urlStr = e.data.data;
-        } else if (e.data.action === 'search') {
-          urlStr = 'https://google.com/search?igu=1&q=' + e.data.data;
-        } else if (e.data.action === 'load') {
-          this.headerText = new URL(e.data.href).hostname;
-          this.headerIconUrl = this.headerIconUrlBase + this.headerText;
-        } else if (e.data.action === 'navigate') {
-          urlStr = e.data.href;
-        } else {
-          this.logger.warn("Unhandled action", e.data);
-        }
+  listenForWindowMessages() {
+    window.addEventListener("message", (event) => {
+      if (event.origin !== window.location.origin) {
+        this.logger.warn("Ignoring message from different origin", event.origin, event.data);
+        return;
+      }
 
-        // Ensure it is valid.
-        if (!urlStr) {
-          return;
-        }
-        let newUrl;
-        try {
-          newUrl = new URL(urlStr);
-        } catch (e) {
-          this.logger.error(e);
-          return;
-        }
+      this.logger.log("#WindowMessage: ", event);
+      this.handleMessage(event.data);
+    }, false);
+  }
 
-        // Move the old URL to backstack.
-        if (this.url && this.url.href !== newUrl.href) {
-          this.navStack.push(this.url);
-          this.showBackButton = true;
-        }
+  handleMessage(message: Message) {
+    // Extract the url from the message.
+    let urlStr;
+    if (message.action === 'copy') {
+      navigator.clipboard.writeText(message.data);
+      return;
+    }
+    else if (message.action === 'preview') {
+      urlStr = message.data;
+    } else if (message.action === 'search') {
+      urlStr = 'https://google.com/search?igu=1&q=' + message.data;
+    } else if (message.action === 'load') {
+      this.headerText = new URL(message.href).hostname;
+      this.headerIconUrl = this.headerIconUrlBase + this.headerText;
+    } else if (message.action === 'navigate') {
+      urlStr = message.href;
+    } else {
+      this.logger.warn("Unhandled action", message);
+    }
 
-        // Preview new URL.
-        this.previewUrl(newUrl);
-      });
-    };
+    // Ensure it is valid.
+    if (!urlStr) {
+      return;
+    }
+    let newUrl;
+    try {
+      newUrl = new URL(urlStr);
+    } catch (e) {
+      this.logger.error(e);
+      return;
+    }
+
+    // Move the old URL to backstack.
+    if (this.url && this.url.href !== newUrl.href) {
+      this.navStack.push(this.url);
+      this.showBackButton = true;
+    }
+
+    // Preview new URL.
+    this.previewUrl(newUrl);
   }
 
   previewUrl(url: URL) {

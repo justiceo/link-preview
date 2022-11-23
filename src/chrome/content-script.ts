@@ -5,7 +5,6 @@ import { Previewr } from './previewr';
 
 class ContentScript {
   floatie = new Floatie();
-  floatieChannel = new BroadcastChannel(this.floatie.getChannelName());
   cMenu = new ContextMenu();
   iframeHelper = new IFrameHelper();
   previewr = new Previewr();
@@ -20,7 +19,8 @@ class ContentScript {
 
     chrome.runtime.onMessage.addListener(
       (request, sender, callback) => {
-        this.floatieChannel.postMessage(request);
+        console.debug("Re-posting message for DOM: ", request);
+        window.postMessage(request);
         callback("ok");
       }
     );

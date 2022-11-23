@@ -9,8 +9,6 @@ import "./floatie.scss";
  * TODO: rename to Popover.ts.
  */
 export class Floatie {
-    channelName = "floatie_broadcast";
-    channel = new BroadcastChannel(this.channelName);
     container: HTMLElement;
     copyButton: HTMLElement;
     searchButton: HTMLElement;
@@ -50,16 +48,15 @@ export class Floatie {
         console.debug("Initialized floatie");
     }
 
-    getChannelName(): string {
-        return this.channelName;
-    }
-
     startListening(): void {
         document.body.appendChild(this.documentFragment);
 
         // Window level events.
         window.onscroll = () => this.hideAll();
         window.onresize = () => this.hideAll();
+
+        // TODO: Do not display in contextMenu or contentEditable.
+        // window.oncontextmenu = () => this.hideAll();
 
         // Listen for mouse up events and suggest search if there's a selection.
         document.onmouseup = (e) => this.maybeShow(e);
@@ -102,9 +99,6 @@ export class Floatie {
     stopListening(): void {
         // Remove all UI elements.
         document.body.removeChild(this.documentFragment);
-
-        // Close channel to stop any broadcasts.
-        this.channel.close();
 
         // Remove window/document. listeners.
         document.removeEventListener('onmouseup', () => { });
@@ -233,11 +227,16 @@ export class Floatie {
         buttons.forEach(b => {
             b.style.display = 'inline-block';
             b.onclick = () => {
-                this.channel.postMessage({ action: b.getAttribute("data-action"), data: text });
+                this.sendMessage(b.getAttribute("data-action") || "unknown-action", text)
                 this.hideAll();
             }
         });
-        // buttons[0].eventListeners
+    }
+
+    sendMessage(action: string, data: any) {
+        window.postMessage({ action: action, data: data }, window.location.origin);
+        // chrome.runtime.sendMessage won't put because angular is executed in page context.
+        // broadcast.postMessage is not ideal because multiple tabs of same origin get it.
     }
 
     // It should be a no-op to call this multiple times.

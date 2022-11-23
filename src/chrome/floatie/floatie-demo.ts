@@ -21,11 +21,15 @@ printer took a galley of type and scrambled it to make a type specimen book. It 
 
 const f = new Floatie();
 f.startListening();
-const bc = new BroadcastChannel(f.getChannelName());
-bc.onmessage = (ev) => {
-  console.log("Demo received message: ", ev);
+window.addEventListener("message", (event) => {
+  if (event.origin !== window.location.origin) {
+    console.warn("Ignoring message from different origin", event.origin, event.data);
+    return;
+  }
+
+  console.log("#WindowMessage: ", event);
   const notice = document.getElementById("notice");
   if (notice) {
-    notice.innerHTML = `Action result: ${ev.data.action} "${ev.data.data}"`;
+    notice.innerHTML = `Action result: ${event.data.action} "${event.data.data}"`;
   }
-};
+}, false);

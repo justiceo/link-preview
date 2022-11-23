@@ -22,8 +22,9 @@ Cool search and URL previews.
 
 # Domains that bleed CSS into ShadowDOM
 
-- Wikipedia
-- Bing
+- Wikipedia (previewr)
+- Bing (previewr)
+- Example.com (floatie)
 
 
 ### Tried

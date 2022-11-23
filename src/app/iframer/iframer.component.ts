@@ -168,6 +168,9 @@ export class IFramerComponent implements AfterViewInit {
   }
   onVisibleChange(isVisible: boolean) {
     this.isVisible = isVisible;
+
+    // TODO: Clear navigation stack on close preview.
+    // Prevents showing nav button due to previous open URL.
   }
   onMouseOver(unused: MouseEvent) {
     this.focusClass = '';

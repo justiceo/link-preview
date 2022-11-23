@@ -19,3 +19,14 @@ Cool search and URL previews.
 - Deficiency: If part of the content-scripts Js is executed in page context, it would not have access to chrome.runtime.
 
 5. Window custom event: Create and dispatch custom events to the window.
+
+# Domains that bleed CSS into ShadowDOM
+
+- Wikipedia
+- Bing
+
+
+### Tried
+
+- Using :host reset for font-size, didn't work.
+- Using it with `contain: content`, UI is not displayed. https://web.dev/shadowdom-v1/#use-css-containment.

@@ -72,7 +72,9 @@ export class IFramerComponent implements AfterViewInit {
       }
 
       this.logger.log("#WindowMessage: ", event);
-      this.handleMessage(event.data);
+      this.ngZone.run(() => {
+        this.handleMessage(event.data);
+      });
     }, false);
   }
 

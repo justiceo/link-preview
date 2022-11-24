@@ -15,6 +15,7 @@ export class Floatie {
   previewButton: HTMLElement;
   tooltipArrow: HTMLElement;
   documentFragment: DocumentFragment;
+  isCopyActionEnabled = false;
 
   constructor() {
     const markup = `
@@ -137,19 +138,16 @@ export class Floatie {
     const range = selection.getRangeAt(0);
     const boundingRect = range.getBoundingClientRect();
     console.debug('Selected: ', selectedText);
+    const actionsToShow = [];
     if (this.shouldShowPreview(e, selectedText)) {
-      this.showActions(boundingRect, selectedText, [
-        this.previewButton,
-        this.copyButton,
-      ]);
+      actionsToShow.push(this.previewButton);
     } else if (this.shouldShowSearch(e, selectedText)) {
-      this.showActions(boundingRect, selectedText, [
-        this.searchButton,
-        this.copyButton,
-      ]);
-    } else if (this.shouldShowCopy(selectedText)) {
-      this.showActions(boundingRect, selectedText, [this.copyButton]);
+      actionsToShow.push(this.searchButton);
     }
+    if (this.shouldShowCopy(selectedText)) {
+      actionsToShow.push(this.copyButton);
+    }
+    this.showActions(boundingRect, selectedText, actionsToShow);
   }
 
   getAbsoluteUrl(urlStr: string): URL | null {
@@ -195,7 +193,7 @@ export class Floatie {
   }
 
   shouldShowCopy(selectedText: string): boolean {
-    return selectedText.length > 0;
+    return this.isCopyActionEnabled && selectedText.length > 0;
   }
 
   shouldShowPreview(

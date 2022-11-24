@@ -1,11 +1,9 @@
-import { ContextMenu } from './context-menu';
 import { Floatie } from './floatie/floatie';
 import { IFrameHelper } from './iframe-helper';
 import { Previewr } from './previewr';
 
 class ContentScript {
   floatie = new Floatie();
-  cMenu = new ContextMenu();
   iframeHelper = new IFrameHelper();
   previewr = new Previewr();
 
@@ -14,7 +12,6 @@ class ContentScript {
   start() {
     this.floatie.startListening();
     this.previewr.insertPageLoader();
-    this.cMenu.init();
     this.iframeHelper.registerListeners();
 
     chrome.runtime.onMessage.addListener((request, sender, callback) => {

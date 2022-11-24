@@ -1,5 +1,3 @@
-import { environment } from '../environments/environment';
-
 /*
  * Set up context menu (right-click menu) for different conexts.
  * See reference https://developer.chrome.com/docs/extensions/reference/contextMenus/#method-create.
@@ -18,8 +16,7 @@ interface MenuItem {
  * https://www.typescriptlang.org/docs/handbook/2/classes.html#arrow-functions.
  */
 export class ContextMenu {
-  browserActionContextMenu: MenuItem[] = [];
-  static RELOAD_ACTION: MenuItem = {
+  RELOAD_ACTION: MenuItem = {
     menu: {
       id: 'audate-reload',
       title: 'Reload Extension',
@@ -31,11 +28,48 @@ export class ContextMenu {
     },
   };
 
-  init = () => {
-    this.maybeAddReloadAction();
+  PREVIEW_ACTION: MenuItem = {
+    menu: {
+      id: 'show-preview',
+      title: 'Preview Link',
+      visible: true,
+      contexts: ['link'],
+    },
+    handler: (data: chrome.contextMenus.OnClickData) => {
+      if (!data.linkUrl) {
+        console.warn('No linkurl', data);
+        return;
+      }
+      this.sendMessage({ action: 'preview', data: data.linkUrl });
+    },
+  };
 
+  SEARCH_ACTION: MenuItem = {
+    menu: {
+      id: 'show-search',
+      title: 'Preview Search Results',
+      visible: true,
+      contexts: ['selection'],
+    },
+    handler: (data: chrome.contextMenus.OnClickData) => {
+      if (!data.selectionText) {
+        console.warn('No selection', data);
+        return;
+      }
+      this.sendMessage({ action: 'search', data: data.selectionText });
+    },
+  };
+
+  browserActionContextMenu: MenuItem[] = [
+    this.RELOAD_ACTION,
+    this.PREVIEW_ACTION,
+    this.SEARCH_ACTION,
+  ];
+
+  init = () => {
     // Check if we can access context menus.
     if (!chrome || !chrome.contextMenus) {
+      console.warn('No access to chrome.contextMenus');
       return;
     }
 
@@ -63,9 +97,11 @@ export class ContextMenu {
     }
   };
 
-  maybeAddReloadAction = () => {
-    if (!environment.production) {
-      this.browserActionContextMenu.push(ContextMenu.RELOAD_ACTION);
-    }
-  };
+  sendMessage(message: any): void {
+    chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+      chrome.tabs.sendMessage(tabs[0].id!, message, (response) => {
+        console.debug('ack:', response);
+      });
+    });
+  }
 }

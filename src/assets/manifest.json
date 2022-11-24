@@ -7,7 +7,7 @@
   "default_locale": "en",
   "author": "Justice Ogbonna",
   "short_name": "Search Preview",
-  "permissions": ["storage", "declarativeNetRequest"],
+  "permissions": ["storage", "declarativeNetRequest", "contextMenus"],
   "declarative_net_request": {
     "rule_resources": [
       {

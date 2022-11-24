@@ -16,6 +16,7 @@ export class Floatie {
   tooltipArrow: HTMLElement;
   documentFragment: DocumentFragment;
   isCopyActionEnabled = false;
+  showTimeout?: number;
 
   constructor() {
     const markup = `
@@ -68,10 +69,10 @@ export class Floatie {
     window.onresize = () => this.hideAll();
 
     // TODO: Do not display in contextMenu or contentEditable.
-    // window.oncontextmenu = () => this.hideAll();
+    window.oncontextmenu = () => this.hideAll();
 
     // Listen for mouse up events and suggest search if there's a selection.
-    document.onmouseup = (e) => this.maybeShow(e);
+    document.onmouseup = (e) => this.deferredMaybeShow(e);
     document.onkeydown = () => this.hideAll();
 
     this.setupLinkPreviews();
@@ -118,6 +119,11 @@ export class Floatie {
     document.removeEventListener('onmouseup', () => {});
     window.removeEventListener('onscroll', () => {});
     window.removeEventListener('onresize', () => {});
+  }
+
+  deferredMaybeShow(e: MouseEvent): void {
+    // Allow a little time for cancellation.
+    this.showTimeout = window.setTimeout(() => this.maybeShow(e), 100);
   }
 
   maybeShow(e: MouseEvent): void {
@@ -356,6 +362,7 @@ export class Floatie {
   }
 
   hideAll(): void {
+    clearTimeout(this.showTimeout);
     this.container.style.display = 'none';
     this.copyButton.style.display = 'none';
     this.searchButton.style.display = 'none';

@@ -1,6 +1,6 @@
 {
   "name": "search-preview",
-  "version": "0.0.1",
+  "version": "22.11.23",
   "description": "Smooth previews of links and search results",
   "scripts": {
     "ng": "ng",

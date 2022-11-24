@@ -24,8 +24,7 @@
       "24": "assets/images/logo-24x24.png",
       "32": "assets/images/logo-32x32.png"
     },
-    "default_title": "Search Preview",
-    "default_popup": "index.html#popup"
+    "default_title": "Search Preview"
   },
   "icons": {
     "16": "assets/images/logo-16x16.png",

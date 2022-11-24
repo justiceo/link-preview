@@ -27,7 +27,10 @@ export class AppComponent implements OnInit {
 
     if (isDevMode()) {
       setTimeout(() => {
-        window.postMessage({ action: 'preview', data: "https://example.org" }, window.location.origin);
+        window.postMessage(
+          { action: 'preview', data: 'https://example.org' },
+          window.location.origin
+        );
       }, 500);
     }
   }

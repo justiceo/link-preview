@@ -1,37 +1,37 @@
 .p-dialog {
-    transition: width 0.1s ease 0s, margin-right 0.1s ease 0.1s;
+  transition: width 0.1s ease 0s, margin-right 0.1s ease 0.1s;
 
-    &.parked {
-        // !important necessary to override inline styles.
-        width: 50px !important;
-        margin-right: -10px !important;
-        left: auto !important;
-        right: 0;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
-        transition-property: width, margin-right;
-        transition-delay: 2s;
-        transition-duration: 1s;
+  &.parked {
+    // !important necessary to override inline styles.
+    width: 50px !important;
+    margin-right: -10px !important;
+    left: auto !important;
+    right: 0;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transition-property: width, margin-right;
+    transition-delay: 2s;
+    transition-duration: 1s;
 
-        .p-dialog-header-icons {
-            visibility: hidden;
-        }
+    .p-dialog-header-icons {
+      visibility: hidden;
     }
+  }
 }
 
 .p-dialog-content {
-    &.transparent {
-        opacity: 10% !important;
-        transition-property: opacity;
-        transition-delay: 2s;
-        transition-duration: 5s;
-    }
+  &.transparent {
+    opacity: 10% !important;
+    transition-property: opacity;
+    transition-delay: 2s;
+    transition-duration: 5s;
+  }
 }
 
 .p-card-body {
-    background: lightyellow;
+  background: lightyellow;
 }
 
 iframe {
-    border: none;
+  border: none;
 }

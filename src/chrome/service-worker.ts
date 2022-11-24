@@ -37,7 +37,6 @@ const onInstalled = (details: chrome.runtime.InstalledDetails) => {
 };
 chrome.runtime.onInstalled.addListener(onInstalled);
 
-
 const storageProvider = new ChromeStorageProvider();
 const onMessage = (
   message: any,

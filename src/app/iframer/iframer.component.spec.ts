@@ -8,9 +8,8 @@ describe('IFramerComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [IFramerComponent]
-    })
-      .compileComponents();
+      declarations: [IFramerComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(IFramerComponent);
     component = fixture.componentInstance;

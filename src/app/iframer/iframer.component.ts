@@ -10,7 +10,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { Logger } from '../services/logging/logger';
 import { LoggingService } from '../services/logging/logging.service';
 
-type Message = { action: string, data: any, href: string };
+type Message = { action: string; data: any; href: string };
 
 @Component({
   selector: 'sp-iframer',
@@ -28,10 +28,10 @@ export class IFramerComponent implements AfterViewInit {
   width = '0px';
   height = '0px';
   loading = false;
-  headerText: string = "";
-  headerIconUrlBase = "https://www.google.com/s2/favicons?domain=";
-  headerIconUrl: string = "";
-  @ViewChild("iframe") iframe!: ElementRef<HTMLIFrameElement>;
+  headerText: string = '';
+  headerIconUrlBase = 'https://www.google.com/s2/favicons?domain=';
+  headerIconUrl: string = '';
+  @ViewChild('iframe') iframe!: ElementRef<HTMLIFrameElement>;
   logger: Logger;
   navStack: URL[] = [];
   showBackButton = false;
@@ -39,7 +39,7 @@ export class IFramerComponent implements AfterViewInit {
   constructor(
     private sanitizer: DomSanitizer,
     private ngZone: NgZone,
-    loggingService: LoggingService,
+    loggingService: LoggingService
   ) {
     this.logger = loggingService.getLogger('sp-iframer');
   }
@@ -65,17 +65,25 @@ export class IFramerComponent implements AfterViewInit {
   }
 
   listenForWindowMessages() {
-    window.addEventListener("message", (event) => {
-      if (event.origin !== window.location.origin) {
-        this.logger.warn("Ignoring message from different origin", event.origin, event.data);
-        return;
-      }
+    window.addEventListener(
+      'message',
+      (event) => {
+        if (event.origin !== window.location.origin) {
+          this.logger.warn(
+            'Ignoring message from different origin',
+            event.origin,
+            event.data
+          );
+          return;
+        }
 
-      this.logger.log("#WindowMessage: ", event);
-      this.ngZone.run(() => {
-        this.handleMessage(event.data);
-      });
-    }, false);
+        this.logger.log('#WindowMessage: ', event);
+        this.ngZone.run(() => {
+          this.handleMessage(event.data);
+        });
+      },
+      false
+    );
   }
 
   handleMessage(message: Message) {
@@ -84,8 +92,7 @@ export class IFramerComponent implements AfterViewInit {
     if (message.action === 'copy') {
       navigator.clipboard.writeText(message.data);
       return;
-    }
-    else if (message.action === 'preview') {
+    } else if (message.action === 'preview') {
       urlStr = message.data;
     } else if (message.action === 'search') {
       urlStr = 'https://google.com/search?igu=1&q=' + message.data;
@@ -95,7 +102,7 @@ export class IFramerComponent implements AfterViewInit {
     } else if (message.action === 'navigate') {
       urlStr = message.href;
     } else {
-      this.logger.warn("Unhandled action", message);
+      this.logger.warn('Unhandled action', message);
     }
 
     // Ensure it is valid.
@@ -126,7 +133,7 @@ export class IFramerComponent implements AfterViewInit {
       this.url.href
     );
     if (this.unsupportedHost) {
-      this.logger.warn("Unsupported host: ", this.unsupportedHost);
+      this.logger.warn('Unsupported host: ', this.unsupportedHost);
       // TODO: Display button to open in new tab.
       this.isVisible = true;
       return;
@@ -192,7 +199,7 @@ export class IFramerComponent implements AfterViewInit {
   }
 
   onLoaded(e: any) {
-    this.logger.debug("#onLoaded", e);
+    this.logger.debug('#onLoaded', e);
     this.loading = false;
     /*
      * While this does not tell us which URL is loaded,

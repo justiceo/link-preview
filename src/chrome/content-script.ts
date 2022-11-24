@@ -9,7 +9,7 @@ class ContentScript {
   iframeHelper = new IFrameHelper();
   previewr = new Previewr();
 
-  constructor() { }
+  constructor() {}
 
   start() {
     this.floatie.startListening();
@@ -17,13 +17,11 @@ class ContentScript {
     this.cMenu.init();
     this.iframeHelper.registerListeners();
 
-    chrome.runtime.onMessage.addListener(
-      (request, sender, callback) => {
-        console.debug("Re-posting message for DOM: ", request);
-        window.postMessage(request);
-        callback("ok");
-      }
-    );
+    chrome.runtime.onMessage.addListener((request, sender, callback) => {
+      console.debug('Re-posting message for DOM: ', request);
+      window.postMessage(request);
+      callback('ok');
+    });
   }
 
   stop() {

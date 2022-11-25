@@ -6,10 +6,17 @@ class ContentScript {
   floatie = new Floatie();
   iframeHelper = new IFrameHelper();
   previewr = new Previewr();
+  unsupportedHosts = ['twitter.com', 'mail.google.com', 'youtube.com'];
 
   constructor() {}
 
   start() {
+    if (this.isDisabledDomain()) {
+      console.warn('Better Previews is disabled on ', window.location.host);
+      // TODO: Update extension icon to gray.
+      return;
+    }
+
     this.floatie.startListening();
     this.previewr.insertPageLoader();
     this.iframeHelper.registerListeners();
@@ -23,6 +30,10 @@ class ContentScript {
 
   stop() {
     this.floatie.stopListening();
+  }
+
+  isDisabledDomain() {
+    return this.unsupportedHosts.indexOf(window.location.host) >= 0;
   }
 }
 

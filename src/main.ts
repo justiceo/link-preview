@@ -14,7 +14,7 @@ if (environment.production) {
 
 function initSentry() {
   Sentry.init({
-    dsn: 'https://e3cc3436f33741a996dbfdd7f2f3ed59@o526305.ingest.sentry.io/6371071',
+    dsn: 'https://59000502bf014222a97c0b8d3ff7495e@o526305.ingest.sentry.io/4504220162719744',
     integrations: [
       /*
        * Registers and configures the Tracing integration,
@@ -22,7 +22,6 @@ function initSentry() {
        * performance, including custom Angular routing instrumentation
        */
       new BrowserTracing({
-        tracingOrigins: ['localhost', 'https://yourserver.io/api'],
         routingInstrumentation: Sentry.routingInstrumentation,
       }),
     ],
@@ -32,7 +31,9 @@ function initSentry() {
      * of transactions for performance monitoring.
      * We recommend adjusting this value in production
      */
-    tracesSampleRate: 1.0,
+    tracesSampleRate: 0.1,
+    release: 'better-previews@22.11.25',
+    environment: 'PROD',
   });
 }
 

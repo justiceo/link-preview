@@ -11,6 +11,7 @@ import { Logger } from '../services/logging/logger';
 import { LoggingService } from '../services/logging/logging.service';
 
 type Message = {
+  application: string;
   action: string;
   data?: any;
   href?: string;
@@ -78,6 +79,13 @@ export class IFramerComponent implements AfterViewInit {
             'Ignoring message from different origin',
             event.origin,
             event.data
+          );
+          return;
+        }
+
+        if (event.data.application !== 'better-previews') {
+          this.logger.warn(
+            'Ignoring origin messsage not initiated by Better Previews'
           );
           return;
         }

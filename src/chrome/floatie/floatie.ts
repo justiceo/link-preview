@@ -282,7 +282,10 @@ export class Floatie {
   }
 
   sendMessage(action: string, data: any) {
-    window.postMessage({ action: action, data: data }, window.location.origin);
+    window.postMessage(
+      { application: 'better-previews', action: action, data: data },
+      window.location.origin
+    );
     // chrome.runtime.sendMessage won't put because angular is executed in page context.
     // broadcast.postMessage is not ideal because multiple tabs of same origin get it.
   }

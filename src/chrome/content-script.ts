@@ -16,7 +16,7 @@ class ContentScript {
 
     chrome.runtime.onMessage.addListener((request, sender, callback) => {
       console.debug('Re-posting message for DOM: ', request);
-      window.postMessage(request);
+      window.postMessage({ application: 'better-previews', ...request });
       callback('ok');
     });
   }

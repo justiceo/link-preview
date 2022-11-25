@@ -83,7 +83,7 @@ export class IFrameHelper {
 
   sendMessage(message: any) {
     console.debug('#sendMessage', message);
-    chrome.runtime.sendMessage(message);
+    chrome.runtime.sendMessage({ application: 'better-previews', ...message });
   }
 
   getTitle() {

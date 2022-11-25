@@ -63,6 +63,7 @@ from inside it so including directly. */
     .p-dialog-title {
       display: inline-flex;
       align-items: center;
+      overflow: hidden;
 
       button {
         margin-right: 0;
@@ -78,6 +79,10 @@ from inside it so including directly. */
     .p-dialog-title-text {
       font-weight: normal;
       font-size: 14px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      padding-right: 35px;
     }
   }
 

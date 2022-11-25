@@ -43,6 +43,7 @@ export class IFrameHelper {
       this.sendMessage({
         action: 'load',
         href: document.location.href,
+        data: { title: this.getTitle() },
         sourceFrame: this.getFrameName(),
       });
     });
@@ -53,17 +54,6 @@ export class IFrameHelper {
         href: document.location.href,
         sourceFrame: this.getFrameName(),
       });
-    });
-
-    addEventListener('readystatechange', (e) => {
-      switch (document.readyState) {
-        case 'loading':
-          this.sendMessage({
-            action: 'loading',
-            href: document.location.href,
-            sourceFrame: this.getFrameName(),
-          });
-      }
     });
   }
 
@@ -94,5 +84,20 @@ export class IFrameHelper {
   sendMessage(message: any) {
     console.debug('#sendMessage', message);
     chrome.runtime.sendMessage(message);
+  }
+
+  getTitle() {
+    if (document.title) {
+      return document.title;
+    }
+
+    const metaSiteName = document.querySelector(
+      "meta[property='og:site_name'][content]"
+    );
+    if (metaSiteName) {
+      return (metaSiteName as any).content;
+    }
+
+    return window.location.origin;
   }
 }

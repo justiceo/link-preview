@@ -10,7 +10,12 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { Logger } from '../services/logging/logger';
 import { LoggingService } from '../services/logging/logging.service';
 
-type Message = { action: string; data: any; href: string };
+type Message = {
+  action: string;
+  data?: any;
+  href?: string;
+  sourceFrame?: string;
+};
 
 @Component({
   selector: 'sp-iframer',
@@ -97,8 +102,11 @@ export class IFramerComponent implements AfterViewInit {
     } else if (message.action === 'search') {
       urlStr = 'https://google.com/search?igu=1&q=' + message.data;
     } else if (message.action === 'load') {
-      this.headerText = new URL(message.href).hostname;
-      this.headerIconUrl = this.headerIconUrlBase + this.headerText;
+      if (message.sourceFrame === 'iframer') {
+        this.headerText = message.data.title;
+        this.headerIconUrl =
+          this.headerIconUrlBase + new URL(message.href!).hostname;
+      }
     } else if (message.action === 'navigate') {
       urlStr = message.href;
     } else {

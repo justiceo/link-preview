@@ -22,10 +22,10 @@ Cool search and URL previews.
 
 # Domains that bleed CSS into ShadowDOM
 
-- Wikipedia (previewr)
-- Bing (previewr)
-- Example.com (floatie)
 
+- Example.com (floatie looks weird)
+- YouTube.com (previewr not showing, angulr framework issue)
+- Twitter (previewr csp error)
 
 ### Tried
 

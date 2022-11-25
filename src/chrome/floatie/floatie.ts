@@ -68,8 +68,10 @@ export class Floatie {
     window.onscroll = () => this.hideAll();
     window.onresize = () => this.hideAll();
 
-    // TODO: Do not display in contextMenu or contentEditable.
+    // Do not display in contextMenu.
     window.oncontextmenu = () => this.hideAll();
+
+    // TODO:  Do not display in contentEditable.
 
     // Listen for mouse up events and suggest search if there's a selection.
     document.onmouseup = (e) => this.deferredMaybeShow(e);
@@ -84,6 +86,8 @@ export class Floatie {
    */
   setupLinkPreviews() {
     const anchors = document.querySelectorAll('a');
+    let showTimeout: any = null;
+    let hideTimeout: any = null;
     anchors.forEach((a: HTMLAnchorElement) => {
       if (!this.isGoodUrl(a.href)) {
         return;
@@ -96,17 +100,27 @@ export class Floatie {
 
       // TODO: check if computed display is 'none', i.e. link is hidden.
 
-      let timeout: any = null;
-      a.addEventListener('mouseover', (e) => {
-        if (timeout) {
-          clearTimeout(timeout);
+      a.addEventListener('mouseover', (unused) => {
+        if (hideTimeout) {
+          clearTimeout(hideTimeout);
+          hideTimeout = null;
         }
-        this.showActions(a.getBoundingClientRect(), a.href, [
-          this.previewButton,
-        ]);
+
+        showTimeout = setTimeout(() => {
+          this.showActions(a.getBoundingClientRect(), a.href, [
+            this.previewButton,
+          ]);
+        }, 500);
       });
+
       a.addEventListener('mouseout', () => {
-        timeout = setTimeout(() => this.hideAll(), 2000);
+        if (showTimeout) {
+          clearTimeout(showTimeout);
+          showTimeout = null;
+        }
+        hideTimeout = setTimeout(() => {
+          this.hideAll();
+        }, 2000);
       });
     });
   }

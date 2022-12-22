@@ -50,7 +50,7 @@ Context: While rem is more adaptable than pixel, this adaptability hurts consist
   color-scheme: light;
 }
 
-* {
+sp-preview * {
   box-sizing: border-box;
 }
 
@@ -3903,7 +3903,9 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
 }
 
 .p-organizationchart
-  .p-organizationchart-node-content.p-organizationchart-selectable-node:not(.p-highlight):hover {
+  .p-organizationchart-node-content.p-organizationchart-selectable-node:not(
+    .p-highlight
+  ):hover {
   background: #e9ecef;
   color: #495057;
 }

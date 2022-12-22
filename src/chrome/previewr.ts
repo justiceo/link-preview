@@ -19,7 +19,6 @@ export class Previewr {
 
     const tagString = `
     <sp-iframer></sp-iframer>
-    <link href="${this.getExtensionUrl('styles.css')}" rel="stylesheet">
     <script src="${this.getExtensionUrl('runtime.js')}"></script>
     <script src="${this.getExtensionUrl('polyfills.js')}"></script>
     <script src="${this.getExtensionUrl('vendor.js')}"></script>

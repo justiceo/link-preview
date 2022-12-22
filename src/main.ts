@@ -32,7 +32,7 @@ function initSentry() {
      * We recommend adjusting this value in production
      */
     tracesSampleRate: 0.1,
-    release: 'better-previews@22.11.25',
+    release: 'better-previews@22.12.22',
     environment: 'PROD',
   });
 }

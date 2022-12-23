@@ -24,7 +24,6 @@ Cool search and URL previews.
 
 
 - Example.com (floatie looks weird)
-- YouTube.com (previewr not showing, angulr framework issue)
 - Twitter (previewr csp error)
 
 ### Tried

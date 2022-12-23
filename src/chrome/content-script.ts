@@ -6,7 +6,7 @@ class ContentScript {
   floatie = new Floatie();
   iframeHelper = new IFrameHelper();
   previewr = new Previewr();
-  unsupportedHosts = ['twitter.com', 'mail.google.com', 'youtube.com'];
+  unsupportedHosts = ['twitter.com', 'mail.google.com'];
 
   constructor() {}
 

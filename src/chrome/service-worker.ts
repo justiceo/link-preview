@@ -47,6 +47,10 @@ const onMessage = (
 
   // For now, bounce-back message to the content script.
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+    if (tabs.length == 0) {
+      console.error('Unexpected state: No active tab');
+      return;
+    }
     chrome.tabs.sendMessage(tabs[0].id!, message, (response) => {
       callback(response);
     });

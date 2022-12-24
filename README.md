@@ -24,7 +24,6 @@ Cool search and URL previews.
 
 
 - Example.com (floatie looks weird)
-- Twitter (previewr csp error)
 
 ### Tried
 

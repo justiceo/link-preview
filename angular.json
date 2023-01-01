@@ -28,19 +28,19 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets/icons",
+              "src/assets/images",
               "src/assets/images",
               "src/assets/welcome",
               "src/assets/Inter-VariableFont.ttf",
               "src/_locales",
               {
                 "glob": "manifest.json",
-                "input": "src/assets",
+                "input": "src",
                 "output": "."
               },
               {
                 "glob": "rules.json",
-                "input": "src/assets",
+                "input": "src",
                 "output": "."
               },
               {

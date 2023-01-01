@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <title>Better Previews</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../../floatie.css">
+  <link rel="stylesheet" href="../../content-script.css">
+  <script async defer src="../../content-script.js"></script>
 </head>
 
 <body>
@@ -16,32 +19,61 @@
       <h1>Better Previews</h1>
       <p>Perform search and preview links in sidebars instead of opening new tabs.</p>
 
-      <a href="https://justiceo.github.io/better-previews/" target="_blank" class="button">Homepage</a>
-      <a href="https://github.com/justiceo/better-previews" target="_blank" class="button light">View on GitHub</a>
+      <a id="demo-button" class="button">Preview "hello world"</a>
     </div>
 
 
-    <h2>Next: Pin it</h2>
-    <img class="pin" src="../assets/pin-extension.gif" alt="Pin Extension">
-    <p><strong>1.</strong> Click on the extensions icon.</p>
-    <p><strong>2.</strong> Find "Better Previews" in the list of extensions.</p>
-    <p><strong>3.</strong> Click on the pin icon on the right of this extension's icon.</p>
+    <h2>Usage:</h2>
+    <p><strong>1.</strong> For Search Previews</p>
+    <ul>
+      <li>
+        <p>Select the text you would like to search for on the page.</p>
+      </li>
+      <li>
+        <p>A tooltip with the text "Search" would become visible, click the tooltip.</p>
+      </li>
+      <li>
+        <p>Alternatively, right click on the selected text and click "Preview Search Results".</p>
+      </li>
+      <li>
+        <p>Try it on this text <i>"how tall is everest?"</i></p>
+      </li>
+    </ul>
+    <hr>
+    <br>
+    <p><strong>2.</strong> For Link Previews.</p>
+    <ul>
+      <li>
+        <p>Hover over the link you would like to preview.</p>
+      </li>
+      <li>
+        <p>A tooltip with the text "Preview" would become visible, click the tooltip.</p>
+      </li>
+      <li>
+        <p>Alternatively, right click on the selected text and click "Preview Link".</p>
+      </li>
+      <li>
+        <p>Try it on this link <a href="https://wikipedia.org">https://wikipedia.org</a></p>
+      </li>
+    </ul>
 
 
-    <p>All done.</p>
+    <p>That's it!</p>
 
     <div class="footer">
       <h2>Share the love!</h2>
       <p>If you found this extension helpful, leave a star on the Github Page or rating on Chrome Webstore.</p>
 
       <a href="https://github.com/justiceo/better-previews" target="_blank" class="button light">Star on GitHub</a>
-      <a href="#" target="_blank" class="button light">Rate on Chrome Webstore</a>
+      <a href="https://chrome.google.com/webstore/detail/better-previews/mmmfofondapflhgbdidadejnechhjocm?hl=en&authuser=0"
+        target="_blank" class="button light">Rate on Chrome Webstore</a>
 
       <div class="credit">
         Made with ❤️ in San Francisco</a>
       </div>
     </div>
   </div>
+  <script async defer src="./script.js"></script>
 </body>
 
 </html>

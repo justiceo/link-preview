@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Utför sök- och förhandsgranskningslänkar i sidofält istället för att öppna nya flikar",
+        "message": "Förhandsgranska länkar och sökresultat i sidofält istället för att öppna nya flikar",
         "description": "A description of its function"
     }
 }

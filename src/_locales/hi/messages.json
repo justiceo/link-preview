@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "नए टैब खोलने के बजाय साइडबार में खोज और पूर्वावलोकन लिंक करें",
+        "message": "नए टैब खोलने के बजाय साइडबार में लिंक और खोज परिणामों का पूर्वावलोकन करें",
         "description": "A description of its function"
     }
 }

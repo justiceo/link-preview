@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "قم بإجراء روابط البحث والمعاينة في الأشرطة الجانبية بدلاً من فتح علامات تبويب جديدة",
+        "message": "معاينة الروابط ونتائج البحث في أشرطة جانبية بدلاً من فتح علامات تبويب جديدة",
         "description": "A description of its function"
     }
 }

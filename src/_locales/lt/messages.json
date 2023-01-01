@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Atlikite paieškos ir peržiūros nuorodas šoninėmis juostomis, užuot atidarę naujus skirtukus",
+        "message": "Peržiūros nuorodos ir paieškos rezultatai šoninės juostos, užuot atidarę naujus skirtukus",
         "description": "A description of its function"
     }
 }

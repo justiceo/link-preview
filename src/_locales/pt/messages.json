@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Execute os links de pesquisa e visualização nas barras laterais em vez de abrir novas guias",
+        "message": "Visualizar links e resultados de pesquisa em barras laterais em vez de abrir novas guias",
         "description": "A description of its function"
     }
 }

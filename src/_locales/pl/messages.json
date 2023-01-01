@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Wykonaj linki wyszukiwania i podglądu na paskach bocznych zamiast otwierać nowe zakładki",
+        "message": "Podgląd linków i wyników wyszukiwania na paskach bocznych zamiast otwierania nowych kart",
         "description": "A description of its function"
     }
 }

@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Efectuați link -uri de căutare și previzualizare în barele laterale în loc să deschideți noi file",
+        "message": "Previzualizați linkurile și rezultatele căutării în barele laterale în loc să deschideți noi file",
         "description": "A description of its function"
     }
 }

@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Thực hiện các liên kết tìm kiếm và xem trước trong các thanh bên thay vì mở các tab mới",
+        "message": "Xem trước các liên kết và kết quả tìm kiếm trong các thanh bên thay vì mở các tab mới",
         "description": "A description of its function"
     }
 }

@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Lakukan pautan carian dan pratonton di sidebars dan bukannya membuka tab baru",
+        "message": "Pautan pratonton dan hasil carian di bar sisi dan bukannya membuka tab baru",
         "description": "A description of its function"
     }
 }

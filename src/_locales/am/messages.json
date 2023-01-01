@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "አዳዲስ ትሮችን ከመክፈት ይልቅ ፍለጋ እና ቅድመ እይታ አገናኞችን ያካሂዱ",
+        "message": "አዳዲስ ትሮችን ከመክፈት ይልቅ አገናኞች እና የፍለጋ ውጤቶች",
         "description": "A description of its function"
     }
 }

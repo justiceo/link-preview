@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Végezze el a keresési és előnézeti linkeket az oldalsávokban az új lapok megnyitása helyett",
+        "message": "Az új lapok megnyitása helyett előnézeti linkek és keresési eredmények oldalsávokban",
         "description": "A description of its function"
     }
 }

@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Führen Sie Such- und Vorschau -Links in Seitenleisten aus, anstatt neue Registerkarten zu öffnen",
+        "message": "Vorschau -Links und Suchergebnisse in Seitenleisten anstatt neue Registerkarten zu öffnen",
         "description": "A description of its function"
     }
 }

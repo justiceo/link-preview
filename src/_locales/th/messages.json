@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "ทำการค้นหาและดูตัวอย่างลิงก์ในแถบด้านข้างแทนการเปิดแท็บใหม่",
+        "message": "ดูตัวอย่างลิงก์และผลการค้นหาในแถบด้านข้างแทนการเปิดแท็บใหม่",
         "description": "A description of its function"
     }
 }

@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Yeni sekmeleri açmak yerine kenar çubuklarında arama ve önizleme bağlantılarını gerçekleştirin",
+        "message": "Yeni sekmeleri açmak yerine kenar çubuklarında bağlantıları ve arama sonuçlarını önizleme",
         "description": "A description of its function"
     }
 }

@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "新しいタブを開く代わりに、サイドバーで検索リンクとプレビューリンクを実行する",
+        "message": "新しいタブを開く代わりに、サイドバーでリンクと検索結果をプレビューする",
         "description": "A description of its function"
     }
 }

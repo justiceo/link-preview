@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Извршите претрагу и преглед линкова у бочним тракама уместо да отварају нове картице",
+        "message": "Прегледајте линкове и резултати претраге у бочним тракама уместо отварања нових картица",
         "description": "A description of its function"
     }
 }

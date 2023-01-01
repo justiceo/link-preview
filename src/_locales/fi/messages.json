@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Suorita haku- ja esikatselu -linkit sivupalkkeissa sen sijaan, että avaat uudet välilehdet",
+        "message": "Esikatselu linkit ja hakutulokset sivupalkkeihin sen sijaan, että avattaisiin uusia välilehtiä",
         "description": "A description of its function"
     }
 }

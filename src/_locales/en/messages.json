@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Perform search and preview links in sidebars instead of opening new tabs",
+        "message": "Preview links and search results in sidebars instead of opening new tabs",
         "description": "A description of its function"
     }
 }

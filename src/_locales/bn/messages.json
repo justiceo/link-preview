@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "নতুন ট্যাবগুলি খোলার পরিবর্তে সাইডবারগুলিতে অনুসন্ধান এবং পূর্বরূপ লিঙ্কগুলি সম্পাদন করুন",
+        "message": "নতুন ট্যাব খোলার পরিবর্তে সাইডবারগুলিতে পূর্বরূপ লিঙ্কগুলি এবং অনুসন্ধানের ফলাফলগুলি",
         "description": "A description of its function"
     }
 }

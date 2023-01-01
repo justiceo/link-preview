@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "בצע קישורי חיפוש ותצוגה מקדימה בסרגל צדדים במקום לפתוח כרטיסיות חדשות",
+        "message": "תצוגה מקדימה של קישורים ותוצאות חיפוש בסרגל הצד במקום פתיחת כרטיסיות חדשות",
         "description": "A description of its function"
     }
 }

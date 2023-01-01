@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Lakukan tautan pencarian dan pratinjau di bilah samping alih -alih membuka tab baru",
+        "message": "Tautan pratinjau dan hasil pencarian di bilah samping alih -alih membuka tab baru",
         "description": "A description of its function"
     }
 }

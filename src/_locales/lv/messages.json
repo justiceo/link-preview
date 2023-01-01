@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Veiciet meklēšanas un priekšskatījuma saites sānjoslā, nevis atvērt jaunas cilnes",
+        "message": "Priekšskatījuma saites un meklēšanas rezultāti sānjoslas vietā, lai atvērtu jaunas cilnes",
         "description": "A description of its function"
     }
 }

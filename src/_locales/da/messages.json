@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Udfør søgnings- og preview -links i sidebjælker i stedet for at åbne nye faner",
+        "message": "Eksempel på links og søgeresultater i sidebjælker i stedet for at åbne nye faner",
         "description": "A description of its function"
     }
 }

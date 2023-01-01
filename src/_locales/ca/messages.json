@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Realitzeu enllaços de cerca i previsualització a les barres laterals en lloc d’obrir noves pestanyes",
+        "message": "Vista prèvia enllaços i resultats de cerca en barres laterals en lloc d’obrir noves pestanyes",
         "description": "A description of its function"
     }
 }

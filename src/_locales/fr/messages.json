@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Effectuez des liens de recherche et d'aperçu dans les barres latérales au lieu d'ouvrir de nouveaux onglets",
+        "message": "Aperçu des liens et des résultats de recherche dans les barres latérales au lieu d'ouvrir de nouveaux onglets",
         "description": "A description of its function"
     }
 }

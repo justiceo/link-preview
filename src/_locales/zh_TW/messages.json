@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "在側邊欄中執行搜索和預覽鏈接，而不是打開新標籤",
+        "message": "預覽鏈接和搜索結果，而不是打開新標籤",
         "description": "A description of its function"
     }
 }

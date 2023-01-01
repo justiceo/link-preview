@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "പുതിയ ടാബുകൾ തുറക്കുന്നതിന് പകരം സൈഡ്ബാറുകളിൽ തിരയുക, പ്രിവ്യൂ ലിങ്കുകൾ നടത്തുക",
+        "message": "പുതിയ ടാബുകൾ തുറക്കുന്നതിന് പകരം സൈഡ്ബാറുകളിൽ പ്രിവ്യൂ ലിങ്കുകളും തിരയൽ ഫലങ്ങളും",
         "description": "A description of its function"
     }
 }

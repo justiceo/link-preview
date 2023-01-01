@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Uute vahelehtede avamise asemel teostage külgribadel otsingu- ja eelvaate linke",
+        "message": "Eelvaate linke ja otsingutulemusi külgribadel uute vahekaartide avamise asemel",
         "description": "A description of its function"
     }
 }

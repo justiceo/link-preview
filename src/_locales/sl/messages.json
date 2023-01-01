@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Izvedite povezave za iskanje in predogled v stranskih vrsticah, namesto da odprete nove zavihke",
+        "message": "Predogled povezav in rezultatov iskanja v stranskih vrsticah, namesto da bi odprli nove zavihke",
         "description": "A description of its function"
     }
 }

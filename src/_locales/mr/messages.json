@@ -4,7 +4,7 @@
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "नवीन टॅब उघडण्याऐवजी साइडबारमध्ये शोध आणि पूर्वावलोकन दुवे करा",
+        "message": "नवीन टॅब उघडण्याऐवजी साइडबारमध्ये पूर्वावलोकन दुवे आणि शोध परिणाम",
         "description": "A description of its function"
     }
 }

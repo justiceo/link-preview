@@ -30,6 +30,7 @@
               "src/favicon.ico",
               "src/assets/icons",
               "src/assets/images",
+              "src/assets/welcome",
               "src/assets/Inter-VariableFont.ttf",
               "src/_locales",
               {

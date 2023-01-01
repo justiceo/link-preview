@@ -1,7 +1,7 @@
 {
   "name": "better-previews",
   "version": "22.12.22",
-  "description": "Smooth previews of links and search results",
+  "description": "Perform search and preview links in sidebars instead of opening new tabs",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

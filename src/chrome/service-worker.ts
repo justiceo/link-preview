@@ -5,7 +5,7 @@ import { ContextMenu } from './context-menu';
 new ContextMenu().init();
 
 const uninstallUrl = 'https://forms.gle/PdZ9U61QawXSa4qH8';
-const welcomeUrl = chrome.runtime.getURL('index.html#request-permissions');
+const welcomeUrl = chrome.runtime.getURL('assets/welcome/welcome.html');
 
 const onInstalled = (details: chrome.runtime.InstalledDetails) => {
   // On fresh install, open page how to use extension.

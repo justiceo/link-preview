@@ -75,7 +75,7 @@ export class IFramerComponent implements AfterViewInit {
       'message',
       (event) => {
         if (event.origin !== window.location.origin) {
-          this.logger.warn(
+          this.logger.debug(
             'Ignoring message from different origin',
             event.origin,
             event.data
@@ -84,7 +84,7 @@ export class IFramerComponent implements AfterViewInit {
         }
 
         if (event.data.application !== 'better-previews') {
-          this.logger.warn(
+          this.logger.debug(
             'Ignoring origin messsage not initiated by Better Previews'
           );
           return;

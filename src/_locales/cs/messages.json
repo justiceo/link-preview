@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "Lepší náhledy",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "Proveďte odkazy na vyhledávání a náhled v postranních panelech místo otevření nových karet",
+        "description": "A description of its function"
+    }
+}

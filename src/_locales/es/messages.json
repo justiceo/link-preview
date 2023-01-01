@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "Mejores vistas previas",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "Realice enlaces de búsqueda y vista previa en barras laterales en lugar de abrir nuevas pestañas",
+        "description": "A description of its function"
+    }
+}

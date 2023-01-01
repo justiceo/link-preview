@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "మంచి ప్రివ్యూలు",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "క్రొత్త ట్యాబ్‌లను తెరవడానికి బదులుగా సైడ్‌బార్స్‌లో శోధన మరియు ప్రివ్యూ లింక్‌లను చేయండి",
+        "description": "A description of its function"
+    }
+}

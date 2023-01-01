@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "Xem trước tốt hơn",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "Thực hiện các liên kết tìm kiếm và xem trước trong các thanh bên thay vì mở các tab mới",
+        "description": "A description of its function"
+    }
+}

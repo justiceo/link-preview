@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "Бољи прегледи",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "Извршите претрагу и преглед линкова у бочним тракама уместо да отварају нове картице",
+        "description": "A description of its function"
+    }
+}

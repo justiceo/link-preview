@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "Boljši predogled",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "Izvedite povezave za iskanje in predogled v stranskih vrsticah, namesto da odprete nove zavihke",
+        "description": "A description of its function"
+    }
+}

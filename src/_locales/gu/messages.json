@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "વધુ સારી પૂર્વાવલોકનો",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "નવા ટ s બ્સ ખોલવાને બદલે સાઇડબારમાં શોધ અને પૂર્વાવલોકન લિંક્સ કરો",
+        "description": "A description of its function"
+    }
+}

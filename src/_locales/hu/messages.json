@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "Jobb előnézetek",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "Végezze el a keresési és előnézeti linkeket az oldalsávokban az új lapok megnyitása helyett",
+        "description": "A description of its function"
+    }
+}

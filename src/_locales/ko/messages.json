@@ -1,10 +1,10 @@
 {
     "appName": {
-        "message": "Better Previews",
+        "message": "더 나은 미리보기",
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Perform search and preview links in sidebars instead of opening new tabs",
+        "message": "새 탭을 여는 대신 사이드 바에서 검색 및 미리보기 링크 수행",
         "description": "A description of its function"
     }
 }

@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "Daha İyi Önizlemeler",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "Yeni sekmeleri açmak yerine kenar çubuklarında arama ve önizleme bağlantılarını gerçekleştirin",
+        "description": "A description of its function"
+    }
+}

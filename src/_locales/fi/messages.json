@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "Paremmat esikatselut",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "Suorita haku- ja esikatselu -linkit sivupalkkeissa sen sijaan, että avaat uudet välilehdet",
+        "description": "A description of its function"
+    }
+}

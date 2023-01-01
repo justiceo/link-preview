@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "മികച്ച പ്രിവ്യൂകൾ",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "പുതിയ ടാബുകൾ തുറക്കുന്നതിന് പകരം സൈഡ്ബാറുകളിൽ തിരയുക, പ്രിവ്യൂ ലിങ്കുകൾ നടത്തുക",
+        "description": "A description of its function"
+    }
+}

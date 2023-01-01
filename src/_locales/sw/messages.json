@@ -1,10 +1,10 @@
 {
     "appName": {
-        "message": "Better Previews",
+        "message": "Hakikisho bora",
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Perform search and preview links in sidebars instead of opening new tabs",
+        "message": "Fanya Viungo vya Utafutaji na hakiki kwenye barabara za pembeni badala ya kufungua tabo mpya",
         "description": "A description of its function"
     }
 }

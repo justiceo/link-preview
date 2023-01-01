@@ -79,6 +79,7 @@
     "@typescript-eslint/parser": "^5.42.0",
     "eslint": "^8.27.0",
     "eslint-config-prettier": "^8.5.0",
+    "google-translate-api-x": "^10.5.2",
     "gulp": "^4.0.2",
     "html-webpack-plugin": "^5.5.0",
     "jasmine-core": "~4.5.0",

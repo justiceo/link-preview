@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "より良いプレビュー",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "新しいタブを開く代わりに、サイドバーで検索リンクとプレビューリンクを実行する",
+        "description": "A description of its function"
+    }
+}

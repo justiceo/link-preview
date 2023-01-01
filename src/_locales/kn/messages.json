@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "ಉತ್ತಮ ಪೂರ್ವವೀಕ್ಷಣೆಗಳು",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "ಹೊಸ ಟ್ಯಾಬ್‌ಗಳನ್ನು ತೆರೆಯುವ ಬದಲು ಸೈಡ್‌ಬಾರ್‌ಗಳಲ್ಲಿ ಹುಡುಕಾಟ ಮತ್ತು ಪೂರ್ವವೀಕ್ಷಣೆ ಲಿಂಕ್‌ಗಳನ್ನು ನಿರ್ವಹಿಸಿ",
+        "description": "A description of its function"
+    }
+}

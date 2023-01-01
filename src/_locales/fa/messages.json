@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "پیش نمایش بهتر",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "به جای باز کردن برگه های جدید ، پیوندهای جستجو و پیش نمایش را در نوارهای جانبی انجام دهید",
+        "description": "A description of its function"
+    }
+}

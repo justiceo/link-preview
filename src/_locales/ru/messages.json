@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "Лучшие превью",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "Выполните ссылки на поиск и предварительный просмотр на боковых панелях вместо открытия новых вкладок",
+        "description": "A description of its function"
+    }
+}

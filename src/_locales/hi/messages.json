@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "बेहतर पूर्वावलोकन",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "नए टैब खोलने के बजाय साइडबार में खोज और पूर्वावलोकन लिंक करें",
+        "description": "A description of its function"
+    }
+}

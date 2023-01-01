@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "По -добри визуализации",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "Извършвайте връзки за търсене и визуализация в страничните ленти, вместо да отваряте нови раздели",
+        "description": "A description of its function"
+    }
+}

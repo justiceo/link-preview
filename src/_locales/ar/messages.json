@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "معاينات أفضل",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "قم بإجراء روابط البحث والمعاينة في الأشرطة الجانبية بدلاً من فتح علامات تبويب جديدة",
+        "description": "A description of its function"
+    }
+}

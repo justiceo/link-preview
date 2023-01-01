@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "תצוגה מקדימה טובה יותר",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "בצע קישורי חיפוש ותצוגה מקדימה בסרגל צדדים במקום לפתוח כרטיסיות חדשות",
+        "description": "A description of its function"
+    }
+}

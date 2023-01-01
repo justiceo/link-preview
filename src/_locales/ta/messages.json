@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "சிறந்த முன்னோட்டங்கள்",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "புதிய தாவல்களைத் திறப்பதற்குப் பதிலாக பக்கப்பட்டிகளில் தேடல் மற்றும் முன்னோட்ட இணைப்புகளைச் செய்யுங்கள்",
+        "description": "A description of its function"
+    }
+}

@@ -207,11 +207,10 @@ export class IFramerComponent implements AfterViewInit {
     if (viewportWidth - e.clientX < 100) {
       return;
     }
-    /*
-     * TODO: Disable hiding the panel for easier development.
-     * this.focusClass = 'transparent';
-     * this.drawerClass = 'parked';
-     */
+
+    // TODO: Disable hiding the panel for easier development.
+    this.focusClass = "transparent";
+    this.drawerClass = "parked";
   }
 
   onLoaded(e: any) {

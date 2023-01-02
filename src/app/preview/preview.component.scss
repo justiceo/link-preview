@@ -14,6 +14,11 @@ from inside it so including directly. */
   justify-content: center;
   align-items: center;
   pointer-events: none;
+
+  &:hover {
+    background: rgba(100, 100, 100, 0.5);
+    transition: background-color 0.5s ease;
+  }
 }
 
 .p-dialog {

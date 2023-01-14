@@ -4,6 +4,24 @@ import "winbox/dist/css/winbox.min.css";
 import "./previewr.css";
 import { sanitizeUrl } from "@braintree/sanitize-url";
 
+// Override the #setUrl method to set name attribute on iframe.
+WinBox.prototype.setUrl = function(url, onload){
+
+  const node = this.body.firstChild;
+
+  if(node && (node.tagName.toLowerCase() === "iframe")){
+
+      node.src = url;
+  }
+  else{
+
+      this.body.innerHTML = '<iframe name="iframer" src="' + url + '"></iframe>';
+      onload && (this.body.firstChild.onload = onload);
+  }
+
+  return this;
+};
+
 // This class is responsible to loading/reloading/unloading the angular app into the UI.
 export class Previewr {
   getExtensionUrl = chrome.runtime.getURL;
@@ -75,8 +93,8 @@ export class Previewr {
     } else if (message.action === "search") {
       urlStr = "https://google.com/search?igu=1&q=" + message.data;
     } else if (message.action === "load") {
-      if (true || message.sourceFrame === "iframer") {
-        this.dialog.setTitle("header update" + message.data.title);
+      if (message.sourceFrame === "iframer" && this.dialog) {
+        this.dialog.setTitle(message.data.title);
         this.dialog.setIcon(
           this.headerIconUrlBase + new URL(message.href!).hostname
         );

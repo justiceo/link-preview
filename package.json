@@ -34,13 +34,15 @@
     "notes"
   ],
   "dependencies": {
+    "@braintree/sanitize-url": "^6.0.2",
     "@floating-ui/dom": "^1.1.0",
-    "lit": "^2.6.0"
+    "lit": "^2.6.0",
+    "winbox": "^0.2.6"
   },
   "devDependencies": {
     "@types/chrome": "^0.0.204",
     "@types/jasmine": "^4.3.1",
-    "@types/node": "^18.11.14",
+    "@types/node": "^18.11.18",
     "@types/puppeteer": "^7.0.4",
     "esbuild": "0.16.4",
     "google-translate-api-x": "^10.5.2",

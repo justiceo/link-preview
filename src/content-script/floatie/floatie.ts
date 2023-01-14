@@ -62,6 +62,10 @@ export class Floatie {
   }
 
   startListening(): void {
+    if(this.inIframe()) {
+      return;
+    }
+
     document.body.appendChild(this.documentFragment);
 
     // Window level events.
@@ -384,5 +388,12 @@ export class Floatie {
     this.copyButton.style.display = 'none';
     this.searchButton.style.display = 'none';
     this.previewButton.style.display = 'none';
+  }
+  inIframe() {
+    try {
+      return window.self !== window.top;
+    } catch (e) {
+      return true;
+    }
   }
 }

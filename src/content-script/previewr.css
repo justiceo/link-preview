@@ -1,0 +1,13 @@
+.winbox {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.nav-away {
+    background-size: 17px auto;
+}
+
+.nav-back {
+    background-size: 20px auto;
+    filter: invert(1);
+}

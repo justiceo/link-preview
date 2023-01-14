@@ -1,13 +1,14 @@
-import {Logger} from '../logger';
+import { Logger } from "../logger";
 import WinBox from "winbox/src/js/winbox";
 import "winbox/dist/css/winbox.min.css";
-import {sanitizeUrl} from '@braintree/sanitize-url';
+import "./previewr.css";
+import { sanitizeUrl } from "@braintree/sanitize-url";
 
 // This class is responsible to loading/reloading/unloading the angular app into the UI.
 export class Previewr {
   getExtensionUrl = chrome.runtime.getURL;
   logger = new Logger("previewr");
-  headerIconUrlBase = 'https://www.google.com/s2/favicons?domain=';
+  headerIconUrlBase = "https://www.google.com/s2/favicons?domain=";
   dialog?: WinBox;
   isVisible = false;
   url: URL;
@@ -16,7 +17,10 @@ export class Previewr {
   /* This function inserts an Angular custom element (web component) into the DOM. */
   init() {
     if (this.inIframe()) {
-      console.log('Not inserting page-loader in iframe');
+      this.logger.log(
+        "Not inserting previewr in iframe: ",
+        window.location.href
+      );
       return;
     }
 
@@ -25,36 +29,36 @@ export class Previewr {
   }
 
   listenForCspError() {
-    document.addEventListener('securitypolicyviolation', (e) => {
-      if (window.name !== 'iframer') {
+    document.addEventListener("securitypolicyviolation", (e) => {
+      if (window.name !== "iframer") {
         return;
       }
-      this.logger.error('CSP error', e, e.blockedURI);
+      this.logger.error("CSP error", e, e.blockedURI);
     });
   }
 
   listenForWindowMessages() {
     window.addEventListener(
-      'message',
+      "message",
       (event) => {
         if (event.origin !== window.location.origin) {
           this.logger.debug(
-            'Ignoring message from different origin',
+            "Ignoring message from different origin",
             event.origin,
             event.data
           );
           return;
         }
 
-        if (event.data.application !== 'better-previews') {
+        if (event.data.application !== "better-previews") {
           this.logger.debug(
-            'Ignoring origin messsage not initiated by Better Previews'
+            "Ignoring origin messsage not initiated by Better Previews"
           );
           return;
         }
 
-        this.logger.log('#WindowMessage: ', event); 
-        this.handleMessage(event.data);       
+        this.logger.log("#WindowMessage: ", event);
+        this.handleMessage(event.data);
       },
       false
     );
@@ -63,25 +67,28 @@ export class Previewr {
   handleMessage(message) {
     // Extract the url from the message.
     let urlStr;
-    if (message.action === 'copy') {
+    if (message.action === "copy") {
       navigator.clipboard.writeText(message.data);
       return;
-    } else if (message.action === 'preview') {
+    } else if (message.action === "preview") {
       urlStr = message.data;
-    } else if (message.action === 'search') {
-      urlStr = 'https://google.com/search?igu=1&q=' + message.data;
-    } else if (message.action === 'load') {
-      if (message.sourceFrame === 'iframer') {
-        this.dialog.title = "header update";
+    } else if (message.action === "search") {
+      urlStr = "https://google.com/search?igu=1&q=" + message.data;
+    } else if (message.action === "load") {
+      if (true || message.sourceFrame === "iframer") {
+        this.dialog.setTitle("header update" + message.data.title);
+        this.dialog.setIcon(
+          this.headerIconUrlBase + new URL(message.href!).hostname
+        );
       }
-    } else if (message.action === 'navigate') {
+    } else if (message.action === "navigate") {
       urlStr = message.href;
     } else {
-      this.logger.warn('Unhandled action', message);
+      this.logger.warn("Unhandled action", message);
     }
 
     // Ensure it is valid.
-    if (!urlStr || sanitizeUrl(urlStr) === 'about:blank') {
+    if (!urlStr || sanitizeUrl(urlStr) === "about:blank") {
       return;
     }
     let newUrl;
@@ -104,12 +111,51 @@ export class Previewr {
 
   previewUrl(url: URL) {
     this.logger.log("#previewUrl: ", url);
-   
-    this.dialog = new WinBox(url.hostname, {
-      icon: this.headerIconUrlBase + url.hostname,
-      url: url.href,
-      border: 2,
-    });
+
+    if (!this.dialog) {
+      this.dialog = new WinBox(url.hostname, {
+        icon: this.headerIconUrlBase + url.hostname,
+        url: url.href,
+        x: "right",
+        y: "center",
+        class: ["no-max", "no-full"],
+
+        onclose: () => {
+          this.dialog = null;
+        },
+      });
+
+      this.dialog.addControl({
+        index: 2,
+        class: "nav-away",
+        image:
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjIuNSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNOCAzSDVhMiAyIDAgMCAwLTIgMnYzbTE4IDBWNWEyIDIgMCAwIDAtMi0yaC0zbTAgMThoM2EyIDIgMCAwIDAgMi0ydi0zTTMgMTZ2M2EyIDIgMCAwIDAgMiAyaDMiLz48L3N2Zz4=",
+        click: (event, winbox) => {
+          this.logger.log("#onOpenInNewTab: url", this.url);
+          window.open(this.url, "_blank");
+        },
+      });
+    } else {
+      this.dialog.restore();
+      this.dialog.setUrl(url.href);
+      this.dialog.setTitle(url.hostname);
+      this.dialog.setIcon(this.headerIconUrlBase + url.hostname);
+    }
+
+    this.dialog.removeControl("nav-back");
+    if (this.navStack.length > 0) {
+      this.dialog.addControl({
+        index: 0,
+        class: "nav-back",
+        image: "../assets/images/reply-arrow.png",
+        click: (event, winbox) => {
+          const lastUrl = this.navStack.pop();
+          if (lastUrl) {
+            this.previewUrl(lastUrl);
+          }
+        },
+      });
+    }
   }
 
   /*

@@ -21,7 +21,7 @@ export class Logger {
     const d = new Date(Date.now());
     console.debug(
         "%c%s %s",
-        "color: blue",
+        "color: cyan",
         `[${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}]`,
         this.tag,
         ...logs,
@@ -35,7 +35,7 @@ export class Logger {
     const d = new Date(Date.now());
     console.log(
         "%c%s %s",
-        "color: blue",
+        "color: cyan",
         `[${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}]`,
         this.tag,
         ...logs,
@@ -49,7 +49,7 @@ export class Logger {
     const d = new Date(Date.now());
     console.warn(
         "%c%s %s",
-        "color: blue",
+        "color: yellow",
         `[${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}]`,
         this.tag,
         ...logs,
@@ -63,7 +63,7 @@ export class Logger {
     const d = new Date(Date.now());
     console.error(
         "%c%s %s",
-        "color: blue",
+        "color: red",
         `[${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}]`,
         this.tag,
         ...logs,

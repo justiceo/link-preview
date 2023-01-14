@@ -2,7 +2,7 @@
   "name": "__MSG_appName__",
   "description": "__MSG_appDesc__",
   "homepage_url": "https://github.com/justiceo/search-preview",
-  "version": "23.01.01",
+  "version": "23.01.13",
   "manifest_version": 3,
   "default_locale": "en",
   "author": "Justice Ogbonna",
@@ -13,88 +13,41 @@
       {
         "id": "ruleset_1",
         "enabled": true,
-        "path": "rules.json"
+        "path": "assets/rules.json"
       }
     ]
   },
   "host_permissions": ["*://*/*"],
   "action": {
     "default_icon": {
-      "16": "assets/images/logo-16x16.png",
-      "24": "assets/images/logo-24x24.png",
-      "32": "assets/images/logo-32x32.png"
+      "16": "assets/logo-16x16.png",
+      "24": "assets/logo-24x24.png",
+      "32": "assets/logo-32x32.png"
     },
     "default_title": "Search Preview"
   },
   "icons": {
-    "16": "assets/images/logo-16x16.png",
-    "32": "assets/images/logo-32x32.png",
-    "48": "assets/images/logo-48x48.png",
-    "128": "assets/images/logo-128x128.png"
+    "16": "assets/logo-16x16.png",
+    "32": "assets/logo-32x32.png",
+    "48": "assets/logo-48x48.png",
+    "128": "assets/logo-128x128.png"
   },
-  "web_accessible_resources": [
-    {
-      "resources": ["index.html"],
-      "matches": ["<all_urls>"]
-    },
-    {
-      "resources": ["main.js"],
-      "matches": ["<all_urls>"]
-    },
-    {
-      "resources": ["polyfills.js"],
-      "matches": ["<all_urls>"]
-    },
-    {
-      "resources": ["runtime.js"],
-      "matches": ["<all_urls>"]
-    },
-    {
-      "resources": ["vendor.js"],
-      "matches": ["<all_urls>"]
-    },
-    {
-      "resources": ["assets/images/search-icon.jpeg"],
-      "matches": ["<all_urls>"]
-    },
-    {
-      "resources": ["primeicons.eot"],
-      "matches": ["<all_urls>"]
-    },
-    {
-      "resources": ["primeicons.svg"],
-      "matches": ["<all_urls>"]
-    },
-    {
-      "resources": ["primeicons.ttf"],
-      "matches": ["<all_urls>"]
-    },
-    {
-      "resources": ["primeicons.woff"],
-      "matches": ["<all_urls>"]
-    },
-    {
-      "resources": ["content-style.css"],
-      "matches": ["<all_urls>"]
-    },
-    {
-      "resources": ["primeicons.css"],
-      "matches": ["<all_urls>"]
-    },
-    {
-      "resources": ["styles.css"],
-      "matches": ["<all_urls>"]
-    }
-  ],
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
       "all_frames": true,
-      "js": ["content-script.js"],
-      "css": ["content-style.css", "floatie.css"]
+      "js": ["content-script/content-script.js"],
+      "css": ["content-script/content-script.css"]
     }
   ],
+  "options_page": "options-page/options.html",
   "background": {
-    "service_worker": "service-worker.js"
+    "service_worker": "background-script/service-worker.js"
+  },
+  "__firefox__key": "",
+  "__firefox__browser_specific_settings": {
+      "gecko": {
+          "id": "no-reply@justiceo.com"
+      }
   }
 }

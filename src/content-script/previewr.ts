@@ -11,7 +11,7 @@ export class Previewr {
   headerIconUrlBase = "https://www.google.com/s2/favicons?domain=";
   dialog?: WinBox;
   isVisible = false;
-  url: URL;
+  url?: URL;
   navStack: URL[] = [];
 
   /* This function inserts an Angular custom element (web component) into the DOM. */
@@ -105,12 +105,12 @@ export class Previewr {
     }
 
     // Preview new URL.
-    this.url = newUrl;
-    this.previewUrl(this.url);
+    this.previewUrl(newUrl);
   }
 
   previewUrl(url: URL) {
     this.logger.log("#previewUrl: ", url);
+    this.url = url;
 
     if (!this.dialog) {
       this.dialog = new WinBox(url.hostname, {
@@ -121,6 +121,8 @@ export class Previewr {
         class: ["no-max", "no-full"],
 
         onclose: () => {
+          this.navStack = [];
+          this.url = undefined;
           this.dialog = null;
         },
       });

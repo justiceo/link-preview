@@ -44,6 +44,9 @@ class Build {
       case "start":
         this.launchBrowser();
         break;
+      case "watch":
+        this.buildAndWatch();
+        break;
       case "test":
         this.test();
         break;
@@ -134,6 +137,27 @@ class Build {
         console.error(err);
         process.exit(1);
       });
+  }
+
+  async buildAndWatch() {
+    await this.buildExtension();
+    // The watch+serve APIs on esbuild are still evolving and a bit too rapid for the use-case here.
+    // In v0.16 (current) - esbuild.build has a watch option
+    // In v0.17 (next) - watch and serve are moved to a new context API.
+    // It is not yet clear how to monitor changes to HTML and other non-entrypoint files.
+    // The NodeJs API is unstable as well, specifically it's known to fire duplicate events, which explains the timeouts below.
+    let fsTimeout = null;
+    fs.watch('src', {recursive: true},  (event, filename) => {
+      if(fsTimeout) {
+        return;
+      }
+      fsTimeout = setTimeout(() => {
+        fsTimeout = null;
+        console.log(`rebuild due to fs event: ${event} on ${filename}`);
+        this.buildExtension();
+        // TODO: Fire event to reload browser.
+      }, 100);
+    });
   }
 
   // Generate manifest
@@ -276,22 +300,14 @@ class Build {
     });
   }
 
-  // TODO: Watch.
-  buildExtension() {
-    return this.clean(this.outDir).then(() => {
-      console.log(`Deleted ${this.outDir}`);
-
-      Promise.all([this.bundleScripts(), this.copyAssets()]).then(() => {
-        console.log("Successfully built extension");
-
-        this.generateIcons();
-        this.generateManifest().then(() => {
-          this.zipDir().then((zipOut) => {
-            console.log(zipOut);
-          });
-        });
-      });
-    });
+  async buildExtension() {
+    await this.clean(this.outDir);
+    console.log(`Deleted ${this.outDir}`);
+    await this.bundleScripts();
+    await this.copyAssets();
+    await this.generateIcons();
+    const zipOut = await this.zipDir();
+    console.log(zipOut);
   }
 
   async launchBrowser() {

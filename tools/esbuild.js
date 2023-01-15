@@ -51,7 +51,7 @@ class Build {
         this.test();
         break;
       default:
-        this.buildExtension();
+        this.packageExtension().then(out => console.log(out));
     }
   }
 
@@ -141,6 +141,7 @@ class Build {
 
   async buildAndWatch() {
     await this.buildExtension();
+    console.log("Built extension and listening for changes...");
     // The watch+serve APIs on esbuild are still evolving and a bit too rapid for the use-case here.
     // In v0.16 (current) - esbuild.build has a watch option
     // In v0.17 (next) - watch and serve are moved to a new context API.
@@ -153,10 +154,7 @@ class Build {
       }
       fsTimeout = setTimeout(async () => {
         fsTimeout = null;
-        await this.clean(this.outDir);
-        await this.bundleScripts();
-        await this.generateManifest();
-        await this.copyAssets();
+        await this.buildExtension();
         console.log(`Successfully rebuilt extension due to: ${event} on ${filename}`);
         // TODO: Fire event to reload browser.
       }, 100);
@@ -252,7 +250,8 @@ class Build {
   }
 
   // Package extension.
-  zipDir() {
+  async packageExtension() {
+    await this.buildExtension();
     const zipFile = `${this.outputBase}/${this.browser}-${
       this.isProd ? "prod" : "dev"
     }.zip`;
@@ -305,12 +304,9 @@ class Build {
 
   async buildExtension() {
     await this.clean(this.outDir);
-    console.log(`Deleted ${this.outDir}`);
     await this.bundleScripts();
     await this.generateManifest();
     await this.copyAssets();
-    const zipOut = await this.zipDir();
-    console.log(zipOut);
   }
 
   async launchBrowser() {

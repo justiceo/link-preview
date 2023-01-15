@@ -1,5 +1,6 @@
 import { Logger } from "../logger";
 import WinBox from "winbox/src/js/winbox";
+import {  setStyle } from "winbox/src/js/helper.js";
 import "winbox/dist/css/winbox.min.css";
 import "./previewr.css";
 import { sanitizeUrl } from "@braintree/sanitize-url";
@@ -20,6 +21,11 @@ WinBox.prototype.setUrl = function(url, onload){
   }
 
   return this;
+};
+
+// Export the dialog dom
+WinBox.prototype.getDom = function(){
+  return this.dom;
 };
 
 // This class is responsible to loading/reloading/unloading the angular app into the UI.
@@ -82,7 +88,7 @@ export class Previewr {
     );
   }
 
-  handleMessage(message) {
+  async handleMessage(message) {
     // Extract the url from the message.
     let urlStr;
     if (message.action === "copy") {
@@ -123,10 +129,10 @@ export class Previewr {
     }
 
     // Preview new URL.
-    this.previewUrl(newUrl);
+    return this.previewUrl(newUrl);
   }
 
-  previewUrl(url: URL) {
+  async previewUrl(url: URL) {
     this.logger.log("#previewUrl: ", url);
     this.url = url;
 
@@ -137,11 +143,12 @@ export class Previewr {
         x: "right",
         y: "center",
         class: ["no-max", "no-full"],
+        index: await this.getMaxZIndex(),
 
         onclose: () => {
           this.navStack = [];
           this.url = undefined;
-          this.dialog = null;
+          this.dialog = undefined;
         },
       });
 
@@ -189,4 +196,16 @@ export class Previewr {
       return true;
     }
   }
+
+  getMaxZIndex () {
+    return new Promise((resolve: (arg0: number) => void) => {
+      const z = Math.max(
+        ...Array.from(document.querySelectorAll('body *'), (el) =>
+          parseFloat(window.getComputedStyle(el).zIndex)
+        ).filter((zIndex) => !Number.isNaN(zIndex)),
+        0
+      );
+      resolve(z);
+    });
+  };
 }

@@ -29,3 +29,6 @@ Cool search and URL previews.
 
 - Using :host reset for font-size, didn't work.
 - Using it with `contain: content`, UI is not displayed. https://web.dev/shadowdom-v1/#use-css-containment.
+
+### Issues
+- Modal z-index too low (e.g. on google navbar)

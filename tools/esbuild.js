@@ -147,14 +147,17 @@ class Build {
     // It is not yet clear how to monitor changes to HTML and other non-entrypoint files.
     // The NodeJs API is unstable as well, specifically it's known to fire duplicate events, which explains the timeouts below.
     let fsTimeout = null;
-    fs.watch('src', {recursive: true},  (event, filename) => {
-      if(fsTimeout) {
+    fs.watch("src", { recursive: true }, (event, filename) => {
+      if (fsTimeout) {
         return;
       }
-      fsTimeout = setTimeout(() => {
+      fsTimeout = setTimeout(async () => {
         fsTimeout = null;
-        console.log(`rebuild due to fs event: ${event} on ${filename}`);
-        this.buildExtension();
+        await this.clean(this.outDir);
+        await this.bundleScripts();
+        await this.generateManifest();
+        await this.copyAssets();
+        console.log(`Successfully rebuilt extension due to: ${event} on ${filename}`);
         // TODO: Fire event to reload browser.
       }, 100);
     });
@@ -200,12 +203,12 @@ class Build {
           const colorIcon = icon.clone();
           colorIcon
             .resize(size, size)
-            .write(`${this.outDir}assets/logo-${size}x${size}.png`);
+            .write(`src/assets/logo-${size}x${size}.png`);
           const grayIcon = icon.clone();
           grayIcon
             .resize(size, size)
             .greyscale()
-            .write(`${this.outDir}assets/logo-gray-${size}x${size}.png`);
+            .write(`src/assets/logo-gray-${size}x${size}.png`);
         });
         resolve();
       });
@@ -304,8 +307,8 @@ class Build {
     await this.clean(this.outDir);
     console.log(`Deleted ${this.outDir}`);
     await this.bundleScripts();
+    await this.generateManifest();
     await this.copyAssets();
-    await this.generateIcons();
     const zipOut = await this.zipDir();
     console.log(zipOut);
   }

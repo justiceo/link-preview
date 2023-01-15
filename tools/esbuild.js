@@ -131,7 +131,7 @@ class Build {
         minify: this.isProd,
         sourcemap: !this.isProd,
         outdir: this.outDir,
-        //target: ["chrome58", "firefox57", "safari11", "edge16"],
+        target: ["chrome107"], // https://en.wikipedia.org/wiki/Google_Chrome_version_history
       })
       .catch((err) => {
         console.error(err);

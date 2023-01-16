@@ -188,7 +188,7 @@ class Build {
     const cleanedObj = {};
     for (let [key, value] of Object.entries(obj)) {
       // Recursively apply this check on values.
-      if(typeof value === 'object') {
+      if(typeof value === 'object' && !Array.isArray(value)) {
         value = this.removeBrowserPrefixesForManifest(value);
       }
 

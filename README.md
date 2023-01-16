@@ -1,34 +1,68 @@
 #  Search Preview
 
-Cool search and URL previews.
+A browser extension for previewing links and search results without opening new tabs.
 
-# Message passing
+![Screenshot](src/assets/screenshot2.jpeg "Preview search results")
 
-1. Broadcast Channel: For communicating with frames on same origin across different contexts (and tabs).
-- Deficiency: A window can host pages with different origins.
-- If multiple tabs of same origin are open in a browser, all tabs receive the broadcast.
+## Downloads
+<table cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="center">
+      <a align="center" href="https://chrome.google.com/webstore/detail/better-previews/mmmfofondapflhgbdidadejnechhjocm">
+        <img src="https://user-images.githubusercontent.com/22908993/166417152-f870bfbd-1770-4c28-b69d-a7303aebc9a6.png" alt="Chrome web store" />
+        <p align="center">Chrome Web Store</p>
+      </a>
+    </td>
+    <td valign="center">
+      <a href="https://chrome.google.com/webstore/detail/better-previews/mmmfofondapflhgbdidadejnechhjocm">
+        <img src="https://user-images.githubusercontent.com/22908993/166417727-3481fef4-00e5-4cf0-bb03-27fb880d993c.png" alt="Firefox add-ons" />
+        <p align="center">Firefox Add-ons</p>
+      </a>
+    </td>
+  </tr>
+</table>
 
-2. Window.postMessage: For communicating with frames of different origins in same window.
-- Deficiency: Need to know target origin for cross-origin communication. "*" doesn't work.
+## Features
 
-3. chrome.runtime.connect: Long-lived connection for extension 
-- Deficiency: Port gets disconnected when frame location changes. Managing its connected state is complex.
-- Deficiency: If part of the content-scripts Js is executed in page context, it would not have access to chrome.runtime.
+* Start search from any website.
+* Preview the results of pages on any search engine.
+* Drag and resize preview window.
+* Go from preview to full tab with one click.
+* Navigate forward and backward within a preview.
 
-4. chrome.runtime.sendMessage: Send message from content script to bg and back.
-- Deficiency: If part of the content-scripts Js is executed in page context, it would not have access to chrome.runtime.
+## Project setup
 
-5. Window custom event: Create and dispatch custom events to the window.
+```bash
+# Install dependencies
+npm install
 
-# Domains that bleed CSS into ShadowDOM
+# Build extension for development, watch for file changes and rebuild.
+node tools/esbuild watch
 
+# Generate compliant images assets for logo (default logo location src/assets/logo.png)
+node tools/esbuild generateIcons
 
-- Example.com (floatie looks weird)
+# Translate app strings to all supported chrome locales
+node tools/esbuild translate
 
-### Tried
+# Build and package extension into a store-ready upload
+node tools/esbuild --prod 
 
-- Using :host reset for font-size, didn't work.
-- Using it with `contain: content`, UI is not displayed. https://web.dev/shadowdom-v1/#use-css-containment.
+# Create extension package for Firefox/Opera/Edge by specifying --browser argument
+node tools/esbuild --prod --browser=firefox
 
-### Issues
-- Modal z-index too low (e.g. on google navbar)
+# Run tests
+node tools/esbuild test
+```
+
+### Install Locally
+
+#### Chrome
+1. Open chrome and navigate to extensions page using this URL: chrome://extensions.
+2. Enable the "Developer mode".
+3. Click "Load unpacked extension" button, browse the `build/chrome-dev` directory and select it.
+
+### Firefox
+1. Open firefox and navigate to `about:debugging#/runtime/this-firefox`.
+2. Click the "Load Temporary Add-on" button.
+3. Browse the `build/firefox-dev` directory and select the `manifest.json` file.

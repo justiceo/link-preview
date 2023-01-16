@@ -45,7 +45,7 @@ class Build {
         this.launchBrowser();
         break;
       case "watch":
-        this.buildAndWatch();
+        this.watch();
         break;
       case "test":
         this.test();
@@ -135,12 +135,24 @@ class Build {
       })
       .catch((err) => {
         console.error(err);
-        process.exit(1);
       });
   }
 
-  async buildAndWatch() {
-    await this.buildExtension();
+  async watch() {
+    const buildAndCatchError = async (event, filename) => {
+      try {
+        await this.buildExtension();
+        // TODO: Fire event to reload browser.
+
+        console.log(
+          `Successfully rebuilt extension due to: ${event} on ${filename}`
+        );
+      } catch (e) {
+        console.error("Error building extension: ", e);
+      }
+    }
+
+    await buildAndCatchError("initial invocation", "all files");
     console.log("Built extension and listening for changes...");
     // The watch+serve APIs on esbuild are still evolving and a bit too rapid for the use-case here.
     // In v0.16 (current) - esbuild.build has a watch option
@@ -154,11 +166,7 @@ class Build {
       }
       fsTimeout = setTimeout(async () => {
         fsTimeout = null;
-        await this.buildExtension();
-        console.log(
-          `Successfully rebuilt extension due to: ${event} on ${filename}`
-        );
-        // TODO: Fire event to reload browser.
+        await buildAndCatchError(event, filename);
       }, 100);
     });
   }
@@ -188,7 +196,7 @@ class Build {
     const cleanedObj = {};
     for (let [key, value] of Object.entries(obj)) {
       // Recursively apply this check on values.
-      if(typeof value === 'object' && !Array.isArray(value)) {
+      if (typeof value === "object" && !Array.isArray(value)) {
         value = this.removeBrowserPrefixesForManifest(value);
       }
 
@@ -347,11 +355,6 @@ class Build {
       // Build and run tests.
       this.buildAndExecuteTests();
     });
-  }
-
-  watch() {
-    // For any changes in src/ rebuild the whole thing.
-    // https://esbuild.github.io/api/#watch
   }
 }
 

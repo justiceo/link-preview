@@ -1,4 +1,4 @@
-#  Search Preview
+# ![logo](src/assets/logo-24x24.png)  Better Previews
 
 A browser extension for previewing links and search results without opening new tabs.
 
@@ -44,6 +44,10 @@ node tools/esbuild generateIcons
 
 # Translate app strings to all supported chrome locales
 node tools/esbuild translate
+
+# Start an instance of Chromium with extension installed (using puppeteer)
+# For Firefox, pass --browser=firefox as argument.
+node tools/esbuild start 
 
 # Build and package extension into a store-ready upload
 node tools/esbuild --prod 

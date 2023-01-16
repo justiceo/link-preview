@@ -7,7 +7,7 @@
     background-size: 17px auto;
 }
 
-.nav-back {
+.nav-back, .open-options {
     background-size: 20px auto;
     filter: invert(1);
 }

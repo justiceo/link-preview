@@ -1,24 +1,124 @@
 <!DOCTYPE html>
 <html>
-<head><title>My Test Extension Options</title></head>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>My Test Extension Options</title>
+  <link rel="stylesheet" href="./options.css">
+</head>
+
 <body>
+  <div class="container" style="margin-top: 100px;">
+    <div class="header">
+      <img class="logo" alt="logo" src="../assets/logo-48x48.png" />
+      <h1>Better Previews</h1>
+      <p>Perform search and preview links in sidebars instead of opening new tabs.</p>
 
-Favorite color:
-<select id="color">
- <option value="red">red</option>
- <option value="green">green</option>
- <option value="blue">blue</option>
- <option value="yellow">yellow</option>
-</select>
+      <a id="demo-button" class="button">Preview "hello world"</a>
+    </div>
 
-<label>
-  <input type="checkbox" id="like">
-  I like colors.
-</label>
+    <div class="row">
+      <div class="col">
+        <ul class="real-list list-group"></ul>
+      </div>
+    </div>
 
-<div id="status"></div>
-<button id="save">Save</button>
+    <div class="row" style="display:none">
+      <div class="col">
+        <ul class="list-group">
+          <li class="checkbox-template list-group-item p-4 d-flex justify-content-between align-items-center">
+            <div class="ms-2 me-5">
+              <div class="fw-bold control-title">Subheading title</div>
+              <small class="control-description disabled">Content for list item ent for list item ent for list ent for
+                list item ent for list ent for list item ent for list ent for list item ent for list</small>
+            </div>
+            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+          </li>
 
-<script src="options.js"></script>
+          <li class="select-template list-group-item p-4 d-flex justify-content-between align-items-center">
+            <div class="ms-2 me-5">
+              <div class="control-title fw-bold">Subheading title</div>
+              <small class="control-description disabled">Content for list item ent for for list ent for list item ent
+                for list</small>
+            </div>
+            <select class="form-select form-select-md" aria-label="example" style="max-width: 200px">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </li>
+
+          <li class="range-template list-group-item p-4">
+            <div class="ms-2">
+              <div class="control-title fw-bold">Subheading title</div>
+              <small class="control-description disabled">Content for list item ent for list item ent for list</small>
+              <input type="range" class="form-range" min="0" max="5" id="customRange2">
+            </div>
+          </li>
+
+          <li class="switch-template list-group-item p-4 d-flex justify-content-between align-items-center">
+            <div class="ms-2 me-auto">
+              <div class="control-title fw-bold">Subheading title</div>
+              <small class="control-description disabled">Content for list item ent for list item ent for list</small>
+            </div>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+            </div>
+          </li>
+
+          <li class="radio-template list-group-item p-4 d-flex justify-content-between align-items-center">
+            <div class="ms-2 me-5">
+              <div class="control-title fw-bold">Subheading title</div>
+              <small class="control-description disabled">Content for list item ent for list item ent for list ent for
+                list item ent for list ent for list item ent for list ent for list item ent for list</small>
+            </div>
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-primary">Left</button>
+              <button type="button" class="btn btn-primary">Middle</button>
+              <button type="button" class="btn btn-primary">Right</button>
+            </div>
+          </li>
+
+          <li class="textarea-template list-group-item p-4 ">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="ms-2 me-auto">
+                <div class="control-title fw-bold">Subheading title</div>
+                <small class="control-description disabled">Content for list item ent for list item ent for list</small>
+
+              </div>
+              <div class="form-check form-switch">
+                <i class="bi-caret-down-fill" style="font-size: 1.5rem" data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></i>
+              </div>
+            </div>
+            <div class="collapse ms-2" id="collapseExample">
+              <div class="form-group">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="../assets/logo-24x24.png" class="rounded me-2" alt="Logo">
+          <strong class="me-auto">Better Previews</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Successfully updated settings
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="options.js"></script>
 </body>
+
 </html>

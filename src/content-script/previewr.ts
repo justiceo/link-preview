@@ -1,6 +1,5 @@
 import { Logger } from "../logger";
 import WinBox from "winbox/src/js/winbox";
-import {  setStyle } from "winbox/src/js/helper.js";
 import "winbox/dist/css/winbox.min.css";
 import "./previewr.css";
 import { sanitizeUrl } from "@braintree/sanitize-url";
@@ -28,6 +27,32 @@ WinBox.prototype.getDom = function(){
   return this.dom;
 };
 
+const template = document.createElement("div");
+template.innerHTML = `
+'<div class=wb-header>' +
+'<div class=wb-control>' +
+    '<span class=wb-min></span>' +
+    '<span class=wb-max></span>' +
+    '<span class=wb-full></span>' +
+    '<span class=wb-close></span>' +
+'</div>' +
+'<div class=wb-drag>'+
+    '<div class=wb-icon></div>' +
+    '<div class=wb-title></div>' +
+'</div>' +
+'</div>' +
+
+'<div class=wb-body></div>' +
+
+'<div class=wb-n></div>' +
+'<div class=wb-s></div>' +
+'<div class=wb-w></div>' +
+'<div class=wb-e></div>' +
+'<div class=wb-nw></div>' +
+'<div class=wb-ne></div>' +
+'<div class=wb-se></div>' +
+'<div class=wb-sw></div>'
+`
 // This class is responsible to loading/reloading/unloading the angular app into the UI.
 export class Previewr {
   getExtensionUrl = chrome.runtime.getURL;
@@ -144,6 +169,7 @@ export class Previewr {
         y: "center",
         class: ["no-max", "no-full"],
         index: await this.getMaxZIndex(),
+        template: template,
 
         onclose: () => {
           this.navStack = [];

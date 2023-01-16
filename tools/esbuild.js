@@ -51,7 +51,7 @@ class Build {
         this.test();
         break;
       default:
-        this.packageExtension().then(out => console.log(out));
+        this.packageExtension().then((out) => console.log(out));
     }
   }
 
@@ -155,7 +155,9 @@ class Build {
       fsTimeout = setTimeout(async () => {
         fsTimeout = null;
         await this.buildExtension();
-        console.log(`Successfully rebuilt extension due to: ${event} on ${filename}`);
+        console.log(
+          `Successfully rebuilt extension due to: ${event} on ${filename}`
+        );
         // TODO: Fire event to reload browser.
       }, 100);
     });
@@ -169,14 +171,7 @@ class Build {
       let rawdata = fs.readFileSync("src/manifest.json");
       let manifest = JSON.parse(rawdata);
 
-      const browserManifest = {};
-      for (const [key, value] of Object.entries(manifest)) {
-        if (!key.startsWith("__")) {
-          browserManifest[key] = value;
-        } else if (key.startsWith(`__${this.browser}__`)) {
-          browserManifest[key.replace(`__${this.browser}__`, "")] = value;
-        }
-      }
+      const browserManifest = this.removeBrowserPrefixesForManifest(manifest);
 
       const formattedJson = JSON.stringify(browserManifest, null, 4);
       fs.writeFile(this.outDir + "manifest.json", formattedJson, (err) => {
@@ -187,6 +182,23 @@ class Build {
         }
       });
     });
+  }
+
+  removeBrowserPrefixesForManifest(obj) {
+    const cleanedObj = {};
+    for (let [key, value] of Object.entries(obj)) {
+      // Recursively apply this check on values.
+      if(typeof value === 'object') {
+        value = this.removeBrowserPrefixesForManifest(value);
+      }
+
+      if (!key.startsWith("__")) {
+        cleanedObj[key] = value;
+      } else if (key.startsWith(`__${this.browser}__`)) {
+        cleanedObj[key.replace(`__${this.browser}__`, "")] = value;
+      }
+    }
+    return cleanedObj;
   }
 
   // Generate icons
@@ -256,7 +268,7 @@ class Build {
       this.isProd ? "prod" : "dev"
     }.zip`;
     return new Promise((resolve, reject) => {
-      exec(`zip -r ${zipFile}  ${this.outDir}`, (error, stdout, stderr) => {
+      exec(`cd ${this.outDir} && zip -r archive .`, (error, stdout, stderr) => {
         if (error) {
           reject(`zip error: ${error.message}`);
           return;

@@ -4,6 +4,7 @@ A browser extension for previewing links and search results without opening new 
 
 ![Screenshot](assets/screenshot/yourscreenshot.jpeg "Preview search results")
 
+
 ## Downloads
 <table cellspacing="0" cellpadding="0">
   <tr>

@@ -47,6 +47,12 @@
     "service_worker": "background-script/service-worker.js",
     "__firefox__persistent": "false"
   },
+  "web_accessible_resources": [
+    {
+      "resources": ["options-page/options.html"],
+      "matches": ["<all_urls>"]
+    }
+  ],
   "__firefox__key": "",
   "__firefox__browser_specific_settings": {
       "gecko": {

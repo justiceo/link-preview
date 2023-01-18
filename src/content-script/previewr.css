@@ -1,13 +1,14 @@
 .winbox {
-    border-radius: 10px;
-    overflow: hidden;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .nav-away {
-    background-size: 17px auto;
+  background-size: 17px auto;
 }
 
-.nav-back, .open-options {
-    background-size: 20px auto;
-    filter: invert(1);
+.nav-back,
+.open-options {
+  background-size: 20px auto;
+  filter: invert(1);
 }

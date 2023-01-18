@@ -1,6 +1,6 @@
-import { Floatie } from './floatie/floatie';
-import { IFrameHelper } from './iframe-helper';
-import { Previewr } from './previewr';
+import { Floatie } from "./floatie/floatie";
+import { IFrameHelper } from "./iframe-helper";
+import { Previewr } from "./previewr";
 import * as Sentry from "@sentry/browser";
 import { BrowserTracing } from "@sentry/tracing";
 
@@ -13,22 +13,21 @@ Sentry.init({
   // of transactions for performance monitoring.
   // We recommend adjusting this value in production
   tracesSampleRate: 0.1,
-  release: 'better-previews@23.01.13',
-  environment: 'PROD',
-
+  release: "better-previews@23.01.13",
+  environment: "PROD",
 });
 
 class ContentScript {
   floatie = new Floatie();
   iframeHelper = new IFrameHelper();
   previewr = new Previewr();
-  unsupportedHosts = ['mail.google.com'];
+  unsupportedHosts = ["mail.google.com"];
 
   constructor() {}
 
   start() {
     if (this.isDisabledDomain()) {
-      console.warn('Better Previews is disabled on ', window.location.host);
+      console.warn("Better Previews is disabled on ", window.location.host);
       // TODO: Update extension icon to gray.
       return;
     }
@@ -38,9 +37,9 @@ class ContentScript {
     this.iframeHelper.registerListeners();
 
     chrome.runtime.onMessage.addListener((request, sender, callback) => {
-      console.debug('Re-posting message for DOM: ', request);
-      window.postMessage({ application: 'better-previews', ...request });
-      callback('ok');
+      console.debug("Re-posting message for DOM: ", request);
+      window.postMessage({ application: "better-previews", ...request });
+      callback("ok");
     });
   }
 

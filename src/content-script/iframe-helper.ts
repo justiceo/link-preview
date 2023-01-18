@@ -11,26 +11,26 @@ export class IFrameHelper {
     if (!this.inIframe()) {
       return;
     }
-    if (this.getFrameName() !== 'iframer') {
+    if (this.getFrameName() !== "iframer") {
       return;
     }
     document.addEventListener(
-      'click',
+      "click",
       (e) => {
         var targetEl: any = this.getLinkTarget(e);
         if (!targetEl || !targetEl.href) {
           return;
         }
-        if ((targetEl.href as string).startsWith('#')) {
+        if ((targetEl.href as string).startsWith("#")) {
           // This is common for internal/fragment navigation.
           return;
         }
         e.stopImmediatePropagation();
         e.preventDefault();
-        console.debug('Prevented click propagation and posting navigate');
+        console.debug("Prevented click propagation and posting navigate");
         // TODO: Add target origin instead of "*". https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage
         this.sendMessage({
-          action: 'navigate',
+          action: "navigate",
           href: targetEl.href,
           source: window.location.href,
           sourceFrame: this.getFrameName(),
@@ -39,18 +39,18 @@ export class IFrameHelper {
       true
     );
 
-    window.addEventListener('load', () => {
+    window.addEventListener("load", () => {
       this.sendMessage({
-        action: 'load',
+        action: "load",
         href: document.location.href,
         data: { title: this.getTitle() },
         sourceFrame: this.getFrameName(),
       });
     });
 
-    window.addEventListener('unload', () => {
+    window.addEventListener("unload", () => {
       this.sendMessage({
-        action: 'unload',
+        action: "unload",
         href: document.location.href,
         sourceFrame: this.getFrameName(),
       });
@@ -74,7 +74,7 @@ export class IFrameHelper {
     var target: any = e.target;
     // If the <a> element contains other elements, we traverse the tree to find the anchor element clicked:
     do {
-      if (target.nodeName.toUpperCase() === 'A' && target.href) {
+      if (target.nodeName.toUpperCase() === "A" && target.href) {
         return target;
       }
     } while ((target = target.parentElement));
@@ -82,8 +82,8 @@ export class IFrameHelper {
   }
 
   sendMessage(message: any) {
-    console.debug('#sendMessage', message);
-    chrome.runtime.sendMessage({ application: 'better-previews', ...message });
+    console.debug("#sendMessage", message);
+    chrome.runtime.sendMessage({ application: "better-previews", ...message });
   }
 
   getTitle() {

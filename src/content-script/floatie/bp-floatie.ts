@@ -1,4 +1,4 @@
-import { arrow, computePosition, flip, offset, shift } from '@floating-ui/dom';
+import { arrow, computePosition, flip, offset, shift } from "@floating-ui/dom";
 
 /**
  * Add a floating UI element to the DOM
@@ -22,7 +22,7 @@ export class BpFloatie extends HTMLElement {
 
   static createInDom() {
     // Register the custom element.
-    window.customElements.define('bp-floatie', BpFloatie);
+    window.customElements.define("bp-floatie", BpFloatie);
 
     // Create an instance and add to the DOM.
     const floatie = new BpFloatie();
@@ -32,12 +32,12 @@ export class BpFloatie extends HTMLElement {
 
   connectedCallback() {
     // Create a shadow root
-    this.attachShadow({ mode: 'open' }); // sets and returns 'this.shadowRoot'
+    this.attachShadow({ mode: "open" }); // sets and returns 'this.shadowRoot'
 
-    this.copyButton = this.createActionButton('copy');
-    this.searchButton = this.createActionButton('search');
-    this.previewButton = this.createActionButton('preview');
-    this.tooltipArrow = this.createDiv('tooltip');
+    this.copyButton = this.createActionButton("copy");
+    this.searchButton = this.createActionButton("search");
+    this.previewButton = this.createActionButton("preview");
+    this.tooltipArrow = this.createDiv("tooltip");
 
     this.append(
       this.tooltipArrow,
@@ -50,13 +50,13 @@ export class BpFloatie extends HTMLElement {
   createActionButton(action: string): HTMLDivElement {
     const div = this.createDiv(action);
     div.className = `sp-floatie-action`;
-    div.setAttribute('data-action', action);
+    div.setAttribute("data-action", action);
     div.innerHTML = `${action}`;
     return div;
   }
 
   createDiv(identifier: string) {
-    const div = document.createElement('div');
+    const div = document.createElement("div");
     div.id = `sp-floatie-${identifier}`;
     return div;
   }
@@ -76,7 +76,7 @@ export class BpFloatie extends HTMLElement {
     document.onkeydown = () => this.hideAll();
 
     this.setupLinkPreviews();
-    console.error('bp-floatie setup and ready to go');
+    console.error("bp-floatie setup and ready to go");
   }
 
   /*
@@ -84,7 +84,7 @@ export class BpFloatie extends HTMLElement {
    * On normal pages, display floatie on all links.
    */
   setupLinkPreviews() {
-    const anchors = document.querySelectorAll('a');
+    const anchors = document.querySelectorAll("a");
     let showTimeout: any = null;
     let hideTimeout: any = null;
     anchors.forEach((a: HTMLAnchorElement) => {
@@ -99,7 +99,7 @@ export class BpFloatie extends HTMLElement {
 
       // TODO: check if computed display is 'none', i.e. link is hidden.
 
-      a.addEventListener('mouseover', (unused) => {
+      a.addEventListener("mouseover", (unused) => {
         if (hideTimeout) {
           clearTimeout(hideTimeout);
           hideTimeout = null;
@@ -112,7 +112,7 @@ export class BpFloatie extends HTMLElement {
         }, 500);
       });
 
-      a.addEventListener('mouseout', () => {
+      a.addEventListener("mouseout", () => {
         if (showTimeout) {
           clearTimeout(showTimeout);
           showTimeout = null;
@@ -139,7 +139,7 @@ export class BpFloatie extends HTMLElement {
     this.hideAll();
 
     // Filter out empty/irrelevant selections.
-    if (typeof window.getSelection == 'undefined') {
+    if (typeof window.getSelection == "undefined") {
       return;
     }
     const selection = window.getSelection()!;
@@ -151,7 +151,7 @@ export class BpFloatie extends HTMLElement {
     const selectedText = selection.toString().trim();
     const range = selection.getRangeAt(0);
     const boundingRect = range.getBoundingClientRect();
-    console.debug('Selected: ', selectedText);
+    console.debug("Selected: ", selectedText);
     const actionsToShow = [];
     if (this.shouldShowPreview(e, selectedText)) {
       actionsToShow.push(this.previewButton);
@@ -165,7 +165,7 @@ export class BpFloatie extends HTMLElement {
   }
 
   getAbsoluteUrl(urlStr: string): URL | null {
-    const absoluteUrlMatcher = new RegExp('^(?:[a-z+]+:)?//', 'i');
+    const absoluteUrlMatcher = new RegExp("^(?:[a-z+]+:)?//", "i");
     let url: URL;
     try {
       if (absoluteUrlMatcher.test(urlStr)) {
@@ -191,7 +191,7 @@ export class BpFloatie extends HTMLElement {
       return false;
     }
 
-    if (url.protocol !== 'http:' && url.protocol !== 'https:') {
+    if (url.protocol !== "http:" && url.protocol !== "https:") {
       // We don't want to preview other schemes like tel:
       return false;
     }
@@ -218,7 +218,7 @@ export class BpFloatie extends HTMLElement {
       var target: any = e.target;
       do {
         if (
-          target.nodeName.toUpperCase() === 'A' &&
+          target.nodeName.toUpperCase() === "A" &&
           this.isGoodUrl(target.href)
         ) {
           return true;
@@ -264,10 +264,10 @@ export class BpFloatie extends HTMLElement {
     this.hideAll();
     this.showContainer(boundingRect);
     buttons.forEach((b) => {
-      b.style.display = 'inline-block';
+      b.style.display = "inline-block";
       b.onclick = () => {
         this.sendMessage(
-          b.getAttribute('data-action') || 'unknown-action',
+          b.getAttribute("data-action") || "unknown-action",
           text
         );
         this.hideAll();
@@ -277,7 +277,7 @@ export class BpFloatie extends HTMLElement {
 
   sendMessage(action: string, data: any) {
     window.postMessage(
-      { application: 'better-previews', action: action, data: data },
+      { application: "better-previews", action: action, data: data },
       window.location.origin
     );
     // chrome.runtime.sendMessage won't put because angular is executed in page context.
@@ -287,13 +287,13 @@ export class BpFloatie extends HTMLElement {
   // It should be a no-op to call this multiple times.
   showContainer(boundingRect: DOMRect): void {
     // Make container visible.
-    this.style.display = 'block';
+    this.style.display = "block";
 
     // Ensure it's not covered by other page UI.
     const getMaxZIndex = () => {
       return new Promise((resolve: (arg0: number) => void) => {
         const z = Math.max(
-          ...Array.from(document.querySelectorAll('body *'), (el) =>
+          ...Array.from(document.querySelectorAll("body *"), (el) =>
             parseFloat(window.getComputedStyle(el).zIndex)
           ).filter((zIndex) => !Number.isNaN(zIndex)),
           0
@@ -320,8 +320,8 @@ export class BpFloatie extends HTMLElement {
 
     // Position over reference element
     computePosition(virtualEl, this, {
-      placement: 'top',
-      strategy: 'absolute', // If you use "fixed", x, y would change to clientX/Y.
+      placement: "top",
+      strategy: "absolute", // If you use "fixed", x, y would change to clientX/Y.
       middleware: [
         offset(12), // Space between mouse and tooltip.
         flip(),
@@ -342,41 +342,41 @@ export class BpFloatie extends HTMLElement {
       // Handle arrow placement.
       const coords = middlewareData.arrow;
 
-      let staticSide = 'bottom';
-      switch (placement.split('-')[0]) {
-        case 'top':
-          staticSide = 'bottom';
+      let staticSide = "bottom";
+      switch (placement.split("-")[0]) {
+        case "top":
+          staticSide = "bottom";
           break;
-        case 'left':
-          staticSide = 'right';
+        case "left":
+          staticSide = "right";
           break;
-        case 'bottom':
-          staticSide = 'top';
+        case "bottom":
+          staticSide = "top";
           break;
-        case 'right':
-          staticSide = 'left';
+        case "right":
+          staticSide = "left";
           break;
       }
       Object.assign(this.tooltipArrow.style, {
-        left: coords?.x != null ? `${coords.x}px` : '',
-        top: coords?.y != null ? `${coords.y}px` : '',
-        right: '',
-        bottom: '',
-        [staticSide]: '-4px', // If you update this, update height and width of arrow.
+        left: coords?.x != null ? `${coords.x}px` : "",
+        top: coords?.y != null ? `${coords.y}px` : "",
+        right: "",
+        bottom: "",
+        [staticSide]: "-4px", // If you update this, update height and width of arrow.
       });
 
       getMaxZIndex().then((maxZ: number) => {
-        this.style.zIndex = '' + (maxZ + 10);
-        this.tooltipArrow.style.zIndex = '' + (maxZ - 1);
+        this.style.zIndex = "" + (maxZ + 10);
+        this.tooltipArrow.style.zIndex = "" + (maxZ - 1);
       });
     });
   }
 
   hideAll(): void {
     clearTimeout(this.showTimeout);
-    this.style.display = 'none';
-    this.copyButton.style.display = 'none';
-    this.searchButton.style.display = 'none';
-    this.previewButton.style.display = 'none';
+    this.style.display = "none";
+    this.copyButton.style.display = "none";
+    this.searchButton.style.display = "none";
+    this.previewButton.style.display = "none";
   }
 }

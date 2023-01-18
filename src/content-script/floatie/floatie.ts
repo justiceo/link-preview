@@ -1,5 +1,5 @@
-import { arrow, computePosition, flip, offset, shift } from '@floating-ui/dom';
-import './floatie.css';
+import { arrow, computePosition, flip, offset, shift } from "@floating-ui/dom";
+import "./floatie.css";
 
 import { Tooltip } from "./tooltip";
 
@@ -31,20 +31,20 @@ export class Floatie {
         `;
     // Parse markup.
     const range = document.createRange();
-    range.selectNode(document.getElementsByTagName('body').item(0)!);
+    range.selectNode(document.getElementsByTagName("body").item(0)!);
     this.documentFragment = range.createContextualFragment(markup);
 
     // Extract actions buttons.
     const container = this.documentFragment.getElementById(
-      'sp-floatie-container'
+      "sp-floatie-container"
     );
     const searchButton =
-      this.documentFragment.getElementById('sp-floatie-search');
+      this.documentFragment.getElementById("sp-floatie-search");
     const previewButton =
-      this.documentFragment.getElementById('sp-floatie-preview');
-    const copyButton = this.documentFragment.getElementById('sp-floatie-copy');
+      this.documentFragment.getElementById("sp-floatie-preview");
+    const copyButton = this.documentFragment.getElementById("sp-floatie-copy");
     const tooltipArrow =
-      this.documentFragment.getElementById('sp-floatie-arrow');
+      this.documentFragment.getElementById("sp-floatie-arrow");
     if (
       !container ||
       !searchButton ||
@@ -52,7 +52,7 @@ export class Floatie {
       !copyButton ||
       !tooltipArrow
     ) {
-      throw new Error('Impossible error obtaining action buttons from DOM');
+      throw new Error("Impossible error obtaining action buttons from DOM");
     }
     this.container = container;
     this.searchButton = searchButton;
@@ -60,11 +60,11 @@ export class Floatie {
     this.copyButton = copyButton;
     this.tooltipArrow = tooltipArrow;
 
-    console.debug('Initialized floatie');
+    console.debug("Initialized floatie");
   }
 
   startListening(): void {
-    if(this.inIframe()) {
+    if (this.inIframe()) {
       return;
     }
 
@@ -94,7 +94,7 @@ export class Floatie {
    * On normal pages, display floatie on all links.
    */
   setupLinkPreviews() {
-    const anchors = document.querySelectorAll('a');
+    const anchors = document.querySelectorAll("a");
     let showTimeout: any = null;
     let hideTimeout: any = null;
     anchors.forEach((a: HTMLAnchorElement) => {
@@ -109,7 +109,7 @@ export class Floatie {
 
       // TODO: check if computed display is 'none', i.e. link is hidden.
 
-      a.addEventListener('mouseover', (unused) => {
+      a.addEventListener("mouseover", (unused) => {
         if (hideTimeout) {
           clearTimeout(hideTimeout);
           hideTimeout = null;
@@ -122,7 +122,7 @@ export class Floatie {
         }, 500);
       });
 
-      a.addEventListener('mouseout', () => {
+      a.addEventListener("mouseout", () => {
         if (showTimeout) {
           clearTimeout(showTimeout);
           showTimeout = null;
@@ -139,9 +139,9 @@ export class Floatie {
     document.body.removeChild(this.documentFragment);
 
     // Remove window/document. listeners.
-    document.removeEventListener('onmouseup', () => {});
-    window.removeEventListener('onscroll', () => {});
-    window.removeEventListener('onresize', () => {});
+    document.removeEventListener("onmouseup", () => {});
+    window.removeEventListener("onscroll", () => {});
+    window.removeEventListener("onresize", () => {});
   }
 
   deferredMaybeShow(e: MouseEvent): void {
@@ -154,7 +154,7 @@ export class Floatie {
     this.hideAll();
 
     // Filter out empty/irrelevant selections.
-    if (typeof window.getSelection == 'undefined') {
+    if (typeof window.getSelection == "undefined") {
       return;
     }
     const selection = window.getSelection()!;
@@ -166,7 +166,7 @@ export class Floatie {
     const selectedText = selection.toString().trim();
     const range = selection.getRangeAt(0);
     const boundingRect = range.getBoundingClientRect();
-    console.debug('Selected: ', selectedText);
+    console.debug("Selected: ", selectedText);
     const actionsToShow = [];
     if (this.shouldShowPreview(e, selectedText)) {
       actionsToShow.push(this.previewButton);
@@ -180,7 +180,7 @@ export class Floatie {
   }
 
   getAbsoluteUrl(urlStr: string): URL | null {
-    const absoluteUrlMatcher = new RegExp('^(?:[a-z+]+:)?//', 'i');
+    const absoluteUrlMatcher = new RegExp("^(?:[a-z+]+:)?//", "i");
     let url: URL;
     try {
       if (absoluteUrlMatcher.test(urlStr)) {
@@ -206,7 +206,7 @@ export class Floatie {
       return false;
     }
 
-    if (url.protocol !== 'http:' && url.protocol !== 'https:') {
+    if (url.protocol !== "http:" && url.protocol !== "https:") {
       // We don't want to preview other schemes like tel:
       return false;
     }
@@ -233,7 +233,7 @@ export class Floatie {
       var target: any = e.target;
       do {
         if (
-          target.nodeName.toUpperCase() === 'A' &&
+          target.nodeName.toUpperCase() === "A" &&
           this.isGoodUrl(target.href)
         ) {
           return true;
@@ -279,10 +279,10 @@ export class Floatie {
     this.hideAll();
     this.showContainer(boundingRect);
     buttons.forEach((b) => {
-      b.style.display = 'inline-block';
+      b.style.display = "inline-block";
       b.onclick = () => {
         this.sendMessage(
-          b.getAttribute('data-action') || 'unknown-action',
+          b.getAttribute("data-action") || "unknown-action",
           text
         );
         this.hideAll();
@@ -292,7 +292,7 @@ export class Floatie {
 
   sendMessage(action: string, data: any) {
     window.postMessage(
-      { application: 'better-previews', action: action, data: data },
+      { application: "better-previews", action: action, data: data },
       window.location.origin
     );
     // chrome.runtime.sendMessage won't put because angular is executed in page context.
@@ -302,13 +302,13 @@ export class Floatie {
   // It should be a no-op to call this multiple times.
   showContainer(boundingRect: DOMRect): void {
     // Make container visible.
-    this.container.style.display = 'block';
+    this.container.style.display = "block";
 
     // Ensure it's not covered by other page UI.
     const getMaxZIndex = () => {
       return new Promise((resolve: (arg0: number) => void) => {
         const z = Math.max(
-          ...Array.from(document.querySelectorAll('body *'), (el) =>
+          ...Array.from(document.querySelectorAll("body *"), (el) =>
             parseFloat(window.getComputedStyle(el).zIndex)
           ).filter((zIndex) => !Number.isNaN(zIndex)),
           0
@@ -335,8 +335,8 @@ export class Floatie {
 
     // Position over reference element
     computePosition(virtualEl, this.container, {
-      placement: 'top',
-      strategy: 'absolute', // If you use "fixed", x, y would change to clientX/Y.
+      placement: "top",
+      strategy: "absolute", // If you use "fixed", x, y would change to clientX/Y.
       middleware: [
         offset(12), // Space between mouse and tooltip.
         flip(),
@@ -357,42 +357,42 @@ export class Floatie {
       // Handle arrow placement.
       const coords = middlewareData.arrow;
 
-      let staticSide = 'bottom';
-      switch (placement.split('-')[0]) {
-        case 'top':
-          staticSide = 'bottom';
+      let staticSide = "bottom";
+      switch (placement.split("-")[0]) {
+        case "top":
+          staticSide = "bottom";
           break;
-        case 'left':
-          staticSide = 'right';
+        case "left":
+          staticSide = "right";
           break;
-        case 'bottom':
-          staticSide = 'top';
+        case "bottom":
+          staticSide = "top";
           break;
-        case 'right':
-          staticSide = 'left';
+        case "right":
+          staticSide = "left";
           break;
       }
       Object.assign(this.tooltipArrow.style, {
-        left: coords?.x != null ? `${coords.x}px` : '',
-        top: coords?.y != null ? `${coords.y}px` : '',
-        right: '',
-        bottom: '',
-        [staticSide]: '-4px', // If you update this, update height and width of arrow.
+        left: coords?.x != null ? `${coords.x}px` : "",
+        top: coords?.y != null ? `${coords.y}px` : "",
+        right: "",
+        bottom: "",
+        [staticSide]: "-4px", // If you update this, update height and width of arrow.
       });
 
       getMaxZIndex().then((maxZ: number) => {
-        this.container.style.zIndex = '' + (maxZ + 10);
-        this.tooltipArrow.style.zIndex = '' + (maxZ - 1);
+        this.container.style.zIndex = "" + (maxZ + 10);
+        this.tooltipArrow.style.zIndex = "" + (maxZ - 1);
       });
     });
   }
 
   hideAll(): void {
     clearTimeout(this.showTimeout);
-    this.container.style.display = 'none';
-    this.copyButton.style.display = 'none';
-    this.searchButton.style.display = 'none';
-    this.previewButton.style.display = 'none';
+    this.container.style.display = "none";
+    this.copyButton.style.display = "none";
+    this.searchButton.style.display = "none";
+    this.previewButton.style.display = "none";
   }
   inIframe() {
     try {

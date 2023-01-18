@@ -1,6 +1,15 @@
 import { arrow, computePosition, flip, offset, shift } from '@floating-ui/dom';
 import './floatie.css';
 
+// We cannot directly import "./tooltip.js" because it's a module.
+// We shouldn't put it in a script tag due to security concerns (it'll be executed in page context).
+// Below solution loads it dynamically to ensure it's executed in content-script context.
+(async () => {
+  const src = chrome.runtime.getURL("content-script/floatie/tooltip.js");
+  const importedScript = await import(src);
+  console.log("imported tooltip.js", importedScript);
+})();
+
 /*
  * This component is responsible for rendering
  * the floatie and managing its lifecycle.
@@ -65,6 +74,9 @@ export class Floatie {
     if(this.inIframe()) {
       return;
     }
+
+    const tooltip = document.createElement("bp-tooltip");
+    document.body.appendChild(tooltip);
 
     document.body.appendChild(this.documentFragment);
 

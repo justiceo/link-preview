@@ -51,6 +51,14 @@
     {
       "resources": ["options-page/options.html"],
       "matches": ["<all_urls>"]
+    },
+    {
+      "resources": ["welcome/my-element.js"],
+      "matches": ["<all_urls>"]
+    },
+    {
+      "resources": ["content-script/floatie/tooltip.js"],
+      "matches": ["<all_urls>"]
     }
   ],
   "__firefox__key": "",

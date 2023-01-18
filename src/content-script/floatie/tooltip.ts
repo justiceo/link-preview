@@ -3,8 +3,8 @@ import '@webcomponents/webcomponentsjs'; // polyfill for customElements in conte
 import {LitElement, css, html} from 'lit';
 import {customElement} from 'lit/decorators.js';
 
-@customElement('bp-tooltip')
-class Tooltip extends LitElement {
+@customElement('better-preview-tooltip')
+export class Tooltip extends LitElement {
   static styles = css`
     * {
       color: green;

@@ -35,41 +35,37 @@ youtube_username                          : justiceo
 # Feature List                            Edit, add or remove features to be presented.
 features                                  :
 
-  - title                                 : Voice is Faster
-    description                           : “You can speak 110-150 words per min, as opposed to avg person's typing 38-40 wpm” - @purnavirji
-    fontawesome_icon_name                 : rocket
-    
-  - title                                 : More ergnonomic
-    description                           : “Repetitive motions like typing… that you do over and over can bring about carpal tunnel syndome” - WebMd.
+  - title                                 : Keep fewer tabs open
+    description                           : No need to open a new tab just to check the definition of Floccinaucinihilipilification. Highlight it and click "search".
     fontawesome_icon_name                 : couch
+    
+  - title                                 : Browse faster
+    description                           : We can premptively load search result pages for an almost instantenous view of websites.
+    fontawesome_icon_name                 : rocket
 
-  - title                                 : Natural & Expressive
-    description                           : Voice queries are longer and return more featured snippets than typed queries - Google Search.
+  - title                                 : Quick actions
+    description                           : Beyond search, the extension provides quick actions like "copy" and "email" based on the selection context.
     fontawesome_icon_name                 : seedling
 
   - title                                 : Privacy friendly
-    description                           : All speech-recognition happens in your browser, we do not store or transfer any audio.
+    description                           : We do not store or transfer your search or browsing history. What happens in your browser stays in your browser.
     fontawesome_icon_name                 : lock
 
   - title                                 : Highly accessible
-    description                           : Using a keyboard with an unfamiliar layout/type? Not literate in English? Get onboard! 
+    description                           : The preview pane can be dragged, resized, minimized, expanded into a full tab and a whole lot more. 
     fontawesome_icon_name                 : universal-access
   
   - title                                 : Free forever
-    description                           : The source code is open-source, [Github link](https://github.com/AudateApp/voice-search-extension). No ads, no sign-ups, no bs.
+    description                           : The source code is open-source, [Github link](https://github.com/justiceo/better-previews). No ads, no sign-ups, no bs.
     fontawesome_icon_name                 : gift
 
-  - title                                 : Popular search engines
+  - title                                 : All search engines supported
     description                           : You can choose from Google to Bing, Baidu, Yandex, Yahoo, DuckDuckGo and Ecosia.
     fontawesome_icon_name                 : fire
 
   - title                                 : Over 300 locales supported
-    description                           : For each language, you can choose a country-specific dialect for high-accuracy recognition.
+    description                           : You may use the extension in any language of your choice.
     fontawesome_icon_name                 : globe
-
-  - title                                 : State of the art AI
-    description                           : Automatically detects an ignores music, noise. Detects active mic and when you stop speaking.
-    fontawesome_icon_name                 : robot
 
   - title                                 : # New Feature Title
     description                           : # New Feature Description

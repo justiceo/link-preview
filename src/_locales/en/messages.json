@@ -1,10 +1,10 @@
 {
     "appName": {
-        "message": "Better Previews",
+        "message": "Links & Search Preview",
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Preview links and search results in sidebars instead of opening new tabs",
+        "message": "Preview links and instantly performs searches on the same page instead of opening new tabs",
         "description": "A description of its function"
     }
 }

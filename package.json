@@ -36,6 +36,7 @@
   "dependencies": {
     "@braintree/sanitize-url": "^6.0.2",
     "@floating-ui/dom": "^1.1.0",
+    "@mozilla/readability": "^0.4.2",
     "@sentry/browser": "^7.30.0",
     "@sentry/tracing": "^7.30.0",
     "lit": "^2.6.0",

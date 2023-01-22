@@ -3,6 +3,7 @@ import WinBox from "winbox/src/js/winbox";
 import "winbox/dist/css/winbox.min.css";
 import "./previewr.css";
 import { sanitizeUrl } from "@braintree/sanitize-url";
+import { Readability } from "@mozilla/readability";
 
 // Override the #setUrl method to set name attribute on iframe.
 WinBox.prototype.setUrl = function (url, onload) {
@@ -58,6 +59,7 @@ export class Previewr {
   isVisible = false;
   url?: URL;
   navStack: URL[] = [];
+  displayReaderMode = false;
 
   /* This function inserts an Angular custom element (web component) into the DOM. */
   init() {
@@ -157,22 +159,35 @@ export class Previewr {
     this.logger.log("#previewUrl: ", url);
     this.url = url;
 
-    if (!this.dialog) {
-      this.dialog = new WinBox(url.hostname, {
-        icon: this.headerIconUrlBase + url.hostname,
-        url: url.href,
-        x: "right",
-        y: "center",
-        class: ["no-max", "no-full"],
-        index: await this.getMaxZIndex(),
-        template: template,
+    const winboxOptions = {
+      icon: this.headerIconUrlBase + url.hostname,
+      x: "right",
+      y: "center",
+      class: ["no-max", "no-full"],
+      index: await this.getMaxZIndex(),
+      template: template,
 
-        onclose: () => {
-          this.navStack = [];
-          this.url = undefined;
-          this.dialog = undefined;
-        },
-      });
+      onclose: () => {
+        this.navStack = [];
+        this.url = undefined;
+        this.dialog = undefined;
+      },
+    };
+
+    if (this.displayReaderMode) {
+      let reader = new Readability(window.document.cloneNode(true) as Document);
+      let article = reader.parse();
+      if (!article) {
+        console.error("Article is null");
+        winboxOptions.html = `<h1>Failed to parse article</h1>`;
+      }
+      winboxOptions.html = `<h1>${article.title}</h1> <p>${article.byline}</p> ${article.content}`;
+    } else {
+      winboxOptions.url = this.url;
+    }
+
+    if (!this.dialog) {
+      this.dialog = new WinBox(url.hostname, winboxOptions);
 
       this.dialog.addControl({
         index: 2,

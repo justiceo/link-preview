@@ -1,5 +1,13 @@
 import bootstrap from "./bootstrap.bundle.min.js";
 
+class JFElement extends HTMLElement {
+  constructor() {
+    // Always call super first in constructor
+    super();
+
+    // Element functionality written in here
+  }
+}
 export class JsonForm {
   template!: Document;
 
@@ -8,6 +16,13 @@ export class JsonForm {
     const output = document.createElement("ul");
     output.className = "list-group";
     options.forEach((o) => output.appendChild(this.cloneInput(o)));
+
+    // Uncomment to wrap with shadowDom, however ShadowDom by itself doesn't fix the issue of inline styles bleeding (even using lit)
+    // customElements.define("json-form", JFElement);
+    // let jf = document.createElement("json-form");
+    // let shadowRoot = jf.attachShadow({mode: "open"});
+    // shadowRoot.appendChild(output);
+    // return jf;
     return output;
   }
 

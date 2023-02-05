@@ -1,4 +1,5 @@
 import bootstrap from "./bootstrap.bundle.min.js";
+import formHtml from './json-form.template.html'; // Loaded as text.
 
 class JFElement extends HTMLElement {
   constructor() {
@@ -9,10 +10,14 @@ class JFElement extends HTMLElement {
   }
 }
 export class JsonForm {
-  template!: Document;
+  template!: HTMLElement;
 
-  render(options: any[], template: Document): HTMLElement {
-    this.template = template;
+  // See https://netbasal.com/supercharge-your-forms-in-web-components-with-lit-5df42430907a
+  // as potential alternative using lit.
+  render(options: any[]): HTMLElement {
+    this.template = document.createElement('div');
+    this.template.innerHTML= formHtml;
+
     const output = document.createElement("ul");
     output.className = "list-group";
     options.forEach((o) => output.appendChild(this.cloneInput(o)));
@@ -62,8 +67,14 @@ export class JsonForm {
   }
 
   showToast() {
-    const toastLiveExample = this.template.querySelector("#liveToast");
-    const toast = new bootstrap.Toast(toastLiveExample);
+    // Check if element is already inserted and use it, other-wise, add it.
+    let toastEl = document.body.querySelector(":scope > .toast-container");
+    if(!toastEl) {
+      toastEl = this.template.querySelector(".toast-container")!;
+      document.body.appendChild(toastEl);
+    }
+    const toast = new bootstrap.Toast(toastEl.querySelector("#liveToast"));
+    console.log("showing toast: ", bootstrap, toast);
     toast.show();
   }
 }

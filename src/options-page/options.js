@@ -1,7 +1,6 @@
-import "./bootstrap.min.css";
-import "./options.css";
 import "../content-script/content-script"; // To inject popup for dev mode.
-import { JsonForm } from "./json-form";
+import { JsonForm } from "../utils/options/json-form";
+import "./options.css";
 
 async function loadForm() {
   // Clear storage after any changes to schema.

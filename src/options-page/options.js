@@ -4,52 +4,59 @@ import "./options.css";
 
 async function loadForm() {
   // Clear storage after any changes to schema.
-  // await chrome.storage.sync.clear();
+  await chrome.storage.sync.clear();
 
   let options = await chrome.storage.sync.get(null);
   if(Object.keys(options).length == 0) {
     await chrome.storage.sync.set({
-      'check-id': {
-        id: "check-id",
-        type: "checkbox",
-        title: "Sample checkbox title",
-        description: "The detail information about the checkbox here.",
-        value: true,
-      },
-      "radio-id": {
-        id: "radio-id",
-        type: "radio",
-        title: "Sample radio title",
-        description: "The detail information about the radio here.",
-        value: 1,
-      },
-      "switch-id": {
-        id: "switch-id",
+      'disable-on-this-site': {
+        id: "disable-on-this-site",
         type: "switch",
-        title: "Sample switch title",
+        title: "Disable Previews on this site",
+        description: "The detail information about the checkbox here.",
+        value: false,
+      },
+      "automatically-hide-previews": {
+        id: "automatically-hide-previews",
+        type: "switch",
+        title: "Automatically hide previews",
+        description: "The detail information about the radio here.",
+        value: false,
+      },
+      "hide-previews-delay": {
+        id: "hide-previews-delay",
+        type: "range",
+        title: "How long to wait before automatically hiding previews (in seconds)",
+        description: "The detail information about the range here.",
+        value: 3,
+      },
+      "default-search-engine": {
+        id: "default-search-engine",
+        type: "select",
+        title: "Set default search engine",
         description: "The detail information about the switch here.",
         value: false
       },
-      "select-id": {
-        id: "select-id",
-        type: "select",
-        title: "Sample select title",
+      "show-copy-action": {
+        id: "show-copy-action",
+        type: "switch",
+        title: "Show copy action",
         description: "The detail information about the select here.",
-        value: 2,
+        value: false,
       },
-      "range-id": {
-        id: "range-id",
-        type: "range",
-        title: "Sample range title",
+      "preview-on-hover": {
+        id: "preview-on-hover",
+        type: "switch",
+        title: "Display preview on hover (no need to click)",
         description: "The detail information about the range here.",
-        value: 0,
+        value: false,
       },
-      "textarea-id": {
-        id: "textarea-id",
-        type: "textarea",
-        title: "Sample textarea title",
+      "sync-settings": {
+        id: "sync-settings",
+        type: "switch",
+        title: "Enable chrome sync",
         description: "The detail information about the textarea here.",
-        value: 'hello world'
+        value: false,
       },
     });
     options = await chrome.storage.sync.get(null);

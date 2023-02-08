@@ -362,7 +362,7 @@ a:not(.button):focus {
 }
 
 .container {
-  margin: 96px auto 60px;
+  margin: 50px auto 60px;
   max-width: 40em;
 }
 

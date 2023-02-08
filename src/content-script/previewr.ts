@@ -5,6 +5,7 @@ import "./previewr.css";
 import { sanitizeUrl } from "@braintree/sanitize-url";
 import { Readability } from "@mozilla/readability";
 
+const iframeName = "betterpreviews.com/mainframe"; 
 // Override the #setUrl method to set name attribute on iframe.
 WinBox.prototype.setUrl = function (url, onload) {
   const node = this.body.firstChild;
@@ -12,7 +13,7 @@ WinBox.prototype.setUrl = function (url, onload) {
   if (node && node.tagName.toLowerCase() === "iframe") {
     node.src = url;
   } else {
-    this.body.innerHTML = '<iframe name="iframer" src="' + url + '"></iframe>';
+    this.body.innerHTML = '<iframe name="' + iframeName + '" src="' + url + '"></iframe>';
     onload && (this.body.firstChild.onload = onload);
   }
 
@@ -77,7 +78,7 @@ export class Previewr {
 
   listenForCspError() {
     document.addEventListener("securitypolicyviolation", (e) => {
-      if (window.name !== "iframer") {
+      if (window.name !== iframeName) {
         return;
       }
       this.logger.error("CSP error", e, e.blockedURI);
@@ -122,7 +123,7 @@ export class Previewr {
     } else if (message.action === "search") {
       urlStr = "https://google.com/search?igu=1&q=" + message.data;
     } else if (message.action === "load") {
-      if (message.sourceFrame === "iframer" && this.dialog) {
+      if (message.sourceFrame === iframeName && this.dialog) {
         this.dialog.setTitle(message.data.title);
         this.dialog.setIcon(
           this.headerIconUrlBase + new URL(message.href!).hostname

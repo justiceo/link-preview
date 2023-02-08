@@ -1,5 +1,6 @@
 // This script is executed inside the preview (i.e. document is iframe).
 export class IFrameHelper {
+  iframeName = "betterpreviews.com/mainframe"; 
   constructor() {
     /*
      * Favicon URL request, Window.Title request, apply custom CSS.
@@ -11,7 +12,7 @@ export class IFrameHelper {
     if (!this.inIframe()) {
       return;
     }
-    if (this.getFrameName() !== "iframer") {
+    if (this.getFrameName() !== this.iframeName) {
       return;
     }
     document.addEventListener(

@@ -84,7 +84,7 @@ export class Floatie {
 
     // Listen for mouse up events and suggest search if there's a selection.
     document.onmouseup = (e) => this.deferredMaybeShow(e);
-    document.onkeydown = () => this.hideAll();
+    document.onkeydown = () => this.hideAll();    
 
     this.setupLinkPreviews();
   }
@@ -186,7 +186,8 @@ export class Floatie {
       if (absoluteUrlMatcher.test(urlStr)) {
         url = new URL(urlStr);
       } else {
-        url = new URL(urlStr, document.location.href);
+        return null;
+        // TODO: When same domain preview is enabled, check if urlStr is a fragment.
       }
     } catch (e) {
       // href is an invalid URL
@@ -213,7 +214,8 @@ export class Floatie {
 
     if (url.hostname === window.location.hostname) {
       // Don't preview URLs of the same origin, not useful and potentially introduces bugs to the page.
-      return false;
+      // TODO: Make this configurable.
+      // return false
     }
 
     // TODO: investigate potential issues with displaying https over http and vice versa.
@@ -281,6 +283,14 @@ export class Floatie {
     buttons.forEach((b) => {
       b.style.display = "inline-block";
       b.onclick = () => {
+        // Get the latest selection again at click.
+        if (typeof window.getSelection != "undefined") {
+          const selection = window.getSelection()!;
+          if (!selection.isCollapsed) {
+            text = selection.toString().trim();
+          }
+        }
+
         this.sendMessage(
           b.getAttribute("data-action") || "unknown-action",
           text

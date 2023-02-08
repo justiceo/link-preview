@@ -162,7 +162,10 @@ export class Previewr {
     const winboxOptions = {
       icon: this.headerIconUrlBase + url.hostname,
       x: "right",
-      y: "center",
+      y: "50px",
+      right: 10,
+      width: "55%",
+      height: "80%",
       class: ["no-max", "no-full"],
       index: await this.getMaxZIndex(),
       template: template,

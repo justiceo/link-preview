@@ -133,6 +133,7 @@ class Build {
         sourcemap: !this.isProd,
         loader: {
           ".template.html": "text",
+          ".png": "dataurl",
         },
         outdir: this.outDir,
         target: ["chrome107"], // https://en.wikipedia.org/wiki/Google_Chrome_version_history

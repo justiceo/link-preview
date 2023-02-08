@@ -60,9 +60,20 @@ export class JsonForm {
       "control-input"
     )[0] as HTMLInputElement;
     ["checkbox", "switch"].indexOf(option.type) >= 0 ? actualInput.checked = !!option.value: actualInput.value = option.value;
+
     option.type === "select"
       ? actualInput.addEventListener("change", eventHandler)
       : actualInput.addEventListener("input", eventHandler);
+
+    if(option.type === "range") {
+      actualInput.min = option.min;
+      actualInput.max = option.max;
+    }
+    if(option.type === "select") {
+      option.options.forEach(e => {
+        (actualInput as unknown as HTMLSelectElement).add(new Option(e, e));
+      });
+    }
 
     return input;
   }

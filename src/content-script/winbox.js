@@ -7,7 +7,7 @@
  */
 
 import winboxcss from "./winbox.min.css.txt";
-import template from "winbox/src/js/template.js";
+import template from "./template.js";
 import { addListener, removeListener, setStyle, setText, getByClass, addClass, removeClass, hasClass, preventEvent } from "winbox/src/js/helper.js";
 
 //const ios = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window["MSStream"];
@@ -1182,7 +1182,7 @@ WinBox.prototype.resize = function(w, h, _skip_update){
 };
 
 /**
- * @param {{ class:string?, image:string?, click:Function?, index:number? }} control
+ * @param {{ class:string?, image:string?, click:Function?, index:number?, title:string? }} control
  * @this WinBox
  */
 
@@ -1192,6 +1192,7 @@ WinBox.prototype.addControl = function(control){
     const image = control.image;
     const click = control.click;
     const index = control.index;
+    const title = control.title;
     const node = document.createElement("span");
     const icons = getByClass(this.dom, "wb-control");
     const self = this;
@@ -1199,6 +1200,7 @@ WinBox.prototype.addControl = function(control){
     if(classname) node.className = classname;
     if(image) setStyle(node, "background-image", "url(" + image + ")");
     if(click) node.onclick = function(event){ click.call(this, event, self) };
+    if(title) node.title = title;
 
     icons.insertBefore(node, icons.childNodes[index || 0]);
 

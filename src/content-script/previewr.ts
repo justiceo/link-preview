@@ -1,6 +1,5 @@
 import { Logger } from "../logger";
 import WinBox from "./winbox";
-import "winbox/dist/css/winbox.min.css";
 import "./previewr.css";
 import { sanitizeUrl } from "@braintree/sanitize-url";
 import { Readability } from "@mozilla/readability";

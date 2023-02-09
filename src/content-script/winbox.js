@@ -6,10 +6,18 @@
  * https://github.com/nextapps-de/winbox
  */
 
+import winboxcss from "./winbox.min.css.txt";
 import template from "winbox/src/js/template.js";
 import { addListener, removeListener, setStyle, setText, getByClass, addClass, removeClass, hasClass, preventEvent } from "winbox/src/js/helper.js";
 
 //const ios = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window["MSStream"];
+
+class BFWindow extends HTMLElement {
+    constructor() {
+      // Always call super first in constructor
+      super();
+    }
+  }
 
 const use_raf = false;
 const stack_min = [];
@@ -302,7 +310,19 @@ function WinBox(params, _title){
     }
 
     register(this);
-    (root || body).appendChild(this.dom);
+    
+    try {
+        customElements.define("better-preview-window", BFWindow);
+    } catch(e) {
+        console.warn("Error re-defining custom element");
+    }
+    const bfw = document.createElement("better-preview-window");
+    const style = document.createElement("style");
+    style.textContent = winboxcss;
+    bfw.appendChild(style);
+    bfw.appendChild(this.dom);
+    bfw.attachShadow({mode: "open"}).innerHTML = '<slot></slot>'; // slot prevents #attachShadow from wiping dom.
+    (root || body).appendChild(bfw);
     (oncreate = params["oncreate"]) && oncreate.call(this, params);
 }
 

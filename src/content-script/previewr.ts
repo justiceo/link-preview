@@ -1,5 +1,5 @@
 import { Logger } from "../logger";
-import WinBox from "winbox/src/js/winbox";
+import WinBox from "./winbox";
 import "winbox/dist/css/winbox.min.css";
 import "./previewr.css";
 import { sanitizeUrl } from "@braintree/sanitize-url";
@@ -158,7 +158,7 @@ export class Previewr {
   }
 
   async previewUrl(url: URL) {
-    this.logger.log("#previewUrl: ", url);
+    this.logger.log("#previewUrl fake: ", url);
     this.url = url;
 
     const winboxOptions = {
@@ -191,6 +191,7 @@ export class Previewr {
     }
 
     if (!this.dialog) {
+      this.logger.debug("creating new dialog");
       this.dialog = new WinBox(url.hostname, winboxOptions);
 
       this.dialog.addControl({
@@ -224,6 +225,7 @@ export class Previewr {
         },
       });
     } else {
+      this.logger.debug("restoring dialog");
       this.dialog.restore();
       this.dialog.setUrl(url.href);
       this.dialog.setTitle(url.hostname);

@@ -4,7 +4,8 @@
 }
 
 .nav-away {
-  background-size: 17px auto;
+  background-size: 15px auto;
+  filter: invert(1);
 }
 
 .nav-back,

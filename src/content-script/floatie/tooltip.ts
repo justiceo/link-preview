@@ -1,5 +1,5 @@
 import { arrow, computePosition, flip, offset, shift } from "@floating-ui/dom";
-import "./floatie.css";
+// import "./floatie.css";
 import "@webcomponents/webcomponentsjs"; // polyfill for customElements in content scripts, https://stackoverflow.com/q/42800035.
 import { LitElement, css, html } from "lit";
 import { customElement, property } from "lit/decorators.js";

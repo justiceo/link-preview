@@ -1,10 +1,17 @@
-/* eslint-disable no-console */
-/* eslint-disable require-jsdoc */
+import * as Sentry from "@sentry/browser";
+
 /**
  * Simple util for logging to console.
  *
  * Ensure output level is set to 'verbose' to see debug logs.
  */
+
+enum LogLevel {
+  ERROR,
+  WARNING,
+  INFO,
+  DEBUG,
+}
 export class Logger {
   static debugMode = true;
 
@@ -14,59 +21,64 @@ export class Logger {
     this.tag = tag;
   }
 
-  debug(...logs: unknown[]) {
-    if (!Logger.debugMode) {
-      return;
-    }
-    const d = new Date(Date.now());
-    console.debug(
-        "%c%s %s",
-        "color: cyan",
-        `[${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}]`,
-        this.tag,
-        ...logs,
-    );
+  debug(...messages: unknown[]) {
+    this.internalLog(LogLevel.DEBUG, ...messages);
+  }
+  log(...messages: unknown[]) {
+    this.internalLog(LogLevel.INFO, ...messages);
+  }
+  warn(...messages: unknown[]) {
+    this.internalLog(LogLevel.WARNING, ...messages);
+  }
+  error(...messages: unknown[]) {
+    this.internalLog(LogLevel.ERROR, ...messages);
   }
 
-  log(...logs: unknown[]) {
-    if (!Logger.debugMode) {
-      return;
-    }
+  internalLog(level: LogLevel, ...messages: unknown[]) {
     const d = new Date(Date.now());
-    console.log(
-        "%c%s %s",
-        "color: cyan",
-        `[${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}]`,
-        this.tag,
-        ...logs,
-    );
-  }
+    const output = [
+      "%c%s %s",
+      "color: blue",
+      `[${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}]`,
+      this.tag,
+      ...messages,
+    ];
 
-  warn(...logs: unknown[]) {
     if (!Logger.debugMode) {
+      switch (level) {
+        case LogLevel.WARNING:
+        case LogLevel.INFO:
+          Sentry.captureMessage(messages.join(" "));
+          break;
+        case LogLevel.ERROR:
+          Sentry.captureException(messages);
+          break;
+      }
       return;
+    } else {
+      switch (level) {
+        case LogLevel.DEBUG:
+          console.debug(...output);
+          break;
+        case LogLevel.WARNING:
+          console.warn(...output);
+          break;
+        case LogLevel.INFO:
+          console.log(...output);
+          break;
+        case LogLevel.ERROR:
+          console.error(...output);
+          break;
+      }
     }
-    const d = new Date(Date.now());
-    console.warn(
-        "%c%s %s",
-        "color: yellow",
-        `[${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}]`,
-        this.tag,
-        ...logs,
-    );
   }
+}
 
-  error(...logs: unknown[]) {
-    if (!Logger.debugMode) {
-      return;
-    }
-    const d = new Date(Date.now());
-    console.error(
-        "%c%s %s",
-        "color: red",
-        `[${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}]`,
-        this.tag,
-        ...logs,
-    );
-  }
+if (!Logger.debugMode) {
+  Sentry.init({
+    dsn: "https://bf0a1e40a1784502aad701a201efdf08@o526305.ingest.sentry.io/4504743520436224",
+    tracesSampleRate: 0.1,
+    release: "better-previews@23.2.25",
+    environment: "PROD",
+  });
 }

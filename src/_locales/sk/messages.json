@@ -1,10 +1,10 @@
 {
     "appName": {
-        "message": "Lepšie ukážky",
+        "message": "Odkazy a ukážka vyhľadávania",
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Ukážka odkazov a výsledky vyhľadávania v bočných paneloch namiesto otvárania nových kariet",
+        "message": "Ukážka odkazov a okamžite vykonáva vyhľadávanie na tej istej stránke namiesto otvorenia nových kariet",
         "description": "A description of its function"
     }
 }

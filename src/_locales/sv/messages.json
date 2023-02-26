@@ -1,10 +1,10 @@
 {
     "appName": {
-        "message": "Bättre förhandsvisningar",
+        "message": "Länkar och förhandsvisning av sökning",
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Förhandsgranska länkar och sökresultat i sidofält istället för att öppna nya flikar",
+        "message": "Förhandsgranska länkar och utför direkt sökningar på samma sida istället för att öppna nya flikar",
         "description": "A description of its function"
     }
 }

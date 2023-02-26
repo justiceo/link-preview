@@ -1,6 +1,6 @@
 {
   "name": "better-previews",
-  "version": "22.12.22",
+  "version": "23.2.25",
   "description": "Perform search and preview links in sidebars instead of opening new tabs",
   "scripts": {
     "build": "node tools/esbuild.js",

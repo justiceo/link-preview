@@ -1,10 +1,10 @@
 {
     "appName": {
-        "message": "Lepsze podgląd",
+        "message": "Linki i podgląd wyszukiwania",
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Podgląd linków i wyników wyszukiwania na paskach bocznych zamiast otwierania nowych kart",
+        "message": "Podgląd linków i natychmiast wykonuje wyszukiwania na tej samej stronie zamiast otwierania nowych kart",
         "description": "A description of its function"
     }
 }

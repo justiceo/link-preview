@@ -1,10 +1,10 @@
 {
     "appName": {
-        "message": "Bedre forhåndsvisninger",
+        "message": "Links & Søg preview",
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Eksempel på links og søgeresultater i sidebjælker i stedet for at åbne nye faner",
+        "message": "Preview -links og udfører øjeblikkeligt søgninger på den samme side i stedet for at åbne nye faner",
         "description": "A description of its function"
     }
 }

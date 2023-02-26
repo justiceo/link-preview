@@ -1,10 +1,10 @@
 {
     "appName": {
-        "message": "Bessere Vorschau",
+        "message": "Links & Suchvorschau",
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Vorschau -Links und Suchergebnisse in Seitenleisten anstatt neue Registerkarten zu öffnen",
+        "message": "Vorschau -Links und führt sofort Suchvorgänge auf derselben Seite aus, anstatt neue Registerkarten zu öffnen",
         "description": "A description of its function"
     }
 }

@@ -1,10 +1,10 @@
 {
     "appName": {
-        "message": "Labāki priekšskatījumi",
+        "message": "Saites un meklēšanas priekšskatījums",
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Priekšskatījuma saites un meklēšanas rezultāti sānjoslas vietā, lai atvērtu jaunas cilnes",
+        "message": "Priekšskatījuma saites un uzreiz veic meklēšanu tajā pašā lapā, nevis atver jaunas cilnes",
         "description": "A description of its function"
     }
 }

@@ -1,10 +1,10 @@
 {
     "appName": {
-        "message": "Geresnės peržiūros",
+        "message": "Nuorodos ir paieškos peržiūra",
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Peržiūros nuorodos ir paieškos rezultatai šoninės juostos, užuot atidarę naujus skirtukus",
+        "message": "Peržiūros nuorodos ir akimirksniu atlieka paieškas tame pačiame puslapyje, užuot atidarę naujus skirtukus",
         "description": "A description of its function"
     }
 }

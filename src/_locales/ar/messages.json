@@ -1,10 +1,10 @@
 {
     "appName": {
-        "message": "معاينات أفضل",
+        "message": "معاينة الروابط ومعاينة البحث",
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "معاينة الروابط ونتائج البحث في أشرطة جانبية بدلاً من فتح علامات تبويب جديدة",
+        "message": "معاينة روابط ويقوم على الفور بإجراء عمليات البحث على نفس الصفحة بدلاً من فتح علامات تبويب جديدة",
         "description": "A description of its function"
     }
 }

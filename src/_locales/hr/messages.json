@@ -1,10 +1,10 @@
 {
     "appName": {
-        "message": "Bolji pregledi",
+        "message": "Pregled veza i pretraživanja",
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Pregled veza i rezultata pretraživanja na bočnim trakama umjesto otvaranja novih kartica",
+        "message": "Pregledajte veze i odmah izvršava pretraživanja na istoj stranici, umjesto da otvaraju nove kartice",
         "description": "A description of its function"
     }
 }

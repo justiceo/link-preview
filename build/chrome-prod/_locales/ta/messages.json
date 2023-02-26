@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "இணைப்புகள் மற்றும் தேடல் முன்னோட்டம்",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "புதிய தாவல்களைத் திறப்பதற்கு பதிலாக ஒரே பக்கத்தில் இணைப்புகளை முன்னோட்டமிடுங்கள் மற்றும் உடனடியாக தேடுகிறது",
+        "description": "A description of its function"
+    }
+}

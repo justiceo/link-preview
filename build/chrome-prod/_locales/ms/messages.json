@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "Pautan & Pratonton Carian",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "Pautan pratonton dan dengan serta -merta melakukan carian pada halaman yang sama dan bukannya membuka tab baru",
+        "description": "A description of its function"
+    }
+}

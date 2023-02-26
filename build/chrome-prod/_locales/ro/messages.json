@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "Link -uri și previzualizare a căutării",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "Previzualizați linkurile și efectuați instantaneu căutări pe aceeași pagină în loc să deschideți noi file",
+        "description": "A description of its function"
+    }
+}

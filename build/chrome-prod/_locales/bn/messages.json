@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "লিঙ্ক এবং অনুসন্ধান পূর্বরূপ",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "পূর্বরূপ লিঙ্কগুলি এবং তাত্ক্ষণিকভাবে নতুন ট্যাবগুলি খোলার পরিবর্তে একই পৃষ্ঠায় অনুসন্ধানগুলি সম্পাদন করে",
+        "description": "A description of its function"
+    }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Better Previews</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../content-script/content-script.css">
+  <script async defer src="../content-script/content-script.js"></script>
+  <script async defer src="./script.js"></script>
+</head>
+
+
+<body>
+  <div class="container">
+
+    <div class="header">
+      <img class="logo" alt="logo" src="../assets/logo-48x48.png" />
+      <h1>Better Previews</h1>
+      <p>Perform search and preview links in sidebars instead of opening new tabs.</p>
+
+      <a id="demo-button" class="button">Preview "hello world"</a>
+    </div>
+
+
+    <h2>Usage:</h2>
+    <p><strong>1.</strong> For Search Previews</p>
+    <ul>
+      <li>
+        <p>Select the text you would like to search for on the page.</p>
+      </li>
+      <li>
+        <p>A tooltip with the text "Search" would become visible, click the tooltip.</p>
+      </li>
+      <li>
+        <p>Alternatively, right click on the selected text and click "Preview Search Results".</p>
+      </li>
+      <li>
+        <p>Try it on this text <i>"how tall is everest?"</i></p>
+      </li>
+    </ul>
+    <hr>
+    <br>
+    <p><strong>2.</strong> For Link Previews.</p>
+    <ul>
+      <li>
+        <p>Hover over the link you would like to preview.</p>
+      </li>
+      <li>
+        <p>A tooltip with the text "Preview" would become visible, click the tooltip.</p>
+      </li>
+      <li>
+        <p>Alternatively, right click on the selected text and click "Preview Link".</p>
+      </li>
+      <li>
+        <p>Try it on this link <a href="https://wikipedia.org">https://wikipedia.org</a></p>
+      </li>
+    </ul>
+
+
+    <p>That's it!</p>
+
+    <div class="footer">
+      <h2>Share the love!</h2>
+      <p>If you found this extension helpful, leave a star on the Github Page or rating on Chrome Webstore.</p>
+
+      <a href="https://github.com/justiceo/better-previews" target="_blank" class="button light">Star on GitHub</a>
+      <a href="https://chrome.google.com/webstore/detail/better-previews/mmmfofondapflhgbdidadejnechhjocm?hl=en&authuser=0"
+        target="_blank" class="button light">Rate on Chrome Webstore</a>
+
+      <p>And before you leave, here is an example of a custom element: <my-element></my-element></p>
+      <div class="credit">
+        Made with ❤️ in San Francisco</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

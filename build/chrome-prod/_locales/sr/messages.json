@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "Линкови и Претраживање претраге",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "Прегледајте линкове и одмах врши претраге на истој страници уместо да отварају нове картице",
+        "description": "A description of its function"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "링크 및 검색 미리보기",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "새 탭을 여는 대신 동일한 페이지에서 링크 미리보기 및 즉시 검색을 수행합니다.",
+        "description": "A description of its function"
+    }
+}

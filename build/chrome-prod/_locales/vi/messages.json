@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "Liên kết & Xem trước tìm kiếm",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "Xem trước các liên kết và thực hiện ngay lập tức các tìm kiếm trên cùng một trang thay vì mở các tab mới",
+        "description": "A description of its function"
+    }
+}

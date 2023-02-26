@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "दुवे आणि शोध पूर्वावलोकन",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "पूर्वावलोकन दुवे आणि त्वरित नवीन टॅब उघडण्याऐवजी त्याच पृष्ठावर शोध घेतात",
+        "description": "A description of its function"
+    }
+}

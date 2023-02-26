@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "ಲಿಂಕ್‌ಗಳು ಮತ್ತು ಹುಡುಕಾಟ ಪೂರ್ವವೀಕ್ಷಣೆ",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "ಲಿಂಕ್‌ಗಳನ್ನು ಪೂರ್ವವೀಕ್ಷಣೆ ಮಾಡಿ ಮತ್ತು ಹೊಸ ಟ್ಯಾಬ್‌ಗಳನ್ನು ತೆರೆಯುವ ಬದಲು ಒಂದೇ ಪುಟದಲ್ಲಿ ಹುಡುಕಾಟಗಳನ್ನು ತಕ್ಷಣ ನಿರ್ವಹಿಸುತ್ತದೆ",
+        "description": "A description of its function"
+    }
+}

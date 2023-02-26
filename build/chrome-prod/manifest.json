@@ -1,0 +1,85 @@
+{
+    "name": "__MSG_appName__",
+    "description": "__MSG_appDesc__",
+    "homepage_url": "https://github.com/justiceo/search-preview",
+    "version": "23.2.25",
+    "manifest_version": 3,
+    "default_locale": "en",
+    "author": "Justice Ogbonna",
+    "short_name": "Search Preview",
+    "permissions": [
+        "storage",
+        "declarativeNetRequest",
+        "contextMenus"
+    ],
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "ruleset_1",
+                "enabled": true,
+                "path": "assets/rules.json"
+            }
+        ]
+    },
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "action": {
+        "default_icon": {
+            "16": "assets/logo-16x16.png",
+            "24": "assets/logo-24x24.png",
+            "32": "assets/logo-32x32.png"
+        },
+        "default_title": "Search Preview"
+    },
+    "icons": {
+        "16": "assets/logo-16x16.png",
+        "32": "assets/logo-32x32.png",
+        "48": "assets/logo-48x48.png",
+        "128": "assets/logo-128x128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "all_frames": true,
+            "js": [
+                "content-script/content-script.js"
+            ],
+            "css": [
+                "content-script/content-script.css"
+            ]
+        }
+    ],
+    "background": {
+        "service_worker": "background-script/service-worker.js"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "options-page/options.html"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        },
+        {
+            "resources": [
+                "welcome/my-element.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        },
+        {
+            "resources": [
+                "content-script/floatie/tooltip.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+}

@@ -25,8 +25,7 @@
       "24": "assets/logo-24x24.png",
       "32": "assets/logo-32x32.png"
     },
-    "default_title": "Search Preview",
-    "default_popup": "popup/popup.html"
+    "default_title": "Search Preview"
   },
   "icons": {
     "16": "assets/logo-16x16.png",
@@ -42,7 +41,6 @@
       "css": ["content-script/content-script.css"]
     }
   ],
-  "options_page": "options-page/options.html",
   "background": {
     "service_worker": "background-script/service-worker.js",
     "__firefox__persistent": "false"

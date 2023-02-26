@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../content-script/content-script.css">
   <script async defer src="../content-script/content-script.js"></script>
   <script async defer src="./script.js"></script>
+  <script type="module" src="../utils/translate.js"></script>
 </head>
 
 
@@ -17,8 +18,8 @@
 
     <div class="header">
       <img class="logo" alt="logo" src="../assets/logo-48x48.png" />
-      <h1>Better Previews</h1>
-      <p>Perform search and preview links in sidebars instead of opening new tabs.</p>
+      <h1 translate-key="appName">Better Previews</h1>
+      <p translate-key="appDesc">Perform search and preview links in sidebars instead of opening new tabs.</p>
 
       <a id="demo-button" class="button">Preview "hello world"</a>
     </div>

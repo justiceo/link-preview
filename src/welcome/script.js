@@ -1,8 +1,3 @@
-(async () => {
-  const src = chrome.runtime.getURL("welcome/my-element.js");
-  const contentMain = await import(src);
-  contentMain.main();
-})();
 
 document.getElementById("demo-button").onclick = function (e) {
   window.postMessage(

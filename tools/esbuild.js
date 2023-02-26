@@ -127,6 +127,7 @@ class Build {
           "src/popup/popup.ts",
           "src/welcome/my-element.ts",
           "src/options-page/options.js",
+          "src/utils/translate.ts",
         ],
         bundle: true,
         minify: this.isProd,

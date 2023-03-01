@@ -2,7 +2,7 @@
     "name": "__MSG_appName__",
     "description": "__MSG_appDesc__",
     "homepage_url": "https://github.com/justiceo/search-preview",
-    "version": "23.2.25",
+    "version": "23.2.28",
     "manifest_version": 3,
     "default_locale": "en",
     "author": "Justice Ogbonna",

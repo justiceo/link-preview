@@ -234,7 +234,7 @@ export class Floatie {
     if (url.hostname === window.location.hostname) {
       // Don't preview URLs of the same origin, not useful and potentially introduces bugs to the page.
       // TODO: Make this configurable.
-      // return false
+      return false
     }
 
     // TODO: investigate potential issues with displaying https over http and vice versa.

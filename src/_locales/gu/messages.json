@@ -1,10 +1,10 @@
 {
     "appName": {
-        "message": "લિંક્સ અને શોધ પૂર્વાવલોકન",
+        "message": "શોધ અને લિંક પૂર્વાવલોકન",
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "પૂર્વાવલોકન લિંક્સ અને તરત જ નવા ટ s બ્સ ખોલવાને બદલે સમાન પૃષ્ઠ પર શોધ કરે છે",
+        "message": "લિંક્સના પૂર્વાવલોકનો જુઓ અને નવા ટ s બ્સ ખોલવાને બદલે આ પૂર્વાવલોકનનો ઉપયોગ કરીને તરત જ તે જ પૃષ્ઠ પર શોધ કરે છે",
         "description": "A description of its function"
     }
 }

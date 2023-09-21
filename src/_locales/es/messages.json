@@ -1,10 +1,10 @@
 {
     "appName": {
-        "message": "Vista previa de enlaces y búsqueda",
+        "message": "Vista previa de búsqueda y enlace",
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Vista previa de enlaces y realiza instantáneamente búsquedas en la misma página en lugar de abrir nuevas pestañas",
+        "message": "Consulte Vistas previas de enlaces y realiza instantáneamente búsquedas en la misma página utilizando esta vista previa en lugar de abrir nuevas pestañas",
         "description": "A description of its function"
     }
 }

@@ -1,10 +1,10 @@
 {
     "appName": {
-        "message": "リンクと検索プレビュー",
+        "message": "検索＆リンクプレビュー",
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "リンクをプレビューし、新しいタブを開く代わりに同じページで検索を即座に実行します",
+        "message": "リンクのプレビューを参照し、新しいタブを開く代わりにこのプレビューターを使用して同じページで検索を即座に実行する",
         "description": "A description of its function"
     }
 }

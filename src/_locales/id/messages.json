@@ -1,10 +1,10 @@
 {
     "appName": {
-        "message": "Tautan & Pratinjau Pencarian",
+        "message": "Pencarian & Pratinjau Tautan",
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Pratinjau tautan dan langsung melakukan pencarian di halaman yang sama alih -alih membuka tab baru",
+        "message": "Lihat pratinjau tautan dan langsung melakukan pencarian di halaman yang sama menggunakan pratinjau ini alih -alih membuka tab baru",
         "description": "A description of its function"
     }
 }

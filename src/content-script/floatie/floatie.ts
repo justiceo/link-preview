@@ -82,7 +82,6 @@ export class Floatie {
   }
     const bft = document.createElement("better-previews-tooltip");
     const style = document.createElement("style");
-    console.log("floatie css: ", floatieCssTxt);
     style.textContent = floatieCssTxt;
     bft.appendChild(style);
     bft.appendChild(tooltip);
@@ -128,14 +127,14 @@ export class Floatie {
 
       // TODO: check if computed display is 'none', i.e. link is hidden.
 
-      a.addEventListener("mouseover", (unused) => {
+      a.addEventListener("mouseover", (e) => {
         if (hideTimeout) {
           clearTimeout(hideTimeout);
           hideTimeout = null;
         }
 
         showTimeout = setTimeout(() => {
-          this.showActions(a.getBoundingClientRect(), a.href, [
+          this.showActions(a.getBoundingClientRect(), e, a.href, [
             this.previewButton,
           ]);
         }, 500);
@@ -195,7 +194,7 @@ export class Floatie {
     if (this.shouldShowCopy(selectedText)) {
       actionsToShow.push(this.copyButton);
     }
-    this.showActions(boundingRect, selectedText, actionsToShow);
+    this.showActions(boundingRect, e, selectedText, actionsToShow);
   }
 
   getAbsoluteUrl(urlStr: string): URL | null {
@@ -266,6 +265,30 @@ export class Floatie {
     return this.isGoodUrl(selectedText) || isGoodHyperlink(e);
   }
 
+  getPreviewUrl(
+    e: MouseEvent | KeyboardEvent,
+    selectedText: string
+  ): string | undefined {
+    const isWrappedByLink = (e: MouseEvent | KeyboardEvent) => {
+      var target: any = e.target;
+      do {
+        if (
+          target.nodeName.toUpperCase() === "A" &&
+          this.isGoodUrl(target.href)
+        ) {
+          return target.href;
+        }
+      } while ((target = target.parentElement));
+      return undefined;
+    };
+
+    if(this.isGoodUrl(selectedText)) {
+      return this.getAbsoluteUrl(selectedText)?.href;
+    }
+
+    return isWrappedByLink(e);
+  }
+
   shouldShowSearch(e: MouseEvent, selectedText: string): boolean {
     const isQuerySize = (text: string) => {
       return text.length > 0 && text.length < 100;
@@ -296,8 +319,12 @@ export class Floatie {
     );
   }
 
-  showActions(boundingRect: DOMRect, text: string, buttons: HTMLElement[]) {
+  showActions(boundingRect: DOMRect, e: MouseEvent, text: string, buttons: HTMLElement[]) {
     this.hideAll();
+    if(buttons.length === 0 ) {
+      return;
+    }
+
     this.showContainer(boundingRect);
     buttons.forEach((b) => {
       b.style.display = "inline-block";
@@ -307,6 +334,14 @@ export class Floatie {
           const selection = window.getSelection()!;
           if (!selection.isCollapsed) {
             text = selection.toString().trim();
+          }
+
+          // Use href for previews.
+          if(b.innerText == "Preview") {
+            const href = this.getPreviewUrl(e, text);
+            if(href) {
+              text = href
+            }
           }
         }
 

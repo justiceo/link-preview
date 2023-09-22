@@ -1,10 +1,10 @@
 {
     "appName": {
-        "message": "Links e visualização de pesquisa",
+        "message": "Pesquisa e visualização de link",
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Links de visualização e executa instantaneamente pesquisas na mesma página em vez de abrir novas guias",
+        "message": "Veja as visualizações dos links e executa instantaneamente pesquisas na mesma página usando este visualizador em vez de abrir novas guias",
         "description": "A description of its function"
     }
 }

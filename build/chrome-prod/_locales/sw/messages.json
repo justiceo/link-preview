@@ -1,10 +1,10 @@
 {
     "appName": {
-        "message": "Viungo na hakiki ya utaftaji",
+        "message": "Tafuta na hakikisho la Kiungo",
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Hakiki viungo na hufanya utaftaji mara moja kwenye ukurasa huo huo badala ya kufungua tabo mpya",
+        "message": "Tazama hakikisho la viungo na hufanya utaftaji mara moja kwenye ukurasa huo huo ukitumia hakikisho hili badala ya kufungua tabo mpya",
         "description": "A description of its function"
     }
 }

@@ -1,10 +1,10 @@
 {
     "appName": {
-        "message": "Liens et aperçu de la recherche",
+        "message": "Recherche et prévisualisation du lien",
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Aperçu des liens et effectue instantanément des recherches sur la même page au lieu d'ouvrir de nouveaux onglets",
+        "message": "Voir les aperçus de liens et effectuent instantanément des recherches sur la même page en utilisant cet aperçu au lieu d'ouvrir de nouveaux onglets",
         "description": "A description of its function"
     }
 }

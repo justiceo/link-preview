@@ -1,10 +1,10 @@
 {
     "appName": {
-        "message": "Enllaços i previsualització de la cerca",
+        "message": "Previsualització de cerca i enllaç",
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Vista prèvia d’enllaços i realitza de forma instantània les cerques a la mateixa pàgina en lloc d’obrir noves pestanyes",
+        "message": "Consulteu les previsualitzacions dels enllaços i realitzen de forma instantània les cerques a la mateixa pàgina mitjançant aquest previsualitzador en lloc d’obrir noves pestanyes",
         "description": "A description of its function"
     }
 }

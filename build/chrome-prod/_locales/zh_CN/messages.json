@@ -1,10 +1,10 @@
 {
     "appName": {
-        "message": "链接和搜索预览",
+        "message": "搜索和链接预览",
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "预览链接并立即在同一页面上执行搜索，而不是打开新标签",
+        "message": "请参阅链接的预览，并使用此预览器在同一页面上立即执行搜索，而不是打开新标签",
         "description": "A description of its function"
     }
 }

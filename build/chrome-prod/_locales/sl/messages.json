@@ -1,10 +1,10 @@
 {
     "appName": {
-        "message": "Predogled povezav in iskanja",
+        "message": "Predogled iskanja in povezav",
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Predogled povezav in takoj opravlja iskanje na isti strani, namesto da odpre nove zavihke",
+        "message": "Oglejte si predoglede povezav in takoj izvede iskanje na isti strani s tem predogledom, namesto da bi odpirali nove zavihke",
         "description": "A description of its function"
     }
 }

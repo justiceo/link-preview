@@ -1,10 +1,10 @@
 {
     "appName": {
-        "message": "Lingid ja otsingu eelvaade",
+        "message": "Otsi ja lingi eelvaade",
         "description": "The name of the extension"
     },
     "appDesc": {
-        "message": "Eelvaate lingid ja teostab uute vahekaartide avamise asemel samal lehel otsinguid koheselt",
+        "message": "Vaadake linkide eelvaateid ja teostab samal lehel otsinguid, kasutades seda eelvaadet uute vahekaartide avamise asemel",
         "description": "A description of its function"
     }
 }

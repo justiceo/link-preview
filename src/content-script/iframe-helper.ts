@@ -15,6 +15,8 @@ export class IFrameHelper {
     if (this.getFrameName() !== this.iframeName) {
       return;
     }
+
+    // Manually handle navigation clicks, to maintain nav stack.
     document.addEventListener(
       "click",
       (e) => {

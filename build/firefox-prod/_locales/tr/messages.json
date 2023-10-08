@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "Arama ve Bağlantı Önizlemesi",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "Bağlantıların önizlemelerine bakın ve yeni sekmeleri açmak yerine bu önizleyiciyi kullanarak aynı sayfada aramaları anında gerçekleştirir",
+        "description": "A description of its function"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "തിരയുക & പ്രിവ്യൂ",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "ലിങ്കുകളുടെ പ്രിവ്യൂകൾ കാണുക, പുതിയ ടാബുകൾ തുറക്കുന്നതിനുപകരം ഈ പ്രിവ്യൂ ഉപയോഗിച്ച് ഇതേ പേജിൽ തിരയുന്നു",
+        "description": "A description of its function"
+    }
+}

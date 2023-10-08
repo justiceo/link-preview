@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "Wyszukiwanie i podgląd linków",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "Zobacz podgląd linków i natychmiast wykonuje wyszukiwania na tej samej stronie za pomocą tego podwozia zamiast otwierania nowych kart",
+        "description": "A description of its function"
+    }
+}

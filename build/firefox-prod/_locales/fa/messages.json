@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "پیش نمایش جستجو و پیوند",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "پیش نمایش پیوندها را مشاهده کنید و فوراً در همان صفحه جستجو را با استفاده از این پیش نمایش به جای باز کردن زبانه های جدید انجام دهید",
+        "description": "A description of its function"
+    }
+}

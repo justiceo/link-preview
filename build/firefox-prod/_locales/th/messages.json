@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "การค้นหาและลิงก์ดูตัวอย่าง",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "ดูตัวอย่างของลิงก์และทำการค้นหาในหน้าเดียวกันทันทีโดยใช้ตัวแสดงตัวอย่างนี้แทนที่จะเปิดแท็บใหม่",
+        "description": "A description of its function"
+    }
+}

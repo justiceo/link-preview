@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "Otsi ja lingi eelvaade",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "Vaadake linkide eelvaateid ja teostab samal lehel otsinguid, kasutades seda eelvaadet uute vahekaartide avamise asemel",
+        "description": "A description of its function"
+    }
+}

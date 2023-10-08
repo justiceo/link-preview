@@ -42,8 +42,8 @@
     }
   ],
   "background": {
-    "service_worker": "background-script/service-worker.js",
-    "__firefox__persistent": "false"
+    "__chrome__service_worker": "background-script/service-worker.js",
+    "__firefox__scripts": ["background-script/service-worker.js"]
   },
   "web_accessible_resources": [
     {
@@ -62,7 +62,7 @@
   "__firefox__key": "",
   "__firefox__browser_specific_settings": {
       "gecko": {
-          "id": "no-reply@justiceo.com"
+          "id": "search-preview@essentialkit.org"
       }
   }
 }

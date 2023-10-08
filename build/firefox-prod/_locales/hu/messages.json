@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "Keresés és link előnézete",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "Lásd a linkek előnézeteit, és azonnal végzi a kereséseket ugyanazon az oldalon, az új lapok megnyitása helyett az előnéző segítségével",
+        "description": "A description of its function"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "Such- und Linkvorschau",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "Siehe Voransichten von Links und führt sofort die Suche auf derselben Seite mit diesem Vorschau auf, anstatt neue Registerkarten zu öffnen",
+        "description": "A description of its function"
+    }
+}

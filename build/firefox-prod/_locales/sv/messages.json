@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "Sök & länkförhandsvisning",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "Se förhandsgranskningar av länkar och utför direkt sökningar på samma sida med denna förhandsvisare istället för att öppna nya flikar",
+        "description": "A description of its function"
+    }
+}

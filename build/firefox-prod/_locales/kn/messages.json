@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "ಹುಡುಕಾಟ ಮತ್ತು ಲಿಂಕ್ ಪೂರ್ವವೀಕ್ಷಣೆ",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "ಲಿಂಕ್‌ಗಳ ಪೂರ್ವವೀಕ್ಷಣೆಗಳನ್ನು ನೋಡಿ ಮತ್ತು ಹೊಸ ಟ್ಯಾಬ್‌ಗಳನ್ನು ತೆರೆಯುವ ಬದಲು ಈ ಪೂರ್ವವೀಕ್ಷಣೆ ಬಳಸಿ ಅದೇ ಪುಟದಲ್ಲಿ ಹುಡುಕಾಟಗಳನ್ನು ತಕ್ಷಣ ನಿರ್ವಹಿಸುತ್ತದೆ",
+        "description": "A description of its function"
+    }
+}

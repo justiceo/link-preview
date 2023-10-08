@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "অনুসন্ধান এবং লিঙ্ক পূর্বরূপ",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "লিঙ্কগুলির পূর্বরূপ দেখুন এবং তাত্ক্ষণিকভাবে নতুন ট্যাবগুলি খোলার পরিবর্তে এই পূর্বরূপ ব্যবহার করে একই পৃষ্ঠায় অনুসন্ধানগুলি সম্পাদন করে",
+        "description": "A description of its function"
+    }
+}

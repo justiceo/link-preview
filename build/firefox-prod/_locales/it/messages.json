@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "Anteprima di ricerca e collegamento",
+        "description": "The name of the extension"
+    },
+    "appDesc": {
+        "message": "Vedere le anteprime dei collegamenti e eseguire istantaneamente le ricerche nella stessa pagina utilizzando questo anteprima invece di aprire nuove schede",
+        "description": "A description of its function"
+    }
+}

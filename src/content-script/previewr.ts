@@ -60,6 +60,7 @@ export class Previewr {
   url?: URL;
   navStack: URL[] = [];
   displayReaderMode = false;
+  isDemo = false;
 
   /* This function inserts an Angular custom element (web component) into the DOM. */
   init() {
@@ -114,6 +115,10 @@ export class Previewr {
   async handleMessage(message) {
     // Extract the url from the message.
     let urlStr;
+    if(message.mode === "demo") {
+      this.isDemo = true;
+    }
+
     if (message.action === "copy") {
       navigator.clipboard.writeText(message.data);
       return;
@@ -162,10 +167,10 @@ export class Previewr {
     const winboxOptions = {
       icon: this.headerIconUrlBase + url.hostname,
       x: "right",
-      y: "50px",
+      y: this.isDemo? "500px" : "50px",
       right: 10,
-      width: "55%",
-      height: "80%",
+      width: this.isDemo? "45%" : "55%",
+      height: this.isDemo? "40%" : "80%",
       class: ["no-max", "no-full"],
       index: await this.getMaxZIndex(),
 

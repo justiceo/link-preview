@@ -53,7 +53,6 @@ template.innerHTML = `
 `;
 // This class is responsible to loading/reloading/unloading the angular app into the UI.
 export class Previewr {
-  getExtensionUrl = chrome.runtime.getURL;
   logger = new Logger("previewr");
   headerIconUrlBase = "https://www.google.com/s2/favicons?domain=";
   dialog?: WinBox;

@@ -70,3 +70,5 @@ node tools/esbuild test
 1. Open firefox and navigate to `about:debugging#/runtime/this-firefox`.
 2. Click the "Load Temporary Add-on" button.
 3. Browse the `build/firefox-dev` directory and select the `manifest.json` file.
+
+https://support.mozilla.org/en-US/kb/add-on-signing-in-firefox

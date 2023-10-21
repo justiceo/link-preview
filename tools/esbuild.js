@@ -50,6 +50,9 @@ class Build {
       case "test":
         this.test();
         break;
+      case "standalone":
+        this.copyToStandalone();
+        break;      
       default:
         this.packageExtension().then((out) => console.log(out));
     }
@@ -156,7 +159,7 @@ class Build {
       } catch (e) {
         console.error("Error building extension: ", e);
       }
-    }
+    };
 
     await buildAndCatchError("initial invocation", "all files");
     console.log("Built extension and listening for changes...");
@@ -239,6 +242,18 @@ class Build {
     });
   }
 
+  // Generate standalone library.
+  async copyToStandalone() {
+    await this.buildExtension();
+
+    let fileMap = {};
+    fileMap[this.outDir + "/assets"] = "standalone/assets";
+    fileMap[this.outDir + "/_locales"] = "standalone/_locales";
+    fileMap[this.outDir + "/content-script"] = "standalone/content-script";
+
+    return this.copy(fileMap);
+  }
+
   // Copy assets.
   copyAssets() {
     // Map of static files/directories to destinations we want to copy them to.
@@ -250,6 +265,10 @@ class Build {
       "src/welcome": "welcome",
     };
 
+    return this.copy(fileMap);
+  }
+
+  copy(fileMap) {
     return new Promise((resolve, reject) => {
       let copied = 0;
       for (const [src, dest] of Object.entries(fileMap)) {

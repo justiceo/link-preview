@@ -35,12 +35,6 @@ class ContentScript {
     this.floatie.startListening();
     this.previewr.init();
     this.iframeHelper.registerListeners();
-
-    chrome.runtime.onMessage.addListener((request, sender, callback) => {
-      console.debug("Re-posting message for DOM: ", request);
-      window.postMessage({ application: "better-previews", ...request });
-      callback("ok");
-    });
   }
 
   stop() {

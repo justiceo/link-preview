@@ -1,4 +1,5 @@
 import * as Sentry from "@sentry/browser";
+import manifest from "./manifest.json";
 
 /**
  * Simple util for logging to console.
@@ -12,46 +13,72 @@ enum LogLevel {
   INFO,
   DEBUG,
 }
-export class Logger {
-  static debugMode = false;
+declare var IS_DEV_BUILD: boolean;
+const EXTENSION_NAME = manifest.__package_name__;
 
+export class Logger {
   tag = "";
 
   constructor(tag: string) {
-    this.tag = tag;
+    this.tag = EXTENSION_NAME + "." + tag;
+
+    if (!IS_DEV_BUILD) {
+      this.initSentry();
+    }
+    this.listenForBgLogs();
   }
 
-  debug(...messages: unknown[]) {
+  initSentry() {
+    Sentry.init({
+      dsn: manifest.__sentry_dsn__,
+      tracesSampleRate: 0.1,
+      release: EXTENSION_NAME + "@" + manifest.version,
+      environment: "PROD",
+    });
+  }
+
+  listenForBgLogs() {
+    chrome.runtime.onMessage.addListener((message, sender) => {
+      if (sender.id !== chrome.runtime.id || message.action != "log") {
+        return;
+      }
+      this.internalLogTagOverride(
+        message.data.level,
+        message.data.tag,
+        ...message.data.messages
+      );
+    });
+  }
+
+  debug = (...messages: unknown[]) =>
     this.internalLog(LogLevel.DEBUG, ...messages);
-  }
-  log(...messages: unknown[]) {
+  log = (...messages: unknown[]) =>
     this.internalLog(LogLevel.INFO, ...messages);
-  }
-  warn(...messages: unknown[]) {
+  warn = (...messages: unknown[]) =>
     this.internalLog(LogLevel.WARNING, ...messages);
-  }
-  error(...messages: unknown[]) {
+  error = (...messages: unknown[]) =>
     this.internalLog(LogLevel.ERROR, ...messages);
-  }
 
   internalLog(level: LogLevel, ...messages: unknown[]) {
+    this.internalLogTagOverride(level, this.tag, ...messages);
+  }
+
+  internalLogTagOverride(level: LogLevel, tag: string, ...messages: unknown[]) {
     const d = new Date(Date.now());
     const output = [
       "%c%s %s",
       "color: blue",
       `[${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}]`,
-      this.tag,
+      tag,
       ...messages,
     ];
-
-    if (!Logger.debugMode) {
+    if (!IS_DEV_BUILD) {
       switch (level) {
         case LogLevel.WARNING:
-        case LogLevel.INFO:
-          Sentry.captureMessage(messages.join(" "));
+          Sentry.captureMessage(output.join(" "));
           break;
         case LogLevel.ERROR:
-          Sentry.captureException(messages);
+          Sentry.captureException(output.join(" "));
           break;
       }
       return;
@@ -74,11 +101,32 @@ export class Logger {
   }
 }
 
-if (!Logger.debugMode) {
-  Sentry.init({
-    dsn: "https://bf0a1e40a1784502aad701a201efdf08@o526305.ingest.sentry.io/4504743520436224",
-    tracesSampleRate: 0.1,
-    release: "better-previews@23.2.25",
-    environment: "PROD",
-  });
+// For use in popup and service-worker.
+export class RemoteLogger {
+  tag = "";
+
+  constructor(tag: string) {
+    this.tag = EXTENSION_NAME + "." + tag;
+  }
+
+  debug = (...messages: unknown[]) =>
+    this.internalLog(LogLevel.DEBUG, ...messages);
+  log = (...messages: unknown[]) =>
+    this.internalLog(LogLevel.INFO, ...messages);
+  warn = (...messages: unknown[]) =>
+    this.internalLog(LogLevel.WARNING, ...messages);
+  error = (...messages: unknown[]) =>
+    this.internalLog(LogLevel.ERROR, ...messages);
+
+  internalLog(level: LogLevel, ...messages: unknown[]): void {
+    chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+      if (tabs.length !== 1) {
+        return;
+      }
+      chrome.tabs.sendMessage(tabs[0].id!, {
+        action: "log",
+        data: { level: level, tag: this.tag, messages: messages },
+      });
+    });
+  }
 }

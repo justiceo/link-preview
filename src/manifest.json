@@ -2,8 +2,10 @@
   "name": "__MSG_appName__",
   "description": "__MSG_appDesc__",
   "homepage_url": "https://github.com/justiceo/search-preview",
+  "__package_name__": "search-preview",
   "__comment:version__": "Firefox does not support leading zeros in versions",
   "version": "23.9.22",
+  "__sentry_dsn__": "https://bf0a1e40a1784502aad701a201efdf08@o526305.ingest.sentry.io/4504743520436224",
   "manifest_version": 3,
   "default_locale": "en",
   "author": "Justice Ogbonna",
@@ -61,8 +63,8 @@
   ],
   "__firefox__key": "",
   "__firefox__browser_specific_settings": {
-      "gecko": {
-          "id": "search-preview@essentialkit.org"
-      }
+    "gecko": {
+      "id": "search-preview@essentialkit.org"
+    }
   }
 }

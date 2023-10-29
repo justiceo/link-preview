@@ -1,0 +1,29 @@
+name: Feature Request
+description: Suggest a new feature or an improvement to existing ones.
+title: "[Feature Request]: "
+labels: ["feature", "triage"]
+assignees:
+  - justiceo
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to submit a feature request!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details [Optional]
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: feature-request-details
+    attributes:
+      label: Describe the feature
+      description: Also if you have seen this feature somewhere else, reference it.
+      placeholder: Tell us about the feature in as much detail as possible... 
+    validations:
+      required: true
+
+

@@ -1,4 +1,4 @@
-import { Logger } from "../logger";
+import { Logger } from "../utils/logger";
 import WinBox from "./winbox";
 import "./previewr.css";
 import { sanitizeUrl } from "@braintree/sanitize-url";

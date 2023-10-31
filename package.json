@@ -5,6 +5,7 @@
   "scripts": {
     "build": "node tools/esbuild.js",
     "test": "node tools/esbuild.js test",
+    "watch": "node tools/esbuild.js watch",
     "start": "node tools/esbuild.js start",
     "start:firefox": "node tools/esbuild.js start --browser=firefox",
     "generateIcons": "node tools/esbuild.js image --icons",

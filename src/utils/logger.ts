@@ -1,5 +1,6 @@
+/// <reference types="chrome"/>
 import * as Sentry from "@sentry/browser";
-import manifest from "./manifest.json";
+import manifest from "../manifest.json";
 
 /**
  * Simple util for logging to console.
@@ -19,8 +20,8 @@ const EXTENSION_NAME = manifest.__package_name__;
 export class Logger {
   tag = "";
 
-  constructor(tag: string) {
-    this.tag = EXTENSION_NAME + "." + tag;
+  constructor(tag: string|Object) {
+    this.tag = EXTENSION_NAME + "." + (typeof tag === 'string' ? tag : tag.constructor.name);
 
     if (!IS_DEV_BUILD) {
       this.initSentry();
@@ -105,8 +106,8 @@ export class Logger {
 export class RemoteLogger {
   tag = "";
 
-  constructor(tag: string) {
-    this.tag = EXTENSION_NAME + "." + tag;
+  constructor(tag: string|Object) {
+    this.tag = EXTENSION_NAME + "." + (typeof tag === 'string' ? tag : tag.constructor.name);
   }
 
   debug = (...messages: unknown[]) =>

@@ -3,6 +3,10 @@
         "message": "Meklēšanas un saites priekšskatījums",
         "description": "The name of the extension"
     },
+    "appShortName": {
+        "message": "Saites priekšskatījumi",
+        "description": "The short-version name of the extension name"
+    },
     "appDesc": {
         "message": "Skatiet saišu priekšskatījumus un uzreiz veic meklēšanu vienā un tajā pašā lapā, izmantojot šo priekšskatījumu, nevis jaunu cilņu atvēršanu",
         "description": "A description of its function"

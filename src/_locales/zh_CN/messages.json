@@ -3,6 +3,10 @@
         "message": "搜索和链接预览",
         "description": "The name of the extension"
     },
+    "appShortName": {
+        "message": "链接预览",
+        "description": "The short-version name of the extension name"
+    },
     "appDesc": {
         "message": "请参阅链接的预览，并使用此预览器在同一页面上立即执行搜索，而不是打开新标签",
         "description": "A description of its function"

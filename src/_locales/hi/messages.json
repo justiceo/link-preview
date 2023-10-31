@@ -3,6 +3,10 @@
         "message": "खोज और लिंक पूर्वावलोकन",
         "description": "The name of the extension"
     },
+    "appShortName": {
+        "message": "लिंक पूर्वावलोकन",
+        "description": "The short-version name of the extension name"
+    },
     "appDesc": {
         "message": "लिंक के पूर्वावलोकन देखें और नए टैब खोलने के बजाय इस पूर्वावलोकनकर्ता का उपयोग करके एक ही पृष्ठ पर तुरंत खोज करते हैं",
         "description": "A description of its function"

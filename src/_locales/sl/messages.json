@@ -3,6 +3,10 @@
         "message": "Predogled iskanja in povezav",
         "description": "The name of the extension"
     },
+    "appShortName": {
+        "message": "Predogled povezav",
+        "description": "The short-version name of the extension name"
+    },
     "appDesc": {
         "message": "Oglejte si predoglede povezav in takoj izvede iskanje na isti strani s tem predogledom, namesto da bi odpirali nove zavihke",
         "description": "A description of its function"

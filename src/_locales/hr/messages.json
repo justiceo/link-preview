@@ -3,8 +3,12 @@
         "message": "Pregled pretraživanja i povezivanja",
         "description": "The name of the extension"
     },
+    "appShortName": {
+        "message": "Pregledi veza",
+        "description": "The short-version name of the extension name"
+    },
     "appDesc": {
-        "message": "Pogledajte Preglede veza i odmah izvršava pretraživanja na istoj stranici koristeći ovaj preglednik umjesto otvaranja novih kartica",
+        "message": "Pogledajte preglede veza i odmah izvršava pretraživanja na istoj stranici pomoću ovog pregledača umjesto otvaranja novih kartica",
         "description": "A description of its function"
     }
 }

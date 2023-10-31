@@ -3,6 +3,10 @@
         "message": "検索＆リンクプレビュー",
         "description": "The name of the extension"
     },
+    "appShortName": {
+        "message": "リンクプレビュー",
+        "description": "The short-version name of the extension name"
+    },
     "appDesc": {
         "message": "リンクのプレビューを参照し、新しいタブを開く代わりにこのプレビューターを使用して同じページで検索を即座に実行する",
         "description": "A description of its function"

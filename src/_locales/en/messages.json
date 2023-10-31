@@ -3,6 +3,10 @@
         "message": "Search & Link Preview",
         "description": "The name of the extension"
     },
+    "appShortName": {
+        "message": "Link Previews",
+        "description": "The short-version name of the extension name"
+    },
     "appDesc": {
         "message": "See previews of links and instantly performs searches on the same page using this previewer instead of opening new tabs",
         "description": "A description of its function"

@@ -3,6 +3,10 @@
         "message": "Haku ja linkkien esikatselu",
         "description": "The name of the extension"
     },
+    "appShortName": {
+        "message": "Linkkien esikatselut",
+        "description": "The short-version name of the extension name"
+    },
     "appDesc": {
         "message": "Katso linkkien esikatselut ja suorittaa heti hakuja samalla sivulla tällä esikatselulla uusien välilehtien avaamisen sijasta",
         "description": "A description of its function"

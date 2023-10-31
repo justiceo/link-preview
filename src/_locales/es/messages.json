@@ -3,6 +3,10 @@
         "message": "Vista previa de búsqueda y enlace",
         "description": "The name of the extension"
     },
+    "appShortName": {
+        "message": "Vistas previas de enlace",
+        "description": "The short-version name of the extension name"
+    },
     "appDesc": {
         "message": "Consulte Vistas previas de enlaces y realiza instantáneamente búsquedas en la misma página utilizando esta vista previa en lugar de abrir nuevas pestañas",
         "description": "A description of its function"

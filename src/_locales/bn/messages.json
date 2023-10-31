@@ -3,6 +3,10 @@
         "message": "অনুসন্ধান এবং লিঙ্ক পূর্বরূপ",
         "description": "The name of the extension"
     },
+    "appShortName": {
+        "message": "লিঙ্ক পূর্বরূপ",
+        "description": "The short-version name of the extension name"
+    },
     "appDesc": {
         "message": "লিঙ্কগুলির পূর্বরূপ দেখুন এবং তাত্ক্ষণিকভাবে নতুন ট্যাবগুলি খোলার পরিবর্তে এই পূর্বরূপ ব্যবহার করে একই পৃষ্ঠায় অনুসন্ধানগুলি সম্পাদন করে",
         "description": "A description of its function"

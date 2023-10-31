@@ -34,6 +34,7 @@
     "@mozilla/readability": "^0.4.2",
     "@sentry/browser": "^7.30.0",
     "@sentry/tracing": "^7.30.0",
+    "@webcomponents/custom-elements": "^1.5.1",
     "lit": "^2.6.0",
     "winbox": "^0.2.6"
   },

@@ -1,46 +1,32 @@
-import { ContextMenu } from './context-menu';
+import "./post-install";
+import "./context-menus";
+import "./icon-updater";
+import "./feedback-checker";
+import { getOrCreateSessionId } from "./session-id";
+import Storage from '../utils/storage';
+import {SUCCESSFUL_INTERACTIONS} from '../utils/storage';
 
-new ContextMenu().init();
-
-const uninstallUrl = 'https://forms.gle/PdZ9U61QawXSa4qH8';
-const welcomeUrl = chrome.runtime.getURL('welcome/welcome.html');
-
-const onInstalled = (details: chrome.runtime.InstalledDetails) => {
-  // On fresh install, open page how to use extension.
-  if (details.reason === 'install') {
-    chrome.tabs.create({
-      url: welcomeUrl,
-      active: true,
-    });
-  }
-
-  /*
-   * For updates, show the onboarding again for in-active users.
-   * TODO: Implement isActive.
-   */
-  const isActive = true;
-  if (details.reason === 'update' && !isActive) {
-    chrome.tabs.create({
-      url: welcomeUrl,
-      active: true,
-    });
-  }
-
-  // Set url to take users upon uninstall.
-  chrome.runtime.setUninstallURL(uninstallUrl, () => {
-    if (chrome.runtime.lastError) {
-      console.error('Error setting uninstall URL', chrome.runtime.lastError);
-    }
-  });
-};
-chrome.runtime.onInstalled.addListener(onInstalled);
-
+// All service-worker messages should go through this function.
 const onMessage = (
   message: any,
   sender: chrome.runtime.MessageSender,
   callback: (response?: any) => void
 ) => {
-  console.log('Received message: ', message, ' from: ', sender);
+
+  // Check if the message is from this extension.
+  if (!sender.id || sender.id !== chrome.i18n.getMessage("@@extension_id")) {
+    console.warn("Ignoring message from unknown sender", sender);
+    return;
+  }
+  console.log("Received message: ", message, " from: ", sender);
+
+  if (message === "get_or_create_session_id") {
+    getOrCreateSessionId().then((sessionId) => {
+      console.log("Sending session Id", sessionId);
+      callback(sessionId);
+    });
+    return true; // Important! Return true to indicate you want to send a response asynchronously
+  }
 
   // For now, bounce-back message to the content script.
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {

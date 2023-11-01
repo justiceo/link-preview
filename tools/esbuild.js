@@ -142,7 +142,8 @@ class Build {
         minify: this.isProd,
         sourcemap: !this.isProd,
         loader: {
-          ".template.html": "text",
+          ".txt.html": "text",
+          ".txt.css": "text",
           ".png": "dataurl",
         },
         banner: {

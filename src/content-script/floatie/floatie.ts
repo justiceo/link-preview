@@ -1,5 +1,6 @@
 import { arrow, computePosition, flip, offset, shift } from "@floating-ui/dom";
 import floatieCssTxt from "./floatie.css.txt";
+import { Logger } from "../../utils/logger";
 
 import { Tooltip } from "./tooltip";
 class BFTooltip extends HTMLElement {
@@ -24,6 +25,7 @@ export class Floatie {
   documentFragment: DocumentFragment;
   isCopyActionEnabled = false;
   showTimeout?: number;
+  logger = new Logger(this);
 
   constructor() {
     const markup = `
@@ -65,7 +67,7 @@ export class Floatie {
     this.copyButton = copyButton;
     this.tooltipArrow = tooltipArrow;
 
-    console.debug("Initialized floatie");
+    this.logger.debug("Initialized floatie");
   }
 
   startListening(): void {
@@ -78,7 +80,7 @@ export class Floatie {
     try {
       customElements.define("better-previews-tooltip", BFTooltip);
   } catch(e) {
-      console.warn("Error re-defining custom element");
+      this.logger.warn("Error re-defining custom element");
   }
     const bft = document.createElement("better-previews-tooltip");
     const style = document.createElement("style");
@@ -184,7 +186,7 @@ export class Floatie {
     const selectedText = selection.toString().trim();
     const range = selection.getRangeAt(0);
     const boundingRect = range.getBoundingClientRect();
-    console.debug("Selected: ", selectedText);
+    this.logger.debug("Selected: ", selectedText);
     const actionsToShow = [];
     if (this.shouldShowPreview(e, selectedText)) {
       actionsToShow.push(this.previewButton);

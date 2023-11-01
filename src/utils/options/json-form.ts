@@ -1,6 +1,6 @@
 import bootstrap from "./bootstrap.bundle.min.js";
 import "./bootstrap.min.css";
-import formHtml from './json-form.template.html'; // Loaded as text.
+import formHtml from './json-form.txt.html'; // Loaded as text.
 
 class JFElement extends HTMLElement {
   constructor() {

@@ -4,6 +4,12 @@ import "./previewr.css";
 import { sanitizeUrl } from "@braintree/sanitize-url";
 import { Readability } from "@mozilla/readability";
 import replyIconPng from '../assets/images/reply-arrow.png';
+import "../utils/feedback/feedback";
+import { FeedbackData } from "../background-script/feedback-checker";
+import { FEEDBACK_DATA_KEY } from "../utils/storage";
+import Storage from "../utils/storage";
+import Analytics from "../utils/analytics";
+
 
 const iframeName = "betterpreviews.com/mainframe"; 
 // Override the #setUrl method to set name attribute on iframe.
@@ -221,6 +227,44 @@ export class Previewr {
         },
       });
     }
+
+
+    await this.registerFeedbackUI();
+  }
+
+  async registerFeedbackUI() {
+    const feedbackData: FeedbackData|null = await Storage.get(FEEDBACK_DATA_KEY);
+    const shouldShow = feedbackData?.status === "eligible";
+    if (shouldShow) {
+      this.dialog?.addClass("show-footer");
+    }
+
+    // Listen for component events.
+    const ff = this.dialog?.dom.querySelector("feedback-form");
+    ff.setProgressHandler((status, data) => {
+      if (status === "started") {
+        this.logger.log("started: this", this, chrome?.storage?.sync);
+        const feedbackUpdate: FeedbackData = {
+          status: "honored",
+          timestamp: Date.now(),
+          rating: data,
+        };
+        Storage.put(FEEDBACK_DATA_KEY, feedbackUpdate);
+
+        Analytics.fireEvent("user_feedback", {
+          action: "rate_experience",
+          star_rating: data,
+        });
+      }
+
+      if (status === "completed") {
+        this.dialog?.removeClass("show-footer");
+        Analytics.fireEvent("user_feedback", {
+          action: "submit_feedback",
+          feedback_text: data,
+        });
+      }
+    });
   }
 
   navBack() {

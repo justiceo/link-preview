@@ -1,6 +1,8 @@
+import { Logger } from "../utils/logger";
 // This script is executed inside the preview (i.e. document is iframe).
 export class IFrameHelper {
   iframeName = "betterpreviews.com/mainframe"; 
+  logger = new Logger(this);
   constructor() {
     /*
      * Favicon URL request, Window.Title request, apply custom CSS.
@@ -30,7 +32,7 @@ export class IFrameHelper {
         }
         e.stopImmediatePropagation();
         e.preventDefault();
-        console.debug("Prevented click propagation and posting navigate");
+        this.logger.debug("Prevented click propagation and posting navigate");
         // TODO: Add target origin instead of "*". https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage
         this.sendMessage({
           action: "navigate",
@@ -85,7 +87,7 @@ export class IFrameHelper {
   }
 
   sendMessage(message: any) {
-    console.debug("#sendMessage", message);
+    this.logger.debug("#sendMessage", message);
     chrome.runtime.sendMessage({ application: "better-previews", ...message });
   }
 

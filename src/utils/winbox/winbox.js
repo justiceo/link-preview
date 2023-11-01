@@ -672,7 +672,7 @@ export class WinBox {
     return this;
   }
   /**
-   * @param {{ class:string?, image:string?, click:Function?, index:number? }} control
+   * @param {{ class:string?, title:string?, image:string?, click:Function?, index:number? }} control
    * @this WinBox
    */
   addControl(control) {

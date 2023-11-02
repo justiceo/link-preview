@@ -5,8 +5,8 @@ const GA_ENDPOINT = "https://www.google-analytics.com/mp/collect";
 const GA_DEBUG_ENDPOINT = "https://www.google-analytics.com/debug/mp/collect";
 
 // Get via https://developers.google.com/analytics/devguides/collection/protocol/ga4/sending-events?client_type=gtag#recommended_parameters_for_reports
-const MEASUREMENT_ID = "G-ZCZLZLYH36";
-const API_SECRET = "UIXmDH2iRxaZPMd1S_UUww";
+const MEASUREMENT_ID = "G-XN737SN9S2";
+const API_SECRET = "zigXBV_3TjyIjkXuSPjo8w";
 const DEFAULT_ENGAGEMENT_TIME_MSEC = 100;
 
 declare var IS_DEV_BUILD: boolean;

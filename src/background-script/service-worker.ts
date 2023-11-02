@@ -3,8 +3,6 @@ import "./context-menus";
 import "./icon-updater";
 import "./feedback-checker";
 import { getOrCreateSessionId } from "./session-id";
-import Storage from '../utils/storage';
-import {SUCCESSFUL_INTERACTIONS} from '../utils/storage';
 
 // All service-worker messages should go through this function.
 const onMessage = (

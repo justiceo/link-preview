@@ -11,12 +11,12 @@ const onInstalled = (details: chrome.runtime.InstalledDetails) => {
 
   // On fresh install, open page how to use extension.
   if (details.reason === "install") {
-    Analytics.fireEvent("install");
     chrome.tabs.create({
       url: welcomeUrl,
       active: true,
     });
   }
+  Analytics.fireEvent("install", {reaason: details.reason});
 
   // Set url to take users upon uninstall.
   chrome.runtime.setUninstallURL(uninstallUrl, () => {

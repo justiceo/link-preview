@@ -1,7 +1,7 @@
 import { Logger } from "./logger";
 import * as enMessage from "../_locales/en/messages.json";
 
-const logger = new Logger("i18n");
+export const logger = new Logger("i18n"); // exported for testing.
 
 /**
  * Gets the localized string for the specific message.

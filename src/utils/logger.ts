@@ -39,7 +39,7 @@ export class Logger {
   }
 
   listenForBgLogs() {
-    chrome.runtime.onMessage.addListener((message, sender) => {
+    chrome?.runtime.onMessage.addListener((message, sender) => {
       if (sender.id !== chrome.runtime.id || message.action != "log") {
         return;
       }

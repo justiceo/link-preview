@@ -13,8 +13,8 @@ class Build {
   maybeTask = "build";
   args;
 
-  testSpecs = ["spec/e2e-spec.ts"];
-  compiledTestSpecs = ["spec/e2e-spec.js"];
+  testSpecs = ["spec/e2e-spec.ts", "spec/i18n-spec.ts"];
+  compiledTestSpecs = ["spec/e2e-spec.js", "spec/i18n-spec.js"];
   originalIconPath = "src/assets/images/logo.png";
 
   constructor() {
@@ -404,6 +404,9 @@ return this.copy(fileMap);
         bundle: true,
         outdir: "spec",
         platform: "node",
+        banner: {
+          js: `var IS_DEV_BUILD=true;var chrome=null`,
+        },
       })
       .catch((err) => {
         console.error(err);

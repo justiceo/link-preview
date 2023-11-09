@@ -7,6 +7,8 @@
   "__comment:version__": "Firefox does not support leading zeros in versions",
   "version": "23.9.22",
   "__sentry_dsn__": "https://bf0a1e40a1784502aad701a201efdf08@o526305.ingest.sentry.io/4504743520436224",
+  "__measurement_id__": "G-XN737SN9S2",
+  "__ga_api_secret__": "zigXBV_3TjyIjkXuSPjo8w",
   "manifest_version": 3,
   "default_locale": "en",
   "author": "Justice Ogbonna",
@@ -47,6 +49,7 @@
     "__chrome__service_worker": "background-script/service-worker.js",
     "__firefox__scripts": ["background-script/service-worker.js"]
   },
+  "options_page": "options-page/options.html",
   "web_accessible_resources": [
     {
       "resources": ["assets/logo-24x24.png"],

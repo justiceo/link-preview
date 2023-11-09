@@ -13,9 +13,11 @@ const logger = new Logger("i18n");
 export const i18n = (key: string): string => {
   if (!key) {
     logger.error("A valid key is required for i18n, got", key);
+    return key;
   }
 
-  if (chrome?.i18n) {
+  // chrome.i18n may not be available in page context and returns "" for missing keys.
+  if (chrome?.i18n && chrome.i18n.getMessage(key) !== "") {
     return chrome.i18n.getMessage(key);
   }
   logger.warn(
@@ -29,6 +31,6 @@ export const i18n = (key: string): string => {
     }
   }
 
-  logger.error("No translation available for key", key);
+  logger.error("No translation available for key:", key);
   return key;
 };

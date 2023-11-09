@@ -11,7 +11,7 @@ class Storage {
 
   // Puts arbitrary value in map for key, overwriting any existing value.
   put(key: string, value: any): Promise<void> {
-    if (!value) {
+    if (value === null || value === undefined) {
       return Promise.reject("Attempting to save a null value");
     }
 

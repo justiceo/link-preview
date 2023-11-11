@@ -3,6 +3,10 @@
         "message": "தேடல் மற்றும் இணைப்பு முன்னோட்டம்",
         "description": "The name of the extension"
     },
+    "appShortName": {
+        "message": "இணைப்பு முன்னோட்டங்கள்",
+        "description": "The short-version name of the extension name"
+    },
     "appDesc": {
         "message": "புதிய தாவல்களைத் திறப்பதற்குப் பதிலாக இந்த மாதிரிக்காட்சியைப் பயன்படுத்தி ஒரே பக்கத்தில் இணைப்புகளின் முன்னோட்டங்களைப் பார்க்கவும், உடனடியாக தேடல்களைச் செய்கிறது",
         "description": "A description of its function"

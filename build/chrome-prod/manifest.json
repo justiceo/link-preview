@@ -1,16 +1,17 @@
 {
     "name": "__MSG_appName__",
     "description": "__MSG_appDesc__",
+    "short_name": "__MSG_appShortName_",
     "homepage_url": "https://github.com/justiceo/search-preview",
-    "version": "23.9.22",
+    "version": "23.11.11",
     "manifest_version": 3,
     "default_locale": "en",
     "author": "Justice Ogbonna",
-    "short_name": "Link Preview",
     "permissions": [
         "storage",
         "declarativeNetRequest",
-        "contextMenus"
+        "contextMenus",
+        "cookies"
     ],
     "declarative_net_request": {
         "rule_resources": [
@@ -56,7 +57,16 @@
     "background": {
         "service_worker": "background-script/service-worker.js"
     },
+    "options_page": "options-page/options.html",
     "web_accessible_resources": [
+        {
+            "resources": [
+                "assets/logo-24x24.png"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        },
         {
             "resources": [
                 "options-page/options.html"

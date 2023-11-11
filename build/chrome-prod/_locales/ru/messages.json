@@ -3,6 +3,10 @@
         "message": "Поиск и предварительный просмотр ссылок",
         "description": "The name of the extension"
     },
+    "appShortName": {
+        "message": "Предварительный просмотр ссылок",
+        "description": "The short-version name of the extension name"
+    },
     "appDesc": {
         "message": "См. Предварительные просмотра ссылок и мгновенно выполняет поиск на той же странице, используя этот предварительный просмотр вместо открытия новых вкладок",
         "description": "A description of its function"

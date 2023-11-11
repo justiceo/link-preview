@@ -3,6 +3,10 @@
         "message": "Pesquisa e visualização de link",
         "description": "The name of the extension"
     },
+    "appShortName": {
+        "message": "Visualizações de link",
+        "description": "The short-version name of the extension name"
+    },
     "appDesc": {
         "message": "Veja as visualizações dos links e executa instantaneamente pesquisas na mesma página usando este visualizador em vez de abrir novas guias",
         "description": "A description of its function"

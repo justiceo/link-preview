@@ -3,6 +3,10 @@
         "message": "Wyszukiwanie i podgląd linków",
         "description": "The name of the extension"
     },
+    "appShortName": {
+        "message": "Podgląd linków",
+        "description": "The short-version name of the extension name"
+    },
     "appDesc": {
         "message": "Zobacz podgląd linków i natychmiast wykonuje wyszukiwania na tej samej stronie za pomocą tego podwozia zamiast otwierania nowych kart",
         "description": "A description of its function"

@@ -3,6 +3,10 @@
         "message": "Preview Search & Link Forhåndsvisning",
         "description": "The name of the extension"
     },
+    "appShortName": {
+        "message": "Forhåndsvisning av koblinger",
+        "description": "The short-version name of the extension name"
+    },
     "appDesc": {
         "message": "Se forhåndsvisning av lenker og utfører øyeblikkelig søk på samme side ved hjelp av denne forhåndsvisning i stedet for å åpne nye faner",
         "description": "A description of its function"

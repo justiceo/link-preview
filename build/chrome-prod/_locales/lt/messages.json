@@ -3,6 +3,10 @@
         "message": "Paieškos ir nuorodų peržiūra",
         "description": "The name of the extension"
     },
+    "appShortName": {
+        "message": "Nuorodų peržiūra",
+        "description": "The short-version name of the extension name"
+    },
     "appDesc": {
         "message": "Žr. Nuorodų peržiūras ir akimirksniu atlieka paieškas tame pačiame puslapyje, naudodamiesi šiuo peržiūros priemone, užuot atidarę naujus skirtukus",
         "description": "A description of its function"

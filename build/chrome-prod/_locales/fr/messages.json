@@ -3,6 +3,10 @@
         "message": "Recherche et prévisualisation du lien",
         "description": "The name of the extension"
     },
+    "appShortName": {
+        "message": "Aperçu des liens",
+        "description": "The short-version name of the extension name"
+    },
     "appDesc": {
         "message": "Voir les aperçus de liens et effectuent instantanément des recherches sur la même page en utilisant cet aperçu au lieu d'ouvrir de nouveaux onglets",
         "description": "A description of its function"

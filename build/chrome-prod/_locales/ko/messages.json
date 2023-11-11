@@ -3,6 +3,10 @@
         "message": "검색 및 링크 미리보기",
         "description": "The name of the extension"
     },
+    "appShortName": {
+        "message": "링크 미리보기",
+        "description": "The short-version name of the extension name"
+    },
     "appDesc": {
         "message": "링크 미리보기를보고 새 탭을 열지 않고이 미리보기를 사용하여 같은 페이지에서 검색을 즉시 수행합니다.",
         "description": "A description of its function"

@@ -3,6 +3,10 @@
         "message": "معاينة البحث والرابط",
         "description": "The name of the extension"
     },
+    "appShortName": {
+        "message": "معاينات الارتباط",
+        "description": "The short-version name of the extension name"
+    },
     "appDesc": {
         "message": "راجع معاينات الروابط ويقوم على الفور بإجراء عمليات البحث على نفس الصفحة باستخدام هذه المعاينة بدلاً من فتح علامات تبويب جديدة",
         "description": "A description of its function"

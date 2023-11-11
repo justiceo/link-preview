@@ -3,6 +3,10 @@
         "message": "Попередній перегляд пошуку та посилання",
         "description": "The name of the extension"
     },
+    "appShortName": {
+        "message": "Попередні попередні перегляди",
+        "description": "The short-version name of the extension name"
+    },
     "appDesc": {
         "message": "Див. Попередній перегляд посилань та миттєво виконує пошук на одній сторінці за допомогою цього попереднього перегляду замість того, щоб відкривати нові вкладки",
         "description": "A description of its function"

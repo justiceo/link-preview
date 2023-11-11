@@ -3,6 +3,10 @@
         "message": "Anteprima di ricerca e collegamento",
         "description": "The name of the extension"
     },
+    "appShortName": {
+        "message": "Anteprime del link",
+        "description": "The short-version name of the extension name"
+    },
     "appDesc": {
         "message": "Vedere le anteprime dei collegamenti e eseguire istantaneamente le ricerche nella stessa pagina utilizzando questo anteprima invece di aprire nuove schede",
         "description": "A description of its function"

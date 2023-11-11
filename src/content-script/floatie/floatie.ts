@@ -136,9 +136,15 @@ export class Floatie {
         }
 
         showTimeout = setTimeout(() => {
+          storage.get("preview-on-hover").then((previewOnHover) => {
+            if (previewOnHover) {
+              this.sendMessage("preview", a.href);
+            } else {
           this.showActions(a.getBoundingClientRect(), e, a.href, [
             this.previewButton,
           ]);
+            }
+          });
         }, 500);
       });
 

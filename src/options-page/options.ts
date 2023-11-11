@@ -41,7 +41,7 @@ const configOptions: Config[] = [
     description: "The width of the preview panel relative to the page.",
     default_value: 40,
     min: "20",
-    max: "100",
+    max: "90",
   },
   {
     id: "previewr-height",
@@ -50,7 +50,7 @@ const configOptions: Config[] = [
     description: "The height of the preview panel relative to the page.",
     default_value: 70,
     min: "20",
-    max: "100",
+    max: "95",
   },
   {
     id: "sync-settings",

@@ -170,25 +170,7 @@ export class Previewr {
     this.logger.log("#previewUrl: ", url);
     this.url = url;
 
-    const winboxOptions = {
-      icon: this.headerIconUrlBase + url.hostname,
-      x: "right",
-      y: this.isDemo ? "500px" : "50px",
-      right: 10,
-      width: this.isDemo ? "45%" : "55%",
-      height: this.isDemo ? "40%" : "80%",
-      class: ["no-max", "no-full"],
-      index: await this.getMaxZIndex(),
-      hidden: false,
-      shadowel: "search-preview-window",
-      framename: iframeName,
-
-      onclose: () => {
-        this.navStack = [];
-        this.url = undefined;
-        this.dialog = undefined;
-      },
-    };
+    const winboxOptions = await this.getWinboxOptions(url);
 
     if (this.displayReaderMode) {
       let reader = new Readability(window.document.cloneNode(true) as Document);
@@ -306,6 +288,41 @@ export class Previewr {
       );
       resolve(z);
     });
+  }
+
+  async getWinboxOptions(url: URL, point?: DOMRect) {
+    // Set width and height from options if present.
+    let width = (await Storage.get("previewr-width") ?? "55") + "%";
+    let height = (await Storage.get("previewr-height") ?? "80") + "%";
+
+    // Leave space on top for headers/navigation.
+    let top = "50px";
+
+    // In demo mode, use small width and height, and push down previewr.
+    if(this.isDemo) {
+      width = "45%";
+      height = "40%";
+      top = "500px";
+    }
+    return {
+      icon: this.headerIconUrlBase + url.hostname,
+      x: "right",
+      y:  top,
+      right: 10,
+      width: width,
+      height: height,
+      class: ["no-max", "no-full"],
+      index: await this.getMaxZIndex(),
+      hidden: false,
+      shadowel: "search-preview-window",
+      framename: iframeName,
+
+      onclose: () => {
+        this.navStack = [];
+        this.url = undefined;
+        this.dialog = undefined;
+      },
+    };
   }
 }
 new Previewr().init();

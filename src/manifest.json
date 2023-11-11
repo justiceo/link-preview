@@ -12,7 +12,7 @@
   "manifest_version": 3,
   "default_locale": "en",
   "author": "Justice Ogbonna",
-  "permissions": ["storage", "declarativeNetRequest", "contextMenus", "cookies"],
+  "permissions": ["storage", "declarativeNetRequest", "contextMenus", "cookies", "activeTab"],
   "declarative_net_request": {
     "rule_resources": [
       {

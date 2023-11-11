@@ -36,13 +36,13 @@ const configOptions: Config[] = [
     min: "20",
     max: "95",
   },
-  // {
-  //   id: "disabled-on-sites",
-  //   type: "textarea",
-  //   title: "Disabled on Websites",
-  //   description: "Extension will not run on these sites.",
-  //   default_value: "",
-  // },
+  {
+    id: "blocked-sites",
+    type: "textarea",
+    title: "Disabled on Websites",
+    description: "Extension will not run on these sites. Enter one site per line.",
+    default_value: "",
+  },
   // {
   //   id: "automatically-hide-previews",
   //   type: "switch",

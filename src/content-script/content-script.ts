@@ -2,6 +2,7 @@ import { Logger } from "../utils/logger";
 import "./previewr";
 import "./iframe-helper";
 import { Floatie } from "./floatie/floatie";
+import Storage from "../utils/storage";
 
 class ContentScript {
   floatie = new Floatie();
@@ -10,12 +11,12 @@ class ContentScript {
 
   constructor() {}
 
-  start() {
-    if (this.isDisabledDomain()) {
-      this.logger.warn("Better Previews is disabled on ", window.location.host);
+  async start() {
+    if (await this.isDisabledDomain()) {
+      // TODO: Prevent all script injection on unsupported hosts.
+      this.logger.debug("Better Previews is disabled on ", window.location.host);
       return;
     }
-
     this.floatie.startListening();
 
     chrome.runtime.onMessage.addListener((request, sender, callback) => {
@@ -29,8 +30,13 @@ class ContentScript {
     this.floatie.stopListening();
   }
 
-  isDisabledDomain() {
-    return this.unsupportedHosts.indexOf(window.location.host) >= 0;
+  async isDisabledDomain() {
+    const blockedSites: string = await Storage.get("blocked-sites") ?? "";
+    if (!blockedSites) {
+      return false;
+    }
+    const host = window.location.hostname;
+    return blockedSites.includes(host);
   }
 }
 

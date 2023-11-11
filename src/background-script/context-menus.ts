@@ -21,7 +21,7 @@ interface MenuItem {
 declare var IS_DEV_BUILD: boolean;
 export class ContextMenu {
   logger = new Logger(this);
-  
+
   RELOAD_ACTION: MenuItem = {
     menu: {
       id: "reload-extension",
@@ -33,12 +33,13 @@ export class ContextMenu {
       chrome.runtime.reload();
     },
   };
+
   CLEAR_STORAGE: MenuItem = {
     menu: {
-      id: 'clear-storage',
-      title: 'Clear Storage',
+      id: "clear-storage",
+      title: "Clear Storage",
       visible: true,
-      contexts: ['action'],
+      contexts: ["action"],
     },
     handler: (unusedInfo) => {
       chrome.storage.sync.clear();
@@ -48,63 +49,97 @@ export class ContextMenu {
 
   PRINT_STORAGE: MenuItem = {
     menu: {
-      id: 'print-storage',
-      title: 'Print Storage',
+      id: "print-storage",
+      title: "Print Storage",
       visible: true,
-      contexts: ['action'],
+      contexts: ["action"],
     },
     handler: async (unusedInfo) => {
-      this.logger.log("Storage contents:", await Storage.getAll())
+      this.logger.log("Storage contents:", await Storage.getAll());
     },
   };
 
   PREVIEW_ACTION: MenuItem = {
     menu: {
-      id: 'show-preview',
-      title: 'Preview Link',
+      id: "show-preview",
+      title: "Preview Link",
       visible: true,
-      contexts: ['link'],
+      contexts: ["link"],
     },
     handler: (data: chrome.contextMenus.OnClickData) => {
       if (!data.linkUrl) {
-        console.warn('No linkurl', data);
+        this.logger.warn("No linkurl", data);
         return;
       }
-      this.sendMessage({ action: 'preview', data: data.linkUrl });
+      this.sendMessage({ action: "preview", data: data.linkUrl });
     },
   };
 
   SEARCH_ACTION: MenuItem = {
     menu: {
-      id: 'show-search',
-      title: 'Preview Search Results',
+      id: "show-search",
+      title: "Preview Search Results",
       visible: true,
-      contexts: ['selection'],
+      contexts: ["selection"],
     },
     handler: (data: chrome.contextMenus.OnClickData) => {
       if (!data.selectionText) {
-        console.warn('No selection', data);
+        this.logger.warn("No selection", data);
         return;
       }
-      this.sendMessage({ action: 'search', data: data.selectionText });
+      this.sendMessage({ action: "search", data: data.selectionText });
     },
   };
 
+  DISABLE_ON_SITE: MenuItem = {
+    menu: {
+      id: "disable-on-site",
+      title: "Disable previews on this site",
+      visible: true,
+      contexts: ["action"],
+    },
+    handler: (unusedInfo) => {
+      Storage.getAndUpdate("blocked-sites", async (sites: string) => {
+        let url;
+
+        try {
+          const tabs = await chrome.tabs.query({ active: true, currentWindow: true })
+          const pageUrl = tabs[0].url ?? "";
+          url = new URL(pageUrl);
+        } catch (e) {
+          this.logger.debug("Unable to parse url:", e);
+          return sites;
+        }
+        if (!url) {
+          this.logger.debug("URL is null");
+          return sites;
+        }
+
+        const newSites = sites ? sites + "\n" + url.hostname : url.hostname;
+        return newSites;
+      });
+    },
+  };
 
   browserActionContextMenu: MenuItem[] = [
     this.PREVIEW_ACTION,
     this.SEARCH_ACTION,
+    this.DISABLE_ON_SITE,
   ];
 
   init = () => {
     // Maybe add dev-only actions.
-    if(IS_DEV_BUILD) {
-      this.browserActionContextMenu.push(this.RELOAD_ACTION, this.CLEAR_STORAGE, this.PRINT_STORAGE);
+    if (IS_DEV_BUILD) {
+      this.browserActionContextMenu.push(
+        this.RELOAD_ACTION,
+        this.CLEAR_STORAGE,
+        this.PRINT_STORAGE
+      );
     }
 
     // Check if we can access context menus.
     if (!chrome || !chrome.contextMenus) {
-      console.warn("No access to chrome.contextMenus");
+      this.logger.warn("No access to chrome.contextMenus");
       return;
     }
 
@@ -126,17 +161,17 @@ export class ContextMenu {
       (item) => item.menu.id === info.menuItemId
     );
     if (menuItem) {
-      Analytics.fireEvent("context_menu_click", {menu_id: info.menuItemId});
+      Analytics.fireEvent("context_menu_click", { menu_id: info.menuItemId });
       menuItem.handler(info, tab);
     } else {
-      console.error("Unable to find menu item: ", info);
+      this.logger.error("Unable to find menu item: ", info);
     }
   };
 
   sendMessage(message: any): void {
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
       chrome.tabs.sendMessage(tabs[0].id!, message, (response) => {
-        console.debug("ack:", response);
+        this.logger.debug("ack:", response);
       });
     });
   }

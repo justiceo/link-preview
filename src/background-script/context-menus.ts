@@ -1,4 +1,6 @@
 import Analytics from "../utils/analytics";
+import { Logger } from "../utils/logger";
+import Storage from "../utils/storage";
 /*
  * Set up context menu (right-click menu) for different conexts.
  * See reference https://developer.chrome.com/docs/extensions/reference/contextMenus/#method-create.
@@ -18,6 +20,8 @@ interface MenuItem {
  */
 declare var IS_DEV_BUILD: boolean;
 export class ContextMenu {
+  logger = new Logger(this);
+  
   RELOAD_ACTION: MenuItem = {
     menu: {
       id: "reload-extension",
@@ -39,6 +43,18 @@ export class ContextMenu {
     handler: (unusedInfo) => {
       chrome.storage.sync.clear();
       chrome.storage.local.clear();
+    },
+  };
+
+  PRINT_STORAGE: MenuItem = {
+    menu: {
+      id: 'print-storage',
+      title: 'Print Storage',
+      visible: true,
+      contexts: ['action'],
+    },
+    handler: async (unusedInfo) => {
+      this.logger.log("Storage contents:", await Storage.getAll())
     },
   };
 
@@ -83,7 +99,7 @@ export class ContextMenu {
   init = () => {
     // Maybe add dev-only actions.
     if(IS_DEV_BUILD) {
-      this.browserActionContextMenu.push(this.RELOAD_ACTION, this.CLEAR_STORAGE);
+      this.browserActionContextMenu.push(this.RELOAD_ACTION, this.CLEAR_STORAGE, this.PRINT_STORAGE);
     }
 
     // Check if we can access context menus.

@@ -36,6 +36,15 @@ export class Previewr {
   navStack: URL[] = [];
   displayReaderMode = false;
   isDemo = false;
+  searchUrl = {
+    "google": "https://www.google.com/search?igu=1&q=",
+    "bing": "https://www.bing.com/search?q=",
+    "yahoo": "https://search.yahoo.com/search?p=",
+    "baidu": "https://www.baidu.com/s?wd=",
+    "yandex": "https://yandex.com/search/?text=",
+    "duckduckgo": "https://duckduckgo.com/?q=",
+    "ecosia": "https://www.ecosia.org/search?q=",
+  }
 
   /* This function inserts an Angular custom element (web component) into the DOM. */
   init() {
@@ -118,7 +127,8 @@ export class Previewr {
     } else if (message.action === "preview") {
       urlStr = message.data;
     } else if (message.action === "search") {
-      urlStr = "https://google.com/search?igu=1&q=" + message.data;
+      const searchEngine = await Storage.get("search-engine") ?? "google";
+      urlStr = this.searchUrl[searchEngine] + message.data;
     } else if (message.action === "load") {
       if (message.sourceFrame === iframeName && this.dialog) {
         this.dialog.setTitle(message.data.title);

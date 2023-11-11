@@ -1,3 +1,4 @@
+@import url("../../node_modules/bootstrap/dist/css/bootstrap.css");
 
 input[type="checkbox"] {
   /* Double-sized Checkboxes */
@@ -340,7 +341,7 @@ ul {
   padding-left: 16px;
 }
 
-a:not(.button) {
+/* a:not(.button) {
   color: #55a1fb;
   outline: none;
   text-decoration: none;
@@ -351,7 +352,7 @@ a:not(.button) {
 a:not(.button):hover,
 a:not(.button):focus {
   border-bottom: 1px solid #88bfff;
-}
+} */
 
 ::-moz-selection {
   background: #f3f4f7;

@@ -15,7 +15,7 @@ export interface Config {
   id: string;
   title: string;
   description: string;
-  type: "checkbox" | "switch" | "range" | "select" | "radio";
+  type: "checkbox" | "switch" | "range" | "select" | "radio" | "textarea";
   default_value: string | boolean | number;
 
   value?: any;

@@ -19,22 +19,6 @@ const configOptions: Config[] = [
     ],
   },
   {
-    id: "automatically-hide-previews",
-    type: "switch",
-    title: "Automatically hide previews",
-    description:
-      "Hides the preview panel when you hit ESC, scroll away or interact with the main page.",
-    default_value: false,
-  },
-  {
-    id: "preview-on-hover",
-    type: "switch",
-    title: "Display preview on hover",
-    description:
-      "No need to click on tooltip button, auto show preview after 3secs.",
-    default_value: false,
-  },
-  {
     id: "previewr-width",
     type: "range",
     title: "Preview Width (%)",
@@ -52,14 +36,29 @@ const configOptions: Config[] = [
     min: "20",
     max: "95",
   },
-  {
-    id: "sync-settings",
-    type: "switch",
-    title: "Enable chrome sync",
-    description:
-      "Sync these settings across Chrome browsers where you're signed in.",
-    default_value: false,
-  },
+  // {
+  //   id: "disabled-on-sites",
+  //   type: "textarea",
+  //   title: "Disabled on Websites",
+  //   description: "Extension will not run on these sites.",
+  //   default_value: "",
+  // },
+  // {
+  //   id: "automatically-hide-previews",
+  //   type: "switch",
+  //   title: "Automatically hide previews",
+  //   description:
+  //     "Hides the preview panel when you hit ESC, scroll away or interact with the main page.",
+  //   default_value: false,
+  // },
+  // {
+  //   id: "preview-on-hover",
+  //   type: "switch",
+  //   title: "Display preview on hover",
+  //   description:
+  //     "No need to click on tooltip button, auto show preview after 3secs.",
+  //   default_value: false,
+  // },
 ];
 
 const iframeName = "betterpreviews.com/mainframe";

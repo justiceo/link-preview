@@ -3,15 +3,14 @@ import { WinBox } from "../utils/winbox/winbox";
 import "./previewr.css";
 import { sanitizeUrl } from "@braintree/sanitize-url";
 import { Readability } from "@mozilla/readability";
-import replyIconPng from '../assets/images/reply-arrow.png';
 import "../utils/feedback/feedback";
 import { FeedbackData } from "../background-script/feedback-checker";
 import { FEEDBACK_DATA_KEY } from "../utils/storage";
 import Storage from "../utils/storage";
 import Analytics from "../utils/analytics";
+import manifest from "../manifest.json";
 
-
-const iframeName = "betterpreviews.com/mainframe"; 
+const iframeName = manifest.__package_name__ + "/mainframe";
 // Override the #setUrl method to set name attribute on iframe.
 WinBox.prototype.setUrl = function (url, onload) {
   const node = this.body.firstChild;
@@ -19,7 +18,8 @@ WinBox.prototype.setUrl = function (url, onload) {
   if (node && node.tagName.toLowerCase() === "iframe") {
     node.src = url;
   } else {
-    this.body.innerHTML = '<iframe name="' + iframeName + '" src="' + url + '"></iframe>';
+    this.body.innerHTML =
+      '<iframe name="' + iframeName + '" src="' + url + '"></iframe>';
     onload && (this.body.firstChild.onload = onload);
   }
 
@@ -28,7 +28,7 @@ WinBox.prototype.setUrl = function (url, onload) {
 
 // This class is responsible to loading/reloading/unloading the angular app into the UI.
 export class Previewr {
-  logger = new Logger("previewr");
+  logger = new Logger(this);
   headerIconUrlBase = "https://www.google.com/s2/favicons?domain=";
   dialog?: WinBox;
   isVisible = false;
@@ -107,8 +107,8 @@ export class Previewr {
 
   async handleMessage(message) {
     // Extract the url from the message.
-        let urlStr;
-    if(message.mode === "demo") {
+    let urlStr;
+    if (message.mode === "demo") {
       this.isDemo = true;
     }
 
@@ -163,10 +163,10 @@ export class Previewr {
     const winboxOptions = {
       icon: this.headerIconUrlBase + url.hostname,
       x: "right",
-      y: this.isDemo? "500px" : "50px",
+      y: this.isDemo ? "500px" : "50px",
       right: 10,
-      width: this.isDemo? "45%" : "55%",
-      height: this.isDemo? "40%" : "80%",
+      width: this.isDemo ? "45%" : "55%",
+      height: this.isDemo ? "40%" : "80%",
       class: ["no-max", "no-full"],
       index: await this.getMaxZIndex(),
       hidden: false,
@@ -200,13 +200,12 @@ export class Previewr {
         index: 2,
         class: "wb-nav-away",
         title: "Open in New Tab",
-        image: "",        
+        image: "",
         click: (event, winbox) => {
           this.logger.log("#onOpenInNewTab: url", this.url);
           window.open(this.url, "_blank");
         },
       });
-
     } else {
       this.logger.debug("restoring dialog");
       this.dialog.restore();
@@ -220,7 +219,7 @@ export class Previewr {
       this.dialog.addControl({
         index: 0,
         class: "nav-back",
-        image: replyIconPng,
+        image: "",
         title: "Go Back",
         click: (event, winbox) => {
           this.navBack();
@@ -228,12 +227,13 @@ export class Previewr {
       });
     }
 
-
     await this.registerFeedbackUI();
   }
 
   async registerFeedbackUI() {
-    const feedbackData: FeedbackData|null = await Storage.get(FEEDBACK_DATA_KEY);
+    const feedbackData: FeedbackData | null = await Storage.get(
+      FEEDBACK_DATA_KEY
+    );
     const shouldShow = feedbackData?.status === "eligible";
     if (shouldShow) {
       this.dialog?.addClass("show-footer");
@@ -298,3 +298,4 @@ export class Previewr {
     });
   }
 }
+new Previewr().init();

@@ -1,12 +1,10 @@
-import { Floatie } from "./floatie/floatie";
-import { IFrameHelper } from "./iframe-helper";
-import { Previewr } from "./previewr";
 import { Logger } from "../utils/logger";
+import "./previewr";
+import "./iframe-helper";
+import { Floatie } from "./floatie/floatie";
 
 class ContentScript {
   floatie = new Floatie();
-  iframeHelper = new IFrameHelper();
-  previewr = new Previewr();
   logger = new Logger(this);
   unsupportedHosts = ["mail.google.com"];
 
@@ -19,8 +17,6 @@ class ContentScript {
     }
 
     this.floatie.startListening();
-    this.previewr.init();
-    this.iframeHelper.registerListeners();
 
     chrome.runtime.onMessage.addListener((request, sender, callback) => {
       this.logger.debug("Re-posting message for DOM: ", request);

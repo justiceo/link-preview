@@ -1,7 +1,9 @@
 import { Logger } from "../utils/logger";
+import manifest from "../manifest.json";
+
 // This script is executed inside the preview (i.e. document is iframe).
 export class IFrameHelper {
-  iframeName = "betterpreviews.com/mainframe"; 
+  iframeName = manifest.__package_name__ + "/mainframe";
   logger = new Logger(this);
   constructor() {
     /*
@@ -106,3 +108,5 @@ export class IFrameHelper {
     return window.location.origin;
   }
 }
+const iframeHelper = new IFrameHelper();
+iframeHelper.registerListeners();

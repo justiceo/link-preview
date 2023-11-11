@@ -75,8 +75,6 @@ if (window.name === iframeName) {
   };
 }
 
-async function loadForm() {
-  let j2f = new SettingsUI(configOptions);
-  document.querySelector(".options-container")?.appendChild(j2f);
-}
-loadForm();
+document
+  .querySelector(".options-container")
+  ?.appendChild(new SettingsUI(configOptions));

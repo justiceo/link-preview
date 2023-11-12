@@ -95,21 +95,21 @@ export class SettingsUI extends HTMLElement {
 
     // Set the title and description of the control.
     control.getElementsByClassName(`control-title`)[0].innerHTML = i18n(
-      config.title
+      config.title,
     );
     control.getElementsByClassName(`control-description`)[0].innerHTML = i18n(
-      config.description
+      config.description,
     );
 
     // Set up the value of the controls and wire-up change listeners.
     const actualInput = control.getElementsByClassName(
-      "control-input"
+      "control-input",
     )[0] as HTMLInputElement;
 
     if (["checkbox", "switch"].includes(config.type)) {
       actualInput.checked = !!config.value;
       actualInput.addEventListener("input", (e: Event) =>
-        this.saveChange(config, (e.target as HTMLInputElement).checked)
+        this.saveChange(config, (e.target as HTMLInputElement).checked),
       );
     } else {
       actualInput.value = config.value;
@@ -119,20 +119,20 @@ export class SettingsUI extends HTMLElement {
       actualInput.min = config.min ?? "0";
       actualInput.max = config.max ?? "5";
       actualInput.addEventListener("input", (e: Event) =>
-        this.saveChange(config, (e.target as HTMLInputElement).value)
+        this.saveChange(config, (e.target as HTMLInputElement).value),
       );
     }
 
     if (config.type === "select") {
       config.options?.forEach((o) => {
         (actualInput as unknown as HTMLSelectElement).add(
-          new Option(o.text, o.id, o.id === config.value)
+          new Option(o.text, o.id, o.id === config.value),
         );
       });
       (actualInput as unknown as HTMLSelectElement).selectedIndex =
         config.options?.findIndex((o) => o.id === config.value) ?? -1;
       actualInput.addEventListener("change", (e: Event) =>
-        this.saveChange(config, (e.target as HTMLInputElement).value)
+        this.saveChange(config, (e.target as HTMLInputElement).value),
       );
     }
 
@@ -155,14 +155,14 @@ export class SettingsUI extends HTMLElement {
         actualInput.appendChild(radioLabel);
       });
       actualInput.addEventListener("input", (e: Event) =>
-        this.saveChange(config, (e.target as HTMLInputElement).value)
+        this.saveChange(config, (e.target as HTMLInputElement).value),
       );
     }
 
-    if(config.type === "textarea") {
+    if (config.type === "textarea") {
       actualInput.addEventListener("input", (e: Event) =>
-        this.saveChange(config, (e.target as HTMLInputElement).value)
-      );  
+        this.saveChange(config, (e.target as HTMLInputElement).value),
+      );
     }
 
     return control;

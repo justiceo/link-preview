@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "Pratonton Cari & Pautan",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "Pratonton pautan",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "Lihat pratonton pautan dan dengan serta -merta melakukan carian pada halaman yang sama menggunakan pratonton ini dan bukannya membuka tab baru",
-        "description": "A description of its function"
-    }
+  "appName": {
+    "message": "Pratonton Cari & Pautan",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "Pratonton pautan",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "Lihat pratonton pautan dan dengan serta -merta melakukan carian pada halaman yang sama menggunakan pratonton ini dan bukannya membuka tab baru",
+    "description": "A description of its function"
+  }
 }

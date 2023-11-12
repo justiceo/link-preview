@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "Prehľad vyhľadávania a odkazu",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "Ukážky odkazu",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "Pozrite si ukážky odkazov a okamžite vykonávajú vyhľadávanie na tej istej stránke pomocou tohto ukážky namiesto otvárania nových kariet",
-        "description": "A description of its function"
-    }
+  "appName": {
+    "message": "Prehľad vyhľadávania a odkazu",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "Ukážky odkazu",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "Pozrite si ukážky odkazov a okamžite vykonávajú vyhľadávanie na tej istej stránke pomocou tohto ukážky namiesto otvárania nových kariet",
+    "description": "A description of its function"
+  }
 }

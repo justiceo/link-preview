@@ -1,10 +1,11 @@
-# ![logo](src/assets/logo-24x24.png)  Better Previews
+# ![logo](src/assets/logo-24x24.png) Better Previews
 
 A browser extension for previewing links and search results without opening new tabs.
 
 ![Screenshot](src/assets/screenshot2.jpeg "Preview search results")
 
 ## Downloads
+
 <table cellspacing="0" cellpadding="0">
   <tr>
     <td valign="center">
@@ -24,11 +25,11 @@ A browser extension for previewing links and search results without opening new 
 
 ## Features
 
-* Start search from any website.
-* Preview the results of pages on any search engine.
-* Drag and resize preview window.
-* Go from preview to full tab with one click.
-* Navigate forward and backward within a preview.
+- Start search from any website.
+- Preview the results of pages on any search engine.
+- Drag and resize preview window.
+- Go from preview to full tab with one click.
+- Navigate forward and backward within a preview.
 
 ## Project setup
 
@@ -47,10 +48,10 @@ node tools/esbuild translate
 
 # Start an instance of Chromium with extension installed (using puppeteer)
 # For Firefox, pass --browser=firefox as argument.
-node tools/esbuild start 
+node tools/esbuild start
 
 # Build and package extension into a store-ready upload
-node tools/esbuild --prod 
+node tools/esbuild --prod
 
 # Create extension package for Firefox/Opera/Edge by specifying --browser argument
 node tools/esbuild --prod --browser=firefox
@@ -62,11 +63,13 @@ node tools/esbuild test
 ### Install Locally
 
 #### Chrome
+
 1. Open chrome and navigate to extensions page using this URL: chrome://extensions.
 2. Enable the "Developer mode".
 3. Click "Load unpacked extension" button, browse the `build/chrome-dev` directory and select it.
 
 ### Firefox
+
 1. Open firefox and navigate to `about:debugging#/runtime/this-firefox`.
 2. Click the "Load Temporary Add-on" button.
 3. Browse the `build/firefox-dev` directory and select the `manifest.json` file.

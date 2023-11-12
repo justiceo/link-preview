@@ -43,7 +43,7 @@ export class BpFloatie extends HTMLElement {
       this.tooltipArrow,
       this.copyButton,
       this.searchButton,
-      this.previewButton
+      this.previewButton,
     );
   }
 
@@ -212,7 +212,7 @@ export class BpFloatie extends HTMLElement {
 
   shouldShowPreview(
     e: MouseEvent | KeyboardEvent,
-    selectedText: string
+    selectedText: string,
   ): boolean {
     const isGoodHyperlink = (e: MouseEvent | KeyboardEvent) => {
       var target: any = e.target;
@@ -239,7 +239,7 @@ export class BpFloatie extends HTMLElement {
       return String(email)
         .toLowerCase()
         .match(
-          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
         );
     };
 
@@ -268,7 +268,7 @@ export class BpFloatie extends HTMLElement {
       b.onclick = () => {
         this.sendMessage(
           b.getAttribute("data-action") || "unknown-action",
-          text
+          text,
         );
         this.hideAll();
       };
@@ -278,7 +278,7 @@ export class BpFloatie extends HTMLElement {
   sendMessage(action: string, data: any) {
     window.postMessage(
       { application: "better-previews", action: action, data: data },
-      window.location.origin
+      window.location.origin,
     );
     // chrome.runtime.sendMessage won't put because angular is executed in page context.
     // broadcast.postMessage is not ideal because multiple tabs of same origin get it.
@@ -294,9 +294,9 @@ export class BpFloatie extends HTMLElement {
       return new Promise((resolve: (arg0: number) => void) => {
         const z = Math.max(
           ...Array.from(document.querySelectorAll("body *"), (el) =>
-            parseFloat(window.getComputedStyle(el).zIndex)
+            parseFloat(window.getComputedStyle(el).zIndex),
           ).filter((zIndex) => !Number.isNaN(zIndex)),
-          0
+          0,
         );
         resolve(z);
       });

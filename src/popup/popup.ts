@@ -5,4 +5,3 @@ document.querySelector("#go-to-options").addEventListener("click", () => {
     window.open(chrome.runtime.getURL("options.html"));
   }
 });
-

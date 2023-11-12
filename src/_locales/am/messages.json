@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "ፈልግ & አገናኝ ቅድመ-እይታ",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "አገናኝ ቅድመ-እይታዎች",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "የአንጻሮች አገናኞች ቅድመ-እይታዎችን ይመልከቱ እና ወዲያውኑ አዳዲስ ትሮችን ከመክፈት ይልቅ ይህንን ቅድመ-ሰሪ በመጠቀም በተመሳሳይ ገጽ ላይ ይፈልጉ",
-        "description": "A description of its function"
-    }
+  "appName": {
+    "message": "ፈልግ & አገናኝ ቅድመ-እይታ",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "አገናኝ ቅድመ-እይታዎች",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "የአንጻሮች አገናኞች ቅድመ-እይታዎችን ይመልከቱ እና ወዲያውኑ አዳዲስ ትሮችን ከመክፈት ይልቅ ይህንን ቅድመ-ሰሪ በመጠቀም በተመሳሳይ ገጽ ላይ ይፈልጉ",
+    "description": "A description of its function"
+  }
 }

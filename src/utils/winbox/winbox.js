@@ -6,7 +6,7 @@
  * https://github.com/nextapps-de/winbox
  */
 
-import {markup, winboxcss} from "./template.js";
+import { markup, winboxcss } from "./template.js";
 import {
   addListener,
   removeListener,
@@ -40,7 +40,6 @@ let root_w, root_h;
  * @constructor
  * @this WinBox
  */
-
 
 export class WinBox {
   constructor(params, _title) {
@@ -230,11 +229,11 @@ export class WinBox {
 
       width = Math.max(
         Math.min(this.body.clientWidth + border * 2 + 1, maxwidth),
-        minwidth
+        minwidth,
       );
       height = Math.max(
         Math.min(this.body.clientHeight + this.header + border + 1, maxheight),
-        minheight
+        minheight,
       );
 
       this.dom.appendChild(this.body);
@@ -314,7 +313,7 @@ export class WinBox {
       se.appendChild(style);
 
       // Add externally provided css
-      if(cssurl) {
+      if (cssurl) {
         const link = document.createElement("link");
         link.rel = "stylesheet";
         link.type = "text/css";
@@ -421,7 +420,7 @@ export class WinBox {
       setStyle(
         this.shadowdom ? this.shadowdom : this.dom,
         "z-index",
-        ++index_counter
+        ++index_counter,
       );
       this.index = index_counter;
       this.addClass("focus");
@@ -556,7 +555,7 @@ export class WinBox {
         .resize(
           root_w - this.left - this.right,
           root_h - this.top - this.bottom /* - 1 */,
-          true
+          true,
         )
         .move(this.left, this.top, true);
 
@@ -740,7 +739,6 @@ export class WinBox {
   }
 }
 
-
 /**
  * @param {number|string} num
  * @param {number} base
@@ -871,7 +869,7 @@ function update_min_stack() {
     key = (self.left || self.right) + ":" + (self.top || self.bottom);
     width = Math.min(
       (root_w - self.left - self.right) / splitscreen_length[key],
-      250
+      250,
     );
     //splitscreen_index[key] || (splitscreen_index[key] = 0);
     self
@@ -879,7 +877,7 @@ function update_min_stack() {
       .move(
         (self.left + splitscreen_index[key] * width) | 0,
         root_h - self.bottom - self.header,
-        true
+        true,
       );
     splitscreen_index[key]++;
   }
@@ -1013,7 +1011,7 @@ function addWindowListener(self, dir) {
     if (resize_w) {
       self.width = Math.max(
         Math.min(self.width, self.maxwidth, root_w - self.x - self.right),
-        self.minwidth
+        self.minwidth,
       );
       resize_w = self.width !== old_w;
     }
@@ -1021,7 +1019,7 @@ function addWindowListener(self, dir) {
     if (resize_h) {
       self.height = Math.max(
         Math.min(self.height, self.maxheight, root_h - self.y - self.bottom),
-        self.minheight
+        self.minheight,
       );
       resize_h = self.height !== old_h;
     }
@@ -1033,7 +1031,7 @@ function addWindowListener(self, dir) {
     if (move_x) {
       self.x = Math.max(
         Math.min(self.x, root_w - self.width - self.right),
-        self.left
+        self.left,
       );
       move_x = self.x !== old_x;
     }
@@ -1041,7 +1039,7 @@ function addWindowListener(self, dir) {
     if (move_y) {
       self.y = Math.max(
         Math.min(self.y, root_h - self.height - self.bottom),
-        self.top
+        self.top,
       );
       move_y = self.y !== old_y;
     }

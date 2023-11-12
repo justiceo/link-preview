@@ -1,28 +1,34 @@
-<form data-multi-step class='form inline'>
-    <div class='row-container'>
-        <div class='information'>
-            <div class='logo'>
-                <img src='' />
-                <p></p>
-            </div>
-            <p data-step="1"> How are we doing?</p>
-            <p data-step="2">Glad you like it! Can you help us share the ❤️? </p>
-            <input name="feedback" data-step='3' placeholder='How can we improve?' />
-            <p data-step='4'>Thanks for the feedback!</p>
-        </div>
-        <div class='action'>
-            <div data-step="1">
-                <span class='star' data-star-index='1'></span>
-                <span class='star' data-star-index='2'></span>
-                <span class='star' data-star-index='3'></span>
-                <span class='star' data-star-index='4'></span>
-                <span class='star' data-star-index='5'></span>
-            </div>
-            <div data-step="2">
-                <button id="rate-on-store" type='button' data-next-step='4'>Rate on webstore</button>
-                <button id="decline-rate-on-rate" type='button' data-next-step='4'>No thanks</button>
-            </div>
-            <button id="submit-form" type='button' data-step="3" data-next-step='4'>Submit</button>
-        </div>
+<form data-multi-step class="form inline">
+  <div class="row-container">
+    <div class="information">
+      <div class="logo">
+        <img src="" />
+        <p></p>
+      </div>
+      <p data-step="1">How are we doing?</p>
+      <p data-step="2">Glad you like it! Can you help us share the ❤️?</p>
+      <input name="feedback" data-step="3" placeholder="How can we improve?" />
+      <p data-step="4">Thanks for the feedback!</p>
     </div>
+    <div class="action">
+      <div data-step="1">
+        <span class="star" data-star-index="1"></span>
+        <span class="star" data-star-index="2"></span>
+        <span class="star" data-star-index="3"></span>
+        <span class="star" data-star-index="4"></span>
+        <span class="star" data-star-index="5"></span>
+      </div>
+      <div data-step="2">
+        <button id="rate-on-store" type="button" data-next-step="4">
+          Rate on webstore
+        </button>
+        <button id="decline-rate-on-rate" type="button" data-next-step="4">
+          No thanks
+        </button>
+      </div>
+      <button id="submit-form" type="button" data-step="3" data-next-step="4">
+        Submit
+      </button>
+    </div>
+  </div>
 </form>

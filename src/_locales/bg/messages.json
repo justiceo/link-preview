@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "Преглед на търсенето и връзката",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "Визуализация на връзки",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "Вижте Визуализации на връзки и незабавно извършва търсения на същата страница, използвайки този визуатор, вместо да отваряте нови раздели",
-        "description": "A description of its function"
-    }
+  "appName": {
+    "message": "Преглед на търсенето и връзката",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "Визуализация на връзки",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "Вижте Визуализации на връзки и незабавно извършва търсения на същата страница, използвайки този визуатор, вместо да отваряте нови раздели",
+    "description": "A description of its function"
+  }
 }

@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "Pencarian & Pratinjau Tautan",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "Pratinjau tautan",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "Lihat pratinjau tautan dan langsung melakukan pencarian di halaman yang sama menggunakan pratinjau ini alih -alih membuka tab baru",
-        "description": "A description of its function"
-    }
+  "appName": {
+    "message": "Pencarian & Pratinjau Tautan",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "Pratinjau tautan",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "Lihat pratinjau tautan dan langsung melakukan pencarian di halaman yang sama menggunakan pratinjau ini alih -alih membuka tab baru",
+    "description": "A description of its function"
+  }
 }

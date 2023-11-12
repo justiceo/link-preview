@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "Search & Link Preview",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "Previews for link",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "Se forhåndsvisninger af links og udfører øjeblikkeligt søgninger på den samme side ved hjælp af denne previewer i stedet for at åbne nye faner",
-        "description": "A description of its function"
-    }
+  "appName": {
+    "message": "Search & Link Preview",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "Previews for link",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "Se forhåndsvisninger af links og udfører øjeblikkeligt søgninger på den samme side ved hjælp af denne previewer i stedet for at åbne nye faner",
+    "description": "A description of its function"
+  }
 }

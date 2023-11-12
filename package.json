@@ -8,8 +8,10 @@
     "watch": "node tools/esbuild.js watch",
     "start": "node tools/esbuild.js start",
     "start:firefox": "node tools/esbuild.js start --browser=firefox",
+    "format": "npx prettier . --write",
     "generateIcons": "node tools/esbuild.js image --icons",
-    "updateTranslations": "node tools/translateMessages.js"
+    "updateTranslations": "node tools/translateMessages.js",
+    "prepare": "husky install"
   },
   "private": true,
   "author": "Justice Ogbonna",
@@ -28,6 +30,9 @@
     "recording",
     "notes"
   ],
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
   "dependencies": {
     "@braintree/sanitize-url": "^6.0.2",
     "@floating-ui/dom": "^1.1.0",
@@ -47,8 +52,11 @@
     "@webcomponents/webcomponentsjs": "^2.7.0",
     "esbuild": "0.16.4",
     "google-translate-api-x": "^10.5.2",
+    "husky": "^8.0.3",
     "jasmine": "^4.5.0",
     "jimp": "^0.16.2",
+    "lint-staged": "^15.1.0",
+    "prettier": "3.0.3",
     "puppeteer": "^19.4.0"
   }
 }

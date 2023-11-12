@@ -33,7 +33,10 @@ class Storage {
     return this.storageService.get(null);
   }
 
-  async getAndUpdate(key: string, updateFn: (val) => Promise<any>): Promise<void> {
+  async getAndUpdate(
+    key: string,
+    updateFn: (val) => Promise<any>,
+  ): Promise<void> {
     const data = await this.get(key);
     return this.put(key, await updateFn(data));
   }

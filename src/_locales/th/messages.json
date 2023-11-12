@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "การค้นหาและลิงก์ดูตัวอย่าง",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "ตัวอย่างลิงก์",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "ดูตัวอย่างของลิงก์และทำการค้นหาในหน้าเดียวกันทันทีโดยใช้ตัวแสดงตัวอย่างนี้แทนที่จะเปิดแท็บใหม่",
-        "description": "A description of its function"
-    }
+  "appName": {
+    "message": "การค้นหาและลิงก์ดูตัวอย่าง",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "ตัวอย่างลิงก์",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "ดูตัวอย่างของลิงก์และทำการค้นหาในหน้าเดียวกันทันทีโดยใช้ตัวแสดงตัวอย่างนี้แทนที่จะเปิดแท็บใหม่",
+    "description": "A description of its function"
+  }
 }

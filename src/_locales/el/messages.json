@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "Προεπισκόπηση αναζήτησης και σύνδεσης",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "Προεπισκοπήσεις συνδέσμου",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "Δείτε τις προεπισκοπήσεις των συνδέσμων και εκτελεί αμέσως αναζητήσεις στην ίδια σελίδα χρησιμοποιώντας αυτόν τον προεπισκόπηση αντί να ανοίξει νέες καρτέλες",
-        "description": "A description of its function"
-    }
+  "appName": {
+    "message": "Προεπισκόπηση αναζήτησης και σύνδεσης",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "Προεπισκοπήσεις συνδέσμου",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "Δείτε τις προεπισκοπήσεις των συνδέσμων και εκτελεί αμέσως αναζητήσεις στην ίδια σελίδα χρησιμοποιώντας αυτόν τον προεπισκόπηση αντί να ανοίξει νέες καρτέλες",
+    "description": "A description of its function"
+  }
 }

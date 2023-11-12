@@ -43,7 +43,7 @@ export class IFrameHelper {
           sourceFrame: this.getFrameName(),
         });
       },
-      true
+      true,
     );
 
     window.addEventListener("load", () => {
@@ -99,7 +99,7 @@ export class IFrameHelper {
     }
 
     const metaSiteName = document.querySelector(
-      "meta[property='og:site_name'][content]"
+      "meta[property='og:site_name'][content]",
     );
     if (metaSiteName) {
       return (metaSiteName as any).content;

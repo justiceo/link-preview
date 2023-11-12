@@ -1,5 +1,9 @@
 import Storage from "../utils/storage";
-import { FEEDBACK_DATA_KEY, INSTALL_TIME_MS,SUCCESSFUL_INTERACTIONS } from "../utils/storage";
+import {
+  FEEDBACK_DATA_KEY,
+  INSTALL_TIME_MS,
+  SUCCESSFUL_INTERACTIONS,
+} from "../utils/storage";
 import { Logger } from "../utils/logger";
 
 export type FeedbackData = {
@@ -22,18 +26,18 @@ class FeedbackChecker {
       const feedbackData: FeedbackData = {
         status: "eligible",
         timestamp: Date.now(),
-      }
+      };
       Storage.put(FEEDBACK_DATA_KEY, feedbackData);
       return;
     }
 
     // Reset to ineligible if already marked as eligible (otherwise it might be honored).
     const feedbackData = await Storage.get(FEEDBACK_DATA_KEY);
-    if(feedbackData?.status == "eligible") {
+    if (feedbackData?.status == "eligible") {
       const newFeedbackStatus: FeedbackData = {
         status: "ineligible",
         timestamp: Date.now(),
-      }
+      };
       Storage.put(FEEDBACK_DATA_KEY, newFeedbackStatus);
       return;
     }
@@ -42,7 +46,7 @@ class FeedbackChecker {
   async shouldRequestFeedback(tabInfo?: chrome.tabs.Tab) {
     const isNormalWindow = !(await this.isIncognito(tabInfo));
     const isSignedIn = await this.isSignedInToGoogle();
-    const isAgedInstallation = await this.getDaysSinceInstallation() > 7 ;
+    const isAgedInstallation = (await this.getDaysSinceInstallation()) > 7;
     const hasSufficientSuccessfulInteractions =
       (await this.getSuccessCount()) >= 30;
     const isEligibleForReissue = await this.isEligibleForReissue();
@@ -60,7 +64,7 @@ class FeedbackChecker {
       isSignedIn: ${isSignedIn}, 
       isAgedInstallation: ${isAgedInstallation}, 
       hasSufficientSuccessfulInteractions: ${hasSufficientSuccessfulInteractions}, 
-      isEligibleForReissue: ${isEligibleForReissue}`
+      isEligibleForReissue: ${isEligibleForReissue}`,
     );
 
     return isEligible;
@@ -95,7 +99,7 @@ class FeedbackChecker {
           } else {
             resolve(false);
           }
-        }
+        },
       );
     });
   }
@@ -116,13 +120,13 @@ class FeedbackChecker {
   private async isEligibleForReissue(): Promise<boolean> {
     const feedback: FeedbackData = await Storage.get(FEEDBACK_DATA_KEY);
 
-      // If no response yet, then user is eligible.
+    // If no response yet, then user is eligible.
     if (!feedback) {
       return Promise.resolve(true);
     }
 
     // If feedback has been honored, don't ask again.
-    if(feedback.status === "honored") {
+    if (feedback.status === "honored") {
       // TODO: If the response wasn't good, ask again after 30 days.
       return Promise.resolve(false);
     }

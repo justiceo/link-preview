@@ -21,7 +21,7 @@ export const i18n = (key: string): string => {
     return chrome.i18n.getMessage(key);
   }
   logger.warn(
-    "chrome.i18n is not available in the current context, falling back to en-US"
+    "chrome.i18n is not available in the current context, falling back to en-US",
   );
 
   Object.keys(enMessage).forEach((k) => {});

@@ -97,7 +97,7 @@ class FeedbackForm extends HTMLElement {
         resetStarsClass();
 
         stars.forEach((star, index) =>
-          index < starIndex ? star.classList.add("full") : null
+          index < starIndex ? star.classList.add("full") : null,
         );
       };
 
@@ -113,7 +113,7 @@ class FeedbackForm extends HTMLElement {
       };
 
       stars.forEach((star) =>
-        star.addEventListener("mouseover", handleMouseOver)
+        star.addEventListener("mouseover", handleMouseOver),
       );
       stars.forEach((star) => star.addEventListener("click", handleStarClick));
       multiStepForm.addEventListener("mouseleave", resetStarsClass);
@@ -157,7 +157,7 @@ class FeedbackForm extends HTMLElement {
             }
           }, 1300);
         }
-      })
+      }),
     );
   }
 }

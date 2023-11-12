@@ -63,7 +63,8 @@ const targetLocales = [
   "zh-TW",
 ];
 
-const getLocaleFile = (locale) => `${localesDir}/${locale.replace("-", "_")}/${localeFilename}`;
+const getLocaleFile = (locale) =>
+  `${localesDir}/${locale.replace("-", "_")}/${localeFilename}`;
 
 // Reads the contents of source locale file into a variable.
 let rawdata = fs.readFileSync(getLocaleFile(sourceLocale));
@@ -111,7 +112,7 @@ targetLocales.forEach((targetLocale) => {
     to: targetLocale,
   }).then(
     (res) => applyTranslation(targetLocale, res),
-    (err) => console.error("Error fetching translation", err)
+    (err) => console.error("Error fetching translation", err),
   );
   futures.push(translateFuture);
 });
@@ -119,5 +120,5 @@ targetLocales.forEach((targetLocale) => {
 // Wait for all translate tasks to complete and log status.
 Promise.all(futures).then(
   () => console.log("All translate futures have resolved"),
-  (err) => console.error("Some futures failed: ", err)
+  (err) => console.error("Some futures failed: ", err),
 );

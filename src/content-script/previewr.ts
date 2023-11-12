@@ -37,21 +37,21 @@ export class Previewr {
   displayReaderMode = false;
   isDemo = false;
   searchUrl = {
-    "google": "https://www.google.com/search?igu=1&q=",
-    "bing": "https://www.bing.com/search?q=",
-    "yahoo": "https://search.yahoo.com/search?p=",
-    "baidu": "https://www.baidu.com/s?wd=",
-    "yandex": "https://yandex.com/search/?text=",
-    "duckduckgo": "https://duckduckgo.com/?q=",
-    "ecosia": "https://www.ecosia.org/search?q=",
-  }
+    google: "https://www.google.com/search?igu=1&q=",
+    bing: "https://www.bing.com/search?q=",
+    yahoo: "https://search.yahoo.com/search?p=",
+    baidu: "https://www.baidu.com/s?wd=",
+    yandex: "https://yandex.com/search/?text=",
+    duckduckgo: "https://duckduckgo.com/?q=",
+    ecosia: "https://www.ecosia.org/search?q=",
+  };
 
   /* This function inserts an Angular custom element (web component) into the DOM. */
   init() {
     if (this.inIframe()) {
       this.logger.log(
         "Not inserting previewr in iframe: ",
-        window.location.href
+        window.location.href,
       );
       return;
     }
@@ -95,14 +95,14 @@ export class Previewr {
           this.logger.debug(
             "Ignoring message from different origin",
             event.origin,
-            event.data
+            event.data,
           );
           return;
         }
 
         if (event.data.application !== "better-previews") {
           this.logger.debug(
-            "Ignoring origin messsage not initiated by Better Previews"
+            "Ignoring origin messsage not initiated by Better Previews",
           );
           return;
         }
@@ -110,7 +110,7 @@ export class Previewr {
         this.logger.log("#WindowMessage: ", event);
         this.handleMessage(event.data);
       },
-      false
+      false,
     );
   }
 
@@ -127,13 +127,13 @@ export class Previewr {
     } else if (message.action === "preview") {
       urlStr = message.data;
     } else if (message.action === "search") {
-      const searchEngine = await Storage.get("search-engine") ?? "google";
+      const searchEngine = (await Storage.get("search-engine")) ?? "google";
       urlStr = this.searchUrl[searchEngine] + message.data;
     } else if (message.action === "load") {
       if (message.sourceFrame === iframeName && this.dialog) {
         this.dialog.setTitle(message.data.title);
         this.dialog.setIcon(
-          this.headerIconUrlBase + new URL(message.href!).hostname
+          this.headerIconUrlBase + new URL(message.href!).hostname,
         );
       }
     } else if (message.action === "navigate") {
@@ -223,9 +223,8 @@ export class Previewr {
   }
 
   async registerFeedbackUI() {
-    const feedbackData: FeedbackData | null = await Storage.get(
-      FEEDBACK_DATA_KEY
-    );
+    const feedbackData: FeedbackData | null =
+      await Storage.get(FEEDBACK_DATA_KEY);
     const shouldShow = feedbackData?.status === "eligible";
     if (shouldShow) {
       this.dialog?.addClass("show-footer");
@@ -282,9 +281,9 @@ export class Previewr {
     return new Promise((resolve: (arg0: number) => void) => {
       const z = Math.max(
         ...Array.from(document.querySelectorAll("body *"), (el) =>
-          parseFloat(window.getComputedStyle(el).zIndex)
+          parseFloat(window.getComputedStyle(el).zIndex),
         ).filter((zIndex) => !Number.isNaN(zIndex)),
-        0
+        0,
       );
       resolve(z);
     });
@@ -292,14 +291,14 @@ export class Previewr {
 
   async getWinboxOptions(url: URL, point?: DOMRect) {
     // Set width and height from options if present.
-    let width = (await Storage.get("previewr-width") ?? "55") + "%";
-    let height = (await Storage.get("previewr-height") ?? "80") + "%";
+    let width = ((await Storage.get("previewr-width")) ?? "55") + "%";
+    let height = ((await Storage.get("previewr-height")) ?? "80") + "%";
 
     // Leave space on top for headers/navigation.
     let top = "50px";
 
     // In demo mode, use small width and height, and push down previewr.
-    if(this.isDemo) {
+    if (this.isDemo) {
       width = "45%";
       height = "40%";
       top = "500px";
@@ -307,7 +306,7 @@ export class Previewr {
     return {
       icon: this.headerIconUrlBase + url.hostname,
       x: "right",
-      y:  top,
+      y: top,
       right: 10,
       width: width,
       height: height,

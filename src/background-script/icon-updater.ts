@@ -19,7 +19,7 @@ const updateIcon = (url?: string) => {
     url.startsWith("chrome-extension://") ||
     url.startsWith("chrome://newtab/") ||
     url.startsWith("https://chrome.google.com/webstore")
-    ? "assets/logo-gray-128x128.png"
-    : "assets/logo-128x128.png";
+      ? "assets/logo-gray-128x128.png"
+      : "assets/logo-128x128.png";
   chrome.action.setIcon({ path: chrome.runtime.getURL(icon) });
 };

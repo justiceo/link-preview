@@ -43,7 +43,7 @@ export class Floatie {
 
     // Extract actions buttons.
     const container = this.documentFragment.getElementById(
-      "sp-floatie-container"
+      "sp-floatie-container",
     );
     const searchButton =
       this.documentFragment.getElementById("sp-floatie-search");
@@ -76,19 +76,19 @@ export class Floatie {
     }
 
     const tooltip = new Tooltip();
-    
+
     try {
       customElements.define("better-previews-tooltip", BFTooltip);
-  } catch(e) {
+    } catch (e) {
       this.logger.warn("Error re-defining custom element");
-  }
+    }
     const bft = document.createElement("better-previews-tooltip");
     const style = document.createElement("style");
     style.textContent = floatieCssTxt;
     bft.appendChild(style);
     bft.appendChild(tooltip);
     bft.appendChild(this.documentFragment);
-    bft.attachShadow({mode: "open"}).innerHTML = '<slot></slot>'; // slot prevents #attachShadow from wiping dom.
+    bft.attachShadow({ mode: "open" }).innerHTML = "<slot></slot>"; // slot prevents #attachShadow from wiping dom.
     document.body.appendChild(bft);
 
     // document.body.appendChild(this.documentFragment);
@@ -104,7 +104,7 @@ export class Floatie {
 
     // Listen for mouse up events and suggest search if there's a selection.
     document.onmouseup = (e) => this.deferredMaybeShow(e);
-    document.onkeydown = () => this.hideAll();    
+    document.onkeydown = () => this.hideAll();
 
     this.setupLinkPreviews();
   }
@@ -140,9 +140,9 @@ export class Floatie {
             if (previewOnHover) {
               this.sendMessage("preview", a.href);
             } else {
-          this.showActions(a.getBoundingClientRect(), e, a.href, [
-            this.previewButton,
-          ]);
+              this.showActions(a.getBoundingClientRect(), e, a.href, [
+                this.previewButton,
+              ]);
             }
           });
         }, 500);
@@ -241,7 +241,7 @@ export class Floatie {
     if (url.hostname === window.location.hostname) {
       // Don't preview URLs of the same origin, not useful and potentially introduces bugs to the page.
       // TODO: Make this configurable.
-      return false
+      return false;
     }
 
     // TODO: investigate potential issues with displaying https over http and vice versa.
@@ -255,7 +255,7 @@ export class Floatie {
 
   shouldShowPreview(
     e: MouseEvent | KeyboardEvent,
-    selectedText: string
+    selectedText: string,
   ): boolean {
     const isGoodHyperlink = (e: MouseEvent | KeyboardEvent) => {
       var target: any = e.target;
@@ -275,7 +275,7 @@ export class Floatie {
 
   getPreviewUrl(
     e: MouseEvent | KeyboardEvent,
-    selectedText: string
+    selectedText: string,
   ): string | undefined {
     const isWrappedByLink = (e: MouseEvent | KeyboardEvent) => {
       var target: any = e.target;
@@ -290,7 +290,7 @@ export class Floatie {
       return undefined;
     };
 
-    if(this.isGoodUrl(selectedText)) {
+    if (this.isGoodUrl(selectedText)) {
       return this.getAbsoluteUrl(selectedText)?.href;
     }
 
@@ -306,7 +306,7 @@ export class Floatie {
       return String(email)
         .toLowerCase()
         .match(
-          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
         );
     };
 
@@ -327,9 +327,14 @@ export class Floatie {
     );
   }
 
-  showActions(boundingRect: DOMRect, e: MouseEvent, text: string, buttons: HTMLElement[]) {
+  showActions(
+    boundingRect: DOMRect,
+    e: MouseEvent,
+    text: string,
+    buttons: HTMLElement[],
+  ) {
     this.hideAll();
-    if(buttons.length === 0 ) {
+    if (buttons.length === 0) {
       return;
     }
 
@@ -345,17 +350,17 @@ export class Floatie {
           }
 
           // Use href for previews.
-          if(b.innerText == "Preview") {
+          if (b.innerText == "Preview") {
             const href = this.getPreviewUrl(e, text);
-            if(href) {
-              text = href
+            if (href) {
+              text = href;
             }
           }
         }
 
         this.sendMessage(
           b.getAttribute("data-action") || "unknown-action",
-          text
+          text,
         );
         this.hideAll();
       };
@@ -365,7 +370,7 @@ export class Floatie {
   sendMessage(action: string, data: any) {
     window.postMessage(
       { application: "better-previews", action: action, data: data },
-      window.location.origin
+      window.location.origin,
     );
     // chrome.runtime.sendMessage won't put because angular is executed in page context.
     // broadcast.postMessage is not ideal because multiple tabs of same origin get it.
@@ -381,9 +386,9 @@ export class Floatie {
       return new Promise((resolve: (arg0: number) => void) => {
         const z = Math.max(
           ...Array.from(document.querySelectorAll("body *"), (el) =>
-            parseFloat(window.getComputedStyle(el).zIndex)
+            parseFloat(window.getComputedStyle(el).zIndex),
           ).filter((zIndex) => !Number.isNaN(zIndex)),
-          0
+          0,
         );
         resolve(z);
       });

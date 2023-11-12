@@ -40,7 +40,8 @@ const configOptions: Config[] = [
     id: "blocked-sites",
     type: "textarea",
     title: "Disabled on Websites",
-    description: "Extension will not run on these sites. Enter one site per line.",
+    description:
+      "Extension will not run on these sites. Enter one site per line.",
     default_value: "",
   },
   // {
@@ -90,8 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#show-preview")?.addEventListener("click", () => {
     window.postMessage(
       { application: "better-previews", action: "search", data: "hello world" },
-      window.location.origin
+      window.location.origin,
     );
   });
-
 });

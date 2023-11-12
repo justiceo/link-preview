@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "תצוגה מקדימה של חיפוש וקישור",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "תצוגה מקדימה של קישור",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "ראה תצוגה מקדימה של קישורים ומבצע מייד חיפושים באותו עמוד באמצעות תצוגה מקדימה זו במקום לפתוח כרטיסיות חדשות",
-        "description": "A description of its function"
-    }
+  "appName": {
+    "message": "תצוגה מקדימה של חיפוש וקישור",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "תצוגה מקדימה של קישור",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "ראה תצוגה מקדימה של קישורים ומבצע מייד חיפושים באותו עמוד באמצעות תצוגה מקדימה זו במקום לפתוח כרטיסיות חדשות",
+    "description": "A description of its function"
+  }
 }

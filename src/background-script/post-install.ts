@@ -2,8 +2,8 @@ import Analytics from "../utils/analytics";
 import Storage from "../utils/storage";
 import { INSTALL_TIME_MS } from "../utils/storage";
 
-const uninstallUrl = 'https://forms.gle/PdZ9U61QawXSa4qH8';
-const welcomeUrl = chrome.runtime.getURL('welcome/welcome.html');
+const uninstallUrl = "https://forms.gle/PdZ9U61QawXSa4qH8";
+const welcomeUrl = chrome.runtime.getURL("welcome/welcome.html");
 
 const onInstalled = (details: chrome.runtime.InstalledDetails) => {
   // Set the installation time in storage.
@@ -16,7 +16,7 @@ const onInstalled = (details: chrome.runtime.InstalledDetails) => {
       active: true,
     });
   }
-  Analytics.fireEvent("install", {reaason: details.reason});
+  Analytics.fireEvent("install", { reaason: details.reason });
 
   // Set url to take users upon uninstall.
   chrome.runtime.setUninstallURL(uninstallUrl, () => {

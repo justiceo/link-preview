@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "Previzualizare căutare și link",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "Previzualizări ale linkului",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "Consultați previzualizările linkurilor și efectuați instantaneu căutări pe aceeași pagină folosind acest previzualizare în loc să deschideți noi file",
-        "description": "A description of its function"
-    }
+  "appName": {
+    "message": "Previzualizare căutare și link",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "Previzualizări ale linkului",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "Consultați previzualizările linkurilor și efectuați instantaneu căutări pe aceeași pagină folosind acest previzualizare în loc să deschideți noi file",
+    "description": "A description of its function"
+  }
 }

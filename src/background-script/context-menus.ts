@@ -10,7 +10,7 @@ interface MenuItem {
   menu: chrome.contextMenus.CreateProperties;
   handler: (
     info: chrome.contextMenus.OnClickData,
-    tab?: chrome.tabs.Tab
+    tab?: chrome.tabs.Tab,
   ) => void;
 }
 
@@ -103,7 +103,10 @@ export class ContextMenu {
         let url;
 
         try {
-          const tabs = await chrome.tabs.query({ active: true, currentWindow: true })
+          const tabs = await chrome.tabs.query({
+            active: true,
+            currentWindow: true,
+          });
           const pageUrl = tabs[0].url ?? "";
           url = new URL(pageUrl);
         } catch (e) {
@@ -133,7 +136,7 @@ export class ContextMenu {
       this.browserActionContextMenu.push(
         this.RELOAD_ACTION,
         this.CLEAR_STORAGE,
-        this.PRINT_STORAGE
+        this.PRINT_STORAGE,
       );
     }
 
@@ -147,7 +150,7 @@ export class ContextMenu {
     chrome.contextMenus.removeAll();
     // Add menu items.
     this.browserActionContextMenu.forEach((item) =>
-      chrome.contextMenus.create(item.menu)
+      chrome.contextMenus.create(item.menu),
     );
     /*
      * When onClick is fired, execute the handler associated
@@ -158,7 +161,7 @@ export class ContextMenu {
 
   onClick = (info: chrome.contextMenus.OnClickData, tab?: chrome.tabs.Tab) => {
     const menuItem = this.browserActionContextMenu.find(
-      (item) => item.menu.id === info.menuItemId
+      (item) => item.menu.id === info.menuItemId,
     );
     if (menuItem) {
       Analytics.fireEvent("context_menu_click", { menu_id: info.menuItemId });

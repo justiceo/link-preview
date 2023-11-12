@@ -163,7 +163,7 @@ class Build {
         // TODO: Fire event to reload browser.
 
         console.log(
-          `Successfully rebuilt extension due to: ${event} on ${filename}`
+          `Successfully rebuilt extension due to: ${event} on ${filename}`,
         );
       } catch (e) {
         console.error("Error building extension: ", e);
@@ -265,7 +265,7 @@ class Build {
             .contain(
               1280,
               800,
-              Jimp.VERTICAL_ALIGN_MIDDLE | Jimp.HORIZONTAL_ALIGN_CENTER
+              Jimp.VERTICAL_ALIGN_MIDDLE | Jimp.HORIZONTAL_ALIGN_CENTER,
             )
             .write(`src/assets/screenshot-contain-1280x800.JPEG`);
           icon
@@ -273,7 +273,7 @@ class Build {
             .cover(
               1280,
               800,
-              Jimp.VERTICAL_ALIGN_MIDDLE | Jimp.HORIZONTAL_ALIGN_CENTER
+              Jimp.VERTICAL_ALIGN_MIDDLE | Jimp.HORIZONTAL_ALIGN_CENTER,
             )
             .write(`src/assets/screenshot-cover-1280x800.JPEG`);
         }
@@ -284,7 +284,7 @@ class Build {
             .contain(
               440,
               280,
-              Jimp.VERTICAL_ALIGN_MIDDLE | Jimp.HORIZONTAL_ALIGN_CENTER
+              Jimp.VERTICAL_ALIGN_MIDDLE | Jimp.HORIZONTAL_ALIGN_CENTER,
             )
             .write(`src/assets/tile-contain-440x280.JPEG`);
           icon
@@ -292,7 +292,7 @@ class Build {
             .cover(
               440,
               280,
-              Jimp.VERTICAL_ALIGN_MIDDLE | Jimp.HORIZONTAL_ALIGN_CENTER
+              Jimp.VERTICAL_ALIGN_MIDDLE | Jimp.HORIZONTAL_ALIGN_CENTER,
             )
             .write(`src/assets/tile-cover-440x280.JPEG`);
         }
@@ -303,7 +303,7 @@ class Build {
             .contain(
               1400,
               560,
-              Jimp.VERTICAL_ALIGN_MIDDLE | Jimp.HORIZONTAL_ALIGN_CENTER
+              Jimp.VERTICAL_ALIGN_MIDDLE | Jimp.HORIZONTAL_ALIGN_CENTER,
             )
             .write(`src/assets/marquee-contain-1400x560.JPEG`);
           icon
@@ -311,7 +311,7 @@ class Build {
             .cover(
               1400,
               560,
-              Jimp.VERTICAL_ALIGN_MIDDLE | Jimp.HORIZONTAL_ALIGN_CENTER
+              Jimp.VERTICAL_ALIGN_MIDDLE | Jimp.HORIZONTAL_ALIGN_CENTER,
             )
             .write(`src/assets/marquee-cover-1400x560.JPEG`);
         }
@@ -340,11 +340,11 @@ class Build {
       "src/assets/": "assets",
       "src/_locales": "_locales",
       "src/popup/popup.html": "popup/popup.html",
-            "src/options-page/options.html": "options-page/options.html",
+      "src/options-page/options.html": "options-page/options.html",
       "src/welcome": "welcome",
     };
 
-return this.copy(fileMap);
+    return this.copy(fileMap);
   }
 
   copy(fileMap) {
@@ -367,7 +367,7 @@ return this.copy(fileMap);
                 resolve();
               }
             }
-          }
+          },
         );
       }
     });

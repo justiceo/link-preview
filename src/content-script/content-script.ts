@@ -14,7 +14,10 @@ class ContentScript {
   async start() {
     if (await this.isDisabledDomain()) {
       // TODO: Prevent all script injection on unsupported hosts.
-      this.logger.debug("Better Previews is disabled on ", window.location.host);
+      this.logger.debug(
+        "Better Previews is disabled on ",
+        window.location.host,
+      );
       return;
     }
     this.floatie.startListening();
@@ -31,7 +34,7 @@ class ContentScript {
   }
 
   async isDisabledDomain() {
-    const blockedSites: string = await Storage.get("blocked-sites") ?? "";
+    const blockedSites: string = (await Storage.get("blocked-sites")) ?? "";
     if (!blockedSites) {
       return false;
     }

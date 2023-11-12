@@ -20,8 +20,11 @@ const EXTENSION_NAME = manifest.__package_name__;
 export class Logger {
   tag = "";
 
-  constructor(tag: string|Object) {
-    this.tag = EXTENSION_NAME + "." + (typeof tag === 'string' ? tag : tag.constructor.name);
+  constructor(tag: string | Object) {
+    this.tag =
+      EXTENSION_NAME +
+      "." +
+      (typeof tag === "string" ? tag : tag.constructor.name);
 
     if (!IS_DEV_BUILD) {
       this.initSentry();
@@ -46,7 +49,7 @@ export class Logger {
       this.internalLogTagOverride(
         message.data.level,
         message.data.tag,
-        ...message.data.messages
+        ...message.data.messages,
       );
     });
   }
@@ -106,8 +109,11 @@ export class Logger {
 export class RemoteLogger {
   tag = "";
 
-  constructor(tag: string|Object) {
-    this.tag = EXTENSION_NAME + "." + (typeof tag === 'string' ? tag : tag.constructor.name);
+  constructor(tag: string | Object) {
+    this.tag =
+      EXTENSION_NAME +
+      "." +
+      (typeof tag === "string" ? tag : tag.constructor.name);
   }
 
   debug = (...messages: unknown[]) =>

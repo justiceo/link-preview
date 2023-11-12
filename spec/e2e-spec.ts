@@ -1,6 +1,6 @@
 import * as puppeteer from "puppeteer";
 
-const outDir=process.env.XTENSION_OUTPUT_DIR;
+const outDir = process.env.XTENSION_OUTPUT_DIR;
 
 describe("Browser test suite", () => {
   let browser: puppeteer.Browser;

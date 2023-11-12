@@ -132,7 +132,6 @@ class Build {
         entryPoints: [
           "src/background-script/service-worker.ts",
           "src/content-script/content-script.ts",
-          "src/content-script/floatie/tooltip.ts",
           "src/popup/popup.ts",
           "src/options-page/options.ts",
           "src/utils/settings/settings.ts",

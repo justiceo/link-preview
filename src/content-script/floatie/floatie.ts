@@ -1,14 +1,7 @@
 import { arrow, computePosition, flip, offset, shift } from "@floating-ui/dom";
-import floatieCssTxt from "./floatie.css.txt";
+import floatieCssTxt from "./floatie.txt.css";
 import { Logger } from "../../utils/logger";
 
-import { Tooltip } from "./tooltip";
-class BFTooltip extends HTMLElement {
-  constructor() {
-    // Always call super first in constructor
-    super();
-  }
-}
 /*
  * This component is responsible for rendering
  * the floatie and managing its lifecycle.
@@ -75,18 +68,10 @@ export class Floatie {
       return;
     }
 
-    const tooltip = new Tooltip();
-
-    try {
-      customElements.define("better-previews-tooltip", BFTooltip);
-    } catch (e) {
-      this.logger.warn("Error re-defining custom element");
-    }
     const bft = document.createElement("better-previews-tooltip");
     const style = document.createElement("style");
     style.textContent = floatieCssTxt;
     bft.appendChild(style);
-    bft.appendChild(tooltip);
     bft.appendChild(this.documentFragment);
     bft.attachShadow({ mode: "open" }).innerHTML = "<slot></slot>"; // slot prevents #attachShadow from wiping dom.
     document.body.appendChild(bft);

@@ -5,12 +5,6 @@ import manifest from "../manifest.json";
 export class IFrameHelper {
   iframeName = manifest.__package_name__ + "/mainframe";
   logger = new Logger(this);
-  constructor() {
-    /*
-     * Favicon URL request, Window.Title request, apply custom CSS.
-     * Redirect clicks.
-     */
-  }
 
   registerListeners() {
     if (!this.inIframe()) {
@@ -21,48 +15,40 @@ export class IFrameHelper {
     }
 
     // Manually handle navigation clicks, to maintain nav stack.
-    document.addEventListener(
-      "click",
-      (e) => {
-        var targetEl: any = this.getLinkTarget(e);
-        if (!targetEl || !targetEl.href) {
-          return;
-        }
-        if ((targetEl.href as string).startsWith("#")) {
-          // This is common for internal/fragment navigation.
-          return;
-        }
-        e.stopImmediatePropagation();
-        e.preventDefault();
-        this.logger.debug("Prevented click propagation and posting navigate");
-        // TODO: Add target origin instead of "*". https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage
-        this.sendMessage({
-          action: "navigate",
-          href: targetEl.href,
-          source: window.location.href,
-          sourceFrame: this.getFrameName(),
-        });
-      },
-      true,
-    );
+    document.addEventListener("click", this.redirectClicks, true);
 
+    // Extract and send iframe title so it can be displayed in the header.
     window.addEventListener("load", () => {
       this.sendMessage({
         action: "load",
-        href: document.location.href,
         data: { title: this.getTitle() },
-        sourceFrame: this.getFrameName(),
       });
     });
 
     window.addEventListener("unload", () => {
-      this.sendMessage({
-        action: "unload",
-        href: document.location.href,
-        sourceFrame: this.getFrameName(),
-      });
+      this.sendMessage({ action: "unload" });
     });
   }
+
+  redirectClicks = (e) => {
+    var targetEl: any = this.getLinkTarget(e);
+    if (!targetEl || !targetEl.href) {
+      return;
+    }
+    if ((targetEl.href as string).startsWith("#")) {
+      // This is common for internal/fragment navigation.
+      return;
+    }
+    e.stopImmediatePropagation();
+    e.preventDefault();
+    this.logger.debug("Prevented click propagation and posting navigate");
+    // TODO: Add target origin instead of "*". https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage
+    this.sendMessage({
+      action: "navigate",
+      href: targetEl.href,
+      source: window.location.href,
+    });
+  };
 
   inIframe() {
     try {
@@ -90,7 +76,12 @@ export class IFrameHelper {
 
   sendMessage(message: any) {
     this.logger.debug("#sendMessage", message);
-    chrome.runtime.sendMessage({ application: "better-previews", ...message });
+    chrome.runtime.sendMessage({
+      application: manifest.__package_name__,
+      href: document.location.href,
+      sourceFrame: this.getFrameName(),
+      ...message,
+    });
   }
 
   getTitle() {

@@ -1,6 +1,7 @@
 import { arrow, computePosition, flip, offset, shift } from "@floating-ui/dom";
 import floatieCssTxt from "./floatie.txt.css";
 import { Logger } from "../../utils/logger";
+import Storage from "../../utils/storage";
 
 /*
  * This component is responsible for rendering
@@ -121,7 +122,7 @@ export class Floatie {
         }
 
         showTimeout = setTimeout(() => {
-          storage.get("preview-on-hover").then((previewOnHover) => {
+          Storage.get("preview-on-hover").then((previewOnHover) => {
             if (previewOnHover) {
               this.sendMessage("preview", a.href);
             } else {
@@ -178,7 +179,7 @@ export class Floatie {
     const range = selection.getRangeAt(0);
     const boundingRect = range.getBoundingClientRect();
     this.logger.debug("Selected: ", selectedText);
-    const actionsToShow = [];
+    const actionsToShow: HTMLElement[] = [];
     if (this.shouldShowPreview(e, selectedText)) {
       actionsToShow.push(this.previewButton);
     } else if (this.shouldShowSearch(e, selectedText)) {

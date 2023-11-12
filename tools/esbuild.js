@@ -135,7 +135,6 @@ class Build {
           "src/content-script/floatie/tooltip.ts",
           "src/popup/popup.ts",
           "src/options-page/options.ts",
-          "src/utils/translate.ts",
           "src/utils/settings/settings.ts",
         ],
         bundle: true,

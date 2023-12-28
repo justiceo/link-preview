@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "શોધ અને લિંક પૂર્વાવલોકન",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "લિંક પૂર્વાવલોકનો",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "લિંક્સના પૂર્વાવલોકનો જુઓ અને નવા ટ s બ્સ ખોલવાને બદલે આ પૂર્વાવલોકનનો ઉપયોગ કરીને તરત જ તે જ પૃષ્ઠ પર શોધ કરે છે",
-        "description": "A description of its function"
-    }
+  "appName": {
+    "message": "શોધ અને લિંક પૂર્વાવલોકન",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "લિંક પૂર્વાવલોકનો",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "લિંક્સના પૂર્વાવલોકનો જુઓ અને નવા ટ s બ્સ ખોલવાને બદલે આ પૂર્વાવલોકનનો ઉપયોગ કરીને તરત જ તે જ પૃષ્ઠ પર શોધ કરે છે",
+    "description": "A description of its function"
+  }
 }

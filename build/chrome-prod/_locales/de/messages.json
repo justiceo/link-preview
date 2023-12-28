@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "Such- und Linkvorschau",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "Link Vorschau",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "Siehe Voransichten von Links und führt sofort die Suche auf derselben Seite mit diesem Vorschau auf, anstatt neue Registerkarten zu öffnen",
-        "description": "A description of its function"
-    }
+  "appName": {
+    "message": "Such- und Linkvorschau",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "Link Vorschau",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "Siehe Voransichten von Links und führt sofort die Suche auf derselben Seite mit diesem Vorschau auf, anstatt neue Registerkarten zu öffnen",
+    "description": "A description of its function"
+  }
 }

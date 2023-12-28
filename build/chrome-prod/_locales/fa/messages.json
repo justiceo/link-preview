@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "پیش نمایش جستجو و پیوند",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "پیش نمایش پیوند",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "پیش نمایش پیوندها را مشاهده کنید و فوراً در همان صفحه جستجو را با استفاده از این پیش نمایش به جای باز کردن زبانه های جدید انجام دهید",
-        "description": "A description of its function"
-    }
+  "appName": {
+    "message": "پیش نمایش جستجو و پیوند",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "پیش نمایش پیوند",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "پیش نمایش پیوندها را مشاهده کنید و فوراً در همان صفحه جستجو را با استفاده از این پیش نمایش به جای باز کردن زبانه های جدید انجام دهید",
+    "description": "A description of its function"
+  }
 }

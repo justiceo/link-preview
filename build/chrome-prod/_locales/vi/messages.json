@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "Xem trước tìm kiếm & liên kết",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "Xem trước liên kết",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "Xem các bản xem trước của các liên kết và thực hiện ngay các tìm kiếm trên cùng một trang bằng cách sử dụng trình xem trước này thay vì mở các tab mới",
-        "description": "A description of its function"
-    }
+  "appName": {
+    "message": "Xem trước tìm kiếm & liên kết",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "Xem trước liên kết",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "Xem các bản xem trước của các liên kết và thực hiện ngay các tìm kiếm trên cùng một trang bằng cách sử dụng trình xem trước này thay vì mở các tab mới",
+    "description": "A description of its function"
+  }
 }

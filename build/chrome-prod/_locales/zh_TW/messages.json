@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "搜索和鏈接預覽",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "鏈接預覽",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "請參閱鏈接的預覽，並使用此預覽器在同一頁面上立即執行搜索，而不是打開新標籤",
-        "description": "A description of its function"
-    }
+  "appName": {
+    "message": "搜索和鏈接預覽",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "鏈接預覽",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "請參閱鏈接的預覽，並使用此預覽器在同一頁面上立即執行搜索，而不是打開新標籤",
+    "description": "A description of its function"
+  }
 }

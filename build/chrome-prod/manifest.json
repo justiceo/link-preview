@@ -2,8 +2,8 @@
     "name": "__MSG_appName__",
     "description": "__MSG_appDesc__",
     "short_name": "__MSG_appShortName_",
-    "homepage_url": "https://github.com/justiceo/search-preview",
-    "version": "23.11.11",
+    "homepage_url": "https://betterpreviews.com/",
+    "version": "23.12.28",
     "manifest_version": 3,
     "default_locale": "en",
     "author": "Justice Ogbonna",
@@ -11,7 +11,8 @@
         "storage",
         "declarativeNetRequest",
         "contextMenus",
-        "cookies"
+        "cookies",
+        "activeTab"
     ],
     "declarative_net_request": {
         "rule_resources": [

@@ -1,14 +1,14 @@
 {
-    "appName": {
-        "message": "Keresés és link előnézete",
-        "description": "The name of the extension"
-    },
-    "appShortName": {
-        "message": "Link előnézetek",
-        "description": "The short-version name of the extension name"
-    },
-    "appDesc": {
-        "message": "Lásd a linkek előnézeteit, és azonnal végzi a kereséseket ugyanazon az oldalon, az új lapok megnyitása helyett az előnéző segítségével",
-        "description": "A description of its function"
-    }
+  "appName": {
+    "message": "Keresés és link előnézete",
+    "description": "The name of the extension"
+  },
+  "appShortName": {
+    "message": "Link előnézetek",
+    "description": "The short-version name of the extension name"
+  },
+  "appDesc": {
+    "message": "Lásd a linkek előnézeteit, és azonnal végzi a kereséseket ugyanazon az oldalon, az új lapok megnyitása helyett az előnéző segítségével",
+    "description": "A description of its function"
+  }
 }

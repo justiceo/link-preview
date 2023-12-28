@@ -53,14 +53,17 @@ const configOptions: Config[] = [
   //     "Hides the preview panel when you hit ESC, scroll away or interact with the main page.",
   //   default_value: false,
   // },
-  {
-    id: "preview-on-hover",
-    type: "switch",
-    title: "Display preview on hover",
-    description:
-      "No need to click on tooltip button, auto show preview on hover.",
-    default_value: false,
-  },
+
+  // TODO: Limit this only to search result pages and provide easy escape.
+  // Include settings control button and esc to close.
+  // {
+  //   id: "preview-on-hover",
+  //   type: "switch",
+  //   title: "Display preview on hover",
+  //   description:
+  //     "No need to click on tooltip button, auto show preview on hover.",
+  //   default_value: false,
+  // },
 ];
 
 const iframeName = "betterpreviews.com/mainframe";

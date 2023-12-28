@@ -15,12 +15,11 @@ const onInstalled = (details: chrome.runtime.InstalledDetails) => {
       url: welcomeUrl,
       active: true,
     });
+    Analytics.fireEvent("install", { reaason: details.reason });
   }
-  Analytics.fireEvent("install", { reaason: details.reason });
 
   // Set url to take users upon uninstall.
   chrome.runtime.setUninstallURL(uninstallUrl, () => {
-    Analytics.fireEvent("uninstall");
     if (chrome.runtime.lastError) {
       console.error("Error setting uninstall URL", chrome.runtime.lastError);
     }

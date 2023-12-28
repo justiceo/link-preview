@@ -1,8 +1,5 @@
 import { Logger } from "../utils/logger";
 import { WinBox } from "../utils/winbox/winbox";
-import "./previewr.css";
-import { sanitizeUrl } from "@braintree/sanitize-url";
-import { Readability } from "@mozilla/readability";
 import "../utils/feedback/feedback";
 import { FeedbackData } from "../background-script/feedback-checker";
 import { FEEDBACK_DATA_KEY } from "../utils/storage";
@@ -10,32 +7,14 @@ import Storage from "../utils/storage";
 import Analytics from "../utils/analytics";
 import manifest from "../manifest.json";
 
-const iframeName = manifest.__package_name__ + "/mainframe";
-// Override the #setUrl method to set name attribute on iframe.
-WinBox.prototype.setUrl = function (url, onload) {
-  const node = this.body.firstChild;
-
-  if (node && node.tagName.toLowerCase() === "iframe") {
-    node.src = url;
-  } else {
-    this.body.innerHTML =
-      '<iframe name="' + iframeName + '" src="' + url + '"></iframe>';
-    onload && (this.body.firstChild.onload = onload);
-  }
-
-  return this;
-};
-
-// This class is responsible to loading/reloading/unloading the angular app into the UI.
-export class Previewr {
+export class WinboxRenderer {
   logger = new Logger(this);
   headerIconUrlBase = "https://www.google.com/s2/favicons?domain=";
+  iframename = manifest.__package_name__ + "/mainframe";
   dialog?: WinBox;
   isVisible = false;
   url?: URL;
   navStack: URL[] = [];
-  displayReaderMode = false;
-  isDemo = false;
   searchUrl = {
     google: "https://www.google.com/search?igu=1&q=",
     bing: "https://www.bing.com/search?q=",
@@ -45,75 +24,6 @@ export class Previewr {
     duckduckgo: "https://duckduckgo.com/?q=",
     ecosia: "https://www.ecosia.org/search?q=",
   };
-
-  /* This function inserts an Angular custom element (web component) into the DOM. */
-  init() {
-    if (this.inIframe()) {
-      this.logger.log(
-        "Not inserting previewr in iframe: ",
-        window.location.href,
-      );
-      return;
-    }
-
-    this.listenForCspError();
-    this.listenForWindowMessages();
-    document.addEventListener("keydown", this.onEscHandler);
-  }
-
-  listenForCspError() {
-    document.addEventListener("securitypolicyviolation", (e) => {
-      if (window.name !== iframeName) {
-        return;
-      }
-      this.logger.error("CSP error", e, e.blockedURI);
-    });
-  }
-
-  onEscHandler = (evt) => {
-    evt = evt || window.event;
-    var isEscape = false;
-    if ("key" in evt) {
-      isEscape = evt.key === "Escape" || evt.key === "Esc";
-    } else {
-      isEscape = evt.keyCode === 27;
-    }
-    if (isEscape) {
-      this.handleMessage({
-        action: "escape",
-        href: document.location.href,
-        sourceFrame: iframeName,
-      });
-    }
-  };
-
-  listenForWindowMessages() {
-    window.addEventListener(
-      "message",
-      (event) => {
-        if (event.origin !== window.location.origin) {
-          this.logger.debug(
-            "Ignoring message from different origin",
-            event.origin,
-            event.data,
-          );
-          return;
-        }
-
-        if (event.data.application !== manifest.__package_name__) {
-          this.logger.debug(
-            "Ignoring origin messsage not initiated by Better Previews",
-            event.data,
-          );
-          return;
-        }
-
-        this.logger.log("#WindowMessage: ", event);
-        this.handleMessage(event.data);
-      },
-      false,
-    );
-  }
 
   async handleMessage(message) {
     // Extract the url from the message.
@@ -172,18 +82,6 @@ export class Previewr {
     this.url = url;
 
     const winboxOptions = await this.getWinboxOptions(url);
-
-    if (this.displayReaderMode) {
-      let reader = new Readability(window.document.cloneNode(true) as Document);
-      let article = reader.parse();
-      if (!article) {
-        console.error("Article is null");
-        winboxOptions.html = `<h1>Failed to parse article</h1>`;
-      }
-      winboxOptions.html = `<h1>${article.title}</h1> <p>${article.byline}</p> ${article.content}`;
-    } else {
-      winboxOptions.url = this.url;
-    }
 
     if (!this.dialog) {
       this.logger.debug("creating new dialog");
@@ -266,18 +164,6 @@ export class Previewr {
     }
   }
 
-  /*
-   * Returns true if this script is running inside an iframe,
-   * since the content script is added to all frames.
-   */
-  inIframe() {
-    try {
-      return window.self !== window.top;
-    } catch (e) {
-      return true;
-    }
-  }
-
   getMaxZIndex() {
     return new Promise((resolve: (arg0: number) => void) => {
       const z = Math.max(
@@ -315,7 +201,8 @@ export class Previewr {
       index: await this.getMaxZIndex(),
       hidden: false,
       shadowel: "search-preview-window",
-      framename: iframeName,
+      framename: this.iframeName,
+      url: url,
 
       onclose: () => {
         this.navStack = [];
@@ -325,4 +212,3 @@ export class Previewr {
     };
   }
 }
-new Previewr().init();

@@ -1,6 +1,7 @@
 import "../content-script/content-script"; // To inject popup for dev mode.
 import { Config, SettingsUI } from "../utils/settings/settings";
 import "./options.css";
+import manifest from "../manifest.json";
 
 const configOptions: Config[] = [
   {
@@ -90,7 +91,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelector("#show-preview")?.addEventListener("click", () => {
     window.postMessage(
-      { application: "better-previews", action: "search", data: "hello world" },
+      {
+        application: manifest.__package_name__,
+        action: "search",
+        data: "hello world",
+      },
       window.location.origin,
     );
   });

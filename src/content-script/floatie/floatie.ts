@@ -2,6 +2,7 @@ import { arrow, computePosition, flip, offset, shift } from "@floating-ui/dom";
 import floatieCssTxt from "./floatie.txt.css";
 import { Logger } from "../../utils/logger";
 import Storage from "../../utils/storage";
+import manifest from "../../manifest.json";
 
 /*
  * This component is responsible for rendering
@@ -355,7 +356,7 @@ export class Floatie {
 
   sendMessage(action: string, data: any) {
     window.postMessage(
-      { application: "better-previews", action: action, data: data },
+      { application: manifest.__package_name__, action: action, data: data },
       window.location.origin,
     );
     // chrome.runtime.sendMessage won't put because angular is executed in page context.

@@ -49,6 +49,13 @@ const configOptions: Config[] = [
     ],
   },
   {
+    id: "close-on-esc",
+    type: "switch",
+    title: "Close on Escape",
+    description: "Use the ESC (escape) key to close the preview panel.",
+    default_value: true,
+  },
+  {
     id: "blocked-sites",
     type: "textarea",
     title: "Disabled on Websites",

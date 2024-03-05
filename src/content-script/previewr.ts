@@ -140,7 +140,10 @@ export class Previewr {
     } else if (message.action === "navigate") {
       urlStr = message.href;
     } else if (message.action === "escape") {
-      this.dialog?.close();
+      const closeOnEsc = (await Storage.get("close-on-esc")) ?? true;
+      if (closeOnEsc) {
+        this.dialog?.close();
+      }
       return;
     } else {
       this.logger.warn("Unhandled action", message);

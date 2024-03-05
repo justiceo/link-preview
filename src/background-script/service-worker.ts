@@ -25,6 +25,13 @@ const onMessage = (
     return true; // Important! Return true to indicate you want to send a response asynchronously
   }
 
+  if (message === "open_options_page") {
+    chrome.runtime.openOptionsPage(() => {
+      console.log("Options page opened");
+    });
+    return;
+  }
+
   // For now, bounce-back message to the content script.
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
     if (tabs.length == 0) {

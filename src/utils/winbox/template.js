@@ -229,6 +229,12 @@ export const winboxcss = `
     background-size: 20px auto;
     filter: invert(1);
   }
+  .wb-settings {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIiB3aWR0aD0iMjQiPjxwYXRoIGQ9Ik00NTAuMDAxLTEzMC4wMDF2LTIxOS45OThoNTkuOTk4djgwaDMyMHY1OS45OThoLTMyMHY4MGgtNTkuOTk4Wm0tMzIwLTgwdi01OS45OThoMjE5Ljk5OHY1OS45OThIMTMwLjAwMVptMTYwLTE2MHYtODBoLTE2MHYtNTkuOTk4aDE2MHYtODBoNTkuOTk4djIxOS45OThoLTU5Ljk5OFptMTYwLTgwdi01OS45OThoMzc5Ljk5OHY1OS45OThINDUwLjAwMVptMTYwLTE2MHYtMjE5Ljk5OGg1OS45OTh2ODBoMTYwdjU5Ljk5OGgtMTYwdjgwaC01OS45OThabS00ODAtODB2LTU5Ljk5OGgzNzkuOTk4djU5Ljk5OEgxMzAuMDAxWiIvPjwvc3ZnPg==);
+  
+    background-size: 20px auto;
+    filter: invert(1);
+  }
   /*
   .winbox:not(.max) .wb-max {
     background-image: url(@restore);

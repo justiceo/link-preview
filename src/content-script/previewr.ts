@@ -199,6 +199,16 @@ export class Previewr {
           window.open(this.url, "_blank");
         },
       });
+      this.dialog.addControl({
+        index: 3,
+        class: "wb-settings",
+        title: "Extension Settings",
+        image: "",
+        click: (event, winbox) => {
+          this.logger.log("#onOpenSettings: url", this.url);
+          chrome.runtime.sendMessage("open_options_page");
+        },
+      });
     } else {
       this.logger.debug("restoring dialog");
       this.dialog.restore();

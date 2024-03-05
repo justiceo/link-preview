@@ -56,6 +56,14 @@ const configOptions: Config[] = [
     default_value: true,
   },
   {
+    id: "automatically-hide-previews",
+    type: "switch",
+    title: "Automatically Hide Previews",
+    description:
+      "Hides the preview panel when you scroll away or interact with the main page.",
+    default_value: false,
+  },
+  {
     id: "blocked-sites",
     type: "textarea",
     title: "Disabled on Websites",

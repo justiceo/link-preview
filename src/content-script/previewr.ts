@@ -59,6 +59,8 @@ export class Previewr {
     this.listenForCspError();
     this.listenForWindowMessages();
     document.addEventListener("keydown", this.onEscHandler);
+    document.addEventListener("click", (e) => this.clickHandler(e));
+    document.addEventListener("scroll", (e) => this.handleScroll(e));
   }
 
   listenForCspError() {
@@ -86,6 +88,24 @@ export class Previewr {
       });
     }
   };
+
+  // Close the dialog preview on click outside of the preview panel, when automatically-hide-previews is enabled.
+  async clickHandler(e) {
+    const autoHide =
+      (await Storage.get("automatically-hide-previews")) ?? false;
+    if (autoHide && this.dialog && !this.dialog.dom.contains(e.target)) {
+      this.dialog.close();
+    }
+  }
+
+  // Close the dialog preview on scroll outside of the preview panel, when automatically-hide-previews is enabled.
+  async handleScroll(e) {
+    const autoHide =
+      (await Storage.get("automatically-hide-previews")) ?? false;
+    if (autoHide && this.dialog && !this.dialog.dom.contains(e.target)) {
+      this.dialog.close();
+    }
+  }
 
   listenForWindowMessages() {
     window.addEventListener(

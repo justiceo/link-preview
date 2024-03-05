@@ -1,5 +1,6 @@
 import { Logger } from "../utils/logger";
 import manifest from "../manifest.json";
+import Storage from "../utils/storage";
 
 // This script is executed inside the preview (i.e. document is iframe).
 export class IFrameHelper {
@@ -13,6 +14,9 @@ export class IFrameHelper {
     if (this.getFrameName() !== this.iframeName) {
       return;
     }
+
+    // Maybe enable anti-frame-busting.
+    this.maybeEnableFrameBustingBuster();
 
     // Manually handle navigation clicks, to maintain nav stack.
     document.addEventListener("click", this.redirectClicks, true);
@@ -49,6 +53,26 @@ export class IFrameHelper {
       source: window.location.href,
     });
   };
+
+  async maybeEnableFrameBustingBuster() {
+    // TODO: Limit to certain websites.
+    let enableAntiFrameBusting =
+      (await Storage.get("enable-anti-frame-busting")) ?? false;
+    if (!enableAntiFrameBusting) {
+      return;
+    }
+
+    let preventBust = 0;
+    window.onbeforeunload = function () {
+      preventBust++;
+    };
+    setInterval(function () {
+      if (preventBust > 0) {
+        preventBust -= 2;
+        window.top.location = "https://httpstat.us/204";
+      }
+    }, 1);
+  }
 
   inIframe() {
     try {

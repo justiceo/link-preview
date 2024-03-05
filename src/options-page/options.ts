@@ -71,25 +71,14 @@ const configOptions: Config[] = [
       "Extension will not run on these sites. Enter one site per line.",
     default_value: "",
   },
-  // {
-  //   id: "automatically-hide-previews",
-  //   type: "switch",
-  //   title: "Automatically hide previews",
-  //   description:
-  //     "Hides the preview panel when you hit ESC, scroll away or interact with the main page.",
-  //   default_value: false,
-  // },
-
-  // TODO: Limit this only to search result pages and provide easy escape.
-  // Include settings control button and esc to close.
-  // {
-  //   id: "preview-on-hover",
-  //   type: "switch",
-  //   title: "Display preview on hover",
-  //   description:
-  //     "No need to click on tooltip button, auto show preview on hover.",
-  //   default_value: false,
-  // },
+  {
+    id: "enable-anti-frame-busting",
+    type: "switch",
+    title: "[Advanced] Force Preview",
+    description:
+      "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.",
+    default_value: false,
+  },
 ];
 
 const iframeName = "betterpreviews.com/mainframe";

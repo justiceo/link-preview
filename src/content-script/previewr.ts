@@ -186,7 +186,7 @@ export class Previewr {
     }
 
     if (!this.dialog) {
-      this.logger.debug("creating new dialog");
+      this.logger.debug("creating new dialog with options:", winboxOptions);
       this.dialog = new WinBox(url.hostname, winboxOptions);
 
       this.dialog.addControl({
@@ -304,9 +304,10 @@ export class Previewr {
     // Set width and height from options if present.
     let width = ((await Storage.get("previewr-width")) ?? "55") + "%";
     let height = ((await Storage.get("previewr-height")) ?? "80") + "%";
+    let ltr = (await Storage.get("previewr-position")) ?? "right";
 
     // Leave space on top for headers/navigation.
-    let top = "50px";
+    let top = "80px";
 
     // In demo mode, use small width and height, and push down previewr.
     if (this.isDemo) {
@@ -314,11 +315,9 @@ export class Previewr {
       height = "40%";
       top = "500px";
     }
-    return {
+    let options: any = {
       icon: this.headerIconUrlBase + url.hostname,
-      x: "right",
       y: top,
-      right: 10,
       width: width,
       height: height,
       class: ["no-max", "no-full"],
@@ -333,6 +332,16 @@ export class Previewr {
         this.dialog = undefined;
       },
     };
+
+    if (ltr === "right") {
+      options.x = "right";
+      options.right = 10;
+    } else {
+      options.x = "left";
+      options.left = 10;
+    }
+
+    return options;
   }
 }
 new Previewr().init();

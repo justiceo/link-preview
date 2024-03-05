@@ -38,6 +38,17 @@ const configOptions: Config[] = [
     max: "95",
   },
   {
+    id: "previewr-position",
+    type: "select",
+    title: "Panel Position",
+    description: "The side of the page in which to display the preview.",
+    default_value: "right",
+    options: [
+      { id: "right", text: "Right" },
+      { id: "left", text: "Left" },
+    ],
+  },
+  {
     id: "blocked-sites",
     type: "textarea",
     title: "Disabled on Websites",

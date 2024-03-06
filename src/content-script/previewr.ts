@@ -150,6 +150,16 @@ export class Previewr {
     } else if (message.action === "search") {
       const searchEngine = (await Storage.get("search-engine")) ?? "google";
       urlStr = this.searchUrl[searchEngine] + message.data;
+
+      // Add override for google search without incognito.
+      if (searchEngine === "google") {
+        const disableIncognitoGoogle = await Storage.get(
+          "disable-incognito-google",
+        );
+        if (disableIncognitoGoogle == true) {
+          urlStr = "https://www.google.com/search?q=" + message.data;
+        }
+      }
     } else if (message.action === "load") {
       if (message.sourceFrame === iframeName && this.dialog) {
         this.dialog.setTitle(message.data.title);

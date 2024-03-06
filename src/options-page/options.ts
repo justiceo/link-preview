@@ -79,6 +79,14 @@ const configOptions: Config[] = [
       "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.",
     default_value: false,
   },
+  {
+    id: "disable-incognito-google",
+    type: "switch",
+    title: "[Advanced] Disable Incognito Google",
+    description:
+      "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.",
+    default_value: false,
+  },
 ];
 
 const iframeName = "betterpreviews.com/mainframe";

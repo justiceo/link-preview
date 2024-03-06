@@ -87,6 +87,15 @@ const configOptions: Config[] = [
       "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.",
     default_value: false,
   },
+  // TODO: Limit this only to search result pages and provide easy escape.
+  {
+    id: "preview-on-hover",
+    type: "switch",
+    title: "[Experimental] Preview on Hover",
+    description:
+      "No need to click on tooltip button, auto show preview on hover.",
+    default_value: false,
+  },
 ];
 
 const iframeName = "betterpreviews.com/mainframe";

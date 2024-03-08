@@ -134,6 +134,7 @@ class Build {
           "src/content-script/content-script.ts",
           "src/popup/popup.ts",
           "src/options-page/options.ts",
+          "src/sidepanel/side-panel.ts",
           "src/utils/settings/settings.ts",
         ],
         bundle: true,
@@ -341,6 +342,7 @@ class Build {
       "src/popup/popup.html": "popup/popup.html",
       "src/options-page/options.html": "options-page/options.html",
       "src/welcome": "welcome",
+      "src/sidepanel/side-panel.html": "sidepanel/side-panel.html",
     };
 
     return this.copy(fileMap);

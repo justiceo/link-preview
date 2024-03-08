@@ -64,6 +64,14 @@ const configOptions: Config[] = [
     default_value: false,
   },
   {
+    id: "preview-in-side-panel",
+    type: "switch",
+    title: "Preview in Side Panel",
+    description:
+      "Displays the view in Chrome Side Panel instead of a floating box.",
+    default_value: false,
+  },
+  {
     id: "blocked-sites",
     type: "textarea",
     title: "Disabled on Websites",

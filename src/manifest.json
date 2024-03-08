@@ -55,6 +55,9 @@
     "__chrome__service_worker": "background-script/service-worker.js",
     "__firefox__scripts": ["background-script/service-worker.js"]
   },
+  "side_panel": {
+    "default_path": "sidepanel/side-panel.html"
+  },
   "options_page": "options-page/options.html",
   "web_accessible_resources": [
     {

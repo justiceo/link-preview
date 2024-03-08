@@ -28,7 +28,7 @@ export class Floatie {
             <div id="sp-floatie-arrow"></div>
             <div id="sp-floatie-search" class="sp-floatie-action" data-action="search">Search</div>
             <div id="sp-floatie-preview" class="sp-floatie-action" data-action="preview">Preview</div>
-            <div id="sp-floatie-copy" class="sp-floatie-action" data-action="copy">Copy</div>
+                        <div id="sp-floatie-copy" class="sp-floatie-action" data-action="copy">Copy</div>
         </div>
         `;
     // Parse markup.
@@ -103,6 +103,7 @@ export class Floatie {
   setupLinkPreviews() {
     const anchors = document.querySelectorAll("a");
     let showTimeout: any = null;
+    let autoPreviewTimeout: any = null;
     let hideTimeout: any = null;
     anchors.forEach((a: HTMLAnchorElement) => {
       if (!this.isGoodUrl(a.href)) {
@@ -122,16 +123,25 @@ export class Floatie {
           hideTimeout = null;
         }
 
-        showTimeout = setTimeout(() => {
-          Storage.get("preview-on-hover").then((previewOnHover) => {
-            if (previewOnHover) {
+        showTimeout = setTimeout(async () => {
+          const previewOnHover =
+            (await Storage.get("preview-on-hover")) ?? false;
+
+          this.showActions(a.getBoundingClientRect(), e, a.href, [
+            this.previewButton,
+          ]);
+
+          if (previewOnHover) {
+            const timeout = (await Storage.get("preview-on-hover-delay")) ?? 3;
+            // Slowly hide the preview button via opacity over a duration of timeout.
+            this.container.classList.add("hide-" + timeout);
+            autoPreviewTimeout = setTimeout(() => {
+              this.container.className = "";
+
+              this.container.style.display = "none";
               this.sendMessage("preview", a.href);
-            } else {
-              this.showActions(a.getBoundingClientRect(), e, a.href, [
-                this.previewButton,
-              ]);
-            }
-          });
+            }, timeout * 1000);
+          }
         }, 500);
       });
 
@@ -139,6 +149,12 @@ export class Floatie {
         if (showTimeout) {
           clearTimeout(showTimeout);
           showTimeout = null;
+        }
+        if (autoPreviewTimeout) {
+          clearTimeout(autoPreviewTimeout);
+          this.container.className = "";
+          this.container.style.display = "none";
+          autoPreviewTimeout = null;
         }
         hideTimeout = setTimeout(() => {
           this.hideAll();

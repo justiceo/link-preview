@@ -37,6 +37,27 @@
   margin: 0 0 !important;
 }
 
+.hide-1 {
+  transition: opacity 2s;
+  opacity: 0;
+}
+.hide-2 {
+  transition: opacity 3s;
+  opacity: 0;
+}
+.hide-3 {
+  transition: opacity 4s;
+  opacity: 0;
+}
+.hide-4 {
+  transition: opacity 5s;
+  opacity: 0;
+}
+.hide-5 {
+  transition: opacity 6s;
+  opacity: 0;
+}
+
 .sp-floatie-action:hover {
   background-color: #777;
 }

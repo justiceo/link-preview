@@ -73,6 +73,24 @@ const configOptions: Config[] = [
     dev_only: true,
   },
   {
+    id: "preview-on-hover",
+    type: "switch",
+    title: "Automatic Preview on Hover",
+    description:
+      "No need to click on tooltip button, auto show preview on hover.",
+    default_value: false,
+  },
+  {
+    id: "preview-on-hover-delay",
+    type: "range",
+    title: "Preview-on-Hover Delay",
+    description:
+      "When automatic preview on hover is enabled, this is the delay before the preview is shown.",
+    default_value: 3,
+    min: "1",
+    max: "5",
+  },
+  {
     id: "blocked-sites",
     type: "textarea",
     title: "Disabled on Websites",
@@ -94,15 +112,6 @@ const configOptions: Config[] = [
     title: "[Advanced] Disable Incognito Google",
     description:
       "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.",
-    default_value: false,
-  },
-  // TODO: Limit this only to search result pages and provide easy escape.
-  {
-    id: "preview-on-hover",
-    type: "switch",
-    title: "[Experimental] Preview on Hover",
-    description:
-      "No need to click on tooltip button, auto show preview on hover.",
     default_value: false,
   },
 ];

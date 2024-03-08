@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "లింక్‌ల ప్రివ్యూలను చూడండి మరియు క్రొత్త ట్యాబ్‌లను తెరవడానికి బదులుగా ఈ ప్రివ్యూయర్‌ను ఉపయోగించి అదే పేజీలో తక్షణమే శోధనలను ప్రదర్శిస్తుంది",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "మేము ఎలా చేస్తున్నాము?"
+  },
+  "fdbkCareToShare": {
+    "message": "నీకు నచ్చినందుకు సంతోషం! మీరు ❤ భాగస్వామ్యం చేయడానికి మాకు సహాయం చేయగలరా?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "మేము ఎలా మెరుగుపరచగలం?"
+  },
+  "fdbkThanks": {
+    "message": "అభిప్రాయము తెలిపినందుకు ధన్యవాదములు!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "వెబ్‌స్టోర్‌లో రేటు"
+  },
+  "fdbkNoResponse": {
+    "message": "లేదు"
+  },
+  "fdbkSumbit": {
+    "message": "సమర్పించండి"
+  },
+  "reportAnIssue": {
+    "message": "ఒక సమస్యను నివేదించండి",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "డెమో షో",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "విజయవంతంగా నవీకరించబడిన సెట్టింగులు"
+  },
+  "optionBlockedSites": {
+    "message": "వెబ్‌సైట్లలో నిలిపివేయబడింది"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "ఈ సైట్లలో పొడిగింపు అమలు చేయదు. ప్రతి పంక్తికి ఒక సైట్‌ను నమోదు చేయండి."
   }
 }

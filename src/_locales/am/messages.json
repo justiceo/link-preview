@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "የአንጻሮች አገናኞች ቅድመ-እይታዎችን ይመልከቱ እና ወዲያውኑ አዳዲስ ትሮችን ከመክፈት ይልቅ ይህንን ቅድመ-ሰሪ በመጠቀም በተመሳሳይ ገጽ ላይ ይፈልጉ",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "እንዴት እየሰራን ነው?"
+  },
+  "fdbkCareToShare": {
+    "message": "ደስ እንደሰኛቸው ደስ ብሎኛል! ❤️ እንድንካፈል ሊረዱን ይችላሉ?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "እንዴት ማሻሻል እንችላለን?"
+  },
+  "fdbkThanks": {
+    "message": "ስለ ግብረመልሱ አመሰግናለሁ!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "በደረጃዎች ላይ ይስጡ"
+  },
+  "fdbkNoResponse": {
+    "message": "አይ"
+  },
+  "fdbkSumbit": {
+    "message": "ያስገቡ"
+  },
+  "reportAnIssue": {
+    "message": "አንድ ጉዳይ ሪፖርት ያድርጉ",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "ማሳያ ማሳያ",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "በተሳካ ሁኔታ ወቅታዊ ቅንብሮች"
+  },
+  "optionBlockedSites": {
+    "message": "ድርጣቢያዎች ላይ ተሰናክሏል"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "ቅጥያ በእነዚህ ጣቢያዎች ላይ አይሰራም. በአንድ መስመር አንድ ጣቢያ ያስገቡ."
   }
 }

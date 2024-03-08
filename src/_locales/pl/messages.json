@@ -8,7 +8,45 @@
     "description": "The short-version name of the extension name"
   },
   "appDesc": {
-    "message": "Zobacz podgląd linków i natychmiast wykonuje wyszukiwania na tej samej stronie za pomocą tego podwozia zamiast otwierania nowych kart",
+    "message": "Zobacz podgląd linków i natychmiast wykonuje wyszukiwania na tej samej stronie za pomocą tego podglądu zamiast otwierania nowych kart",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "Jak nam idzie?"
+  },
+  "fdbkCareToShare": {
+    "message": "Cieszę się że to lubisz! Czy możesz nam pomóc w udostępnieniu ❤️?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "Jak możemy poprawić?"
+  },
+  "fdbkThanks": {
+    "message": "Dzięki za opinie!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Oceń w Webstore"
+  },
+  "fdbkNoResponse": {
+    "message": "NIE"
+  },
+  "fdbkSumbit": {
+    "message": "Składać"
+  },
+  "reportAnIssue": {
+    "message": "Zgłoś problem",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "Pokazuj demo",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "Pomyślnie zaktualizowane ustawienia"
+  },
+  "optionBlockedSites": {
+    "message": "Wyłączone na stronach internetowych"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "Rozszerzenie nie będzie działać na tych stronach. Wprowadź jedną witrynę na wiersz."
   }
 }

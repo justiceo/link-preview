@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "Veja as visualizações dos links e executa instantaneamente pesquisas na mesma página usando este visualizador em vez de abrir novas guias",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "Como estamos indo?"
+  },
+  "fdbkCareToShare": {
+    "message": "Estou feliz por ter gostado! Você pode nos ajudar a compartilhar o ❤️?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "Como podemos melhorar?"
+  },
+  "fdbkThanks": {
+    "message": "Obrigado pelo feedback!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Taxa na WebStore"
+  },
+  "fdbkNoResponse": {
+    "message": "Não"
+  },
+  "fdbkSumbit": {
+    "message": "Enviar"
+  },
+  "reportAnIssue": {
+    "message": "Relatar um problema",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "Mostrar demonstração",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "Configurações atualizadas com sucesso"
+  },
+  "optionBlockedSites": {
+    "message": "Desativado em sites"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "A extensão não será executada nesses sites. Digite um site por linha."
   }
 }

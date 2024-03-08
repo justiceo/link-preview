@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "ראה תצוגה מקדימה של קישורים ומבצע מייד חיפושים באותו עמוד באמצעות תצוגה מקדימה זו במקום לפתוח כרטיסיות חדשות",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "מה שלומנו?"
+  },
+  "fdbkCareToShare": {
+    "message": "שמח שאתה אוהב את זה! אתה יכול לעזור לנו לשתף את ❤️?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "איך אנחנו יכולים להשתפר?"
+  },
+  "fdbkThanks": {
+    "message": "תודה על המשוב!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "דרג בחנות האינטרנט"
+  },
+  "fdbkNoResponse": {
+    "message": "לא"
+  },
+  "fdbkSumbit": {
+    "message": "שלח"
+  },
+  "reportAnIssue": {
+    "message": "דווח על בעיה",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "להראות הדגמה",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "הגדרות מעודכנות בהצלחה"
+  },
+  "optionBlockedSites": {
+    "message": "מושבת באתרים"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "ההרחבה לא תפעל באתרים אלה. הזן אתר אחד בשורה."
   }
 }

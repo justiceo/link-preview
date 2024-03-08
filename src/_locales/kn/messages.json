@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "ಲಿಂಕ್‌ಗಳ ಪೂರ್ವವೀಕ್ಷಣೆಗಳನ್ನು ನೋಡಿ ಮತ್ತು ಹೊಸ ಟ್ಯಾಬ್‌ಗಳನ್ನು ತೆರೆಯುವ ಬದಲು ಈ ಪೂರ್ವವೀಕ್ಷಣೆ ಬಳಸಿ ಅದೇ ಪುಟದಲ್ಲಿ ಹುಡುಕಾಟಗಳನ್ನು ತಕ್ಷಣ ನಿರ್ವಹಿಸುತ್ತದೆ",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "ನಾವು ಹೇಗೆ ಮಾಡುತ್ತಿದ್ದೇವೆ?"
+  },
+  "fdbkCareToShare": {
+    "message": "ನೀವು ಇಷ್ಟಪಟ್ಟಿದ್ದಕ್ಕಾಗಿ ಸಂತೋಷ! The ಅನ್ನು ಹಂಚಿಕೊಳ್ಳಲು ನಿಮಗೆ ಸಹಾಯ ಮಾಡಬಹುದೇ?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "ನಾವು ಹೇಗೆ ಸುಧಾರಿಸಬಹುದು?"
+  },
+  "fdbkThanks": {
+    "message": "ಪ್ರತಿಕ್ರಿಯೆಗಾಗಿ ಧನ್ಯವಾದಗಳು!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "ವೆಬ್‌ಸ್ಟೋರ್‌ನಲ್ಲಿ ದರ"
+  },
+  "fdbkNoResponse": {
+    "message": "ಇಲ್ಲ"
+  },
+  "fdbkSumbit": {
+    "message": "ಸಲ್ಲಿಸು"
+  },
+  "reportAnIssue": {
+    "message": "ಸಮಸ್ಯೆಯನ್ನು ವರದಿ ಮಾಡಿ",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "ಡೆಮೊ ತೋರಿಸಿ",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "ಯಶಸ್ವಿಯಾಗಿ ನವೀಕರಿಸಿದ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
+  },
+  "optionBlockedSites": {
+    "message": "ವೆಬ್‌ಸೈಟ್‌ಗಳಲ್ಲಿ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "ಈ ಸೈಟ್‌ಗಳಲ್ಲಿ ವಿಸ್ತರಣೆ ಚಲಿಸುವುದಿಲ್ಲ. ಪ್ರತಿ ಸಾಲಿಗೆ ಒಂದು ಸೈಟ್ ನಮೂದಿಸಿ."
   }
 }

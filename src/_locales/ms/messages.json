@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "Lihat pratonton pautan dan dengan serta -merta melakukan carian pada halaman yang sama menggunakan pratonton ini dan bukannya membuka tab baru",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "Bagaimana keadaan kita?"
+  },
+  "fdbkCareToShare": {
+    "message": "Gembira anda menyukainya! Bolehkah anda membantu kami berkongsi ❤️?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "Bagaimana kita dapat memperbaiki?"
+  },
+  "fdbkThanks": {
+    "message": "Terima kasih atas maklum balas!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Kadar di WebStore"
+  },
+  "fdbkNoResponse": {
+    "message": "Tidak"
+  },
+  "fdbkSumbit": {
+    "message": "Hantar"
+  },
+  "reportAnIssue": {
+    "message": "Melaporkan isu",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "Tunjukkan demo",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "Tetapan yang berjaya dikemas kini"
+  },
+  "optionBlockedSites": {
+    "message": "Dilumpuhkan di laman web"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "Pelanjutan tidak akan berjalan di laman web ini. Masukkan satu tapak setiap baris."
   }
 }

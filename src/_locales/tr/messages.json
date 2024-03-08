@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "Bağlantıların önizlemelerine bakın ve yeni sekmeleri açmak yerine bu önizleyiciyi kullanarak aynı sayfada aramaları anında gerçekleştirir",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "Nasıl yapıyoruz?"
+  },
+  "fdbkCareToShare": {
+    "message": "Beğendiğine sevindim! ❤ood paylaşmamıza yardım edebilir misiniz?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "Nasıl gelişebiliriz?"
+  },
+  "fdbkThanks": {
+    "message": "Geri dönüşünüz için teşekkür ederiz!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Web Store'da oran"
+  },
+  "fdbkNoResponse": {
+    "message": "HAYIR"
+  },
+  "fdbkSumbit": {
+    "message": "Göndermek"
+  },
+  "reportAnIssue": {
+    "message": "Bir Sorun Bildirin",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "Demoyu Göster",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "Başarılı bir şekilde güncellenen ayarlar"
+  },
+  "optionBlockedSites": {
+    "message": "Web sitelerinde devre dışı"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "Uzatma bu sitelerde çalışmaz. Satır başına bir site girin."
   }
 }

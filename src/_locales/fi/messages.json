@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "Katso linkkien esikatselut ja suorittaa heti hakuja samalla sivulla tällä esikatselulla uusien välilehtien avaamisen sijasta",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "Kuinka me voimme?"
+  },
+  "fdbkCareToShare": {
+    "message": "Iloinen, että pidät siitä! Voitko auttaa meitä jakamaan ❤️?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "Kuinka voimme parantaa?"
+  },
+  "fdbkThanks": {
+    "message": "Kiitos palautteesta!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Arvostelu verkkokaupassa"
+  },
+  "fdbkNoResponse": {
+    "message": "Ei"
+  },
+  "fdbkSumbit": {
+    "message": "Lähetä"
+  },
+  "reportAnIssue": {
+    "message": "Ilmoita ongelma",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "Näytä esittely",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "Päivitetyt asetukset onnistuneesti"
+  },
+  "optionBlockedSites": {
+    "message": "Vammaiset verkkosivustoilla"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "Laajennus ei toimi näillä sivustoilla. Kirjoita yksi sivusto riviä kohti."
   }
 }

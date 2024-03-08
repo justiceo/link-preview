@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "请参阅链接的预览，并使用此预览器在同一页面上立即执行搜索，而不是打开新标签",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "我们好吗？"
+  },
+  "fdbkCareToShare": {
+    "message": "很高兴你喜欢它！ 您能帮我们分享❤️吗？"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "我们如何改进？"
+  },
+  "fdbkThanks": {
+    "message": "感谢您的反馈！"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "网上商店的费率"
+  },
+  "fdbkNoResponse": {
+    "message": "不"
+  },
+  "fdbkSumbit": {
+    "message": "提交"
+  },
+  "reportAnIssue": {
+    "message": "报告一个问题",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "展示演示",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "成功更新了设置"
+  },
+  "optionBlockedSites": {
+    "message": "在网站上禁用"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "扩展将不会在这些站点上运行。 每行进入一个站点。"
   }
 }

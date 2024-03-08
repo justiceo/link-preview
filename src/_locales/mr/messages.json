@@ -8,7 +8,45 @@
     "description": "The short-version name of the extension name"
   },
   "appDesc": {
-    "message": "नवीन टॅब उघडण्याऐवजी या पूर्वावलोकनकर्त्याचा वापर करून दुवे आणि त्वरित त्याच पृष्ठावरील शोधांचे पूर्वावलोकन पहा",
+    "message": "नवीन टॅब उघडण्याऐवजी या पूर्वावलोकनकर्त्याचा वापर करून दुवे आणि त्वरित त्याच पृष्ठावर शोध घेते",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "आम्ही कसे करीत आहोत?"
+  },
+  "fdbkCareToShare": {
+    "message": "आपल्याला हे आवडले याचा आनंद! आपण आम्हाला सामायिक करण्यात मदत करू शकता ❤?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "आपण कसे सुधारू शकतो?"
+  },
+  "fdbkThanks": {
+    "message": "आपल्या अभिप्रायाबद्दल धन्यवाद!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "वेबस्टोअरवर दर"
+  },
+  "fdbkNoResponse": {
+    "message": "नाही"
+  },
+  "fdbkSumbit": {
+    "message": "प्रस्तुत करणे"
+  },
+  "reportAnIssue": {
+    "message": "एखाद्या समस्येचा अहवाल द्या",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "डेमो दर्शवा",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "यशस्वीरित्या अद्यतनित सेटिंग्ज"
+  },
+  "optionBlockedSites": {
+    "message": "वेबसाइटवर अक्षम"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "या साइटवर विस्तार चालू होणार नाही. प्रति लाइन एक साइट प्रविष्ट करा."
   }
 }

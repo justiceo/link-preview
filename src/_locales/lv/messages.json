@@ -8,7 +8,45 @@
     "description": "The short-version name of the extension name"
   },
   "appDesc": {
-    "message": "Skatiet saišu priekšskatījumus un uzreiz veic meklēšanu vienā un tajā pašā lapā, izmantojot šo priekšskatījumu, nevis jaunu cilņu atvēršanu",
+    "message": "Skatiet saišu priekšskatījumus un uzreiz veic meklēšanu vienā un tajā pašā lapā, izmantojot šo priekšskatījumu, nevis atveriet jaunas cilnes",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "Kā mums klājas?"
+  },
+  "fdbkCareToShare": {
+    "message": "Prieks ka tev patīk! Vai varat palīdzēt mums dalīties ar ❤️?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "Kā mēs varam uzlabot?"
+  },
+  "fdbkThanks": {
+    "message": "Paldies par atsauksmēm!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Novērtējiet tīmekļa veikalā"
+  },
+  "fdbkNoResponse": {
+    "message": "Nē"
+  },
+  "fdbkSumbit": {
+    "message": "Iesniegt"
+  },
+  "reportAnIssue": {
+    "message": "Ziņot par jautājumu",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "Parādīt demonstrāciju",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "Veiksmīgi atjauninātie iestatījumi"
+  },
+  "optionBlockedSites": {
+    "message": "Vietnēs atspējots"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "Paplašinājums šajās vietnēs nedarbosies. Ievadiet vienu vietni vienā rindā."
   }
 }

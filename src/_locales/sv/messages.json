@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "Se förhandsgranskningar av länkar och utför direkt sökningar på samma sida med denna förhandsvisare istället för att öppna nya flikar",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "Hur går det för oss?"
+  },
+  "fdbkCareToShare": {
+    "message": "Glad att du gillar det! Kan du hjälpa oss att dela ❤?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "Hur kan vi förbättra?"
+  },
+  "fdbkThanks": {
+    "message": "Tack för feedbacken!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Hastighet på webbutiken"
+  },
+  "fdbkNoResponse": {
+    "message": "Nej"
+  },
+  "fdbkSumbit": {
+    "message": "Skicka in"
+  },
+  "reportAnIssue": {
+    "message": "Rapportera ett problem",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "Visa demo",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "Framgångsrikt uppdaterade inställningar"
+  },
+  "optionBlockedSites": {
+    "message": "Inaktiverad på webbplatser"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "Förlängningen körs inte på dessa webbplatser. Ange en webbplats per rad."
   }
 }

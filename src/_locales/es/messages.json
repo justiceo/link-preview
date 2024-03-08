@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "Consulte Vistas previas de enlaces y realiza instantáneamente búsquedas en la misma página utilizando esta vista previa en lugar de abrir nuevas pestañas",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "¿Cómo vamos?"
+  },
+  "fdbkCareToShare": {
+    "message": "¡Me alegra que te guste! ¿Puedes ayudarnos a compartir el ❤️?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "¿Como podemos mejorar?"
+  },
+  "fdbkThanks": {
+    "message": "¡Gracias por la respuesta!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Calificar en la tienda web"
+  },
+  "fdbkNoResponse": {
+    "message": "No"
+  },
+  "fdbkSumbit": {
+    "message": "Entregar"
+  },
+  "reportAnIssue": {
+    "message": "Reportar un problema",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "Demostración de exhibición",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "Configuración actualizada con éxito"
+  },
+  "optionBlockedSites": {
+    "message": "Discapacitado en sitios web"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "La extensión no se ejecutará en estos sitios. Ingrese un sitio por línea."
   }
 }

@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "Oglejte si predoglede povezav in takoj izvede iskanje na isti strani s tem predogledom, namesto da bi odpirali nove zavihke",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "Kako smo?"
+  },
+  "fdbkCareToShare": {
+    "message": "Vesela sem, da ti je všeč! Ali nam lahko pomagate deliti ❤️?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "Kako se lahko izboljšamo?"
+  },
+  "fdbkThanks": {
+    "message": "Hvala za povratne informacije!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Ocenite na spletni trgovini"
+  },
+  "fdbkNoResponse": {
+    "message": "Ne"
+  },
+  "fdbkSumbit": {
+    "message": "Oddaj"
+  },
+  "reportAnIssue": {
+    "message": "Poroča o težavi",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "Pokaži demo",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "Uspešno posodobljene nastavitve"
+  },
+  "optionBlockedSites": {
+    "message": "Onemogočeno na spletnih mestih"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "Na teh spletnih mestih se ne bo izvajalo razširitev. Vnesite eno spletno mesto na vrstico."
   }
 }

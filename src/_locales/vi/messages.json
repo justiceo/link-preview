@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "Xem các bản xem trước của các liên kết và thực hiện ngay các tìm kiếm trên cùng một trang bằng cách sử dụng trình xem trước này thay vì mở các tab mới",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "Chúng ta đang làm thế nào?"
+  },
+  "fdbkCareToShare": {
+    "message": "Vui vì bạn thích nó! Bạn có thể giúp chúng tôi chia sẻ ❤?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "Chúng ta có thể cải thiện như thế nào?"
+  },
+  "fdbkThanks": {
+    "message": "Cảm ơn vì bạn đã phản hồi!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Đánh giá trên ststore"
+  },
+  "fdbkNoResponse": {
+    "message": "KHÔNG"
+  },
+  "fdbkSumbit": {
+    "message": "Nộp"
+  },
+  "reportAnIssue": {
+    "message": "Báo cáo một vấn đề",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "Đưa ra bản chạy thử",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "Cập nhật cài đặt thành công"
+  },
+  "optionBlockedSites": {
+    "message": "Bị vô hiệu hóa trên các trang web"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "Tiện ích mở rộng sẽ không chạy trên các trang web này. Nhập một trang web trên mỗi dòng."
   }
 }

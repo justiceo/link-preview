@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "Voir les aperçus de liens et effectuent instantanément des recherches sur la même page en utilisant cet aperçu au lieu d'ouvrir de nouveaux onglets",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "Comment allons nous?"
+  },
+  "fdbkCareToShare": {
+    "message": "Content que tu aimes ça! Pouvez-vous nous aider à partager le ❤️?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "Comment pouvons nous nous améliorer?"
+  },
+  "fdbkThanks": {
+    "message": "Merci pour les commentaires!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Tarif sur Webstore"
+  },
+  "fdbkNoResponse": {
+    "message": "Non"
+  },
+  "fdbkSumbit": {
+    "message": "Soumettre"
+  },
+  "reportAnIssue": {
+    "message": "Signaler un problème",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "Démonstration",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "Paramètres mis à jour avec succès"
+  },
+  "optionBlockedSites": {
+    "message": "Désactivé sur les sites Web"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "L'extension ne fonctionnera pas sur ces sites. Entrez un site par ligne."
   }
 }

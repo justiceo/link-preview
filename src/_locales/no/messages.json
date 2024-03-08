@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "Se forhåndsvisning av lenker og utfører øyeblikkelig søk på samme side ved hjelp av denne forhåndsvisning i stedet for å åpne nye faner",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "Hvordan har vi det?"
+  },
+  "fdbkCareToShare": {
+    "message": "Glad du likte det! Kan du hjelpe oss med å dele ❤?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "Hvordan kan vi forbedre oss?"
+  },
+  "fdbkThanks": {
+    "message": "Takk for tilbakemeldingen!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Priser på nettbutikken"
+  },
+  "fdbkNoResponse": {
+    "message": "Nei"
+  },
+  "fdbkSumbit": {
+    "message": "Sende inn"
+  },
+  "reportAnIssue": {
+    "message": "Rapporter et problem",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "Vis demo",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "Vellykket oppdaterte innstillinger"
+  },
+  "optionBlockedSites": {
+    "message": "Deaktivert på nettsteder"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "Utvidelse kjøres ikke på disse nettstedene. Skriv inn ett nettsted per linje."
   }
 }

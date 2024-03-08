@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "ดูตัวอย่างของลิงก์และทำการค้นหาในหน้าเดียวกันทันทีโดยใช้ตัวแสดงตัวอย่างนี้แทนที่จะเปิดแท็บใหม่",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "เราเป็นอย่างไรบ้าง?"
+  },
+  "fdbkCareToShare": {
+    "message": "ดีใจที่คุณชอบ! คุณสามารถช่วยเราแบ่งปัน❤ได้หรือไม่?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "เราจะปรับปรุงได้อย่างไร?"
+  },
+  "fdbkThanks": {
+    "message": "ขอบคุณสำหรับความคิดเห็น!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "ให้คะแนนบนเว็บสโตร์"
+  },
+  "fdbkNoResponse": {
+    "message": "เลขที่"
+  },
+  "fdbkSumbit": {
+    "message": "ส่ง"
+  },
+  "reportAnIssue": {
+    "message": "รายงานปัญหา",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "แสดงตัวอย่าง",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "อัปเดตการตั้งค่าสำเร็จ"
+  },
+  "optionBlockedSites": {
+    "message": "ปิดใช้งานบนเว็บไซต์"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "ส่วนขยายจะไม่ทำงานบนเว็บไซต์เหล่านี้ ป้อนหนึ่งไซต์ต่อบรรทัด"
   }
 }

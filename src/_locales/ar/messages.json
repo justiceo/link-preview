@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "راجع معاينات الروابط ويقوم على الفور بإجراء عمليات البحث على نفس الصفحة باستخدام هذه المعاينة بدلاً من فتح علامات تبويب جديدة",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "كيف نفعل؟"
+  },
+  "fdbkCareToShare": {
+    "message": "سعيد انه اعجبك! هل يمكنك مساعدتنا في مشاركة ❤؟"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "كيف يمكن أن نتحسن؟"
+  },
+  "fdbkThanks": {
+    "message": "شكرا على ملاحظاتك!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "معدل على WebStore"
+  },
+  "fdbkNoResponse": {
+    "message": "لا"
+  },
+  "fdbkSumbit": {
+    "message": "يُقدِّم"
+  },
+  "reportAnIssue": {
+    "message": "بلغ عن خطأ",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "عرض العرض التوضيحي",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "الإعدادات التي تم تحديثها بنجاح"
+  },
+  "optionBlockedSites": {
+    "message": "معاق على مواقع الويب"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "التمديد لن يعمل على هذه المواقع. أدخل موقع واحد لكل سطر."
   }
 }

@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "Pogledajte preglede veza i odmah izvršava pretraživanja na istoj stranici pomoću ovog pregledača umjesto otvaranja novih kartica",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "Kako stojimo?"
+  },
+  "fdbkCareToShare": {
+    "message": "Drago mi je da ti se sviđa! Možete li nam pomoći da dijelimo ❤️?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "Kako se možemo poboljšati?"
+  },
+  "fdbkThanks": {
+    "message": "Hvala na povratnoj informaciji!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Ocijenite na web prostoru"
+  },
+  "fdbkNoResponse": {
+    "message": "Ne"
+  },
+  "fdbkSumbit": {
+    "message": "podnijeti"
+  },
+  "reportAnIssue": {
+    "message": "Prijaviti problem",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "Prikaži demo",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "Uspješno ažurirane postavke"
+  },
+  "optionBlockedSites": {
+    "message": "Onemogućeno na web stranicama"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "Proširenje se neće pokrenuti na tim web lokacijama. Unesite jedno mjesto po liniji."
   }
 }

@@ -8,7 +8,45 @@
     "description": "The short-version name of the extension name"
   },
   "appDesc": {
-    "message": "Vaadake linkide eelvaateid ja teostab samal lehel otsinguid, kasutades seda eelvaadet uute vahekaartide avamise asemel",
+    "message": "Vaadake linkide eelvaateid ja viib selle eelvaate abil uute vahekaartide avamise asemel otsinguid samal lehel koheselt läbi",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "Kuidas meil läheb?"
+  },
+  "fdbkCareToShare": {
+    "message": "Tore, et see teile meeldib! Kas saate aidata meil ❤️ jagada?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "Kuidas saaksime parandada?"
+  },
+  "fdbkThanks": {
+    "message": "Aitäh tagasiside eest!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Hindus veebipoes"
+  },
+  "fdbkNoResponse": {
+    "message": "Mitte"
+  },
+  "fdbkSumbit": {
+    "message": "Esita"
+  },
+  "reportAnIssue": {
+    "message": "Emissioonist teatama",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "Näita demo",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "Edukalt värskendatud sätted"
+  },
+  "optionBlockedSites": {
+    "message": "Veebisaitidel puudega"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "Pikendus nendel saitidel ei tööta. Sisestage üks sait rea kohta."
   }
 }

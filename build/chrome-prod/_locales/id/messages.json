@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "Lihat pratinjau tautan dan langsung melakukan pencarian di halaman yang sama menggunakan pratinjau ini alih -alih membuka tab baru",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "Bagaimana kabar kita?"
+  },
+  "fdbkCareToShare": {
+    "message": "Senang kamu menyukainya! Bisakah Anda membantu kami membagikan ❤️?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "Bagaimana kita bisa meningkatkan?"
+  },
+  "fdbkThanks": {
+    "message": "Terima kasih untuk umpan baliknya!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Nilai di Webstore"
+  },
+  "fdbkNoResponse": {
+    "message": "TIDAK"
+  },
+  "fdbkSumbit": {
+    "message": "Kirim"
+  },
+  "reportAnIssue": {
+    "message": "Melaporkan masalah",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "Tampilkan demo",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "Pengaturan yang berhasil diperbarui"
+  },
+  "optionBlockedSites": {
+    "message": "Dinonaktifkan di situs web"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "Ekstensi tidak akan berjalan di situs -situs ini. Masukkan satu situs per baris."
   }
 }

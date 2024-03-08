@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "請參閱鏈接的預覽，並使用此預覽器在同一頁面上立即執行搜索，而不是打開新標籤",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "我們好嗎？"
+  },
+  "fdbkCareToShare": {
+    "message": "很高興你喜歡它！ 您能幫我們分享❤️嗎？"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "我們如何改進？"
+  },
+  "fdbkThanks": {
+    "message": "感謝您的反饋！"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "網上商店的費率"
+  },
+  "fdbkNoResponse": {
+    "message": "不"
+  },
+  "fdbkSumbit": {
+    "message": "提交"
+  },
+  "reportAnIssue": {
+    "message": "報告一個問題",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "展示演示",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "成功更新了設置"
+  },
+  "optionBlockedSites": {
+    "message": "在網站上禁用"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "擴展將不會在這些站點上運行。 每行進入一個站點。"
   }
 }

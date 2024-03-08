@@ -1,6 +1,6 @@
 {
   "appName": {
-    "message": "Such- und Linkvorschau",
+    "message": "Such- und Link -Vorschau",
     "description": "The name of the extension"
   },
   "appShortName": {
@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "Siehe Voransichten von Links und führt sofort die Suche auf derselben Seite mit diesem Vorschau auf, anstatt neue Registerkarten zu öffnen",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "Wie machen wir uns?"
+  },
+  "fdbkCareToShare": {
+    "message": "Froh, dass Sie es mögen! Können Sie uns helfen, die ❤️ zu teilen?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "Wie können wir uns verbessern?"
+  },
+  "fdbkThanks": {
+    "message": "Danke für die Rückmeldung!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Rate auf Webstore"
+  },
+  "fdbkNoResponse": {
+    "message": "NEIN"
+  },
+  "fdbkSumbit": {
+    "message": "Einreichen"
+  },
+  "reportAnIssue": {
+    "message": "Ein Problem melden",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "Demo zeigen",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "Erfolgreich aktualisierte Einstellungen"
+  },
+  "optionBlockedSites": {
+    "message": "Auf Websites deaktiviert"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "Die Erweiterung wird auf diesen Websites nicht ausgeführt. Geben Sie eine Stelle pro Zeile ein."
   }
 }

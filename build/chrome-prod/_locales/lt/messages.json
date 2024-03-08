@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "Žr. Nuorodų peržiūras ir akimirksniu atlieka paieškas tame pačiame puslapyje, naudodamiesi šiuo peržiūros priemone, užuot atidarę naujus skirtukus",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "Kaip mums sekasi?"
+  },
+  "fdbkCareToShare": {
+    "message": "Džiugu, kad tau tai patiko! Ar galite padėti mums pasidalyti ❤️?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "Kaip mes galime tobulėti?"
+  },
+  "fdbkThanks": {
+    "message": "Ačiū už nuomonę!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Įvertinimas „WebStore“"
+  },
+  "fdbkNoResponse": {
+    "message": "Ne"
+  },
+  "fdbkSumbit": {
+    "message": "Pateikti"
+  },
+  "reportAnIssue": {
+    "message": "Pranešti apie klausimą",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "Parodykite demonstracinę versiją",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "Sėkmingai atnaujinti nustatymai"
+  },
+  "optionBlockedSites": {
+    "message": "Neįgalios svetainėse"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "Pratęsimas šiose svetainėse nebus vykdomas. Įveskite vieną svetainę vienoje eilutėje."
   }
 }

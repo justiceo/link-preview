@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "ലിങ്കുകളുടെ പ്രിവ്യൂകൾ കാണുക, പുതിയ ടാബുകൾ തുറക്കുന്നതിനുപകരം ഈ പ്രിവ്യൂ ഉപയോഗിച്ച് ഇതേ പേജിൽ തിരയുന്നു",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "ഞങ്ങൾ എങ്ങനെ ചെയ്യുന്നു?"
+  },
+  "fdbkCareToShare": {
+    "message": "നിങ്ങൾ ഇത് ഇഷ്ടപ്പെട്ടതിൽ സന്തോഷം! ❤️ പങ്കിടാൻ ഞങ്ങളെ സഹായിക്കാമോ?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "നമുക്ക് എങ്ങനെ മെച്ചപ്പെടുത്താൻ കഴിയും?"
+  },
+  "fdbkThanks": {
+    "message": "ഫീഡ്ബാക്കിന് നന്ദി!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "വെബ്സ്റ്ററിലെ നിരക്ക്"
+  },
+  "fdbkNoResponse": {
+    "message": "ഇല്ല"
+  },
+  "fdbkSumbit": {
+    "message": "കീഴടങ്ങുക"
+  },
+  "reportAnIssue": {
+    "message": "ഒരു പ്രശ്നം റിപ്പോർട്ടുചെയ്യുക",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "ഡെമോ കാണിക്കുക",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "ക്രമീകരണങ്ങൾ വിജയകരമായി അപ്ഡേറ്റുചെയ്തു"
+  },
+  "optionBlockedSites": {
+    "message": "വെബ്സൈറ്റുകളിൽ അപ്രാപ്തമാക്കി"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "ഈ സൈറ്റുകളിൽ വിപുലീകരണം പ്രവർത്തിക്കില്ല. ഒരു വരിയിൽ ഒരു സൈറ്റ് നൽകുക."
   }
 }

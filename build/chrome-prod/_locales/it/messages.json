@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "Vedere le anteprime dei collegamenti e eseguire istantaneamente le ricerche nella stessa pagina utilizzando questo anteprima invece di aprire nuove schede",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "Come stiamo andando?"
+  },
+  "fdbkCareToShare": {
+    "message": "Contento che ti piaccia! Puoi aiutarci a condividere il ❤️?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "Come possiamo migliorare?"
+  },
+  "fdbkThanks": {
+    "message": "Grazie per il feedback!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Valuta su webstore"
+  },
+  "fdbkNoResponse": {
+    "message": "NO"
+  },
+  "fdbkSumbit": {
+    "message": "Invia"
+  },
+  "reportAnIssue": {
+    "message": "Segnala un problema",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "Mostra demo",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "Impostazioni aggiornate correttamente"
+  },
+  "optionBlockedSites": {
+    "message": "Disabilitato sui siti Web"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "L'estensione non verrà eseguita su questi siti. Immettere un sito per riga."
   }
 }

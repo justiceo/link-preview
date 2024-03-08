@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "См. Предварительные просмотра ссылок и мгновенно выполняет поиск на той же странице, используя этот предварительный просмотр вместо открытия новых вкладок",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "Как у нас дела?"
+  },
+  "fdbkCareToShare": {
+    "message": "Рад, что вам это нравится! Вы можете помочь нам поделиться ❤?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "Как мы можем улучшить?"
+  },
+  "fdbkThanks": {
+    "message": "Спасибо за ответ!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Оценка в веб -магазине"
+  },
+  "fdbkNoResponse": {
+    "message": "Нет"
+  },
+  "fdbkSumbit": {
+    "message": "Представлять на рассмотрение"
+  },
+  "reportAnIssue": {
+    "message": "Сообщить о проблеме",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "Показать демонстрацию",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "Успешно обновленные настройки"
+  },
+  "optionBlockedSites": {
+    "message": "Отключено на веб -сайтах"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "Расширение не будет работать на этих сайтах. Введите один сайт на строку."
   }
 }

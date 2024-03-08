@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "링크 미리보기를보고 새 탭을 열지 않고이 미리보기를 사용하여 같은 페이지에서 검색을 즉시 수행합니다.",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "일은 잘되고 있니?"
+  },
+  "fdbkCareToShare": {
+    "message": "당신이 그것을 좋아해서 다행입니다! 우리가 us️를 공유하도록 도와 줄 수 있습니까?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "우리는 어떻게 개선 할 수 있습니까?"
+  },
+  "fdbkThanks": {
+    "message": "의견을 보내 주셔서 감사합니다!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Webstore의 요금"
+  },
+  "fdbkNoResponse": {
+    "message": "아니요"
+  },
+  "fdbkSumbit": {
+    "message": "제출하다"
+  },
+  "reportAnIssue": {
+    "message": "문제를보고하십시오",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "데모를 보여주십시오",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "설정을 성공적으로 업데이트했습니다"
+  },
+  "optionBlockedSites": {
+    "message": "웹 사이트에서 비활성화"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "이 사이트에서 확장이 실행되지 않습니다. 줄 당 한 사이트를 입력하십시오."
   }
 }

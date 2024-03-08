@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "Δείτε τις προεπισκοπήσεις των συνδέσμων και εκτελεί αμέσως αναζητήσεις στην ίδια σελίδα χρησιμοποιώντας αυτόν τον προεπισκόπηση αντί να ανοίξει νέες καρτέλες",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "ΠΩΣ ΤΑ ΠΑΜΕ?"
+  },
+  "fdbkCareToShare": {
+    "message": "Χαίρομαι που σου αρέσει! Μπορείτε να μας βοηθήσετε να μοιραστούμε το ❤्;"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "Πώς μπορούμε να βελτιώσουμε;"
+  },
+  "fdbkThanks": {
+    "message": "Ευχαριστώ για τα σχόλια!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Βαθμολογία στο webstore"
+  },
+  "fdbkNoResponse": {
+    "message": "Οχι"
+  },
+  "fdbkSumbit": {
+    "message": "υποβάλλουν"
+  },
+  "reportAnIssue": {
+    "message": "Αναφέρετε ένα πρόβλημα",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "Επίδειξη επίδειξης",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "Ενημερωμένες ρυθμίσεις με επιτυχία"
+  },
+  "optionBlockedSites": {
+    "message": "Απενεργοποιημένη σε ιστότοπους"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "Η επέκταση δεν θα εκτελεστεί σε αυτούς τους ιστότοπους. Εισαγάγετε έναν ιστότοπο ανά γραμμή."
   }
 }

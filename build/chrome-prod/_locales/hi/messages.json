@@ -8,7 +8,45 @@
     "description": "The short-version name of the extension name"
   },
   "appDesc": {
-    "message": "लिंक के पूर्वावलोकन देखें और नए टैब खोलने के बजाय इस पूर्वावलोकनकर्ता का उपयोग करके एक ही पृष्ठ पर तुरंत खोज करते हैं",
+    "message": "लिंक के पूर्वावलोकन देखें और नए टैब खोलने के बजाय इस पूर्वावलोकनकर्ता का उपयोग करके उसी पृष्ठ पर तुरंत खोज करते हैं",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "हम कैसे हैं?"
+  },
+  "fdbkCareToShare": {
+    "message": "खुशी है कि यह आपको पसंद है! क्या आप हमें ❤ साझा करने में मदद कर सकते हैं?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "हम कैसे सुधार सकते हैं?"
+  },
+  "fdbkThanks": {
+    "message": "प्रतिक्रिया के लिए धन्यवाद!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "वेबस्टोर पर दर"
+  },
+  "fdbkNoResponse": {
+    "message": "नहीं"
+  },
+  "fdbkSumbit": {
+    "message": "जमा करना"
+  },
+  "reportAnIssue": {
+    "message": "मामले की रिपोर्ट करें",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "डेमो दिखाओ",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "सफलतापूर्वक अद्यतन सेटिंग्स"
+  },
+  "optionBlockedSites": {
+    "message": "वेबसाइटों पर अक्षम"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "इन साइटों पर एक्सटेंशन नहीं चलेगा। प्रति पंक्ति एक साइट दर्ज करें।"
   }
 }

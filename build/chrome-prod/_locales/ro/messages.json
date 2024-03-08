@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "Consultați previzualizările linkurilor și efectuați instantaneu căutări pe aceeași pagină folosind acest previzualizare în loc să deschideți noi file",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "Ce mai facem?"
+  },
+  "fdbkCareToShare": {
+    "message": "Bucur că vă place! Ne puteți ajuta să împărtășim ❤️?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "Cum ne putem îmbunătăți?"
+  },
+  "fdbkThanks": {
+    "message": "Multumesc pentru feedback!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Evaluarea pe magazinul web"
+  },
+  "fdbkNoResponse": {
+    "message": "Nu"
+  },
+  "fdbkSumbit": {
+    "message": "Trimite"
+  },
+  "reportAnIssue": {
+    "message": "Raportează o problemă",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "Arată demo",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "Setări actualizate cu succes"
+  },
+  "optionBlockedSites": {
+    "message": "Dezactivat pe site -uri web"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "Extensia nu va rula pe aceste site -uri. Introduceți un site pe linie."
   }
 }

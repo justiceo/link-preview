@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "پیش نمایش پیوندها را مشاهده کنید و فوراً در همان صفحه جستجو را با استفاده از این پیش نمایش به جای باز کردن زبانه های جدید انجام دهید",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "حال ما چطور است؟"
+  },
+  "fdbkCareToShare": {
+    "message": "خوشحالم که دوستش داشتی! آیا می توانید به ما در اشتراک گذاری ❤ کمک کنید؟"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "چگونه می توانیم پیشرفت کنیم؟"
+  },
+  "fdbkThanks": {
+    "message": "از نظر شما متشکریم!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "نرخ در WebStore"
+  },
+  "fdbkNoResponse": {
+    "message": "هیچ"
+  },
+  "fdbkSumbit": {
+    "message": "ارسال"
+  },
+  "reportAnIssue": {
+    "message": "گزارش یک موضوع",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "نمایش نسخه ی نمایشی",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "تنظیمات با موفقیت به روز شده"
+  },
+  "optionBlockedSites": {
+    "message": "غیرفعال در وب سایت ها"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "پسوند در این سایت ها اجرا نمی شود. در هر خط یک سایت را وارد کنید."
   }
 }

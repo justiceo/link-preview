@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "リンクのプレビューを参照し、新しいタブを開く代わりにこのプレビューターを使用して同じページで検索を即座に実行する",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "私たちはどのようにやっています？"
+  },
+  "fdbkCareToShare": {
+    "message": "気に入ってくれてうれしいです！ ❤️を共有するのを手伝ってもらえますか？"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "どうすれば改善できますか？"
+  },
+  "fdbkThanks": {
+    "message": "フィードバックをお寄せいただきありがとうございます！"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Webstoreのレート"
+  },
+  "fdbkNoResponse": {
+    "message": "いいえ"
+  },
+  "fdbkSumbit": {
+    "message": "提出する"
+  },
+  "reportAnIssue": {
+    "message": "問題を報告する",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "デモを表示します",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "正常に更新された設定"
+  },
+  "optionBlockedSites": {
+    "message": "Webサイトで無効になっています"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "これらのサイトでは拡張機能が実行されません。 1行ごとに1つのサイトを入力します。"
   }
 }

@@ -8,7 +8,45 @@
     "description": "The short-version name of the extension name"
   },
   "appDesc": {
-    "message": "Див. Попередній перегляд посилань та миттєво виконує пошук на одній сторінці за допомогою цього попереднього перегляду замість того, щоб відкривати нові вкладки",
+    "message": "Див. Попередній перегляд посилань та миттєво виконує пошук на одній сторінці, використовуючи цей попередній перегляд, а не відкривати нові вкладки",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "Як у нас справи?"
+  },
+  "fdbkCareToShare": {
+    "message": "Радий, що тобі подобається! Чи можете ви допомогти нам поділитися ❤?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "Як ми можемо вдосконалитись?"
+  },
+  "fdbkThanks": {
+    "message": "Дякую за відгук!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Оцініть на веб -магазині"
+  },
+  "fdbkNoResponse": {
+    "message": "Немає"
+  },
+  "fdbkSumbit": {
+    "message": "Подавати"
+  },
+  "reportAnIssue": {
+    "message": "Повідомте про питання",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "Показати демонстрацію",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "Успішно оновлені налаштування"
+  },
+  "optionBlockedSites": {
+    "message": "Відключено на веб -сайтах"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "Розширення не буде працювати на цих сайтах. Введіть один сайт на рядок."
   }
 }

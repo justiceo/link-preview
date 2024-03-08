@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "Podívejte se na náhledy odkazů a okamžitě provádí vyhledávání na stejné stránce pomocí tohoto náhledu namísto otevření nových karet",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "Jak se máme?"
+  },
+  "fdbkCareToShare": {
+    "message": "Jsem rád že se ti líbí! Můžete nám pomoci sdílet ❤?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "Jak se můžeme zlepšit?"
+  },
+  "fdbkThanks": {
+    "message": "Děkuji za zpětnou vazbu!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Sazba na webovémstore"
+  },
+  "fdbkNoResponse": {
+    "message": "Ne"
+  },
+  "fdbkSumbit": {
+    "message": "Předložit"
+  },
+  "reportAnIssue": {
+    "message": "Nahlásit problém",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "Zobrazit demo",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "Úspěšně aktualizovaná nastavení"
+  },
+  "optionBlockedSites": {
+    "message": "Zakázáno na webových stránkách"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "Prodloužení nebude na těchto stránkách spuštěno. Zadejte jeden web na řádek."
   }
 }

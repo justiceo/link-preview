@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "Pozrite si ukážky odkazov a okamžite vykonávajú vyhľadávanie na tej istej stránke pomocou tohto ukážky namiesto otvárania nových kariet",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "Ako sa máme?"
+  },
+  "fdbkCareToShare": {
+    "message": "Som rád že sa ti to páči! Môžete nám pomôcť zdieľať ❤?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "Ako sa môžeme vylepšiť?"
+  },
+  "fdbkThanks": {
+    "message": "Ďakujem za spätnú väzbu!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Hodnotiť na webstore"
+  },
+  "fdbkNoResponse": {
+    "message": "Nie"
+  },
+  "fdbkSumbit": {
+    "message": "Predložiť"
+  },
+  "reportAnIssue": {
+    "message": "Nahlásiť problém",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "Ukázať",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "Úspešne aktualizované nastavenia"
+  },
+  "optionBlockedSites": {
+    "message": "Zakázané na webových stránkach"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "Rozšírenie nebude bežať na týchto stránkach. Zadajte jednu stránku na riadok."
   }
 }

@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "লিঙ্কগুলির পূর্বরূপ দেখুন এবং তাত্ক্ষণিকভাবে নতুন ট্যাবগুলি খোলার পরিবর্তে এই পূর্বরূপ ব্যবহার করে একই পৃষ্ঠায় অনুসন্ধানগুলি সম্পাদন করে",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "আমরা কেমন করছি?"
+  },
+  "fdbkCareToShare": {
+    "message": "আমি খুশি তুমি এটা পছন্দ করেছো! আপনি কি আমাদের ❤ ভাগ করতে সহায়তা করতে পারেন?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "আমরা কিভাবে উন্নত করতে পারি?"
+  },
+  "fdbkThanks": {
+    "message": "সাহায্য করার জন্য ধন্যবাদ!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "ওয়েবস্টোরে হার"
+  },
+  "fdbkNoResponse": {
+    "message": "না"
+  },
+  "fdbkSumbit": {
+    "message": "জমা দিন"
+  },
+  "reportAnIssue": {
+    "message": "একটি সমস্যা রিপোর্ট",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "ডেমো দেখান",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "সফলভাবে আপডেট করা সেটিংস"
+  },
+  "optionBlockedSites": {
+    "message": "ওয়েবসাইটে অক্ষম"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "এই সাইটগুলিতে এক্সটেনশন চলবে না। প্রতি লাইনে একটি সাইট লিখুন।"
   }
 }

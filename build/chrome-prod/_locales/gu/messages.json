@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "લિંક્સના પૂર્વાવલોકનો જુઓ અને નવા ટ s બ્સ ખોલવાને બદલે આ પૂર્વાવલોકનનો ઉપયોગ કરીને તરત જ તે જ પૃષ્ઠ પર શોધ કરે છે",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "આપણે કેવી રીતે કરી રહ્યા છીએ?"
+  },
+  "fdbkCareToShare": {
+    "message": "તમને ગમ્યું એના થી હું પ્રસન્ન છું! તમે અમને શેર કરવામાં મદદ કરી શકો છો?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "આપણે કેવી રીતે સુધારી શકીએ?"
+  },
+  "fdbkThanks": {
+    "message": "પ્રતિસાદ માટે આભાર!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "વેબ સ્ટોર પર દર"
+  },
+  "fdbkNoResponse": {
+    "message": "કોઈ"
+  },
+  "fdbkSumbit": {
+    "message": "રજૂ કરવું"
+  },
+  "reportAnIssue": {
+    "message": "એક મુદ્દો જાણ કરો",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "ડેમો બતાવો",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "સફળતાપૂર્વક અપડેટ સેટિંગ્સ"
+  },
+  "optionBlockedSites": {
+    "message": "વેબસાઇટ્સ પર અક્ષમ"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "આ સાઇટ્સ પર એક્સ્ટેંશન ચાલશે નહીં. લાઇન દીઠ એક સાઇટ દાખલ કરો."
   }
 }

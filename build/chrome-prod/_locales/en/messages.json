@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "See previews of links and instantly performs searches on the same page using this previewer instead of opening new tabs",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "How are we doing?"
+  },
+  "fdbkCareToShare": {
+    "message": "Glad you like it! Can you help us share the ❤️?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "How can we improve?"
+  },
+  "fdbkThanks": {
+    "message": "Thanks for the feedback!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Rate on Webstore"
+  },
+  "fdbkNoResponse": {
+    "message": "No"
+  },
+  "fdbkSumbit": {
+    "message": "Submit"
+  },
+  "reportAnIssue": {
+    "message": "Report an issue",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "Show demo",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "Successfully updated settings"
+  },
+  "optionBlockedSites": {
+    "message": "Disabled on Websites"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "Extension will not run on these sites. Enter one site per line."
   }
 }

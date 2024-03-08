@@ -8,7 +8,45 @@
     "description": "The short-version name of the extension name"
   },
   "appDesc": {
-    "message": "Вижте Визуализации на връзки и незабавно извършва търсения на същата страница, използвайки този визуатор, вместо да отваряте нови раздели",
+    "message": "Вижте визуализации на връзки и незабавно извършват търсения на същата страница, използвайки този визуатор, вместо да отваряте нови раздели",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "Как сме?"
+  },
+  "fdbkCareToShare": {
+    "message": "Радвам се, че ти харесва! Можете ли да ни помогнете да споделим ❤?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "Как можем да се подобрим?"
+  },
+  "fdbkThanks": {
+    "message": "Благодаря за обратната връзка!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Оценете на WebStore"
+  },
+  "fdbkNoResponse": {
+    "message": "Не"
+  },
+  "fdbkSumbit": {
+    "message": "Изпращане"
+  },
+  "reportAnIssue": {
+    "message": "Докладвайте проблем",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "Покажи демонстрация",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "Успешно актуализирани настройки"
+  },
+  "optionBlockedSites": {
+    "message": "Деактивирани на уебсайтове"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "Разширението няма да работи на тези сайтове. Въведете един сайт на ред."
   }
 }

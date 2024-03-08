@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "Consulteu les previsualitzacions dels enllaços i realitzen de forma instantània les cerques a la mateixa pàgina mitjançant aquest previsualitzador en lloc d’obrir noves pestanyes",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "Com estem?"
+  },
+  "fdbkCareToShare": {
+    "message": "Encantat de que t'agradi! Ens podeu ajudar a compartir el ❤️?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "Com podem millorar?"
+  },
+  "fdbkThanks": {
+    "message": "Gràcies pels comentaris!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Valora a la botiga web"
+  },
+  "fdbkNoResponse": {
+    "message": "No"
+  },
+  "fdbkSumbit": {
+    "message": "Presentar"
+  },
+  "reportAnIssue": {
+    "message": "Informeu d’un problema",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "Demostració d'espectacle",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "Configuració actualitzada amb èxit"
+  },
+  "optionBlockedSites": {
+    "message": "Desactivat en llocs web"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "L’extensió no s’executarà en aquests llocs. Introduïu un lloc per línia."
   }
 }

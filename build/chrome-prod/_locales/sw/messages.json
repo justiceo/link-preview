@@ -10,5 +10,43 @@
   "appDesc": {
     "message": "Tazama hakikisho la viungo na hufanya utaftaji mara moja kwenye ukurasa huo huo ukitumia kiidhinishaji hiki badala ya kufungua tabo mpya",
     "description": "A description of its function"
+  },
+  "fdbkHowAreWeDoing": {
+    "message": "Tunaendeleaje?"
+  },
+  "fdbkCareToShare": {
+    "message": "Nimefurahi kuipenda! Je! Unaweza kutusaidia kushiriki ❤️?"
+  },
+  "fdbkHowCanWeImprove": {
+    "message": "Tunawezaje kuboresha?"
+  },
+  "fdbkThanks": {
+    "message": "Asante kwa maoni!"
+  },
+  "fdbkRateOnWebstore": {
+    "message": "Kiwango kwenye duka la wavuti"
+  },
+  "fdbkNoResponse": {
+    "message": "Hapana"
+  },
+  "fdbkSumbit": {
+    "message": "Wasilisha"
+  },
+  "reportAnIssue": {
+    "message": "Ripoti suala",
+    "description": "Button text for reporting an issue"
+  },
+  "showDemo": {
+    "message": "Onyesha demo",
+    "description": "Button text for showing demo"
+  },
+  "optionsSaveSuccess": {
+    "message": "Mipangilio iliyosasishwa kwa mafanikio"
+  },
+  "optionBlockedSites": {
+    "message": "Walemavu kwenye wavuti"
+  },
+  "optionBlockedSitesDesc": {
+    "message": "Ugani hautaendesha kwenye tovuti hizi. Ingiza tovuti moja kwa kila mstari."
   }
 }

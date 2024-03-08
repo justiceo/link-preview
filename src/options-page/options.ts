@@ -70,6 +70,7 @@ const configOptions: Config[] = [
     description:
       "Displays the view in Chrome Side Panel instead of a floating box.",
     default_value: false,
+    dev_only: true,
   },
   {
     id: "blocked-sites",

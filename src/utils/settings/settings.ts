@@ -22,8 +22,11 @@ export interface Config {
   options?: SelectOption[];
   min?: string;
   max?: string;
+
+  dev_only?: boolean;
 }
 
+declare var IS_DEV_BUILD: boolean;
 export class SettingsUI extends HTMLElement {
   configItems: Config[];
   template = new DOMParser().parseFromString(formHtml, "text/html");
@@ -77,7 +80,10 @@ export class SettingsUI extends HTMLElement {
     // Generate the form from template.
     const output = document.createElement("ul");
     output.className = "list-group";
-    options.forEach((o) => output.appendChild(this.cloneInput(o)));
+    output.setAttribute("data-bs-theme", "light");
+    options
+      .filter((o) => !o.dev_only || (o.dev_only && IS_DEV_BUILD))
+      .forEach((o) => output.appendChild(this.cloneInput(o)));
     this.shadowRoot?.append(output);
   }
 
@@ -118,15 +124,18 @@ export class SettingsUI extends HTMLElement {
     if (config.type === "range") {
       actualInput.min = config.min ?? "0";
       actualInput.max = config.max ?? "5";
-      actualInput.addEventListener("input", (e: Event) =>
-        this.saveChange(config, (e.target as HTMLInputElement).value),
-      );
+      actualInput.step = config.step ?? "1";
+      actualInput.nextElementSibling!.innerHTML = actualInput.value;
+      actualInput.addEventListener("input", (e: Event) => {
+        this.saveChange(config, (e.target as HTMLInputElement).value);
+        actualInput.nextElementSibling!.innerHTML = actualInput.value;
+      });
     }
 
     if (config.type === "select") {
       config.options?.forEach((o) => {
         (actualInput as unknown as HTMLSelectElement).add(
-          new Option(o.text, o.id, o.id === config.value),
+          new Option(i18n(o.text), o.id, o.id === config.value),
         );
       });
       (actualInput as unknown as HTMLSelectElement).selectedIndex =
@@ -173,6 +182,8 @@ export class SettingsUI extends HTMLElement {
     let toastEl = this.shadowRoot?.querySelector(".toast-container");
     if (!toastEl) {
       toastEl = this.template.querySelector(".toast-container")!;
+      toastEl.querySelector(".toast-body span")!.innerHTML =
+        i18n("optionsSaveSuccess");
       this.shadowRoot?.append(toastEl);
     }
     const toast = new Toast(toastEl.querySelector("#liveToast"), {

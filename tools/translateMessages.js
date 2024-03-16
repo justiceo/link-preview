@@ -63,62 +63,69 @@ const targetLocales = [
   "zh-TW",
 ];
 
-const getLocaleFile = (locale) =>
-  `${localesDir}/${locale.replace("-", "_")}/${localeFilename}`;
+// Function to get the path to a locale file
+function getLocaleFile(locale) {
+  return `${localesDir}/${locale.replace("-", "_")}/${localeFilename}`;
+}
 
-// Reads the contents of source locale file into a variable.
-let rawdata = fs.readFileSync(getLocaleFile(sourceLocale));
-const sourceLocaleData = JSON.parse(rawdata);
-console.log("Successfully parsed ", getLocaleFile(sourceLocale));
+// Function to read and parse the source locale data
+function readSourceLocaleData() {
+  const rawdata = fs.readFileSync(getLocaleFile(sourceLocale));
+  console.log("Successfully parsed ", getLocaleFile(sourceLocale));
+  return JSON.parse(rawdata);
+}
 
-// Create a sliced version of the locale messages for batch translation requests.
-// We use object input for batch request and get object responses.
-const messageRequest = {};
-const messageKeys = Object.keys(sourceLocaleData);
-messageKeys.forEach((key) => {
-  messageRequest[key] = sourceLocaleData[key]["message"];
-});
-console.log("Created messageRequest", messageRequest);
-
-// Use messageRequest request to generate translation for each targetLocale
-let futures = [];
+// Function to ensure directory existence
 function ensureDirectoryExistence(filePath) {
-  var dirname = path.dirname(filePath);
+  const dirname = path.dirname(filePath);
   if (fs.existsSync(dirname)) {
-    return true;
+    return;
   }
   ensureDirectoryExistence(dirname);
   fs.mkdirSync(dirname);
 }
-function applyTranslation(targetLocale, localeData) {
-  // Make a copy of masterJson and apply the translation to it.
+
+// Function to apply translation to locale data and save it
+function applyTranslation(targetLocale, localeData, sourceLocaleData) {
   const targetLocaleClone = structuredClone(sourceLocaleData);
-  messageKeys.forEach((key) => {
+  Object.keys(localeData).forEach((key) => {
     targetLocaleClone[key]["message"] = localeData[key]["text"];
   });
 
-  // Save the new locale to a file.
   ensureDirectoryExistence(getLocaleFile(targetLocale));
   const formattedData = JSON.stringify(targetLocaleClone, null, 4);
   console.log(getLocaleFile(targetLocale), ":\n", formattedData, "\n");
-  fs.writeFileSync(getLocaleFile(targetLocale), formattedData, {
-    flag: "w",
-    overwrite: true,
-  });
+  fs.writeFileSync(getLocaleFile(targetLocale), formattedData, { flag: "w" });
 }
-targetLocales.forEach((targetLocale) => {
-  const translateFuture = translate(messageRequest, {
-    from: sourceLocale,
-    to: targetLocale,
-  }).then(
-    (res) => applyTranslation(targetLocale, res),
-    (err) => console.error("Error fetching translation", err),
-  );
-  futures.push(translateFuture);
-});
 
-// Wait for all translate tasks to complete and log status.
-Promise.all(futures).then(
-  () => console.log("All translate futures have resolved"),
-  (err) => console.error("Some futures failed: ", err),
-);
+// Main function to generate translations
+async function generateTranslations() {
+  const sourceLocaleData = readSourceLocaleData();
+  const messageRequest = Object.keys(sourceLocaleData).reduce((acc, key) => {
+    acc[key] = sourceLocaleData[key]["message"];
+    return acc;
+  }, {});
+
+  console.log("Created messageRequest", messageRequest);
+
+  try {
+    await Promise.all(
+      targetLocales.map(async (targetLocale) => {
+        if (targetLocale === sourceLocale) return;
+
+        const res = await translate(messageRequest, {
+          from: sourceLocale,
+          to: targetLocale,
+        });
+        applyTranslation(targetLocale, res, sourceLocaleData);
+      }),
+    );
+
+    console.log("All translate futures have resolved");
+  } catch (err) {
+    console.error("Some futures failed: ", err);
+  }
+}
+
+// Invoke the main function
+generateTranslations();

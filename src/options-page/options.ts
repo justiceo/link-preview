@@ -2,7 +2,7 @@ import "../content-script/content-script"; // To inject popup for dev mode.
 import { Config, SettingsUI } from "../utils/settings/settings";
 import "./options.css";
 import manifest from "../manifest.json";
-import { i18n } from "../utils/i18n";
+import { i18n, translateMarkup } from "../utils/i18n";
 
 const configOptions: Config[] = [
   {
@@ -160,4 +160,5 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.origin,
     );
   });
+  translateMarkup(document.body);
 });

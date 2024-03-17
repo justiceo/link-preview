@@ -34,11 +34,11 @@ export const i18n = (key: string): string => {
   }
 
   // Map the plain string to the key used in the messages.json file
-  key = key.startsWith("@") ? key : encodeString(key);
+  const encodedKey = key.startsWith("@") ? key : encodeString(key);
 
   // chrome.i18n may not be available in page context and returns "" for missing keys.
-  if (chrome?.i18n && chrome.i18n.getMessage(key) !== "") {
-    return chrome.i18n.getMessage(key);
+  if (chrome?.i18n && chrome.i18n.getMessage(encodedKey) !== "") {
+    return chrome.i18n.getMessage(encodedKey);
   }
   logger.warn(
     "chrome.i18n is not available in the current context, falling back to en-US",
@@ -46,11 +46,23 @@ export const i18n = (key: string): string => {
 
   Object.keys(enMessage).forEach((k) => {});
   for (const [translationKey, translatedText] of Object.entries(enMessage)) {
-    if (translationKey === key) {
+    if (translationKey === encodedKey) {
       return translatedText["message"];
     }
   }
 
   logger.error("No translation available for key:", key);
   return key;
+};
+
+/* Translate the markup by replacing the innerHTML of the elements with i18n attributes */
+export const translateMarkup = (markup: HTMLElement) => {
+  const elements = markup.querySelectorAll("[i18n]");
+  elements.forEach((element) => {
+    let key = element.getAttribute("i18n");
+    if (!key) {
+      key = element.innerHTML.trim();
+    }
+    element.innerHTML = i18n(key);
+  });
 };

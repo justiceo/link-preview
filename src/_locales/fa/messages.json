@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "پیش نمایش جستجو و پیوند",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "پیش نمایش پیوند",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "پیش نمایش پیوندها را مشاهده کنید و فوراً در همان صفحه جستجو را با استفاده از این پیش نمایش به جای باز کردن زبانه های جدید انجام دهید",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "حال ما چطور است؟"
+  "@testMarkup": {
+    "message": "<div> <p> سلام جهان </p> این زبان <strong> </strong> وب است </div>"
   },
-  "fdbkCareToShare": {
-    "message": "خوشحالم که دوستش داشتی! آیا می توانید به ما در اشتراک گذاری ❤ کمک کنید؟"
+  "Search engine": {
+    "message": "موتور جستجو"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "چگونه می توانیم پیشرفت کنیم؟"
+  "The search engine that would be used for inline search previews.": {
+    "message": "موتور جستجو که برای پیش نمایش های جستجوی درون خطی استفاده می شود."
   },
-  "fdbkThanks": {
-    "message": "از نظر شما متشکریم!"
+  "Google Search": {
+    "message": "جستجوی گوگل"
   },
-  "fdbkRateOnWebstore": {
-    "message": "نرخ در WebStore"
+  "Bing Search": {
+    "message": "جستجوی بینگ"
   },
-  "fdbkNoResponse": {
-    "message": "هیچ"
+  "Yahoo Search": {
+    "message": "جستجوی یاهو"
   },
-  "fdbkSumbit": {
-    "message": "ارسال"
+  "Baidu Search": {
+    "message": "جستجو بایدو"
   },
-  "reportAnIssue": {
-    "message": "گزارش یک موضوع",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "جستجوی Yandex"
   },
-  "showDemo": {
-    "message": "نمایش نسخه ی نمایشی",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "عرض پیش نمایش (٪)"
   },
-  "optionsSaveSuccess": {
-    "message": "تنظیمات با موفقیت به روز شده"
+  "The width of the preview panel relative to the page.": {
+    "message": "عرض پانل پیش نمایش نسبت به صفحه."
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "ارتفاع پیش نمایش (٪)"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "ارتفاع پانل پیش نمایش نسبت به صفحه."
+  },
+  "Panel Position": {
+    "message": "موقعیت تابلو"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "سمت صفحه ای که در آن می توانید پیش نمایش را نمایش دهید."
+  },
+  "Right side": {
+    "message": "سمت راست"
+  },
+  "Left side": {
+    "message": "سمت چپ"
+  },
+  "Close on Escape Key": {
+    "message": "بستن روی کلید فرار"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "برای بستن پانل پیش نمایش از کلید ESC (فرار) استفاده کنید."
+  },
+  "Automatically Hide Previews": {
+    "message": "به طور خودکار پیش نمایش ها را مخفی کنید"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "پنل پیش نمایش را هنگام پیمایش یا تعامل با صفحه اصلی پنهان می کند."
+  },
+  "Preview in Side Panel": {
+    "message": "پیش نمایش در پنل جانبی"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "به جای یک جعبه شناور ، نمای را در پانل جانبی کروم نمایش می دهد."
+  },
+  "Preview-on-Hover Delay": {
+    "message": "تأخیر پیش نمایش-"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "هنگامی که پیش نمایش خودکار در Hover فعال می شود ، این تأخیر قبل از نشان دادن پیش نمایش است."
+  },
+  "[Advanced] Force Preview": {
+    "message": "[پیشرفته] پیش نمایش نیرو"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "برای وب سایتهایی که ** واقعاً ** نمی خواهند پیش نمایش شوند (به عنوان مثال stackoverflow.com) این پیش نمایش را مجبور می کند. Nerd Alert: این یک بوستر قاب است."
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[پیشرفته] ناشناس گوگل را غیرفعال کنید"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "به طور پیش فرض ، نسخه جستجوی Google مورد استفاده همیشه به دلایل حفظ حریم خصوصی و امنیتی امضا می شود. اگرچه این ممکن است منجر به دیدن همیشه ورود به سیستم شود."
+  },
+  "Disable Previews on this site": {
+    "message": "پیش نمایش ها را در این سایت غیرفعال کنید"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "اطلاعات جزئیات در مورد کادر انتخاب در اینجا."
+  },
+  "Disabled on Websites": {
     "message": "غیرفعال در وب سایت ها"
   },
-  "optionBlockedSitesDesc": {
-    "message": "پسوند در این سایت ها اجرا نمی شود. در هر خط یک سایت را وارد کنید."
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "پسوند در این سایت ها اجرا نمی شود ، می توانید با اضافه کردن به این لیست ، یک سایت را غیرفعال کنید."
+  },
+  "Successfully updated settings": {
+    "message": "تنظیمات با موفقیت به روز شده"
   }
 }

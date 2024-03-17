@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Keresés és link előnézete",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Link előnézetek",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Lásd a linkek előnézeteit, és azonnal végzi a kereséseket ugyanazon az oldalon, az új lapok megnyitása helyett az előnéző segítségével",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Hogy vagyunk?"
+  "@testMarkup": {
+    "message": "<div> <p> Hello World </p> Ez a web </strong> nyelv </strong> nyelv </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Örülök, hogy tetszik! Tudna segíteni nekünk a ❤️?"
+  "Search engine": {
+    "message": "Keresőmotor"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Hogyan javulhatunk?"
+  "The search engine that would be used for inline search previews.": {
+    "message": "A keresőmotor, amelyet az inline keresési előnézetekhez használnának."
   },
-  "fdbkThanks": {
-    "message": "Köszönöm a visszajelzést!"
+  "Google Search": {
+    "message": "Google kereső"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Értékeld a webáruházat"
+  "Bing Search": {
+    "message": "Bing -keresés"
   },
-  "fdbkNoResponse": {
-    "message": "Nem"
+  "Yahoo Search": {
+    "message": "Yahoo keresés"
   },
-  "fdbkSumbit": {
-    "message": "Beküldés"
+  "Baidu Search": {
+    "message": "Baidu keresés"
   },
-  "reportAnIssue": {
-    "message": "Jelentsen egy problémát",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "Yandex keresés"
   },
-  "showDemo": {
-    "message": "Bemutató bemutató",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "Az előnézeti szélesség (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Sikeresen frissített beállítások"
+  "The width of the preview panel relative to the page.": {
+    "message": "Az előnézeti panel szélessége az oldalhoz viszonyítva."
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "Előnézeti magasság (%)"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "Az előnézeti panel magassága az oldalhoz viszonyítva."
+  },
+  "Panel Position": {
+    "message": "Panel helyzet"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "Az oldal oldala, amelyben megjelenítheti az előnézetet."
+  },
+  "Right side": {
+    "message": "Jobb oldal"
+  },
+  "Left side": {
+    "message": "Bal oldal"
+  },
+  "Close on Escape Key": {
+    "message": "Bezárja a menekülési kulcsot"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "Használja az ESC (Escape) gombot az előnézeti panel bezárásához."
+  },
+  "Automatically Hide Previews": {
+    "message": "Az előnézetek automatikus elrejtése"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "Elrejti az előnézeti panelt, amikor görget, vagy kölcsönhatásba lép a főoldalt."
+  },
+  "Preview in Side Panel": {
+    "message": "Előnézet az oldalsó panelen"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "A kilátást a Chrome oldalsó panelen jeleníti meg a lebegő doboz helyett."
+  },
+  "Preview-on-Hover Delay": {
+    "message": "Az ELLOVER KÉRDÉSI KÉRDÉSE"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "Ha az automatikus előnézet a lebegőben engedélyezve van, ez a késleltetés az előnézet megjelenése előtt."
+  },
+  "[Advanced] Force Preview": {
+    "message": "[Advanced] Force Preview"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "Olyan webhelyeknél, amelyek ** valóban ** nem akarják megtekinteni (pl. Stackoverflow.com) ez egy előnézetet erőltet. Nerd figyelmeztetés: Ez egy vázlatos buster."
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[Advanced] Az Incognito Google letiltása"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "Alapértelmezés szerint a használt Google-keresés verzióját mindig feliratkozik magánélet és biztonsági okokból. Bár ez azt eredményezheti, hogy mindig látja a bejelentkezési utasításokat."
+  },
+  "Disable Previews on this site": {
+    "message": "Tiltsa le az előnézeteket ezen a webhelyen"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "Az itt található jelölőnégyzetről szóló részletek."
+  },
+  "Disabled on Websites": {
     "message": "Letiltva a webhelyeken"
   },
-  "optionBlockedSitesDesc": {
-    "message": "A kiterjesztés nem fog futni ezeken a webhelyeken. Írjon be egy helyenként egy webhelyet."
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "A kiterjesztés nem fog futni ezeken a webhelyeken, letilthatja a webhelyet, ha hozzáadja a listát."
+  },
+  "Successfully updated settings": {
+    "message": "Sikeresen frissített beállítások"
   }
 }

@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Tafuta na hakikisho la Kiungo",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Hakikisho la kiunga",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Tazama hakikisho la viungo na hufanya utaftaji mara moja kwenye ukurasa huo huo ukitumia kiidhinishaji hiki badala ya kufungua tabo mpya",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Tunaendeleaje?"
+  "@testMarkup": {
+    "message": "<div> <p> Hello World </p> Hii ndio lugha ya <strong> </strong> ya wavuti </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Nimefurahi kuipenda! Je! Unaweza kutusaidia kushiriki ❤️?"
+  "Search engine": {
+    "message": "Injini ya utaftaji"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Tunawezaje kuboresha?"
+  "The search engine that would be used for inline search previews.": {
+    "message": "Injini ya utaftaji ambayo itatumika kwa hakikisho za utaftaji wa ndani."
   },
-  "fdbkThanks": {
-    "message": "Asante kwa maoni!"
+  "Google Search": {
+    "message": "Utaftaji wa Google"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Kiwango kwenye duka la wavuti"
+  "Bing Search": {
+    "message": "Utafutaji wa Bing"
   },
-  "fdbkNoResponse": {
-    "message": "Hapana"
+  "Yahoo Search": {
+    "message": "Utaftaji wa Yahoo"
   },
-  "fdbkSumbit": {
-    "message": "Wasilisha"
+  "Baidu Search": {
+    "message": "Utaftaji wa Baidu"
   },
-  "reportAnIssue": {
-    "message": "Ripoti suala",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "Utaftaji wa Yandex"
   },
-  "showDemo": {
-    "message": "Onyesha demo",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "Hakiki upana wa hakiki (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Mipangilio iliyosasishwa kwa mafanikio"
+  "The width of the preview panel relative to the page.": {
+    "message": "Upana wa jopo la hakikisho la jamaa na ukurasa."
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "Hakiki urefu (%)"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "Urefu wa jopo la hakikisho jamaa na ukurasa."
+  },
+  "Panel Position": {
+    "message": "Msimamo wa jopo"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "Upande wa ukurasa ambao kuonyesha hakiki."
+  },
+  "Right side": {
+    "message": "Upande wa kulia"
+  },
+  "Left side": {
+    "message": "Upande wa kushoto"
+  },
+  "Close on Escape Key": {
+    "message": "Karibu kwenye ufunguo wa kutoroka"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "Tumia kitufe cha ESC (kutoroka) kufunga jopo la hakiki."
+  },
+  "Automatically Hide Previews": {
+    "message": "Hakiki hakiki hakiki"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "Huficha paneli ya hakiki wakati unapoenda mbali au kuingiliana na ukurasa kuu."
+  },
+  "Preview in Side Panel": {
+    "message": "Hakiki katika jopo la upande"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "Inaonyesha mtazamo katika jopo la upande wa Chrome badala ya sanduku la kuelea."
+  },
+  "Preview-on-Hover Delay": {
+    "message": "Hakiki kuchelewesha-kwa-Hover"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "Wakati hakiki ya moja kwa moja kwenye Hover imewezeshwa, huu ni kuchelewesha kabla ya hakikisho kuonyeshwa."
+  },
+  "[Advanced] Force Preview": {
+    "message": "[Advanced] Hakiki ya Nguvu"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "Kwa wavuti ambazo ** kweli ** hazitaki hakikisho (k.m. stackoverflow.com) hii inalazimisha hakiki. Arifa ya NERD: Hii ni buster-busting."
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[Advanced] Lemaza Google Incognito"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "Kwa msingi, toleo la utaftaji wa google linalotumiwa kila wakati linasainiwa kwa sababu za faragha na usalama. Ingawa hii inaweza kusababisha kuona kila wakati wa kuingia."
+  },
+  "Disable Previews on this site": {
+    "message": "Lemaza hakiki kwenye wavuti hii"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "Maelezo ya kina juu ya kisanduku cha kuangalia hapa."
+  },
+  "Disabled on Websites": {
     "message": "Walemavu kwenye wavuti"
   },
-  "optionBlockedSitesDesc": {
-    "message": "Ugani hautaendesha kwenye tovuti hizi. Ingiza tovuti moja kwa kila mstari."
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "Ugani hautaendesha kwenye tovuti hizi, unaweza kulemaza tovuti kwa kuongeza kwenye orodha hii."
+  },
+  "Successfully updated settings": {
+    "message": "Mipangilio iliyosasishwa kwa mafanikio"
   }
 }

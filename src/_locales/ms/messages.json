@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Pratonton Cari & Pautan",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Pratonton pautan",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Lihat pratonton pautan dan dengan serta -merta melakukan carian pada halaman yang sama menggunakan pratonton ini dan bukannya membuka tab baru",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Bagaimana keadaan kita?"
+  "@testMarkup": {
+    "message": "<div> <p> hello world </p> Ini adalah <strong> bahasa </strong> dari web </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Gembira anda menyukainya! Bolehkah anda membantu kami berkongsi ❤️?"
+  "Search engine": {
+    "message": "Enjin carian"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Bagaimana kita dapat memperbaiki?"
+  "The search engine that would be used for inline search previews.": {
+    "message": "Enjin carian yang akan digunakan untuk pratonton carian sebaris."
   },
-  "fdbkThanks": {
-    "message": "Terima kasih atas maklum balas!"
+  "Google Search": {
+    "message": "Carian Google"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Kadar di WebStore"
+  "Bing Search": {
+    "message": "Carian bing"
   },
-  "fdbkNoResponse": {
-    "message": "Tidak"
+  "Yahoo Search": {
+    "message": "Carian Yahoo"
   },
-  "fdbkSumbit": {
-    "message": "Hantar"
+  "Baidu Search": {
+    "message": "Carian Baidu"
   },
-  "reportAnIssue": {
-    "message": "Melaporkan isu",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "Yandex Search"
   },
-  "showDemo": {
-    "message": "Tunjukkan demo",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "Lebar Pratonton (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Tetapan yang berjaya dikemas kini"
+  "The width of the preview panel relative to the page.": {
+    "message": "Lebar panel pratonton relatif kepada halaman."
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "Ketinggian pratonton (%)"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "Ketinggian panel pratonton relatif kepada halaman."
+  },
+  "Panel Position": {
+    "message": "Kedudukan panel"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "Bahagian halaman di mana untuk memaparkan pratonton."
+  },
+  "Right side": {
+    "message": "Sebelah kanan"
+  },
+  "Left side": {
+    "message": "Sebelah kiri"
+  },
+  "Close on Escape Key": {
+    "message": "Tutup pada kunci Escape"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "Gunakan kekunci ESC (Escape) untuk menutup panel pratonton."
+  },
+  "Automatically Hide Previews": {
+    "message": "Secara automatik menyembunyikan pratonton"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "Menyembunyikan panel pratonton apabila anda menatal atau berinteraksi dengan halaman utama."
+  },
+  "Preview in Side Panel": {
+    "message": "Pratonton di panel sampingan"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "Memaparkan pandangan dalam panel sisi krom dan bukannya kotak terapung."
+  },
+  "Preview-on-Hover Delay": {
+    "message": "Penangguhan pratonton-on-hover"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "Apabila pratonton automatik pada hover didayakan, ini adalah kelewatan sebelum pratonton ditunjukkan."
+  },
+  "[Advanced] Force Preview": {
+    "message": "[Advanced] Force Pratonton"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "Untuk laman web yang ** benar -benar ** tidak mahu dipratonton (mis. Stackoverflow.com) ini memaksa pratonton. Nerd Alert: Ini adalah buster bingkai."
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[Advanced] Lumpuhkan Incognito Google"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "Secara lalai, versi carian Google yang digunakan sentiasa ditandatangani untuk alasan privasi dan keselamatan. Walaupun ini mungkin mengakibatkan selalu melihat log masuk."
+  },
+  "Disable Previews on this site": {
+    "message": "Lumpuhkan pratonton di laman web ini"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "Maklumat terperinci mengenai kotak semak di sini."
+  },
+  "Disabled on Websites": {
     "message": "Dilumpuhkan di laman web"
   },
-  "optionBlockedSitesDesc": {
-    "message": "Pelanjutan tidak akan berjalan di laman web ini. Masukkan satu tapak setiap baris."
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "Pelanjutan tidak akan berjalan di laman web ini, anda boleh melumpuhkan tapak dengan menambah senarai ini."
+  },
+  "Successfully updated settings": {
+    "message": "Tetapan yang berjaya dikemas kini"
   }
 }

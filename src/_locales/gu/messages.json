@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "શોધ અને લિંક પૂર્વાવલોકન",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "લિંક પૂર્વાવલોકનો",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "લિંક્સના પૂર્વાવલોકનો જુઓ અને નવા ટ s બ્સ ખોલવાને બદલે આ પૂર્વાવલોકનનો ઉપયોગ કરીને તરત જ તે જ પૃષ્ઠ પર શોધ કરે છે",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "આપણે કેવી રીતે કરી રહ્યા છીએ?"
+  "@testMarkup": {
+    "message": "<iv> <p> હેલો વર્લ્ડ </p> વેબની આ <strong> ભાષા </strong> છે </div>"
   },
-  "fdbkCareToShare": {
-    "message": "તમને ગમ્યું એના થી હું પ્રસન્ન છું! તમે અમને શેર કરવામાં મદદ કરી શકો છો?"
+  "Search engine": {
+    "message": "શોધ એન્જિન"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "આપણે કેવી રીતે સુધારી શકીએ?"
+  "The search engine that would be used for inline search previews.": {
+    "message": "સર્ચ એન્જિન કે જેનો ઉપયોગ ઇનલાઇન શોધ પૂર્વાવલોકનો માટે કરવામાં આવશે."
   },
-  "fdbkThanks": {
-    "message": "પ્રતિસાદ માટે આભાર!"
+  "Google Search": {
+    "message": "ગૂગલ સર્ચ"
   },
-  "fdbkRateOnWebstore": {
-    "message": "વેબ સ્ટોર પર દર"
+  "Bing Search": {
+    "message": "બિંગ શોધ"
   },
-  "fdbkNoResponse": {
-    "message": "કોઈ"
+  "Yahoo Search": {
+    "message": "યાહુ શોધ"
   },
-  "fdbkSumbit": {
-    "message": "રજૂ કરવું"
+  "Baidu Search": {
+    "message": "બયડુ શોધ"
   },
-  "reportAnIssue": {
-    "message": "એક મુદ્દો જાણ કરો",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "યાન્ડેક્સ શોધ"
   },
-  "showDemo": {
-    "message": "ડેમો બતાવો",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "પૂર્વાવલોકન પહોળાઈ (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "સફળતાપૂર્વક અપડેટ સેટિંગ્સ"
+  "The width of the preview panel relative to the page.": {
+    "message": "પૃષ્ઠની તુલનામાં પૂર્વાવલોકન પેનલની પહોળાઈ."
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "પૂર્વાવલોકન height ંચાઇ (%)"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "પૃષ્ઠની તુલનામાં પૂર્વાવલોકન પેનલની height ંચાઇ."
+  },
+  "Panel Position": {
+    "message": "પેનલ સ્થિતિ"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "પૃષ્ઠની બાજુ જેમાં પૂર્વાવલોકન પ્રદર્શિત કરવું."
+  },
+  "Right side": {
+    "message": "જમણી બાજુ"
+  },
+  "Left side": {
+    "message": "ડાબી બાજુ"
+  },
+  "Close on Escape Key": {
+    "message": "એસ્કેપ કી પર બંધ કરો"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "પૂર્વાવલોકન પેનલને બંધ કરવા માટે ESC (એસ્કેપ) કીનો ઉપયોગ કરો."
+  },
+  "Automatically Hide Previews": {
+    "message": "આપમેળે પૂર્વાવલોકનો છુપાવો"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "જ્યારે તમે સ્ક્રોલ કરો છો અથવા મુખ્ય પૃષ્ઠ સાથે સંપર્ક કરો છો ત્યારે પૂર્વાવલોકન પેનલને છુપાવે છે."
+  },
+  "Preview in Side Panel": {
+    "message": "સાઇડ પેનલમાં પૂર્વાવલોકન"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "ફ્લોટિંગ બ box ક્સને બદલે ક્રોમ સાઇડ પેનલમાં દૃશ્ય પ્રદર્શિત કરે છે."
+  },
+  "Preview-on-Hover Delay": {
+    "message": "પૂર્વાવલોકન વિલંબ"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "જ્યારે હોવર પર સ્વચાલિત પૂર્વાવલોકન સક્ષમ થાય છે, ત્યારે પૂર્વાવલોકન બતાવવામાં આવે તે પહેલાં આ વિલંબ છે."
+  },
+  "[Advanced] Force Preview": {
+    "message": "[અદ્યતન] દબાણ પૂર્વાવલોકન"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "વેબસાઇટ્સ માટે કે ** ખરેખર ** પૂર્વાવલોકન કરવા માંગતા નથી (દા.ત. સ્ટેકઓવરફ્લો.કોમ) આ પૂર્વાવલોકનને દબાણ કરે છે. નેર્ડ ચેતવણી: આ એક ફ્રેમ-બસ્ટિંગ બસ્ટર છે."
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[અદ્યતન] છુપી ગૂગલને અક્ષમ કરો"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "ડિફ default લ્ટ રૂપે, વપરાયેલ ગૂગલ શોધનું સંસ્કરણ હંમેશાં ગોપનીયતા અને સુરક્ષા કારણોસર સાઇન-આઉટ થાય છે. જોકે આ હંમેશાં સાઇન-ઇન પ્રોમ્પ્ટ્સ જોવામાં પરિણમી શકે છે."
+  },
+  "Disable Previews on this site": {
+    "message": "આ સાઇટ પર પૂર્વાવલોકનોને અક્ષમ કરો"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "અહીં ચેકબોક્સ વિશેની વિગતવાર માહિતી."
+  },
+  "Disabled on Websites": {
     "message": "વેબસાઇટ્સ પર અક્ષમ"
   },
-  "optionBlockedSitesDesc": {
-    "message": "આ સાઇટ્સ પર એક્સ્ટેંશન ચાલશે નહીં. લાઇન દીઠ એક સાઇટ દાખલ કરો."
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "એક્સ્ટેંશન આ સાઇટ્સ પર ચાલશે નહીં, તમે આ સૂચિમાં ઉમેરીને સાઇટને અક્ષમ કરી શકો છો."
+  },
+  "Successfully updated settings": {
+    "message": "સફળતાપૂર્વક અપડેટ સેટિંગ્સ"
   }
 }

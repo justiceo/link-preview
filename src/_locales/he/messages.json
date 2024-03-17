@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "תצוגה מקדימה של חיפוש וקישור",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "תצוגה מקדימה של קישור",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "ראה תצוגה מקדימה של קישורים ומבצע מייד חיפושים באותו עמוד באמצעות תצוגה מקדימה זו במקום לפתוח כרטיסיות חדשות",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "מה שלומנו?"
+  "@testMarkup": {
+    "message": "<div> <p> שלום עולם </p> זוהי שפה <strong> </strong> של האינטרנט </div>"
   },
-  "fdbkCareToShare": {
-    "message": "שמח שאתה אוהב את זה! אתה יכול לעזור לנו לשתף את ❤️?"
+  "Search engine": {
+    "message": "מנוע חיפוש"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "איך אנחנו יכולים להשתפר?"
+  "The search engine that would be used for inline search previews.": {
+    "message": "מנוע החיפוש שישמש לתצוגה מקדימה של חיפוש מוטבע."
   },
-  "fdbkThanks": {
-    "message": "תודה על המשוב!"
+  "Google Search": {
+    "message": "חיפוש בגוגל"
   },
-  "fdbkRateOnWebstore": {
-    "message": "דרג בחנות האינטרנט"
+  "Bing Search": {
+    "message": "חיפוש בינג"
   },
-  "fdbkNoResponse": {
-    "message": "לא"
+  "Yahoo Search": {
+    "message": "חיפוש יאהו"
   },
-  "fdbkSumbit": {
-    "message": "שלח"
+  "Baidu Search": {
+    "message": "חיפוש ביידו"
   },
-  "reportAnIssue": {
-    "message": "דווח על בעיה",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "חיפוש Yandex"
   },
-  "showDemo": {
-    "message": "להראות הדגמה",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "רוחב תצוגה מקדימה (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "הגדרות מעודכנות בהצלחה"
+  "The width of the preview panel relative to the page.": {
+    "message": "רוחב לוח התצוגה המקדימה ביחס לדף."
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "גובה תצוגה מקדימה (%)"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "גובה לוח התצוגה המקדימה ביחס לדף."
+  },
+  "Panel Position": {
+    "message": "מיקום הפאנל"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "הצד של הדף בו ניתן להציג את התצוגה המקדימה."
+  },
+  "Right side": {
+    "message": "צד ימין"
+  },
+  "Left side": {
+    "message": "צד שמאל"
+  },
+  "Close on Escape Key": {
+    "message": "סגור את מפתח הבריחה"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "השתמש במפתח ESC (Escape) כדי לסגור את לוח התצוגה המקדימה."
+  },
+  "Automatically Hide Previews": {
+    "message": "הסתירה אוטומטית תצוגה מקדימה"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "מסתיר את לוח התצוגה המקדימה כשאתה גולש או אינטראקציה עם העמוד הראשי."
+  },
+  "Preview in Side Panel": {
+    "message": "תצוגה מקדימה בלוח הצדדי"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "מציג את התצוגה בלוח הצד של Chrome במקום קופסה צפה."
+  },
+  "Preview-on-Hover Delay": {
+    "message": "עיכוב מקדימה על העופות"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "כאשר מופעלת תצוגה מקדימה אוטומטית על רחף, זהו העיכוב לפני שמוצג התצוגה המקדימה."
+  },
+  "[Advanced] Force Preview": {
+    "message": "תצוגה מקדימה של כוח [מתקדם]"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "עבור אתרים ש- ** באמת ** לא רוצים לתצוגה מקדימה (למשל StackOverFlow.com) זה מכריח תצוגה מקדימה. התראת חנונים: זהו באסטר שוחק מסגרת."
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[מתקדם] השבתו את הסתר גוגל"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "כברירת מחדל, גרסת ה- Google Search המשמשת תמיד חתומה מסיבות פרטיות ואבטחה. אם כי זה עלול לגרום תמיד לראות הנחיות כניסה."
+  },
+  "Disable Previews on this site": {
+    "message": "השבת תצוגה מקדימה באתר זה"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "פרטי הפרט אודות תיבת הסימון כאן."
+  },
+  "Disabled on Websites": {
     "message": "מושבת באתרים"
   },
-  "optionBlockedSitesDesc": {
-    "message": "ההרחבה לא תפעל באתרים אלה. הזן אתר אחד בשורה."
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "ההרחבה לא תפעל באתרים אלה, באפשרותך להשבית אתר על ידי הוספת לרשימה זו."
+  },
+  "Successfully updated settings": {
+    "message": "הגדרות מעודכנות בהצלחה"
   }
 }

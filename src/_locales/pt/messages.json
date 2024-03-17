@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Pesquisa e visualização de link",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Visualizações de link",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Veja as visualizações dos links e executa instantaneamente pesquisas na mesma página usando este visualizador em vez de abrir novas guias",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Como estamos indo?"
+  "@testMarkup": {
+    "message": "<div> <p> Olá mundo </p> Esta é a linguagem <strong> </strong> da web </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Estou feliz por ter gostado! Você pode nos ajudar a compartilhar o ❤️?"
+  "Search engine": {
+    "message": "Mecanismo de busca"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Como podemos melhorar?"
+  "The search engine that would be used for inline search previews.": {
+    "message": "O mecanismo de pesquisa que seria usado para visualizações de pesquisa em linha."
   },
-  "fdbkThanks": {
-    "message": "Obrigado pelo feedback!"
+  "Google Search": {
+    "message": "Pesquisa do Google"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Taxa na WebStore"
+  "Bing Search": {
+    "message": "Bing Search"
   },
-  "fdbkNoResponse": {
-    "message": "Não"
+  "Yahoo Search": {
+    "message": "Pesquisa do Yahoo"
   },
-  "fdbkSumbit": {
-    "message": "Enviar"
+  "Baidu Search": {
+    "message": "Pesquisa de Baidu"
   },
-  "reportAnIssue": {
-    "message": "Relatar um problema",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "Pesquisa de Yandex"
   },
-  "showDemo": {
-    "message": "Mostrar demonstração",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "Largura de visualização (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Configurações atualizadas com sucesso"
+  "The width of the preview panel relative to the page.": {
+    "message": "A largura do painel de visualização em relação à página."
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "Altura de visualização (%)"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "A altura do painel de visualização em relação à página."
+  },
+  "Panel Position": {
+    "message": "Posição do painel"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "O lado da página para exibir a visualização."
+  },
+  "Right side": {
+    "message": "Lado direito"
+  },
+  "Left side": {
+    "message": "Lado esquerdo"
+  },
+  "Close on Escape Key": {
+    "message": "Fechar na chave de fuga"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "Use a tecla ESC (Escape) para fechar o painel de visualização."
+  },
+  "Automatically Hide Previews": {
+    "message": "Ocultar automaticamente as visualizações"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "Esconde o painel de visualização quando você rola ou interage com a página principal."
+  },
+  "Preview in Side Panel": {
+    "message": "Visualização no painel lateral"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "Exibe a visualização no painel lateral do Chrome em vez de uma caixa flutuante."
+  },
+  "Preview-on-Hover Delay": {
+    "message": "Atraso de pré-visualização no zero"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "Quando a visualização automática no Hover está ativada, esse é o atraso antes da visualização ser mostrada."
+  },
+  "[Advanced] Force Preview": {
+    "message": "[Avançado] Visualização de Força"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "Para sites que ** realmente ** não querem ser visualizados (por exemplo, Stackoverflow.com), isso força uma visualização. Alerta de nerd: este é um buster com preenchimento de quadros."
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[Avançado] Desativar o Incognito Google"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "Por padrão, a versão do Google Search usada é sempre assinada por razões de privacidade e segurança. Embora isso possa resultar em sempre ver instruções de assinatura."
+  },
+  "Disable Previews on this site": {
+    "message": "Desative as visualizações neste site"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "As informações detalhadas sobre a caixa de seleção aqui."
+  },
+  "Disabled on Websites": {
     "message": "Desativado em sites"
   },
-  "optionBlockedSitesDesc": {
-    "message": "A extensão não será executada nesses sites. Digite um site por linha."
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "A extensão não será executada nesses sites, você pode desativar um site adicionando a esta lista."
+  },
+  "Successfully updated settings": {
+    "message": "Configurações atualizadas com sucesso"
   }
 }

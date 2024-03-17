@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "搜索和链接预览",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "链接预览",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "请参阅链接的预览，并使用此预览器在同一页面上立即执行搜索，而不是打开新标签",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "我们好吗？"
+  "@testMarkup": {
+    "message": "<div> <p> Hello world </p>这是Web的<strong>语言</strong> </div>"
   },
-  "fdbkCareToShare": {
-    "message": "很高兴你喜欢它！ 您能帮我们分享❤️吗？"
+  "Search engine": {
+    "message": "搜索引擎"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "我们如何改进？"
+  "The search engine that would be used for inline search previews.": {
+    "message": "用于内联搜索预览的搜索引擎。"
   },
-  "fdbkThanks": {
-    "message": "感谢您的反馈！"
+  "Google Search": {
+    "message": "谷歌搜索"
   },
-  "fdbkRateOnWebstore": {
-    "message": "网上商店的费率"
+  "Bing Search": {
+    "message": "Bing搜索"
   },
-  "fdbkNoResponse": {
-    "message": "不"
+  "Yahoo Search": {
+    "message": "雅虎搜索"
   },
-  "fdbkSumbit": {
-    "message": "提交"
+  "Baidu Search": {
+    "message": "百度搜索"
   },
-  "reportAnIssue": {
-    "message": "报告一个问题",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "yandex搜索"
   },
-  "showDemo": {
-    "message": "展示演示",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "预览宽度（％）"
   },
-  "optionsSaveSuccess": {
-    "message": "成功更新了设置"
+  "The width of the preview panel relative to the page.": {
+    "message": "相对于页面的预览面板的宽度。"
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "预览高度（％）"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "预览面板相对于页面的高度。"
+  },
+  "Panel Position": {
+    "message": "面板位置"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "显示预览的页面的侧面。"
+  },
+  "Right side": {
+    "message": "右边"
+  },
+  "Left side": {
+    "message": "左边"
+  },
+  "Close on Escape Key": {
+    "message": "关闭逃生钥匙"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "使用ESC（Esce）键关闭预览面板。"
+  },
+  "Automatically Hide Previews": {
+    "message": "自动隐藏预览"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "当您滚动滚动或与主页互动时，请隐藏预览面板。"
+  },
+  "Preview in Side Panel": {
+    "message": "在侧面面板中预览"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "在镀铬侧面面板中显示视图，而不是浮动盒。"
+  },
+  "Preview-on-Hover Delay": {
+    "message": "预览悬挂延迟"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "当启用悬停的自动预览时，这是显示预览之前的延迟。"
+  },
+  "[Advanced] Force Preview": {
+    "message": "[高级]力预览"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "对于**确实不想预览的网站（例如，stackoverflow.com），这会迫使预览。 书呆子警报：这是一个破坏框架的克星。"
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[高级]禁用Incognito Google"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "默认情况下，出于隐私和安全原因，使用的Google搜索版本总是被签署。 尽管这可能会始终看到登录提示。"
+  },
+  "Disable Previews on this site": {
+    "message": "在此网站上禁用预览"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "有关复选框的详细信息。"
+  },
+  "Disabled on Websites": {
     "message": "在网站上禁用"
   },
-  "optionBlockedSitesDesc": {
-    "message": "扩展将不会在这些站点上运行。 每行进入一个站点。"
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "扩展名不会在这些站点上运行，您可以通过添加到此列表中禁用站点。"
+  },
+  "Successfully updated settings": {
+    "message": "成功更新了设置"
   }
 }

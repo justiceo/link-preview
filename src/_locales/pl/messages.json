@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Wyszukiwanie i podgląd linków",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Podgląd linków",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Zobacz podgląd linków i natychmiast wykonuje wyszukiwania na tej samej stronie za pomocą tego podglądu zamiast otwierania nowych kart",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Jak nam idzie?"
+  "@testMarkup": {
+    "message": "<div> <p> Hello World </p> To jest język <strong> </strong> w sieci </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Cieszę się że to lubisz! Czy możesz nam pomóc w udostępnieniu ❤️?"
+  "Search engine": {
+    "message": "Wyszukiwarka"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Jak możemy poprawić?"
+  "The search engine that would be used for inline search previews.": {
+    "message": "Wyszukiwarka, która byłaby używana do podglądu wyszukiwania wbudowanego."
   },
-  "fdbkThanks": {
-    "message": "Dzięki za opinie!"
+  "Google Search": {
+    "message": "Wyszukiwarka Google"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Oceń w Webstore"
+  "Bing Search": {
+    "message": "Bing Search"
   },
-  "fdbkNoResponse": {
-    "message": "NIE"
+  "Yahoo Search": {
+    "message": "Wyszukaj Yahoo"
   },
-  "fdbkSumbit": {
-    "message": "Składać"
+  "Baidu Search": {
+    "message": "Wyszukiwanie Baidu"
   },
-  "reportAnIssue": {
-    "message": "Zgłoś problem",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "Wyszukiwanie Yandex"
   },
-  "showDemo": {
-    "message": "Pokazuj demo",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "Szerokość podglądu (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Pomyślnie zaktualizowane ustawienia"
+  "The width of the preview panel relative to the page.": {
+    "message": "Szerokość panelu podglądu względem strony."
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "Wysokość podglądu (%)"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "Wysokość panelu podglądu względem strony."
+  },
+  "Panel Position": {
+    "message": "Pozycja panelu"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "Strona strony, na której można wyświetlić podgląd."
+  },
+  "Right side": {
+    "message": "Prawa strona"
+  },
+  "Left side": {
+    "message": "Lewa strona"
+  },
+  "Close on Escape Key": {
+    "message": "Zamknij klucz Escape"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "Użyj klucza ESC (Escape), aby zamknąć panel podglądu."
+  },
+  "Automatically Hide Previews": {
+    "message": "Automatycznie ukryj podgląd"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "Ukrywa panel podglądu, gdy przewijasz lub wchodzi w interakcję ze stroną główną."
+  },
+  "Preview in Side Panel": {
+    "message": "Podgląd w panelu bocznym"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "Wyświetla widok w chromowanym panelu bocznym zamiast pływającego pudełka."
+  },
+  "Preview-on-Hover Delay": {
+    "message": "Opóźnienie podglądu na podręb"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "Po włączeniu automatycznego podglądu na zawisieniu jest to opóźnienie przed wyświetleniem podglądu."
+  },
+  "[Advanced] Force Preview": {
+    "message": "[Advanced] Force Podgląd"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "W przypadku stron internetowych, które ** naprawdę ** nie chcą być podglądane (np. Stackoverflow.com) to wymusza podgląd. Nerd Alert: Jest to buster bustera ramy."
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[Advanced] Wyłącz incognito Google"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "Domyślnie używana wersja wyszukiwania Google jest zawsze podpisywana ze względów prywatności i bezpieczeństwa. Chociaż może to spowodować zawsze widzenie podpowiedzi zalogowania."
+  },
+  "Disable Previews on this site": {
+    "message": "Wyłącz podgląd na tej stronie"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "Szczegółowe informacje o polu wyboru tutaj."
+  },
+  "Disabled on Websites": {
     "message": "Wyłączone na stronach internetowych"
   },
-  "optionBlockedSitesDesc": {
-    "message": "Rozszerzenie nie będzie działać na tych stronach. Wprowadź jedną witrynę na wiersz."
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "Rozszerzenie nie będzie działać na tych stronach, możesz wyłączyć witrynę, dodając do tej listy."
+  },
+  "Successfully updated settings": {
+    "message": "Pomyślnie zaktualizowane ustawienia"
   }
 }

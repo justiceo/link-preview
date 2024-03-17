@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "தேடல் மற்றும் இணைப்பு முன்னோட்டம்",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "இணைப்பு முன்னோட்டங்கள்",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "புதிய தாவல்களைத் திறப்பதற்குப் பதிலாக இந்த மாதிரிக்காட்சியைப் பயன்படுத்தி ஒரே பக்கத்தில் இணைப்புகளின் முன்னோட்டங்களைப் பார்க்கவும், உடனடியாக தேடல்களைச் செய்கிறது",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "நாங்கள் எப்படி இருக்கிறோம்?"
+  "@testMarkup": {
+    "message": "<div> <p> ஹலோ வேர்ல்ட் </p> இது வலையின் <strong> மொழி </strong> ஆகும் </div>"
   },
-  "fdbkCareToShare": {
-    "message": "நீங்கள் விரும்பியதில் மகிழ்ச்சி! ❤❤ ஐப் பகிர எங்களுக்கு உதவ முடியுமா?"
+  "Search engine": {
+    "message": "தேடல் இயந்திரம்"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "நாம் எவ்வாறு மேம்படுத்த முடியும்?"
+  "The search engine that would be used for inline search previews.": {
+    "message": "இன்லைன் தேடல் முன்னோட்டங்களுக்கு பயன்படுத்தப்படும் தேடுபொறி."
   },
-  "fdbkThanks": {
-    "message": "தங்கள் கருத்துகளுக்கு நன்றி!"
+  "Google Search": {
+    "message": "கூகிளில் தேடு"
   },
-  "fdbkRateOnWebstore": {
-    "message": "வெப்ஸ்டோரில் விகிதம்"
+  "Bing Search": {
+    "message": "பிங் தேடல்"
   },
-  "fdbkNoResponse": {
-    "message": "இல்லை"
+  "Yahoo Search": {
+    "message": "யாகூ தேடல்"
   },
-  "fdbkSumbit": {
-    "message": "சமர்ப்பிக்கவும்"
+  "Baidu Search": {
+    "message": "பைடு தேடல்"
   },
-  "reportAnIssue": {
-    "message": "ஒரு சிக்கலைப் புகாரளிக்கவும்",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "யாண்டெக்ஸ் தேடல்"
   },
-  "showDemo": {
-    "message": "டெமோவைக் காட்டு",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "முன்னோட்ட அகலம் (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "வெற்றிகரமாக புதுப்பிக்கப்பட்ட அமைப்புகள்"
+  "The width of the preview panel relative to the page.": {
+    "message": "பக்கத்துடன் தொடர்புடைய முன்னோட்டக் குழுவின் அகலம்."
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "முன்னோட்ட உயரம் (%)"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "பக்கத்துடன் தொடர்புடைய முன்னோட்டக் குழுவின் உயரம்."
+  },
+  "Panel Position": {
+    "message": "குழு நிலை"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "முன்னோட்டத்தைக் காண்பிக்கும் பக்கத்தின் பக்கம்."
+  },
+  "Right side": {
+    "message": "வலது பக்கம்"
+  },
+  "Left side": {
+    "message": "இடது பக்கம்"
+  },
+  "Close on Escape Key": {
+    "message": "எஸ்கேப் விசையை மூடு"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "முன்னோட்டக் குழுவை மூட ESC (ESCOW) விசையைப் பயன்படுத்தவும்."
+  },
+  "Automatically Hide Previews": {
+    "message": "முன்னோட்டங்களை தானாக மறைக்கவும்"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "நீங்கள் உருட்டும்போது அல்லது பிரதான பக்கத்துடன் தொடர்பு கொள்ளும்போது முன்னோட்ட பேனலை மறைக்கிறது."
+  },
+  "Preview in Side Panel": {
+    "message": "பக்க பேனலில் முன்னோட்டம்"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "மிதக்கும் பெட்டிக்கு பதிலாக Chrome பக்க பேனலில் காட்சியைக் காட்டுகிறது."
+  },
+  "Preview-on-Hover Delay": {
+    "message": "முன்னோட்ட-ஆன்-ஹவர் தாமதம்"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "ஹோவர் மீதான தானியங்கி முன்னோட்டம் இயக்கப்பட்டால், முன்னோட்டம் காண்பிக்கப்படுவதற்கு முன்பு இது தாமதம்."
+  },
+  "[Advanced] Force Preview": {
+    "message": "[மேம்பட்ட] படை முன்னோட்டம்"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "** உண்மையில் ** முன்னோட்டமிட விரும்பாத வலைத்தளங்களுக்கு (எ.கா. stackoverflow.com) இது ஒரு முன்னோட்டத்தை கட்டாயப்படுத்துகிறது. மேதாவி எச்சரிக்கை: இது ஒரு பிரேம்-உடைக்கும் பஸ்டர்."
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[மேம்பட்ட] கூகிளை மறைமுகமாக முடக்கு"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "இயல்பாக, பயன்படுத்தப்படும் கூகிள் தேடலின் பதிப்பு எப்போதும் தனியுரிமை மற்றும் பாதுகாப்பு காரணங்களுக்காக கையொப்பமிடப்படுகிறது. இது எப்போதும் உள்நுழைவு தூண்டுதல்களைப் பார்க்கக்கூடும்."
+  },
+  "Disable Previews on this site": {
+    "message": "இந்த தளத்தில் முன்னோட்டங்களை முடக்கு"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "இங்கே தேர்வுப்பெட்டி பற்றிய விரிவான தகவல்கள்."
+  },
+  "Disabled on Websites": {
     "message": "வலைத்தளங்களில் முடக்கப்பட்டது"
   },
-  "optionBlockedSitesDesc": {
-    "message": "இந்த தளங்களில் நீட்டிப்பு இயங்காது. ஒரு வரிக்கு ஒரு தளத்தை உள்ளிடவும்."
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "இந்த தளங்களில் நீட்டிப்பு இயங்காது, இந்த பட்டியலில் சேர்ப்பதன் மூலம் ஒரு தளத்தை முடக்கலாம்."
+  },
+  "Successfully updated settings": {
+    "message": "வெற்றிகரமாக புதுப்பிக்கப்பட்ட அமைப்புகள்"
   }
 }

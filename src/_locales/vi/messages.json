@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Xem trước tìm kiếm & liên kết",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Xem trước liên kết",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Xem các bản xem trước của các liên kết và thực hiện ngay các tìm kiếm trên cùng một trang bằng cách sử dụng trình xem trước này thay vì mở các tab mới",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Chúng ta đang làm thế nào?"
+  "@testMarkup": {
+    "message": "<DIV> <p> Xin chào thế giới </p> Đây là ngôn ngữ <strong>"
   },
-  "fdbkCareToShare": {
-    "message": "Vui vì bạn thích nó! Bạn có thể giúp chúng tôi chia sẻ ❤?"
+  "Search engine": {
+    "message": "Máy tìm kiếm"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Chúng ta có thể cải thiện như thế nào?"
+  "The search engine that would be used for inline search previews.": {
+    "message": "Công cụ tìm kiếm sẽ được sử dụng để xem trước tìm kiếm nội tuyến."
   },
-  "fdbkThanks": {
-    "message": "Cảm ơn vì bạn đã phản hồi!"
+  "Google Search": {
+    "message": "Tìm kiếm của Google"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Đánh giá trên ststore"
+  "Bing Search": {
+    "message": "Tìm kiếm bing"
   },
-  "fdbkNoResponse": {
-    "message": "KHÔNG"
+  "Yahoo Search": {
+    "message": "Tìm kiếm Yahoo"
   },
-  "fdbkSumbit": {
-    "message": "Nộp"
+  "Baidu Search": {
+    "message": "Tìm kiếm Baidu"
   },
-  "reportAnIssue": {
-    "message": "Báo cáo một vấn đề",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "Tìm kiếm Yandex"
   },
-  "showDemo": {
-    "message": "Đưa ra bản chạy thử",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "Chiều rộng xem trước (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Cập nhật cài đặt thành công"
+  "The width of the preview panel relative to the page.": {
+    "message": "Chiều rộng của bảng xem trước so với trang."
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "Chiều cao xem trước (%)"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "Chiều cao của bảng xem trước so với trang."
+  },
+  "Panel Position": {
+    "message": "Vị trí bảng điều khiển"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "Phía của trang để hiển thị bản xem trước."
+  },
+  "Right side": {
+    "message": "Bên phải"
+  },
+  "Left side": {
+    "message": "Bên trái"
+  },
+  "Close on Escape Key": {
+    "message": "Đóng trên Key Escape Key"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "Sử dụng phím ESC (Escape) để đóng bảng xem trước."
+  },
+  "Automatically Hide Previews": {
+    "message": "Tự động ẩn xem trước"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "Ẩn bảng xem trước khi bạn cuộn đi hoặc tương tác với trang chính."
+  },
+  "Preview in Side Panel": {
+    "message": "Xem trước trong bảng điều khiển bên"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "Hiển thị chế độ xem trong bảng điều khiển bên Chrome thay vì hộp nổi."
+  },
+  "Preview-on-Hover Delay": {
+    "message": "Trước trễ trên hover"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "Khi xem trước tự động trên Hover được bật, đây là độ trễ trước khi xem trước được hiển thị."
+  },
+  "[Advanced] Force Preview": {
+    "message": "[Nâng cao] Xem trước lực lượng"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "Đối với các trang web ** thực sự ** không muốn được xem trước (ví dụ: stackoverflow.com), điều này buộc một bản xem trước. NERD ALERT: Đây là một Buster có khung hình."
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[Nâng cao] Vô hiệu hóa google ẩn danh"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "Theo mặc định, phiên bản tìm kiếm của Google được sử dụng luôn được đăng xuất vì lý do bảo mật và bảo mật. Mặc dù điều này có thể dẫn đến việc luôn luôn thấy các lời nhắc đăng nhập."
+  },
+  "Disable Previews on this site": {
+    "message": "Tắt bản xem trước trên trang web này"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "Thông tin chi tiết về hộp kiểm ở đây."
+  },
+  "Disabled on Websites": {
     "message": "Bị vô hiệu hóa trên các trang web"
   },
-  "optionBlockedSitesDesc": {
-    "message": "Tiện ích mở rộng sẽ không chạy trên các trang web này. Nhập một trang web trên mỗi dòng."
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "Tiện ích mở rộng sẽ không chạy trên các trang web này, bạn có thể vô hiệu hóa một trang web bằng cách thêm vào danh sách này."
+  },
+  "Successfully updated settings": {
+    "message": "Cập nhật cài đặt thành công"
   }
 }

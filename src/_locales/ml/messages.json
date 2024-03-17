@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "തിരയുക & പ്രിവ്യൂ",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "ലിങ്ക് പ്രിവ്യൂകൾ",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "ലിങ്കുകളുടെ പ്രിവ്യൂകൾ കാണുക, പുതിയ ടാബുകൾ തുറക്കുന്നതിനുപകരം ഈ പ്രിവ്യൂ ഉപയോഗിച്ച് ഇതേ പേജിൽ തിരയുന്നു",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "ഞങ്ങൾ എങ്ങനെ ചെയ്യുന്നു?"
+  "@testMarkup": {
+    "message": "<div> <p> ഹലോ വേൾഡ് </ p> ഇത് വെബിന്റെ </ dive> ന്റെ </ play> ഇതാണ്"
   },
-  "fdbkCareToShare": {
-    "message": "നിങ്ങൾ ഇത് ഇഷ്ടപ്പെട്ടതിൽ സന്തോഷം! ❤️ പങ്കിടാൻ ഞങ്ങളെ സഹായിക്കാമോ?"
+  "Search engine": {
+    "message": "തിരയല് യന്ത്രം"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "നമുക്ക് എങ്ങനെ മെച്ചപ്പെടുത്താൻ കഴിയും?"
+  "The search engine that would be used for inline search previews.": {
+    "message": "ഇൻലൈൻ തിരയൽ തിരനോട്ടത്തിനായി ഉപയോഗിക്കുന്ന തിരയൽ എഞ്ചിൻ."
   },
-  "fdbkThanks": {
-    "message": "ഫീഡ്ബാക്കിന് നന്ദി!"
+  "Google Search": {
+    "message": "ഗൂഗിളില് തിരയുക"
   },
-  "fdbkRateOnWebstore": {
-    "message": "വെബ്സ്റ്ററിലെ നിരക്ക്"
+  "Bing Search": {
+    "message": "ബിംഗ് തിരയൽ"
   },
-  "fdbkNoResponse": {
-    "message": "ഇല്ല"
+  "Yahoo Search": {
+    "message": "Yahoo തിരയൽ"
   },
-  "fdbkSumbit": {
-    "message": "കീഴടങ്ങുക"
+  "Baidu Search": {
+    "message": "Baidu തിരയൽ"
   },
-  "reportAnIssue": {
-    "message": "ഒരു പ്രശ്നം റിപ്പോർട്ടുചെയ്യുക",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "യന്ഡെക്സ് തിരയൽ"
   },
-  "showDemo": {
-    "message": "ഡെമോ കാണിക്കുക",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "പ്രിവ്യൂ വീതി (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "ക്രമീകരണങ്ങൾ വിജയകരമായി അപ്ഡേറ്റുചെയ്തു"
+  "The width of the preview panel relative to the page.": {
+    "message": "പേജുമായി ബന്ധപ്പെട്ട പ്രിവ്യൂ പാനലിന്റെ വീതി."
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "പ്രിവ്യൂ ഉയരം (%)"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "പേജുമായി ബന്ധപ്പെട്ട പ്രിവ്യൂ പാനലിന്റെ ഉയരം."
+  },
+  "Panel Position": {
+    "message": "പാനൽ സ്ഥാനം"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "പ്രിവ്യൂ പ്രദർശിപ്പിക്കേണ്ട പേജിന്റെ വശം."
+  },
+  "Right side": {
+    "message": "വലത് വശം"
+  },
+  "Left side": {
+    "message": "ഇടത് വശം"
+  },
+  "Close on Escape Key": {
+    "message": "എസ്കേപ്പ് കീയിൽ അടയ്ക്കുക"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "പ്രിവ്യൂ പാനൽ അടയ്ക്കുന്നതിന് Esc (scrift) കീ ഉപയോഗിക്കുക."
+  },
+  "Automatically Hide Previews": {
+    "message": "യാന്ത്രികമായി പ്രിവ്യൂകൾ മറയ്ക്കുക"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "നിങ്ങൾ സ്ക്രോൾ ചെയ്യുമ്പോഴോ പ്രധാന പേജിലുമായി സംവദിക്കുമ്പോഴോ പ്രിവ്യൂ പാനൽ മറയ്ക്കുന്നു."
+  },
+  "Preview in Side Panel": {
+    "message": "സൈഡ് പാനലിൽ പ്രിവ്യൂ"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "ഫ്ലോട്ടിംഗ് ബോക്സിന് പകരം Chrome സൈഡ് പാനലിലെ കാഴ്ച പ്രദർശിപ്പിക്കുന്നു."
+  },
+  "Preview-on-Hover Delay": {
+    "message": "പ്രിവ്യൂ-ഓൺ-ഹോവർ കാലതാമസം"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "ഹോവറിലെ യാന്ത്രിക പ്രിവ്യൂ പ്രവർത്തനക്ഷമമാക്കിയപ്പോൾ, പ്രിവ്യൂ കാണിക്കുന്നതിന് മുമ്പുള്ള കാലതാമസമാണിത്."
+  },
+  "[Advanced] Force Preview": {
+    "message": "[അഡ്വാൻസ്ഡ്] ഫോഴ്സ് പ്രിവ്യൂ"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "** ശരിക്കും ** പ്രിവ്യൂ ചെയ്യാൻ ആഗ്രഹിക്കാത്ത വെബ്സൈറ്റുകൾക്കായി (ഉദാ. StacovFLow.com) ഇത് ഒരു പ്രിവ്യൂവിനെ നിർബന്ധിക്കുന്നു. നേർഡ് അലേർട്ട്: ഇതൊരു ഫ്രെയിം-ബസ്റ്റിംഗ് ബസ്റ്ററാണ്."
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[അഡ്വാൻസ്ഡ്] ആൾമാറാട്ട Google അപ്രാപ്തമാക്കുക"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "സ്ഥിരസ്ഥിതിയായി, ഉപയോഗിച്ച Google തിരയലിന്റെ പതിപ്പ് എല്ലായ്പ്പോഴും സ്വകാര്യത, സുരക്ഷാ കാരണങ്ങളാൽ സൈൻ out ട്ട് ചെയ്യുന്നു. ഇത് എല്ലായ്പ്പോഴും സൈൻ-ഇൻ പ്രോംപ്റ്റുകൾ കാണുന്നതിന് കാരണമാകാം."
+  },
+  "Disable Previews on this site": {
+    "message": "ഈ സൈറ്റിലെ പ്രിവ്യൂ അപ്രാപ്തമാക്കുക"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "ചെക്ക്ബോക്സിനെക്കുറിച്ചുള്ള വിശദമായ വിവരങ്ങൾ ഇവിടെ."
+  },
+  "Disabled on Websites": {
     "message": "വെബ്സൈറ്റുകളിൽ അപ്രാപ്തമാക്കി"
   },
-  "optionBlockedSitesDesc": {
-    "message": "ഈ സൈറ്റുകളിൽ വിപുലീകരണം പ്രവർത്തിക്കില്ല. ഒരു വരിയിൽ ഒരു സൈറ്റ് നൽകുക."
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "വിപുലീകരണം ഈ സൈറ്റുകളിൽ പ്രവർത്തിക്കില്ല, ഈ പട്ടിക ചേർത്ത് നിങ്ങൾക്ക് ഒരു സൈറ്റ് പ്രവർത്തനരഹിതമാക്കാം."
+  },
+  "Successfully updated settings": {
+    "message": "ക്രമീകരണങ്ങൾ വിജയകരമായി അപ്ഡേറ്റുചെയ്തു"
   }
 }

@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Pencarian & Pratinjau Tautan",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Pratinjau tautan",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Lihat pratinjau tautan dan langsung melakukan pencarian di halaman yang sama menggunakan pratinjau ini alih -alih membuka tab baru",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Bagaimana kabar kita?"
+  "@testMarkup": {
+    "message": "<div> <p> Halo dunia </p> Ini adalah bahasa <strong> </strong> dari web </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Senang kamu menyukainya! Bisakah Anda membantu kami membagikan ❤️?"
+  "Search engine": {
+    "message": "Mesin pencari"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Bagaimana kita bisa meningkatkan?"
+  "The search engine that would be used for inline search previews.": {
+    "message": "Mesin pencari yang akan digunakan untuk pratinjau pencarian inline."
   },
-  "fdbkThanks": {
-    "message": "Terima kasih untuk umpan baliknya!"
+  "Google Search": {
+    "message": "Pencarian Google"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Nilai di Webstore"
+  "Bing Search": {
+    "message": "Pencarian Bing"
   },
-  "fdbkNoResponse": {
-    "message": "TIDAK"
+  "Yahoo Search": {
+    "message": "Pencarian Yahoo"
   },
-  "fdbkSumbit": {
-    "message": "Kirim"
+  "Baidu Search": {
+    "message": "Pencarian Baidu"
   },
-  "reportAnIssue": {
-    "message": "Melaporkan masalah",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "Pencarian Yandex"
   },
-  "showDemo": {
-    "message": "Tampilkan demo",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "Pratinjau lebar (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Pengaturan yang berhasil diperbarui"
+  "The width of the preview panel relative to the page.": {
+    "message": "Lebar panel pratinjau relatif terhadap halaman."
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "Tinggi pratinjau (%)"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "Ketinggian panel pratinjau relatif terhadap halaman."
+  },
+  "Panel Position": {
+    "message": "Posisi panel"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "Sisi halaman untuk menampilkan pratinjau."
+  },
+  "Right side": {
+    "message": "Sisi kanan"
+  },
+  "Left side": {
+    "message": "Sisi kiri"
+  },
+  "Close on Escape Key": {
+    "message": "Tutup di Escape Key"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "Gunakan kunci ESC (Escape) untuk menutup panel pratinjau."
+  },
+  "Automatically Hide Previews": {
+    "message": "Secara otomatis menyembunyikan pratinjau"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "Menyembunyikan panel pratinjau saat Anda menggulir atau berinteraksi dengan halaman utama."
+  },
+  "Preview in Side Panel": {
+    "message": "Pratinjau di panel samping"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "Menampilkan tampilan di panel samping krom, bukan kotak mengambang."
+  },
+  "Preview-on-Hover Delay": {
+    "message": "Pratinjau penundaan-ke-hover"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "Ketika pratinjau otomatis pada hover diaktifkan, ini adalah penundaan sebelum pratinjau ditampilkan."
+  },
+  "[Advanced] Force Preview": {
+    "message": "[Lanjutan] Pratinjau Force"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "Untuk situs web yang ** benar -benar ** tidak ingin dipratinjau (mis. Stackoverflow.com) Ini memaksa pratinjau. NERD ALERT: Ini adalah Buster yang menghindarkan bingkai."
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[Lanjutan] Nonaktifkan Penyamaran Google"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "Secara default, versi pencarian Google yang digunakan selalu ditandatangani untuk alasan privasi dan keamanan. Meskipun ini dapat menyebabkan selalu melihat permintaan masuk."
+  },
+  "Disable Previews on this site": {
+    "message": "Nonaktifkan pratinjau di situs ini"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "Informasi detail tentang kotak centang di sini."
+  },
+  "Disabled on Websites": {
     "message": "Dinonaktifkan di situs web"
   },
-  "optionBlockedSitesDesc": {
-    "message": "Ekstensi tidak akan berjalan di situs -situs ini. Masukkan satu situs per baris."
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "Ekstensi tidak akan berjalan di situs -situs ini, Anda dapat menonaktifkan situs dengan menambahkan ke daftar ini."
+  },
+  "Successfully updated settings": {
+    "message": "Pengaturan yang berhasil diperbarui"
   }
 }

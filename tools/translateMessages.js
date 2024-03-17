@@ -3,7 +3,9 @@
 const fs = require("fs");
 const path = require("path");
 const translate = require("google-translate-api-x");
+const glob = require("glob");
 
+const srcDir = "src";
 const localesDir = "src/_locales";
 const sourceLocale = "en";
 const localeFilename = "messages.json";
@@ -71,7 +73,6 @@ function getLocaleFile(locale) {
 // Function to read and parse the source locale data
 function readSourceLocaleData() {
   const rawdata = fs.readFileSync(getLocaleFile(sourceLocale));
-  console.log("Successfully parsed ", getLocaleFile(sourceLocale));
   return JSON.parse(rawdata);
 }
 
@@ -90,29 +91,109 @@ function applyTranslation(targetLocale, localeData, sourceLocaleData) {
   const targetLocaleClone = structuredClone(sourceLocaleData);
   Object.keys(localeData).forEach((key) => {
     targetLocaleClone[key]["message"] = localeData[key]["text"];
+    if (
+      localeData[key].from?.language?.didYouMean &&
+      localeData[key].from.language.iso !== sourceLocale
+    ) {
+      console.warn(
+        `Auto corrected source locale from ${sourceLocale} to ${localeData[key].from.language.iso} `,
+      );
+    }
+    if (
+      localeData[key].from?.text?.didYouMean ||
+      localeData[key].from?.text?.autoCorrected
+    ) {
+      console.warn(
+        `Auto corrected text to ${localeData[key].from?.text?.value}`,
+      );
+    }
   });
 
   ensureDirectoryExistence(getLocaleFile(targetLocale));
   const formattedData = JSON.stringify(targetLocaleClone, null, 4);
-  console.log(getLocaleFile(targetLocale), ":\n", formattedData, "\n");
+  console.log("Updated: ", getLocaleFile(targetLocale));
   fs.writeFileSync(getLocaleFile(targetLocale), formattedData, { flag: "w" });
+}
+
+// Function to search and return a matching regex in a file.
+function searchInFile(filePath, regex) {
+  const content = fs.readFileSync(filePath, "utf8");
+  const allMatches = [];
+  let matches;
+
+  while ((matches = regex.exec(content)) !== null) {
+    // This will push the first captured group (the content inside quotes) into allMatches
+    if (matches[1]) {
+      allMatches.push(matches[1]);
+    }
+  }
+
+  return allMatches;
+}
+
+// Loops through .ts and .js files and extracts i18n literals.
+function searchForI18nStrings(srcDirectory) {
+  return new Promise((resolve, reject) => {
+    // Regex to capture content inside quotes without including the quotes
+    // TODO: Verify it works for new lines (for long texts).
+    const regex = /i18n\(\s*(?:"([\s\S]*?)"|'([\s\S]*?)')\s*,?\s*\)/g;
+    const filesPattern = path.join(srcDirectory, "**", "*.{ts,js}");
+    glob(filesPattern, (err, files) => {
+      if (err) {
+        reject("Error reading files: " + err);
+        return;
+      }
+
+      const allMatches = files.reduce((acc, filePath) => {
+        const matches = searchInFile(filePath, regex);
+        if (matches.length > 0) {
+          acc[filePath] = matches;
+        }
+        return acc;
+      }, {});
+
+      let literals = Object.values(allMatches).reduce(
+        (acc, currentValue) => acc.concat(currentValue),
+        [],
+      );
+      literals = literals.filter((f) => !f.startsWith("@")); // exclude special messages.
+      resolve(literals);
+    });
+  });
+}
+
+// Maps the literals to an object, where the key is an encoded version of the literal and the value is the literal itself.
+function mapLiteralsToEncodedObject(literals) {
+  return literals.reduce((acc, literal) => {
+    acc[literal] = { message: literal };
+    return acc;
+  }, {});
 }
 
 // Main function to generate translations
 async function generateTranslations() {
-  const sourceLocaleData = readSourceLocaleData();
+  let sourceLocaleData = readSourceLocaleData();
+  // Remove all the messages that are not prefixed with @, they'll be added as literals.
+  Object.keys(sourceLocaleData).forEach((key) => {
+    if (!key.startsWith("@")) {
+      delete sourceLocaleData[key];
+    }
+  });
+  const codeLiterals = await searchForI18nStrings(srcDir);
+  // combine sourceLocaleData and mappedLiterals into one object.
+  sourceLocaleData = Object.assign(
+    sourceLocaleData,
+    mapLiteralsToEncodedObject(codeLiterals),
+  );
   const messageRequest = Object.keys(sourceLocaleData).reduce((acc, key) => {
     acc[key] = sourceLocaleData[key]["message"];
     return acc;
   }, {});
-
-  console.log("Created messageRequest", messageRequest);
+  console.log("Translation request", messageRequest);
 
   try {
     await Promise.all(
       targetLocales.map(async (targetLocale) => {
-        if (targetLocale === sourceLocale) return;
-
         const res = await translate(messageRequest, {
           from: sourceLocale,
           to: targetLocale,
@@ -129,3 +210,32 @@ async function generateTranslations() {
 
 // Invoke the main function
 generateTranslations();
+
+/* Regex will match the fololowing cases:
+
+i18n("hello")
+i18n('hi')
+i18n("@he")
+i18n("sdf;'")
+i18n("")
+i18n(
+"hello world"
+)
+i18n(
+"hello world
+and the begening of the end"
+)
+
+i18n(
+"hello world" +
+"and the begening of the end"
+)
+
+i18n(
+"hello world
+and the begening of the end",
+)
+
+i18n("hello world".replace("Hello"))
+i18n("hello world" + " again")
+*/

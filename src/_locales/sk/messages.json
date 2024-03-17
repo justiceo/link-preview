@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Prehľad vyhľadávania a odkazu",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Ukážky odkazu",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Pozrite si ukážky odkazov a okamžite vykonávajú vyhľadávanie na tej istej stránke pomocou tohto ukážky namiesto otvárania nových kariet",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Ako sa máme?"
+  "@testMarkup": {
+    "message": "<div> <p> Ahoj svet </p> Toto je jazyk <strong> </strong> z webu </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Som rád že sa ti to páči! Môžete nám pomôcť zdieľať ❤?"
+  "Search engine": {
+    "message": "Vyhľadávač"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Ako sa môžeme vylepšiť?"
+  "The search engine that would be used for inline search previews.": {
+    "message": "Vyhľadávací nástroj, ktorý by sa použil na inline ukážky vyhľadávania."
   },
-  "fdbkThanks": {
-    "message": "Ďakujem za spätnú väzbu!"
+  "Google Search": {
+    "message": "Google vyhľadávanie"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Hodnotiť na webstore"
+  "Bing Search": {
+    "message": "Vyhľadávanie"
   },
-  "fdbkNoResponse": {
-    "message": "Nie"
+  "Yahoo Search": {
+    "message": "Hľadanie Yahoo"
   },
-  "fdbkSumbit": {
-    "message": "Predložiť"
+  "Baidu Search": {
+    "message": "Vyhľadávanie Baidu"
   },
-  "reportAnIssue": {
-    "message": "Nahlásiť problém",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "Vyhľadávanie YANDEX"
   },
-  "showDemo": {
-    "message": "Ukázať",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "Šírka ukážky (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Úspešne aktualizované nastavenia"
+  "The width of the preview panel relative to the page.": {
+    "message": "Šírka panela ukážky vzhľadom na stránku."
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "Výška ukážky (%)"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "Výška panela ukážky vzhľadom na stránku."
+  },
+  "Panel Position": {
+    "message": "Poloha panela"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "Strana stránky, na ktorej sa má zobraziť ukážku."
+  },
+  "Right side": {
+    "message": "Pravá strana"
+  },
+  "Left side": {
+    "message": "Ľavá strana"
+  },
+  "Close on Escape Key": {
+    "message": "Zatvorte na útek"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "Na zatvorenie panela ukážky použite kľúč ESC (Escape)."
+  },
+  "Automatically Hide Previews": {
+    "message": "Automaticky skryť ukážky"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "Pri posúvaní alebo interakcii s hlavnou stránkou skrýva panel s ukážkou."
+  },
+  "Preview in Side Panel": {
+    "message": "Náhľad na bočnom paneli"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "Zobrazuje zobrazenie na bočnom paneli Chrome namiesto plávajúceho boxu."
+  },
+  "Preview-on-Hover Delay": {
+    "message": "Oneskorenie s náhľadom na predbiehanie"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "Ak je povolená automatická ukážka na vznášaní, je to oneskorenie pred zobrazením ukážky."
+  },
+  "[Advanced] Force Preview": {
+    "message": "[Advanced] Force Preview"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "V prípade webových stránok, ktoré ** naozaj ** nechce byť zobrazený (napr. StackOverflow.com), to vynúti ukážku. Nerd Alert: Toto je buster s rámom."
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[Advanced] Zakázať inkognito Google"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "V predvolenom nastavení sa verzia použitého vyhľadávania Google vždy odpisuje z dôvodov ochrany súkromia a bezpečnosti. Aj keď to môže mať za následok vždy vidieť výzvy na prihlásenie."
+  },
+  "Disable Previews on this site": {
+    "message": "Zakážte ukážky na tejto stránke"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "Podrobné informácie o začiarkavacom políčku tu."
+  },
+  "Disabled on Websites": {
     "message": "Zakázané na webových stránkach"
   },
-  "optionBlockedSitesDesc": {
-    "message": "Rozšírenie nebude bežať na týchto stránkach. Zadajte jednu stránku na riadok."
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "Rozšírenie sa na týchto stránkach nebude behať, môžete web zakázať pridaním do tohto zoznamu."
+  },
+  "Successfully updated settings": {
+    "message": "Úspešne aktualizované nastavenia"
   }
 }

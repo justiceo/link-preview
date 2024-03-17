@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Προεπισκόπηση αναζήτησης και σύνδεσης",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Προεπισκοπήσεις συνδέσμου",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Δείτε τις προεπισκοπήσεις των συνδέσμων και εκτελεί αμέσως αναζητήσεις στην ίδια σελίδα χρησιμοποιώντας αυτόν τον προεπισκόπηση αντί να ανοίξει νέες καρτέλες",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "ΠΩΣ ΤΑ ΠΑΜΕ?"
+  "@testMarkup": {
+    "message": "<div> <p> hello world </p> Αυτή είναι η <strong> γλώσσα </strong> του ιστού </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Χαίρομαι που σου αρέσει! Μπορείτε να μας βοηθήσετε να μοιραστούμε το ❤्;"
+  "Search engine": {
+    "message": "Μηχανή αναζήτησης"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Πώς μπορούμε να βελτιώσουμε;"
+  "The search engine that would be used for inline search previews.": {
+    "message": "Η μηχανή αναζήτησης που θα χρησιμοποιηθεί για προεπισκοπήσεις αναζήτησης inline."
   },
-  "fdbkThanks": {
-    "message": "Ευχαριστώ για τα σχόλια!"
+  "Google Search": {
+    "message": "Αναζήτηση Google"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Βαθμολογία στο webstore"
+  "Bing Search": {
+    "message": "Αναζήτηση Bing"
   },
-  "fdbkNoResponse": {
-    "message": "Οχι"
+  "Yahoo Search": {
+    "message": "Αναζήτηση Yahoo"
   },
-  "fdbkSumbit": {
-    "message": "υποβάλλουν"
+  "Baidu Search": {
+    "message": "Αναζήτηση Baidu"
   },
-  "reportAnIssue": {
-    "message": "Αναφέρετε ένα πρόβλημα",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "Αναζήτηση Yandex"
   },
-  "showDemo": {
-    "message": "Επίδειξη επίδειξης",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "Πλάτος προεπισκόπησης (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Ενημερωμένες ρυθμίσεις με επιτυχία"
+  "The width of the preview panel relative to the page.": {
+    "message": "Το πλάτος του πίνακα προεπισκόπησης σε σχέση με τη σελίδα."
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "Ύψος προεπισκόπησης (%)"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "Το ύψος του πίνακα προεπισκόπησης σε σχέση με τη σελίδα."
+  },
+  "Panel Position": {
+    "message": "Θέση πάνελ"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "Την πλευρά της σελίδας στην οποία θα εμφανιστεί η προεπισκόπηση."
+  },
+  "Right side": {
+    "message": "Σωστη πλευρα"
+  },
+  "Left side": {
+    "message": "Αριστερή πλευρά"
+  },
+  "Close on Escape Key": {
+    "message": "Κλείστε το κλειδί διαφυγής"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "Χρησιμοποιήστε το κλειδί ESC (ESCAPE) για να κλείσετε τον πίνακα προεπισκόπησης."
+  },
+  "Automatically Hide Previews": {
+    "message": "Απόκρυψη αυτομάτων προεπισκόπησης"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "Κρύβει τον πίνακα προεπισκόπησης όταν μετακινηθείτε ή αλληλεπιδράτε με την κύρια σελίδα."
+  },
+  "Preview in Side Panel": {
+    "message": "Προεπισκόπηση στο πλαϊνό πίνακα"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "Εμφανίζει την προβολή στο πλαϊνό πλαίσιο του Chrome αντί για ένα πλωτό κουτί."
+  },
+  "Preview-on-Hover Delay": {
+    "message": "Καθυστέρηση προεπισκόπησης-on-hover"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "Όταν είναι ενεργοποιημένη η αυτόματη προεπισκόπηση του Hover, αυτή είναι η καθυστέρηση πριν εμφανιστεί η προεπισκόπηση."
+  },
+  "[Advanced] Force Preview": {
+    "message": "[Advanced] Preview Force"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "Για ιστοσελίδες που ** πραγματικά ** δεν θέλουν να προεπισκόπηση (π.χ. stackoverflow.com) αυτό αναγκάζει μια προεπισκόπηση. NERD ALERT: Πρόκειται για ένα buster busting πλαισίου."
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[Advanced] Απενεργοποιήστε το Incognito Google"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "Από προεπιλογή, η έκδοση της αναζήτησης Google που χρησιμοποιείται είναι πάντα υπογεγραμμένη για λόγους απορρήτου και ασφάλειας. Αν και αυτό μπορεί να έχει ως αποτέλεσμα να βλέπουμε πάντα τις υποδείξεις σύνδεσης."
+  },
+  "Disable Previews on this site": {
+    "message": "Απενεργοποιήστε τις προεπισκοπήσεις σε αυτόν τον ιστότοπο"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "Οι λεπτομέρειες πληροφορίες σχετικά με το πλαίσιο ελέγχου εδώ."
+  },
+  "Disabled on Websites": {
     "message": "Απενεργοποιημένη σε ιστότοπους"
   },
-  "optionBlockedSitesDesc": {
-    "message": "Η επέκταση δεν θα εκτελεστεί σε αυτούς τους ιστότοπους. Εισαγάγετε έναν ιστότοπο ανά γραμμή."
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "Η επέκταση δεν θα εκτελεστεί σε αυτούς τους ιστότοπους, μπορείτε να απενεργοποιήσετε έναν ιστότοπο προσθέτοντας σε αυτόν τον κατάλογο."
+  },
+  "Successfully updated settings": {
+    "message": "Ενημερωμένες ρυθμίσεις με επιτυχία"
   }
 }

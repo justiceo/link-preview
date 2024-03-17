@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "検索＆リンクプレビュー",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "リンクプレビュー",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "リンクのプレビューを参照し、新しいタブを開く代わりにこのプレビューターを使用して同じページで検索を即座に実行する",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "私たちはどのようにやっています？"
+  "@testMarkup": {
+    "message": "<div> <p> hello world </p>これは<strong>言語</strong> </div>"
   },
-  "fdbkCareToShare": {
-    "message": "気に入ってくれてうれしいです！ ❤️を共有するのを手伝ってもらえますか？"
+  "Search engine": {
+    "message": "検索エンジン"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "どうすれば改善できますか？"
+  "The search engine that would be used for inline search previews.": {
+    "message": "インライン検索プレビューに使用される検索エンジン。"
   },
-  "fdbkThanks": {
-    "message": "フィードバックをお寄せいただきありがとうございます！"
+  "Google Search": {
+    "message": "Google検索"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Webstoreのレート"
+  "Bing Search": {
+    "message": "ビング検索"
   },
-  "fdbkNoResponse": {
-    "message": "いいえ"
+  "Yahoo Search": {
+    "message": "Yahoo Search"
   },
-  "fdbkSumbit": {
-    "message": "提出する"
+  "Baidu Search": {
+    "message": "Baidu検索"
   },
-  "reportAnIssue": {
-    "message": "問題を報告する",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "Yandex検索"
   },
-  "showDemo": {
-    "message": "デモを表示します",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "プレビュー幅（％）"
   },
-  "optionsSaveSuccess": {
-    "message": "正常に更新された設定"
+  "The width of the preview panel relative to the page.": {
+    "message": "ページに対するプレビューパネルの幅。"
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "プレビューの高さ（％）"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "ページに対するプレビューパネルの高さ。"
+  },
+  "Panel Position": {
+    "message": "パネル位置"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "プレビューを表示するページの側面。"
+  },
+  "Right side": {
+    "message": "右側"
+  },
+  "Left side": {
+    "message": "左側"
+  },
+  "Close on Escape Key": {
+    "message": "エスケープキーを閉じます"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "ESC（エスケープ）キーを使用して、プレビューパネルを閉じます。"
+  },
+  "Automatically Hide Previews": {
+    "message": "プレビューを自動的に非表示にします"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "メインページをスクロールまたは対話するときに、プレビューパネルを隠します。"
+  },
+  "Preview in Side Panel": {
+    "message": "サイドパネルでプレビューします"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "フローティングボックスの代わりに、クロムサイドパネルにビューを表示します。"
+  },
+  "Preview-on-Hover Delay": {
+    "message": "プレビューオンホバー遅延"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "ホバーでの自動プレビューが有効になっている場合、これはプレビューが表示される前の遅延です。"
+  },
+  "[Advanced] Force Preview": {
+    "message": "[Advanced]力プレビュー"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "**本当に**プレビューしたくないWebサイト（例：stackoverflow.com）は、プレビューを強制します。 オタクアラート：これはフレームバストバスターです。"
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[Advanced] Incognito Googleを無効にします"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "デフォルトでは、使用されているGoogle検索のバージョンは、プライバシーとセキュリティ上の理由に常にサインアウトされます。 ただし、これにより、常にサインインプロンプトが表示される場合があります。"
+  },
+  "Disable Previews on this site": {
+    "message": "このサイトでプレビューを無効にします"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "ここのチェックボックスの詳細情報。"
+  },
+  "Disabled on Websites": {
     "message": "Webサイトで無効になっています"
   },
-  "optionBlockedSitesDesc": {
-    "message": "これらのサイトでは拡張機能が実行されません。 1行ごとに1つのサイトを入力します。"
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "拡張機能はこれらのサイトで実行されません。このリストに追加することでサイトを無効にすることができます。"
+  },
+  "Successfully updated settings": {
+    "message": "正常に更新された設定"
   }
 }

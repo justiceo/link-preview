@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Previsualització de cerca i enllaç",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Previsualitzacions d'enllaços",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Consulteu les previsualitzacions dels enllaços i realitzen de forma instantània les cerques a la mateixa pàgina mitjançant aquest previsualitzador en lloc d’obrir noves pestanyes",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Com estem?"
+  "@testMarkup": {
+    "message": "<div> <p> Hola món </p> Aquest és el <strong> llenguatge </strong> del web </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Encantat de que t'agradi! Ens podeu ajudar a compartir el ❤️?"
+  "Search engine": {
+    "message": "Motor de cerca"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Com podem millorar?"
+  "The search engine that would be used for inline search previews.": {
+    "message": "El motor de cerca que s’utilitzaria per a les previsualitzacions de cerca en línia."
   },
-  "fdbkThanks": {
-    "message": "Gràcies pels comentaris!"
+  "Google Search": {
+    "message": "Google recerca"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Valora a la botiga web"
+  "Bing Search": {
+    "message": "Cerca Bing"
   },
-  "fdbkNoResponse": {
-    "message": "No"
+  "Yahoo Search": {
+    "message": "Cerca de Yahoo"
   },
-  "fdbkSumbit": {
-    "message": "Presentar"
+  "Baidu Search": {
+    "message": "Cerca de Baidu"
   },
-  "reportAnIssue": {
-    "message": "Informeu d’un problema",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "Cerca Yandex"
   },
-  "showDemo": {
-    "message": "Demostració d'espectacle",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "Amplada de previsualització (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Configuració actualitzada amb èxit"
+  "The width of the preview panel relative to the page.": {
+    "message": "L'amplada del tauler de vista prèvia respecte a la pàgina."
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "Vista prèvia alçada (%)"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "L'alçada del tauler de vista prèvia respecte a la pàgina."
+  },
+  "Panel Position": {
+    "message": "Posició del panell"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "El costat de la pàgina on es mostra la vista prèvia."
+  },
+  "Right side": {
+    "message": "Costat dret"
+  },
+  "Left side": {
+    "message": "Costat esquerre"
+  },
+  "Close on Escape Key": {
+    "message": "Tanca la clau d’escapament"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "Utilitzeu la tecla ESC (Escape) per tancar el tauler de vista prèvia."
+  },
+  "Automatically Hide Previews": {
+    "message": "Amagueu automàticament les previsualitzacions"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "Amaga el tauler de previsualització quan es desplaça o interactua amb la pàgina principal."
+  },
+  "Preview in Side Panel": {
+    "message": "Vista prèvia al tauler lateral"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "Mostra la vista al panell lateral cromat en lloc d'una caixa flotant."
+  },
+  "Preview-on-Hover Delay": {
+    "message": "Retard de previsualització sobre-recurs"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "Quan la previsualització automàtica sobre el HOver està habilitada, aquest és el retard abans que es mostri la vista prèvia."
+  },
+  "[Advanced] Force Preview": {
+    "message": "[Avançat] Vista prèvia de la força"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "Per als llocs web que ** realment ** no volen ser previsualitzats (per exemple, stackoverflow.com), això obliga una vista prèvia. Alerta de Nerd: es tracta d’un Buster que s’aconsegueix amb un marc."
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[Avançat] Desactivar Incognito Google"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "De manera predeterminada, la versió de Google Search usada sempre està signada per motius de privadesa i seguretat. Tot i que això pot donar lloc a les indicacions de sessió sempre."
+  },
+  "Disable Previews on this site": {
+    "message": "Desactiveu les previsualitzacions en aquest lloc"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "La informació detallada sobre la casella de selecció aquí."
+  },
+  "Disabled on Websites": {
     "message": "Desactivat en llocs web"
   },
-  "optionBlockedSitesDesc": {
-    "message": "L’extensió no s’executarà en aquests llocs. Introduïu un lloc per línia."
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "L’extensió no s’executarà en aquests llocs, podeu desactivar un lloc afegint a aquesta llista."
+  },
+  "Successfully updated settings": {
+    "message": "Configuració actualitzada amb èxit"
   }
 }

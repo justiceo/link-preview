@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "معاينة البحث والرابط",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "معاينات الارتباط",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "راجع معاينات الروابط ويقوم على الفور بإجراء عمليات البحث على نفس الصفحة باستخدام هذه المعاينة بدلاً من فتح علامات تبويب جديدة",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "كيف نفعل؟"
+  "@testMarkup": {
+    "message": "<viv> <p> Hello World </p> هذه هي اللغة <strong> </strong> من الويب </div>"
   },
-  "fdbkCareToShare": {
-    "message": "سعيد انه اعجبك! هل يمكنك مساعدتنا في مشاركة ❤؟"
+  "Search engine": {
+    "message": "محرك البحث"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "كيف يمكن أن نتحسن؟"
+  "The search engine that would be used for inline search previews.": {
+    "message": "محرك البحث الذي سيتم استخدامه لمعاينات البحث داخل الخط."
   },
-  "fdbkThanks": {
-    "message": "شكرا على ملاحظاتك!"
+  "Google Search": {
+    "message": "بحث جوجل"
   },
-  "fdbkRateOnWebstore": {
-    "message": "معدل على WebStore"
+  "Bing Search": {
+    "message": "البحث بينج"
   },
-  "fdbkNoResponse": {
-    "message": "لا"
+  "Yahoo Search": {
+    "message": "البحث ياهو"
   },
-  "fdbkSumbit": {
-    "message": "يُقدِّم"
+  "Baidu Search": {
+    "message": "بحث بايدو"
   },
-  "reportAnIssue": {
-    "message": "بلغ عن خطأ",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "البحث Yandex"
   },
-  "showDemo": {
-    "message": "عرض العرض التوضيحي",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "عرض المعاينة (٪)"
   },
-  "optionsSaveSuccess": {
-    "message": "الإعدادات التي تم تحديثها بنجاح"
+  "The width of the preview panel relative to the page.": {
+    "message": "عرض لوحة المعاينة بالنسبة للصفحة."
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "ارتفاع معاينة (٪)"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "ارتفاع لوحة المعاينة بالنسبة إلى الصفحة."
+  },
+  "Panel Position": {
+    "message": "وضع لوحة"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "جانب الصفحة لعرض المعاينة."
+  },
+  "Right side": {
+    "message": "الجانب الأيمن"
+  },
+  "Left side": {
+    "message": "الجهه اليسرى"
+  },
+  "Close on Escape Key": {
+    "message": "أغلق على مفتاح الهروب"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "استخدم مفتاح ESC (Escape) لإغلاق لوحة المعاينة."
+  },
+  "Automatically Hide Previews": {
+    "message": "إخفاء المعاينات تلقائيا"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "يخفي لوحة المعاينة عند التمرير أو التفاعل مع الصفحة الرئيسية."
+  },
+  "Preview in Side Panel": {
+    "message": "معاينة في اللوحة الجانبية"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "يعرض العرض في اللوحة الجانبية للكروم بدلاً من صندوق عائم."
+  },
+  "Preview-on-Hover Delay": {
+    "message": "معاينة التأخير على محط"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "عند تمكين المعاينة التلقائية على التحوم ، هذا هو التأخير قبل عرض المعاينة."
+  },
+  "[Advanced] Force Preview": {
+    "message": "[متقدم] معاينة القوة"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "بالنسبة لمواقع الويب التي ** حقًا ** لا تريد معاينة (على سبيل المثال StackOverFlow.com) ، فإن هذا يفرض معاينة. تنبيه الطالب الذي يذاكر كثيرا: هذا هو buster خدعة الإطار."
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[متقدم] تعطيل التخفي google"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "افتراضيًا ، يتم دائمًا توقيع إصدار Google Search المستخدم لأسباب الخصوصية والأمن. على الرغم من أن هذا قد يؤدي دائمًا إلى رؤية مطالبات تسجيل الدخول."
+  },
+  "Disable Previews on this site": {
+    "message": "تعطيل المعاينات على هذا الموقع"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "معلومات التفاصيل حول مربع الاختيار هنا."
+  },
+  "Disabled on Websites": {
     "message": "معاق على مواقع الويب"
   },
-  "optionBlockedSitesDesc": {
-    "message": "التمديد لن يعمل على هذه المواقع. أدخل موقع واحد لكل سطر."
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "لن يعمل التمديد على هذه المواقع ، يمكنك تعطيل موقع بإضافة إلى هذه القائمة."
+  },
+  "Successfully updated settings": {
+    "message": "الإعدادات التي تم تحديثها بنجاح"
   }
 }

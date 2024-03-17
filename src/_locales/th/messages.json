@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "การค้นหาและลิงก์ดูตัวอย่าง",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "ตัวอย่างลิงก์",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "ดูตัวอย่างของลิงก์และทำการค้นหาในหน้าเดียวกันทันทีโดยใช้ตัวแสดงตัวอย่างนี้แทนที่จะเปิดแท็บใหม่",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "เราเป็นอย่างไรบ้าง?"
+  "@testMarkup": {
+    "message": "<div> <p> Hello World </p> นี่คือ <strong> ภาษา </strong> ของเว็บ </div>"
   },
-  "fdbkCareToShare": {
-    "message": "ดีใจที่คุณชอบ! คุณสามารถช่วยเราแบ่งปัน❤ได้หรือไม่?"
+  "Search engine": {
+    "message": "เครื่องมือค้นหา"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "เราจะปรับปรุงได้อย่างไร?"
+  "The search engine that would be used for inline search previews.": {
+    "message": "เครื่องมือค้นหาที่จะใช้สำหรับตัวอย่างการค้นหาแบบอินไลน์"
   },
-  "fdbkThanks": {
-    "message": "ขอบคุณสำหรับความคิดเห็น!"
+  "Google Search": {
+    "message": "ค้นหา Google"
   },
-  "fdbkRateOnWebstore": {
-    "message": "ให้คะแนนบนเว็บสโตร์"
+  "Bing Search": {
+    "message": "การค้นหา Bing"
   },
-  "fdbkNoResponse": {
-    "message": "เลขที่"
+  "Yahoo Search": {
+    "message": "Yahoo Search"
   },
-  "fdbkSumbit": {
-    "message": "ส่ง"
+  "Baidu Search": {
+    "message": "Baidu Search"
   },
-  "reportAnIssue": {
-    "message": "รายงานปัญหา",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "Yandex Search"
   },
-  "showDemo": {
-    "message": "แสดงตัวอย่าง",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "ความกว้างตัวอย่าง (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "อัปเดตการตั้งค่าสำเร็จ"
+  "The width of the preview panel relative to the page.": {
+    "message": "ความกว้างของแผงตัวอย่างที่สัมพันธ์กับหน้า"
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "ตัวอย่างความสูง (%)"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "ความสูงของแผงแสดงตัวอย่างสัมพันธ์กับหน้า"
+  },
+  "Panel Position": {
+    "message": "ตำแหน่งแผง"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "ด้านข้างของหน้าเว็บที่จะแสดงตัวอย่าง"
+  },
+  "Right side": {
+    "message": "ด้านขวา"
+  },
+  "Left side": {
+    "message": "ด้านซ้าย"
+  },
+  "Close on Escape Key": {
+    "message": "ปิดคีย์หลบหนี"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "ใช้ปุ่ม ESC (Escape) เพื่อปิดแผงตัวอย่าง"
+  },
+  "Automatically Hide Previews": {
+    "message": "ซ่อนตัวอย่างโดยอัตโนมัติ"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "ซ่อนแผงตัวอย่างเมื่อคุณเลื่อนออกไปหรือโต้ตอบกับหน้าหลัก"
+  },
+  "Preview in Side Panel": {
+    "message": "ดูตัวอย่างในแผงด้านข้าง"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "แสดงมุมมองในแผงด้านข้างโครเมี่ยมแทนกล่องลอย"
+  },
+  "Preview-on-Hover Delay": {
+    "message": "ดูตัวอย่างล่าช้า"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "เมื่อเปิดใช้งานตัวอย่างอัตโนมัติเกี่ยวกับ Hover นี่คือความล่าช้าก่อนที่จะแสดงตัวอย่าง"
+  },
+  "[Advanced] Force Preview": {
+    "message": "[ขั้นสูง] Preview Force"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "สำหรับเว็บไซต์ที่ ** จริง ๆ ** ไม่ต้องการดูตัวอย่าง (เช่น stackoverflow.com) สิ่งนี้จะแสดงตัวอย่าง Nerd Alert: นี่คือบัสเตอร์ที่เต็มไปด้วยเฟรม"
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[ขั้นสูง] ปิดการใช้งาน Google ไม่ระบุตัวตน"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "โดยค่าเริ่มต้นเวอร์ชันของ Google Search ที่ใช้จะถูกลงทะเบียนเพื่อเหตุผลด้านความเป็นส่วนตัวและความปลอดภัยเสมอ แม้ว่าสิ่งนี้อาจส่งผลให้เห็นพรอมต์ลงชื่อเข้าใช้เสมอ"
+  },
+  "Disable Previews on this site": {
+    "message": "ปิดการใช้งานตัวอย่างบนเว็บไซต์นี้"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "ข้อมูลรายละเอียดเกี่ยวกับช่องทำเครื่องหมายที่นี่"
+  },
+  "Disabled on Websites": {
     "message": "ปิดใช้งานบนเว็บไซต์"
   },
-  "optionBlockedSitesDesc": {
-    "message": "ส่วนขยายจะไม่ทำงานบนเว็บไซต์เหล่านี้ ป้อนหนึ่งไซต์ต่อบรรทัด"
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "ส่วนขยายจะไม่ทำงานบนเว็บไซต์เหล่านี้คุณสามารถปิดการใช้งานไซต์ได้โดยเพิ่มในรายการนี้"
+  },
+  "Successfully updated settings": {
+    "message": "อัปเดตการตั้งค่าสำเร็จ"
   }
 }

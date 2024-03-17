@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Recherche et prévisualisation du lien",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Aperçu des liens",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Voir les aperçus de liens et effectuent instantanément des recherches sur la même page en utilisant cet aperçu au lieu d'ouvrir de nouveaux onglets",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Comment allons nous?"
+  "@testMarkup": {
+    "message": "<div> <p> Bonjour le monde </p> C'est la <strong> langue </strong> du web </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Content que tu aimes ça! Pouvez-vous nous aider à partager le ❤️?"
+  "Search engine": {
+    "message": "Moteur de recherche"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Comment pouvons nous nous améliorer?"
+  "The search engine that would be used for inline search previews.": {
+    "message": "Le moteur de recherche qui serait utilisé pour les prévisualistes de recherche en ligne."
   },
-  "fdbkThanks": {
-    "message": "Merci pour les commentaires!"
+  "Google Search": {
+    "message": "Recherche Google"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Tarif sur Webstore"
+  "Bing Search": {
+    "message": "Recherche de bing"
   },
-  "fdbkNoResponse": {
-    "message": "Non"
+  "Yahoo Search": {
+    "message": "Recherche de yahoo"
   },
-  "fdbkSumbit": {
-    "message": "Soumettre"
+  "Baidu Search": {
+    "message": "Recherche de baidu"
   },
-  "reportAnIssue": {
-    "message": "Signaler un problème",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "Recherche de yandex"
   },
-  "showDemo": {
-    "message": "Démonstration",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "Largeur d'aperçu (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Paramètres mis à jour avec succès"
+  "The width of the preview panel relative to the page.": {
+    "message": "La largeur du panneau d'aperçu par rapport à la page."
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "Aperçu de la hauteur (%)"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "La hauteur du panneau d'aperçu par rapport à la page."
+  },
+  "Panel Position": {
+    "message": "Position de panneau"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "Le côté de la page dans laquelle afficher l'aperçu."
+  },
+  "Right side": {
+    "message": "Côté droit"
+  },
+  "Left side": {
+    "message": "Côté gauche"
+  },
+  "Close on Escape Key": {
+    "message": "Fermer sur la clé d'évasion"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "Utilisez la touche ESC (Escape) pour fermer le panneau d'aperçu."
+  },
+  "Automatically Hide Previews": {
+    "message": "Masquer automatiquement les aperçus"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "Cache le panneau d'aperçu lorsque vous faites défiler ou interagissez avec la page principale."
+  },
+  "Preview in Side Panel": {
+    "message": "Aperçu dans le panneau latéral"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "Affiche la vue dans le panneau latéral Chrome au lieu d'une boîte flottante."
+  },
+  "Preview-on-Hover Delay": {
+    "message": "Retard de prévisualisation"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "Lorsque l'aperçu automatique sur Hover est activé, il s'agit du retard avant l'état de l'aperçu."
+  },
+  "[Advanced] Force Preview": {
+    "message": "Aperçu [avancé] de force"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "Pour les sites Web qui ** vraiment ** ne veulent pas être prévisualisés (par exemple stackoverflow.com), cela force un aperçu. Alerte de nerd: il s'agit d'un buster à trame."
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[Avancé] Désactiver Incognito Google"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "Par défaut, la version de Google Search utilisée est toujours signée pour des raisons de confidentialité et de sécurité. Bien que cela puisse entraîner de toujours voir les invites de connexion."
+  },
+  "Disable Previews on this site": {
+    "message": "Désactiver les aperçus sur ce site"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "Les informations détaillées sur la case à cocher ici."
+  },
+  "Disabled on Websites": {
     "message": "Désactivé sur les sites Web"
   },
-  "optionBlockedSitesDesc": {
-    "message": "L'extension ne fonctionnera pas sur ces sites. Entrez un site par ligne."
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "L'extension ne fonctionnera pas sur ces sites, vous pouvez désactiver un site en ajoutant à cette liste."
+  },
+  "Successfully updated settings": {
+    "message": "Paramètres mis à jour avec succès"
   }
 }

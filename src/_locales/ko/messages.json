@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "검색 및 링크 미리보기",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "링크 미리보기",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "링크 미리보기를보고 새 탭을 열지 않고이 미리보기를 사용하여 같은 페이지에서 검색을 즉시 수행합니다.",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "일은 잘되고 있니?"
+  "@testMarkup": {
+    "message": "<div> <p> Hello World </p> 이것은 웹의 <strong> 언어 </strong>입니다 </div>"
   },
-  "fdbkCareToShare": {
-    "message": "당신이 그것을 좋아해서 다행입니다! 우리가 us️를 공유하도록 도와 줄 수 있습니까?"
+  "Search engine": {
+    "message": "검색 엔진"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "우리는 어떻게 개선 할 수 있습니까?"
+  "The search engine that would be used for inline search previews.": {
+    "message": "인라인 검색 미리보기에 사용되는 검색 엔진."
   },
-  "fdbkThanks": {
-    "message": "의견을 보내 주셔서 감사합니다!"
+  "Google Search": {
+    "message": "구글 검색"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Webstore의 요금"
+  "Bing Search": {
+    "message": "빙 검색"
   },
-  "fdbkNoResponse": {
-    "message": "아니요"
+  "Yahoo Search": {
+    "message": "야후 검색"
   },
-  "fdbkSumbit": {
-    "message": "제출하다"
+  "Baidu Search": {
+    "message": "바이두 검색"
   },
-  "reportAnIssue": {
-    "message": "문제를보고하십시오",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "Yandex 검색"
   },
-  "showDemo": {
-    "message": "데모를 보여주십시오",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "미리보기 너비 (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "설정을 성공적으로 업데이트했습니다"
+  "The width of the preview panel relative to the page.": {
+    "message": "페이지에 대한 미리보기 패널의 너비."
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "미리보기 높이 (%)"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "페이지에 대한 미리보기 패널의 높이."
+  },
+  "Panel Position": {
+    "message": "패널 위치"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "미리보기를 표시 할 페이지 측면."
+  },
+  "Right side": {
+    "message": "오른쪽"
+  },
+  "Left side": {
+    "message": "왼쪽"
+  },
+  "Close on Escape Key": {
+    "message": "탈출 키에 닫으십시오"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "ESC (Escape) 키를 사용하여 미리보기 패널을 닫습니다."
+  },
+  "Automatically Hide Previews": {
+    "message": "미리보기를 자동으로 숨 깁니다"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "스크롤하거나 메인 페이지와 상호 작용할 때 미리보기 패널을 숨 깁니다."
+  },
+  "Preview in Side Panel": {
+    "message": "측면 패널에서 미리보기"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "떠 다니는 상자 대신 Chrome Side 패널에보기를 표시합니다."
+  },
+  "Preview-on-Hover Delay": {
+    "message": "미리보기 지연"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "호버의 자동 미리보기가 활성화되면 미리보기가 표시되기 전 지연입니다."
+  },
+  "[Advanced] Force Preview": {
+    "message": "[고급] 힘 미리보기"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "** 실제로 ** 미리보기를 원하지 않는 웹 사이트의 경우 (예 : StackoverFlow.com) 미리보기가 강력합니다. 괴상한 경고 : 이것은 프레임 버스트 버스터입니다."
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[Advanced] Incognito Google을 비활성화합니다"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "기본적으로 사용 된 Google 검색 버전은 항상 개인 정보 및 보안상의 이유로 가입됩니다. 이것은 항상 로그인 프롬프트를 볼 수 있습니다."
+  },
+  "Disable Previews on this site": {
+    "message": "이 사이트에서 미리보기를 비활성화하십시오"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "확인란에 대한 세부 정보는 여기를 참조하십시오."
+  },
+  "Disabled on Websites": {
     "message": "웹 사이트에서 비활성화"
   },
-  "optionBlockedSitesDesc": {
-    "message": "이 사이트에서 확장이 실행되지 않습니다. 줄 당 한 사이트를 입력하십시오."
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "이 사이트에서 확장이 실행되지 않으므로이 목록에 추가하여 사이트를 비활성화 할 수 있습니다."
+  },
+  "Successfully updated settings": {
+    "message": "설정을 성공적으로 업데이트했습니다"
   }
 }

@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "खोज और लिंक पूर्वावलोकन",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "लिंक पूर्वावलोकन",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
-    "message": "लिंक के पूर्वावलोकन देखें और नए टैब खोलने के बजाय इस पूर्वावलोकनकर्ता का उपयोग करके उसी पृष्ठ पर तुरंत खोज करते हैं",
+  "@appDesc": {
+    "message": "लिंक के पूर्वावलोकन देखें और नए टैब खोलने के बजाय इस पूर्वावलोकनकर्ता का उपयोग करके एक ही पृष्ठ पर तुरंत खोज करते हैं",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "हम कैसे हैं?"
+  "@testMarkup": {
+    "message": "<viv> <p> हैलो वर्ल्ड </p> यह वेब का <strong> भाषा </strong> है </div>"
   },
-  "fdbkCareToShare": {
-    "message": "खुशी है कि यह आपको पसंद है! क्या आप हमें ❤ साझा करने में मदद कर सकते हैं?"
+  "Search engine": {
+    "message": "खोज इंजन"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "हम कैसे सुधार सकते हैं?"
+  "The search engine that would be used for inline search previews.": {
+    "message": "खोज इंजन जिसका उपयोग इनलाइन खोज पूर्वावलोकन के लिए किया जाएगा।"
   },
-  "fdbkThanks": {
-    "message": "प्रतिक्रिया के लिए धन्यवाद!"
+  "Google Search": {
+    "message": "गूगल खोज"
   },
-  "fdbkRateOnWebstore": {
-    "message": "वेबस्टोर पर दर"
+  "Bing Search": {
+    "message": "बिंग खोज"
   },
-  "fdbkNoResponse": {
-    "message": "नहीं"
+  "Yahoo Search": {
+    "message": "याहू खोज"
   },
-  "fdbkSumbit": {
-    "message": "जमा करना"
+  "Baidu Search": {
+    "message": "Baidu खोज"
   },
-  "reportAnIssue": {
-    "message": "मामले की रिपोर्ट करें",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "यैंडेक्स खोज"
   },
-  "showDemo": {
-    "message": "डेमो दिखाओ",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "पूर्वावलोकन चौड़ाई (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "सफलतापूर्वक अद्यतन सेटिंग्स"
+  "The width of the preview panel relative to the page.": {
+    "message": "पृष्ठ के सापेक्ष पूर्वावलोकन पैनल की चौड़ाई।"
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "पूर्वावलोकन ऊंचाई (%)"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "पृष्ठ के सापेक्ष पूर्वावलोकन पैनल की ऊंचाई।"
+  },
+  "Panel Position": {
+    "message": "पैनल स्थिति"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "उस पृष्ठ का पक्ष जिसमें पूर्वावलोकन प्रदर्शित करना है।"
+  },
+  "Right side": {
+    "message": "दाहिनी ओर"
+  },
+  "Left side": {
+    "message": "बाईं तरफ"
+  },
+  "Close on Escape Key": {
+    "message": "एस्केप कुंजी पर बंद करें"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "पूर्वावलोकन पैनल को बंद करने के लिए ESC (एस्केप) कुंजी का उपयोग करें।"
+  },
+  "Automatically Hide Previews": {
+    "message": "स्वचालित रूप से पूर्वावलोकन छिपाते हैं"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "जब आप स्क्रॉल करते हैं या मुख्य पृष्ठ के साथ बातचीत करते हैं, तो पूर्वावलोकन पैनल को छिपाता है।"
+  },
+  "Preview in Side Panel": {
+    "message": "साइड पैनल में पूर्वावलोकन करें"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "फ्लोटिंग बॉक्स के बजाय क्रोम साइड पैनल में दृश्य प्रदर्शित करता है।"
+  },
+  "Preview-on-Hover Delay": {
+    "message": "पूर्वावलोकन-ऑन-होवर विलंब"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "जब होवर पर स्वचालित पूर्वावलोकन सक्षम होता है, तो पूर्वावलोकन दिखाने से पहले यह देरी होती है।"
+  },
+  "[Advanced] Force Preview": {
+    "message": "[उन्नत] बल पूर्वावलोकन"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "उन वेबसाइटों के लिए जो ** वास्तव में ** का पूर्वावलोकन नहीं करना चाहते हैं (जैसे कि StackOverFlow.com) यह एक पूर्वावलोकन को मजबूर करता है। Nerd Alert: यह एक फ्रेम-बस्टिंग बस्टर है।"
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[उन्नत] incognito Google को अक्षम करें"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "डिफ़ॉल्ट रूप से, Google खोज का उपयोग हमेशा गोपनीयता और सुरक्षा कारणों से साइन-आउट है। हालांकि यह हमेशा साइन-इन संकेतों को देखने में परिणाम हो सकता है।"
+  },
+  "Disable Previews on this site": {
+    "message": "इस साइट पर पूर्वावलोकन अक्षम करें"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "यहां चेकबॉक्स के बारे में विस्तार से जानकारी।"
+  },
+  "Disabled on Websites": {
     "message": "वेबसाइटों पर अक्षम"
   },
-  "optionBlockedSitesDesc": {
-    "message": "इन साइटों पर एक्सटेंशन नहीं चलेगा। प्रति पंक्ति एक साइट दर्ज करें।"
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "एक्सटेंशन इन साइटों पर नहीं चलेगा, आप इस सूची में जोड़कर किसी साइट को अक्षम कर सकते हैं।"
+  },
+  "Successfully updated settings": {
+    "message": "सफलतापूर्वक अद्यतन सेटिंग्स"
   }
 }

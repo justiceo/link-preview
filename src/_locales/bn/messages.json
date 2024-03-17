@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "অনুসন্ধান এবং লিঙ্ক পূর্বরূপ",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "লিঙ্ক পূর্বরূপ",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "লিঙ্কগুলির পূর্বরূপ দেখুন এবং তাত্ক্ষণিকভাবে নতুন ট্যাবগুলি খোলার পরিবর্তে এই পূর্বরূপ ব্যবহার করে একই পৃষ্ঠায় অনুসন্ধানগুলি সম্পাদন করে",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "আমরা কেমন করছি?"
+  "@testMarkup": {
+    "message": "<div> <p> হ্যালো ওয়ার্ল্ড </p> এটি ওয়েব </div> এর <strong> ভাষা </strong>"
   },
-  "fdbkCareToShare": {
-    "message": "আমি খুশি তুমি এটা পছন্দ করেছো! আপনি কি আমাদের ❤ ভাগ করতে সহায়তা করতে পারেন?"
+  "Search engine": {
+    "message": "খোঁজ যন্ত্র"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "আমরা কিভাবে উন্নত করতে পারি?"
+  "The search engine that would be used for inline search previews.": {
+    "message": "ইনলাইন অনুসন্ধান পূর্বরূপগুলির জন্য ব্যবহৃত হবে এমন অনুসন্ধান ইঞ্জিন।"
   },
-  "fdbkThanks": {
-    "message": "সাহায্য করার জন্য ধন্যবাদ!"
+  "Google Search": {
+    "message": "Google অনুসন্ধান"
   },
-  "fdbkRateOnWebstore": {
-    "message": "ওয়েবস্টোরে হার"
+  "Bing Search": {
+    "message": "বিং অনুসন্ধান"
   },
-  "fdbkNoResponse": {
-    "message": "না"
+  "Yahoo Search": {
+    "message": "ইয়াহু অনুসন্ধান"
   },
-  "fdbkSumbit": {
-    "message": "জমা দিন"
+  "Baidu Search": {
+    "message": "বাইদু অনুসন্ধান"
   },
-  "reportAnIssue": {
-    "message": "একটি সমস্যা রিপোর্ট",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "ইয়ানডেক্স অনুসন্ধান"
   },
-  "showDemo": {
-    "message": "ডেমো দেখান",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "পূর্বরূপ প্রস্থ (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "সফলভাবে আপডেট করা সেটিংস"
+  "The width of the preview panel relative to the page.": {
+    "message": "পৃষ্ঠার সাথে সম্পর্কিত পূর্বরূপ প্যানেলের প্রস্থ।"
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "পূর্বরূপ উচ্চতা (%)"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "পৃষ্ঠার সাথে সম্পর্কিত পূর্বরূপ প্যানেলের উচ্চতা।"
+  },
+  "Panel Position": {
+    "message": "প্যানেল অবস্থান"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "পূর্বরূপ প্রদর্শন করতে পৃষ্ঠার পাশের দিকটি।"
+  },
+  "Right side": {
+    "message": "ডান পাশ"
+  },
+  "Left side": {
+    "message": "বাম পাশে"
+  },
+  "Close on Escape Key": {
+    "message": "এস্কেপ কী বন্ধ করুন"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "পূর্বরূপ প্যানেলটি বন্ধ করতে ESC (এস্কেপ) কী ব্যবহার করুন।"
+  },
+  "Automatically Hide Previews": {
+    "message": "স্বয়ংক্রিয়ভাবে পূর্বরূপগুলি আড়াল করুন"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "আপনি যখন স্ক্রোল করে বা মূল পৃষ্ঠার সাথে ইন্টারঅ্যাক্ট করেন তখন পূর্বরূপ প্যানেলটি লুকায়।"
+  },
+  "Preview in Side Panel": {
+    "message": "পাশের প্যানেলে পূর্বরূপ"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "ভাসমান বাক্সের পরিবর্তে ক্রোম সাইড প্যানেলে দৃশ্যটি প্রদর্শন করে।"
+  },
+  "Preview-on-Hover Delay": {
+    "message": "পূর্বরূপ অন-হোভার বিলম্ব"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "যখন হোভারের উপর স্বয়ংক্রিয় পূর্বরূপ সক্ষম করা হয়, পূর্বরূপ প্রদর্শনের আগে এটি বিলম্ব হয়।"
+  },
+  "[Advanced] Force Preview": {
+    "message": "[উন্নত] ফোর্স পূর্বরূপ"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "যে ওয়েবসাইটগুলি ** সত্যই ** প্রাকদর্শন করতে চান না (উদাঃ স্ট্যাকওভারফ্লো ডটকম) এটি একটি পূর্বরূপকে বাধ্য করে। নার্ড সতর্কতা: এটি একটি ফ্রেম-বস্টিং বাস্টার।"
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[উন্নত] ছদ্মবেশী গুগল অক্ষম করুন"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "ডিফল্টরূপে, ব্যবহৃত গুগল অনুসন্ধানের সংস্করণটি সর্বদা গোপনীয়তা এবং সুরক্ষার কারণে স্বাক্ষরিত হয়। যদিও এর ফলে সর্বদা সাইন-ইন প্রম্পটগুলি দেখা যায়।"
+  },
+  "Disable Previews on this site": {
+    "message": "এই সাইটে পূর্বরূপ অক্ষম করুন"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "এখানে চেকবক্স সম্পর্কে বিশদ তথ্য।"
+  },
+  "Disabled on Websites": {
     "message": "ওয়েবসাইটে অক্ষম"
   },
-  "optionBlockedSitesDesc": {
-    "message": "এই সাইটগুলিতে এক্সটেনশন চলবে না। প্রতি লাইনে একটি সাইট লিখুন।"
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "এই সাইটগুলিতে এক্সটেনশন চলবে না, আপনি এই তালিকায় যুক্ত করে কোনও সাইট অক্ষম করতে পারেন।"
+  },
+  "Successfully updated settings": {
+    "message": "সফলভাবে আপডেট করা সেটিংস"
   }
 }

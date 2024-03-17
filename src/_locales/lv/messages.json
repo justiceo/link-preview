@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Meklēšanas un saites priekšskatījums",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Saites priekšskatījumi",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Skatiet saišu priekšskatījumus un uzreiz veic meklēšanu vienā un tajā pašā lapā, izmantojot šo priekšskatījumu, nevis atveriet jaunas cilnes",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Kā mums klājas?"
+  "@testMarkup": {
+    "message": "<div> <p> Hello World </p> Šī ir tīmekļa </strong> valoda </strong> </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Prieks ka tev patīk! Vai varat palīdzēt mums dalīties ar ❤️?"
+  "Search engine": {
+    "message": "Meklētājs"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Kā mēs varam uzlabot?"
+  "The search engine that would be used for inline search previews.": {
+    "message": "Meklētājprogramma, kas tiks izmantota inline meklēšanas priekšskatījumiem."
   },
-  "fdbkThanks": {
-    "message": "Paldies par atsauksmēm!"
+  "Google Search": {
+    "message": "Google meklēšanu"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Novērtējiet tīmekļa veikalā"
+  "Bing Search": {
+    "message": "Bing meklēšana"
   },
-  "fdbkNoResponse": {
-    "message": "Nē"
+  "Yahoo Search": {
+    "message": "Yahoo meklēšana"
   },
-  "fdbkSumbit": {
-    "message": "Iesniegt"
+  "Baidu Search": {
+    "message": "Baidu meklēšana"
   },
-  "reportAnIssue": {
-    "message": "Ziņot par jautājumu",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "Yandex meklēšana"
   },
-  "showDemo": {
-    "message": "Parādīt demonstrāciju",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "Priekšskatījuma platums (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Veiksmīgi atjauninātie iestatījumi"
+  "The width of the preview panel relative to the page.": {
+    "message": "Priekšskatījuma paneļa platums attiecībā pret lapu."
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "Priekšskatījuma augstums (%)"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "Priekšskatījuma paneļa augstums attiecībā pret lapu."
+  },
+  "Panel Position": {
+    "message": "Paneļa pozīcija"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "Lapas puse, kurā parādīt priekšskatījumu."
+  },
+  "Right side": {
+    "message": "Labā puse"
+  },
+  "Left side": {
+    "message": "Kreisā puse"
+  },
+  "Close on Escape Key": {
+    "message": "Aizveriet bēgšanas atslēgu"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "Izmantojiet taustiņu ESC (Escape), lai aizvērtu priekšskatījuma paneli."
+  },
+  "Automatically Hide Previews": {
+    "message": "Automātiski paslēpt priekšskatījumus"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "Slēpj priekšskatījuma paneli, kad ritiniet vai mijiedarbojaties ar galveno lapu."
+  },
+  "Preview in Side Panel": {
+    "message": "Priekšskatījums sānu panelī"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "Parāda skatu hroma sānu panelī, nevis peldošā lodziņā."
+  },
+  "Preview-on-Hover Delay": {
+    "message": "Priekšskatījums-hover kavēšanās"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "Kad ir iespējots automātisks priekšskatījums par lidojumu, tas ir kavēšanās pirms priekšskatījuma parādīšanas."
+  },
+  "[Advanced] Force Preview": {
+    "message": "[Advanced] Force Preview"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "Tīmekļa vietnēm, kuras ** tiešām ** nevēlas priekšskatīt (piemēram, Stackoverflow.com), tas piespiež priekšskatījumu. Nerd trauksme: tas ir rāmja satricinošs Busters."
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[Advanced] Atspējot inkognito google"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "Pēc noklusējuma izmantotā Google meklēšanas versija vienmēr tiek izrakstīta privātuma un drošības apsvērumu dēļ. Lai gan tas var izraisīt vienmēr pierakstīšanos."
+  },
+  "Disable Previews on this site": {
+    "message": "Atspējot priekšskatījumus šajā vietnē"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "Sīkāka informācija par izvēles rūtiņu šeit."
+  },
+  "Disabled on Websites": {
     "message": "Vietnēs atspējots"
   },
-  "optionBlockedSitesDesc": {
-    "message": "Paplašinājums šajās vietnēs nedarbosies. Ievadiet vienu vietni vienā rindā."
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "Paplašinājums šajās vietnēs nedarbosies, jūs varat atspējot vietni, pievienojot šim sarakstam."
+  },
+  "Successfully updated settings": {
+    "message": "Veiksmīgi atjauninātie iestatījumi"
   }
 }

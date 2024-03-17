@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Претраживање претраге и везе",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Преглед везе",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Погледајте прегледе веза и одмах изводе претраге на истој страници користећи овај преглед уместо да отвара нове картице",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Како нам иде?"
+  "@testMarkup": {
+    "message": "<див> <п> Поздрав свијет </ п> Ово је <стронг> језик </ стронг> на веб </ див>"
   },
-  "fdbkCareToShare": {
-    "message": "Драго ми је да ти се свиђа! Можете ли нам помоћи да поделимо ❤?"
+  "Search engine": {
+    "message": "Претраживач"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Како се можемо побољшати?"
+  "The search engine that would be used for inline search previews.": {
+    "message": "Претрага која би се користила за преглед прегледа претраживања."
   },
-  "fdbkThanks": {
-    "message": "Хвала за повратне информације!"
+  "Google Search": {
+    "message": "Гоогле Сеарцх"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Брзина на ВебСторе-у"
+  "Bing Search": {
+    "message": "БИНГ ПРЕТРАЖИ"
   },
-  "fdbkNoResponse": {
-    "message": "Не"
+  "Yahoo Search": {
+    "message": "Иахоо Сеарцх"
   },
-  "fdbkSumbit": {
-    "message": "прихвати"
+  "Baidu Search": {
+    "message": "Баиду Сеарцх"
   },
-  "reportAnIssue": {
-    "message": "Пријавите проблем",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "Иандек Сеарцх"
   },
-  "showDemo": {
-    "message": "Показати демо",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "Ширина прегледа (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Успешно ажурирана подешавања"
+  "The width of the preview panel relative to the page.": {
+    "message": "Ширина плоче за преглед у односу на страницу."
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "Висина прегледа (%)"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "Висина плоче за преглед у односу на страницу."
+  },
+  "Panel Position": {
+    "message": "Панел позиција"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "Страна странице у којој ће приказати преглед."
+  },
+  "Right side": {
+    "message": "Десна страна"
+  },
+  "Left side": {
+    "message": "Лева страна"
+  },
+  "Close on Escape Key": {
+    "message": "Затвори на кључу за бијег"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "Користите тастер ЕСЦ (ЕСЦАПЕ) да бисте затворили плочу за преглед."
+  },
+  "Automatically Hide Previews": {
+    "message": "Аутоматски сакријте прегледе"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "Сакрива плочу за преглед када се крећете или комуницирате са главном страном."
+  },
+  "Preview in Side Panel": {
+    "message": "Преглед на бочној плочи"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "Приказује приказ на хромирању бочне плоче уместо плутајуће кутије."
+  },
+  "Preview-on-Hover Delay": {
+    "message": "Преглед-налепљено кашњење"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "Када је омогућен аутоматски преглед на летењу, то је кашњење пре приказа прегледа."
+  },
+  "[Advanced] Force Preview": {
+    "message": "[Адванцед] Преглед снага"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "За веб странице које ** заиста ** не желе да се прегледају (нпр. Стацковерфлов.цом) ове снаге прегледа. Нерд Алерт: Ово је Бустер који гуше оквир."
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[Напредно] Онемогући инкогнито Гоогле"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "Подразумевано је верзија Гоогле претраживања увек испуњена за приватност и безбедносне разлоге. Иако то може резултирати увијек увијек да се пријавите пријава."
+  },
+  "Disable Previews on this site": {
+    "message": "Онемогућите прегледе на овој страници"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "Овде су детаљне информације о потврдној кутији овде."
+  },
+  "Disabled on Websites": {
     "message": "Онемогућено на веб локацијама"
   },
-  "optionBlockedSitesDesc": {
-    "message": "Проширење неће покренути на овим веб локацијама. Унесите једну локацију по линији."
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "Проширење неће покренути на овим веб локацијама, можете онемогућити веб локацију додавањем на ову листу."
+  },
+  "Successfully updated settings": {
+    "message": "Успешно ажурирана подешавања"
   }
 }

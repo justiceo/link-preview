@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Paieškos ir nuorodų peržiūra",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Nuorodų peržiūra",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Žr. Nuorodų peržiūras ir akimirksniu atlieka paieškas tame pačiame puslapyje, naudodamiesi šiuo peržiūros priemone, užuot atidarę naujus skirtukus",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Kaip mums sekasi?"
+  "@testMarkup": {
+    "message": "<div> <p> labas pasaulis </p> Tai yra žiniatinklio </strong> kalba </strong> </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Džiugu, kad tau tai patiko! Ar galite padėti mums pasidalyti ❤️?"
+  "Search engine": {
+    "message": "Paieškos variklis"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Kaip mes galime tobulėti?"
+  "The search engine that would be used for inline search previews.": {
+    "message": "Paieškos variklis, kuris būtų naudojamas įterptų paieškos peržiūras."
   },
-  "fdbkThanks": {
-    "message": "Ačiū už nuomonę!"
+  "Google Search": {
+    "message": "Google paieška"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Įvertinimas „WebStore“"
+  "Bing Search": {
+    "message": "„Bing“ paieška"
   },
-  "fdbkNoResponse": {
-    "message": "Ne"
+  "Yahoo Search": {
+    "message": "„Yahoo“ paieška"
   },
-  "fdbkSumbit": {
-    "message": "Pateikti"
+  "Baidu Search": {
+    "message": "Baidu paieška"
   },
-  "reportAnIssue": {
-    "message": "Pranešti apie klausimą",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "„Yandex“ paieška"
   },
-  "showDemo": {
-    "message": "Parodykite demonstracinę versiją",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "Peržiūros plotis (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Sėkmingai atnaujinti nustatymai"
+  "The width of the preview panel relative to the page.": {
+    "message": "Peržiūros skydelio plotis puslapio atžvilgiu."
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "Peržiūros aukštis (%)"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "Peržiūros skydelio aukštis puslapio atžvilgiu."
+  },
+  "Panel Position": {
+    "message": "Skydo padėtis"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "Puslapio, kuriame galima rodyti peržiūrą, pusė."
+  },
+  "Right side": {
+    "message": "Dešinioji pusė"
+  },
+  "Left side": {
+    "message": "Kairė pusė"
+  },
+  "Close on Escape Key": {
+    "message": "Uždarykite „Escape Key“"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "Norėdami uždaryti peržiūros skydelį, naudokite mygtuką ESC (ESCES)."
+  },
+  "Automatically Hide Previews": {
+    "message": "Automatiškai paslėpkite peržiūras"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "Slepia peržiūros skydą, kai slinkite ar bendraujate su pagrindiniu puslapiu."
+  },
+  "Preview in Side Panel": {
+    "message": "Peržiūra šoniniame skydelyje"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "Rodomas vaizdas „Chrome“ šoniniame skydelyje, o ne plūduriuojančioje dėžutėje."
+  },
+  "Preview-on-Hover Delay": {
+    "message": "Peržiūra ant fondo vėlavimas"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "Kai įjungta automatinė „Hover“ peržiūra, tai yra vėlavimas prieš rodant peržiūrą."
+  },
+  "[Advanced] Force Preview": {
+    "message": "[Išplėstinė] jėgos peržiūra"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "Svetainėse, kurios ** iš tikrųjų ** nenori būti peržiūrėtas (pvz., Stackoverflow.com), tai verčia peržiūrą. Nerdo perspėjimas: tai yra rėmas, kuris yra suderintas su rėmeliu."
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[Išplėstinė] Išjungti „Incognito Google“"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "Pagal numatytuosius nustatymus naudojama „Google“ paieškos versija visada išskiriama dėl privatumo ir saugumo priežasčių. Nors dėl to visada galima pamatyti prisijungimo raginimus."
+  },
+  "Disable Previews on this site": {
+    "message": "Išjunkite peržiūras šioje svetainėje"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "Išsami informacija apie žymimąjį laukelį čia."
+  },
+  "Disabled on Websites": {
     "message": "Neįgalios svetainėse"
   },
-  "optionBlockedSitesDesc": {
-    "message": "Pratęsimas šiose svetainėse nebus vykdomas. Įveskite vieną svetainę vienoje eilutėje."
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "Eilmė nebus vykdoma šiose svetainėse, galite išjungti svetainę, pridėdami prie šio sąrašo."
+  },
+  "Successfully updated settings": {
+    "message": "Sėkmingai atnaujinti nustatymai"
   }
 }

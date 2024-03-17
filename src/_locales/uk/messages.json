@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Попередній перегляд пошуку та посилання",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Попередні попередні перегляди",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Див. Попередній перегляд посилань та миттєво виконує пошук на одній сторінці, використовуючи цей попередній перегляд, а не відкривати нові вкладки",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Як у нас справи?"
+  "@testMarkup": {
+    "message": "<div> <p> Hello World </p> Це <strong> мова </strong> веб -сайту </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Радий, що тобі подобається! Чи можете ви допомогти нам поділитися ❤?"
+  "Search engine": {
+    "message": "Пошукова система"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Як ми можемо вдосконалитись?"
+  "The search engine that would be used for inline search previews.": {
+    "message": "Пошукова система, яка буде використана для вбудованого попереднього перегляду пошуку."
   },
-  "fdbkThanks": {
-    "message": "Дякую за відгук!"
+  "Google Search": {
+    "message": "Пошук Google"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Оцініть на веб -магазині"
+  "Bing Search": {
+    "message": "Бінг пошук"
   },
-  "fdbkNoResponse": {
-    "message": "Немає"
+  "Yahoo Search": {
+    "message": "Yahoo пошук"
   },
-  "fdbkSumbit": {
-    "message": "Подавати"
+  "Baidu Search": {
+    "message": "Пошук Байду"
   },
-  "reportAnIssue": {
-    "message": "Повідомте про питання",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "Пошук Яндекса"
   },
-  "showDemo": {
-    "message": "Показати демонстрацію",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "Попередній перегляд (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Успішно оновлені налаштування"
+  "The width of the preview panel relative to the page.": {
+    "message": "Ширина панелі попереднього перегляду відносно сторінки."
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "Висота попереднього перегляду (%)"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "Висота панелі попереднього перегляду відносно сторінки."
+  },
+  "Panel Position": {
+    "message": "Положення панелі"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "Сторона сторінки, на якій відображати попередній перегляд."
+  },
+  "Right side": {
+    "message": "Права сторона"
+  },
+  "Left side": {
+    "message": "Ліва сторона"
+  },
+  "Close on Escape Key": {
+    "message": "Закрийте на ключі втечі"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "Використовуйте клавішу ESC (Escape), щоб закрити панель попереднього перегляду."
+  },
+  "Automatically Hide Previews": {
+    "message": "Автоматично приховати попередній перегляд"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "Приховує панель попереднього перегляду, коли ви прокручуєте або взаємодієте з головною сторінкою."
+  },
+  "Preview in Side Panel": {
+    "message": "Попередній перегляд на бічній панелі"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "Відображає перегляд на бічній панелі Chrome замість плаваючого коробки."
+  },
+  "Preview-on-Hover Delay": {
+    "message": "Попередня затримка"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "Коли ввімкнено автоматичний попередній перегляд наведення, це затримка перед показом попереднього перегляду."
+  },
+  "[Advanced] Force Preview": {
+    "message": "[Advanced] Попередній перегляд сили"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "На веб -сайтах, які ** дійсно ** не хочуть переглянути попереднє перегляд (наприклад, stackoverflow.com), це змушує попередній перегляд. Оповіщення Nerd: Це рамка, що стримує рамку."
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[Advanced] Вимкніть incognito Google"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "За замовчуванням версія використання Google Search завжди виходить з міркувань конфіденційності та безпеки. Хоча це може призвести до того, що завжди бачать підказки для входу."
+  },
+  "Disable Previews on this site": {
+    "message": "Вимкнути попередній перегляд на цьому сайті"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "Детальна інформація про прапорець тут."
+  },
+  "Disabled on Websites": {
     "message": "Відключено на веб -сайтах"
   },
-  "optionBlockedSitesDesc": {
-    "message": "Розширення не буде працювати на цих сайтах. Введіть один сайт на рядок."
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "Розширення не буде працювати на цих сайтах, ви можете відключити сайт, додавши до цього списку."
+  },
+  "Successfully updated settings": {
+    "message": "Успішно оновлені налаштування"
   }
 }

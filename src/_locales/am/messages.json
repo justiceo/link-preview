@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "ፈልግ & አገናኝ ቅድመ-እይታ",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "አገናኝ ቅድመ-እይታዎች",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "የአንጻሮች አገናኞች ቅድመ-እይታዎችን ይመልከቱ እና ወዲያውኑ አዳዲስ ትሮችን ከመክፈት ይልቅ ይህንን ቅድመ-ሰሪ በመጠቀም በተመሳሳይ ገጽ ላይ ይፈልጉ",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "እንዴት እየሰራን ነው?"
+  "@testMarkup": {
+    "message": "<dip> <prame ዓለም </ p> ይህ <strong> ቋንቋ </ strong >> </ sub >>"
   },
-  "fdbkCareToShare": {
-    "message": "ደስ እንደሰኛቸው ደስ ብሎኛል! ❤️ እንድንካፈል ሊረዱን ይችላሉ?"
+  "Search engine": {
+    "message": "የመፈለጊያ ማሸን"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "እንዴት ማሻሻል እንችላለን?"
+  "The search engine that would be used for inline search previews.": {
+    "message": "ለመንብስ ፍለጋ ቅድመ-እይታዎች የሚያገለግል የፍለጋ ሞተር."
   },
-  "fdbkThanks": {
-    "message": "ስለ ግብረመልሱ አመሰግናለሁ!"
+  "Google Search": {
+    "message": "በጉግል መፈለጊያ"
   },
-  "fdbkRateOnWebstore": {
-    "message": "በደረጃዎች ላይ ይስጡ"
+  "Bing Search": {
+    "message": "የ Bing ፍለጋ"
   },
-  "fdbkNoResponse": {
-    "message": "አይ"
+  "Yahoo Search": {
+    "message": "Yahoo ፍለጋ"
   },
-  "fdbkSumbit": {
-    "message": "ያስገቡ"
+  "Baidu Search": {
+    "message": "Baidu ፍለጋ"
   },
-  "reportAnIssue": {
-    "message": "አንድ ጉዳይ ሪፖርት ያድርጉ",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "Yandex ፍለጋ"
   },
-  "showDemo": {
-    "message": "ማሳያ ማሳያ",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "ቅድመ-እይታ ስፋት (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "በተሳካ ሁኔታ ወቅታዊ ቅንብሮች"
+  "The width of the preview panel relative to the page.": {
+    "message": "የቅድመ እይታ ፓነል ወርድ ከገጹ አንፃራዊ."
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "ቅድመ-እይታ ቁመት (%)"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "የቅድመ እይታ ፓነል ቁመት ከገጹ አንፃር."
+  },
+  "Panel Position": {
+    "message": "ፓነል አቀማመጥ"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "ቅድመ-እይታን ለማሳየት የሚወስደው ገጽ ጎን."
+  },
+  "Right side": {
+    "message": "በቀኝ በኩል"
+  },
+  "Left side": {
+    "message": "ግራ ጎን"
+  },
+  "Close on Escape Key": {
+    "message": "ማምለጫ ቁልፎች ላይ ዝጋ"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "የቅድመ እይታ ፓነልን ለመዝጋት ESC (ማምለጫ) ቁልፍን ይጠቀሙ."
+  },
+  "Automatically Hide Previews": {
+    "message": "ቅድመ-እይታዎችን በራስ-ሰር ይደብቁ"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "የቅድመ-እይታ ፓነልን ይሸፍኑት ከዋናው ገጽ ጋር ሲገናኙ ይደብቃል."
+  },
+  "Preview in Side Panel": {
+    "message": "ከጎን ፓነል ቅድመ-እይታ"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "ተንሳፋፊ ሣጥን ሳይሆን በ Chrome የጎን ፓነል ውስጥ ያለውን አመለካከት ያሳያል."
+  },
+  "Preview-on-Hover Delay": {
+    "message": "ቅድመ-እይታ-በ-ዳር ዳር መዘግየት"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "ራስ-ሰር ቅድመ-እይታ በሚሽከረከርበት ጊዜ ቅድመ-እይታ ከመታየቱ በፊት ይህ መዘግየት ነው."
+  },
+  "[Advanced] Force Preview": {
+    "message": "[የላቀ] ኃይል ቅድመ-እይታ"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "ለእድገቢያዎች ለተገቢው ድርጣቢያዎች ** ነርድ ማንቂያ-ይህ የ CLUSTY-BRUSTIONG ኦፕሬተር ነው."
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[የላቀ] ማንነት የማያሳውቅ ጉግልን ያሰናክሉ"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "በነባሪነት, የ Google ፍለጋ ስሪት ጥቅም ላይ የዋለው የግላዊነት እና የደህንነት ምክንያቶች ሁል ጊዜም ዘግይቷል. ምንም እንኳን ይህ ሁል ጊዜ በመለያ የመግቢያ መጠየቂያዎችን ማየት ይችላል."
+  },
+  "Disable Previews on this site": {
+    "message": "በዚህ ጣቢያ ላይ ቅድመ ሁኔታዎችን ያሰናክሉ"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "ስለ አመልካቹ ሳጥን ዝርዝር መረጃ."
+  },
+  "Disabled on Websites": {
     "message": "ድርጣቢያዎች ላይ ተሰናክሏል"
   },
-  "optionBlockedSitesDesc": {
-    "message": "ቅጥያ በእነዚህ ጣቢያዎች ላይ አይሰራም. በአንድ መስመር አንድ ጣቢያ ያስገቡ."
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "ቅጥያ በእነዚህ ጣቢያዎች ላይ አይሠራም, ወደዚህ ዝርዝር በመጨመር ጣቢያ ማቦዘን ይችላሉ."
+  },
+  "Successfully updated settings": {
+    "message": "በተሳካ ሁኔታ ወቅታዊ ቅንብሮች"
   }
 }

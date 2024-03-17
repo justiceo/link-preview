@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Otsi ja lingi eelvaade",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Lingi eelvaated",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Vaadake linkide eelvaateid ja viib selle eelvaate abil uute vahekaartide avamise asemel otsinguid samal lehel koheselt läbi",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Kuidas meil läheb?"
+  "@testMarkup": {
+    "message": "<div> <p> Tere maailm </p> See on veebi </strong>"
   },
-  "fdbkCareToShare": {
-    "message": "Tore, et see teile meeldib! Kas saate aidata meil ❤️ jagada?"
+  "Search engine": {
+    "message": "Otsingumootor"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Kuidas saaksime parandada?"
+  "The search engine that would be used for inline search previews.": {
+    "message": "Otsingumootor, mida kasutataks inline otsingu eelvaateks."
   },
-  "fdbkThanks": {
-    "message": "Aitäh tagasiside eest!"
+  "Google Search": {
+    "message": "Google otsing"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Hindus veebipoes"
+  "Bing Search": {
+    "message": "Bingiotsing"
   },
-  "fdbkNoResponse": {
-    "message": "Mitte"
+  "Yahoo Search": {
+    "message": "Yahoo otsing"
   },
-  "fdbkSumbit": {
-    "message": "Esita"
+  "Baidu Search": {
+    "message": "Baidu otsing"
   },
-  "reportAnIssue": {
-    "message": "Emissioonist teatama",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "Yandexi otsing"
   },
-  "showDemo": {
-    "message": "Näita demo",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "Eelvaate laius (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Edukalt värskendatud sätted"
+  "The width of the preview panel relative to the page.": {
+    "message": "Eelvaatepaneeli laius lehe suhtes."
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "Eelvaate kõrgus (%)"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "Eelvaate paneeli kõrgus lehe suhtes."
+  },
+  "Panel Position": {
+    "message": "Paneeli asukoht"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "Lehe külg, kus eelvaadet kuvada."
+  },
+  "Right side": {
+    "message": "Parem pool"
+  },
+  "Left side": {
+    "message": "Vasak pool"
+  },
+  "Close on Escape Key": {
+    "message": "Sulgege põgenemisvõti"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "Eelvaatepaneeli sulgemiseks kasutage klahvi ESC (Escape)."
+  },
+  "Automatically Hide Previews": {
+    "message": "Peidake automaatselt eelvaateid"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "Peidage eelvaate paneeli, kui kerid ära või suhtlete põhilehega."
+  },
+  "Preview in Side Panel": {
+    "message": "Eelvaade külgpaneelil"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "Kuvab vaate kroomi külgpaneelil ujuva kasti asemel."
+  },
+  "Preview-on-Hover Delay": {
+    "message": "Eelvaade-HOVER viivitus"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "Kui automaatne eelvaade on lubatud, on see viivitus enne eelvaate kuvamist."
+  },
+  "[Advanced] Force Preview": {
+    "message": "[Advanced] jõu eelvaade"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "Veebisaitide jaoks, mis ** tõesti ** ei soovi, et neid eelvaateks (nt Stackoverflow.com), sunnib see eelvaadet. Nerd Alert: see on kaadripüük."
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[Advanced] Keela inkognito Google"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "Vaikimisi on kasutatud Google'i otsingu versioon privaatsuse ja turvalisuse huvides alati allkirjastatud. Kuigi selle tulemusel võib alati näha sisselogimisjuhiseid."
+  },
+  "Disable Previews on this site": {
+    "message": "Keela eelvaated sellel saidil"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "Üksikasjalik teave märkeruutu kohta siin."
+  },
+  "Disabled on Websites": {
     "message": "Veebisaitidel puudega"
   },
-  "optionBlockedSitesDesc": {
-    "message": "Pikendus nendel saitidel ei tööta. Sisestage üks sait rea kohta."
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "Pikendus ei tööta nendel saitidel, vaid saate selle loendi lisades saidi keelata."
+  },
+  "Successfully updated settings": {
+    "message": "Edukalt värskendatud sätted"
   }
 }

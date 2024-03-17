@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Preview Search & Link Forhåndsvisning",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Forhåndsvisning av koblinger",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Se forhåndsvisning av lenker og utfører øyeblikkelig søk på samme side ved hjelp av denne forhåndsvisning i stedet for å åpne nye faner",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Hvordan har vi det?"
+  "@testMarkup": {
+    "message": "<div> <p> Hello World </p> Dette er <strong> språket </strong> på nettet </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Glad du likte det! Kan du hjelpe oss med å dele ❤?"
+  "Search engine": {
+    "message": "Søkemotor"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Hvordan kan vi forbedre oss?"
+  "The search engine that would be used for inline search previews.": {
+    "message": "Søkemotoren som vil bli brukt til forhåndsvisning av inline søk."
   },
-  "fdbkThanks": {
-    "message": "Takk for tilbakemeldingen!"
+  "Google Search": {
+    "message": "Google søk"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Priser på nettbutikken"
+  "Bing Search": {
+    "message": "Bing -søk"
   },
-  "fdbkNoResponse": {
-    "message": "Nei"
+  "Yahoo Search": {
+    "message": "Yahoo -søk"
   },
-  "fdbkSumbit": {
-    "message": "Sende inn"
+  "Baidu Search": {
+    "message": "Baidu -søk"
   },
-  "reportAnIssue": {
-    "message": "Rapporter et problem",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "Yandex -søk"
   },
-  "showDemo": {
-    "message": "Vis demo",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "Forhåndsvisningsbredde (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Vellykket oppdaterte innstillinger"
+  "The width of the preview panel relative to the page.": {
+    "message": "Bredden på forhåndsvisningspanelet i forhold til siden."
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "Forhåndsvisningshøyde (%)"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "Høyden på forhåndsvisningspanelet i forhold til siden."
+  },
+  "Panel Position": {
+    "message": "Panelposisjon"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "Siden av siden du skal vise forhåndsvisningen."
+  },
+  "Right side": {
+    "message": "Høyre side"
+  },
+  "Left side": {
+    "message": "Venstre side"
+  },
+  "Close on Escape Key": {
+    "message": "Lukk på Escape -tasten"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "Bruk ESC (Escape) -tasten for å lukke forhåndsvisningspanelet."
+  },
+  "Automatically Hide Previews": {
+    "message": "Skjul forhåndsvisninger automatisk"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "Skjul forhåndsvisningspanelet når du blar bort eller samhandler med hovedsiden."
+  },
+  "Preview in Side Panel": {
+    "message": "Forhåndsvisning i sidepanel"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "Viser utsikten i Chrome -sidepanel i stedet for en flytende boks."
+  },
+  "Preview-on-Hover Delay": {
+    "message": "Forhåndsvisning-på-hover-forsinkelse"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "Når automatisk forhåndsvisning av Hover er aktivert, er dette forsinkelsen før forhåndsvisningen vises."
+  },
+  "[Advanced] Force Preview": {
+    "message": "[Avansert] Forhåndsvisning av kraft"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "For nettsteder som ** virkelig ** ikke ønsker å bli forhåndsvisning (f.eks. StackOverflow.com) dette tvinger en forhåndsvisning. Nerd Alert: Dette er en ramme-busting buster."
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[Avansert] Deaktiver incognito google"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "Som standard er versjonen av Google-søket alltid signert av personvern og sikkerhetsmessige årsaker. Selv om dette kan føre til at du alltid ser påloggingshjul."
+  },
+  "Disable Previews on this site": {
+    "message": "Deaktiver forhåndsvisninger på dette nettstedet"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "Detaljinformasjonen om avkrysningsruten her."
+  },
+  "Disabled on Websites": {
     "message": "Deaktivert på nettsteder"
   },
-  "optionBlockedSitesDesc": {
-    "message": "Utvidelse kjøres ikke på disse nettstedene. Skriv inn ett nettsted per linje."
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "Utvidelse kjøres ikke på disse nettstedene, du kan deaktivere et nettsted ved å legge til denne listen."
+  },
+  "Successfully updated settings": {
+    "message": "Vellykket oppdaterte innstillinger"
   }
 }

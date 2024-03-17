@@ -1,52 +1,113 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Sök & länkförhandsvisning",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Länkförhandsvisningar",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Se förhandsgranskningar av länkar och utför direkt sökningar på samma sida med denna förhandsvisare istället för att öppna nya flikar",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Hur går det för oss?"
+  "@testMarkup": {
+    "message": "<div> <p> Hello World </p> Detta är <strong> språket </strong> på webben </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Glad att du gillar det! Kan du hjälpa oss att dela ❤?"
+  "Search engine": {
+    "message": "Sökmotor"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Hur kan vi förbättra?"
+  "The search engine that would be used for inline search previews.": {
+    "message": "Sökmotorn som skulle användas för förhandsgranskningar av sökning."
   },
-  "fdbkThanks": {
-    "message": "Tack för feedbacken!"
+  "Google Search": {
+    "message": "Google Sök"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Hastighet på webbutiken"
+  "Bing Search": {
+    "message": "Bingsökning"
   },
-  "fdbkNoResponse": {
-    "message": "Nej"
+  "Yahoo Search": {
+    "message": "Yahoo -sökning"
   },
-  "fdbkSumbit": {
-    "message": "Skicka in"
+  "Baidu Search": {
+    "message": "Baidu -sökning"
   },
-  "reportAnIssue": {
-    "message": "Rapportera ett problem",
-    "description": "Button text for reporting an issue"
+  "Yandex Search": {
+    "message": "Yandex -sökning"
   },
-  "showDemo": {
-    "message": "Visa demo",
-    "description": "Button text for showing demo"
+  "Preview Width (%)": {
+    "message": "Förhandsgranskningsbredd (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Framgångsrikt uppdaterade inställningar"
+  "The width of the preview panel relative to the page.": {
+    "message": "Bredden på förhandsgranskningspanelen relativt sidan."
   },
-  "optionBlockedSites": {
+  "Preview Height (%)": {
+    "message": "Förhandsgranska höjd (%)"
+  },
+  "The height of the preview panel relative to the page.": {
+    "message": "Höjden på förhandsgranskningspanelen relativt sidan."
+  },
+  "Panel Position": {
+    "message": "Panelposition"
+  },
+  "The side of the page in which to display the preview.": {
+    "message": "Sidan på sidan för att visa förhandsgranskningen."
+  },
+  "Right side": {
+    "message": "Höger sida"
+  },
+  "Left side": {
+    "message": "Vänster sida"
+  },
+  "Close on Escape Key": {
+    "message": "Stäng på Escape -nyckeln"
+  },
+  "Use the ESC (escape) key to close the preview panel.": {
+    "message": "Använd ESC (Escape) -tangenten för att stänga förhandsgranskningspanelen."
+  },
+  "Automatically Hide Previews": {
+    "message": "Dölj automatiskt förhandsgranskningar"
+  },
+  "Hides the preview panel when you scroll away or interact with the main page.": {
+    "message": "Gömmer förhandsgranskningspanelen när du bläddrar bort eller interagerar med huvudsidan."
+  },
+  "Preview in Side Panel": {
+    "message": "Förhandsgranskning i sidopanelen"
+  },
+  "Displays the view in Chrome Side Panel instead of a floating box.": {
+    "message": "Visar vyn i krom sidopanel istället för en flytande låda."
+  },
+  "Preview-on-Hover Delay": {
+    "message": "Förhandsgranskning-på-hover-fördröjning"
+  },
+  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+    "message": "När automatisk förhandsvisning på Hover är aktiverad är detta förseningen innan förhandsgranskningen visas."
+  },
+  "[Advanced] Force Preview": {
+    "message": "[Advanced] Force Preview"
+  },
+  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+    "message": "För webbplatser som ** verkligen ** vill inte förhandsgranskas (t.ex. stackoverflow.com) detta tvingar en förhandsgranskning. Nerd Alert: Detta är en rambustande buster."
+  },
+  "[Advanced] Disable Incognito Google": {
+    "message": "[Advanced] Inaktivera Incognito Google"
+  },
+  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+    "message": "Som standard är den version av Google-sökning som används alltid utplånad av integritets- och säkerhetsskäl. Även om detta kan resultera i att alltid se inloggningsuppmaningar."
+  },
+  "Disable Previews on this site": {
+    "message": "Inaktivera förhandsvisningar på den här webbplatsen"
+  },
+  "The detail information about the checkbox here.": {
+    "message": "Detaljinformationen om kryssrutan här."
+  },
+  "Disabled on Websites": {
     "message": "Inaktiverad på webbplatser"
   },
-  "optionBlockedSitesDesc": {
-    "message": "Förlängningen körs inte på dessa webbplatser. Ange en webbplats per rad."
+  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+    "message": "Extension kommer inte att köras på dessa webbplatser, du kan inaktivera en webbplats genom att lägga till i den här listan."
+  },
+  "Successfully updated settings": {
+    "message": "Framgångsrikt uppdaterade inställningar"
   }
 }

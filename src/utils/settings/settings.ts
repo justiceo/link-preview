@@ -100,12 +100,9 @@ export class SettingsUI extends HTMLElement {
       .cloneNode(true) as HTMLElement;
 
     // Set the title and description of the control.
-    control.getElementsByClassName(`control-title`)[0].innerHTML = i18n(
-      config.title,
-    );
-    control.getElementsByClassName(`control-description`)[0].innerHTML = i18n(
-      config.description,
-    );
+    control.getElementsByClassName(`control-title`)[0].innerHTML = config.title;
+    control.getElementsByClassName(`control-description`)[0].innerHTML =
+      config.description;
 
     // Set up the value of the controls and wire-up change listeners.
     const actualInput = control.getElementsByClassName(
@@ -182,8 +179,9 @@ export class SettingsUI extends HTMLElement {
     let toastEl = this.shadowRoot?.querySelector(".toast-container");
     if (!toastEl) {
       toastEl = this.template.querySelector(".toast-container")!;
-      toastEl.querySelector(".toast-body span")!.innerHTML =
-        i18n("optionsSaveSuccess");
+      toastEl.querySelector(".toast-body span")!.innerHTML = i18n(
+        "Successfully updated settings",
+      );
       this.shadowRoot?.append(toastEl);
     }
     const toast = new Toast(toastEl.querySelector("#liveToast"), {

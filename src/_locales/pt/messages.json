@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "Configurações atualizadas com sucesso"
   },
-  "Better_previews_options": {
-    "message": "Melhores opções de visualização"
+  "Search__amp__Link_Preview_Options": {
+    "message": "Pesquisa & amp; Opções de visualização de link"
   },
   "Show_Sample_Preview": {
     "message": "Mostre visualização de amostra"
   },
-  "Report_an_issue": {
+  "Report_an_Issue": {
     "message": "Relatar um problema"
   }
 }

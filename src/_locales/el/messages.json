@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "Ενημερωμένες ρυθμίσεις με επιτυχία"
   },
-  "Better_previews_options": {
-    "message": "Καλύτερες επιλογές προεπισκόπησης"
+  "Search__amp__Link_Preview_Options": {
+    "message": "Search & amp; Επιλογές προεπισκόπησης συνδέσμου"
   },
   "Show_Sample_Preview": {
     "message": "Εμφάνιση δείγματος προεπισκόπησης"
   },
-  "Report_an_issue": {
+  "Report_an_Issue": {
     "message": "Αναφέρετε ένα πρόβλημα"
   }
 }

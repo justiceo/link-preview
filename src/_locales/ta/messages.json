@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "வெற்றிகரமாக புதுப்பிக்கப்பட்ட அமைப்புகள்"
   },
-  "Better_previews_options": {
-    "message": "சிறந்த முன்னோட்டங்கள் விருப்பங்கள்"
+  "Search__amp__Link_Preview_Options": {
+    "message": "தேடல் & ஆம்ப்; இணைப்பு முன்னோட்ட விருப்பங்கள்"
   },
   "Show_Sample_Preview": {
     "message": "மாதிரி முன்னோட்டத்தைக் காட்டு"
   },
-  "Report_an_issue": {
+  "Report_an_Issue": {
     "message": "ஒரு சிக்கலைப் புகாரளிக்கவும்"
   }
 }

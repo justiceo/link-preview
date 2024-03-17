@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "Успешно ажурирана подешавања"
   },
-  "Better_previews_options": {
-    "message": "Боље прегледе опције"
+  "Search__amp__Link_Preview_Options": {
+    "message": "Тражи & амп; Опције прегледа Линк Превиев"
   },
   "Show_Sample_Preview": {
     "message": "Прикажи преглед узорка"
   },
-  "Report_an_issue": {
+  "Report_an_Issue": {
     "message": "Пријавите проблем"
   }
 }

@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "সফলভাবে আপডেট করা সেটিংস"
   },
-  "Better_previews_options": {
-    "message": "আরও ভাল পূর্বরূপ বিকল্প"
+  "Search__amp__Link_Preview_Options": {
+    "message": "অনুসন্ধান & amp; লিঙ্ক পূর্বরূপ বিকল্প"
   },
   "Show_Sample_Preview": {
     "message": "নমুনা পূর্বরূপ দেখান"
   },
-  "Report_an_issue": {
+  "Report_an_Issue": {
     "message": "একটি সমস্যা রিপোর্ট"
   }
 }

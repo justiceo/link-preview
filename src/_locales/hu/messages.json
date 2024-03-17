@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "Sikeresen frissített beállítások"
   },
-  "Better_previews_options": {
-    "message": "Jobb előnézeti lehetőségek"
+  "Search__amp__Link_Preview_Options": {
+    "message": "Keresés & amp; Linkek előnézeti beállításai"
   },
   "Show_Sample_Preview": {
     "message": "Mutasd meg a minta előnézetét"
   },
-  "Report_an_issue": {
+  "Report_an_Issue": {
     "message": "Jelentsen egy problémát"
   }
 }

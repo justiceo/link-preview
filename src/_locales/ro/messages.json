@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "Setări actualizate cu succes"
   },
-  "Better_previews_options": {
-    "message": "Opțiuni de previzualizări mai bune"
+  "Search__amp__Link_Preview_Options": {
+    "message": "Căutare & amp; Opțiuni de previzualizare a linkului"
   },
   "Show_Sample_Preview": {
     "message": "Afișați previzualizarea eșantionului"
   },
-  "Report_an_issue": {
+  "Report_an_Issue": {
     "message": "Raportează o problemă"
   }
 }

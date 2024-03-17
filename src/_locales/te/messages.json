@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "విజయవంతంగా నవీకరించబడిన సెట్టింగులు"
   },
-  "Better_previews_options": {
-    "message": "మంచి ప్రివ్యూ ఎంపికలు"
+  "Search__amp__Link_Preview_Options": {
+    "message": "శోధన & amp; లింక్ ప్రివ్యూ ఎంపికలు"
   },
   "Show_Sample_Preview": {
     "message": "నమూనా ప్రివ్యూ చూపించు"
   },
-  "Report_an_issue": {
+  "Report_an_Issue": {
     "message": "ఒక సమస్యను నివేదించండి"
   }
 }

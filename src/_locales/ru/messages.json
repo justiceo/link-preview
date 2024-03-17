@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "Успешно обновленные настройки"
   },
-  "Better_previews_options": {
-    "message": "Лучшие предварительные варианты"
+  "Search__amp__Link_Preview_Options": {
+    "message": "Поиск & amp; Параметры предварительного просмотра ссылки"
   },
   "Show_Sample_Preview": {
     "message": "Показать предварительный просмотр"
   },
-  "Report_an_issue": {
+  "Report_an_Issue": {
     "message": "Сообщить о проблеме"
   }
 }

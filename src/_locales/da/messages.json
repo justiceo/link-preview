@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "Med succes opdaterede indstillinger"
   },
-  "Better_previews_options": {
-    "message": "Bedre forhåndsvisningsmuligheder"
+  "Search__amp__Link_Preview_Options": {
+    "message": "Søgning & amp; Link Preview -indstillinger"
   },
   "Show_Sample_Preview": {
     "message": "Vis prøveeksempel"
   },
-  "Report_an_issue": {
+  "Report_an_Issue": {
     "message": "Rapporter et problem"
   }
 }

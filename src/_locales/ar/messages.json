@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "الإعدادات التي تم تحديثها بنجاح"
   },
-  "Better_previews_options": {
-    "message": "أفضل خيارات المعاينة"
+  "Search__amp__Link_Preview_Options": {
+    "message": "البحث & amp ؛ خيارات معاينة الارتباط"
   },
   "Show_Sample_Preview": {
     "message": "عرض عينة معاينة"
   },
-  "Report_an_issue": {
+  "Report_an_Issue": {
     "message": "بلغ عن خطأ"
   }
 }

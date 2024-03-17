@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "Cập nhật cài đặt thành công"
   },
-  "Better_previews_options": {
-    "message": "Tùy chọn xem trước tốt hơn"
+  "Search__amp__Link_Preview_Options": {
+    "message": "Tìm kiếm & amp; Tùy chọn xem trước liên kết"
   },
   "Show_Sample_Preview": {
     "message": "Hiển thị xem trước mẫu"
   },
-  "Report_an_issue": {
+  "Report_an_Issue": {
     "message": "Báo cáo một vấn đề"
   }
 }

@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "यशस्वीरित्या अद्यतनित सेटिंग्ज"
   },
-  "Better_previews_options": {
-    "message": "चांगले पूर्वावलोकन पर्याय"
+  "Search__amp__Link_Preview_Options": {
+    "message": "शोध & विद्युतप्रवाह मोजण्याच्या एककाचे संक्षिप्त रुप; दुवा पूर्वावलोकन पर्याय"
   },
   "Show_Sample_Preview": {
     "message": "नमुना पूर्वावलोकन दर्शवा"
   },
-  "Report_an_issue": {
+  "Report_an_Issue": {
     "message": "एखाद्या समस्येचा अहवाल द्या"
   }
 }

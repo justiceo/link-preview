@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "Tetapan yang berjaya dikemas kini"
   },
-  "Better_previews_options": {
-    "message": "Pilihan pratonton yang lebih baik"
+  "Search__amp__Link_Preview_Options": {
+    "message": "Cari & amp; Pilihan pratonton pautan"
   },
   "Show_Sample_Preview": {
     "message": "Tunjukkan pratonton sampel"
   },
-  "Report_an_issue": {
+  "Report_an_Issue": {
     "message": "Melaporkan isu"
   }
 }

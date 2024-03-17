@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "ಯಶಸ್ವಿಯಾಗಿ ನವೀಕರಿಸಿದ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
   },
-  "Better_previews_options": {
-    "message": "ಉತ್ತಮ ಪೂರ್ವವೀಕ್ಷಣೆ ಆಯ್ಕೆಗಳು"
+  "Search__amp__Link_Preview_Options": {
+    "message": "ಹುಡುಕಾಟ & amp; ಲಿಂಕ್ ಪೂರ್ವವೀಕ್ಷಣೆ ಆಯ್ಕೆಗಳು"
   },
   "Show_Sample_Preview": {
     "message": "ಮಾದರಿ ಪೂರ್ವವೀಕ್ಷಣೆಯನ್ನು ತೋರಿಸಿ"
   },
-  "Report_an_issue": {
+  "Report_an_Issue": {
     "message": "ಸಮಸ್ಯೆಯನ್ನು ವರದಿ ಮಾಡಿ"
   }
 }

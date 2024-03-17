@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "הגדרות מעודכנות בהצלחה"
   },
-  "Better_previews_options": {
-    "message": "אפשרויות תצוגה מקדימה טובה יותר"
+  "Search__amp__Link_Preview_Options": {
+    "message": "חיפוש & amp; אפשרויות תצוגה מקדימה של קישור"
   },
   "Show_Sample_Preview": {
     "message": "הצג תצוגה מקדימה לדוגמא"
   },
-  "Report_an_issue": {
+  "Report_an_Issue": {
     "message": "דווח על בעיה"
   }
 }

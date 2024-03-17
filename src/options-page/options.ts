@@ -160,5 +160,5 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.origin,
     );
   });
-  translateMarkup(document.body);
+  translateMarkup(document);
 });

@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "正常に更新された設定"
   },
-  "Better_previews_options": {
-    "message": "より良いプレビューオプション"
+  "Search__amp__Link_Preview_Options": {
+    "message": "検索＆amp; リンクプレビューオプション"
   },
   "Show_Sample_Preview": {
     "message": "サンプルのプレビューを表示します"
   },
-  "Report_an_issue": {
+  "Report_an_Issue": {
     "message": "問題を報告する"
   }
 }

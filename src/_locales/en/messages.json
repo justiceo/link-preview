@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "Successfully updated settings"
   },
-  "Better_previews_options": {
-    "message": "Better previews options"
+  "Search__amp__Link_Preview_Options": {
+    "message": "Search &amp; Link Preview Options"
   },
   "Show_Sample_Preview": {
     "message": "Show Sample Preview"
   },
-  "Report_an_issue": {
-    "message": "Report an issue"
+  "Report_an_Issue": {
+    "message": "Report an Issue"
   }
 }

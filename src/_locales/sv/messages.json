@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "Framgångsrikt uppdaterade inställningar"
   },
-  "Better_previews_options": {
-    "message": "Bättre förhandsvisningsalternativ"
+  "Search__amp__Link_Preview_Options": {
+    "message": "Sök & amp; Länkförhandsvisningsalternativ"
   },
   "Show_Sample_Preview": {
     "message": "Visa provförhandsvisning"
   },
-  "Report_an_issue": {
+  "Report_an_Issue": {
     "message": "Rapportera ett problem"
   }
 }

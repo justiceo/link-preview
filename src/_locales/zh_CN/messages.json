@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "成功更新了设置"
   },
-  "Better_previews_options": {
-    "message": "更好的预览选项"
+  "Search__amp__Link_Preview_Options": {
+    "message": "搜索＆amp; 链接预览选项"
   },
   "Show_Sample_Preview": {
     "message": "显示样本预览"
   },
-  "Report_an_issue": {
+  "Report_an_Issue": {
     "message": "报告一个问题"
   }
 }

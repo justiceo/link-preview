@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "Edukalt värskendatud sätted"
   },
-  "Better_previews_options": {
-    "message": "Paremad eelvaate valikud"
+  "Search__amp__Link_Preview_Options": {
+    "message": "Otsing & amp; Lingi eelvaate valikud"
   },
   "Show_Sample_Preview": {
     "message": "Näidake näidise eelvaadet"
   },
-  "Report_an_issue": {
-    "message": "Emissioonist teatama"
+  "Report_an_Issue": {
+    "message": "Väljaandmist teatama"
   }
 }

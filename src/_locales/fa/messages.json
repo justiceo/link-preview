@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "تنظیمات با موفقیت به روز شده"
   },
-  "Better_previews_options": {
-    "message": "گزینه های پیش نمایش بهتر"
+  "Search__amp__Link_Preview_Options": {
+    "message": "جستجو & amp ؛ گزینه های پیش نمایش پیوند"
   },
   "Show_Sample_Preview": {
     "message": "پیش نمایش نمونه را نشان دهید"
   },
-  "Report_an_issue": {
+  "Report_an_Issue": {
     "message": "گزارش یک موضوع"
   }
 }

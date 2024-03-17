@@ -56,7 +56,7 @@ export const i18n = (key: string): string => {
 };
 
 /* Translate the markup by replacing the innerHTML of the elements with i18n attributes */
-export const translateMarkup = (markup: HTMLElement) => {
+export const translateMarkup = (markup: HTMLElement | Document) => {
   const elements = markup.querySelectorAll("[i18n]");
   elements.forEach((element) => {
     let key = element.getAttribute("i18n");
@@ -65,4 +65,10 @@ export const translateMarkup = (markup: HTMLElement) => {
     }
     element.innerHTML = i18n(key);
   });
+
+  // Tranlate the title and description of the document.
+  if (markup instanceof Document) {
+    document.title = i18n(document.title);
+    document.documentElement.lang = chrome.i18n.getUILanguage() ?? "";
+  }
 };

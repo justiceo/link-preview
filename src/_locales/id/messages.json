@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "Pengaturan yang berhasil diperbarui"
   },
-  "Better_previews_options": {
-    "message": "Opsi pratinjau yang lebih baik"
+  "Search__amp__Link_Preview_Options": {
+    "message": "Cari & amp; Opsi Pratinjau Tautan"
   },
   "Show_Sample_Preview": {
     "message": "Tampilkan pratinjau sampel"
   },
-  "Report_an_issue": {
+  "Report_an_Issue": {
     "message": "Melaporkan masalah"
   }
 }

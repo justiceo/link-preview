@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "Päivitetyt asetukset onnistuneesti"
   },
-  "Better_previews_options": {
-    "message": "Parempien esikatseluvaihtoehdot"
+  "Search__amp__Link_Preview_Options": {
+    "message": "Haku & amp; Linkin esikatseluasetukset"
   },
   "Show_Sample_Preview": {
     "message": "Näytä näytteen esikatselu"
   },
-  "Report_an_issue": {
+  "Report_an_Issue": {
     "message": "Ilmoita ongelma"
   }
 }

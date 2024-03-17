@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "Успішно оновлені налаштування"
   },
-  "Better_previews_options": {
-    "message": "Кращі параметри попереднього перегляду"
+  "Search__amp__Link_Preview_Options": {
+    "message": "Пошук & amp; Посилання Параметри попереднього перегляду"
   },
   "Show_Sample_Preview": {
     "message": "Показати попередній перегляд зразка"
   },
-  "Report_an_issue": {
+  "Report_an_Issue": {
     "message": "Повідомте про питання"
   }
 }

@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "Успешно актуализирани настройки"
   },
-  "Better_previews_options": {
-    "message": "По -добри визуализации на опциите"
+  "Search__amp__Link_Preview_Options": {
+    "message": "Търсене & amp; Опции за визуализация на връзки"
   },
   "Show_Sample_Preview": {
     "message": "Показване на примерния визуализация"
   },
-  "Report_an_issue": {
+  "Report_an_Issue": {
     "message": "Докладвайте проблем"
   }
 }

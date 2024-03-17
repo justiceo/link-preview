@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "Úspěšně aktualizovaná nastavení"
   },
-  "Better_previews_options": {
-    "message": "Lepší možnosti náhledů"
+  "Search__amp__Link_Preview_Options": {
+    "message": "Hledat & amp; Možnosti náhledu odkazu"
   },
   "Show_Sample_Preview": {
     "message": "Zobrazit ukázkový náhled"
   },
-  "Report_an_issue": {
+  "Report_an_Issue": {
     "message": "Nahlásit problém"
   }
 }

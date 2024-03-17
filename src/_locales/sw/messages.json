@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "Mipangilio iliyosasishwa kwa mafanikio"
   },
-  "Better_previews_options": {
-    "message": "Chaguzi bora za hakiki"
+  "Search__amp__Link_Preview_Options": {
+    "message": "Tafuta & amp; Chaguzi za hakikisho la kiunga"
   },
   "Show_Sample_Preview": {
     "message": "Onyesha hakikisho la mfano"
   },
-  "Report_an_issue": {
+  "Report_an_Issue": {
     "message": "Ripoti suala"
   }
 }

@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "Vellykket oppdaterte innstillinger"
   },
-  "Better_previews_options": {
-    "message": "Bedre forhåndsvisningsalternativer"
+  "Search__amp__Link_Preview_Options": {
+    "message": "Søk & amp; Link forhåndsvisningsalternativer"
   },
   "Show_Sample_Preview": {
     "message": "Vis forhåndsvisning av prøven"
   },
-  "Report_an_issue": {
+  "Report_an_Issue": {
     "message": "Rapporter et problem"
   }
 }

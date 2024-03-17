@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "Başarılı bir şekilde güncellenen ayarlar"
   },
-  "Better_previews_options": {
-    "message": "Daha İyi Önizleme Seçenekleri"
+  "Search__amp__Link_Preview_Options": {
+    "message": "Arama & amp; Bağlantı Önizleme Seçenekleri"
   },
   "Show_Sample_Preview": {
     "message": "Örnek Önizlemeyi Göster"
   },
-  "Report_an_issue": {
+  "Report_an_Issue": {
     "message": "Bir Sorun Bildirin"
   }
 }

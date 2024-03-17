@@ -110,13 +110,13 @@
   "Successfully_updated_settings": {
     "message": "Veiksmīgi atjauninātie iestatījumi"
   },
-  "Better_previews_options": {
-    "message": "Labākas priekšskatīšanas opcijas"
+  "Search__amp__Link_Preview_Options": {
+    "message": "Meklēšana & amp; Saites priekšskatījuma opcijas"
   },
   "Show_Sample_Preview": {
     "message": "Rādīt parauga priekšskatījumu"
   },
-  "Report_an_issue": {
+  "Report_an_Issue": {
     "message": "Ziņot par jautājumu"
   }
 }

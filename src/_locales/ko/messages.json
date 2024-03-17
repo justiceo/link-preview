@@ -109,5 +109,14 @@
   },
   "Successfully_updated_settings": {
     "message": "설정을 성공적으로 업데이트했습니다"
+  },
+  "Better_previews_options": {
+    "message": "더 나은 옵션을 미리 봅니다"
+  },
+  "Show_Sample_Preview": {
+    "message": "샘플 미리보기 표시"
+  },
+  "Report_an_issue": {
+    "message": "문제를보고하십시오"
   }
 }

@@ -109,5 +109,14 @@
   },
   "Successfully_updated_settings": {
     "message": "Setări actualizate cu succes"
+  },
+  "Better_previews_options": {
+    "message": "Opțiuni de previzualizări mai bune"
+  },
+  "Show_Sample_Preview": {
+    "message": "Afișați previzualizarea eșantionului"
+  },
+  "Report_an_issue": {
+    "message": "Raportează o problemă"
   }
 }

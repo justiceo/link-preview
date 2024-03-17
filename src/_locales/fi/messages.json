@@ -109,5 +109,14 @@
   },
   "Successfully_updated_settings": {
     "message": "Päivitetyt asetukset onnistuneesti"
+  },
+  "Better_previews_options": {
+    "message": "Parempien esikatseluvaihtoehdot"
+  },
+  "Show_Sample_Preview": {
+    "message": "Näytä näytteen esikatselu"
+  },
+  "Report_an_issue": {
+    "message": "Ilmoita ongelma"
   }
 }

@@ -109,5 +109,14 @@
   },
   "Successfully_updated_settings": {
     "message": "Veiksmīgi atjauninātie iestatījumi"
+  },
+  "Better_previews_options": {
+    "message": "Labākas priekšskatīšanas opcijas"
+  },
+  "Show_Sample_Preview": {
+    "message": "Rādīt parauga priekšskatījumu"
+  },
+  "Report_an_issue": {
+    "message": "Ziņot par jautājumu"
   }
 }

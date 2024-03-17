@@ -109,5 +109,14 @@
   },
   "Successfully_updated_settings": {
     "message": "Framgångsrikt uppdaterade inställningar"
+  },
+  "Better_previews_options": {
+    "message": "Bättre förhandsvisningsalternativ"
+  },
+  "Show_Sample_Preview": {
+    "message": "Visa provförhandsvisning"
+  },
+  "Report_an_issue": {
+    "message": "Rapportera ett problem"
   }
 }

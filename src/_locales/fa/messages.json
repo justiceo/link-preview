@@ -109,5 +109,14 @@
   },
   "Successfully_updated_settings": {
     "message": "تنظیمات با موفقیت به روز شده"
+  },
+  "Better_previews_options": {
+    "message": "گزینه های پیش نمایش بهتر"
+  },
+  "Show_Sample_Preview": {
+    "message": "پیش نمایش نمونه را نشان دهید"
+  },
+  "Report_an_issue": {
+    "message": "گزارش یک موضوع"
   }
 }

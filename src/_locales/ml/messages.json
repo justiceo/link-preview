@@ -109,5 +109,14 @@
   },
   "Successfully_updated_settings": {
     "message": "ക്രമീകരണങ്ങൾ വിജയകരമായി അപ്ഡേറ്റുചെയ്തു"
+  },
+  "Better_previews_options": {
+    "message": "ഓപ്ഷനുകൾ മികച്ച പ്രിവ്യൂ ചെയ്യുന്നു"
+  },
+  "Show_Sample_Preview": {
+    "message": "സാമ്പിൾ പ്രിവ്യൂ കാണിക്കുക"
+  },
+  "Report_an_issue": {
+    "message": "ഒരു പ്രശ്നം റിപ്പോർട്ടുചെയ്യുക"
   }
 }

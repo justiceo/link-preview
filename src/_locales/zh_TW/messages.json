@@ -109,5 +109,14 @@
   },
   "Successfully_updated_settings": {
     "message": "成功更新了設置"
+  },
+  "Better_previews_options": {
+    "message": "更好的預覽選項"
+  },
+  "Show_Sample_Preview": {
+    "message": "顯示樣本預覽"
+  },
+  "Report_an_issue": {
+    "message": "報告一個問題"
   }
 }

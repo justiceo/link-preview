@@ -109,5 +109,14 @@
   },
   "Successfully_updated_settings": {
     "message": "Configuración actualizada con éxito"
+  },
+  "Better_previews_options": {
+    "message": "Mejores opciones de vista previa"
+  },
+  "Show_Sample_Preview": {
+    "message": "Mostrar vista previa de muestra"
+  },
+  "Report_an_issue": {
+    "message": "Reportar un problema"
   }
 }

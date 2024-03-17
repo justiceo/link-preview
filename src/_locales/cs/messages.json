@@ -109,5 +109,14 @@
   },
   "Successfully_updated_settings": {
     "message": "Úspěšně aktualizovaná nastavení"
+  },
+  "Better_previews_options": {
+    "message": "Lepší možnosti náhledů"
+  },
+  "Show_Sample_Preview": {
+    "message": "Zobrazit ukázkový náhled"
+  },
+  "Report_an_issue": {
+    "message": "Nahlásit problém"
   }
 }

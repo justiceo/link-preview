@@ -109,5 +109,14 @@
   },
   "Successfully_updated_settings": {
     "message": "सफलतापूर्वक अद्यतन सेटिंग्स"
+  },
+  "Better_previews_options": {
+    "message": "बेहतर पूर्वावलोकन विकल्प"
+  },
+  "Show_Sample_Preview": {
+    "message": "नमूना पूर्वावलोकन दिखाएं"
+  },
+  "Report_an_issue": {
+    "message": "मामले की रिपोर्ट करें"
   }
 }

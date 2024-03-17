@@ -109,5 +109,14 @@
   },
   "Successfully_updated_settings": {
     "message": "Edukalt värskendatud sätted"
+  },
+  "Better_previews_options": {
+    "message": "Paremad eelvaate valikud"
+  },
+  "Show_Sample_Preview": {
+    "message": "Näidake näidise eelvaadet"
+  },
+  "Report_an_issue": {
+    "message": "Emissioonist teatama"
   }
 }

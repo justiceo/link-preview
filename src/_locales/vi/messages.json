@@ -109,5 +109,14 @@
   },
   "Successfully_updated_settings": {
     "message": "Cập nhật cài đặt thành công"
+  },
+  "Better_previews_options": {
+    "message": "Tùy chọn xem trước tốt hơn"
+  },
+  "Show_Sample_Preview": {
+    "message": "Hiển thị xem trước mẫu"
+  },
+  "Report_an_issue": {
+    "message": "Báo cáo một vấn đề"
   }
 }

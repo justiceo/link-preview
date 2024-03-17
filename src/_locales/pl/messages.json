@@ -109,5 +109,14 @@
   },
   "Successfully_updated_settings": {
     "message": "Pomyślnie zaktualizowane ustawienia"
+  },
+  "Better_previews_options": {
+    "message": "Lepsze opcje podglądu"
+  },
+  "Show_Sample_Preview": {
+    "message": "Pokaż przykładowy podgląd"
+  },
+  "Report_an_issue": {
+    "message": "Zgłoś problem"
   }
 }

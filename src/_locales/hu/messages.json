@@ -109,5 +109,14 @@
   },
   "Successfully_updated_settings": {
     "message": "Sikeresen frissített beállítások"
+  },
+  "Better_previews_options": {
+    "message": "Jobb előnézeti lehetőségek"
+  },
+  "Show_Sample_Preview": {
+    "message": "Mutasd meg a minta előnézetét"
+  },
+  "Report_an_issue": {
+    "message": "Jelentsen egy problémát"
   }
 }

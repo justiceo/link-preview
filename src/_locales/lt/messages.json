@@ -109,5 +109,14 @@
   },
   "Successfully_updated_settings": {
     "message": "Sėkmingai atnaujinti nustatymai"
+  },
+  "Better_previews_options": {
+    "message": "Geresnės peržiūros parinktys"
+  },
+  "Show_Sample_Preview": {
+    "message": "Rodyti pavyzdžių peržiūrą"
+  },
+  "Report_an_issue": {
+    "message": "Pranešti apie klausimą"
   }
 }

@@ -109,5 +109,14 @@
   },
   "Successfully_updated_settings": {
     "message": "Ενημερωμένες ρυθμίσεις με επιτυχία"
+  },
+  "Better_previews_options": {
+    "message": "Καλύτερες επιλογές προεπισκόπησης"
+  },
+  "Show_Sample_Preview": {
+    "message": "Εμφάνιση δείγματος προεπισκόπησης"
+  },
+  "Report_an_issue": {
+    "message": "Αναφέρετε ένα πρόβλημα"
   }
 }

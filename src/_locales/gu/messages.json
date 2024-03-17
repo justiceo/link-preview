@@ -109,5 +109,14 @@
   },
   "Successfully_updated_settings": {
     "message": "સફળતાપૂર્વક અપડેટ સેટિંગ્સ"
+  },
+  "Better_previews_options": {
+    "message": "વધુ સારા પૂર્વાવલોકનો વિકલ્પો"
+  },
+  "Show_Sample_Preview": {
+    "message": "નમૂના પૂર્વાવલોકન બતાવો"
+  },
+  "Report_an_issue": {
+    "message": "એક મુદ્દો જાણ કરો"
   }
 }

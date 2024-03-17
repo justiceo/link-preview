@@ -109,5 +109,14 @@
   },
   "Successfully_updated_settings": {
     "message": "Uspješno ažurirane postavke"
+  },
+  "Better_previews_options": {
+    "message": "Bolje preglede opcija"
+  },
+  "Show_Sample_Preview": {
+    "message": "Prikaži uzorak pregled"
+  },
+  "Report_an_issue": {
+    "message": "Prijaviti problem"
   }
 }

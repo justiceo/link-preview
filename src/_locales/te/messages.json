@@ -109,5 +109,14 @@
   },
   "Successfully_updated_settings": {
     "message": "విజయవంతంగా నవీకరించబడిన సెట్టింగులు"
+  },
+  "Better_previews_options": {
+    "message": "మంచి ప్రివ్యూ ఎంపికలు"
+  },
+  "Show_Sample_Preview": {
+    "message": "నమూనా ప్రివ్యూ చూపించు"
+  },
+  "Report_an_issue": {
+    "message": "ఒక సమస్యను నివేదించండి"
   }
 }

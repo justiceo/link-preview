@@ -109,5 +109,14 @@
   },
   "Successfully_updated_settings": {
     "message": "Başarılı bir şekilde güncellenen ayarlar"
+  },
+  "Better_previews_options": {
+    "message": "Daha İyi Önizleme Seçenekleri"
+  },
+  "Show_Sample_Preview": {
+    "message": "Örnek Önizlemeyi Göster"
+  },
+  "Report_an_issue": {
+    "message": "Bir Sorun Bildirin"
   }
 }

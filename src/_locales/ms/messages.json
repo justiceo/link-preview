@@ -109,5 +109,14 @@
   },
   "Successfully_updated_settings": {
     "message": "Tetapan yang berjaya dikemas kini"
+  },
+  "Better_previews_options": {
+    "message": "Pilihan pratonton yang lebih baik"
+  },
+  "Show_Sample_Preview": {
+    "message": "Tunjukkan pratonton sampel"
+  },
+  "Report_an_issue": {
+    "message": "Melaporkan isu"
   }
 }

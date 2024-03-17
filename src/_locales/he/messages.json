@@ -109,5 +109,14 @@
   },
   "Successfully_updated_settings": {
     "message": "הגדרות מעודכנות בהצלחה"
+  },
+  "Better_previews_options": {
+    "message": "אפשרויות תצוגה מקדימה טובה יותר"
+  },
+  "Show_Sample_Preview": {
+    "message": "הצג תצוגה מקדימה לדוגמא"
+  },
+  "Report_an_issue": {
+    "message": "דווח על בעיה"
   }
 }

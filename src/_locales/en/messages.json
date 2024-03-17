@@ -109,5 +109,14 @@
   },
   "Successfully_updated_settings": {
     "message": "Successfully updated settings"
+  },
+  "Better_previews_options": {
+    "message": "Better previews options"
+  },
+  "Show_Sample_Preview": {
+    "message": "Show Sample Preview"
+  },
+  "Report_an_issue": {
+    "message": "Report an issue"
   }
 }

@@ -109,5 +109,14 @@
   },
   "Successfully_updated_settings": {
     "message": "በተሳካ ሁኔታ ወቅታዊ ቅንብሮች"
+  },
+  "Better_previews_options": {
+    "message": "የተሻሉ ቅድመ-እይታዎች አማራጮች"
+  },
+  "Show_Sample_Preview": {
+    "message": "የናሙና ቅድመ ዕይታ ያሳዩ"
+  },
+  "Report_an_issue": {
+    "message": "አንድ ጉዳይ ሪፖርት ያድርጉ"
   }
 }

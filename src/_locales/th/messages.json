@@ -109,5 +109,14 @@
   },
   "Successfully_updated_settings": {
     "message": "อัปเดตการตั้งค่าสำเร็จ"
+  },
+  "Better_previews_options": {
+    "message": "ตัวเลือกตัวอย่างที่ดีกว่า"
+  },
+  "Show_Sample_Preview": {
+    "message": "แสดงตัวอย่างตัวอย่าง"
+  },
+  "Report_an_issue": {
+    "message": "รายงานปัญหา"
   }
 }

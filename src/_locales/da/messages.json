@@ -109,5 +109,14 @@
   },
   "Successfully_updated_settings": {
     "message": "Med succes opdaterede indstillinger"
+  },
+  "Better_previews_options": {
+    "message": "Bedre forhåndsvisningsmuligheder"
+  },
+  "Show_Sample_Preview": {
+    "message": "Vis prøveeksempel"
+  },
+  "Report_an_issue": {
+    "message": "Rapporter et problem"
   }
 }

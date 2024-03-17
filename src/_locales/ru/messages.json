@@ -109,5 +109,14 @@
   },
   "Successfully_updated_settings": {
     "message": "Успешно обновленные настройки"
+  },
+  "Better_previews_options": {
+    "message": "Лучшие предварительные варианты"
+  },
+  "Show_Sample_Preview": {
+    "message": "Показать предварительный просмотр"
+  },
+  "Report_an_issue": {
+    "message": "Сообщить о проблеме"
   }
 }

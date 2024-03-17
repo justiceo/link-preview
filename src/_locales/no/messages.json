@@ -109,5 +109,14 @@
   },
   "Successfully_updated_settings": {
     "message": "Vellykket oppdaterte innstillinger"
+  },
+  "Better_previews_options": {
+    "message": "Bedre forhåndsvisningsalternativer"
+  },
+  "Show_Sample_Preview": {
+    "message": "Vis forhåndsvisning av prøven"
+  },
+  "Report_an_issue": {
+    "message": "Rapporter et problem"
   }
 }

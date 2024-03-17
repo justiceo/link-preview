@@ -3,7 +3,7 @@
 const fs = require("fs");
 const path = require("path");
 const translate = require("google-translate-api-x");
-const glob = require("glob");
+const { glob } = require("glob");
 const { JSDOM } = require("jsdom");
 
 const srcDir = "src";
@@ -134,32 +134,27 @@ function searchInFile(filePath, regex) {
 
 // Loops through .ts and .js files and extracts i18n literals.
 function searchForI18nStrings(srcDirectory) {
-  return new Promise((resolve, reject) => {
+  return new Promise(async (resolve, reject) => {
     // Regex to capture content inside quotes without including the quotes
     // TODO: Verify it works for new lines (for long texts).
     const regex = /i18n\(\s*(?:"([\s\S]*?)"|'([\s\S]*?)')\s*,?\s*\)/g;
     const filesPattern = path.join(srcDirectory, "**", "*.{ts,js}");
-    glob(filesPattern, (err, files) => {
-      if (err) {
-        reject("Error reading files: " + err);
-        return;
+    const files = await glob(filesPattern);
+
+    const allMatches = files.reduce((acc, filePath) => {
+      const matches = searchInFile(filePath, regex);
+      if (matches.length > 0) {
+        acc[filePath] = matches;
       }
+      return acc;
+    }, {});
 
-      const allMatches = files.reduce((acc, filePath) => {
-        const matches = searchInFile(filePath, regex);
-        if (matches.length > 0) {
-          acc[filePath] = matches;
-        }
-        return acc;
-      }, {});
-
-      let literals = Object.values(allMatches).reduce(
-        (acc, currentValue) => acc.concat(currentValue),
-        [],
-      );
-      literals = literals.filter((f) => !f.startsWith("@")); // exclude special messages.
-      resolve(literals);
-    });
+    let literals = Object.values(allMatches).reduce(
+      (acc, currentValue) => acc.concat(currentValue),
+      [],
+    );
+    literals = literals.filter((f) => !f.startsWith("@")); // exclude special messages.
+    resolve(literals);
   });
 }
 
@@ -190,42 +185,37 @@ function mapLiteralsToEncodedObject(literals) {
 }
 
 function parseHTMLFiles(src) {
-  return new Promise((resolve, reject) => {
+  return new Promise(async (resolve, reject) => {
     // Map to hold the i18n attribute value to innerHTML
     const i18nMap = {};
 
     // Fetch all HTML files in the given src directory
-    glob(`${src}/**/*.html`, (err, files) => {
-      if (err) {
-        reject(err);
-        return;
-      }
+    const files = await glob(`${src}/**/*.html`);
 
-      files.forEach((file) => {
-        // Read the content of each HTML file
-        const htmlContent = fs.readFileSync(file, "utf8");
-        const dom = new JSDOM(htmlContent);
-        const document = dom.window.document;
+    files.forEach((file) => {
+      // Read the content of each HTML file
+      const htmlContent = fs.readFileSync(file, "utf8");
+      const dom = new JSDOM(htmlContent);
+      const document = dom.window.document;
 
-        // Query all elements with the i18n attribute
-        const elements = document.querySelectorAll("[i18n]");
+      // Query all elements with the i18n attribute
+      const elements = document.querySelectorAll("[i18n]");
 
-        elements.forEach((el) => {
-          // Ignore elements with i18n attribute.
-          const i18nValue = el.getAttribute("i18n");
-          if (i18nValue) {
-            return;
-          }
+      elements.forEach((el) => {
+        // Ignore elements with i18n attribute.
+        const i18nValue = el.getAttribute("i18n");
+        if (i18nValue) {
+          return;
+        }
 
-          // Encode the innerHTML as key
-          const innerHTML = el.innerHTML.toString();
-          const key = encodeString(innerHTML.trim());
-          i18nMap[key] = { message: innerHTML };
-        });
+        // Encode the innerHTML as key
+        const innerHTML = el.innerHTML.toString();
+        const key = encodeString(innerHTML.trim());
+        i18nMap[key] = { message: innerHTML };
       });
-
-      resolve(i18nMap);
     });
+
+    resolve(i18nMap);
   });
 }
 

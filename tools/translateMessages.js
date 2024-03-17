@@ -4,6 +4,7 @@ const fs = require("fs");
 const path = require("path");
 const translate = require("google-translate-api-x");
 const glob = require("glob");
+const { JSDOM } = require("jsdom");
 
 const srcDir = "src";
 const localesDir = "src/_locales";
@@ -188,6 +189,46 @@ function mapLiteralsToEncodedObject(literals) {
   }, {});
 }
 
+function parseHTMLFiles(src) {
+  return new Promise((resolve, reject) => {
+    // Map to hold the i18n attribute value to innerHTML
+    const i18nMap = {};
+
+    // Fetch all HTML files in the given src directory
+    glob(`${src}/**/*.html`, (err, files) => {
+      if (err) {
+        reject(err);
+        return;
+      }
+
+      files.forEach((file) => {
+        // Read the content of each HTML file
+        const htmlContent = fs.readFileSync(file, "utf8");
+        const dom = new JSDOM(htmlContent);
+        const document = dom.window.document;
+
+        // Query all elements with the i18n attribute
+        const elements = document.querySelectorAll("[i18n]");
+
+        elements.forEach((el) => {
+          // Ignore elements with i18n attribute.
+          const i18nValue = el.getAttribute("i18n");
+          if (i18nValue) {
+            return;
+          }
+
+          // Encode the innerHTML as key
+          const innerHTML = el.innerHTML.toString();
+          const key = encodeString(innerHTML.trim());
+          i18nMap[key] = { message: innerHTML };
+        });
+      });
+
+      resolve(i18nMap);
+    });
+  });
+}
+
 // Main function to generate translations
 async function generateTranslations() {
   let sourceLocaleData = readSourceLocaleData();
@@ -197,12 +238,20 @@ async function generateTranslations() {
       delete sourceLocaleData[key];
     }
   });
+
+  // Get the literals from Js/TS files
   const codeLiterals = await searchForI18nStrings(srcDir);
   // combine sourceLocaleData and mappedLiterals into one object.
   sourceLocaleData = Object.assign(
     sourceLocaleData,
     mapLiteralsToEncodedObject(codeLiterals),
   );
+
+  // Get the literals from HTML files
+  const htmlLiterals = await parseHTMLFiles(srcDir);
+  // combine htmlLiterals into sourceLocaleData
+  sourceLocaleData = Object.assign(sourceLocaleData, htmlLiterals);
+
   const messageRequest = Object.keys(sourceLocaleData).reduce((acc, key) => {
     acc[key] = sourceLocaleData[key]["message"];
     return acc;

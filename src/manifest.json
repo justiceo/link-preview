@@ -1,7 +1,7 @@
 {
-  "name": "__MSG_appName__",
-  "description": "__MSG_appDesc__",
-  "short_name": "__MSG_appShortName_",
+  "name": "__MSG_@appName__",
+  "description": "__MSG_@appDesc__",
+  "short_name": "__MSG_@appShortName_",
   "homepage_url": "https://betterpreviews.com/",
   "__package_name__": "search-preview",
   "__comment:version__": "Firefox does not support leading zeros in versions",

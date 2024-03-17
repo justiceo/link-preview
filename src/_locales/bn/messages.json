@@ -14,100 +14,100 @@
   "@testMarkup": {
     "message": "<div> <p> হ্যালো ওয়ার্ল্ড </p> এটি ওয়েব </div> এর <strong> ভাষা </strong>"
   },
-  "Search engine": {
+  "Search_engine": {
     "message": "খোঁজ যন্ত্র"
   },
-  "The search engine that would be used for inline search previews.": {
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
     "message": "ইনলাইন অনুসন্ধান পূর্বরূপগুলির জন্য ব্যবহৃত হবে এমন অনুসন্ধান ইঞ্জিন।"
   },
-  "Google Search": {
+  "Google_Search": {
     "message": "Google অনুসন্ধান"
   },
-  "Bing Search": {
+  "Bing_Search": {
     "message": "বিং অনুসন্ধান"
   },
-  "Yahoo Search": {
+  "Yahoo_Search": {
     "message": "ইয়াহু অনুসন্ধান"
   },
-  "Baidu Search": {
+  "Baidu_Search": {
     "message": "বাইদু অনুসন্ধান"
   },
-  "Yandex Search": {
+  "Yandex_Search": {
     "message": "ইয়ানডেক্স অনুসন্ধান"
   },
-  "Preview Width (%)": {
+  "Preview_Width____": {
     "message": "পূর্বরূপ প্রস্থ (%)"
   },
-  "The width of the preview panel relative to the page.": {
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
     "message": "পৃষ্ঠার সাথে সম্পর্কিত পূর্বরূপ প্যানেলের প্রস্থ।"
   },
-  "Preview Height (%)": {
+  "Preview_Height____": {
     "message": "পূর্বরূপ উচ্চতা (%)"
   },
-  "The height of the preview panel relative to the page.": {
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
     "message": "পৃষ্ঠার সাথে সম্পর্কিত পূর্বরূপ প্যানেলের উচ্চতা।"
   },
-  "Panel Position": {
+  "Panel_Position": {
     "message": "প্যানেল অবস্থান"
   },
-  "The side of the page in which to display the preview.": {
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
     "message": "পূর্বরূপ প্রদর্শন করতে পৃষ্ঠার পাশের দিকটি।"
   },
-  "Right side": {
+  "Right_side": {
     "message": "ডান পাশ"
   },
-  "Left side": {
+  "Left_side": {
     "message": "বাম পাশে"
   },
-  "Close on Escape Key": {
+  "Close_on_Escape_Key": {
     "message": "এস্কেপ কী বন্ধ করুন"
   },
-  "Use the ESC (escape) key to close the preview panel.": {
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
     "message": "পূর্বরূপ প্যানেলটি বন্ধ করতে ESC (এস্কেপ) কী ব্যবহার করুন।"
   },
-  "Automatically Hide Previews": {
+  "Automatically_Hide_Previews": {
     "message": "স্বয়ংক্রিয়ভাবে পূর্বরূপগুলি আড়াল করুন"
   },
-  "Hides the preview panel when you scroll away or interact with the main page.": {
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
     "message": "আপনি যখন স্ক্রোল করে বা মূল পৃষ্ঠার সাথে ইন্টারঅ্যাক্ট করেন তখন পূর্বরূপ প্যানেলটি লুকায়।"
   },
-  "Preview in Side Panel": {
+  "Preview_in_Side_Panel": {
     "message": "পাশের প্যানেলে পূর্বরূপ"
   },
-  "Displays the view in Chrome Side Panel instead of a floating box.": {
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
     "message": "ভাসমান বাক্সের পরিবর্তে ক্রোম সাইড প্যানেলে দৃশ্যটি প্রদর্শন করে।"
   },
-  "Preview-on-Hover Delay": {
+  "Preview_on_Hover_Delay": {
     "message": "পূর্বরূপ অন-হোভার বিলম্ব"
   },
-  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
     "message": "যখন হোভারের উপর স্বয়ংক্রিয় পূর্বরূপ সক্ষম করা হয়, পূর্বরূপ প্রদর্শনের আগে এটি বিলম্ব হয়।"
   },
-  "[Advanced] Force Preview": {
+  "_Advanced__Force_Preview": {
     "message": "[উন্নত] ফোর্স পূর্বরূপ"
   },
-  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
     "message": "যে ওয়েবসাইটগুলি ** সত্যই ** প্রাকদর্শন করতে চান না (উদাঃ স্ট্যাকওভারফ্লো ডটকম) এটি একটি পূর্বরূপকে বাধ্য করে। নার্ড সতর্কতা: এটি একটি ফ্রেম-বস্টিং বাস্টার।"
   },
-  "[Advanced] Disable Incognito Google": {
+  "_Advanced__Disable_Incognito_Google": {
     "message": "[উন্নত] ছদ্মবেশী গুগল অক্ষম করুন"
   },
-  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
     "message": "ডিফল্টরূপে, ব্যবহৃত গুগল অনুসন্ধানের সংস্করণটি সর্বদা গোপনীয়তা এবং সুরক্ষার কারণে স্বাক্ষরিত হয়। যদিও এর ফলে সর্বদা সাইন-ইন প্রম্পটগুলি দেখা যায়।"
   },
-  "Disable Previews on this site": {
+  "Disable_Previews_on_this_site": {
     "message": "এই সাইটে পূর্বরূপ অক্ষম করুন"
   },
-  "The detail information about the checkbox here.": {
+  "The_detail_information_about_the_checkbox_here_": {
     "message": "এখানে চেকবক্স সম্পর্কে বিশদ তথ্য।"
   },
-  "Disabled on Websites": {
+  "Disabled_on_Websites": {
     "message": "ওয়েবসাইটে অক্ষম"
   },
-  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
     "message": "এই সাইটগুলিতে এক্সটেনশন চলবে না, আপনি এই তালিকায় যুক্ত করে কোনও সাইট অক্ষম করতে পারেন।"
   },
-  "Successfully updated settings": {
+  "Successfully_updated_settings": {
     "message": "সফলভাবে আপডেট করা সেটিংস"
   }
 }

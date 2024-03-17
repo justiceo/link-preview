@@ -14,100 +14,100 @@
   "@testMarkup": {
     "message": "<div> <p> Hello world </p>这是Web的<strong>语言</strong> </div>"
   },
-  "Search engine": {
+  "Search_engine": {
     "message": "搜索引擎"
   },
-  "The search engine that would be used for inline search previews.": {
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
     "message": "用于内联搜索预览的搜索引擎。"
   },
-  "Google Search": {
+  "Google_Search": {
     "message": "谷歌搜索"
   },
-  "Bing Search": {
+  "Bing_Search": {
     "message": "Bing搜索"
   },
-  "Yahoo Search": {
+  "Yahoo_Search": {
     "message": "雅虎搜索"
   },
-  "Baidu Search": {
+  "Baidu_Search": {
     "message": "百度搜索"
   },
-  "Yandex Search": {
+  "Yandex_Search": {
     "message": "yandex搜索"
   },
-  "Preview Width (%)": {
+  "Preview_Width____": {
     "message": "预览宽度（％）"
   },
-  "The width of the preview panel relative to the page.": {
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
     "message": "相对于页面的预览面板的宽度。"
   },
-  "Preview Height (%)": {
+  "Preview_Height____": {
     "message": "预览高度（％）"
   },
-  "The height of the preview panel relative to the page.": {
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
     "message": "预览面板相对于页面的高度。"
   },
-  "Panel Position": {
+  "Panel_Position": {
     "message": "面板位置"
   },
-  "The side of the page in which to display the preview.": {
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
     "message": "显示预览的页面的侧面。"
   },
-  "Right side": {
+  "Right_side": {
     "message": "右边"
   },
-  "Left side": {
+  "Left_side": {
     "message": "左边"
   },
-  "Close on Escape Key": {
+  "Close_on_Escape_Key": {
     "message": "关闭逃生钥匙"
   },
-  "Use the ESC (escape) key to close the preview panel.": {
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
     "message": "使用ESC（Esce）键关闭预览面板。"
   },
-  "Automatically Hide Previews": {
+  "Automatically_Hide_Previews": {
     "message": "自动隐藏预览"
   },
-  "Hides the preview panel when you scroll away or interact with the main page.": {
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
     "message": "当您滚动滚动或与主页互动时，请隐藏预览面板。"
   },
-  "Preview in Side Panel": {
+  "Preview_in_Side_Panel": {
     "message": "在侧面面板中预览"
   },
-  "Displays the view in Chrome Side Panel instead of a floating box.": {
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
     "message": "在镀铬侧面面板中显示视图，而不是浮动盒。"
   },
-  "Preview-on-Hover Delay": {
+  "Preview_on_Hover_Delay": {
     "message": "预览悬挂延迟"
   },
-  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
     "message": "当启用悬停的自动预览时，这是显示预览之前的延迟。"
   },
-  "[Advanced] Force Preview": {
+  "_Advanced__Force_Preview": {
     "message": "[高级]力预览"
   },
-  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
     "message": "对于**确实不想预览的网站（例如，stackoverflow.com），这会迫使预览。 书呆子警报：这是一个破坏框架的克星。"
   },
-  "[Advanced] Disable Incognito Google": {
+  "_Advanced__Disable_Incognito_Google": {
     "message": "[高级]禁用Incognito Google"
   },
-  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
     "message": "默认情况下，出于隐私和安全原因，使用的Google搜索版本总是被签署。 尽管这可能会始终看到登录提示。"
   },
-  "Disable Previews on this site": {
+  "Disable_Previews_on_this_site": {
     "message": "在此网站上禁用预览"
   },
-  "The detail information about the checkbox here.": {
+  "The_detail_information_about_the_checkbox_here_": {
     "message": "有关复选框的详细信息。"
   },
-  "Disabled on Websites": {
+  "Disabled_on_Websites": {
     "message": "在网站上禁用"
   },
-  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
     "message": "扩展名不会在这些站点上运行，您可以通过添加到此列表中禁用站点。"
   },
-  "Successfully updated settings": {
+  "Successfully_updated_settings": {
     "message": "成功更新了设置"
   }
 }

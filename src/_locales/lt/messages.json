@@ -14,100 +14,100 @@
   "@testMarkup": {
     "message": "<div> <p> labas pasaulis </p> Tai yra žiniatinklio </strong> kalba </strong> </div>"
   },
-  "Search engine": {
+  "Search_engine": {
     "message": "Paieškos variklis"
   },
-  "The search engine that would be used for inline search previews.": {
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
     "message": "Paieškos variklis, kuris būtų naudojamas įterptų paieškos peržiūras."
   },
-  "Google Search": {
+  "Google_Search": {
     "message": "Google paieška"
   },
-  "Bing Search": {
+  "Bing_Search": {
     "message": "„Bing“ paieška"
   },
-  "Yahoo Search": {
+  "Yahoo_Search": {
     "message": "„Yahoo“ paieška"
   },
-  "Baidu Search": {
+  "Baidu_Search": {
     "message": "Baidu paieška"
   },
-  "Yandex Search": {
+  "Yandex_Search": {
     "message": "„Yandex“ paieška"
   },
-  "Preview Width (%)": {
+  "Preview_Width____": {
     "message": "Peržiūros plotis (%)"
   },
-  "The width of the preview panel relative to the page.": {
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
     "message": "Peržiūros skydelio plotis puslapio atžvilgiu."
   },
-  "Preview Height (%)": {
+  "Preview_Height____": {
     "message": "Peržiūros aukštis (%)"
   },
-  "The height of the preview panel relative to the page.": {
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
     "message": "Peržiūros skydelio aukštis puslapio atžvilgiu."
   },
-  "Panel Position": {
+  "Panel_Position": {
     "message": "Skydo padėtis"
   },
-  "The side of the page in which to display the preview.": {
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
     "message": "Puslapio, kuriame galima rodyti peržiūrą, pusė."
   },
-  "Right side": {
+  "Right_side": {
     "message": "Dešinioji pusė"
   },
-  "Left side": {
+  "Left_side": {
     "message": "Kairė pusė"
   },
-  "Close on Escape Key": {
+  "Close_on_Escape_Key": {
     "message": "Uždarykite „Escape Key“"
   },
-  "Use the ESC (escape) key to close the preview panel.": {
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
     "message": "Norėdami uždaryti peržiūros skydelį, naudokite mygtuką ESC (ESCES)."
   },
-  "Automatically Hide Previews": {
+  "Automatically_Hide_Previews": {
     "message": "Automatiškai paslėpkite peržiūras"
   },
-  "Hides the preview panel when you scroll away or interact with the main page.": {
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
     "message": "Slepia peržiūros skydą, kai slinkite ar bendraujate su pagrindiniu puslapiu."
   },
-  "Preview in Side Panel": {
+  "Preview_in_Side_Panel": {
     "message": "Peržiūra šoniniame skydelyje"
   },
-  "Displays the view in Chrome Side Panel instead of a floating box.": {
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
     "message": "Rodomas vaizdas „Chrome“ šoniniame skydelyje, o ne plūduriuojančioje dėžutėje."
   },
-  "Preview-on-Hover Delay": {
+  "Preview_on_Hover_Delay": {
     "message": "Peržiūra ant fondo vėlavimas"
   },
-  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
     "message": "Kai įjungta automatinė „Hover“ peržiūra, tai yra vėlavimas prieš rodant peržiūrą."
   },
-  "[Advanced] Force Preview": {
+  "_Advanced__Force_Preview": {
     "message": "[Išplėstinė] jėgos peržiūra"
   },
-  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
     "message": "Svetainėse, kurios ** iš tikrųjų ** nenori būti peržiūrėtas (pvz., Stackoverflow.com), tai verčia peržiūrą. Nerdo perspėjimas: tai yra rėmas, kuris yra suderintas su rėmeliu."
   },
-  "[Advanced] Disable Incognito Google": {
+  "_Advanced__Disable_Incognito_Google": {
     "message": "[Išplėstinė] Išjungti „Incognito Google“"
   },
-  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
     "message": "Pagal numatytuosius nustatymus naudojama „Google“ paieškos versija visada išskiriama dėl privatumo ir saugumo priežasčių. Nors dėl to visada galima pamatyti prisijungimo raginimus."
   },
-  "Disable Previews on this site": {
+  "Disable_Previews_on_this_site": {
     "message": "Išjunkite peržiūras šioje svetainėje"
   },
-  "The detail information about the checkbox here.": {
+  "The_detail_information_about_the_checkbox_here_": {
     "message": "Išsami informacija apie žymimąjį laukelį čia."
   },
-  "Disabled on Websites": {
+  "Disabled_on_Websites": {
     "message": "Neįgalios svetainėse"
   },
-  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
     "message": "Eilmė nebus vykdoma šiose svetainėse, galite išjungti svetainę, pridėdami prie šio sąrašo."
   },
-  "Successfully updated settings": {
+  "Successfully_updated_settings": {
     "message": "Sėkmingai atnaujinti nustatymai"
   }
 }

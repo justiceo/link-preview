@@ -14,100 +14,100 @@
   "@testMarkup": {
     "message": "<div> <p> Hello World </p> Toto je <strong> jazyk </strong> webu </v div>"
   },
-  "Search engine": {
+  "Search_engine": {
     "message": "Vyhledávač"
   },
-  "The search engine that would be used for inline search previews.": {
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
     "message": "Vyhledávací stroj, který by byl použit pro vložené náhledy vyhledávání."
   },
-  "Google Search": {
+  "Google_Search": {
     "message": "Google vyhledávání"
   },
-  "Bing Search": {
+  "Bing_Search": {
     "message": "Hledání bing"
   },
-  "Yahoo Search": {
+  "Yahoo_Search": {
     "message": "Vyhledávání yahoo"
   },
-  "Baidu Search": {
+  "Baidu_Search": {
     "message": "Baidu Search"
   },
-  "Yandex Search": {
+  "Yandex_Search": {
     "message": "Yandex Search"
   },
-  "Preview Width (%)": {
+  "Preview_Width____": {
     "message": "Šířka náhledu (%)"
   },
-  "The width of the preview panel relative to the page.": {
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
     "message": "Šířka panelu náhledu vzhledem k stránce."
   },
-  "Preview Height (%)": {
+  "Preview_Height____": {
     "message": "Výška náhledu (%)"
   },
-  "The height of the preview panel relative to the page.": {
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
     "message": "Výška panelu náhledu vzhledem k stránce."
   },
-  "Panel Position": {
+  "Panel_Position": {
     "message": "Poloha panelu"
   },
-  "The side of the page in which to display the preview.": {
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
     "message": "Strana stránky, na které se má zobrazit náhled."
   },
-  "Right side": {
+  "Right_side": {
     "message": "Pravá strana"
   },
-  "Left side": {
+  "Left_side": {
     "message": "Levá strana"
   },
-  "Close on Escape Key": {
+  "Close_on_Escape_Key": {
     "message": "Zavřete se na útěku"
   },
-  "Use the ESC (escape) key to close the preview panel.": {
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
     "message": "Pomocí klávesy ESC (Escape) zavřete panel náhledu."
   },
-  "Automatically Hide Previews": {
+  "Automatically_Hide_Previews": {
     "message": "Automaticky skrýt náhledy"
   },
-  "Hides the preview panel when you scroll away or interact with the main page.": {
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
     "message": "Skryje panel náhledu, když posouváte nebo komunikujete s hlavní stránkou."
   },
-  "Preview in Side Panel": {
+  "Preview_in_Side_Panel": {
     "message": "Náhled v bočním panelu"
   },
-  "Displays the view in Chrome Side Panel instead of a floating box.": {
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
     "message": "Zobrazuje pohled na bočním panelu Chrome namísto plovoucí krabice."
   },
-  "Preview-on-Hover Delay": {
+  "Preview_on_Hover_Delay": {
     "message": "Zpoždění náhledu na hover"
   },
-  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
     "message": "Pokud je povolen automatický náhled na HOVER, jedná se o zpoždění před zobrazením náhledu."
   },
-  "[Advanced] Force Preview": {
+  "_Advanced__Force_Preview": {
     "message": "[Advanced] Preview Force"
   },
-  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
     "message": "Pro webové stránky, které ** opravdu ** nechtějí být náhled (např. Stackoverflow.com), to vynutí náhled. Nerd Alert: Jedná se o rámečkový Buster."
   },
-  "[Advanced] Disable Incognito Google": {
+  "_Advanced__Disable_Incognito_Google": {
     "message": "[Advanced] Zakázat incognito Google"
   },
-  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
     "message": "Ve výchozím nastavení je verze použitého vyhledávání Google vždy podepsána z důvodů ochrany osobních údajů a zabezpečení. Ačkoli to může mít za následek, že vždy vidíte přihlášení."
   },
-  "Disable Previews on this site": {
+  "Disable_Previews_on_this_site": {
     "message": "Zakázat náhledy na tomto webu"
   },
-  "The detail information about the checkbox here.": {
+  "The_detail_information_about_the_checkbox_here_": {
     "message": "Podrobné informace o zaškrtávacím políčku zde."
   },
-  "Disabled on Websites": {
+  "Disabled_on_Websites": {
     "message": "Zakázáno na webových stránkách"
   },
-  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
     "message": "Rozšíření nebude spuštěno na těchto stránkách, můžete zakázat web přidáním do tohoto seznamu."
   },
-  "Successfully updated settings": {
+  "Successfully_updated_settings": {
     "message": "Úspěšně aktualizovaná nastavení"
   }
 }

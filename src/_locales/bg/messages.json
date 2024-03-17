@@ -14,100 +14,100 @@
   "@testMarkup": {
     "message": "<div> <p> здравей свят </p> Това е <strong> езикът </strong> на мрежата </div>"
   },
-  "Search engine": {
+  "Search_engine": {
     "message": "Търсачка"
   },
-  "The search engine that would be used for inline search previews.": {
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
     "message": "Търсачката, която ще бъде използвана за вградени визуализации за търсене."
   },
-  "Google Search": {
+  "Google_Search": {
     "message": "Търсене в Google"
   },
-  "Bing Search": {
+  "Bing_Search": {
     "message": "Търсене на бинг"
   },
-  "Yahoo Search": {
+  "Yahoo_Search": {
     "message": "Yahoo търсене"
   },
-  "Baidu Search": {
+  "Baidu_Search": {
     "message": "BAIDU SEACK"
   },
-  "Yandex Search": {
+  "Yandex_Search": {
     "message": "Yandex търсене"
   },
-  "Preview Width (%)": {
+  "Preview_Width____": {
     "message": "Визуализация на ширината (%)"
   },
-  "The width of the preview panel relative to the page.": {
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
     "message": "Ширината на панела за визуализация спрямо страницата."
   },
-  "Preview Height (%)": {
+  "Preview_Height____": {
     "message": "Визуализация на височината (%)"
   },
-  "The height of the preview panel relative to the page.": {
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
     "message": "Височината на панела за визуализация спрямо страницата."
   },
-  "Panel Position": {
+  "Panel_Position": {
     "message": "Позиция на панела"
   },
-  "The side of the page in which to display the preview.": {
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
     "message": "Отстрани на страницата, в която да се покаже визуализацията."
   },
-  "Right side": {
+  "Right_side": {
     "message": "Правилната страна"
   },
-  "Left side": {
+  "Left_side": {
     "message": "Лява страна"
   },
-  "Close on Escape Key": {
+  "Close_on_Escape_Key": {
     "message": "Затворете клавиша Escape"
   },
-  "Use the ESC (escape) key to close the preview panel.": {
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
     "message": "Използвайте клавиша ESC (ESCAPE), за да затворите панела за визуализация."
   },
-  "Automatically Hide Previews": {
+  "Automatically_Hide_Previews": {
     "message": "Автоматично скрийте визуализации"
   },
-  "Hides the preview panel when you scroll away or interact with the main page.": {
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
     "message": "Скрийте панела за визуализация, когато превъртите далеч или взаимодействате с основната страница."
   },
-  "Preview in Side Panel": {
+  "Preview_in_Side_Panel": {
     "message": "Визуализация в страничния панел"
   },
-  "Displays the view in Chrome Side Panel instead of a floating box.": {
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
     "message": "Показва изгледа в страничния панел на Chrome вместо плаваща кутия."
   },
-  "Preview-on-Hover Delay": {
+  "Preview_on_Hover_Delay": {
     "message": "Преглед на забавяне на хол"
   },
-  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
     "message": "Когато е активиран автоматичен преглед на Hover, това е забавянето преди да се покаже визуализацията."
   },
-  "[Advanced] Force Preview": {
+  "_Advanced__Force_Preview": {
     "message": "[Advanced] Преглед на силата"
   },
-  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
     "message": "За уебсайтове, които ** наистина ** не искат да бъдат визуализирани (например stackoverflow.com) това принуждава визуализация. Ard Alert: Това е бустер на кадри."
   },
-  "[Advanced] Disable Incognito Google": {
+  "_Advanced__Disable_Incognito_Google": {
     "message": "[Разширено] Деактивирайте Incognito Google"
   },
-  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
     "message": "По подразбиране версията на използваното търсене в Google винаги се подписва от причини за поверителност и сигурност. Въпреки че това може да доведе до това, че винаги виждате подкани за влизане."
   },
-  "Disable Previews on this site": {
+  "Disable_Previews_on_this_site": {
     "message": "Деактивирайте визуализациите на този сайт"
   },
-  "The detail information about the checkbox here.": {
+  "The_detail_information_about_the_checkbox_here_": {
     "message": "Подробната информация за квадратчето тук."
   },
-  "Disabled on Websites": {
+  "Disabled_on_Websites": {
     "message": "Деактивирани на уебсайтове"
   },
-  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
     "message": "Разширението няма да се изпълнява на тези сайтове, можете да деактивирате сайт, като добавите към този списък."
   },
-  "Successfully updated settings": {
+  "Successfully_updated_settings": {
     "message": "Успешно актуализирани настройки"
   }
 }

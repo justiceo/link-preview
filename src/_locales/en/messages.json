@@ -14,100 +14,100 @@
   "@testMarkup": {
     "message": "<div><p>Hello world</p>This is the <strong>language</strong> of the web</div>"
   },
-  "Search engine": {
+  "Search_engine": {
     "message": "Search engine"
   },
-  "The search engine that would be used for inline search previews.": {
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
     "message": "The search engine that would be used for inline search previews."
   },
-  "Google Search": {
+  "Google_Search": {
     "message": "Google Search"
   },
-  "Bing Search": {
+  "Bing_Search": {
     "message": "Bing Search"
   },
-  "Yahoo Search": {
+  "Yahoo_Search": {
     "message": "Yahoo Search"
   },
-  "Baidu Search": {
+  "Baidu_Search": {
     "message": "Baidu Search"
   },
-  "Yandex Search": {
+  "Yandex_Search": {
     "message": "Yandex Search"
   },
-  "Preview Width (%)": {
+  "Preview_Width____": {
     "message": "Preview Width (%)"
   },
-  "The width of the preview panel relative to the page.": {
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
     "message": "The width of the preview panel relative to the page."
   },
-  "Preview Height (%)": {
+  "Preview_Height____": {
     "message": "Preview Height (%)"
   },
-  "The height of the preview panel relative to the page.": {
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
     "message": "The height of the preview panel relative to the page."
   },
-  "Panel Position": {
+  "Panel_Position": {
     "message": "Panel Position"
   },
-  "The side of the page in which to display the preview.": {
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
     "message": "The side of the page in which to display the preview."
   },
-  "Right side": {
+  "Right_side": {
     "message": "Right side"
   },
-  "Left side": {
+  "Left_side": {
     "message": "Left side"
   },
-  "Close on Escape Key": {
+  "Close_on_Escape_Key": {
     "message": "Close on Escape Key"
   },
-  "Use the ESC (escape) key to close the preview panel.": {
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
     "message": "Use the ESC (escape) key to close the preview panel."
   },
-  "Automatically Hide Previews": {
+  "Automatically_Hide_Previews": {
     "message": "Automatically Hide Previews"
   },
-  "Hides the preview panel when you scroll away or interact with the main page.": {
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
     "message": "Hides the preview panel when you scroll away or interact with the main page."
   },
-  "Preview in Side Panel": {
+  "Preview_in_Side_Panel": {
     "message": "Preview in Side Panel"
   },
-  "Displays the view in Chrome Side Panel instead of a floating box.": {
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
     "message": "Displays the view in Chrome Side Panel instead of a floating box."
   },
-  "Preview-on-Hover Delay": {
+  "Preview_on_Hover_Delay": {
     "message": "Preview-on-Hover Delay"
   },
-  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
     "message": "When automatic preview on hover is enabled, this is the delay before the preview is shown."
   },
-  "[Advanced] Force Preview": {
+  "_Advanced__Force_Preview": {
     "message": "[Advanced] Force Preview"
   },
-  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
     "message": "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster."
   },
-  "[Advanced] Disable Incognito Google": {
+  "_Advanced__Disable_Incognito_Google": {
     "message": "[Advanced] Disable Incognito Google"
   },
-  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
     "message": "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts."
   },
-  "Disable Previews on this site": {
+  "Disable_Previews_on_this_site": {
     "message": "Disable Previews on this site"
   },
-  "The detail information about the checkbox here.": {
+  "The_detail_information_about_the_checkbox_here_": {
     "message": "The detail information about the checkbox here."
   },
-  "Disabled on Websites": {
+  "Disabled_on_Websites": {
     "message": "Disabled on Websites"
   },
-  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
     "message": "Extension will not run on these sites, you can disable a site by adding to this list."
   },
-  "Successfully updated settings": {
+  "Successfully_updated_settings": {
     "message": "Successfully updated settings"
   }
 }

@@ -14,100 +14,100 @@
   "@testMarkup": {
     "message": "<div> <p> ഹലോ വേൾഡ് </ p> ഇത് വെബിന്റെ </ dive> ന്റെ </ play> ഇതാണ്"
   },
-  "Search engine": {
+  "Search_engine": {
     "message": "തിരയല് യന്ത്രം"
   },
-  "The search engine that would be used for inline search previews.": {
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
     "message": "ഇൻലൈൻ തിരയൽ തിരനോട്ടത്തിനായി ഉപയോഗിക്കുന്ന തിരയൽ എഞ്ചിൻ."
   },
-  "Google Search": {
+  "Google_Search": {
     "message": "ഗൂഗിളില് തിരയുക"
   },
-  "Bing Search": {
+  "Bing_Search": {
     "message": "ബിംഗ് തിരയൽ"
   },
-  "Yahoo Search": {
+  "Yahoo_Search": {
     "message": "Yahoo തിരയൽ"
   },
-  "Baidu Search": {
+  "Baidu_Search": {
     "message": "Baidu തിരയൽ"
   },
-  "Yandex Search": {
+  "Yandex_Search": {
     "message": "യന്ഡെക്സ് തിരയൽ"
   },
-  "Preview Width (%)": {
+  "Preview_Width____": {
     "message": "പ്രിവ്യൂ വീതി (%)"
   },
-  "The width of the preview panel relative to the page.": {
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
     "message": "പേജുമായി ബന്ധപ്പെട്ട പ്രിവ്യൂ പാനലിന്റെ വീതി."
   },
-  "Preview Height (%)": {
+  "Preview_Height____": {
     "message": "പ്രിവ്യൂ ഉയരം (%)"
   },
-  "The height of the preview panel relative to the page.": {
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
     "message": "പേജുമായി ബന്ധപ്പെട്ട പ്രിവ്യൂ പാനലിന്റെ ഉയരം."
   },
-  "Panel Position": {
+  "Panel_Position": {
     "message": "പാനൽ സ്ഥാനം"
   },
-  "The side of the page in which to display the preview.": {
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
     "message": "പ്രിവ്യൂ പ്രദർശിപ്പിക്കേണ്ട പേജിന്റെ വശം."
   },
-  "Right side": {
+  "Right_side": {
     "message": "വലത് വശം"
   },
-  "Left side": {
+  "Left_side": {
     "message": "ഇടത് വശം"
   },
-  "Close on Escape Key": {
+  "Close_on_Escape_Key": {
     "message": "എസ്കേപ്പ് കീയിൽ അടയ്ക്കുക"
   },
-  "Use the ESC (escape) key to close the preview panel.": {
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
     "message": "പ്രിവ്യൂ പാനൽ അടയ്ക്കുന്നതിന് Esc (scrift) കീ ഉപയോഗിക്കുക."
   },
-  "Automatically Hide Previews": {
+  "Automatically_Hide_Previews": {
     "message": "യാന്ത്രികമായി പ്രിവ്യൂകൾ മറയ്ക്കുക"
   },
-  "Hides the preview panel when you scroll away or interact with the main page.": {
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
     "message": "നിങ്ങൾ സ്ക്രോൾ ചെയ്യുമ്പോഴോ പ്രധാന പേജിലുമായി സംവദിക്കുമ്പോഴോ പ്രിവ്യൂ പാനൽ മറയ്ക്കുന്നു."
   },
-  "Preview in Side Panel": {
+  "Preview_in_Side_Panel": {
     "message": "സൈഡ് പാനലിൽ പ്രിവ്യൂ"
   },
-  "Displays the view in Chrome Side Panel instead of a floating box.": {
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
     "message": "ഫ്ലോട്ടിംഗ് ബോക്സിന് പകരം Chrome സൈഡ് പാനലിലെ കാഴ്ച പ്രദർശിപ്പിക്കുന്നു."
   },
-  "Preview-on-Hover Delay": {
+  "Preview_on_Hover_Delay": {
     "message": "പ്രിവ്യൂ-ഓൺ-ഹോവർ കാലതാമസം"
   },
-  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
     "message": "ഹോവറിലെ യാന്ത്രിക പ്രിവ്യൂ പ്രവർത്തനക്ഷമമാക്കിയപ്പോൾ, പ്രിവ്യൂ കാണിക്കുന്നതിന് മുമ്പുള്ള കാലതാമസമാണിത്."
   },
-  "[Advanced] Force Preview": {
+  "_Advanced__Force_Preview": {
     "message": "[അഡ്വാൻസ്ഡ്] ഫോഴ്സ് പ്രിവ്യൂ"
   },
-  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
     "message": "** ശരിക്കും ** പ്രിവ്യൂ ചെയ്യാൻ ആഗ്രഹിക്കാത്ത വെബ്സൈറ്റുകൾക്കായി (ഉദാ. StacovFLow.com) ഇത് ഒരു പ്രിവ്യൂവിനെ നിർബന്ധിക്കുന്നു. നേർഡ് അലേർട്ട്: ഇതൊരു ഫ്രെയിം-ബസ്റ്റിംഗ് ബസ്റ്ററാണ്."
   },
-  "[Advanced] Disable Incognito Google": {
+  "_Advanced__Disable_Incognito_Google": {
     "message": "[അഡ്വാൻസ്ഡ്] ആൾമാറാട്ട Google അപ്രാപ്തമാക്കുക"
   },
-  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
     "message": "സ്ഥിരസ്ഥിതിയായി, ഉപയോഗിച്ച Google തിരയലിന്റെ പതിപ്പ് എല്ലായ്പ്പോഴും സ്വകാര്യത, സുരക്ഷാ കാരണങ്ങളാൽ സൈൻ out ട്ട് ചെയ്യുന്നു. ഇത് എല്ലായ്പ്പോഴും സൈൻ-ഇൻ പ്രോംപ്റ്റുകൾ കാണുന്നതിന് കാരണമാകാം."
   },
-  "Disable Previews on this site": {
+  "Disable_Previews_on_this_site": {
     "message": "ഈ സൈറ്റിലെ പ്രിവ്യൂ അപ്രാപ്തമാക്കുക"
   },
-  "The detail information about the checkbox here.": {
+  "The_detail_information_about_the_checkbox_here_": {
     "message": "ചെക്ക്ബോക്സിനെക്കുറിച്ചുള്ള വിശദമായ വിവരങ്ങൾ ഇവിടെ."
   },
-  "Disabled on Websites": {
+  "Disabled_on_Websites": {
     "message": "വെബ്സൈറ്റുകളിൽ അപ്രാപ്തമാക്കി"
   },
-  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
     "message": "വിപുലീകരണം ഈ സൈറ്റുകളിൽ പ്രവർത്തിക്കില്ല, ഈ പട്ടിക ചേർത്ത് നിങ്ങൾക്ക് ഒരു സൈറ്റ് പ്രവർത്തനരഹിതമാക്കാം."
   },
-  "Successfully updated settings": {
+  "Successfully_updated_settings": {
     "message": "ക്രമീകരണങ്ങൾ വിജയകരമായി അപ്ഡേറ്റുചെയ്തു"
   }
 }

@@ -14,100 +14,100 @@
   "@testMarkup": {
     "message": "<div> <p> హలో వరల్డ్ </p> ఇది వెబ్ </div> యొక్క <strong> భాష </strong>"
   },
-  "Search engine": {
+  "Search_engine": {
     "message": "శోధన యంత్రము"
   },
-  "The search engine that would be used for inline search previews.": {
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
     "message": "ఇన్లైన్ శోధన ప్రివ్యూల కోసం ఉపయోగించబడే సెర్చ్ ఇంజన్."
   },
-  "Google Search": {
+  "Google_Search": {
     "message": "గూగుల్ శోధన"
   },
-  "Bing Search": {
+  "Bing_Search": {
     "message": "బింగ్ శోధన"
   },
-  "Yahoo Search": {
+  "Yahoo_Search": {
     "message": "యాహూ శోధన"
   },
-  "Baidu Search": {
+  "Baidu_Search": {
     "message": "బైడు శోధన"
   },
-  "Yandex Search": {
+  "Yandex_Search": {
     "message": "యాండెక్స్ శోధన"
   },
-  "Preview Width (%)": {
+  "Preview_Width____": {
     "message": "ప్రివ్యూ వెడల్పు (%)"
   },
-  "The width of the preview panel relative to the page.": {
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
     "message": "పేజీకి సంబంధించి ప్రివ్యూ ప్యానెల్ యొక్క వెడల్పు."
   },
-  "Preview Height (%)": {
+  "Preview_Height____": {
     "message": "ప్రివ్యూ ఎత్తు (%)"
   },
-  "The height of the preview panel relative to the page.": {
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
     "message": "పేజీకి సంబంధించి ప్రివ్యూ ప్యానెల్ యొక్క ఎత్తు."
   },
-  "Panel Position": {
+  "Panel_Position": {
     "message": "ప్యానెల్ స్థానం"
   },
-  "The side of the page in which to display the preview.": {
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
     "message": "ప్రివ్యూను ప్రదర్శించే పేజీ వైపు."
   },
-  "Right side": {
+  "Right_side": {
     "message": "కుడి వైపు"
   },
-  "Left side": {
+  "Left_side": {
     "message": "ఎడమ వైపు"
   },
-  "Close on Escape Key": {
+  "Close_on_Escape_Key": {
     "message": "ఎస్కేప్ కీపై మూసివేయండి"
   },
-  "Use the ESC (escape) key to close the preview panel.": {
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
     "message": "ప్రివ్యూ ప్యానెల్‌ను మూసివేయడానికి ESC (ఎస్కేప్) కీని ఉపయోగించండి."
   },
-  "Automatically Hide Previews": {
+  "Automatically_Hide_Previews": {
     "message": "స్వయంచాలకంగా ప్రివ్యూలను దాచండి"
   },
-  "Hides the preview panel when you scroll away or interact with the main page.": {
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
     "message": "మీరు దూరంగా స్క్రోల్ చేసినప్పుడు లేదా ప్రధాన పేజీతో సంభాషించేటప్పుడు ప్రివ్యూ ప్యానెల్‌ను దాచిపెడుతుంది."
   },
-  "Preview in Side Panel": {
+  "Preview_in_Side_Panel": {
     "message": "సైడ్ ప్యానెల్‌లో ప్రివ్యూ"
   },
-  "Displays the view in Chrome Side Panel instead of a floating box.": {
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
     "message": "ఫ్లోటింగ్ బాక్స్‌కు బదులుగా క్రోమ్ సైడ్ ప్యానెల్‌లో వీక్షణను ప్రదర్శిస్తుంది."
   },
-  "Preview-on-Hover Delay": {
+  "Preview_on_Hover_Delay": {
     "message": "ప్రివ్యూ-ఆన్-హోవర్ ఆలస్యం"
   },
-  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
     "message": "హోవర్‌పై ఆటోమేటిక్ ప్రివ్యూ ప్రారంభించబడినప్పుడు, ప్రివ్యూ చూపబడటానికి ముందు ఇది ఆలస్యం."
   },
-  "[Advanced] Force Preview": {
+  "_Advanced__Force_Preview": {
     "message": "[అధునాతన] ఫోర్స్ ప్రివ్యూ"
   },
-  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
     "message": "** నిజంగా ** పరిదృశ్యం చేయకూడదనుకునే వెబ్‌సైట్ల కోసం (ఉదా. స్టాక్‌ఓవర్‌ఫ్లో.కామ్) ఇది ప్రివ్యూను బలవంతం చేస్తుంది. తానే చెప్పుకున్నట్టూ హెచ్చరిక: ఇది ఫ్రేమ్-బస్టింగ్ బస్టర్."
   },
-  "[Advanced] Disable Incognito Google": {
+  "_Advanced__Disable_Incognito_Google": {
     "message": "[అధునాతన] అజ్ఞాత Google ని నిలిపివేయండి"
   },
-  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
     "message": "అప్రమేయంగా, ఉపయోగించిన గూగుల్ సెర్చ్ యొక్క సంస్కరణ గోప్యత మరియు భద్రతా కారణాల కోసం ఎల్లప్పుడూ సైన్-అవుట్ అవుతుంది. ఇది ఎల్లప్పుడూ సైన్-ఇన్ ప్రాంప్ట్‌లను చూడటం వల్ల కావచ్చు."
   },
-  "Disable Previews on this site": {
+  "Disable_Previews_on_this_site": {
     "message": "ఈ సైట్‌లో ప్రివ్యూలను నిలిపివేయండి"
   },
-  "The detail information about the checkbox here.": {
+  "The_detail_information_about_the_checkbox_here_": {
     "message": "చెక్‌బాక్స్ గురించి వివరాల సమాచారం ఇక్కడ."
   },
-  "Disabled on Websites": {
+  "Disabled_on_Websites": {
     "message": "వెబ్‌సైట్లలో నిలిపివేయబడింది"
   },
-  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
     "message": "పొడిగింపు ఈ సైట్‌లలో అమలు చేయదు, మీరు ఈ జాబితాకు జోడించడం ద్వారా సైట్‌ను నిలిపివేయవచ్చు."
   },
-  "Successfully updated settings": {
+  "Successfully_updated_settings": {
     "message": "విజయవంతంగా నవీకరించబడిన సెట్టింగులు"
   }
 }

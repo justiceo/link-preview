@@ -14,100 +14,100 @@
   "@testMarkup": {
     "message": "<div> <p> Zdravo svijet </p> Ovo je <strong> jezik </strong> web </div>"
   },
-  "Search engine": {
+  "Search_engine": {
     "message": "Pretraživač"
   },
-  "The search engine that would be used for inline search previews.": {
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
     "message": "Tražilica koja bi se koristila za inline preglede pretraživanja."
   },
-  "Google Search": {
+  "Google_Search": {
     "message": "Google pretraživanje"
   },
-  "Bing Search": {
+  "Bing_Search": {
     "message": "Pretraživanje binga"
   },
-  "Yahoo Search": {
+  "Yahoo_Search": {
     "message": "Yahoo pretraživanje"
   },
-  "Baidu Search": {
+  "Baidu_Search": {
     "message": "Baidu pretraživanje"
   },
-  "Yandex Search": {
+  "Yandex_Search": {
     "message": "Yandex pretraživanje"
   },
-  "Preview Width (%)": {
+  "Preview_Width____": {
     "message": "Širina pregleda (%)"
   },
-  "The width of the preview panel relative to the page.": {
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
     "message": "Širina ploče za pregled u odnosu na stranicu."
   },
-  "Preview Height (%)": {
+  "Preview_Height____": {
     "message": "Visina pregleda (%)"
   },
-  "The height of the preview panel relative to the page.": {
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
     "message": "Visina ploče za pregled u odnosu na stranicu."
   },
-  "Panel Position": {
+  "Panel_Position": {
     "message": "Položaj ploče"
   },
-  "The side of the page in which to display the preview.": {
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
     "message": "Strana stranice na kojoj će prikazati pregled."
   },
-  "Right side": {
+  "Right_side": {
     "message": "Desna strana"
   },
-  "Left side": {
+  "Left_side": {
     "message": "Lijeva strana"
   },
-  "Close on Escape Key": {
+  "Close_on_Escape_Key": {
     "message": "Zatvorite ključ za bijeg"
   },
-  "Use the ESC (escape) key to close the preview panel.": {
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
     "message": "Upotrijebite tipku ESC (Escape) za zatvaranje ploče za pregled."
   },
-  "Automatically Hide Previews": {
+  "Automatically_Hide_Previews": {
     "message": "Automatski sakriti preglede"
   },
-  "Hides the preview panel when you scroll away or interact with the main page.": {
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
     "message": "Skriva ploču za pregled kada se pomaknete ili komunicirate s glavnom stranom."
   },
-  "Preview in Side Panel": {
+  "Preview_in_Side_Panel": {
     "message": "Pregled na bočnoj ploči"
   },
-  "Displays the view in Chrome Side Panel instead of a floating box.": {
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
     "message": "Prikazuje prikaz na bočnoj ploči Chrome umjesto u plutajućem okviru."
   },
-  "Preview-on-Hover Delay": {
+  "Preview_on_Hover_Delay": {
     "message": "Kašnjenje u pregledu"
   },
-  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
     "message": "Kada je omogućen automatski pregled lebdeća, ovo je kašnjenje prije nego što se prikaže pregled."
   },
-  "[Advanced] Force Preview": {
+  "_Advanced__Force_Preview": {
     "message": "[Napredni] pregled sile"
   },
-  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
     "message": "Za web stranice koje ** stvarno ** ne žele biti pregledani (npr. StackoverFlow.com) to prisiljava pregled. Upozorenje Nerd-a: Ovo je Buster koji pušta okvir."
   },
-  "[Advanced] Disable Incognito Google": {
+  "_Advanced__Disable_Incognito_Google": {
     "message": "[Napredno] Onemogućite Incognito Google"
   },
-  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
     "message": "Prema zadanim postavkama, verzija Google pretraživanja uvijek je potpisana iz razloga privatnosti i sigurnosti. Iako to može rezultirati uvijek viđenjem upita za prijavu."
   },
-  "Disable Previews on this site": {
+  "Disable_Previews_on_this_site": {
     "message": "Onemogućite preglede na ovoj web stranici"
   },
-  "The detail information about the checkbox here.": {
+  "The_detail_information_about_the_checkbox_here_": {
     "message": "Informacije o detaljima o potvrdnom okviru ovdje."
   },
-  "Disabled on Websites": {
+  "Disabled_on_Websites": {
     "message": "Onemogućeno na web stranicama"
   },
-  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
     "message": "Proširenje se neće pokrenuti na ovim web lokacijama, možete onemogućiti web mjesto dodavanjem na ovaj popis."
   },
-  "Successfully updated settings": {
+  "Successfully_updated_settings": {
     "message": "Uspješno ažurirane postavke"
   }
 }

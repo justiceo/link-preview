@@ -14,100 +14,100 @@
   "@testMarkup": {
     "message": "<div> <p> Hello World </p> นี่คือ <strong> ภาษา </strong> ของเว็บ </div>"
   },
-  "Search engine": {
+  "Search_engine": {
     "message": "เครื่องมือค้นหา"
   },
-  "The search engine that would be used for inline search previews.": {
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
     "message": "เครื่องมือค้นหาที่จะใช้สำหรับตัวอย่างการค้นหาแบบอินไลน์"
   },
-  "Google Search": {
+  "Google_Search": {
     "message": "ค้นหา Google"
   },
-  "Bing Search": {
+  "Bing_Search": {
     "message": "การค้นหา Bing"
   },
-  "Yahoo Search": {
+  "Yahoo_Search": {
     "message": "Yahoo Search"
   },
-  "Baidu Search": {
+  "Baidu_Search": {
     "message": "Baidu Search"
   },
-  "Yandex Search": {
+  "Yandex_Search": {
     "message": "Yandex Search"
   },
-  "Preview Width (%)": {
+  "Preview_Width____": {
     "message": "ความกว้างตัวอย่าง (%)"
   },
-  "The width of the preview panel relative to the page.": {
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
     "message": "ความกว้างของแผงตัวอย่างที่สัมพันธ์กับหน้า"
   },
-  "Preview Height (%)": {
+  "Preview_Height____": {
     "message": "ตัวอย่างความสูง (%)"
   },
-  "The height of the preview panel relative to the page.": {
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
     "message": "ความสูงของแผงแสดงตัวอย่างสัมพันธ์กับหน้า"
   },
-  "Panel Position": {
+  "Panel_Position": {
     "message": "ตำแหน่งแผง"
   },
-  "The side of the page in which to display the preview.": {
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
     "message": "ด้านข้างของหน้าเว็บที่จะแสดงตัวอย่าง"
   },
-  "Right side": {
+  "Right_side": {
     "message": "ด้านขวา"
   },
-  "Left side": {
+  "Left_side": {
     "message": "ด้านซ้าย"
   },
-  "Close on Escape Key": {
+  "Close_on_Escape_Key": {
     "message": "ปิดคีย์หลบหนี"
   },
-  "Use the ESC (escape) key to close the preview panel.": {
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
     "message": "ใช้ปุ่ม ESC (Escape) เพื่อปิดแผงตัวอย่าง"
   },
-  "Automatically Hide Previews": {
+  "Automatically_Hide_Previews": {
     "message": "ซ่อนตัวอย่างโดยอัตโนมัติ"
   },
-  "Hides the preview panel when you scroll away or interact with the main page.": {
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
     "message": "ซ่อนแผงตัวอย่างเมื่อคุณเลื่อนออกไปหรือโต้ตอบกับหน้าหลัก"
   },
-  "Preview in Side Panel": {
+  "Preview_in_Side_Panel": {
     "message": "ดูตัวอย่างในแผงด้านข้าง"
   },
-  "Displays the view in Chrome Side Panel instead of a floating box.": {
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
     "message": "แสดงมุมมองในแผงด้านข้างโครเมี่ยมแทนกล่องลอย"
   },
-  "Preview-on-Hover Delay": {
+  "Preview_on_Hover_Delay": {
     "message": "ดูตัวอย่างล่าช้า"
   },
-  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
     "message": "เมื่อเปิดใช้งานตัวอย่างอัตโนมัติเกี่ยวกับ Hover นี่คือความล่าช้าก่อนที่จะแสดงตัวอย่าง"
   },
-  "[Advanced] Force Preview": {
+  "_Advanced__Force_Preview": {
     "message": "[ขั้นสูง] Preview Force"
   },
-  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
     "message": "สำหรับเว็บไซต์ที่ ** จริง ๆ ** ไม่ต้องการดูตัวอย่าง (เช่น stackoverflow.com) สิ่งนี้จะแสดงตัวอย่าง Nerd Alert: นี่คือบัสเตอร์ที่เต็มไปด้วยเฟรม"
   },
-  "[Advanced] Disable Incognito Google": {
+  "_Advanced__Disable_Incognito_Google": {
     "message": "[ขั้นสูง] ปิดการใช้งาน Google ไม่ระบุตัวตน"
   },
-  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
     "message": "โดยค่าเริ่มต้นเวอร์ชันของ Google Search ที่ใช้จะถูกลงทะเบียนเพื่อเหตุผลด้านความเป็นส่วนตัวและความปลอดภัยเสมอ แม้ว่าสิ่งนี้อาจส่งผลให้เห็นพรอมต์ลงชื่อเข้าใช้เสมอ"
   },
-  "Disable Previews on this site": {
+  "Disable_Previews_on_this_site": {
     "message": "ปิดการใช้งานตัวอย่างบนเว็บไซต์นี้"
   },
-  "The detail information about the checkbox here.": {
+  "The_detail_information_about_the_checkbox_here_": {
     "message": "ข้อมูลรายละเอียดเกี่ยวกับช่องทำเครื่องหมายที่นี่"
   },
-  "Disabled on Websites": {
+  "Disabled_on_Websites": {
     "message": "ปิดใช้งานบนเว็บไซต์"
   },
-  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
     "message": "ส่วนขยายจะไม่ทำงานบนเว็บไซต์เหล่านี้คุณสามารถปิดการใช้งานไซต์ได้โดยเพิ่มในรายการนี้"
   },
-  "Successfully updated settings": {
+  "Successfully_updated_settings": {
     "message": "อัปเดตการตั้งค่าสำเร็จ"
   }
 }

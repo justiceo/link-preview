@@ -14,100 +14,100 @@
   "@testMarkup": {
     "message": "<iv> <p> હેલો વર્લ્ડ </p> વેબની આ <strong> ભાષા </strong> છે </div>"
   },
-  "Search engine": {
+  "Search_engine": {
     "message": "શોધ એન્જિન"
   },
-  "The search engine that would be used for inline search previews.": {
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
     "message": "સર્ચ એન્જિન કે જેનો ઉપયોગ ઇનલાઇન શોધ પૂર્વાવલોકનો માટે કરવામાં આવશે."
   },
-  "Google Search": {
+  "Google_Search": {
     "message": "ગૂગલ સર્ચ"
   },
-  "Bing Search": {
+  "Bing_Search": {
     "message": "બિંગ શોધ"
   },
-  "Yahoo Search": {
+  "Yahoo_Search": {
     "message": "યાહુ શોધ"
   },
-  "Baidu Search": {
+  "Baidu_Search": {
     "message": "બયડુ શોધ"
   },
-  "Yandex Search": {
+  "Yandex_Search": {
     "message": "યાન્ડેક્સ શોધ"
   },
-  "Preview Width (%)": {
+  "Preview_Width____": {
     "message": "પૂર્વાવલોકન પહોળાઈ (%)"
   },
-  "The width of the preview panel relative to the page.": {
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
     "message": "પૃષ્ઠની તુલનામાં પૂર્વાવલોકન પેનલની પહોળાઈ."
   },
-  "Preview Height (%)": {
+  "Preview_Height____": {
     "message": "પૂર્વાવલોકન height ંચાઇ (%)"
   },
-  "The height of the preview panel relative to the page.": {
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
     "message": "પૃષ્ઠની તુલનામાં પૂર્વાવલોકન પેનલની height ંચાઇ."
   },
-  "Panel Position": {
+  "Panel_Position": {
     "message": "પેનલ સ્થિતિ"
   },
-  "The side of the page in which to display the preview.": {
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
     "message": "પૃષ્ઠની બાજુ જેમાં પૂર્વાવલોકન પ્રદર્શિત કરવું."
   },
-  "Right side": {
+  "Right_side": {
     "message": "જમણી બાજુ"
   },
-  "Left side": {
+  "Left_side": {
     "message": "ડાબી બાજુ"
   },
-  "Close on Escape Key": {
+  "Close_on_Escape_Key": {
     "message": "એસ્કેપ કી પર બંધ કરો"
   },
-  "Use the ESC (escape) key to close the preview panel.": {
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
     "message": "પૂર્વાવલોકન પેનલને બંધ કરવા માટે ESC (એસ્કેપ) કીનો ઉપયોગ કરો."
   },
-  "Automatically Hide Previews": {
+  "Automatically_Hide_Previews": {
     "message": "આપમેળે પૂર્વાવલોકનો છુપાવો"
   },
-  "Hides the preview panel when you scroll away or interact with the main page.": {
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
     "message": "જ્યારે તમે સ્ક્રોલ કરો છો અથવા મુખ્ય પૃષ્ઠ સાથે સંપર્ક કરો છો ત્યારે પૂર્વાવલોકન પેનલને છુપાવે છે."
   },
-  "Preview in Side Panel": {
+  "Preview_in_Side_Panel": {
     "message": "સાઇડ પેનલમાં પૂર્વાવલોકન"
   },
-  "Displays the view in Chrome Side Panel instead of a floating box.": {
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
     "message": "ફ્લોટિંગ બ box ક્સને બદલે ક્રોમ સાઇડ પેનલમાં દૃશ્ય પ્રદર્શિત કરે છે."
   },
-  "Preview-on-Hover Delay": {
+  "Preview_on_Hover_Delay": {
     "message": "પૂર્વાવલોકન વિલંબ"
   },
-  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
     "message": "જ્યારે હોવર પર સ્વચાલિત પૂર્વાવલોકન સક્ષમ થાય છે, ત્યારે પૂર્વાવલોકન બતાવવામાં આવે તે પહેલાં આ વિલંબ છે."
   },
-  "[Advanced] Force Preview": {
+  "_Advanced__Force_Preview": {
     "message": "[અદ્યતન] દબાણ પૂર્વાવલોકન"
   },
-  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
     "message": "વેબસાઇટ્સ માટે કે ** ખરેખર ** પૂર્વાવલોકન કરવા માંગતા નથી (દા.ત. સ્ટેકઓવરફ્લો.કોમ) આ પૂર્વાવલોકનને દબાણ કરે છે. નેર્ડ ચેતવણી: આ એક ફ્રેમ-બસ્ટિંગ બસ્ટર છે."
   },
-  "[Advanced] Disable Incognito Google": {
+  "_Advanced__Disable_Incognito_Google": {
     "message": "[અદ્યતન] છુપી ગૂગલને અક્ષમ કરો"
   },
-  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
     "message": "ડિફ default લ્ટ રૂપે, વપરાયેલ ગૂગલ શોધનું સંસ્કરણ હંમેશાં ગોપનીયતા અને સુરક્ષા કારણોસર સાઇન-આઉટ થાય છે. જોકે આ હંમેશાં સાઇન-ઇન પ્રોમ્પ્ટ્સ જોવામાં પરિણમી શકે છે."
   },
-  "Disable Previews on this site": {
+  "Disable_Previews_on_this_site": {
     "message": "આ સાઇટ પર પૂર્વાવલોકનોને અક્ષમ કરો"
   },
-  "The detail information about the checkbox here.": {
+  "The_detail_information_about_the_checkbox_here_": {
     "message": "અહીં ચેકબોક્સ વિશેની વિગતવાર માહિતી."
   },
-  "Disabled on Websites": {
+  "Disabled_on_Websites": {
     "message": "વેબસાઇટ્સ પર અક્ષમ"
   },
-  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
     "message": "એક્સ્ટેંશન આ સાઇટ્સ પર ચાલશે નહીં, તમે આ સૂચિમાં ઉમેરીને સાઇટને અક્ષમ કરી શકો છો."
   },
-  "Successfully updated settings": {
+  "Successfully_updated_settings": {
     "message": "સફળતાપૂર્વક અપડેટ સેટિંગ્સ"
   }
 }

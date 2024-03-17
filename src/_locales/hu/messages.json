@@ -14,100 +14,100 @@
   "@testMarkup": {
     "message": "<div> <p> Hello World </p> Ez a web </strong> nyelv </strong> nyelv </div>"
   },
-  "Search engine": {
+  "Search_engine": {
     "message": "Keresőmotor"
   },
-  "The search engine that would be used for inline search previews.": {
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
     "message": "A keresőmotor, amelyet az inline keresési előnézetekhez használnának."
   },
-  "Google Search": {
+  "Google_Search": {
     "message": "Google kereső"
   },
-  "Bing Search": {
+  "Bing_Search": {
     "message": "Bing -keresés"
   },
-  "Yahoo Search": {
+  "Yahoo_Search": {
     "message": "Yahoo keresés"
   },
-  "Baidu Search": {
+  "Baidu_Search": {
     "message": "Baidu keresés"
   },
-  "Yandex Search": {
+  "Yandex_Search": {
     "message": "Yandex keresés"
   },
-  "Preview Width (%)": {
+  "Preview_Width____": {
     "message": "Az előnézeti szélesség (%)"
   },
-  "The width of the preview panel relative to the page.": {
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
     "message": "Az előnézeti panel szélessége az oldalhoz viszonyítva."
   },
-  "Preview Height (%)": {
+  "Preview_Height____": {
     "message": "Előnézeti magasság (%)"
   },
-  "The height of the preview panel relative to the page.": {
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
     "message": "Az előnézeti panel magassága az oldalhoz viszonyítva."
   },
-  "Panel Position": {
+  "Panel_Position": {
     "message": "Panel helyzet"
   },
-  "The side of the page in which to display the preview.": {
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
     "message": "Az oldal oldala, amelyben megjelenítheti az előnézetet."
   },
-  "Right side": {
+  "Right_side": {
     "message": "Jobb oldal"
   },
-  "Left side": {
+  "Left_side": {
     "message": "Bal oldal"
   },
-  "Close on Escape Key": {
+  "Close_on_Escape_Key": {
     "message": "Bezárja a menekülési kulcsot"
   },
-  "Use the ESC (escape) key to close the preview panel.": {
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
     "message": "Használja az ESC (Escape) gombot az előnézeti panel bezárásához."
   },
-  "Automatically Hide Previews": {
+  "Automatically_Hide_Previews": {
     "message": "Az előnézetek automatikus elrejtése"
   },
-  "Hides the preview panel when you scroll away or interact with the main page.": {
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
     "message": "Elrejti az előnézeti panelt, amikor görget, vagy kölcsönhatásba lép a főoldalt."
   },
-  "Preview in Side Panel": {
+  "Preview_in_Side_Panel": {
     "message": "Előnézet az oldalsó panelen"
   },
-  "Displays the view in Chrome Side Panel instead of a floating box.": {
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
     "message": "A kilátást a Chrome oldalsó panelen jeleníti meg a lebegő doboz helyett."
   },
-  "Preview-on-Hover Delay": {
+  "Preview_on_Hover_Delay": {
     "message": "Az ELLOVER KÉRDÉSI KÉRDÉSE"
   },
-  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
     "message": "Ha az automatikus előnézet a lebegőben engedélyezve van, ez a késleltetés az előnézet megjelenése előtt."
   },
-  "[Advanced] Force Preview": {
+  "_Advanced__Force_Preview": {
     "message": "[Advanced] Force Preview"
   },
-  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
     "message": "Olyan webhelyeknél, amelyek ** valóban ** nem akarják megtekinteni (pl. Stackoverflow.com) ez egy előnézetet erőltet. Nerd figyelmeztetés: Ez egy vázlatos buster."
   },
-  "[Advanced] Disable Incognito Google": {
+  "_Advanced__Disable_Incognito_Google": {
     "message": "[Advanced] Az Incognito Google letiltása"
   },
-  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
     "message": "Alapértelmezés szerint a használt Google-keresés verzióját mindig feliratkozik magánélet és biztonsági okokból. Bár ez azt eredményezheti, hogy mindig látja a bejelentkezési utasításokat."
   },
-  "Disable Previews on this site": {
+  "Disable_Previews_on_this_site": {
     "message": "Tiltsa le az előnézeteket ezen a webhelyen"
   },
-  "The detail information about the checkbox here.": {
+  "The_detail_information_about_the_checkbox_here_": {
     "message": "Az itt található jelölőnégyzetről szóló részletek."
   },
-  "Disabled on Websites": {
+  "Disabled_on_Websites": {
     "message": "Letiltva a webhelyeken"
   },
-  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
     "message": "A kiterjesztés nem fog futni ezeken a webhelyeken, letilthatja a webhelyet, ha hozzáadja a listát."
   },
-  "Successfully updated settings": {
+  "Successfully_updated_settings": {
     "message": "Sikeresen frissített beállítások"
   }
 }

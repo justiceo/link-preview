@@ -14,100 +14,100 @@
   "@testMarkup": {
     "message": "<div> <p> Hei maailma </p> Tämä on Webin <strong> kieli </strong>"
   },
-  "Search engine": {
+  "Search_engine": {
     "message": "Hakukone"
   },
-  "The search engine that would be used for inline search previews.": {
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
     "message": "Hakukone, jota käytetään inline -haun esikatseluun."
   },
-  "Google Search": {
+  "Google_Search": {
     "message": "Google haku"
   },
-  "Bing Search": {
+  "Bing_Search": {
     "message": "Bing -haku"
   },
-  "Yahoo Search": {
+  "Yahoo_Search": {
     "message": "Yahoo -haku"
   },
-  "Baidu Search": {
+  "Baidu_Search": {
     "message": "Baidu -haku"
   },
-  "Yandex Search": {
+  "Yandex_Search": {
     "message": "Yandex -haku"
   },
-  "Preview Width (%)": {
+  "Preview_Width____": {
     "message": "Esikatselun leveys (%)"
   },
-  "The width of the preview panel relative to the page.": {
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
     "message": "Esikatselupaneelin leveys suhteessa sivulle."
   },
-  "Preview Height (%)": {
+  "Preview_Height____": {
     "message": "Esikatselukorkeus (%)"
   },
-  "The height of the preview panel relative to the page.": {
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
     "message": "Esikatselupaneelin korkeus suhteessa sivulle."
   },
-  "Panel Position": {
+  "Panel_Position": {
     "message": "Paneelin sijainti"
   },
-  "The side of the page in which to display the preview.": {
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
     "message": "Sivun sivu, jolla esikatselu voidaan näyttää."
   },
-  "Right side": {
+  "Right_side": {
     "message": "Oikea puoli"
   },
-  "Left side": {
+  "Left_side": {
     "message": "Vasen puoli"
   },
-  "Close on Escape Key": {
+  "Close_on_Escape_Key": {
     "message": "Sulje Escape -avain"
   },
-  "Use the ESC (escape) key to close the preview panel.": {
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
     "message": "Sulje esikatselupaneeli ESC (Escape) -näppäimellä."
   },
-  "Automatically Hide Previews": {
+  "Automatically_Hide_Previews": {
     "message": "Piilota esikatselut automaattisesti"
   },
-  "Hides the preview panel when you scroll away or interact with the main page.": {
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
     "message": "Piilotaan esikatselupaneelin, kun vierität pois tai olet vuorovaikutuksessa pääsivulla."
   },
-  "Preview in Side Panel": {
+  "Preview_in_Side_Panel": {
     "message": "Esikatselu sivupaneelissa"
   },
-  "Displays the view in Chrome Side Panel instead of a floating box.": {
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
     "message": "Näyttää näkymän Chrome -sivupaneelissa kelluvan laatikon sijasta."
   },
-  "Preview-on-Hover Delay": {
+  "Preview_on_Hover_Delay": {
     "message": "Esikatselu"
   },
-  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
     "message": "Kun automaattinen esikatselu Hoverissa on käytössä, tämä on viive ennen esikatselun näyttämistä."
   },
-  "[Advanced] Force Preview": {
+  "_Advanced__Force_Preview": {
     "message": "[Advanced] Force -esikatselu"
   },
-  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
     "message": "Sivustoille, jotka ** todella ** eivät halua esikatselua (esim. Stackoverflow.com), tämä pakottaa esikatselun. Nerd-hälytys: Tämä on kehyksen räjähdysmäinen buster."
   },
-  "[Advanced] Disable Incognito Google": {
+  "_Advanced__Disable_Incognito_Google": {
     "message": "[Advanced] Poista incognito Google käytöstä"
   },
-  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
     "message": "Oletusarvoisesti käytetyn Google-haun versio on aina allekirjoitettu yksityisyyden ja tietoturvan syistä. Vaikka tämä voi johtaa aina kirjautumiskehotteiden näkemiseen."
   },
-  "Disable Previews on this site": {
+  "Disable_Previews_on_this_site": {
     "message": "Poista esikatselut käytöstä tällä sivustolla"
   },
-  "The detail information about the checkbox here.": {
+  "The_detail_information_about_the_checkbox_here_": {
     "message": "Yksityiskohtaiset tiedot valintaruudusta täältä."
   },
-  "Disabled on Websites": {
+  "Disabled_on_Websites": {
     "message": "Vammaiset verkkosivustoilla"
   },
-  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
     "message": "Laajennus ei toimi näillä sivustoilla, voit poistaa sivuston käytöstä lisäämällä tähän luetteloon."
   },
-  "Successfully updated settings": {
+  "Successfully_updated_settings": {
     "message": "Päivitetyt asetukset onnistuneesti"
   }
 }

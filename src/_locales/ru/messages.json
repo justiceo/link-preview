@@ -14,100 +14,100 @@
   "@testMarkup": {
     "message": "<div> <p> Привет, мир </p> Это язык <strong> </strong> Интернета </div>"
   },
-  "Search engine": {
+  "Search_engine": {
     "message": "Поисковый движок"
   },
-  "The search engine that would be used for inline search previews.": {
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
     "message": "Поисковая система, которая будет использоваться для просмотра встроенного поиска."
   },
-  "Google Search": {
+  "Google_Search": {
     "message": "Поиск Гугл"
   },
-  "Bing Search": {
+  "Bing_Search": {
     "message": "Bing Search"
   },
-  "Yahoo Search": {
+  "Yahoo_Search": {
     "message": "Yahoo Search"
   },
-  "Baidu Search": {
+  "Baidu_Search": {
     "message": "Baidu Search"
   },
-  "Yandex Search": {
+  "Yandex_Search": {
     "message": "Яндекс Поиск"
   },
-  "Preview Width (%)": {
+  "Preview_Width____": {
     "message": "Ширина предварительного просмотра (%)"
   },
-  "The width of the preview panel relative to the page.": {
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
     "message": "Ширина панели предварительного просмотра относительно страницы."
   },
-  "Preview Height (%)": {
+  "Preview_Height____": {
     "message": "Высота предварительного просмотра (%)"
   },
-  "The height of the preview panel relative to the page.": {
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
     "message": "Высота панели предварительного просмотра относительно страницы."
   },
-  "Panel Position": {
+  "Panel_Position": {
     "message": "Положение панели"
   },
-  "The side of the page in which to display the preview.": {
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
     "message": "Сторона страницы, на которой можно отобразить предварительный просмотр."
   },
-  "Right side": {
+  "Right_side": {
     "message": "Правая сторона"
   },
-  "Left side": {
+  "Left_side": {
     "message": "Левая сторона"
   },
-  "Close on Escape Key": {
+  "Close_on_Escape_Key": {
     "message": "Закрыть ключ побега"
   },
-  "Use the ESC (escape) key to close the preview panel.": {
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
     "message": "Используйте ключ ESC (Escape), чтобы закрыть панель предварительного просмотра."
   },
-  "Automatically Hide Previews": {
+  "Automatically_Hide_Previews": {
     "message": "Автоматически скрыть предварительные просмотра"
   },
-  "Hides the preview panel when you scroll away or interact with the main page.": {
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
     "message": "Укрывает панель предварительного просмотра, когда вы прокручиваете или взаимодействуете с главной страницей."
   },
-  "Preview in Side Panel": {
+  "Preview_in_Side_Panel": {
     "message": "Предварительный просмотр на боковой панели"
   },
-  "Displays the view in Chrome Side Panel instead of a floating box.": {
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
     "message": "Отображает вид на боковой панели Chrome вместо плавающей коробки."
   },
-  "Preview-on-Hover Delay": {
+  "Preview_on_Hover_Delay": {
     "message": "Предварительный просмотр задержки"
   },
-  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
     "message": "Когда автоматический предварительный просмотр на Hover включен, это задержка до того, как будет показан предварительный просмотр."
   },
-  "[Advanced] Force Preview": {
+  "_Advanced__Force_Preview": {
     "message": "[Advanced] Предварительный просмотр силы"
   },
-  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
     "message": "Для веб -сайтов, которые ** действительно ** не хотят быть предварительно просмотрены (например, Stackoverflow.com) Это заставляет предварительный просмотр. NERD ALERT: это бастер-бюст."
   },
-  "[Advanced] Disable Incognito Google": {
+  "_Advanced__Disable_Incognito_Google": {
     "message": "[Advanced] Отключить инкогнито Google"
   },
-  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
     "message": "По умолчанию используемая версия поиска Google всегда выходит из строя по соображениям конфиденциальности и безопасности. Хотя это может привести к тому, что всегда будет увидеть подсказки входа."
   },
-  "Disable Previews on this site": {
+  "Disable_Previews_on_this_site": {
     "message": "Отключить превью на этом сайте"
   },
-  "The detail information about the checkbox here.": {
+  "The_detail_information_about_the_checkbox_here_": {
     "message": "Подробная информация о флажке здесь."
   },
-  "Disabled on Websites": {
+  "Disabled_on_Websites": {
     "message": "Отключено на веб -сайтах"
   },
-  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
     "message": "Расширение не будет работать на этих сайтах, вы можете отключить сайт, добавив в этот список."
   },
-  "Successfully updated settings": {
+  "Successfully_updated_settings": {
     "message": "Успешно обновленные настройки"
   }
 }

@@ -14,100 +14,100 @@
   "@testMarkup": {
     "message": "<div> <p> Hello World </p> Dette er <strong> språket </strong> på nettet </div>"
   },
-  "Search engine": {
+  "Search_engine": {
     "message": "Søkemotor"
   },
-  "The search engine that would be used for inline search previews.": {
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
     "message": "Søkemotoren som vil bli brukt til forhåndsvisning av inline søk."
   },
-  "Google Search": {
+  "Google_Search": {
     "message": "Google søk"
   },
-  "Bing Search": {
+  "Bing_Search": {
     "message": "Bing -søk"
   },
-  "Yahoo Search": {
+  "Yahoo_Search": {
     "message": "Yahoo -søk"
   },
-  "Baidu Search": {
+  "Baidu_Search": {
     "message": "Baidu -søk"
   },
-  "Yandex Search": {
+  "Yandex_Search": {
     "message": "Yandex -søk"
   },
-  "Preview Width (%)": {
+  "Preview_Width____": {
     "message": "Forhåndsvisningsbredde (%)"
   },
-  "The width of the preview panel relative to the page.": {
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
     "message": "Bredden på forhåndsvisningspanelet i forhold til siden."
   },
-  "Preview Height (%)": {
+  "Preview_Height____": {
     "message": "Forhåndsvisningshøyde (%)"
   },
-  "The height of the preview panel relative to the page.": {
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
     "message": "Høyden på forhåndsvisningspanelet i forhold til siden."
   },
-  "Panel Position": {
+  "Panel_Position": {
     "message": "Panelposisjon"
   },
-  "The side of the page in which to display the preview.": {
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
     "message": "Siden av siden du skal vise forhåndsvisningen."
   },
-  "Right side": {
+  "Right_side": {
     "message": "Høyre side"
   },
-  "Left side": {
+  "Left_side": {
     "message": "Venstre side"
   },
-  "Close on Escape Key": {
+  "Close_on_Escape_Key": {
     "message": "Lukk på Escape -tasten"
   },
-  "Use the ESC (escape) key to close the preview panel.": {
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
     "message": "Bruk ESC (Escape) -tasten for å lukke forhåndsvisningspanelet."
   },
-  "Automatically Hide Previews": {
+  "Automatically_Hide_Previews": {
     "message": "Skjul forhåndsvisninger automatisk"
   },
-  "Hides the preview panel when you scroll away or interact with the main page.": {
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
     "message": "Skjul forhåndsvisningspanelet når du blar bort eller samhandler med hovedsiden."
   },
-  "Preview in Side Panel": {
+  "Preview_in_Side_Panel": {
     "message": "Forhåndsvisning i sidepanel"
   },
-  "Displays the view in Chrome Side Panel instead of a floating box.": {
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
     "message": "Viser utsikten i Chrome -sidepanel i stedet for en flytende boks."
   },
-  "Preview-on-Hover Delay": {
+  "Preview_on_Hover_Delay": {
     "message": "Forhåndsvisning-på-hover-forsinkelse"
   },
-  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
     "message": "Når automatisk forhåndsvisning av Hover er aktivert, er dette forsinkelsen før forhåndsvisningen vises."
   },
-  "[Advanced] Force Preview": {
+  "_Advanced__Force_Preview": {
     "message": "[Avansert] Forhåndsvisning av kraft"
   },
-  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
     "message": "For nettsteder som ** virkelig ** ikke ønsker å bli forhåndsvisning (f.eks. StackOverflow.com) dette tvinger en forhåndsvisning. Nerd Alert: Dette er en ramme-busting buster."
   },
-  "[Advanced] Disable Incognito Google": {
+  "_Advanced__Disable_Incognito_Google": {
     "message": "[Avansert] Deaktiver incognito google"
   },
-  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
     "message": "Som standard er versjonen av Google-søket alltid signert av personvern og sikkerhetsmessige årsaker. Selv om dette kan føre til at du alltid ser påloggingshjul."
   },
-  "Disable Previews on this site": {
+  "Disable_Previews_on_this_site": {
     "message": "Deaktiver forhåndsvisninger på dette nettstedet"
   },
-  "The detail information about the checkbox here.": {
+  "The_detail_information_about_the_checkbox_here_": {
     "message": "Detaljinformasjonen om avkrysningsruten her."
   },
-  "Disabled on Websites": {
+  "Disabled_on_Websites": {
     "message": "Deaktivert på nettsteder"
   },
-  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
     "message": "Utvidelse kjøres ikke på disse nettstedene, du kan deaktivere et nettsted ved å legge til denne listen."
   },
-  "Successfully updated settings": {
+  "Successfully_updated_settings": {
     "message": "Vellykket oppdaterte innstillinger"
   }
 }

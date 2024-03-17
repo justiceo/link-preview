@@ -14,100 +14,100 @@
   "@testMarkup": {
     "message": "<div> <p> Hola món </p> Aquest és el <strong> llenguatge </strong> del web </div>"
   },
-  "Search engine": {
+  "Search_engine": {
     "message": "Motor de cerca"
   },
-  "The search engine that would be used for inline search previews.": {
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
     "message": "El motor de cerca que s’utilitzaria per a les previsualitzacions de cerca en línia."
   },
-  "Google Search": {
+  "Google_Search": {
     "message": "Google recerca"
   },
-  "Bing Search": {
+  "Bing_Search": {
     "message": "Cerca Bing"
   },
-  "Yahoo Search": {
+  "Yahoo_Search": {
     "message": "Cerca de Yahoo"
   },
-  "Baidu Search": {
+  "Baidu_Search": {
     "message": "Cerca de Baidu"
   },
-  "Yandex Search": {
+  "Yandex_Search": {
     "message": "Cerca Yandex"
   },
-  "Preview Width (%)": {
+  "Preview_Width____": {
     "message": "Amplada de previsualització (%)"
   },
-  "The width of the preview panel relative to the page.": {
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
     "message": "L'amplada del tauler de vista prèvia respecte a la pàgina."
   },
-  "Preview Height (%)": {
+  "Preview_Height____": {
     "message": "Vista prèvia alçada (%)"
   },
-  "The height of the preview panel relative to the page.": {
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
     "message": "L'alçada del tauler de vista prèvia respecte a la pàgina."
   },
-  "Panel Position": {
+  "Panel_Position": {
     "message": "Posició del panell"
   },
-  "The side of the page in which to display the preview.": {
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
     "message": "El costat de la pàgina on es mostra la vista prèvia."
   },
-  "Right side": {
+  "Right_side": {
     "message": "Costat dret"
   },
-  "Left side": {
+  "Left_side": {
     "message": "Costat esquerre"
   },
-  "Close on Escape Key": {
+  "Close_on_Escape_Key": {
     "message": "Tanca la clau d’escapament"
   },
-  "Use the ESC (escape) key to close the preview panel.": {
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
     "message": "Utilitzeu la tecla ESC (Escape) per tancar el tauler de vista prèvia."
   },
-  "Automatically Hide Previews": {
+  "Automatically_Hide_Previews": {
     "message": "Amagueu automàticament les previsualitzacions"
   },
-  "Hides the preview panel when you scroll away or interact with the main page.": {
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
     "message": "Amaga el tauler de previsualització quan es desplaça o interactua amb la pàgina principal."
   },
-  "Preview in Side Panel": {
+  "Preview_in_Side_Panel": {
     "message": "Vista prèvia al tauler lateral"
   },
-  "Displays the view in Chrome Side Panel instead of a floating box.": {
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
     "message": "Mostra la vista al panell lateral cromat en lloc d'una caixa flotant."
   },
-  "Preview-on-Hover Delay": {
+  "Preview_on_Hover_Delay": {
     "message": "Retard de previsualització sobre-recurs"
   },
-  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
     "message": "Quan la previsualització automàtica sobre el HOver està habilitada, aquest és el retard abans que es mostri la vista prèvia."
   },
-  "[Advanced] Force Preview": {
+  "_Advanced__Force_Preview": {
     "message": "[Avançat] Vista prèvia de la força"
   },
-  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
     "message": "Per als llocs web que ** realment ** no volen ser previsualitzats (per exemple, stackoverflow.com), això obliga una vista prèvia. Alerta de Nerd: es tracta d’un Buster que s’aconsegueix amb un marc."
   },
-  "[Advanced] Disable Incognito Google": {
+  "_Advanced__Disable_Incognito_Google": {
     "message": "[Avançat] Desactivar Incognito Google"
   },
-  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
     "message": "De manera predeterminada, la versió de Google Search usada sempre està signada per motius de privadesa i seguretat. Tot i que això pot donar lloc a les indicacions de sessió sempre."
   },
-  "Disable Previews on this site": {
+  "Disable_Previews_on_this_site": {
     "message": "Desactiveu les previsualitzacions en aquest lloc"
   },
-  "The detail information about the checkbox here.": {
+  "The_detail_information_about_the_checkbox_here_": {
     "message": "La informació detallada sobre la casella de selecció aquí."
   },
-  "Disabled on Websites": {
+  "Disabled_on_Websites": {
     "message": "Desactivat en llocs web"
   },
-  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
     "message": "L’extensió no s’executarà en aquests llocs, podeu desactivar un lloc afegint a aquesta llista."
   },
-  "Successfully updated settings": {
+  "Successfully_updated_settings": {
     "message": "Configuració actualitzada amb èxit"
   }
 }

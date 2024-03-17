@@ -14,100 +14,100 @@
   "@testMarkup": {
     "message": "<див> <п> Поздрав свијет </ п> Ово је <стронг> језик </ стронг> на веб </ див>"
   },
-  "Search engine": {
+  "Search_engine": {
     "message": "Претраживач"
   },
-  "The search engine that would be used for inline search previews.": {
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
     "message": "Претрага која би се користила за преглед прегледа претраживања."
   },
-  "Google Search": {
+  "Google_Search": {
     "message": "Гоогле Сеарцх"
   },
-  "Bing Search": {
+  "Bing_Search": {
     "message": "БИНГ ПРЕТРАЖИ"
   },
-  "Yahoo Search": {
+  "Yahoo_Search": {
     "message": "Иахоо Сеарцх"
   },
-  "Baidu Search": {
+  "Baidu_Search": {
     "message": "Баиду Сеарцх"
   },
-  "Yandex Search": {
+  "Yandex_Search": {
     "message": "Иандек Сеарцх"
   },
-  "Preview Width (%)": {
+  "Preview_Width____": {
     "message": "Ширина прегледа (%)"
   },
-  "The width of the preview panel relative to the page.": {
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
     "message": "Ширина плоче за преглед у односу на страницу."
   },
-  "Preview Height (%)": {
+  "Preview_Height____": {
     "message": "Висина прегледа (%)"
   },
-  "The height of the preview panel relative to the page.": {
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
     "message": "Висина плоче за преглед у односу на страницу."
   },
-  "Panel Position": {
+  "Panel_Position": {
     "message": "Панел позиција"
   },
-  "The side of the page in which to display the preview.": {
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
     "message": "Страна странице у којој ће приказати преглед."
   },
-  "Right side": {
+  "Right_side": {
     "message": "Десна страна"
   },
-  "Left side": {
+  "Left_side": {
     "message": "Лева страна"
   },
-  "Close on Escape Key": {
+  "Close_on_Escape_Key": {
     "message": "Затвори на кључу за бијег"
   },
-  "Use the ESC (escape) key to close the preview panel.": {
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
     "message": "Користите тастер ЕСЦ (ЕСЦАПЕ) да бисте затворили плочу за преглед."
   },
-  "Automatically Hide Previews": {
+  "Automatically_Hide_Previews": {
     "message": "Аутоматски сакријте прегледе"
   },
-  "Hides the preview panel when you scroll away or interact with the main page.": {
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
     "message": "Сакрива плочу за преглед када се крећете или комуницирате са главном страном."
   },
-  "Preview in Side Panel": {
+  "Preview_in_Side_Panel": {
     "message": "Преглед на бочној плочи"
   },
-  "Displays the view in Chrome Side Panel instead of a floating box.": {
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
     "message": "Приказује приказ на хромирању бочне плоче уместо плутајуће кутије."
   },
-  "Preview-on-Hover Delay": {
+  "Preview_on_Hover_Delay": {
     "message": "Преглед-налепљено кашњење"
   },
-  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
     "message": "Када је омогућен аутоматски преглед на летењу, то је кашњење пре приказа прегледа."
   },
-  "[Advanced] Force Preview": {
+  "_Advanced__Force_Preview": {
     "message": "[Адванцед] Преглед снага"
   },
-  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
     "message": "За веб странице које ** заиста ** не желе да се прегледају (нпр. Стацковерфлов.цом) ове снаге прегледа. Нерд Алерт: Ово је Бустер који гуше оквир."
   },
-  "[Advanced] Disable Incognito Google": {
+  "_Advanced__Disable_Incognito_Google": {
     "message": "[Напредно] Онемогући инкогнито Гоогле"
   },
-  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
     "message": "Подразумевано је верзија Гоогле претраживања увек испуњена за приватност и безбедносне разлоге. Иако то може резултирати увијек увијек да се пријавите пријава."
   },
-  "Disable Previews on this site": {
+  "Disable_Previews_on_this_site": {
     "message": "Онемогућите прегледе на овој страници"
   },
-  "The detail information about the checkbox here.": {
+  "The_detail_information_about_the_checkbox_here_": {
     "message": "Овде су детаљне информације о потврдној кутији овде."
   },
-  "Disabled on Websites": {
+  "Disabled_on_Websites": {
     "message": "Онемогућено на веб локацијама"
   },
-  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
     "message": "Проширење неће покренути на овим веб локацијама, можете онемогућити веб локацију додавањем на ову листу."
   },
-  "Successfully updated settings": {
+  "Successfully_updated_settings": {
     "message": "Успешно ажурирана подешавања"
   }
 }

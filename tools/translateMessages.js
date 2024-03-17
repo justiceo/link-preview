@@ -162,10 +162,28 @@ function searchForI18nStrings(srcDirectory) {
   });
 }
 
+// Map the literals to a valid manifest key.
+// If this function is modified, also update it in src/utils/i18n.ts
+function encodeString(input) {
+  // Define the allowed characters: a-z, A-Z, 0-9, and _
+  const allowedCharacters = /^[a-zA-Z0-9_]+$/;
+
+  // Split the input into an array of characters, transform each character,
+  // and then join the array back into a string
+  return input
+    .split("")
+    .map((char) => {
+      // If the character matches the allowed characters, return it as is;
+      // otherwise, return '_'
+      return allowedCharacters.test(char) ? char : "_";
+    })
+    .join("");
+}
+
 // Maps the literals to an object, where the key is an encoded version of the literal and the value is the literal itself.
 function mapLiteralsToEncodedObject(literals) {
   return literals.reduce((acc, literal) => {
-    acc[literal] = { message: literal };
+    acc[encodeString(literal)] = { message: literal };
     return acc;
   }, {});
 }

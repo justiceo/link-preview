@@ -14,100 +14,100 @@
   "@testMarkup": {
     "message": "<div> <p> سلام جهان </p> این زبان <strong> </strong> وب است </div>"
   },
-  "Search engine": {
+  "Search_engine": {
     "message": "موتور جستجو"
   },
-  "The search engine that would be used for inline search previews.": {
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
     "message": "موتور جستجو که برای پیش نمایش های جستجوی درون خطی استفاده می شود."
   },
-  "Google Search": {
+  "Google_Search": {
     "message": "جستجوی گوگل"
   },
-  "Bing Search": {
+  "Bing_Search": {
     "message": "جستجوی بینگ"
   },
-  "Yahoo Search": {
+  "Yahoo_Search": {
     "message": "جستجوی یاهو"
   },
-  "Baidu Search": {
+  "Baidu_Search": {
     "message": "جستجو بایدو"
   },
-  "Yandex Search": {
+  "Yandex_Search": {
     "message": "جستجوی Yandex"
   },
-  "Preview Width (%)": {
+  "Preview_Width____": {
     "message": "عرض پیش نمایش (٪)"
   },
-  "The width of the preview panel relative to the page.": {
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
     "message": "عرض پانل پیش نمایش نسبت به صفحه."
   },
-  "Preview Height (%)": {
+  "Preview_Height____": {
     "message": "ارتفاع پیش نمایش (٪)"
   },
-  "The height of the preview panel relative to the page.": {
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
     "message": "ارتفاع پانل پیش نمایش نسبت به صفحه."
   },
-  "Panel Position": {
+  "Panel_Position": {
     "message": "موقعیت تابلو"
   },
-  "The side of the page in which to display the preview.": {
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
     "message": "سمت صفحه ای که در آن می توانید پیش نمایش را نمایش دهید."
   },
-  "Right side": {
+  "Right_side": {
     "message": "سمت راست"
   },
-  "Left side": {
+  "Left_side": {
     "message": "سمت چپ"
   },
-  "Close on Escape Key": {
+  "Close_on_Escape_Key": {
     "message": "بستن روی کلید فرار"
   },
-  "Use the ESC (escape) key to close the preview panel.": {
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
     "message": "برای بستن پانل پیش نمایش از کلید ESC (فرار) استفاده کنید."
   },
-  "Automatically Hide Previews": {
+  "Automatically_Hide_Previews": {
     "message": "به طور خودکار پیش نمایش ها را مخفی کنید"
   },
-  "Hides the preview panel when you scroll away or interact with the main page.": {
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
     "message": "پنل پیش نمایش را هنگام پیمایش یا تعامل با صفحه اصلی پنهان می کند."
   },
-  "Preview in Side Panel": {
+  "Preview_in_Side_Panel": {
     "message": "پیش نمایش در پنل جانبی"
   },
-  "Displays the view in Chrome Side Panel instead of a floating box.": {
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
     "message": "به جای یک جعبه شناور ، نمای را در پانل جانبی کروم نمایش می دهد."
   },
-  "Preview-on-Hover Delay": {
+  "Preview_on_Hover_Delay": {
     "message": "تأخیر پیش نمایش-"
   },
-  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
     "message": "هنگامی که پیش نمایش خودکار در Hover فعال می شود ، این تأخیر قبل از نشان دادن پیش نمایش است."
   },
-  "[Advanced] Force Preview": {
+  "_Advanced__Force_Preview": {
     "message": "[پیشرفته] پیش نمایش نیرو"
   },
-  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
     "message": "برای وب سایتهایی که ** واقعاً ** نمی خواهند پیش نمایش شوند (به عنوان مثال stackoverflow.com) این پیش نمایش را مجبور می کند. Nerd Alert: این یک بوستر قاب است."
   },
-  "[Advanced] Disable Incognito Google": {
+  "_Advanced__Disable_Incognito_Google": {
     "message": "[پیشرفته] ناشناس گوگل را غیرفعال کنید"
   },
-  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
     "message": "به طور پیش فرض ، نسخه جستجوی Google مورد استفاده همیشه به دلایل حفظ حریم خصوصی و امنیتی امضا می شود. اگرچه این ممکن است منجر به دیدن همیشه ورود به سیستم شود."
   },
-  "Disable Previews on this site": {
+  "Disable_Previews_on_this_site": {
     "message": "پیش نمایش ها را در این سایت غیرفعال کنید"
   },
-  "The detail information about the checkbox here.": {
+  "The_detail_information_about_the_checkbox_here_": {
     "message": "اطلاعات جزئیات در مورد کادر انتخاب در اینجا."
   },
-  "Disabled on Websites": {
+  "Disabled_on_Websites": {
     "message": "غیرفعال در وب سایت ها"
   },
-  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
     "message": "پسوند در این سایت ها اجرا نمی شود ، می توانید با اضافه کردن به این لیست ، یک سایت را غیرفعال کنید."
   },
-  "Successfully updated settings": {
+  "Successfully_updated_settings": {
     "message": "تنظیمات با موفقیت به روز شده"
   }
 }

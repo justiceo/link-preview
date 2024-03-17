@@ -14,100 +14,100 @@
   "@testMarkup": {
     "message": "<div> <p> Hello World </p> 이것은 웹의 <strong> 언어 </strong>입니다 </div>"
   },
-  "Search engine": {
+  "Search_engine": {
     "message": "검색 엔진"
   },
-  "The search engine that would be used for inline search previews.": {
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
     "message": "인라인 검색 미리보기에 사용되는 검색 엔진."
   },
-  "Google Search": {
+  "Google_Search": {
     "message": "구글 검색"
   },
-  "Bing Search": {
+  "Bing_Search": {
     "message": "빙 검색"
   },
-  "Yahoo Search": {
+  "Yahoo_Search": {
     "message": "야후 검색"
   },
-  "Baidu Search": {
+  "Baidu_Search": {
     "message": "바이두 검색"
   },
-  "Yandex Search": {
+  "Yandex_Search": {
     "message": "Yandex 검색"
   },
-  "Preview Width (%)": {
+  "Preview_Width____": {
     "message": "미리보기 너비 (%)"
   },
-  "The width of the preview panel relative to the page.": {
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
     "message": "페이지에 대한 미리보기 패널의 너비."
   },
-  "Preview Height (%)": {
+  "Preview_Height____": {
     "message": "미리보기 높이 (%)"
   },
-  "The height of the preview panel relative to the page.": {
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
     "message": "페이지에 대한 미리보기 패널의 높이."
   },
-  "Panel Position": {
+  "Panel_Position": {
     "message": "패널 위치"
   },
-  "The side of the page in which to display the preview.": {
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
     "message": "미리보기를 표시 할 페이지 측면."
   },
-  "Right side": {
+  "Right_side": {
     "message": "오른쪽"
   },
-  "Left side": {
+  "Left_side": {
     "message": "왼쪽"
   },
-  "Close on Escape Key": {
+  "Close_on_Escape_Key": {
     "message": "탈출 키에 닫으십시오"
   },
-  "Use the ESC (escape) key to close the preview panel.": {
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
     "message": "ESC (Escape) 키를 사용하여 미리보기 패널을 닫습니다."
   },
-  "Automatically Hide Previews": {
+  "Automatically_Hide_Previews": {
     "message": "미리보기를 자동으로 숨 깁니다"
   },
-  "Hides the preview panel when you scroll away or interact with the main page.": {
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
     "message": "스크롤하거나 메인 페이지와 상호 작용할 때 미리보기 패널을 숨 깁니다."
   },
-  "Preview in Side Panel": {
+  "Preview_in_Side_Panel": {
     "message": "측면 패널에서 미리보기"
   },
-  "Displays the view in Chrome Side Panel instead of a floating box.": {
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
     "message": "떠 다니는 상자 대신 Chrome Side 패널에보기를 표시합니다."
   },
-  "Preview-on-Hover Delay": {
+  "Preview_on_Hover_Delay": {
     "message": "미리보기 지연"
   },
-  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
     "message": "호버의 자동 미리보기가 활성화되면 미리보기가 표시되기 전 지연입니다."
   },
-  "[Advanced] Force Preview": {
+  "_Advanced__Force_Preview": {
     "message": "[고급] 힘 미리보기"
   },
-  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
     "message": "** 실제로 ** 미리보기를 원하지 않는 웹 사이트의 경우 (예 : StackoverFlow.com) 미리보기가 강력합니다. 괴상한 경고 : 이것은 프레임 버스트 버스터입니다."
   },
-  "[Advanced] Disable Incognito Google": {
+  "_Advanced__Disable_Incognito_Google": {
     "message": "[Advanced] Incognito Google을 비활성화합니다"
   },
-  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
     "message": "기본적으로 사용 된 Google 검색 버전은 항상 개인 정보 및 보안상의 이유로 가입됩니다. 이것은 항상 로그인 프롬프트를 볼 수 있습니다."
   },
-  "Disable Previews on this site": {
+  "Disable_Previews_on_this_site": {
     "message": "이 사이트에서 미리보기를 비활성화하십시오"
   },
-  "The detail information about the checkbox here.": {
+  "The_detail_information_about_the_checkbox_here_": {
     "message": "확인란에 대한 세부 정보는 여기를 참조하십시오."
   },
-  "Disabled on Websites": {
+  "Disabled_on_Websites": {
     "message": "웹 사이트에서 비활성화"
   },
-  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
     "message": "이 사이트에서 확장이 실행되지 않으므로이 목록에 추가하여 사이트를 비활성화 할 수 있습니다."
   },
-  "Successfully updated settings": {
+  "Successfully_updated_settings": {
     "message": "설정을 성공적으로 업데이트했습니다"
   }
 }

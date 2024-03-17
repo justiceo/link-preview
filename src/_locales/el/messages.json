@@ -14,100 +14,100 @@
   "@testMarkup": {
     "message": "<div> <p> hello world </p> Αυτή είναι η <strong> γλώσσα </strong> του ιστού </div>"
   },
-  "Search engine": {
+  "Search_engine": {
     "message": "Μηχανή αναζήτησης"
   },
-  "The search engine that would be used for inline search previews.": {
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
     "message": "Η μηχανή αναζήτησης που θα χρησιμοποιηθεί για προεπισκοπήσεις αναζήτησης inline."
   },
-  "Google Search": {
+  "Google_Search": {
     "message": "Αναζήτηση Google"
   },
-  "Bing Search": {
+  "Bing_Search": {
     "message": "Αναζήτηση Bing"
   },
-  "Yahoo Search": {
+  "Yahoo_Search": {
     "message": "Αναζήτηση Yahoo"
   },
-  "Baidu Search": {
+  "Baidu_Search": {
     "message": "Αναζήτηση Baidu"
   },
-  "Yandex Search": {
+  "Yandex_Search": {
     "message": "Αναζήτηση Yandex"
   },
-  "Preview Width (%)": {
+  "Preview_Width____": {
     "message": "Πλάτος προεπισκόπησης (%)"
   },
-  "The width of the preview panel relative to the page.": {
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
     "message": "Το πλάτος του πίνακα προεπισκόπησης σε σχέση με τη σελίδα."
   },
-  "Preview Height (%)": {
+  "Preview_Height____": {
     "message": "Ύψος προεπισκόπησης (%)"
   },
-  "The height of the preview panel relative to the page.": {
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
     "message": "Το ύψος του πίνακα προεπισκόπησης σε σχέση με τη σελίδα."
   },
-  "Panel Position": {
+  "Panel_Position": {
     "message": "Θέση πάνελ"
   },
-  "The side of the page in which to display the preview.": {
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
     "message": "Την πλευρά της σελίδας στην οποία θα εμφανιστεί η προεπισκόπηση."
   },
-  "Right side": {
+  "Right_side": {
     "message": "Σωστη πλευρα"
   },
-  "Left side": {
+  "Left_side": {
     "message": "Αριστερή πλευρά"
   },
-  "Close on Escape Key": {
+  "Close_on_Escape_Key": {
     "message": "Κλείστε το κλειδί διαφυγής"
   },
-  "Use the ESC (escape) key to close the preview panel.": {
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
     "message": "Χρησιμοποιήστε το κλειδί ESC (ESCAPE) για να κλείσετε τον πίνακα προεπισκόπησης."
   },
-  "Automatically Hide Previews": {
+  "Automatically_Hide_Previews": {
     "message": "Απόκρυψη αυτομάτων προεπισκόπησης"
   },
-  "Hides the preview panel when you scroll away or interact with the main page.": {
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
     "message": "Κρύβει τον πίνακα προεπισκόπησης όταν μετακινηθείτε ή αλληλεπιδράτε με την κύρια σελίδα."
   },
-  "Preview in Side Panel": {
+  "Preview_in_Side_Panel": {
     "message": "Προεπισκόπηση στο πλαϊνό πίνακα"
   },
-  "Displays the view in Chrome Side Panel instead of a floating box.": {
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
     "message": "Εμφανίζει την προβολή στο πλαϊνό πλαίσιο του Chrome αντί για ένα πλωτό κουτί."
   },
-  "Preview-on-Hover Delay": {
+  "Preview_on_Hover_Delay": {
     "message": "Καθυστέρηση προεπισκόπησης-on-hover"
   },
-  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
     "message": "Όταν είναι ενεργοποιημένη η αυτόματη προεπισκόπηση του Hover, αυτή είναι η καθυστέρηση πριν εμφανιστεί η προεπισκόπηση."
   },
-  "[Advanced] Force Preview": {
+  "_Advanced__Force_Preview": {
     "message": "[Advanced] Preview Force"
   },
-  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
     "message": "Για ιστοσελίδες που ** πραγματικά ** δεν θέλουν να προεπισκόπηση (π.χ. stackoverflow.com) αυτό αναγκάζει μια προεπισκόπηση. NERD ALERT: Πρόκειται για ένα buster busting πλαισίου."
   },
-  "[Advanced] Disable Incognito Google": {
+  "_Advanced__Disable_Incognito_Google": {
     "message": "[Advanced] Απενεργοποιήστε το Incognito Google"
   },
-  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
     "message": "Από προεπιλογή, η έκδοση της αναζήτησης Google που χρησιμοποιείται είναι πάντα υπογεγραμμένη για λόγους απορρήτου και ασφάλειας. Αν και αυτό μπορεί να έχει ως αποτέλεσμα να βλέπουμε πάντα τις υποδείξεις σύνδεσης."
   },
-  "Disable Previews on this site": {
+  "Disable_Previews_on_this_site": {
     "message": "Απενεργοποιήστε τις προεπισκοπήσεις σε αυτόν τον ιστότοπο"
   },
-  "The detail information about the checkbox here.": {
+  "The_detail_information_about_the_checkbox_here_": {
     "message": "Οι λεπτομέρειες πληροφορίες σχετικά με το πλαίσιο ελέγχου εδώ."
   },
-  "Disabled on Websites": {
+  "Disabled_on_Websites": {
     "message": "Απενεργοποιημένη σε ιστότοπους"
   },
-  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
     "message": "Η επέκταση δεν θα εκτελεστεί σε αυτούς τους ιστότοπους, μπορείτε να απενεργοποιήσετε έναν ιστότοπο προσθέτοντας σε αυτόν τον κατάλογο."
   },
-  "Successfully updated settings": {
+  "Successfully_updated_settings": {
     "message": "Ενημερωμένες ρυθμίσεις με επιτυχία"
   }
 }

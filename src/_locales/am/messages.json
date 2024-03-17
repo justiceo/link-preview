@@ -14,100 +14,100 @@
   "@testMarkup": {
     "message": "<dip> <prame ዓለም </ p> ይህ <strong> ቋንቋ </ strong >> </ sub >>"
   },
-  "Search engine": {
+  "Search_engine": {
     "message": "የመፈለጊያ ማሸን"
   },
-  "The search engine that would be used for inline search previews.": {
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
     "message": "ለመንብስ ፍለጋ ቅድመ-እይታዎች የሚያገለግል የፍለጋ ሞተር."
   },
-  "Google Search": {
+  "Google_Search": {
     "message": "በጉግል መፈለጊያ"
   },
-  "Bing Search": {
+  "Bing_Search": {
     "message": "የ Bing ፍለጋ"
   },
-  "Yahoo Search": {
+  "Yahoo_Search": {
     "message": "Yahoo ፍለጋ"
   },
-  "Baidu Search": {
+  "Baidu_Search": {
     "message": "Baidu ፍለጋ"
   },
-  "Yandex Search": {
+  "Yandex_Search": {
     "message": "Yandex ፍለጋ"
   },
-  "Preview Width (%)": {
+  "Preview_Width____": {
     "message": "ቅድመ-እይታ ስፋት (%)"
   },
-  "The width of the preview panel relative to the page.": {
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
     "message": "የቅድመ እይታ ፓነል ወርድ ከገጹ አንፃራዊ."
   },
-  "Preview Height (%)": {
+  "Preview_Height____": {
     "message": "ቅድመ-እይታ ቁመት (%)"
   },
-  "The height of the preview panel relative to the page.": {
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
     "message": "የቅድመ እይታ ፓነል ቁመት ከገጹ አንፃር."
   },
-  "Panel Position": {
+  "Panel_Position": {
     "message": "ፓነል አቀማመጥ"
   },
-  "The side of the page in which to display the preview.": {
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
     "message": "ቅድመ-እይታን ለማሳየት የሚወስደው ገጽ ጎን."
   },
-  "Right side": {
+  "Right_side": {
     "message": "በቀኝ በኩል"
   },
-  "Left side": {
+  "Left_side": {
     "message": "ግራ ጎን"
   },
-  "Close on Escape Key": {
+  "Close_on_Escape_Key": {
     "message": "ማምለጫ ቁልፎች ላይ ዝጋ"
   },
-  "Use the ESC (escape) key to close the preview panel.": {
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
     "message": "የቅድመ እይታ ፓነልን ለመዝጋት ESC (ማምለጫ) ቁልፍን ይጠቀሙ."
   },
-  "Automatically Hide Previews": {
+  "Automatically_Hide_Previews": {
     "message": "ቅድመ-እይታዎችን በራስ-ሰር ይደብቁ"
   },
-  "Hides the preview panel when you scroll away or interact with the main page.": {
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
     "message": "የቅድመ-እይታ ፓነልን ይሸፍኑት ከዋናው ገጽ ጋር ሲገናኙ ይደብቃል."
   },
-  "Preview in Side Panel": {
+  "Preview_in_Side_Panel": {
     "message": "ከጎን ፓነል ቅድመ-እይታ"
   },
-  "Displays the view in Chrome Side Panel instead of a floating box.": {
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
     "message": "ተንሳፋፊ ሣጥን ሳይሆን በ Chrome የጎን ፓነል ውስጥ ያለውን አመለካከት ያሳያል."
   },
-  "Preview-on-Hover Delay": {
+  "Preview_on_Hover_Delay": {
     "message": "ቅድመ-እይታ-በ-ዳር ዳር መዘግየት"
   },
-  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
     "message": "ራስ-ሰር ቅድመ-እይታ በሚሽከረከርበት ጊዜ ቅድመ-እይታ ከመታየቱ በፊት ይህ መዘግየት ነው."
   },
-  "[Advanced] Force Preview": {
+  "_Advanced__Force_Preview": {
     "message": "[የላቀ] ኃይል ቅድመ-እይታ"
   },
-  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
     "message": "ለእድገቢያዎች ለተገቢው ድርጣቢያዎች ** ነርድ ማንቂያ-ይህ የ CLUSTY-BRUSTIONG ኦፕሬተር ነው."
   },
-  "[Advanced] Disable Incognito Google": {
+  "_Advanced__Disable_Incognito_Google": {
     "message": "[የላቀ] ማንነት የማያሳውቅ ጉግልን ያሰናክሉ"
   },
-  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
     "message": "በነባሪነት, የ Google ፍለጋ ስሪት ጥቅም ላይ የዋለው የግላዊነት እና የደህንነት ምክንያቶች ሁል ጊዜም ዘግይቷል. ምንም እንኳን ይህ ሁል ጊዜ በመለያ የመግቢያ መጠየቂያዎችን ማየት ይችላል."
   },
-  "Disable Previews on this site": {
+  "Disable_Previews_on_this_site": {
     "message": "በዚህ ጣቢያ ላይ ቅድመ ሁኔታዎችን ያሰናክሉ"
   },
-  "The detail information about the checkbox here.": {
+  "The_detail_information_about_the_checkbox_here_": {
     "message": "ስለ አመልካቹ ሳጥን ዝርዝር መረጃ."
   },
-  "Disabled on Websites": {
+  "Disabled_on_Websites": {
     "message": "ድርጣቢያዎች ላይ ተሰናክሏል"
   },
-  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
     "message": "ቅጥያ በእነዚህ ጣቢያዎች ላይ አይሠራም, ወደዚህ ዝርዝር በመጨመር ጣቢያ ማቦዘን ይችላሉ."
   },
-  "Successfully updated settings": {
+  "Successfully_updated_settings": {
     "message": "በተሳካ ሁኔታ ወቅታዊ ቅንብሮች"
   }
 }

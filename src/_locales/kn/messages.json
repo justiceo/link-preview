@@ -14,100 +14,100 @@
   "@testMarkup": {
     "message": "<ಡಿವ್> <p> ಹಲೋ ವರ್ಲ್ಡ್ </p> ಇದು ವೆಬ್‌ನ <strong> ಭಾಷೆ </strong> </div>"
   },
-  "Search engine": {
+  "Search_engine": {
     "message": "ಶೋಧಕ ಎಂಜಿನ್"
   },
-  "The search engine that would be used for inline search previews.": {
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
     "message": "ಇನ್ಲೈನ್ ಹುಡುಕಾಟ ಪೂರ್ವವೀಕ್ಷಣೆಗಳಿಗೆ ಬಳಸಲಾಗುವ ಸರ್ಚ್ ಎಂಜಿನ್."
   },
-  "Google Search": {
+  "Google_Search": {
     "message": "Google ಹುಡುಕಾಟ"
   },
-  "Bing Search": {
+  "Bing_Search": {
     "message": "ಬಿಂಗ್ ಹುಡುಕಾಟ"
   },
-  "Yahoo Search": {
+  "Yahoo_Search": {
     "message": "ಯಾಹೂ ಹುಡುಕಾಟ"
   },
-  "Baidu Search": {
+  "Baidu_Search": {
     "message": "ಬೈದು ಹುಡುಕಾಟ"
   },
-  "Yandex Search": {
+  "Yandex_Search": {
     "message": "ಯಾಂಡೆಕ್ಸ್ ಹುಡುಕಾಟ"
   },
-  "Preview Width (%)": {
+  "Preview_Width____": {
     "message": "ಪೂರ್ವವೀಕ್ಷಣೆ ಅಗಲ (%)"
   },
-  "The width of the preview panel relative to the page.": {
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
     "message": "ಪುಟಕ್ಕೆ ಹೋಲಿಸಿದರೆ ಪೂರ್ವವೀಕ್ಷಣೆ ಫಲಕದ ಅಗಲ."
   },
-  "Preview Height (%)": {
+  "Preview_Height____": {
     "message": "ಪೂರ್ವವೀಕ್ಷಣೆ ಎತ್ತರ (%)"
   },
-  "The height of the preview panel relative to the page.": {
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
     "message": "ಪುಟಕ್ಕೆ ಹೋಲಿಸಿದರೆ ಪೂರ್ವವೀಕ್ಷಣೆ ಫಲಕದ ಎತ್ತರ."
   },
-  "Panel Position": {
+  "Panel_Position": {
     "message": "ಫಲಕ ಸ್ಥಾನ"
   },
-  "The side of the page in which to display the preview.": {
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
     "message": "ಪೂರ್ವವೀಕ್ಷಣೆಯನ್ನು ಪ್ರದರ್ಶಿಸುವ ಪುಟದ ಬದಿ."
   },
-  "Right side": {
+  "Right_side": {
     "message": "ಬಲಭಾಗದ"
   },
-  "Left side": {
+  "Left_side": {
     "message": "ಎಡಬದಿ"
   },
-  "Close on Escape Key": {
+  "Close_on_Escape_Key": {
     "message": "ಎಸ್ಕೇಪ್ ಕೀ ಅನ್ನು ಮುಚ್ಚಿ"
   },
-  "Use the ESC (escape) key to close the preview panel.": {
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
     "message": "ಪೂರ್ವವೀಕ್ಷಣೆ ಫಲಕವನ್ನು ಮುಚ್ಚಲು ESC (EXCAPE) ಕೀಲಿಯನ್ನು ಬಳಸಿ."
   },
-  "Automatically Hide Previews": {
+  "Automatically_Hide_Previews": {
     "message": "ಪೂರ್ವವೀಕ್ಷಣೆಯನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಮರೆಮಾಡಿ"
   },
-  "Hides the preview panel when you scroll away or interact with the main page.": {
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
     "message": "ನೀವು ಸ್ಕ್ರಾಲ್ ಮಾಡುವಾಗ ಅಥವಾ ಮುಖ್ಯ ಪುಟದೊಂದಿಗೆ ಸಂವಹನ ನಡೆಸುವಾಗ ಪೂರ್ವವೀಕ್ಷಣೆ ಫಲಕವನ್ನು ಮರೆಮಾಡುತ್ತದೆ."
   },
-  "Preview in Side Panel": {
+  "Preview_in_Side_Panel": {
     "message": "ಸೈಡ್ ಪ್ಯಾನೆಲ್‌ನಲ್ಲಿ ಪೂರ್ವವೀಕ್ಷಣೆ"
   },
-  "Displays the view in Chrome Side Panel instead of a floating box.": {
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
     "message": "ತೇಲುವ ಪೆಟ್ಟಿಗೆಯ ಬದಲು ಕ್ರೋಮ್ ಸೈಡ್ ಪ್ಯಾನೆಲ್‌ನಲ್ಲಿ ವೀಕ್ಷಣೆಯನ್ನು ಪ್ರದರ್ಶಿಸುತ್ತದೆ."
   },
-  "Preview-on-Hover Delay": {
+  "Preview_on_Hover_Delay": {
     "message": "ಪೂರ್ವವೀಕ್ಷಣೆ-ಹೂವರ್ ವಿಳಂಬ"
   },
-  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
     "message": "ಹೂವರ್‌ನಲ್ಲಿ ಸ್ವಯಂಚಾಲಿತ ಪೂರ್ವವೀಕ್ಷಣೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿದಾಗ, ಪೂರ್ವವೀಕ್ಷಣೆಯನ್ನು ತೋರಿಸುವ ಮೊದಲು ಇದು ವಿಳಂಬವಾಗಿದೆ."
   },
-  "[Advanced] Force Preview": {
+  "_Advanced__Force_Preview": {
     "message": "[ಸುಧಾರಿತ] ಫೋರ್ಸ್ ಪೂರ್ವವೀಕ್ಷಣೆ"
   },
-  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
     "message": "** ನಿಜವಾಗಿಯೂ ** ಪೂರ್ವವೀಕ್ಷಣೆ ಮಾಡಲು ಬಯಸುವುದಿಲ್ಲ (ಉದಾ. ಸ್ಟಾಕ್‌ಓವರ್ ಫ್ಲೋ.ಕಾಮ್) ಇದು ಪೂರ್ವವೀಕ್ಷಣೆಯನ್ನು ಒತ್ತಾಯಿಸುತ್ತದೆ. ನೆರ್ಡ್ ಅಲರ್ಟ್: ಇದು ಫ್ರೇಮ್-ಬಸ್ಟ್ ಬಸ್ಟರ್ ಆಗಿದೆ."
   },
-  "[Advanced] Disable Incognito Google": {
+  "_Advanced__Disable_Incognito_Google": {
     "message": "[ಸುಧಾರಿತ] ಅಜ್ಞಾತ ಗೂಗಲ್ ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ"
   },
-  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
     "message": "ಪೂರ್ವನಿಯೋಜಿತವಾಗಿ, ಬಳಸಿದ ಗೂಗಲ್ ಹುಡುಕಾಟದ ಆವೃತ್ತಿಯನ್ನು ಯಾವಾಗಲೂ ಗೌಪ್ಯತೆ ಮತ್ತು ಭದ್ರತಾ ಕಾರಣಗಳಿಗಾಗಿ ಸಹಿ ಮಾಡಲಾಗುತ್ತದೆ. ಇದು ಯಾವಾಗಲೂ ಸೈನ್-ಇನ್ ಪ್ರಾಂಪ್ಟ್‌ಗಳನ್ನು ನೋಡುವುದಕ್ಕೆ ಕಾರಣವಾಗಬಹುದು."
   },
-  "Disable Previews on this site": {
+  "Disable_Previews_on_this_site": {
     "message": "ಈ ಸೈಟ್‌ನಲ್ಲಿ ಪೂರ್ವವೀಕ್ಷಣೆಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ"
   },
-  "The detail information about the checkbox here.": {
+  "The_detail_information_about_the_checkbox_here_": {
     "message": "ಚೆಕ್‌ಬಾಕ್ಸ್ ಬಗ್ಗೆ ವಿವರ ಮಾಹಿತಿ ಇಲ್ಲಿ."
   },
-  "Disabled on Websites": {
+  "Disabled_on_Websites": {
     "message": "ವೆಬ್‌ಸೈಟ್‌ಗಳಲ್ಲಿ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ"
   },
-  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
     "message": "ವಿಸ್ತರಣೆಯು ಈ ಸೈಟ್‌ಗಳಲ್ಲಿ ಚಲಿಸುವುದಿಲ್ಲ, ಈ ಪಟ್ಟಿಗೆ ಸೇರಿಸುವ ಮೂಲಕ ನೀವು ಸೈಟ್ ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಬಹುದು."
   },
-  "Successfully updated settings": {
+  "Successfully_updated_settings": {
     "message": "ಯಶಸ್ವಿಯಾಗಿ ನವೀಕರಿಸಿದ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
   }
 }

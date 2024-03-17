@@ -14,100 +14,100 @@
   "@testMarkup": {
     "message": "<div> <p> hello world </p> Acesta este <strong> limbajul </strong> al web </div>"
   },
-  "Search engine": {
+  "Search_engine": {
     "message": "Motor de căutare"
   },
-  "The search engine that would be used for inline search previews.": {
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
     "message": "Motorul de căutare care ar fi utilizat pentru previzualizări de căutare în linie."
   },
-  "Google Search": {
+  "Google_Search": {
     "message": "Cautare Google"
   },
-  "Bing Search": {
+  "Bing_Search": {
     "message": "Căutare bing"
   },
-  "Yahoo Search": {
+  "Yahoo_Search": {
     "message": "Căutare yahoo"
   },
-  "Baidu Search": {
+  "Baidu_Search": {
     "message": "Căutare Baidu"
   },
-  "Yandex Search": {
+  "Yandex_Search": {
     "message": "Căutare yandex"
   },
-  "Preview Width (%)": {
+  "Preview_Width____": {
     "message": "Previzualizare lățime (%)"
   },
-  "The width of the preview panel relative to the page.": {
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
     "message": "Lățimea panoului de previzualizare în raport cu pagina."
   },
-  "Preview Height (%)": {
+  "Preview_Height____": {
     "message": "Previzualizare înălțime (%)"
   },
-  "The height of the preview panel relative to the page.": {
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
     "message": "Înălțimea panoului de previzualizare în raport cu pagina."
   },
-  "Panel Position": {
+  "Panel_Position": {
     "message": "Poziția panoului"
   },
-  "The side of the page in which to display the preview.": {
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
     "message": "Partea laterală a paginii în care se afișează previzualizarea."
   },
-  "Right side": {
+  "Right_side": {
     "message": "Partea dreapta"
   },
-  "Left side": {
+  "Left_side": {
     "message": "Partea stanga"
   },
-  "Close on Escape Key": {
+  "Close_on_Escape_Key": {
     "message": "Închideți cheia de evacuare"
   },
-  "Use the ESC (escape) key to close the preview panel.": {
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
     "message": "Utilizați tasta ESC (Escape) pentru a închide panoul de previzualizare."
   },
-  "Automatically Hide Previews": {
+  "Automatically_Hide_Previews": {
     "message": "Ascunde automat previzualizările"
   },
-  "Hides the preview panel when you scroll away or interact with the main page.": {
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
     "message": "Ascunde panoul de previzualizare când derulați sau interacționați cu pagina principală."
   },
-  "Preview in Side Panel": {
+  "Preview_in_Side_Panel": {
     "message": "Previzualizare în panoul lateral"
   },
-  "Displays the view in Chrome Side Panel instead of a floating box.": {
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
     "message": "Afișează vizualizarea în panoul lateral crom în loc de o cutie plutitoare."
   },
-  "Preview-on-Hover Delay": {
+  "Preview_on_Hover_Delay": {
     "message": "Previzualizare întârziere"
   },
-  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
     "message": "Când este activată previzualizarea automată pe hover, aceasta este întârzierea înainte de afișarea previzualizării."
   },
-  "[Advanced] Force Preview": {
+  "_Advanced__Force_Preview": {
     "message": "[Avansat] previzualizare forță"
   },
-  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
     "message": "Pentru site -urile web care ** într -adevăr ** nu doresc să fie previzualizate (de exemplu, stackoverflow.com), acest lucru forțează o previzualizare. Nerd Alert: Acesta este un buster care se bazează pe cadru."
   },
-  "[Advanced] Disable Incognito Google": {
+  "_Advanced__Disable_Incognito_Google": {
     "message": "[Avansat] Dezactivați incognito Google"
   },
-  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
     "message": "În mod implicit, versiunea de căutare Google folosită este întotdeauna semnată din motive de confidențialitate și securitate. Deși acest lucru poate duce la înregistrarea întotdeauna de prompturi de conectare."
   },
-  "Disable Previews on this site": {
+  "Disable_Previews_on_this_site": {
     "message": "Dezactivați previzualizările pe acest site"
   },
-  "The detail information about the checkbox here.": {
+  "The_detail_information_about_the_checkbox_here_": {
     "message": "Informațiile detaliate despre caseta de selectare aici."
   },
-  "Disabled on Websites": {
+  "Disabled_on_Websites": {
     "message": "Dezactivat pe site -uri web"
   },
-  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
     "message": "Extensia nu va rula pe aceste site -uri, puteți dezactiva un site adăugând la această listă."
   },
-  "Successfully updated settings": {
+  "Successfully_updated_settings": {
     "message": "Setări actualizate cu succes"
   }
 }

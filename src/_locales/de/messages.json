@@ -14,100 +14,100 @@
   "@testMarkup": {
     "message": "<div> <p> Hallo Welt </p> Dies ist die <strong> Sprache </strong> des Web </div>"
   },
-  "Search engine": {
+  "Search_engine": {
     "message": "Suchmaschine"
   },
-  "The search engine that would be used for inline search previews.": {
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
     "message": "Die Suchmaschine, die für die Inline -Suchvorschau verwendet wird."
   },
-  "Google Search": {
+  "Google_Search": {
     "message": "Google-Suche"
   },
-  "Bing Search": {
+  "Bing_Search": {
     "message": "Bing -Suche"
   },
-  "Yahoo Search": {
+  "Yahoo_Search": {
     "message": "Yahoo -Suche"
   },
-  "Baidu Search": {
+  "Baidu_Search": {
     "message": "Baidu -Suche"
   },
-  "Yandex Search": {
+  "Yandex_Search": {
     "message": "Yandex -Suche"
   },
-  "Preview Width (%)": {
+  "Preview_Width____": {
     "message": "Vorschaubreite (%)"
   },
-  "The width of the preview panel relative to the page.": {
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
     "message": "Die Breite des Vorschiffs in Bezug auf die Seite."
   },
-  "Preview Height (%)": {
+  "Preview_Height____": {
     "message": "Vorschauhöhe (%)"
   },
-  "The height of the preview panel relative to the page.": {
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
     "message": "Die Höhe des Vorschaubers relativ zur Seite."
   },
-  "Panel Position": {
+  "Panel_Position": {
     "message": "Panelposition"
   },
-  "The side of the page in which to display the preview.": {
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
     "message": "Die Seite der Seite, auf der die Vorschau angezeigt werden soll."
   },
-  "Right side": {
+  "Right_side": {
     "message": "Rechte Seite"
   },
-  "Left side": {
+  "Left_side": {
     "message": "Linke Seite"
   },
-  "Close on Escape Key": {
+  "Close_on_Escape_Key": {
     "message": "Schließen Sie den Fluchtschlüssel"
   },
-  "Use the ESC (escape) key to close the preview panel.": {
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
     "message": "Verwenden Sie die Taste für ESC (Escape), um das Vorschau -Panel zu schließen."
   },
-  "Automatically Hide Previews": {
+  "Automatically_Hide_Previews": {
     "message": "Automatisch Vorschau ausblenden"
   },
-  "Hides the preview panel when you scroll away or interact with the main page.": {
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
     "message": "Verbirgt das Vorschiff -Feld, wenn Sie wegrollen oder mit der Hauptseite interagieren."
   },
-  "Preview in Side Panel": {
+  "Preview_in_Side_Panel": {
     "message": "Vorschau im Seitenfeld"
   },
-  "Displays the view in Chrome Side Panel instead of a floating box.": {
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
     "message": "Zeigt die Ansicht im Chrom -Seitenfeld anstelle einer schwimmenden Box an."
   },
-  "Preview-on-Hover Delay": {
+  "Preview_on_Hover_Delay": {
     "message": "Vorschau-auf-Hover-Verzögerung"
   },
-  "When automatic preview on hover is enabled, this is the delay before the preview is shown.": {
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
     "message": "Wenn die automatische Vorschau auf HOVER aktiviert ist, ist dies die Verzögerung, bevor die Vorschau angezeigt wird."
   },
-  "[Advanced] Force Preview": {
+  "_Advanced__Force_Preview": {
     "message": "[Advanced] Force Preview"
   },
-  "For websites that **really** do not want to be previewed (e.g. stackoverflow.com) this forces a preview. Nerd alert: this is a frame-busting buster.": {
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
     "message": "Für Websites, die ** wirklich ** nicht vorsichtigen möchten (z. B. stackoverflow.com), zwingt dies eine Vorschau. Nerd Alert: Dies ist ein Rahmenbusting-Buster."
   },
-  "[Advanced] Disable Incognito Google": {
+  "_Advanced__Disable_Incognito_Google": {
     "message": "[Advanced] Incognito Google deaktivieren"
   },
-  "By default, the version of Google search used is always signed-out for privacy and security reasons. Though this may result in always seeing sign-in prompts.": {
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
     "message": "Standardmäßig wird die verwendete Version der Google-Suche immer aus Datenschutz- und Sicherheitsgründen unterzeichnet. Dies kann jedoch dazu führen, dass immer Anmeldeanforderungen angegeben werden."
   },
-  "Disable Previews on this site": {
+  "Disable_Previews_on_this_site": {
     "message": "Deaktivieren Sie die Vorschau auf dieser Website"
   },
-  "The detail information about the checkbox here.": {
+  "The_detail_information_about_the_checkbox_here_": {
     "message": "Die Detailinformationen zum Kontrollkästchen hier."
   },
-  "Disabled on Websites": {
+  "Disabled_on_Websites": {
     "message": "Auf Websites deaktiviert"
   },
-  "Extension will not run on these sites, you can disable a site by adding to this list.": {
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
     "message": "Die Erweiterung wird auf diesen Websites nicht ausgeführt, Sie können eine Site deaktivieren, indem Sie diese Liste hinzufügen."
   },
-  "Successfully updated settings": {
+  "Successfully_updated_settings": {
     "message": "Erfolgreich aktualisierte Einstellungen"
   }
 }

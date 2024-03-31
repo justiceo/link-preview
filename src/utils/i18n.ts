@@ -55,6 +55,8 @@ export const i18n = (key: string): string => {
   return key;
 };
 
+export const extensionId = i18n("@@extension_id");
+
 /* Translate the markup by replacing the innerHTML of the elements with i18n attributes */
 export const translateMarkup = (markup: HTMLElement | Document) => {
   const elements = markup.querySelectorAll("[i18n]");

@@ -42,7 +42,8 @@
     "@webcomponents/custom-elements": "^1.5.1",
     "bootstrap": "^5.3.2",
     "glob": "^10.3.10",
-    "jsdom": "^24.0.0"
+    "jsdom": "^24.0.0",
+    "webextension-polyfill": "^0.10.0"
   },
   "devDependencies": {
     "@types/chrome": "^0.0.204",

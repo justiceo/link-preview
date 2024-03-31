@@ -2,6 +2,7 @@ import "./post-install";
 import "./context-menus";
 import "./icon-updater";
 import "./feedback-checker";
+import "./coffee";
 import { getOrCreateSessionId } from "../utils/session-id";
 
 // All service-worker messages should go through this function.

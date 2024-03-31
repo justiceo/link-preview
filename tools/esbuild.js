@@ -160,9 +160,15 @@ class Build {
     const buildAndCatchError = async (event, filename) => {
       try {
         await this.buildExtension();
-        // TODO: Fire event to reload browser.
 
+        const timeString = new Date().toLocaleTimeString("en-US", {
+          hour12: false, // Use 24-hour format
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+        });
         console.log(
+          timeString,
           `Successfully rebuilt extension due to: ${event} on ${filename}`,
         );
       } catch (e) {
@@ -196,6 +202,10 @@ class Build {
     return new Promise((resolve, reject) => {
       let rawdata = fs.readFileSync("src/manifest.json");
       let manifest = JSON.parse(rawdata);
+
+      if (!this.isProd) {
+        manifest.name = "[DEV] " + manifest.name;
+      }
 
       const browserManifest = this.removeBrowserPrefixesForManifest(manifest);
 

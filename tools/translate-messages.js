@@ -1,10 +1,10 @@
 // This script generates translated versions of an original locale for i18n purposes.
 // To run: node translateMessages.js
-const fs = require("fs");
-const path = require("path");
-const translate = require("google-translate-api-x");
-const { glob } = require("glob");
-const { JSDOM } = require("jsdom");
+import { readFileSync, existsSync, mkdirSync, writeFileSync } from "fs";
+import { dirname as _dirname, join } from "path";
+import translate from "google-translate-api-x";
+import { glob } from "glob";
+import { JSDOM } from "jsdom";
 
 const srcDir = "src";
 const localesDir = "src/_locales";
@@ -73,18 +73,18 @@ function getLocaleFile(locale) {
 
 // Function to read and parse the source locale data
 function readSourceLocaleData() {
-  const rawdata = fs.readFileSync(getLocaleFile(sourceLocale));
+  const rawdata = readFileSync(getLocaleFile(sourceLocale));
   return JSON.parse(rawdata);
 }
 
 // Function to ensure directory existence
 function ensureDirectoryExistence(filePath) {
-  const dirname = path.dirname(filePath);
-  if (fs.existsSync(dirname)) {
+  const dirname = _dirname(filePath);
+  if (existsSync(dirname)) {
     return;
   }
   ensureDirectoryExistence(dirname);
-  fs.mkdirSync(dirname);
+  mkdirSync(dirname);
 }
 
 // Function to apply translation to locale data and save it
@@ -113,12 +113,12 @@ function applyTranslation(targetLocale, localeData, sourceLocaleData) {
   ensureDirectoryExistence(getLocaleFile(targetLocale));
   const formattedData = JSON.stringify(targetLocaleClone, null, 4);
   console.log("Updated: ", getLocaleFile(targetLocale));
-  fs.writeFileSync(getLocaleFile(targetLocale), formattedData, { flag: "w" });
+  writeFileSync(getLocaleFile(targetLocale), formattedData, { flag: "w" });
 }
 
 // Function to search and return a matching regex in a file.
 function searchInFile(filePath, regex) {
-  const content = fs.readFileSync(filePath, "utf8");
+  const content = readFileSync(filePath, "utf8");
   const allMatches = [];
   let matches;
 
@@ -138,7 +138,7 @@ function searchForI18nStrings(srcDirectory) {
     // Regex to capture content inside quotes without including the quotes
     // TODO: Verify it works for new lines (for long texts).
     const regex = /i18n\(\s*(?:"([\s\S]*?)"|'([\s\S]*?)')\s*,?\s*\)/g;
-    const filesPattern = path.join(srcDirectory, "**", "*.{ts,js}");
+    const filesPattern = join(srcDirectory, "**", "*.{ts,js}");
     const files = await glob(filesPattern);
 
     const allMatches = files.reduce((acc, filePath) => {
@@ -194,7 +194,7 @@ function parseHTMLFiles(src) {
 
     files.forEach((file) => {
       // Read the content of each HTML file
-      const htmlContent = fs.readFileSync(file, "utf8");
+      const htmlContent = readFileSync(file, "utf8");
       const dom = new JSDOM(htmlContent);
       const document = dom.window.document;
 

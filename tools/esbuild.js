@@ -1,16 +1,16 @@
-const fs = require("fs");
-const { exec } = require("child_process");
-const esbuild = require("esbuild");
-const Jimp = require("jimp");
-const Jasmine = require("jasmine");
-const puppeteer = require("puppeteer");
+import fs from "fs";
+import { exec } from "child_process";
+import esbuild from "esbuild";
+import Jasmine from "jasmine";
+import puppeteer from "puppeteer";
+import { parse } from "./parse.js";
+import config from "./config.json" assert { type: "json" };
 
 class Build {
   outputBase = "build";
   browser = "chrome";
   isProd = false;
   outDir = "build/chrome-dev";
-  maybeTask = "build";
   args;
 
   testSpecs = ["spec/e2e-spec.ts", "spec/i18n-spec.ts"];
@@ -18,7 +18,7 @@ class Build {
   originalIconPath = "src/assets/images/logo.png";
 
   constructor() {
-    const args = this.parse(process.argv);
+    const args = parse(process.argv);
     this.args = args;
 
     if (args.output_base) {
@@ -39,11 +39,7 @@ class Build {
       this.isProd ? "prod" : "dev"
     }/`;
 
-    switch (this.maybeTask) {
-      // Additional options: --src, --icons, --screenshot, --marquee, --tile
-      case "image":
-        this.generateIcons();
-        break;
+    switch (args.task) {
       case "start":
         this.launchBrowser();
         break;
@@ -60,51 +56,8 @@ class Build {
         this.copyToStandalone();
         break;
       default:
-        console.error("Unknown task", this.maybeTask);
+        console.error("Unknown task", args.task);
     }
-  }
-
-  /* Straight-forward node.js arguments parser.
-   * From https://github.com/eveningkid/args-parser/blob/master/parse.js
-   */
-  parse(argv) {
-    const ARGUMENT_SEPARATION_REGEX = /([^=\s]+)=?\s*(.*)/;
-
-    // Removing node/bin and called script name
-    argv = argv.slice(2);
-
-    const parsedArgs = {};
-    let argName, argValue;
-
-    if (argv.length > 0) {
-      this.maybeTask = argv[0];
-    }
-
-    argv.forEach(function (arg) {
-      // Separate argument for a key/value return
-      arg = arg.match(ARGUMENT_SEPARATION_REGEX);
-      arg.splice(0, 1);
-
-      // Retrieve the argument name
-      argName = arg[0];
-
-      // Remove "--" or "-"
-      if (argName.indexOf("-") === 0) {
-        argName = argName.slice(argName.slice(0, 2).lastIndexOf("-") + 1);
-      }
-
-      // Parse argument value or set it to `true` if empty
-      argValue =
-        arg[1] !== ""
-          ? parseFloat(arg[1]).toString() === arg[1]
-            ? +arg[1]
-            : arg[1]
-          : true;
-
-      parsedArgs[argName] = argValue;
-    });
-
-    return parsedArgs;
   }
 
   // Clean output directory
@@ -132,10 +85,10 @@ class Build {
         entryPoints: [
           "src/background-script/service-worker.ts",
           "src/content-script/content-script.ts",
-          "src/popup/popup.ts",
           "src/options-page/options.ts",
-          "src/sidepanel/side-panel.ts",
-          "src/utils/settings/settings.ts",
+          "src/popup/popup.ts",
+          "src/welcome/welcome.ts",
+          ...config["additionalEntryPoints"],
         ],
         bundle: true,
         minify: this.isProd,
@@ -143,7 +96,8 @@ class Build {
         loader: {
           ".txt.html": "text",
           ".txt.css": "text",
-          ".png": "dataurl",
+          ".file.css": "file",
+          ".woff2": "dataurl",
         },
         banner: {
           js: `var IS_DEV_BUILD=${!this.isProd};`,
@@ -199,6 +153,23 @@ class Build {
   // NB: This function would fail if outDir doesn't exist yet.
   // For browser manifest.json compatibility see https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Browser_compatibility_for_manifest.json
   generateManifest() {
+    const removeBrowserPrefixesForManifest = (obj) => {
+      const cleanedObj = {};
+      for (let [key, value] of Object.entries(obj)) {
+        // Recursively apply this check on values.
+        if (typeof value === "object" && !Array.isArray(value)) {
+          value = removeBrowserPrefixesForManifest(value);
+        }
+
+        if (!key.startsWith("__")) {
+          cleanedObj[key] = value;
+        } else if (key.startsWith(`__${this.browser}__`)) {
+          cleanedObj[key.replace(`__${this.browser}__`, "")] = value;
+        }
+      }
+      return cleanedObj;
+    };
+
     return new Promise((resolve, reject) => {
       let rawdata = fs.readFileSync("src/manifest.json");
       let manifest = JSON.parse(rawdata);
@@ -207,7 +178,7 @@ class Build {
         manifest.name = "[DEV] " + manifest.name;
       }
 
-      const browserManifest = this.removeBrowserPrefixesForManifest(manifest);
+      const browserManifest = removeBrowserPrefixesForManifest(manifest);
 
       const formattedJson = JSON.stringify(browserManifest, null, 4);
       fs.writeFile(this.outDir + "manifest.json", formattedJson, (err) => {
@@ -216,117 +187,6 @@ class Build {
         } else {
           resolve();
         }
-      });
-    });
-  }
-
-  removeBrowserPrefixesForManifest(obj) {
-    const cleanedObj = {};
-    for (let [key, value] of Object.entries(obj)) {
-      // Recursively apply this check on values.
-      if (typeof value === "object" && !Array.isArray(value)) {
-        value = this.removeBrowserPrefixesForManifest(value);
-      }
-
-      if (!key.startsWith("__")) {
-        cleanedObj[key] = value;
-      } else if (key.startsWith(`__${this.browser}__`)) {
-        cleanedObj[key.replace(`__${this.browser}__`, "")] = value;
-      }
-    }
-    return cleanedObj;
-  }
-
-  // Generate icons
-  generateIcons() {
-    let src = this.originalIconPath;
-    if (this.args.src) {
-      src = this.args.src;
-    }
-
-    return new Promise((resolve, reject) => {
-      Jimp.read(src, (err, icon) => {
-        if (err) {
-          reject();
-        }
-
-        if (!icon) {
-          console.error("Error reading icon: ", src);
-        }
-
-        if (this.args.icons) {
-          [16, 24, 32, 48, 128].forEach((size) => {
-            icon
-              .clone()
-              .resize(size, size)
-              .write(`src/assets/logo-${size}x${size}.png`);
-            icon
-              .clone()
-              .resize(size, size)
-              .greyscale()
-              .write(`src/assets/logo-gray-${size}x${size}.png`);
-          });
-        }
-
-        if (this.args.screenshot) {
-          // save as JPEG to avoid alpha worries.
-          icon
-            .clone()
-            .contain(
-              1280,
-              800,
-              Jimp.VERTICAL_ALIGN_MIDDLE | Jimp.HORIZONTAL_ALIGN_CENTER,
-            )
-            .write(`src/assets/screenshot-contain-1280x800.JPEG`);
-          icon
-            .clone()
-            .cover(
-              1280,
-              800,
-              Jimp.VERTICAL_ALIGN_MIDDLE | Jimp.HORIZONTAL_ALIGN_CENTER,
-            )
-            .write(`src/assets/screenshot-cover-1280x800.JPEG`);
-        }
-
-        if (this.args.tile) {
-          icon
-            .clone()
-            .contain(
-              440,
-              280,
-              Jimp.VERTICAL_ALIGN_MIDDLE | Jimp.HORIZONTAL_ALIGN_CENTER,
-            )
-            .write(`src/assets/tile-contain-440x280.JPEG`);
-          icon
-            .clone()
-            .cover(
-              440,
-              280,
-              Jimp.VERTICAL_ALIGN_MIDDLE | Jimp.HORIZONTAL_ALIGN_CENTER,
-            )
-            .write(`src/assets/tile-cover-440x280.JPEG`);
-        }
-
-        if (this.args.marquee) {
-          icon
-            .clone()
-            .contain(
-              1400,
-              560,
-              Jimp.VERTICAL_ALIGN_MIDDLE | Jimp.HORIZONTAL_ALIGN_CENTER,
-            )
-            .write(`src/assets/marquee-contain-1400x560.JPEG`);
-          icon
-            .clone()
-            .cover(
-              1400,
-              560,
-              Jimp.VERTICAL_ALIGN_MIDDLE | Jimp.HORIZONTAL_ALIGN_CENTER,
-            )
-            .write(`src/assets/marquee-cover-1400x560.JPEG`);
-        }
-
-        resolve();
       });
     });
   }
@@ -352,7 +212,7 @@ class Build {
       "src/popup/popup.html": "popup/popup.html",
       "src/options-page/options.html": "options-page/options.html",
       "src/welcome": "welcome",
-      "src/sidepanel/side-panel.html": "sidepanel/side-panel.html",
+      ...config.additionalAssetsToCopy,
     };
 
     return this.copy(fileMap);

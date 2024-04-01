@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Perform search and preview links in sidebars instead of opening new tabs",
   "scripts": {
-    "build": "node tools/esbuild.js --task=build",
-    "test": "node tools/esbuild.js --task=test",
-    "watch": "node tools/esbuild.js --task=watch",
-    "start": "node tools/esbuild.js --task=start",
-    "start:firefox": "node tools/esbuild.js --task=start --browser=firefox",
+    "build": "node build-tools/esbuild.js --task=build",
+    "test": "node build-tools/esbuild.js --task=test",
+    "watch": "node build-tools/esbuild.js --task=watch",
+    "start": "node build-tools/esbuild.js --task=start",
+    "start:firefox": "node build-tools/esbuild.js --task=start --browser=firefox",
     "format": "npx prettier . --write",
     "prepare": "husky install"
   },

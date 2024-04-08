@@ -1,6 +1,6 @@
 /// <reference types="chrome"/>
-import * as Sentry from "@sentry/browser";
 import manifest from "../manifest.json";
+import analytics from "./analytics";
 
 /**
  * Simple util for logging to console.
@@ -26,19 +26,7 @@ export class Logger {
       "." +
       (typeof tag === "string" ? tag : tag.constructor.name);
 
-    if (!IS_DEV_BUILD) {
-      this.initSentry();
-    }
     this.listenForBgLogs();
-  }
-
-  initSentry() {
-    Sentry.init({
-      dsn: manifest.__sentry_dsn__,
-      tracesSampleRate: 0.1,
-      release: EXTENSION_NAME + "@" + manifest.version,
-      environment: "PROD",
-    });
   }
 
   listenForBgLogs() {
@@ -78,11 +66,8 @@ export class Logger {
     ];
     if (!IS_DEV_BUILD) {
       switch (level) {
-        case LogLevel.WARNING:
-          Sentry.captureMessage(output.join(" "));
-          break;
         case LogLevel.ERROR:
-          Sentry.captureException(output.join(" "));
+          analytics.fireErrorEvent(messages[0], { ...messages });
           break;
       }
       return;

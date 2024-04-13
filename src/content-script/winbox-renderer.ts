@@ -40,8 +40,10 @@ export class WinboxRenderer {
       navigator.clipboard.writeText(message.data);
       return;
     } else if (message.action === "preview") {
+      Analytics.fireEvent("preview_action");
       urlStr = message.data;
     } else if (message.action === "search") {
+      Analytics.fireEvent("search_action");
       const searchEngine = (await Storage.get("search-engine")) ?? "google";
       urlStr = this.searchUrl[searchEngine] + message.data;
     } else if (message.action === "load") {
@@ -52,8 +54,10 @@ export class WinboxRenderer {
         );
       }
     } else if (message.action === "navigate") {
+      Analytics.fireEvent("navigate_action");
       urlStr = message.href;
     } else if (message.action === "escape") {
+      Analytics.fireEvent("escape_action");
       this.dialog?.close();
       return;
     } else {

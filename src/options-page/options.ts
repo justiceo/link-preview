@@ -2,6 +2,7 @@ import "../content-script/content-script"; // To inject popup for dev mode.
 import { Config, SettingsUI } from "../utils/settings/settings";
 import "./options.css";
 import manifest from "../manifest.json";
+import analytics from "../utils/analytics";
 import { i18n, translateMarkup } from "../utils/i18n";
 
 const configOptions: Config[] = [
@@ -145,10 +146,20 @@ if (window.name === iframeName) {
   };
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
   document
     .querySelector(".options-container")
     ?.appendChild(new SettingsUI(configOptions));
+
+  await analytics.firePageViewEvent("Options Page", "/options.html");
+
+  window.onerror = (event, source, lineno, colno, error) => {
+    analytics.fireErrorEvent(error, {
+      event: event,
+      source: source,
+      lineno: lineno,
+    });
+  };
 
   document.querySelector("#show-preview")?.addEventListener("click", () => {
     window.postMessage(

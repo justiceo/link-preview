@@ -1,4 +1,8 @@
 import analytics from "../utils/analytics";
+import ExtPay from "../background-script/ExtPay";
+import { extensionId } from "../utils/i18n";
+
+const extpay = ExtPay(extensionId);
 
 document.addEventListener("DOMContentLoaded", async () => {
   await analytics.firePageViewEvent("Popup", "/popup.html");
@@ -9,6 +13,15 @@ document.addEventListener("DOMContentLoaded", async () => {
       lineno: lineno,
     });
   };
+
+  extpay.getUser().then((user) => {
+    if (user.paid) {
+      console.log("User is premium");
+    } else {
+      console.log("Opening payment page");
+      extpay.openPaymentPage();
+    }
+  });
 });
 
 document.querySelector("#go-to-options").addEventListener("click", () => {

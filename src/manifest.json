@@ -5,7 +5,7 @@
   "homepage_url": "https://betterpreviews.com/",
   "__package_name__": "search-preview",
   "__comment:version__": "Firefox does not support leading zeros in versions",
-  "version": "24.03.08",
+  "version": "24.04.12",
   "__sentry_dsn__": "https://bf0a1e40a1784502aad701a201efdf08@o526305.ingest.sentry.io/4504743520436224",
   "__measurement_id__": "G-XN737SN9S2",
   "__ga_api_secret__": "zigXBV_3TjyIjkXuSPjo8w",

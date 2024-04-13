@@ -6,10 +6,6 @@ import { FEEDBACK_DATA_KEY } from "../utils/storage";
 import Storage from "../utils/storage";
 import Analytics from "../utils/analytics";
 import manifest from "../manifest.json";
-import ExtPay from "../background-script/ExtPay";
-import { extensionId } from "../utils/i18n";
-
-const extpay = ExtPay(extensionId);
 
 export class WinboxRenderer {
   logger = new Logger(this);
@@ -88,15 +84,6 @@ export class WinboxRenderer {
   async previewUrl(url: URL) {
     this.logger.log("#previewUrl: ", url);
     this.url = url;
-
-    extpay.getUser().then((user) => {
-      if (user.paid) {
-        console.log("User is premium");
-      } else {
-        console.log("Opening payment page");
-        extpay.openPaymentPage();
-      }
-    });
 
     const winboxOptions = await this.getWinboxOptions(url);
 

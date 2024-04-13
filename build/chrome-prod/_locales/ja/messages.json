@@ -1,52 +1,122 @@
 {
-  "appName": {
+  "@appName": {
     "message": "検索＆リンクプレビュー",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "リンクプレビュー",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "リンクのプレビューを参照し、新しいタブを開く代わりにこのプレビューターを使用して同じページで検索を即座に実行する",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "私たちはどのようにやっています？"
+  "@testMarkup": {
+    "message": "<div> <p> hello world </p>これは<strong>言語</strong> </div>"
   },
-  "fdbkCareToShare": {
-    "message": "気に入ってくれてうれしいです！ ❤️を共有するのを手伝ってもらえますか？"
+  "Search_engine": {
+    "message": "検索エンジン"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "どうすれば改善できますか？"
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
+    "message": "インライン検索プレビューに使用される検索エンジン。"
   },
-  "fdbkThanks": {
-    "message": "フィードバックをお寄せいただきありがとうございます！"
+  "Google_Search": {
+    "message": "Google検索"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Webstoreのレート"
+  "Bing_Search": {
+    "message": "ビング検索"
   },
-  "fdbkNoResponse": {
-    "message": "いいえ"
+  "Yahoo_Search": {
+    "message": "Yahoo Search"
   },
-  "fdbkSumbit": {
-    "message": "提出する"
+  "Baidu_Search": {
+    "message": "Baidu検索"
   },
-  "reportAnIssue": {
-    "message": "問題を報告する",
-    "description": "Button text for reporting an issue"
+  "Yandex_Search": {
+    "message": "Yandex検索"
   },
-  "showDemo": {
-    "message": "デモを表示します",
-    "description": "Button text for showing demo"
+  "Preview_Width____": {
+    "message": "プレビュー幅（％）"
   },
-  "optionsSaveSuccess": {
-    "message": "正常に更新された設定"
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
+    "message": "ページに対するプレビューパネルの幅。"
   },
-  "optionBlockedSites": {
+  "Preview_Height____": {
+    "message": "プレビューの高さ（％）"
+  },
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
+    "message": "ページに対するプレビューパネルの高さ。"
+  },
+  "Panel_Position": {
+    "message": "パネル位置"
+  },
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
+    "message": "プレビューを表示するページの側面。"
+  },
+  "Right_side": {
+    "message": "右側"
+  },
+  "Left_side": {
+    "message": "左側"
+  },
+  "Close_on_Escape_Key": {
+    "message": "エスケープキーを閉じます"
+  },
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
+    "message": "ESC（エスケープ）キーを使用して、プレビューパネルを閉じます。"
+  },
+  "Automatically_Hide_Previews": {
+    "message": "プレビューを自動的に非表示にします"
+  },
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
+    "message": "メインページをスクロールまたは対話するときに、プレビューパネルを隠します。"
+  },
+  "Preview_in_Side_Panel": {
+    "message": "サイドパネルでプレビューします"
+  },
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
+    "message": "フローティングボックスの代わりに、クロムサイドパネルにビューを表示します。"
+  },
+  "Preview_on_Hover_Delay": {
+    "message": "プレビューオンホバー遅延"
+  },
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
+    "message": "ホバーでの自動プレビューが有効になっている場合、これはプレビューが表示される前の遅延です。"
+  },
+  "_Advanced__Force_Preview": {
+    "message": "[Advanced]力プレビュー"
+  },
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
+    "message": "**本当に**プレビューしたくないWebサイト（例：stackoverflow.com）は、プレビューを強制します。 オタクアラート：これはフレームバストバスターです。"
+  },
+  "_Advanced__Disable_Incognito_Google": {
+    "message": "[Advanced] Incognito Googleを無効にします"
+  },
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
+    "message": "デフォルトでは、使用されているGoogle検索のバージョンは、プライバシーとセキュリティ上の理由に常にサインアウトされます。 ただし、これにより、常にサインインプロンプトが表示される場合があります。"
+  },
+  "Disable_Previews_on_this_site": {
+    "message": "このサイトでプレビューを無効にします"
+  },
+  "The_detail_information_about_the_checkbox_here_": {
+    "message": "ここのチェックボックスの詳細情報。"
+  },
+  "Disabled_on_Websites": {
     "message": "Webサイトで無効になっています"
   },
-  "optionBlockedSitesDesc": {
-    "message": "これらのサイトでは拡張機能が実行されません。 1行ごとに1つのサイトを入力します。"
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
+    "message": "拡張機能はこれらのサイトで実行されません。このリストに追加することでサイトを無効にすることができます。"
+  },
+  "Successfully_updated_settings": {
+    "message": "正常に更新された設定"
+  },
+  "Search__amp__Link_Preview_Options": {
+    "message": "検索＆amp; リンクプレビューオプション"
+  },
+  "Show_Sample_Preview": {
+    "message": "サンプルのプレビューを表示します"
+  },
+  "Report_an_Issue": {
+    "message": "問題を報告する"
   }
 }

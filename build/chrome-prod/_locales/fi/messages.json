@@ -1,52 +1,122 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Haku ja linkkien esikatselu",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Linkkien esikatselut",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Katso linkkien esikatselut ja suorittaa heti hakuja samalla sivulla tällä esikatselulla uusien välilehtien avaamisen sijasta",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Kuinka me voimme?"
+  "@testMarkup": {
+    "message": "<div> <p> Hei maailma </p> Tämä on Webin <strong> kieli </strong>"
   },
-  "fdbkCareToShare": {
-    "message": "Iloinen, että pidät siitä! Voitko auttaa meitä jakamaan ❤️?"
+  "Search_engine": {
+    "message": "Hakukone"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Kuinka voimme parantaa?"
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
+    "message": "Hakukone, jota käytetään inline -haun esikatseluun."
   },
-  "fdbkThanks": {
-    "message": "Kiitos palautteesta!"
+  "Google_Search": {
+    "message": "Google haku"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Arvostelu verkkokaupassa"
+  "Bing_Search": {
+    "message": "Bing -haku"
   },
-  "fdbkNoResponse": {
-    "message": "Ei"
+  "Yahoo_Search": {
+    "message": "Yahoo -haku"
   },
-  "fdbkSumbit": {
-    "message": "Lähetä"
+  "Baidu_Search": {
+    "message": "Baidu -haku"
   },
-  "reportAnIssue": {
-    "message": "Ilmoita ongelma",
-    "description": "Button text for reporting an issue"
+  "Yandex_Search": {
+    "message": "Yandex -haku"
   },
-  "showDemo": {
-    "message": "Näytä esittely",
-    "description": "Button text for showing demo"
+  "Preview_Width____": {
+    "message": "Esikatselun leveys (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Päivitetyt asetukset onnistuneesti"
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Esikatselupaneelin leveys suhteessa sivulle."
   },
-  "optionBlockedSites": {
+  "Preview_Height____": {
+    "message": "Esikatselukorkeus (%)"
+  },
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Esikatselupaneelin korkeus suhteessa sivulle."
+  },
+  "Panel_Position": {
+    "message": "Paneelin sijainti"
+  },
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
+    "message": "Sivun sivu, jolla esikatselu voidaan näyttää."
+  },
+  "Right_side": {
+    "message": "Oikea puoli"
+  },
+  "Left_side": {
+    "message": "Vasen puoli"
+  },
+  "Close_on_Escape_Key": {
+    "message": "Sulje Escape -avain"
+  },
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
+    "message": "Sulje esikatselupaneeli ESC (Escape) -näppäimellä."
+  },
+  "Automatically_Hide_Previews": {
+    "message": "Piilota esikatselut automaattisesti"
+  },
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
+    "message": "Piilotaan esikatselupaneelin, kun vierität pois tai olet vuorovaikutuksessa pääsivulla."
+  },
+  "Preview_in_Side_Panel": {
+    "message": "Esikatselu sivupaneelissa"
+  },
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
+    "message": "Näyttää näkymän Chrome -sivupaneelissa kelluvan laatikon sijasta."
+  },
+  "Preview_on_Hover_Delay": {
+    "message": "Esikatselu"
+  },
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
+    "message": "Kun automaattinen esikatselu Hoverissa on käytössä, tämä on viive ennen esikatselun näyttämistä."
+  },
+  "_Advanced__Force_Preview": {
+    "message": "[Advanced] Force -esikatselu"
+  },
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
+    "message": "Sivustoille, jotka ** todella ** eivät halua esikatselua (esim. Stackoverflow.com), tämä pakottaa esikatselun. Nerd-hälytys: Tämä on kehyksen räjähdysmäinen buster."
+  },
+  "_Advanced__Disable_Incognito_Google": {
+    "message": "[Advanced] Poista incognito Google käytöstä"
+  },
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
+    "message": "Oletusarvoisesti käytetyn Google-haun versio on aina allekirjoitettu yksityisyyden ja tietoturvan syistä. Vaikka tämä voi johtaa aina kirjautumiskehotteiden näkemiseen."
+  },
+  "Disable_Previews_on_this_site": {
+    "message": "Poista esikatselut käytöstä tällä sivustolla"
+  },
+  "The_detail_information_about_the_checkbox_here_": {
+    "message": "Yksityiskohtaiset tiedot valintaruudusta täältä."
+  },
+  "Disabled_on_Websites": {
     "message": "Vammaiset verkkosivustoilla"
   },
-  "optionBlockedSitesDesc": {
-    "message": "Laajennus ei toimi näillä sivustoilla. Kirjoita yksi sivusto riviä kohti."
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
+    "message": "Laajennus ei toimi näillä sivustoilla, voit poistaa sivuston käytöstä lisäämällä tähän luetteloon."
+  },
+  "Successfully_updated_settings": {
+    "message": "Päivitetyt asetukset onnistuneesti"
+  },
+  "Search__amp__Link_Preview_Options": {
+    "message": "Haku & amp; Linkin esikatseluasetukset"
+  },
+  "Show_Sample_Preview": {
+    "message": "Näytä näytteen esikatselu"
+  },
+  "Report_an_Issue": {
+    "message": "Ilmoita ongelma"
   }
 }

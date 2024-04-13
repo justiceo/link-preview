@@ -1,52 +1,122 @@
 {
-  "appName": {
+  "@appName": {
     "message": "శోధించండి & లింక్ ప్రివ్యూ",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "లింక్ ప్రివ్యూలు",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "లింక్‌ల ప్రివ్యూలను చూడండి మరియు క్రొత్త ట్యాబ్‌లను తెరవడానికి బదులుగా ఈ ప్రివ్యూయర్‌ను ఉపయోగించి అదే పేజీలో తక్షణమే శోధనలను ప్రదర్శిస్తుంది",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "మేము ఎలా చేస్తున్నాము?"
+  "@testMarkup": {
+    "message": "<div> <p> హలో వరల్డ్ </p> ఇది వెబ్ </div> యొక్క <strong> భాష </strong>"
   },
-  "fdbkCareToShare": {
-    "message": "నీకు నచ్చినందుకు సంతోషం! మీరు ❤ భాగస్వామ్యం చేయడానికి మాకు సహాయం చేయగలరా?"
+  "Search_engine": {
+    "message": "శోధన యంత్రము"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "మేము ఎలా మెరుగుపరచగలం?"
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
+    "message": "ఇన్లైన్ శోధన ప్రివ్యూల కోసం ఉపయోగించబడే సెర్చ్ ఇంజన్."
   },
-  "fdbkThanks": {
-    "message": "అభిప్రాయము తెలిపినందుకు ధన్యవాదములు!"
+  "Google_Search": {
+    "message": "గూగుల్ శోధన"
   },
-  "fdbkRateOnWebstore": {
-    "message": "వెబ్‌స్టోర్‌లో రేటు"
+  "Bing_Search": {
+    "message": "బింగ్ శోధన"
   },
-  "fdbkNoResponse": {
-    "message": "లేదు"
+  "Yahoo_Search": {
+    "message": "యాహూ శోధన"
   },
-  "fdbkSumbit": {
-    "message": "సమర్పించండి"
+  "Baidu_Search": {
+    "message": "బైడు శోధన"
   },
-  "reportAnIssue": {
-    "message": "ఒక సమస్యను నివేదించండి",
-    "description": "Button text for reporting an issue"
+  "Yandex_Search": {
+    "message": "యాండెక్స్ శోధన"
   },
-  "showDemo": {
-    "message": "డెమో షో",
-    "description": "Button text for showing demo"
+  "Preview_Width____": {
+    "message": "ప్రివ్యూ వెడల్పు (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "విజయవంతంగా నవీకరించబడిన సెట్టింగులు"
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
+    "message": "పేజీకి సంబంధించి ప్రివ్యూ ప్యానెల్ యొక్క వెడల్పు."
   },
-  "optionBlockedSites": {
+  "Preview_Height____": {
+    "message": "ప్రివ్యూ ఎత్తు (%)"
+  },
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
+    "message": "పేజీకి సంబంధించి ప్రివ్యూ ప్యానెల్ యొక్క ఎత్తు."
+  },
+  "Panel_Position": {
+    "message": "ప్యానెల్ స్థానం"
+  },
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
+    "message": "ప్రివ్యూను ప్రదర్శించే పేజీ వైపు."
+  },
+  "Right_side": {
+    "message": "కుడి వైపు"
+  },
+  "Left_side": {
+    "message": "ఎడమ వైపు"
+  },
+  "Close_on_Escape_Key": {
+    "message": "ఎస్కేప్ కీపై మూసివేయండి"
+  },
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
+    "message": "ప్రివ్యూ ప్యానెల్‌ను మూసివేయడానికి ESC (ఎస్కేప్) కీని ఉపయోగించండి."
+  },
+  "Automatically_Hide_Previews": {
+    "message": "స్వయంచాలకంగా ప్రివ్యూలను దాచండి"
+  },
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
+    "message": "మీరు దూరంగా స్క్రోల్ చేసినప్పుడు లేదా ప్రధాన పేజీతో సంభాషించేటప్పుడు ప్రివ్యూ ప్యానెల్‌ను దాచిపెడుతుంది."
+  },
+  "Preview_in_Side_Panel": {
+    "message": "సైడ్ ప్యానెల్‌లో ప్రివ్యూ"
+  },
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
+    "message": "ఫ్లోటింగ్ బాక్స్‌కు బదులుగా క్రోమ్ సైడ్ ప్యానెల్‌లో వీక్షణను ప్రదర్శిస్తుంది."
+  },
+  "Preview_on_Hover_Delay": {
+    "message": "ప్రివ్యూ-ఆన్-హోవర్ ఆలస్యం"
+  },
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
+    "message": "హోవర్‌పై ఆటోమేటిక్ ప్రివ్యూ ప్రారంభించబడినప్పుడు, ప్రివ్యూ చూపబడటానికి ముందు ఇది ఆలస్యం."
+  },
+  "_Advanced__Force_Preview": {
+    "message": "[అధునాతన] ఫోర్స్ ప్రివ్యూ"
+  },
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
+    "message": "** నిజంగా ** పరిదృశ్యం చేయకూడదనుకునే వెబ్‌సైట్ల కోసం (ఉదా. స్టాక్‌ఓవర్‌ఫ్లో.కామ్) ఇది ప్రివ్యూను బలవంతం చేస్తుంది. తానే చెప్పుకున్నట్టూ హెచ్చరిక: ఇది ఫ్రేమ్-బస్టింగ్ బస్టర్."
+  },
+  "_Advanced__Disable_Incognito_Google": {
+    "message": "[అధునాతన] అజ్ఞాత Google ని నిలిపివేయండి"
+  },
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
+    "message": "అప్రమేయంగా, ఉపయోగించిన గూగుల్ సెర్చ్ యొక్క సంస్కరణ గోప్యత మరియు భద్రతా కారణాల కోసం ఎల్లప్పుడూ సైన్-అవుట్ అవుతుంది. ఇది ఎల్లప్పుడూ సైన్-ఇన్ ప్రాంప్ట్‌లను చూడటం వల్ల కావచ్చు."
+  },
+  "Disable_Previews_on_this_site": {
+    "message": "ఈ సైట్‌లో ప్రివ్యూలను నిలిపివేయండి"
+  },
+  "The_detail_information_about_the_checkbox_here_": {
+    "message": "చెక్‌బాక్స్ గురించి వివరాల సమాచారం ఇక్కడ."
+  },
+  "Disabled_on_Websites": {
     "message": "వెబ్‌సైట్లలో నిలిపివేయబడింది"
   },
-  "optionBlockedSitesDesc": {
-    "message": "ఈ సైట్లలో పొడిగింపు అమలు చేయదు. ప్రతి పంక్తికి ఒక సైట్‌ను నమోదు చేయండి."
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
+    "message": "పొడిగింపు ఈ సైట్‌లలో అమలు చేయదు, మీరు ఈ జాబితాకు జోడించడం ద్వారా సైట్‌ను నిలిపివేయవచ్చు."
+  },
+  "Successfully_updated_settings": {
+    "message": "విజయవంతంగా నవీకరించబడిన సెట్టింగులు"
+  },
+  "Search__amp__Link_Preview_Options": {
+    "message": "శోధన & amp; లింక్ ప్రివ్యూ ఎంపికలు"
+  },
+  "Show_Sample_Preview": {
+    "message": "నమూనా ప్రివ్యూ చూపించు"
+  },
+  "Report_an_Issue": {
+    "message": "ఒక సమస్యను నివేదించండి"
   }
 }

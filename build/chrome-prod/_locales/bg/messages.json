@@ -1,52 +1,122 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Преглед на търсенето и връзката",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Визуализация на връзки",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Вижте визуализации на връзки и незабавно извършват търсения на същата страница, използвайки този визуатор, вместо да отваряте нови раздели",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Как сме?"
+  "@testMarkup": {
+    "message": "<div> <p> здравей свят </p> Това е <strong> езикът </strong> на мрежата </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Радвам се, че ти харесва! Можете ли да ни помогнете да споделим ❤?"
+  "Search_engine": {
+    "message": "Търсачка"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Как можем да се подобрим?"
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
+    "message": "Търсачката, която ще бъде използвана за вградени визуализации за търсене."
   },
-  "fdbkThanks": {
-    "message": "Благодаря за обратната връзка!"
+  "Google_Search": {
+    "message": "Търсене в Google"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Оценете на WebStore"
+  "Bing_Search": {
+    "message": "Търсене на бинг"
   },
-  "fdbkNoResponse": {
-    "message": "Не"
+  "Yahoo_Search": {
+    "message": "Yahoo търсене"
   },
-  "fdbkSumbit": {
-    "message": "Изпращане"
+  "Baidu_Search": {
+    "message": "BAIDU SEACK"
   },
-  "reportAnIssue": {
-    "message": "Докладвайте проблем",
-    "description": "Button text for reporting an issue"
+  "Yandex_Search": {
+    "message": "Yandex търсене"
   },
-  "showDemo": {
-    "message": "Покажи демонстрация",
-    "description": "Button text for showing demo"
+  "Preview_Width____": {
+    "message": "Визуализация на ширината (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Успешно актуализирани настройки"
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Ширината на панела за визуализация спрямо страницата."
   },
-  "optionBlockedSites": {
+  "Preview_Height____": {
+    "message": "Визуализация на височината (%)"
+  },
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Височината на панела за визуализация спрямо страницата."
+  },
+  "Panel_Position": {
+    "message": "Позиция на панела"
+  },
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
+    "message": "Отстрани на страницата, в която да се покаже визуализацията."
+  },
+  "Right_side": {
+    "message": "Правилната страна"
+  },
+  "Left_side": {
+    "message": "Лява страна"
+  },
+  "Close_on_Escape_Key": {
+    "message": "Затворете клавиша Escape"
+  },
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
+    "message": "Използвайте клавиша ESC (ESCAPE), за да затворите панела за визуализация."
+  },
+  "Automatically_Hide_Previews": {
+    "message": "Автоматично скрийте визуализации"
+  },
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
+    "message": "Скрийте панела за визуализация, когато превъртите далеч или взаимодействате с основната страница."
+  },
+  "Preview_in_Side_Panel": {
+    "message": "Визуализация в страничния панел"
+  },
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
+    "message": "Показва изгледа в страничния панел на Chrome вместо плаваща кутия."
+  },
+  "Preview_on_Hover_Delay": {
+    "message": "Преглед на забавяне на хол"
+  },
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
+    "message": "Когато е активиран автоматичен преглед на Hover, това е забавянето преди да се покаже визуализацията."
+  },
+  "_Advanced__Force_Preview": {
+    "message": "[Advanced] Преглед на силата"
+  },
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
+    "message": "За уебсайтове, които ** наистина ** не искат да бъдат визуализирани (например stackoverflow.com) това принуждава визуализация. Ard Alert: Това е бустер на кадри."
+  },
+  "_Advanced__Disable_Incognito_Google": {
+    "message": "[Разширено] Деактивирайте Incognito Google"
+  },
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
+    "message": "По подразбиране версията на използваното търсене в Google винаги се подписва от причини за поверителност и сигурност. Въпреки че това може да доведе до това, че винаги виждате подкани за влизане."
+  },
+  "Disable_Previews_on_this_site": {
+    "message": "Деактивирайте визуализациите на този сайт"
+  },
+  "The_detail_information_about_the_checkbox_here_": {
+    "message": "Подробната информация за квадратчето тук."
+  },
+  "Disabled_on_Websites": {
     "message": "Деактивирани на уебсайтове"
   },
-  "optionBlockedSitesDesc": {
-    "message": "Разширението няма да работи на тези сайтове. Въведете един сайт на ред."
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
+    "message": "Разширението няма да се изпълнява на тези сайтове, можете да деактивирате сайт, като добавите към този списък."
+  },
+  "Successfully_updated_settings": {
+    "message": "Успешно актуализирани настройки"
+  },
+  "Search__amp__Link_Preview_Options": {
+    "message": "Търсене & amp; Опции за визуализация на връзки"
+  },
+  "Show_Sample_Preview": {
+    "message": "Показване на примерния визуализация"
+  },
+  "Report_an_Issue": {
+    "message": "Докладвайте проблем"
   }
 }

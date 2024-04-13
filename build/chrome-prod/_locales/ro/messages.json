@@ -1,52 +1,122 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Previzualizare căutare și link",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Previzualizări ale linkului",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Consultați previzualizările linkurilor și efectuați instantaneu căutări pe aceeași pagină folosind acest previzualizare în loc să deschideți noi file",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Ce mai facem?"
+  "@testMarkup": {
+    "message": "<div> <p> hello world </p> Acesta este <strong> limbajul </strong> al web </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Bucur că vă place! Ne puteți ajuta să împărtășim ❤️?"
+  "Search_engine": {
+    "message": "Motor de căutare"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Cum ne putem îmbunătăți?"
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
+    "message": "Motorul de căutare care ar fi utilizat pentru previzualizări de căutare în linie."
   },
-  "fdbkThanks": {
-    "message": "Multumesc pentru feedback!"
+  "Google_Search": {
+    "message": "Cautare Google"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Evaluarea pe magazinul web"
+  "Bing_Search": {
+    "message": "Căutare bing"
   },
-  "fdbkNoResponse": {
-    "message": "Nu"
+  "Yahoo_Search": {
+    "message": "Căutare yahoo"
   },
-  "fdbkSumbit": {
-    "message": "Trimite"
+  "Baidu_Search": {
+    "message": "Căutare Baidu"
   },
-  "reportAnIssue": {
-    "message": "Raportează o problemă",
-    "description": "Button text for reporting an issue"
+  "Yandex_Search": {
+    "message": "Căutare yandex"
   },
-  "showDemo": {
-    "message": "Arată demo",
-    "description": "Button text for showing demo"
+  "Preview_Width____": {
+    "message": "Previzualizare lățime (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Setări actualizate cu succes"
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Lățimea panoului de previzualizare în raport cu pagina."
   },
-  "optionBlockedSites": {
+  "Preview_Height____": {
+    "message": "Previzualizare înălțime (%)"
+  },
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Înălțimea panoului de previzualizare în raport cu pagina."
+  },
+  "Panel_Position": {
+    "message": "Poziția panoului"
+  },
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
+    "message": "Partea laterală a paginii în care se afișează previzualizarea."
+  },
+  "Right_side": {
+    "message": "Partea dreapta"
+  },
+  "Left_side": {
+    "message": "Partea stanga"
+  },
+  "Close_on_Escape_Key": {
+    "message": "Închideți cheia de evacuare"
+  },
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
+    "message": "Utilizați tasta ESC (Escape) pentru a închide panoul de previzualizare."
+  },
+  "Automatically_Hide_Previews": {
+    "message": "Ascunde automat previzualizările"
+  },
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
+    "message": "Ascunde panoul de previzualizare când derulați sau interacționați cu pagina principală."
+  },
+  "Preview_in_Side_Panel": {
+    "message": "Previzualizare în panoul lateral"
+  },
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
+    "message": "Afișează vizualizarea în panoul lateral crom în loc de o cutie plutitoare."
+  },
+  "Preview_on_Hover_Delay": {
+    "message": "Previzualizare întârziere"
+  },
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
+    "message": "Când este activată previzualizarea automată pe hover, aceasta este întârzierea înainte de afișarea previzualizării."
+  },
+  "_Advanced__Force_Preview": {
+    "message": "[Avansat] previzualizare forță"
+  },
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
+    "message": "Pentru site -urile web care ** într -adevăr ** nu doresc să fie previzualizate (de exemplu, stackoverflow.com), acest lucru forțează o previzualizare. Nerd Alert: Acesta este un buster care se bazează pe cadru."
+  },
+  "_Advanced__Disable_Incognito_Google": {
+    "message": "[Avansat] Dezactivați incognito Google"
+  },
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
+    "message": "În mod implicit, versiunea de căutare Google folosită este întotdeauna semnată din motive de confidențialitate și securitate. Deși acest lucru poate duce la înregistrarea întotdeauna de prompturi de conectare."
+  },
+  "Disable_Previews_on_this_site": {
+    "message": "Dezactivați previzualizările pe acest site"
+  },
+  "The_detail_information_about_the_checkbox_here_": {
+    "message": "Informațiile detaliate despre caseta de selectare aici."
+  },
+  "Disabled_on_Websites": {
     "message": "Dezactivat pe site -uri web"
   },
-  "optionBlockedSitesDesc": {
-    "message": "Extensia nu va rula pe aceste site -uri. Introduceți un site pe linie."
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
+    "message": "Extensia nu va rula pe aceste site -uri, puteți dezactiva un site adăugând la această listă."
+  },
+  "Successfully_updated_settings": {
+    "message": "Setări actualizate cu succes"
+  },
+  "Search__amp__Link_Preview_Options": {
+    "message": "Căutare & amp; Opțiuni de previzualizare a linkului"
+  },
+  "Show_Sample_Preview": {
+    "message": "Afișați previzualizarea eșantionului"
+  },
+  "Report_an_Issue": {
+    "message": "Raportează o problemă"
   }
 }

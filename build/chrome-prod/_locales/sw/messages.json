@@ -1,52 +1,122 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Tafuta na hakikisho la Kiungo",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Hakikisho la kiunga",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Tazama hakikisho la viungo na hufanya utaftaji mara moja kwenye ukurasa huo huo ukitumia kiidhinishaji hiki badala ya kufungua tabo mpya",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Tunaendeleaje?"
+  "@testMarkup": {
+    "message": "<div> <p> Hello World </p> Hii ndio lugha ya <strong> </strong> ya wavuti </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Nimefurahi kuipenda! Je! Unaweza kutusaidia kushiriki ❤️?"
+  "Search_engine": {
+    "message": "Injini ya utaftaji"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Tunawezaje kuboresha?"
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
+    "message": "Injini ya utaftaji ambayo itatumika kwa hakikisho za utaftaji wa ndani."
   },
-  "fdbkThanks": {
-    "message": "Asante kwa maoni!"
+  "Google_Search": {
+    "message": "Utaftaji wa Google"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Kiwango kwenye duka la wavuti"
+  "Bing_Search": {
+    "message": "Utafutaji wa Bing"
   },
-  "fdbkNoResponse": {
-    "message": "Hapana"
+  "Yahoo_Search": {
+    "message": "Utaftaji wa Yahoo"
   },
-  "fdbkSumbit": {
-    "message": "Wasilisha"
+  "Baidu_Search": {
+    "message": "Utaftaji wa Baidu"
   },
-  "reportAnIssue": {
-    "message": "Ripoti suala",
-    "description": "Button text for reporting an issue"
+  "Yandex_Search": {
+    "message": "Utaftaji wa Yandex"
   },
-  "showDemo": {
-    "message": "Onyesha demo",
-    "description": "Button text for showing demo"
+  "Preview_Width____": {
+    "message": "Hakiki upana wa hakiki (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Mipangilio iliyosasishwa kwa mafanikio"
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Upana wa jopo la hakikisho la jamaa na ukurasa."
   },
-  "optionBlockedSites": {
+  "Preview_Height____": {
+    "message": "Hakiki urefu (%)"
+  },
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Urefu wa jopo la hakikisho jamaa na ukurasa."
+  },
+  "Panel_Position": {
+    "message": "Msimamo wa jopo"
+  },
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
+    "message": "Upande wa ukurasa ambao kuonyesha hakiki."
+  },
+  "Right_side": {
+    "message": "Upande wa kulia"
+  },
+  "Left_side": {
+    "message": "Upande wa kushoto"
+  },
+  "Close_on_Escape_Key": {
+    "message": "Karibu kwenye ufunguo wa kutoroka"
+  },
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
+    "message": "Tumia kitufe cha ESC (kutoroka) kufunga jopo la hakiki."
+  },
+  "Automatically_Hide_Previews": {
+    "message": "Hakiki hakiki hakiki"
+  },
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
+    "message": "Huficha paneli ya hakiki wakati unapoenda mbali au kuingiliana na ukurasa kuu."
+  },
+  "Preview_in_Side_Panel": {
+    "message": "Hakiki katika jopo la upande"
+  },
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
+    "message": "Inaonyesha mtazamo katika jopo la upande wa Chrome badala ya sanduku la kuelea."
+  },
+  "Preview_on_Hover_Delay": {
+    "message": "Hakiki kuchelewesha-kwa-Hover"
+  },
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
+    "message": "Wakati hakiki ya moja kwa moja kwenye Hover imewezeshwa, huu ni kuchelewesha kabla ya hakikisho kuonyeshwa."
+  },
+  "_Advanced__Force_Preview": {
+    "message": "[Advanced] Hakiki ya Nguvu"
+  },
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
+    "message": "Kwa wavuti ambazo ** kweli ** hazitaki hakikisho (k.m. stackoverflow.com) hii inalazimisha hakiki. Arifa ya NERD: Hii ni buster-busting."
+  },
+  "_Advanced__Disable_Incognito_Google": {
+    "message": "[Advanced] Lemaza Google Incognito"
+  },
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
+    "message": "Kwa msingi, toleo la utaftaji wa google linalotumiwa kila wakati linasainiwa kwa sababu za faragha na usalama. Ingawa hii inaweza kusababisha kuona kila wakati wa kuingia."
+  },
+  "Disable_Previews_on_this_site": {
+    "message": "Lemaza hakiki kwenye wavuti hii"
+  },
+  "The_detail_information_about_the_checkbox_here_": {
+    "message": "Maelezo ya kina juu ya kisanduku cha kuangalia hapa."
+  },
+  "Disabled_on_Websites": {
     "message": "Walemavu kwenye wavuti"
   },
-  "optionBlockedSitesDesc": {
-    "message": "Ugani hautaendesha kwenye tovuti hizi. Ingiza tovuti moja kwa kila mstari."
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
+    "message": "Ugani hautaendesha kwenye tovuti hizi, unaweza kulemaza tovuti kwa kuongeza kwenye orodha hii."
+  },
+  "Successfully_updated_settings": {
+    "message": "Mipangilio iliyosasishwa kwa mafanikio"
+  },
+  "Search__amp__Link_Preview_Options": {
+    "message": "Tafuta & amp; Chaguzi za hakikisho la kiunga"
+  },
+  "Show_Sample_Preview": {
+    "message": "Onyesha hakikisho la mfano"
+  },
+  "Report_an_Issue": {
+    "message": "Ripoti suala"
   }
 }

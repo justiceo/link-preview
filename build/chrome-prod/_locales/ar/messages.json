@@ -1,52 +1,122 @@
 {
-  "appName": {
+  "@appName": {
     "message": "معاينة البحث والرابط",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "معاينات الارتباط",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "راجع معاينات الروابط ويقوم على الفور بإجراء عمليات البحث على نفس الصفحة باستخدام هذه المعاينة بدلاً من فتح علامات تبويب جديدة",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "كيف نفعل؟"
+  "@testMarkup": {
+    "message": "<viv> <p> Hello World </p> هذه هي اللغة <strong> </strong> من الويب </div>"
   },
-  "fdbkCareToShare": {
-    "message": "سعيد انه اعجبك! هل يمكنك مساعدتنا في مشاركة ❤؟"
+  "Search_engine": {
+    "message": "محرك البحث"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "كيف يمكن أن نتحسن؟"
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
+    "message": "محرك البحث الذي سيتم استخدامه لمعاينات البحث داخل الخط."
   },
-  "fdbkThanks": {
-    "message": "شكرا على ملاحظاتك!"
+  "Google_Search": {
+    "message": "بحث جوجل"
   },
-  "fdbkRateOnWebstore": {
-    "message": "معدل على WebStore"
+  "Bing_Search": {
+    "message": "البحث بينج"
   },
-  "fdbkNoResponse": {
-    "message": "لا"
+  "Yahoo_Search": {
+    "message": "البحث ياهو"
   },
-  "fdbkSumbit": {
-    "message": "يُقدِّم"
+  "Baidu_Search": {
+    "message": "بحث بايدو"
   },
-  "reportAnIssue": {
-    "message": "بلغ عن خطأ",
-    "description": "Button text for reporting an issue"
+  "Yandex_Search": {
+    "message": "البحث Yandex"
   },
-  "showDemo": {
-    "message": "عرض العرض التوضيحي",
-    "description": "Button text for showing demo"
+  "Preview_Width____": {
+    "message": "عرض المعاينة (٪)"
   },
-  "optionsSaveSuccess": {
-    "message": "الإعدادات التي تم تحديثها بنجاح"
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
+    "message": "عرض لوحة المعاينة بالنسبة للصفحة."
   },
-  "optionBlockedSites": {
+  "Preview_Height____": {
+    "message": "ارتفاع معاينة (٪)"
+  },
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
+    "message": "ارتفاع لوحة المعاينة بالنسبة إلى الصفحة."
+  },
+  "Panel_Position": {
+    "message": "وضع لوحة"
+  },
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
+    "message": "جانب الصفحة لعرض المعاينة."
+  },
+  "Right_side": {
+    "message": "الجانب الأيمن"
+  },
+  "Left_side": {
+    "message": "الجهه اليسرى"
+  },
+  "Close_on_Escape_Key": {
+    "message": "أغلق على مفتاح الهروب"
+  },
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
+    "message": "استخدم مفتاح ESC (Escape) لإغلاق لوحة المعاينة."
+  },
+  "Automatically_Hide_Previews": {
+    "message": "إخفاء المعاينات تلقائيا"
+  },
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
+    "message": "يخفي لوحة المعاينة عند التمرير أو التفاعل مع الصفحة الرئيسية."
+  },
+  "Preview_in_Side_Panel": {
+    "message": "معاينة في اللوحة الجانبية"
+  },
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
+    "message": "يعرض العرض في اللوحة الجانبية للكروم بدلاً من صندوق عائم."
+  },
+  "Preview_on_Hover_Delay": {
+    "message": "معاينة التأخير على محط"
+  },
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
+    "message": "عند تمكين المعاينة التلقائية على التحوم ، هذا هو التأخير قبل عرض المعاينة."
+  },
+  "_Advanced__Force_Preview": {
+    "message": "[متقدم] معاينة القوة"
+  },
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
+    "message": "بالنسبة لمواقع الويب التي ** حقًا ** لا تريد معاينة (على سبيل المثال StackOverFlow.com) ، فإن هذا يفرض معاينة. تنبيه الطالب الذي يذاكر كثيرا: هذا هو buster خدعة الإطار."
+  },
+  "_Advanced__Disable_Incognito_Google": {
+    "message": "[متقدم] تعطيل التخفي google"
+  },
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
+    "message": "افتراضيًا ، يتم دائمًا توقيع إصدار Google Search المستخدم لأسباب الخصوصية والأمن. على الرغم من أن هذا قد يؤدي دائمًا إلى رؤية مطالبات تسجيل الدخول."
+  },
+  "Disable_Previews_on_this_site": {
+    "message": "تعطيل المعاينات على هذا الموقع"
+  },
+  "The_detail_information_about_the_checkbox_here_": {
+    "message": "معلومات التفاصيل حول مربع الاختيار هنا."
+  },
+  "Disabled_on_Websites": {
     "message": "معاق على مواقع الويب"
   },
-  "optionBlockedSitesDesc": {
-    "message": "التمديد لن يعمل على هذه المواقع. أدخل موقع واحد لكل سطر."
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
+    "message": "لن يعمل التمديد على هذه المواقع ، يمكنك تعطيل موقع بإضافة إلى هذه القائمة."
+  },
+  "Successfully_updated_settings": {
+    "message": "الإعدادات التي تم تحديثها بنجاح"
+  },
+  "Search__amp__Link_Preview_Options": {
+    "message": "البحث & amp ؛ خيارات معاينة الارتباط"
+  },
+  "Show_Sample_Preview": {
+    "message": "عرض عينة معاينة"
+  },
+  "Report_an_Issue": {
+    "message": "بلغ عن خطأ"
   }
 }

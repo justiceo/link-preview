@@ -1,52 +1,122 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Xem trước tìm kiếm & liên kết",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Xem trước liên kết",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Xem các bản xem trước của các liên kết và thực hiện ngay các tìm kiếm trên cùng một trang bằng cách sử dụng trình xem trước này thay vì mở các tab mới",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Chúng ta đang làm thế nào?"
+  "@testMarkup": {
+    "message": "<DIV> <p> Xin chào thế giới </p> Đây là ngôn ngữ <strong>"
   },
-  "fdbkCareToShare": {
-    "message": "Vui vì bạn thích nó! Bạn có thể giúp chúng tôi chia sẻ ❤?"
+  "Search_engine": {
+    "message": "Máy tìm kiếm"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Chúng ta có thể cải thiện như thế nào?"
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
+    "message": "Công cụ tìm kiếm sẽ được sử dụng để xem trước tìm kiếm nội tuyến."
   },
-  "fdbkThanks": {
-    "message": "Cảm ơn vì bạn đã phản hồi!"
+  "Google_Search": {
+    "message": "Tìm kiếm của Google"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Đánh giá trên ststore"
+  "Bing_Search": {
+    "message": "Tìm kiếm bing"
   },
-  "fdbkNoResponse": {
-    "message": "KHÔNG"
+  "Yahoo_Search": {
+    "message": "Tìm kiếm Yahoo"
   },
-  "fdbkSumbit": {
-    "message": "Nộp"
+  "Baidu_Search": {
+    "message": "Tìm kiếm Baidu"
   },
-  "reportAnIssue": {
-    "message": "Báo cáo một vấn đề",
-    "description": "Button text for reporting an issue"
+  "Yandex_Search": {
+    "message": "Tìm kiếm Yandex"
   },
-  "showDemo": {
-    "message": "Đưa ra bản chạy thử",
-    "description": "Button text for showing demo"
+  "Preview_Width____": {
+    "message": "Chiều rộng xem trước (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Cập nhật cài đặt thành công"
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Chiều rộng của bảng xem trước so với trang."
   },
-  "optionBlockedSites": {
+  "Preview_Height____": {
+    "message": "Chiều cao xem trước (%)"
+  },
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Chiều cao của bảng xem trước so với trang."
+  },
+  "Panel_Position": {
+    "message": "Vị trí bảng điều khiển"
+  },
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
+    "message": "Phía của trang để hiển thị bản xem trước."
+  },
+  "Right_side": {
+    "message": "Bên phải"
+  },
+  "Left_side": {
+    "message": "Bên trái"
+  },
+  "Close_on_Escape_Key": {
+    "message": "Đóng trên Key Escape Key"
+  },
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
+    "message": "Sử dụng phím ESC (Escape) để đóng bảng xem trước."
+  },
+  "Automatically_Hide_Previews": {
+    "message": "Tự động ẩn xem trước"
+  },
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
+    "message": "Ẩn bảng xem trước khi bạn cuộn đi hoặc tương tác với trang chính."
+  },
+  "Preview_in_Side_Panel": {
+    "message": "Xem trước trong bảng điều khiển bên"
+  },
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
+    "message": "Hiển thị chế độ xem trong bảng điều khiển bên Chrome thay vì hộp nổi."
+  },
+  "Preview_on_Hover_Delay": {
+    "message": "Trước trễ trên hover"
+  },
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
+    "message": "Khi xem trước tự động trên Hover được bật, đây là độ trễ trước khi xem trước được hiển thị."
+  },
+  "_Advanced__Force_Preview": {
+    "message": "[Nâng cao] Xem trước lực lượng"
+  },
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
+    "message": "Đối với các trang web ** thực sự ** không muốn được xem trước (ví dụ: stackoverflow.com), điều này buộc một bản xem trước. NERD ALERT: Đây là một Buster có khung hình."
+  },
+  "_Advanced__Disable_Incognito_Google": {
+    "message": "[Nâng cao] Vô hiệu hóa google ẩn danh"
+  },
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
+    "message": "Theo mặc định, phiên bản tìm kiếm của Google được sử dụng luôn được đăng xuất vì lý do bảo mật và bảo mật. Mặc dù điều này có thể dẫn đến việc luôn luôn thấy các lời nhắc đăng nhập."
+  },
+  "Disable_Previews_on_this_site": {
+    "message": "Tắt bản xem trước trên trang web này"
+  },
+  "The_detail_information_about_the_checkbox_here_": {
+    "message": "Thông tin chi tiết về hộp kiểm ở đây."
+  },
+  "Disabled_on_Websites": {
     "message": "Bị vô hiệu hóa trên các trang web"
   },
-  "optionBlockedSitesDesc": {
-    "message": "Tiện ích mở rộng sẽ không chạy trên các trang web này. Nhập một trang web trên mỗi dòng."
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
+    "message": "Tiện ích mở rộng sẽ không chạy trên các trang web này, bạn có thể vô hiệu hóa một trang web bằng cách thêm vào danh sách này."
+  },
+  "Successfully_updated_settings": {
+    "message": "Cập nhật cài đặt thành công"
+  },
+  "Search__amp__Link_Preview_Options": {
+    "message": "Tìm kiếm & amp; Tùy chọn xem trước liên kết"
+  },
+  "Show_Sample_Preview": {
+    "message": "Hiển thị xem trước mẫu"
+  },
+  "Report_an_Issue": {
+    "message": "Báo cáo một vấn đề"
   }
 }

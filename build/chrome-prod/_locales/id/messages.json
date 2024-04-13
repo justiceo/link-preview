@@ -1,52 +1,122 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Pencarian & Pratinjau Tautan",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Pratinjau tautan",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Lihat pratinjau tautan dan langsung melakukan pencarian di halaman yang sama menggunakan pratinjau ini alih -alih membuka tab baru",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Bagaimana kabar kita?"
+  "@testMarkup": {
+    "message": "<div> <p> Halo dunia </p> Ini adalah bahasa <strong> </strong> dari web </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Senang kamu menyukainya! Bisakah Anda membantu kami membagikan ❤️?"
+  "Search_engine": {
+    "message": "Mesin pencari"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Bagaimana kita bisa meningkatkan?"
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
+    "message": "Mesin pencari yang akan digunakan untuk pratinjau pencarian inline."
   },
-  "fdbkThanks": {
-    "message": "Terima kasih untuk umpan baliknya!"
+  "Google_Search": {
+    "message": "Pencarian Google"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Nilai di Webstore"
+  "Bing_Search": {
+    "message": "Pencarian Bing"
   },
-  "fdbkNoResponse": {
-    "message": "TIDAK"
+  "Yahoo_Search": {
+    "message": "Pencarian Yahoo"
   },
-  "fdbkSumbit": {
-    "message": "Kirim"
+  "Baidu_Search": {
+    "message": "Pencarian Baidu"
   },
-  "reportAnIssue": {
-    "message": "Melaporkan masalah",
-    "description": "Button text for reporting an issue"
+  "Yandex_Search": {
+    "message": "Pencarian Yandex"
   },
-  "showDemo": {
-    "message": "Tampilkan demo",
-    "description": "Button text for showing demo"
+  "Preview_Width____": {
+    "message": "Pratinjau lebar (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Pengaturan yang berhasil diperbarui"
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Lebar panel pratinjau relatif terhadap halaman."
   },
-  "optionBlockedSites": {
+  "Preview_Height____": {
+    "message": "Tinggi pratinjau (%)"
+  },
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Ketinggian panel pratinjau relatif terhadap halaman."
+  },
+  "Panel_Position": {
+    "message": "Posisi panel"
+  },
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
+    "message": "Sisi halaman untuk menampilkan pratinjau."
+  },
+  "Right_side": {
+    "message": "Sisi kanan"
+  },
+  "Left_side": {
+    "message": "Sisi kiri"
+  },
+  "Close_on_Escape_Key": {
+    "message": "Tutup di Escape Key"
+  },
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
+    "message": "Gunakan kunci ESC (Escape) untuk menutup panel pratinjau."
+  },
+  "Automatically_Hide_Previews": {
+    "message": "Secara otomatis menyembunyikan pratinjau"
+  },
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
+    "message": "Menyembunyikan panel pratinjau saat Anda menggulir atau berinteraksi dengan halaman utama."
+  },
+  "Preview_in_Side_Panel": {
+    "message": "Pratinjau di panel samping"
+  },
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
+    "message": "Menampilkan tampilan di panel samping krom, bukan kotak mengambang."
+  },
+  "Preview_on_Hover_Delay": {
+    "message": "Pratinjau penundaan-ke-hover"
+  },
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
+    "message": "Ketika pratinjau otomatis pada hover diaktifkan, ini adalah penundaan sebelum pratinjau ditampilkan."
+  },
+  "_Advanced__Force_Preview": {
+    "message": "[Lanjutan] Pratinjau Force"
+  },
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
+    "message": "Untuk situs web yang ** benar -benar ** tidak ingin dipratinjau (mis. Stackoverflow.com) Ini memaksa pratinjau. NERD ALERT: Ini adalah Buster yang menghindarkan bingkai."
+  },
+  "_Advanced__Disable_Incognito_Google": {
+    "message": "[Lanjutan] Nonaktifkan Penyamaran Google"
+  },
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
+    "message": "Secara default, versi pencarian Google yang digunakan selalu ditandatangani untuk alasan privasi dan keamanan. Meskipun ini dapat menyebabkan selalu melihat permintaan masuk."
+  },
+  "Disable_Previews_on_this_site": {
+    "message": "Nonaktifkan pratinjau di situs ini"
+  },
+  "The_detail_information_about_the_checkbox_here_": {
+    "message": "Informasi detail tentang kotak centang di sini."
+  },
+  "Disabled_on_Websites": {
     "message": "Dinonaktifkan di situs web"
   },
-  "optionBlockedSitesDesc": {
-    "message": "Ekstensi tidak akan berjalan di situs -situs ini. Masukkan satu situs per baris."
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
+    "message": "Ekstensi tidak akan berjalan di situs -situs ini, Anda dapat menonaktifkan situs dengan menambahkan ke daftar ini."
+  },
+  "Successfully_updated_settings": {
+    "message": "Pengaturan yang berhasil diperbarui"
+  },
+  "Search__amp__Link_Preview_Options": {
+    "message": "Cari & amp; Opsi Pratinjau Tautan"
+  },
+  "Show_Sample_Preview": {
+    "message": "Tampilkan pratinjau sampel"
+  },
+  "Report_an_Issue": {
+    "message": "Melaporkan masalah"
   }
 }

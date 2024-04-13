@@ -1,52 +1,122 @@
 {
-  "appName": {
+  "@appName": {
     "message": "검색 및 링크 미리보기",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "링크 미리보기",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "링크 미리보기를보고 새 탭을 열지 않고이 미리보기를 사용하여 같은 페이지에서 검색을 즉시 수행합니다.",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "일은 잘되고 있니?"
+  "@testMarkup": {
+    "message": "<div> <p> Hello World </p> 이것은 웹의 <strong> 언어 </strong>입니다 </div>"
   },
-  "fdbkCareToShare": {
-    "message": "당신이 그것을 좋아해서 다행입니다! 우리가 us️를 공유하도록 도와 줄 수 있습니까?"
+  "Search_engine": {
+    "message": "검색 엔진"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "우리는 어떻게 개선 할 수 있습니까?"
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
+    "message": "인라인 검색 미리보기에 사용되는 검색 엔진."
   },
-  "fdbkThanks": {
-    "message": "의견을 보내 주셔서 감사합니다!"
+  "Google_Search": {
+    "message": "구글 검색"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Webstore의 요금"
+  "Bing_Search": {
+    "message": "빙 검색"
   },
-  "fdbkNoResponse": {
-    "message": "아니요"
+  "Yahoo_Search": {
+    "message": "야후 검색"
   },
-  "fdbkSumbit": {
-    "message": "제출하다"
+  "Baidu_Search": {
+    "message": "바이두 검색"
   },
-  "reportAnIssue": {
-    "message": "문제를보고하십시오",
-    "description": "Button text for reporting an issue"
+  "Yandex_Search": {
+    "message": "Yandex 검색"
   },
-  "showDemo": {
-    "message": "데모를 보여주십시오",
-    "description": "Button text for showing demo"
+  "Preview_Width____": {
+    "message": "미리보기 너비 (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "설정을 성공적으로 업데이트했습니다"
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
+    "message": "페이지에 대한 미리보기 패널의 너비."
   },
-  "optionBlockedSites": {
+  "Preview_Height____": {
+    "message": "미리보기 높이 (%)"
+  },
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
+    "message": "페이지에 대한 미리보기 패널의 높이."
+  },
+  "Panel_Position": {
+    "message": "패널 위치"
+  },
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
+    "message": "미리보기를 표시 할 페이지 측면."
+  },
+  "Right_side": {
+    "message": "오른쪽"
+  },
+  "Left_side": {
+    "message": "왼쪽"
+  },
+  "Close_on_Escape_Key": {
+    "message": "탈출 키에 닫으십시오"
+  },
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
+    "message": "ESC (Escape) 키를 사용하여 미리보기 패널을 닫습니다."
+  },
+  "Automatically_Hide_Previews": {
+    "message": "미리보기를 자동으로 숨 깁니다"
+  },
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
+    "message": "스크롤하거나 메인 페이지와 상호 작용할 때 미리보기 패널을 숨 깁니다."
+  },
+  "Preview_in_Side_Panel": {
+    "message": "측면 패널에서 미리보기"
+  },
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
+    "message": "떠 다니는 상자 대신 Chrome Side 패널에보기를 표시합니다."
+  },
+  "Preview_on_Hover_Delay": {
+    "message": "미리보기 지연"
+  },
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
+    "message": "호버의 자동 미리보기가 활성화되면 미리보기가 표시되기 전 지연입니다."
+  },
+  "_Advanced__Force_Preview": {
+    "message": "[고급] 힘 미리보기"
+  },
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
+    "message": "** 실제로 ** 미리보기를 원하지 않는 웹 사이트의 경우 (예 : StackoverFlow.com) 미리보기가 강력합니다. 괴상한 경고 : 이것은 프레임 버스트 버스터입니다."
+  },
+  "_Advanced__Disable_Incognito_Google": {
+    "message": "[Advanced] Incognito Google을 비활성화합니다"
+  },
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
+    "message": "기본적으로 사용 된 Google 검색 버전은 항상 개인 정보 및 보안상의 이유로 가입됩니다. 이것은 항상 로그인 프롬프트를 볼 수 있습니다."
+  },
+  "Disable_Previews_on_this_site": {
+    "message": "이 사이트에서 미리보기를 비활성화하십시오"
+  },
+  "The_detail_information_about_the_checkbox_here_": {
+    "message": "확인란에 대한 세부 정보는 여기를 참조하십시오."
+  },
+  "Disabled_on_Websites": {
     "message": "웹 사이트에서 비활성화"
   },
-  "optionBlockedSitesDesc": {
-    "message": "이 사이트에서 확장이 실행되지 않습니다. 줄 당 한 사이트를 입력하십시오."
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
+    "message": "이 사이트에서 확장이 실행되지 않으므로이 목록에 추가하여 사이트를 비활성화 할 수 있습니다."
+  },
+  "Successfully_updated_settings": {
+    "message": "설정을 성공적으로 업데이트했습니다"
+  },
+  "Search__amp__Link_Preview_Options": {
+    "message": "검색 & amp; 링크 미리보기 옵션"
+  },
+  "Show_Sample_Preview": {
+    "message": "샘플 미리보기 표시"
+  },
+  "Report_an_Issue": {
+    "message": "문제를보고하십시오"
   }
 }

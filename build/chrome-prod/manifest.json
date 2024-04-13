@@ -1,9 +1,9 @@
 {
-    "name": "__MSG_appName__",
-    "description": "__MSG_appDesc__",
-    "short_name": "__MSG_appShortName_",
+    "name": "__MSG_@appName__",
+    "description": "__MSG_@appDesc__",
+    "short_name": "__MSG_@appShortName_",
     "homepage_url": "https://betterpreviews.com/",
-    "version": "24.03.08",
+    "version": "24.04.12",
     "manifest_version": 3,
     "default_locale": "en",
     "author": "Justice Ogbonna",

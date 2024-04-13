@@ -1,52 +1,122 @@
 {
-  "appName": {
+  "@appName": {
     "message": "തിരയുക & പ്രിവ്യൂ",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "ലിങ്ക് പ്രിവ്യൂകൾ",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "ലിങ്കുകളുടെ പ്രിവ്യൂകൾ കാണുക, പുതിയ ടാബുകൾ തുറക്കുന്നതിനുപകരം ഈ പ്രിവ്യൂ ഉപയോഗിച്ച് ഇതേ പേജിൽ തിരയുന്നു",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "ഞങ്ങൾ എങ്ങനെ ചെയ്യുന്നു?"
+  "@testMarkup": {
+    "message": "<div> <p> ഹലോ വേൾഡ് </ p> ഇത് വെബിന്റെ </ dive> ന്റെ </ play> ഇതാണ്"
   },
-  "fdbkCareToShare": {
-    "message": "നിങ്ങൾ ഇത് ഇഷ്ടപ്പെട്ടതിൽ സന്തോഷം! ❤️ പങ്കിടാൻ ഞങ്ങളെ സഹായിക്കാമോ?"
+  "Search_engine": {
+    "message": "തിരയല് യന്ത്രം"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "നമുക്ക് എങ്ങനെ മെച്ചപ്പെടുത്താൻ കഴിയും?"
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
+    "message": "ഇൻലൈൻ തിരയൽ തിരനോട്ടത്തിനായി ഉപയോഗിക്കുന്ന തിരയൽ എഞ്ചിൻ."
   },
-  "fdbkThanks": {
-    "message": "ഫീഡ്ബാക്കിന് നന്ദി!"
+  "Google_Search": {
+    "message": "ഗൂഗിളില് തിരയുക"
   },
-  "fdbkRateOnWebstore": {
-    "message": "വെബ്സ്റ്ററിലെ നിരക്ക്"
+  "Bing_Search": {
+    "message": "ബിംഗ് തിരയൽ"
   },
-  "fdbkNoResponse": {
-    "message": "ഇല്ല"
+  "Yahoo_Search": {
+    "message": "Yahoo തിരയൽ"
   },
-  "fdbkSumbit": {
-    "message": "കീഴടങ്ങുക"
+  "Baidu_Search": {
+    "message": "Baidu തിരയൽ"
   },
-  "reportAnIssue": {
-    "message": "ഒരു പ്രശ്നം റിപ്പോർട്ടുചെയ്യുക",
-    "description": "Button text for reporting an issue"
+  "Yandex_Search": {
+    "message": "യന്ഡെക്സ് തിരയൽ"
   },
-  "showDemo": {
-    "message": "ഡെമോ കാണിക്കുക",
-    "description": "Button text for showing demo"
+  "Preview_Width____": {
+    "message": "പ്രിവ്യൂ വീതി (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "ക്രമീകരണങ്ങൾ വിജയകരമായി അപ്ഡേറ്റുചെയ്തു"
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
+    "message": "പേജുമായി ബന്ധപ്പെട്ട പ്രിവ്യൂ പാനലിന്റെ വീതി."
   },
-  "optionBlockedSites": {
+  "Preview_Height____": {
+    "message": "പ്രിവ്യൂ ഉയരം (%)"
+  },
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
+    "message": "പേജുമായി ബന്ധപ്പെട്ട പ്രിവ്യൂ പാനലിന്റെ ഉയരം."
+  },
+  "Panel_Position": {
+    "message": "പാനൽ സ്ഥാനം"
+  },
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
+    "message": "പ്രിവ്യൂ പ്രദർശിപ്പിക്കേണ്ട പേജിന്റെ വശം."
+  },
+  "Right_side": {
+    "message": "വലത് വശം"
+  },
+  "Left_side": {
+    "message": "ഇടത് വശം"
+  },
+  "Close_on_Escape_Key": {
+    "message": "എസ്കേപ്പ് കീയിൽ അടയ്ക്കുക"
+  },
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
+    "message": "പ്രിവ്യൂ പാനൽ അടയ്ക്കുന്നതിന് Esc (scrift) കീ ഉപയോഗിക്കുക."
+  },
+  "Automatically_Hide_Previews": {
+    "message": "യാന്ത്രികമായി പ്രിവ്യൂകൾ മറയ്ക്കുക"
+  },
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
+    "message": "നിങ്ങൾ സ്ക്രോൾ ചെയ്യുമ്പോഴോ പ്രധാന പേജിലുമായി സംവദിക്കുമ്പോഴോ പ്രിവ്യൂ പാനൽ മറയ്ക്കുന്നു."
+  },
+  "Preview_in_Side_Panel": {
+    "message": "സൈഡ് പാനലിൽ പ്രിവ്യൂ"
+  },
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
+    "message": "ഫ്ലോട്ടിംഗ് ബോക്സിന് പകരം Chrome സൈഡ് പാനലിലെ കാഴ്ച പ്രദർശിപ്പിക്കുന്നു."
+  },
+  "Preview_on_Hover_Delay": {
+    "message": "പ്രിവ്യൂ-ഓൺ-ഹോവർ കാലതാമസം"
+  },
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
+    "message": "ഹോവറിലെ യാന്ത്രിക പ്രിവ്യൂ പ്രവർത്തനക്ഷമമാക്കിയപ്പോൾ, പ്രിവ്യൂ കാണിക്കുന്നതിന് മുമ്പുള്ള കാലതാമസമാണിത്."
+  },
+  "_Advanced__Force_Preview": {
+    "message": "[അഡ്വാൻസ്ഡ്] ഫോഴ്സ് പ്രിവ്യൂ"
+  },
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
+    "message": "** ശരിക്കും ** പ്രിവ്യൂ ചെയ്യാൻ ആഗ്രഹിക്കാത്ത വെബ്സൈറ്റുകൾക്കായി (ഉദാ. StacovFLow.com) ഇത് ഒരു പ്രിവ്യൂവിനെ നിർബന്ധിക്കുന്നു. നേർഡ് അലേർട്ട്: ഇതൊരു ഫ്രെയിം-ബസ്റ്റിംഗ് ബസ്റ്ററാണ്."
+  },
+  "_Advanced__Disable_Incognito_Google": {
+    "message": "[അഡ്വാൻസ്ഡ്] ആൾമാറാട്ട Google അപ്രാപ്തമാക്കുക"
+  },
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
+    "message": "സ്ഥിരസ്ഥിതിയായി, ഉപയോഗിച്ച Google തിരയലിന്റെ പതിപ്പ് എല്ലായ്പ്പോഴും സ്വകാര്യത, സുരക്ഷാ കാരണങ്ങളാൽ സൈൻ out ട്ട് ചെയ്യുന്നു. ഇത് എല്ലായ്പ്പോഴും സൈൻ-ഇൻ പ്രോംപ്റ്റുകൾ കാണുന്നതിന് കാരണമാകാം."
+  },
+  "Disable_Previews_on_this_site": {
+    "message": "ഈ സൈറ്റിലെ പ്രിവ്യൂ അപ്രാപ്തമാക്കുക"
+  },
+  "The_detail_information_about_the_checkbox_here_": {
+    "message": "ചെക്ക്ബോക്സിനെക്കുറിച്ചുള്ള വിശദമായ വിവരങ്ങൾ ഇവിടെ."
+  },
+  "Disabled_on_Websites": {
     "message": "വെബ്സൈറ്റുകളിൽ അപ്രാപ്തമാക്കി"
   },
-  "optionBlockedSitesDesc": {
-    "message": "ഈ സൈറ്റുകളിൽ വിപുലീകരണം പ്രവർത്തിക്കില്ല. ഒരു വരിയിൽ ഒരു സൈറ്റ് നൽകുക."
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
+    "message": "വിപുലീകരണം ഈ സൈറ്റുകളിൽ പ്രവർത്തിക്കില്ല, ഈ പട്ടിക ചേർത്ത് നിങ്ങൾക്ക് ഒരു സൈറ്റ് പ്രവർത്തനരഹിതമാക്കാം."
+  },
+  "Successfully_updated_settings": {
+    "message": "ക്രമീകരണങ്ങൾ വിജയകരമായി അപ്ഡേറ്റുചെയ്തു"
+  },
+  "Search__amp__Link_Preview_Options": {
+    "message": "തിരയുക & amp; ലിങ്ക് പ്രിവ്യൂ ഓപ്ഷനുകൾ"
+  },
+  "Show_Sample_Preview": {
+    "message": "സാമ്പിൾ പ്രിവ്യൂ കാണിക്കുക"
+  },
+  "Report_an_Issue": {
+    "message": "ഒരു പ്രശ്നം റിപ്പോർട്ടുചെയ്യുക"
   }
 }

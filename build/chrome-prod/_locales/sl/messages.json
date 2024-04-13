@@ -1,52 +1,122 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Predogled iskanja in povezav",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Predogled povezav",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Oglejte si predoglede povezav in takoj izvede iskanje na isti strani s tem predogledom, namesto da bi odpirali nove zavihke",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Kako smo?"
+  "@testMarkup": {
+    "message": "<EV> <p> Hello World </p> To je <strong> jezik </strong> spleta </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Vesela sem, da ti je všeč! Ali nam lahko pomagate deliti ❤️?"
+  "Search_engine": {
+    "message": "Iskalnik"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Kako se lahko izboljšamo?"
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
+    "message": "Iskalnik, ki bi bil uporabljen za predoglede inline iskanja."
   },
-  "fdbkThanks": {
-    "message": "Hvala za povratne informacije!"
+  "Google_Search": {
+    "message": "Google iskanje"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Ocenite na spletni trgovini"
+  "Bing_Search": {
+    "message": "Bing iskanje"
   },
-  "fdbkNoResponse": {
-    "message": "Ne"
+  "Yahoo_Search": {
+    "message": "Yahoo iskanje"
   },
-  "fdbkSumbit": {
-    "message": "Oddaj"
+  "Baidu_Search": {
+    "message": "Baidu iskanje"
   },
-  "reportAnIssue": {
-    "message": "Poroča o težavi",
-    "description": "Button text for reporting an issue"
+  "Yandex_Search": {
+    "message": "Yandex iskanje"
   },
-  "showDemo": {
-    "message": "Pokaži demo",
-    "description": "Button text for showing demo"
+  "Preview_Width____": {
+    "message": "Širina predogleda (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Uspešno posodobljene nastavitve"
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Širina predogledne plošče glede na stran."
   },
-  "optionBlockedSites": {
+  "Preview_Height____": {
+    "message": "Višina predogleda (%)"
+  },
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Višina predogledne plošče glede na stran."
+  },
+  "Panel_Position": {
+    "message": "Položaj plošče"
+  },
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
+    "message": "Stran strani, na kateri lahko prikažete predogled."
+  },
+  "Right_side": {
+    "message": "Desna stran"
+  },
+  "Left_side": {
+    "message": "Leva stran"
+  },
+  "Close_on_Escape_Key": {
+    "message": "Zaprite tipko Escape"
+  },
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
+    "message": "Uporabite tipko ESC (Escape) za zapiranje plošče za predogled."
+  },
+  "Automatically_Hide_Previews": {
+    "message": "Samodejno skrijete predoglede"
+  },
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
+    "message": "Ko se pomaknete z glavno stranjo, skrije ploščo za predogled."
+  },
+  "Preview_in_Side_Panel": {
+    "message": "Predogled na stranski plošči"
+  },
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
+    "message": "Prikaže pogled na kromirani stranski plošči namesto s plavajočo škatlo."
+  },
+  "Preview_on_Hover_Delay": {
+    "message": "Zakasnitev predogleda v hover"
+  },
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
+    "message": "Ko je omogočeno samodejni predogled na hover, je to zamuda pred prikazano predogled."
+  },
+  "_Advanced__Force_Preview": {
+    "message": "[Napredno] Predogled sile"
+  },
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
+    "message": "Za spletna mesta, ki ** resnično ** ne želijo biti predogled (npr. StackOverflow.com), to sili predogled. Nerd Alert: To je buster, ki razbije okvir."
+  },
+  "_Advanced__Disable_Incognito_Google": {
+    "message": "[Advanced] Onemogoči incognito Google"
+  },
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
+    "message": "Različica uporabljenega Google Search je privzeto vedno prijavljena iz zasebnosti in varnostnih razlogov. Čeprav lahko to vedno opazi pozive."
+  },
+  "Disable_Previews_on_this_site": {
+    "message": "Onemogoči predogled na tej spletni strani"
+  },
+  "The_detail_information_about_the_checkbox_here_": {
+    "message": "Podrobne informacije o potrditvenem polju tukaj."
+  },
+  "Disabled_on_Websites": {
     "message": "Onemogočeno na spletnih mestih"
   },
-  "optionBlockedSitesDesc": {
-    "message": "Na teh spletnih mestih se ne bo izvajalo razširitev. Vnesite eno spletno mesto na vrstico."
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
+    "message": "Razširitev se ne bo izvajala na teh spletnih mestih, spletno mesto lahko onemogočite tako, da dodate na ta seznam."
+  },
+  "Successfully_updated_settings": {
+    "message": "Uspešno posodobljene nastavitve"
+  },
+  "Search__amp__Link_Preview_Options": {
+    "message": "Iskanje & amp; Možnosti predogleda povezave"
+  },
+  "Show_Sample_Preview": {
+    "message": "Pokaži predogled vzorca"
+  },
+  "Report_an_Issue": {
+    "message": "Poroča o težavi"
   }
 }

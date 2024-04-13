@@ -1,52 +1,122 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Поиск и предварительный просмотр ссылок",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Предварительный просмотр ссылок",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "См. Предварительные просмотра ссылок и мгновенно выполняет поиск на той же странице, используя этот предварительный просмотр вместо открытия новых вкладок",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Как у нас дела?"
+  "@testMarkup": {
+    "message": "<div> <p> Привет, мир </p> Это язык <strong> </strong> Интернета </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Рад, что вам это нравится! Вы можете помочь нам поделиться ❤?"
+  "Search_engine": {
+    "message": "Поисковый движок"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Как мы можем улучшить?"
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
+    "message": "Поисковая система, которая будет использоваться для просмотра встроенного поиска."
   },
-  "fdbkThanks": {
-    "message": "Спасибо за ответ!"
+  "Google_Search": {
+    "message": "Поиск Гугл"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Оценка в веб -магазине"
+  "Bing_Search": {
+    "message": "Bing Search"
   },
-  "fdbkNoResponse": {
-    "message": "Нет"
+  "Yahoo_Search": {
+    "message": "Yahoo Search"
   },
-  "fdbkSumbit": {
-    "message": "Представлять на рассмотрение"
+  "Baidu_Search": {
+    "message": "Baidu Search"
   },
-  "reportAnIssue": {
-    "message": "Сообщить о проблеме",
-    "description": "Button text for reporting an issue"
+  "Yandex_Search": {
+    "message": "Яндекс Поиск"
   },
-  "showDemo": {
-    "message": "Показать демонстрацию",
-    "description": "Button text for showing demo"
+  "Preview_Width____": {
+    "message": "Ширина предварительного просмотра (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Успешно обновленные настройки"
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Ширина панели предварительного просмотра относительно страницы."
   },
-  "optionBlockedSites": {
+  "Preview_Height____": {
+    "message": "Высота предварительного просмотра (%)"
+  },
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Высота панели предварительного просмотра относительно страницы."
+  },
+  "Panel_Position": {
+    "message": "Положение панели"
+  },
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
+    "message": "Сторона страницы, на которой можно отобразить предварительный просмотр."
+  },
+  "Right_side": {
+    "message": "Правая сторона"
+  },
+  "Left_side": {
+    "message": "Левая сторона"
+  },
+  "Close_on_Escape_Key": {
+    "message": "Закрыть ключ побега"
+  },
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
+    "message": "Используйте ключ ESC (Escape), чтобы закрыть панель предварительного просмотра."
+  },
+  "Automatically_Hide_Previews": {
+    "message": "Автоматически скрыть предварительные просмотра"
+  },
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
+    "message": "Укрывает панель предварительного просмотра, когда вы прокручиваете или взаимодействуете с главной страницей."
+  },
+  "Preview_in_Side_Panel": {
+    "message": "Предварительный просмотр на боковой панели"
+  },
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
+    "message": "Отображает вид на боковой панели Chrome вместо плавающей коробки."
+  },
+  "Preview_on_Hover_Delay": {
+    "message": "Предварительный просмотр задержки"
+  },
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
+    "message": "Когда автоматический предварительный просмотр на Hover включен, это задержка до того, как будет показан предварительный просмотр."
+  },
+  "_Advanced__Force_Preview": {
+    "message": "[Advanced] Предварительный просмотр силы"
+  },
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
+    "message": "Для веб -сайтов, которые ** действительно ** не хотят быть предварительно просмотрены (например, Stackoverflow.com) Это заставляет предварительный просмотр. NERD ALERT: это бастер-бюст."
+  },
+  "_Advanced__Disable_Incognito_Google": {
+    "message": "[Advanced] Отключить инкогнито Google"
+  },
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
+    "message": "По умолчанию используемая версия поиска Google всегда выходит из строя по соображениям конфиденциальности и безопасности. Хотя это может привести к тому, что всегда будет увидеть подсказки входа."
+  },
+  "Disable_Previews_on_this_site": {
+    "message": "Отключить превью на этом сайте"
+  },
+  "The_detail_information_about_the_checkbox_here_": {
+    "message": "Подробная информация о флажке здесь."
+  },
+  "Disabled_on_Websites": {
     "message": "Отключено на веб -сайтах"
   },
-  "optionBlockedSitesDesc": {
-    "message": "Расширение не будет работать на этих сайтах. Введите один сайт на строку."
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
+    "message": "Расширение не будет работать на этих сайтах, вы можете отключить сайт, добавив в этот список."
+  },
+  "Successfully_updated_settings": {
+    "message": "Успешно обновленные настройки"
+  },
+  "Search__amp__Link_Preview_Options": {
+    "message": "Поиск & amp; Параметры предварительного просмотра ссылки"
+  },
+  "Show_Sample_Preview": {
+    "message": "Показать предварительный просмотр"
+  },
+  "Report_an_Issue": {
+    "message": "Сообщить о проблеме"
   }
 }

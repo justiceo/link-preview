@@ -1,52 +1,122 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Wyszukiwanie i podgląd linków",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Podgląd linków",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Zobacz podgląd linków i natychmiast wykonuje wyszukiwania na tej samej stronie za pomocą tego podglądu zamiast otwierania nowych kart",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Jak nam idzie?"
+  "@testMarkup": {
+    "message": "<div> <p> Hello World </p> To jest język <strong> </strong> w sieci </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Cieszę się że to lubisz! Czy możesz nam pomóc w udostępnieniu ❤️?"
+  "Search_engine": {
+    "message": "Wyszukiwarka"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Jak możemy poprawić?"
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
+    "message": "Wyszukiwarka, która byłaby używana do podglądu wyszukiwania wbudowanego."
   },
-  "fdbkThanks": {
-    "message": "Dzięki za opinie!"
+  "Google_Search": {
+    "message": "Wyszukiwarka Google"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Oceń w Webstore"
+  "Bing_Search": {
+    "message": "Bing Search"
   },
-  "fdbkNoResponse": {
-    "message": "NIE"
+  "Yahoo_Search": {
+    "message": "Wyszukaj Yahoo"
   },
-  "fdbkSumbit": {
-    "message": "Składać"
+  "Baidu_Search": {
+    "message": "Wyszukiwanie Baidu"
   },
-  "reportAnIssue": {
-    "message": "Zgłoś problem",
-    "description": "Button text for reporting an issue"
+  "Yandex_Search": {
+    "message": "Wyszukiwanie Yandex"
   },
-  "showDemo": {
-    "message": "Pokazuj demo",
-    "description": "Button text for showing demo"
+  "Preview_Width____": {
+    "message": "Szerokość podglądu (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Pomyślnie zaktualizowane ustawienia"
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Szerokość panelu podglądu względem strony."
   },
-  "optionBlockedSites": {
+  "Preview_Height____": {
+    "message": "Wysokość podglądu (%)"
+  },
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Wysokość panelu podglądu względem strony."
+  },
+  "Panel_Position": {
+    "message": "Pozycja panelu"
+  },
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
+    "message": "Strona strony, na której można wyświetlić podgląd."
+  },
+  "Right_side": {
+    "message": "Prawa strona"
+  },
+  "Left_side": {
+    "message": "Lewa strona"
+  },
+  "Close_on_Escape_Key": {
+    "message": "Zamknij klucz Escape"
+  },
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
+    "message": "Użyj klucza ESC (Escape), aby zamknąć panel podglądu."
+  },
+  "Automatically_Hide_Previews": {
+    "message": "Automatycznie ukryj podgląd"
+  },
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
+    "message": "Ukrywa panel podglądu, gdy przewijasz lub wchodzi w interakcję ze stroną główną."
+  },
+  "Preview_in_Side_Panel": {
+    "message": "Podgląd w panelu bocznym"
+  },
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
+    "message": "Wyświetla widok w chromowanym panelu bocznym zamiast pływającego pudełka."
+  },
+  "Preview_on_Hover_Delay": {
+    "message": "Opóźnienie podglądu na podręb"
+  },
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
+    "message": "Po włączeniu automatycznego podglądu na zawisieniu jest to opóźnienie przed wyświetleniem podglądu."
+  },
+  "_Advanced__Force_Preview": {
+    "message": "[Advanced] Force Podgląd"
+  },
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
+    "message": "W przypadku stron internetowych, które ** naprawdę ** nie chcą być podglądane (np. Stackoverflow.com) to wymusza podgląd. Nerd Alert: Jest to buster bustera ramy."
+  },
+  "_Advanced__Disable_Incognito_Google": {
+    "message": "[Advanced] Wyłącz incognito Google"
+  },
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
+    "message": "Domyślnie używana wersja wyszukiwania Google jest zawsze podpisywana ze względów prywatności i bezpieczeństwa. Chociaż może to spowodować zawsze widzenie podpowiedzi zalogowania."
+  },
+  "Disable_Previews_on_this_site": {
+    "message": "Wyłącz podgląd na tej stronie"
+  },
+  "The_detail_information_about_the_checkbox_here_": {
+    "message": "Szczegółowe informacje o polu wyboru tutaj."
+  },
+  "Disabled_on_Websites": {
     "message": "Wyłączone na stronach internetowych"
   },
-  "optionBlockedSitesDesc": {
-    "message": "Rozszerzenie nie będzie działać na tych stronach. Wprowadź jedną witrynę na wiersz."
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
+    "message": "Rozszerzenie nie będzie działać na tych stronach, możesz wyłączyć witrynę, dodając do tej listy."
+  },
+  "Successfully_updated_settings": {
+    "message": "Pomyślnie zaktualizowane ustawienia"
+  },
+  "Search__amp__Link_Preview_Options": {
+    "message": "Wyszukaj & amp; Opcje podglądu linków"
+  },
+  "Show_Sample_Preview": {
+    "message": "Pokaż przykładowy podgląd"
+  },
+  "Report_an_Issue": {
+    "message": "Zgłoś problem"
   }
 }

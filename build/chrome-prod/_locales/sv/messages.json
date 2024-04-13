@@ -1,52 +1,122 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Sök & länkförhandsvisning",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Länkförhandsvisningar",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Se förhandsgranskningar av länkar och utför direkt sökningar på samma sida med denna förhandsvisare istället för att öppna nya flikar",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Hur går det för oss?"
+  "@testMarkup": {
+    "message": "<div> <p> Hello World </p> Detta är <strong> språket </strong> på webben </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Glad att du gillar det! Kan du hjälpa oss att dela ❤?"
+  "Search_engine": {
+    "message": "Sökmotor"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Hur kan vi förbättra?"
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
+    "message": "Sökmotorn som skulle användas för förhandsgranskningar av sökning."
   },
-  "fdbkThanks": {
-    "message": "Tack för feedbacken!"
+  "Google_Search": {
+    "message": "Google Sök"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Hastighet på webbutiken"
+  "Bing_Search": {
+    "message": "Bingsökning"
   },
-  "fdbkNoResponse": {
-    "message": "Nej"
+  "Yahoo_Search": {
+    "message": "Yahoo -sökning"
   },
-  "fdbkSumbit": {
-    "message": "Skicka in"
+  "Baidu_Search": {
+    "message": "Baidu -sökning"
   },
-  "reportAnIssue": {
-    "message": "Rapportera ett problem",
-    "description": "Button text for reporting an issue"
+  "Yandex_Search": {
+    "message": "Yandex -sökning"
   },
-  "showDemo": {
-    "message": "Visa demo",
-    "description": "Button text for showing demo"
+  "Preview_Width____": {
+    "message": "Förhandsgranskningsbredd (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Framgångsrikt uppdaterade inställningar"
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Bredden på förhandsgranskningspanelen relativt sidan."
   },
-  "optionBlockedSites": {
+  "Preview_Height____": {
+    "message": "Förhandsgranska höjd (%)"
+  },
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Höjden på förhandsgranskningspanelen relativt sidan."
+  },
+  "Panel_Position": {
+    "message": "Panelposition"
+  },
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
+    "message": "Sidan på sidan för att visa förhandsgranskningen."
+  },
+  "Right_side": {
+    "message": "Höger sida"
+  },
+  "Left_side": {
+    "message": "Vänster sida"
+  },
+  "Close_on_Escape_Key": {
+    "message": "Stäng på Escape -nyckeln"
+  },
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
+    "message": "Använd ESC (Escape) -tangenten för att stänga förhandsgranskningspanelen."
+  },
+  "Automatically_Hide_Previews": {
+    "message": "Dölj automatiskt förhandsgranskningar"
+  },
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
+    "message": "Gömmer förhandsgranskningspanelen när du bläddrar bort eller interagerar med huvudsidan."
+  },
+  "Preview_in_Side_Panel": {
+    "message": "Förhandsgranskning i sidopanelen"
+  },
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
+    "message": "Visar vyn i krom sidopanel istället för en flytande låda."
+  },
+  "Preview_on_Hover_Delay": {
+    "message": "Förhandsgranskning-på-hover-fördröjning"
+  },
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
+    "message": "När automatisk förhandsvisning på Hover är aktiverad är detta förseningen innan förhandsgranskningen visas."
+  },
+  "_Advanced__Force_Preview": {
+    "message": "[Advanced] Force Preview"
+  },
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
+    "message": "För webbplatser som ** verkligen ** vill inte förhandsgranskas (t.ex. stackoverflow.com) detta tvingar en förhandsgranskning. Nerd Alert: Detta är en rambustande buster."
+  },
+  "_Advanced__Disable_Incognito_Google": {
+    "message": "[Advanced] Inaktivera Incognito Google"
+  },
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
+    "message": "Som standard är den version av Google-sökning som används alltid utplånad av integritets- och säkerhetsskäl. Även om detta kan resultera i att alltid se inloggningsuppmaningar."
+  },
+  "Disable_Previews_on_this_site": {
+    "message": "Inaktivera förhandsvisningar på den här webbplatsen"
+  },
+  "The_detail_information_about_the_checkbox_here_": {
+    "message": "Detaljinformationen om kryssrutan här."
+  },
+  "Disabled_on_Websites": {
     "message": "Inaktiverad på webbplatser"
   },
-  "optionBlockedSitesDesc": {
-    "message": "Förlängningen körs inte på dessa webbplatser. Ange en webbplats per rad."
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
+    "message": "Extension kommer inte att köras på dessa webbplatser, du kan inaktivera en webbplats genom att lägga till i den här listan."
+  },
+  "Successfully_updated_settings": {
+    "message": "Framgångsrikt uppdaterade inställningar"
+  },
+  "Search__amp__Link_Preview_Options": {
+    "message": "Sök & amp; Länkförhandsvisningsalternativ"
+  },
+  "Show_Sample_Preview": {
+    "message": "Visa provförhandsvisning"
+  },
+  "Report_an_Issue": {
+    "message": "Rapportera ett problem"
   }
 }

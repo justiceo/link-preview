@@ -1,52 +1,122 @@
 {
-  "appName": {
+  "@appName": {
     "message": "অনুসন্ধান এবং লিঙ্ক পূর্বরূপ",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "লিঙ্ক পূর্বরূপ",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "লিঙ্কগুলির পূর্বরূপ দেখুন এবং তাত্ক্ষণিকভাবে নতুন ট্যাবগুলি খোলার পরিবর্তে এই পূর্বরূপ ব্যবহার করে একই পৃষ্ঠায় অনুসন্ধানগুলি সম্পাদন করে",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "আমরা কেমন করছি?"
+  "@testMarkup": {
+    "message": "<div> <p> হ্যালো ওয়ার্ল্ড </p> এটি ওয়েব </div> এর <strong> ভাষা </strong>"
   },
-  "fdbkCareToShare": {
-    "message": "আমি খুশি তুমি এটা পছন্দ করেছো! আপনি কি আমাদের ❤ ভাগ করতে সহায়তা করতে পারেন?"
+  "Search_engine": {
+    "message": "খোঁজ যন্ত্র"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "আমরা কিভাবে উন্নত করতে পারি?"
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
+    "message": "ইনলাইন অনুসন্ধান পূর্বরূপগুলির জন্য ব্যবহৃত হবে এমন অনুসন্ধান ইঞ্জিন।"
   },
-  "fdbkThanks": {
-    "message": "সাহায্য করার জন্য ধন্যবাদ!"
+  "Google_Search": {
+    "message": "Google অনুসন্ধান"
   },
-  "fdbkRateOnWebstore": {
-    "message": "ওয়েবস্টোরে হার"
+  "Bing_Search": {
+    "message": "বিং অনুসন্ধান"
   },
-  "fdbkNoResponse": {
-    "message": "না"
+  "Yahoo_Search": {
+    "message": "ইয়াহু অনুসন্ধান"
   },
-  "fdbkSumbit": {
-    "message": "জমা দিন"
+  "Baidu_Search": {
+    "message": "বাইদু অনুসন্ধান"
   },
-  "reportAnIssue": {
-    "message": "একটি সমস্যা রিপোর্ট",
-    "description": "Button text for reporting an issue"
+  "Yandex_Search": {
+    "message": "ইয়ানডেক্স অনুসন্ধান"
   },
-  "showDemo": {
-    "message": "ডেমো দেখান",
-    "description": "Button text for showing demo"
+  "Preview_Width____": {
+    "message": "পূর্বরূপ প্রস্থ (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "সফলভাবে আপডেট করা সেটিংস"
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
+    "message": "পৃষ্ঠার সাথে সম্পর্কিত পূর্বরূপ প্যানেলের প্রস্থ।"
   },
-  "optionBlockedSites": {
+  "Preview_Height____": {
+    "message": "পূর্বরূপ উচ্চতা (%)"
+  },
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
+    "message": "পৃষ্ঠার সাথে সম্পর্কিত পূর্বরূপ প্যানেলের উচ্চতা।"
+  },
+  "Panel_Position": {
+    "message": "প্যানেল অবস্থান"
+  },
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
+    "message": "পূর্বরূপ প্রদর্শন করতে পৃষ্ঠার পাশের দিকটি।"
+  },
+  "Right_side": {
+    "message": "ডান পাশ"
+  },
+  "Left_side": {
+    "message": "বাম পাশে"
+  },
+  "Close_on_Escape_Key": {
+    "message": "এস্কেপ কী বন্ধ করুন"
+  },
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
+    "message": "পূর্বরূপ প্যানেলটি বন্ধ করতে ESC (এস্কেপ) কী ব্যবহার করুন।"
+  },
+  "Automatically_Hide_Previews": {
+    "message": "স্বয়ংক্রিয়ভাবে পূর্বরূপগুলি আড়াল করুন"
+  },
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
+    "message": "আপনি যখন স্ক্রোল করে বা মূল পৃষ্ঠার সাথে ইন্টারঅ্যাক্ট করেন তখন পূর্বরূপ প্যানেলটি লুকায়।"
+  },
+  "Preview_in_Side_Panel": {
+    "message": "পাশের প্যানেলে পূর্বরূপ"
+  },
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
+    "message": "ভাসমান বাক্সের পরিবর্তে ক্রোম সাইড প্যানেলে দৃশ্যটি প্রদর্শন করে।"
+  },
+  "Preview_on_Hover_Delay": {
+    "message": "পূর্বরূপ অন-হোভার বিলম্ব"
+  },
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
+    "message": "যখন হোভারের উপর স্বয়ংক্রিয় পূর্বরূপ সক্ষম করা হয়, পূর্বরূপ প্রদর্শনের আগে এটি বিলম্ব হয়।"
+  },
+  "_Advanced__Force_Preview": {
+    "message": "[উন্নত] ফোর্স পূর্বরূপ"
+  },
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
+    "message": "যে ওয়েবসাইটগুলি ** সত্যই ** প্রাকদর্শন করতে চান না (উদাঃ স্ট্যাকওভারফ্লো ডটকম) এটি একটি পূর্বরূপকে বাধ্য করে। নার্ড সতর্কতা: এটি একটি ফ্রেম-বস্টিং বাস্টার।"
+  },
+  "_Advanced__Disable_Incognito_Google": {
+    "message": "[উন্নত] ছদ্মবেশী গুগল অক্ষম করুন"
+  },
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
+    "message": "ডিফল্টরূপে, ব্যবহৃত গুগল অনুসন্ধানের সংস্করণটি সর্বদা গোপনীয়তা এবং সুরক্ষার কারণে স্বাক্ষরিত হয়। যদিও এর ফলে সর্বদা সাইন-ইন প্রম্পটগুলি দেখা যায়।"
+  },
+  "Disable_Previews_on_this_site": {
+    "message": "এই সাইটে পূর্বরূপ অক্ষম করুন"
+  },
+  "The_detail_information_about_the_checkbox_here_": {
+    "message": "এখানে চেকবক্স সম্পর্কে বিশদ তথ্য।"
+  },
+  "Disabled_on_Websites": {
     "message": "ওয়েবসাইটে অক্ষম"
   },
-  "optionBlockedSitesDesc": {
-    "message": "এই সাইটগুলিতে এক্সটেনশন চলবে না। প্রতি লাইনে একটি সাইট লিখুন।"
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
+    "message": "এই সাইটগুলিতে এক্সটেনশন চলবে না, আপনি এই তালিকায় যুক্ত করে কোনও সাইট অক্ষম করতে পারেন।"
+  },
+  "Successfully_updated_settings": {
+    "message": "সফলভাবে আপডেট করা সেটিংস"
+  },
+  "Search__amp__Link_Preview_Options": {
+    "message": "অনুসন্ধান & amp; লিঙ্ক পূর্বরূপ বিকল্প"
+  },
+  "Show_Sample_Preview": {
+    "message": "নমুনা পূর্বরূপ দেখান"
+  },
+  "Report_an_Issue": {
+    "message": "একটি সমস্যা রিপোর্ট"
   }
 }

@@ -1,52 +1,122 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Recherche et prévisualisation du lien",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Aperçu des liens",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Voir les aperçus de liens et effectuent instantanément des recherches sur la même page en utilisant cet aperçu au lieu d'ouvrir de nouveaux onglets",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Comment allons nous?"
+  "@testMarkup": {
+    "message": "<div> <p> Bonjour le monde </p> C'est la <strong> langue </strong> du web </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Content que tu aimes ça! Pouvez-vous nous aider à partager le ❤️?"
+  "Search_engine": {
+    "message": "Moteur de recherche"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Comment pouvons nous nous améliorer?"
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
+    "message": "Le moteur de recherche qui serait utilisé pour les prévisualistes de recherche en ligne."
   },
-  "fdbkThanks": {
-    "message": "Merci pour les commentaires!"
+  "Google_Search": {
+    "message": "Recherche Google"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Tarif sur Webstore"
+  "Bing_Search": {
+    "message": "Recherche de bing"
   },
-  "fdbkNoResponse": {
-    "message": "Non"
+  "Yahoo_Search": {
+    "message": "Recherche de yahoo"
   },
-  "fdbkSumbit": {
-    "message": "Soumettre"
+  "Baidu_Search": {
+    "message": "Recherche de baidu"
   },
-  "reportAnIssue": {
-    "message": "Signaler un problème",
-    "description": "Button text for reporting an issue"
+  "Yandex_Search": {
+    "message": "Recherche de yandex"
   },
-  "showDemo": {
-    "message": "Démonstration",
-    "description": "Button text for showing demo"
+  "Preview_Width____": {
+    "message": "Largeur d'aperçu (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Paramètres mis à jour avec succès"
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
+    "message": "La largeur du panneau d'aperçu par rapport à la page."
   },
-  "optionBlockedSites": {
+  "Preview_Height____": {
+    "message": "Aperçu de la hauteur (%)"
+  },
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
+    "message": "La hauteur du panneau d'aperçu par rapport à la page."
+  },
+  "Panel_Position": {
+    "message": "Position de panneau"
+  },
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
+    "message": "Le côté de la page dans laquelle afficher l'aperçu."
+  },
+  "Right_side": {
+    "message": "Côté droit"
+  },
+  "Left_side": {
+    "message": "Côté gauche"
+  },
+  "Close_on_Escape_Key": {
+    "message": "Fermer sur la clé d'évasion"
+  },
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
+    "message": "Utilisez la touche ESC (Escape) pour fermer le panneau d'aperçu."
+  },
+  "Automatically_Hide_Previews": {
+    "message": "Masquer automatiquement les aperçus"
+  },
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
+    "message": "Cache le panneau d'aperçu lorsque vous faites défiler ou interagissez avec la page principale."
+  },
+  "Preview_in_Side_Panel": {
+    "message": "Aperçu dans le panneau latéral"
+  },
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
+    "message": "Affiche la vue dans le panneau latéral Chrome au lieu d'une boîte flottante."
+  },
+  "Preview_on_Hover_Delay": {
+    "message": "Retard de prévisualisation"
+  },
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
+    "message": "Lorsque l'aperçu automatique sur Hover est activé, il s'agit du retard avant l'état de l'aperçu."
+  },
+  "_Advanced__Force_Preview": {
+    "message": "Aperçu [avancé] de force"
+  },
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
+    "message": "Pour les sites Web qui ** vraiment ** ne veulent pas être prévisualisés (par exemple stackoverflow.com), cela force un aperçu. Alerte de nerd: il s'agit d'un buster à trame."
+  },
+  "_Advanced__Disable_Incognito_Google": {
+    "message": "[Avancé] Désactiver Incognito Google"
+  },
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
+    "message": "Par défaut, la version de Google Search utilisée est toujours signée pour des raisons de confidentialité et de sécurité. Bien que cela puisse entraîner de toujours voir les invites de connexion."
+  },
+  "Disable_Previews_on_this_site": {
+    "message": "Désactiver les aperçus sur ce site"
+  },
+  "The_detail_information_about_the_checkbox_here_": {
+    "message": "Les informations détaillées sur la case à cocher ici."
+  },
+  "Disabled_on_Websites": {
     "message": "Désactivé sur les sites Web"
   },
-  "optionBlockedSitesDesc": {
-    "message": "L'extension ne fonctionnera pas sur ces sites. Entrez un site par ligne."
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
+    "message": "L'extension ne fonctionnera pas sur ces sites, vous pouvez désactiver un site en ajoutant à cette liste."
+  },
+  "Successfully_updated_settings": {
+    "message": "Paramètres mis à jour avec succès"
+  },
+  "Search__amp__Link_Preview_Options": {
+    "message": "Recherche & amp; Options d'aperçu du lien"
+  },
+  "Show_Sample_Preview": {
+    "message": "Afficher un exemple d'aperçu"
+  },
+  "Report_an_Issue": {
+    "message": "Signaler un problème"
   }
 }

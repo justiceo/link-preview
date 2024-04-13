@@ -1,52 +1,122 @@
 {
-  "appName": {
+  "@appName": {
     "message": "ಹುಡುಕಾಟ ಮತ್ತು ಲಿಂಕ್ ಪೂರ್ವವೀಕ್ಷಣೆ",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "ಲಿಂಕ್ ಪೂರ್ವವೀಕ್ಷಣೆಗಳು",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "ಲಿಂಕ್‌ಗಳ ಪೂರ್ವವೀಕ್ಷಣೆಗಳನ್ನು ನೋಡಿ ಮತ್ತು ಹೊಸ ಟ್ಯಾಬ್‌ಗಳನ್ನು ತೆರೆಯುವ ಬದಲು ಈ ಪೂರ್ವವೀಕ್ಷಣೆ ಬಳಸಿ ಅದೇ ಪುಟದಲ್ಲಿ ಹುಡುಕಾಟಗಳನ್ನು ತಕ್ಷಣ ನಿರ್ವಹಿಸುತ್ತದೆ",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "ನಾವು ಹೇಗೆ ಮಾಡುತ್ತಿದ್ದೇವೆ?"
+  "@testMarkup": {
+    "message": "<ಡಿವ್> <p> ಹಲೋ ವರ್ಲ್ಡ್ </p> ಇದು ವೆಬ್‌ನ <strong> ಭಾಷೆ </strong> </div>"
   },
-  "fdbkCareToShare": {
-    "message": "ನೀವು ಇಷ್ಟಪಟ್ಟಿದ್ದಕ್ಕಾಗಿ ಸಂತೋಷ! The ಅನ್ನು ಹಂಚಿಕೊಳ್ಳಲು ನಿಮಗೆ ಸಹಾಯ ಮಾಡಬಹುದೇ?"
+  "Search_engine": {
+    "message": "ಶೋಧಕ ಎಂಜಿನ್"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "ನಾವು ಹೇಗೆ ಸುಧಾರಿಸಬಹುದು?"
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
+    "message": "ಇನ್ಲೈನ್ ಹುಡುಕಾಟ ಪೂರ್ವವೀಕ್ಷಣೆಗಳಿಗೆ ಬಳಸಲಾಗುವ ಸರ್ಚ್ ಎಂಜಿನ್."
   },
-  "fdbkThanks": {
-    "message": "ಪ್ರತಿಕ್ರಿಯೆಗಾಗಿ ಧನ್ಯವಾದಗಳು!"
+  "Google_Search": {
+    "message": "Google ಹುಡುಕಾಟ"
   },
-  "fdbkRateOnWebstore": {
-    "message": "ವೆಬ್‌ಸ್ಟೋರ್‌ನಲ್ಲಿ ದರ"
+  "Bing_Search": {
+    "message": "ಬಿಂಗ್ ಹುಡುಕಾಟ"
   },
-  "fdbkNoResponse": {
-    "message": "ಇಲ್ಲ"
+  "Yahoo_Search": {
+    "message": "ಯಾಹೂ ಹುಡುಕಾಟ"
   },
-  "fdbkSumbit": {
-    "message": "ಸಲ್ಲಿಸು"
+  "Baidu_Search": {
+    "message": "ಬೈದು ಹುಡುಕಾಟ"
   },
-  "reportAnIssue": {
-    "message": "ಸಮಸ್ಯೆಯನ್ನು ವರದಿ ಮಾಡಿ",
-    "description": "Button text for reporting an issue"
+  "Yandex_Search": {
+    "message": "ಯಾಂಡೆಕ್ಸ್ ಹುಡುಕಾಟ"
   },
-  "showDemo": {
-    "message": "ಡೆಮೊ ತೋರಿಸಿ",
-    "description": "Button text for showing demo"
+  "Preview_Width____": {
+    "message": "ಪೂರ್ವವೀಕ್ಷಣೆ ಅಗಲ (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "ಯಶಸ್ವಿಯಾಗಿ ನವೀಕರಿಸಿದ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
+    "message": "ಪುಟಕ್ಕೆ ಹೋಲಿಸಿದರೆ ಪೂರ್ವವೀಕ್ಷಣೆ ಫಲಕದ ಅಗಲ."
   },
-  "optionBlockedSites": {
+  "Preview_Height____": {
+    "message": "ಪೂರ್ವವೀಕ್ಷಣೆ ಎತ್ತರ (%)"
+  },
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
+    "message": "ಪುಟಕ್ಕೆ ಹೋಲಿಸಿದರೆ ಪೂರ್ವವೀಕ್ಷಣೆ ಫಲಕದ ಎತ್ತರ."
+  },
+  "Panel_Position": {
+    "message": "ಫಲಕ ಸ್ಥಾನ"
+  },
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
+    "message": "ಪೂರ್ವವೀಕ್ಷಣೆಯನ್ನು ಪ್ರದರ್ಶಿಸುವ ಪುಟದ ಬದಿ."
+  },
+  "Right_side": {
+    "message": "ಬಲಭಾಗದ"
+  },
+  "Left_side": {
+    "message": "ಎಡಬದಿ"
+  },
+  "Close_on_Escape_Key": {
+    "message": "ಎಸ್ಕೇಪ್ ಕೀ ಅನ್ನು ಮುಚ್ಚಿ"
+  },
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
+    "message": "ಪೂರ್ವವೀಕ್ಷಣೆ ಫಲಕವನ್ನು ಮುಚ್ಚಲು ESC (EXCAPE) ಕೀಲಿಯನ್ನು ಬಳಸಿ."
+  },
+  "Automatically_Hide_Previews": {
+    "message": "ಪೂರ್ವವೀಕ್ಷಣೆಯನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಮರೆಮಾಡಿ"
+  },
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
+    "message": "ನೀವು ಸ್ಕ್ರಾಲ್ ಮಾಡುವಾಗ ಅಥವಾ ಮುಖ್ಯ ಪುಟದೊಂದಿಗೆ ಸಂವಹನ ನಡೆಸುವಾಗ ಪೂರ್ವವೀಕ್ಷಣೆ ಫಲಕವನ್ನು ಮರೆಮಾಡುತ್ತದೆ."
+  },
+  "Preview_in_Side_Panel": {
+    "message": "ಸೈಡ್ ಪ್ಯಾನೆಲ್‌ನಲ್ಲಿ ಪೂರ್ವವೀಕ್ಷಣೆ"
+  },
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
+    "message": "ತೇಲುವ ಪೆಟ್ಟಿಗೆಯ ಬದಲು ಕ್ರೋಮ್ ಸೈಡ್ ಪ್ಯಾನೆಲ್‌ನಲ್ಲಿ ವೀಕ್ಷಣೆಯನ್ನು ಪ್ರದರ್ಶಿಸುತ್ತದೆ."
+  },
+  "Preview_on_Hover_Delay": {
+    "message": "ಪೂರ್ವವೀಕ್ಷಣೆ-ಹೂವರ್ ವಿಳಂಬ"
+  },
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
+    "message": "ಹೂವರ್‌ನಲ್ಲಿ ಸ್ವಯಂಚಾಲಿತ ಪೂರ್ವವೀಕ್ಷಣೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿದಾಗ, ಪೂರ್ವವೀಕ್ಷಣೆಯನ್ನು ತೋರಿಸುವ ಮೊದಲು ಇದು ವಿಳಂಬವಾಗಿದೆ."
+  },
+  "_Advanced__Force_Preview": {
+    "message": "[ಸುಧಾರಿತ] ಫೋರ್ಸ್ ಪೂರ್ವವೀಕ್ಷಣೆ"
+  },
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
+    "message": "** ನಿಜವಾಗಿಯೂ ** ಪೂರ್ವವೀಕ್ಷಣೆ ಮಾಡಲು ಬಯಸುವುದಿಲ್ಲ (ಉದಾ. ಸ್ಟಾಕ್‌ಓವರ್ ಫ್ಲೋ.ಕಾಮ್) ಇದು ಪೂರ್ವವೀಕ್ಷಣೆಯನ್ನು ಒತ್ತಾಯಿಸುತ್ತದೆ. ನೆರ್ಡ್ ಅಲರ್ಟ್: ಇದು ಫ್ರೇಮ್-ಬಸ್ಟ್ ಬಸ್ಟರ್ ಆಗಿದೆ."
+  },
+  "_Advanced__Disable_Incognito_Google": {
+    "message": "[ಸುಧಾರಿತ] ಅಜ್ಞಾತ ಗೂಗಲ್ ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ"
+  },
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
+    "message": "ಪೂರ್ವನಿಯೋಜಿತವಾಗಿ, ಬಳಸಿದ ಗೂಗಲ್ ಹುಡುಕಾಟದ ಆವೃತ್ತಿಯನ್ನು ಯಾವಾಗಲೂ ಗೌಪ್ಯತೆ ಮತ್ತು ಭದ್ರತಾ ಕಾರಣಗಳಿಗಾಗಿ ಸಹಿ ಮಾಡಲಾಗುತ್ತದೆ. ಇದು ಯಾವಾಗಲೂ ಸೈನ್-ಇನ್ ಪ್ರಾಂಪ್ಟ್‌ಗಳನ್ನು ನೋಡುವುದಕ್ಕೆ ಕಾರಣವಾಗಬಹುದು."
+  },
+  "Disable_Previews_on_this_site": {
+    "message": "ಈ ಸೈಟ್‌ನಲ್ಲಿ ಪೂರ್ವವೀಕ್ಷಣೆಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ"
+  },
+  "The_detail_information_about_the_checkbox_here_": {
+    "message": "ಚೆಕ್‌ಬಾಕ್ಸ್ ಬಗ್ಗೆ ವಿವರ ಮಾಹಿತಿ ಇಲ್ಲಿ."
+  },
+  "Disabled_on_Websites": {
     "message": "ವೆಬ್‌ಸೈಟ್‌ಗಳಲ್ಲಿ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ"
   },
-  "optionBlockedSitesDesc": {
-    "message": "ಈ ಸೈಟ್‌ಗಳಲ್ಲಿ ವಿಸ್ತರಣೆ ಚಲಿಸುವುದಿಲ್ಲ. ಪ್ರತಿ ಸಾಲಿಗೆ ಒಂದು ಸೈಟ್ ನಮೂದಿಸಿ."
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
+    "message": "ವಿಸ್ತರಣೆಯು ಈ ಸೈಟ್‌ಗಳಲ್ಲಿ ಚಲಿಸುವುದಿಲ್ಲ, ಈ ಪಟ್ಟಿಗೆ ಸೇರಿಸುವ ಮೂಲಕ ನೀವು ಸೈಟ್ ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಬಹುದು."
+  },
+  "Successfully_updated_settings": {
+    "message": "ಯಶಸ್ವಿಯಾಗಿ ನವೀಕರಿಸಿದ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
+  },
+  "Search__amp__Link_Preview_Options": {
+    "message": "ಹುಡುಕಾಟ & amp; ಲಿಂಕ್ ಪೂರ್ವವೀಕ್ಷಣೆ ಆಯ್ಕೆಗಳು"
+  },
+  "Show_Sample_Preview": {
+    "message": "ಮಾದರಿ ಪೂರ್ವವೀಕ್ಷಣೆಯನ್ನು ತೋರಿಸಿ"
+  },
+  "Report_an_Issue": {
+    "message": "ಸಮಸ್ಯೆಯನ್ನು ವರದಿ ಮಾಡಿ"
   }
 }

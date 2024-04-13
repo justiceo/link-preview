@@ -1,52 +1,122 @@
 {
-  "appName": {
+  "@appName": {
     "message": "शोध आणि दुवा पूर्वावलोकन",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "दुवा पूर्वावलोकने",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "नवीन टॅब उघडण्याऐवजी या पूर्वावलोकनकर्त्याचा वापर करून दुवे आणि त्वरित त्याच पृष्ठावर शोध घेते",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "आम्ही कसे करीत आहोत?"
+  "@testMarkup": {
+    "message": "<div> <p> हॅलो वर्ल्ड </p> ही वेबची </strong> </strong> आहे </div>"
   },
-  "fdbkCareToShare": {
-    "message": "आपल्याला हे आवडले याचा आनंद! आपण आम्हाला सामायिक करण्यात मदत करू शकता ❤?"
+  "Search_engine": {
+    "message": "शोध इंजिन"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "आपण कसे सुधारू शकतो?"
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
+    "message": "इनलाइन शोध पूर्वावलोकनांसाठी वापरलेले शोध इंजिन."
   },
-  "fdbkThanks": {
-    "message": "आपल्या अभिप्रायाबद्दल धन्यवाद!"
+  "Google_Search": {
+    "message": "गुगल शोध"
   },
-  "fdbkRateOnWebstore": {
-    "message": "वेबस्टोअरवर दर"
+  "Bing_Search": {
+    "message": "बिंग शोध"
   },
-  "fdbkNoResponse": {
-    "message": "नाही"
+  "Yahoo_Search": {
+    "message": "याहू शोध"
   },
-  "fdbkSumbit": {
-    "message": "प्रस्तुत करणे"
+  "Baidu_Search": {
+    "message": "बाईडू शोध"
   },
-  "reportAnIssue": {
-    "message": "एखाद्या समस्येचा अहवाल द्या",
-    "description": "Button text for reporting an issue"
+  "Yandex_Search": {
+    "message": "यॅन्डेक्स शोध"
   },
-  "showDemo": {
-    "message": "डेमो दर्शवा",
-    "description": "Button text for showing demo"
+  "Preview_Width____": {
+    "message": "पूर्वावलोकन रुंदी (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "यशस्वीरित्या अद्यतनित सेटिंग्ज"
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
+    "message": "पृष्ठाशी संबंधित पूर्वावलोकन पॅनेलची रुंदी."
   },
-  "optionBlockedSites": {
+  "Preview_Height____": {
+    "message": "पूर्वावलोकन उंची (%)"
+  },
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
+    "message": "पृष्ठाशी संबंधित पूर्वावलोकन पॅनेलची उंची."
+  },
+  "Panel_Position": {
+    "message": "पॅनेल स्थिती"
+  },
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
+    "message": "पूर्वावलोकन प्रदर्शित करण्यासाठी पृष्ठाची बाजू."
+  },
+  "Right_side": {
+    "message": "उजवी बाजू"
+  },
+  "Left_side": {
+    "message": "डावी बाजू"
+  },
+  "Close_on_Escape_Key": {
+    "message": "एस्केप की वर बंद करा"
+  },
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
+    "message": "पूर्वावलोकन पॅनेल बंद करण्यासाठी ईएससी (एस्केप) की वापरा."
+  },
+  "Automatically_Hide_Previews": {
+    "message": "आपोआप पूर्वावलोकन लपवा"
+  },
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
+    "message": "जेव्हा आपण दूर स्क्रोल करता किंवा मुख्य पृष्ठासह संवाद साधता तेव्हा पूर्वावलोकन पॅनेल लपवते."
+  },
+  "Preview_in_Side_Panel": {
+    "message": "साइड पॅनेलमध्ये पूर्वावलोकन"
+  },
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
+    "message": "फ्लोटिंग बॉक्सऐवजी क्रोम साइड पॅनेलमध्ये दृश्य प्रदर्शित करते."
+  },
+  "Preview_on_Hover_Delay": {
+    "message": "पूर्वावलोकन-ऑन-होव्हर विलंब"
+  },
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
+    "message": "जेव्हा होव्हरवरील स्वयंचलित पूर्वावलोकन सक्षम केले जाते, तेव्हा पूर्वावलोकन दर्शविण्यापूर्वी हा उशीर होतो."
+  },
+  "_Advanced__Force_Preview": {
+    "message": "[प्रगत] सक्तीचे पूर्वावलोकन"
+  },
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
+    "message": "** खरोखर ** पूर्वावलोकन करू इच्छित नाही अशा वेबसाइट्ससाठी (उदा. स्टॅकओव्हरफ्लो.कॉम) हे पूर्वावलोकन सक्ती करते. नेरड अ‍ॅलर्ट: हा एक फ्रेम-बस्टिंग बस्टर आहे."
+  },
+  "_Advanced__Disable_Incognito_Google": {
+    "message": "[प्रगत] गुप्त गुगल अक्षम करा"
+  },
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
+    "message": "डीफॉल्टनुसार, वापरलेल्या Google शोधाची आवृत्ती गोपनीयता आणि सुरक्षिततेच्या कारणांसाठी नेहमीच साइन आउट केली जाते. जरी याचा परिणाम नेहमी साइन-इन प्रॉम्प्ट्स पाहता येतो."
+  },
+  "Disable_Previews_on_this_site": {
+    "message": "या साइटवरील पूर्वावलोकन अक्षम करा"
+  },
+  "The_detail_information_about_the_checkbox_here_": {
+    "message": "येथे चेकबॉक्सबद्दल तपशील माहिती."
+  },
+  "Disabled_on_Websites": {
     "message": "वेबसाइटवर अक्षम"
   },
-  "optionBlockedSitesDesc": {
-    "message": "या साइटवर विस्तार चालू होणार नाही. प्रति लाइन एक साइट प्रविष्ट करा."
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
+    "message": "या साइटवर विस्तार चालू होणार नाही, आपण या सूचीमध्ये जोडून साइट अक्षम करू शकता."
+  },
+  "Successfully_updated_settings": {
+    "message": "यशस्वीरित्या अद्यतनित सेटिंग्ज"
+  },
+  "Search__amp__Link_Preview_Options": {
+    "message": "शोध & विद्युतप्रवाह मोजण्याच्या एककाचे संक्षिप्त रुप; दुवा पूर्वावलोकन पर्याय"
+  },
+  "Show_Sample_Preview": {
+    "message": "नमुना पूर्वावलोकन दर्शवा"
+  },
+  "Report_an_Issue": {
+    "message": "एखाद्या समस्येचा अहवाल द्या"
   }
 }

@@ -1,52 +1,122 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Keresés és link előnézete",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Link előnézetek",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Lásd a linkek előnézeteit, és azonnal végzi a kereséseket ugyanazon az oldalon, az új lapok megnyitása helyett az előnéző segítségével",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Hogy vagyunk?"
+  "@testMarkup": {
+    "message": "<div> <p> Hello World </p> Ez a web </strong> nyelv </strong> nyelv </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Örülök, hogy tetszik! Tudna segíteni nekünk a ❤️?"
+  "Search_engine": {
+    "message": "Keresőmotor"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Hogyan javulhatunk?"
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
+    "message": "A keresőmotor, amelyet az inline keresési előnézetekhez használnának."
   },
-  "fdbkThanks": {
-    "message": "Köszönöm a visszajelzést!"
+  "Google_Search": {
+    "message": "Google kereső"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Értékeld a webáruházat"
+  "Bing_Search": {
+    "message": "Bing -keresés"
   },
-  "fdbkNoResponse": {
-    "message": "Nem"
+  "Yahoo_Search": {
+    "message": "Yahoo keresés"
   },
-  "fdbkSumbit": {
-    "message": "Beküldés"
+  "Baidu_Search": {
+    "message": "Baidu keresés"
   },
-  "reportAnIssue": {
-    "message": "Jelentsen egy problémát",
-    "description": "Button text for reporting an issue"
+  "Yandex_Search": {
+    "message": "Yandex keresés"
   },
-  "showDemo": {
-    "message": "Bemutató bemutató",
-    "description": "Button text for showing demo"
+  "Preview_Width____": {
+    "message": "Az előnézeti szélesség (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Sikeresen frissített beállítások"
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Az előnézeti panel szélessége az oldalhoz viszonyítva."
   },
-  "optionBlockedSites": {
+  "Preview_Height____": {
+    "message": "Előnézeti magasság (%)"
+  },
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Az előnézeti panel magassága az oldalhoz viszonyítva."
+  },
+  "Panel_Position": {
+    "message": "Panel helyzet"
+  },
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
+    "message": "Az oldal oldala, amelyben megjelenítheti az előnézetet."
+  },
+  "Right_side": {
+    "message": "Jobb oldal"
+  },
+  "Left_side": {
+    "message": "Bal oldal"
+  },
+  "Close_on_Escape_Key": {
+    "message": "Bezárja a menekülési kulcsot"
+  },
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
+    "message": "Használja az ESC (Escape) gombot az előnézeti panel bezárásához."
+  },
+  "Automatically_Hide_Previews": {
+    "message": "Az előnézetek automatikus elrejtése"
+  },
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
+    "message": "Elrejti az előnézeti panelt, amikor görget, vagy kölcsönhatásba lép a főoldalt."
+  },
+  "Preview_in_Side_Panel": {
+    "message": "Előnézet az oldalsó panelen"
+  },
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
+    "message": "A kilátást a Chrome oldalsó panelen jeleníti meg a lebegő doboz helyett."
+  },
+  "Preview_on_Hover_Delay": {
+    "message": "Az ELLOVER KÉRDÉSI KÉRDÉSE"
+  },
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
+    "message": "Ha az automatikus előnézet a lebegőben engedélyezve van, ez a késleltetés az előnézet megjelenése előtt."
+  },
+  "_Advanced__Force_Preview": {
+    "message": "[Advanced] Force Preview"
+  },
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
+    "message": "Olyan webhelyeknél, amelyek ** valóban ** nem akarják megtekinteni (pl. Stackoverflow.com) ez egy előnézetet erőltet. Nerd figyelmeztetés: Ez egy vázlatos buster."
+  },
+  "_Advanced__Disable_Incognito_Google": {
+    "message": "[Advanced] Az Incognito Google letiltása"
+  },
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
+    "message": "Alapértelmezés szerint a használt Google-keresés verzióját mindig feliratkozik magánélet és biztonsági okokból. Bár ez azt eredményezheti, hogy mindig látja a bejelentkezési utasításokat."
+  },
+  "Disable_Previews_on_this_site": {
+    "message": "Tiltsa le az előnézeteket ezen a webhelyen"
+  },
+  "The_detail_information_about_the_checkbox_here_": {
+    "message": "Az itt található jelölőnégyzetről szóló részletek."
+  },
+  "Disabled_on_Websites": {
     "message": "Letiltva a webhelyeken"
   },
-  "optionBlockedSitesDesc": {
-    "message": "A kiterjesztés nem fog futni ezeken a webhelyeken. Írjon be egy helyenként egy webhelyet."
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
+    "message": "A kiterjesztés nem fog futni ezeken a webhelyeken, letilthatja a webhelyet, ha hozzáadja a listát."
+  },
+  "Successfully_updated_settings": {
+    "message": "Sikeresen frissített beállítások"
+  },
+  "Search__amp__Link_Preview_Options": {
+    "message": "Keresés & amp; Linkek előnézeti beállításai"
+  },
+  "Show_Sample_Preview": {
+    "message": "Mutasd meg a minta előnézetét"
+  },
+  "Report_an_Issue": {
+    "message": "Jelentsen egy problémát"
   }
 }

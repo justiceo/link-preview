@@ -1,52 +1,122 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Prehľad vyhľadávania a odkazu",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Ukážky odkazu",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Pozrite si ukážky odkazov a okamžite vykonávajú vyhľadávanie na tej istej stránke pomocou tohto ukážky namiesto otvárania nových kariet",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Ako sa máme?"
+  "@testMarkup": {
+    "message": "<div> <p> Ahoj svet </p> Toto je jazyk <strong> </strong> z webu </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Som rád že sa ti to páči! Môžete nám pomôcť zdieľať ❤?"
+  "Search_engine": {
+    "message": "Vyhľadávač"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Ako sa môžeme vylepšiť?"
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
+    "message": "Vyhľadávací nástroj, ktorý by sa použil na inline ukážky vyhľadávania."
   },
-  "fdbkThanks": {
-    "message": "Ďakujem za spätnú väzbu!"
+  "Google_Search": {
+    "message": "Google vyhľadávanie"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Hodnotiť na webstore"
+  "Bing_Search": {
+    "message": "Vyhľadávanie"
   },
-  "fdbkNoResponse": {
-    "message": "Nie"
+  "Yahoo_Search": {
+    "message": "Hľadanie Yahoo"
   },
-  "fdbkSumbit": {
-    "message": "Predložiť"
+  "Baidu_Search": {
+    "message": "Vyhľadávanie Baidu"
   },
-  "reportAnIssue": {
-    "message": "Nahlásiť problém",
-    "description": "Button text for reporting an issue"
+  "Yandex_Search": {
+    "message": "Vyhľadávanie YANDEX"
   },
-  "showDemo": {
-    "message": "Ukázať",
-    "description": "Button text for showing demo"
+  "Preview_Width____": {
+    "message": "Šírka ukážky (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Úspešne aktualizované nastavenia"
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Šírka panela ukážky vzhľadom na stránku."
   },
-  "optionBlockedSites": {
+  "Preview_Height____": {
+    "message": "Výška ukážky (%)"
+  },
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Výška panela ukážky vzhľadom na stránku."
+  },
+  "Panel_Position": {
+    "message": "Poloha panela"
+  },
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
+    "message": "Strana stránky, na ktorej sa má zobraziť ukážku."
+  },
+  "Right_side": {
+    "message": "Pravá strana"
+  },
+  "Left_side": {
+    "message": "Ľavá strana"
+  },
+  "Close_on_Escape_Key": {
+    "message": "Zatvorte na útek"
+  },
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
+    "message": "Na zatvorenie panela ukážky použite kľúč ESC (Escape)."
+  },
+  "Automatically_Hide_Previews": {
+    "message": "Automaticky skryť ukážky"
+  },
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
+    "message": "Pri posúvaní alebo interakcii s hlavnou stránkou skrýva panel s ukážkou."
+  },
+  "Preview_in_Side_Panel": {
+    "message": "Náhľad na bočnom paneli"
+  },
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
+    "message": "Zobrazuje zobrazenie na bočnom paneli Chrome namiesto plávajúceho boxu."
+  },
+  "Preview_on_Hover_Delay": {
+    "message": "Oneskorenie s náhľadom na predbiehanie"
+  },
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
+    "message": "Ak je povolená automatická ukážka na vznášaní, je to oneskorenie pred zobrazením ukážky."
+  },
+  "_Advanced__Force_Preview": {
+    "message": "[Advanced] Force Preview"
+  },
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
+    "message": "V prípade webových stránok, ktoré ** naozaj ** nechce byť zobrazený (napr. StackOverflow.com), to vynúti ukážku. Nerd Alert: Toto je buster s rámom."
+  },
+  "_Advanced__Disable_Incognito_Google": {
+    "message": "[Advanced] Zakázať inkognito Google"
+  },
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
+    "message": "V predvolenom nastavení sa verzia použitého vyhľadávania Google vždy odpisuje z dôvodov ochrany súkromia a bezpečnosti. Aj keď to môže mať za následok vždy vidieť výzvy na prihlásenie."
+  },
+  "Disable_Previews_on_this_site": {
+    "message": "Zakážte ukážky na tejto stránke"
+  },
+  "The_detail_information_about_the_checkbox_here_": {
+    "message": "Podrobné informácie o začiarkavacom políčku tu."
+  },
+  "Disabled_on_Websites": {
     "message": "Zakázané na webových stránkach"
   },
-  "optionBlockedSitesDesc": {
-    "message": "Rozšírenie nebude bežať na týchto stránkach. Zadajte jednu stránku na riadok."
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
+    "message": "Rozšírenie sa na týchto stránkach nebude behať, môžete web zakázať pridaním do tohto zoznamu."
+  },
+  "Successfully_updated_settings": {
+    "message": "Úspešne aktualizované nastavenia"
+  },
+  "Search__amp__Link_Preview_Options": {
+    "message": "Search & Amp; Možnosti ukážky odkazu"
+  },
+  "Show_Sample_Preview": {
+    "message": "Zobraziť ukážku ukážky"
+  },
+  "Report_an_Issue": {
+    "message": "Nahlásiť problém"
   }
 }

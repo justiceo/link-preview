@@ -1,52 +1,122 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Preview Search & Link Forhåndsvisning",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Forhåndsvisning av koblinger",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Se forhåndsvisning av lenker og utfører øyeblikkelig søk på samme side ved hjelp av denne forhåndsvisning i stedet for å åpne nye faner",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Hvordan har vi det?"
+  "@testMarkup": {
+    "message": "<div> <p> Hello World </p> Dette er <strong> språket </strong> på nettet </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Glad du likte det! Kan du hjelpe oss med å dele ❤?"
+  "Search_engine": {
+    "message": "Søkemotor"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Hvordan kan vi forbedre oss?"
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
+    "message": "Søkemotoren som vil bli brukt til forhåndsvisning av inline søk."
   },
-  "fdbkThanks": {
-    "message": "Takk for tilbakemeldingen!"
+  "Google_Search": {
+    "message": "Google søk"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Priser på nettbutikken"
+  "Bing_Search": {
+    "message": "Bing -søk"
   },
-  "fdbkNoResponse": {
-    "message": "Nei"
+  "Yahoo_Search": {
+    "message": "Yahoo -søk"
   },
-  "fdbkSumbit": {
-    "message": "Sende inn"
+  "Baidu_Search": {
+    "message": "Baidu -søk"
   },
-  "reportAnIssue": {
-    "message": "Rapporter et problem",
-    "description": "Button text for reporting an issue"
+  "Yandex_Search": {
+    "message": "Yandex -søk"
   },
-  "showDemo": {
-    "message": "Vis demo",
-    "description": "Button text for showing demo"
+  "Preview_Width____": {
+    "message": "Forhåndsvisningsbredde (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Vellykket oppdaterte innstillinger"
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Bredden på forhåndsvisningspanelet i forhold til siden."
   },
-  "optionBlockedSites": {
+  "Preview_Height____": {
+    "message": "Forhåndsvisningshøyde (%)"
+  },
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Høyden på forhåndsvisningspanelet i forhold til siden."
+  },
+  "Panel_Position": {
+    "message": "Panelposisjon"
+  },
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
+    "message": "Siden av siden du skal vise forhåndsvisningen."
+  },
+  "Right_side": {
+    "message": "Høyre side"
+  },
+  "Left_side": {
+    "message": "Venstre side"
+  },
+  "Close_on_Escape_Key": {
+    "message": "Lukk på Escape -tasten"
+  },
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
+    "message": "Bruk ESC (Escape) -tasten for å lukke forhåndsvisningspanelet."
+  },
+  "Automatically_Hide_Previews": {
+    "message": "Skjul forhåndsvisninger automatisk"
+  },
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
+    "message": "Skjul forhåndsvisningspanelet når du blar bort eller samhandler med hovedsiden."
+  },
+  "Preview_in_Side_Panel": {
+    "message": "Forhåndsvisning i sidepanel"
+  },
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
+    "message": "Viser utsikten i Chrome -sidepanel i stedet for en flytende boks."
+  },
+  "Preview_on_Hover_Delay": {
+    "message": "Forhåndsvisning-på-hover-forsinkelse"
+  },
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
+    "message": "Når automatisk forhåndsvisning av Hover er aktivert, er dette forsinkelsen før forhåndsvisningen vises."
+  },
+  "_Advanced__Force_Preview": {
+    "message": "[Avansert] Forhåndsvisning av kraft"
+  },
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
+    "message": "For nettsteder som ** virkelig ** ikke ønsker å bli forhåndsvisning (f.eks. StackOverflow.com) dette tvinger en forhåndsvisning. Nerd Alert: Dette er en ramme-busting buster."
+  },
+  "_Advanced__Disable_Incognito_Google": {
+    "message": "[Avansert] Deaktiver incognito google"
+  },
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
+    "message": "Som standard er versjonen av Google-søket alltid signert av personvern og sikkerhetsmessige årsaker. Selv om dette kan føre til at du alltid ser påloggingshjul."
+  },
+  "Disable_Previews_on_this_site": {
+    "message": "Deaktiver forhåndsvisninger på dette nettstedet"
+  },
+  "The_detail_information_about_the_checkbox_here_": {
+    "message": "Detaljinformasjonen om avkrysningsruten her."
+  },
+  "Disabled_on_Websites": {
     "message": "Deaktivert på nettsteder"
   },
-  "optionBlockedSitesDesc": {
-    "message": "Utvidelse kjøres ikke på disse nettstedene. Skriv inn ett nettsted per linje."
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
+    "message": "Utvidelse kjøres ikke på disse nettstedene, du kan deaktivere et nettsted ved å legge til denne listen."
+  },
+  "Successfully_updated_settings": {
+    "message": "Vellykket oppdaterte innstillinger"
+  },
+  "Search__amp__Link_Preview_Options": {
+    "message": "Søk & amp; Link forhåndsvisningsalternativer"
+  },
+  "Show_Sample_Preview": {
+    "message": "Vis forhåndsvisning av prøven"
+  },
+  "Report_an_Issue": {
+    "message": "Rapporter et problem"
   }
 }

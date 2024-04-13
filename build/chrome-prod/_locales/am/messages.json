@@ -1,52 +1,122 @@
 {
-  "appName": {
+  "@appName": {
     "message": "ፈልግ & አገናኝ ቅድመ-እይታ",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "አገናኝ ቅድመ-እይታዎች",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "የአንጻሮች አገናኞች ቅድመ-እይታዎችን ይመልከቱ እና ወዲያውኑ አዳዲስ ትሮችን ከመክፈት ይልቅ ይህንን ቅድመ-ሰሪ በመጠቀም በተመሳሳይ ገጽ ላይ ይፈልጉ",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "እንዴት እየሰራን ነው?"
+  "@testMarkup": {
+    "message": "<dip> <prame ዓለም </ p> ይህ <strong> ቋንቋ </ strong >> </ sub >>"
   },
-  "fdbkCareToShare": {
-    "message": "ደስ እንደሰኛቸው ደስ ብሎኛል! ❤️ እንድንካፈል ሊረዱን ይችላሉ?"
+  "Search_engine": {
+    "message": "የመፈለጊያ ማሸን"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "እንዴት ማሻሻል እንችላለን?"
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
+    "message": "ለመንብስ ፍለጋ ቅድመ-እይታዎች የሚያገለግል የፍለጋ ሞተር."
   },
-  "fdbkThanks": {
-    "message": "ስለ ግብረመልሱ አመሰግናለሁ!"
+  "Google_Search": {
+    "message": "በጉግል መፈለጊያ"
   },
-  "fdbkRateOnWebstore": {
-    "message": "በደረጃዎች ላይ ይስጡ"
+  "Bing_Search": {
+    "message": "የ Bing ፍለጋ"
   },
-  "fdbkNoResponse": {
-    "message": "አይ"
+  "Yahoo_Search": {
+    "message": "Yahoo ፍለጋ"
   },
-  "fdbkSumbit": {
-    "message": "ያስገቡ"
+  "Baidu_Search": {
+    "message": "Baidu ፍለጋ"
   },
-  "reportAnIssue": {
-    "message": "አንድ ጉዳይ ሪፖርት ያድርጉ",
-    "description": "Button text for reporting an issue"
+  "Yandex_Search": {
+    "message": "Yandex ፍለጋ"
   },
-  "showDemo": {
-    "message": "ማሳያ ማሳያ",
-    "description": "Button text for showing demo"
+  "Preview_Width____": {
+    "message": "ቅድመ-እይታ ስፋት (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "በተሳካ ሁኔታ ወቅታዊ ቅንብሮች"
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
+    "message": "የቅድመ እይታ ፓነል ወርድ ከገጹ አንፃራዊ."
   },
-  "optionBlockedSites": {
+  "Preview_Height____": {
+    "message": "ቅድመ-እይታ ቁመት (%)"
+  },
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
+    "message": "የቅድመ እይታ ፓነል ቁመት ከገጹ አንፃር."
+  },
+  "Panel_Position": {
+    "message": "ፓነል አቀማመጥ"
+  },
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
+    "message": "ቅድመ-እይታን ለማሳየት የሚወስደው ገጽ ጎን."
+  },
+  "Right_side": {
+    "message": "በቀኝ በኩል"
+  },
+  "Left_side": {
+    "message": "ግራ ጎን"
+  },
+  "Close_on_Escape_Key": {
+    "message": "ማምለጫ ቁልፎች ላይ ዝጋ"
+  },
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
+    "message": "የቅድመ እይታ ፓነልን ለመዝጋት ESC (ማምለጫ) ቁልፍን ይጠቀሙ."
+  },
+  "Automatically_Hide_Previews": {
+    "message": "ቅድመ-እይታዎችን በራስ-ሰር ይደብቁ"
+  },
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
+    "message": "የቅድመ-እይታ ፓነልን ይሸፍኑት ከዋናው ገጽ ጋር ሲገናኙ ይደብቃል."
+  },
+  "Preview_in_Side_Panel": {
+    "message": "ከጎን ፓነል ቅድመ-እይታ"
+  },
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
+    "message": "ተንሳፋፊ ሣጥን ሳይሆን በ Chrome የጎን ፓነል ውስጥ ያለውን አመለካከት ያሳያል."
+  },
+  "Preview_on_Hover_Delay": {
+    "message": "ቅድመ-እይታ-በ-ዳር ዳር መዘግየት"
+  },
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
+    "message": "ራስ-ሰር ቅድመ-እይታ በሚሽከረከርበት ጊዜ ቅድመ-እይታ ከመታየቱ በፊት ይህ መዘግየት ነው."
+  },
+  "_Advanced__Force_Preview": {
+    "message": "[የላቀ] ኃይል ቅድመ-እይታ"
+  },
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
+    "message": "ለእድገቢያዎች ለተገቢው ድርጣቢያዎች ** ነርድ ማንቂያ-ይህ የ CLUSTY-BRUSTIONG ኦፕሬተር ነው."
+  },
+  "_Advanced__Disable_Incognito_Google": {
+    "message": "[የላቀ] ማንነት የማያሳውቅ ጉግልን ያሰናክሉ"
+  },
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
+    "message": "በነባሪነት, የ Google ፍለጋ ስሪት ጥቅም ላይ የዋለው የግላዊነት እና የደህንነት ምክንያቶች ሁል ጊዜም ዘግይቷል. ምንም እንኳን ይህ ሁል ጊዜ በመለያ የመግቢያ መጠየቂያዎችን ማየት ይችላል."
+  },
+  "Disable_Previews_on_this_site": {
+    "message": "በዚህ ጣቢያ ላይ ቅድመ ሁኔታዎችን ያሰናክሉ"
+  },
+  "The_detail_information_about_the_checkbox_here_": {
+    "message": "ስለ አመልካቹ ሳጥን ዝርዝር መረጃ."
+  },
+  "Disabled_on_Websites": {
     "message": "ድርጣቢያዎች ላይ ተሰናክሏል"
   },
-  "optionBlockedSitesDesc": {
-    "message": "ቅጥያ በእነዚህ ጣቢያዎች ላይ አይሰራም. በአንድ መስመር አንድ ጣቢያ ያስገቡ."
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
+    "message": "ቅጥያ በእነዚህ ጣቢያዎች ላይ አይሠራም, ወደዚህ ዝርዝር በመጨመር ጣቢያ ማቦዘን ይችላሉ."
+  },
+  "Successfully_updated_settings": {
+    "message": "በተሳካ ሁኔታ ወቅታዊ ቅንብሮች"
+  },
+  "Search__amp__Link_Preview_Options": {
+    "message": "ፈልግ እና አዶ, የአገናኝ ቅድመ-እይታ አማራጮች"
+  },
+  "Show_Sample_Preview": {
+    "message": "የናሙና ቅድመ ዕይታ ያሳዩ"
+  },
+  "Report_an_Issue": {
+    "message": "አንድ ጉዳይ ሪፖርት ያድርጉ"
   }
 }

@@ -1,52 +1,122 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Προεπισκόπηση αναζήτησης και σύνδεσης",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Προεπισκοπήσεις συνδέσμου",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Δείτε τις προεπισκοπήσεις των συνδέσμων και εκτελεί αμέσως αναζητήσεις στην ίδια σελίδα χρησιμοποιώντας αυτόν τον προεπισκόπηση αντί να ανοίξει νέες καρτέλες",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "ΠΩΣ ΤΑ ΠΑΜΕ?"
+  "@testMarkup": {
+    "message": "<div> <p> hello world </p> Αυτή είναι η <strong> γλώσσα </strong> του ιστού </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Χαίρομαι που σου αρέσει! Μπορείτε να μας βοηθήσετε να μοιραστούμε το ❤्;"
+  "Search_engine": {
+    "message": "Μηχανή αναζήτησης"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Πώς μπορούμε να βελτιώσουμε;"
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
+    "message": "Η μηχανή αναζήτησης που θα χρησιμοποιηθεί για προεπισκοπήσεις αναζήτησης inline."
   },
-  "fdbkThanks": {
-    "message": "Ευχαριστώ για τα σχόλια!"
+  "Google_Search": {
+    "message": "Αναζήτηση Google"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Βαθμολογία στο webstore"
+  "Bing_Search": {
+    "message": "Αναζήτηση Bing"
   },
-  "fdbkNoResponse": {
-    "message": "Οχι"
+  "Yahoo_Search": {
+    "message": "Αναζήτηση Yahoo"
   },
-  "fdbkSumbit": {
-    "message": "υποβάλλουν"
+  "Baidu_Search": {
+    "message": "Αναζήτηση Baidu"
   },
-  "reportAnIssue": {
-    "message": "Αναφέρετε ένα πρόβλημα",
-    "description": "Button text for reporting an issue"
+  "Yandex_Search": {
+    "message": "Αναζήτηση Yandex"
   },
-  "showDemo": {
-    "message": "Επίδειξη επίδειξης",
-    "description": "Button text for showing demo"
+  "Preview_Width____": {
+    "message": "Πλάτος προεπισκόπησης (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Ενημερωμένες ρυθμίσεις με επιτυχία"
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Το πλάτος του πίνακα προεπισκόπησης σε σχέση με τη σελίδα."
   },
-  "optionBlockedSites": {
+  "Preview_Height____": {
+    "message": "Ύψος προεπισκόπησης (%)"
+  },
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Το ύψος του πίνακα προεπισκόπησης σε σχέση με τη σελίδα."
+  },
+  "Panel_Position": {
+    "message": "Θέση πάνελ"
+  },
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
+    "message": "Την πλευρά της σελίδας στην οποία θα εμφανιστεί η προεπισκόπηση."
+  },
+  "Right_side": {
+    "message": "Σωστη πλευρα"
+  },
+  "Left_side": {
+    "message": "Αριστερή πλευρά"
+  },
+  "Close_on_Escape_Key": {
+    "message": "Κλείστε το κλειδί διαφυγής"
+  },
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
+    "message": "Χρησιμοποιήστε το κλειδί ESC (ESCAPE) για να κλείσετε τον πίνακα προεπισκόπησης."
+  },
+  "Automatically_Hide_Previews": {
+    "message": "Απόκρυψη αυτομάτων προεπισκόπησης"
+  },
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
+    "message": "Κρύβει τον πίνακα προεπισκόπησης όταν μετακινηθείτε ή αλληλεπιδράτε με την κύρια σελίδα."
+  },
+  "Preview_in_Side_Panel": {
+    "message": "Προεπισκόπηση στο πλαϊνό πίνακα"
+  },
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
+    "message": "Εμφανίζει την προβολή στο πλαϊνό πλαίσιο του Chrome αντί για ένα πλωτό κουτί."
+  },
+  "Preview_on_Hover_Delay": {
+    "message": "Καθυστέρηση προεπισκόπησης-on-hover"
+  },
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
+    "message": "Όταν είναι ενεργοποιημένη η αυτόματη προεπισκόπηση του Hover, αυτή είναι η καθυστέρηση πριν εμφανιστεί η προεπισκόπηση."
+  },
+  "_Advanced__Force_Preview": {
+    "message": "[Advanced] Preview Force"
+  },
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
+    "message": "Για ιστοσελίδες που ** πραγματικά ** δεν θέλουν να προεπισκόπηση (π.χ. stackoverflow.com) αυτό αναγκάζει μια προεπισκόπηση. NERD ALERT: Πρόκειται για ένα buster busting πλαισίου."
+  },
+  "_Advanced__Disable_Incognito_Google": {
+    "message": "[Advanced] Απενεργοποιήστε το Incognito Google"
+  },
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
+    "message": "Από προεπιλογή, η έκδοση της αναζήτησης Google που χρησιμοποιείται είναι πάντα υπογεγραμμένη για λόγους απορρήτου και ασφάλειας. Αν και αυτό μπορεί να έχει ως αποτέλεσμα να βλέπουμε πάντα τις υποδείξεις σύνδεσης."
+  },
+  "Disable_Previews_on_this_site": {
+    "message": "Απενεργοποιήστε τις προεπισκοπήσεις σε αυτόν τον ιστότοπο"
+  },
+  "The_detail_information_about_the_checkbox_here_": {
+    "message": "Οι λεπτομέρειες πληροφορίες σχετικά με το πλαίσιο ελέγχου εδώ."
+  },
+  "Disabled_on_Websites": {
     "message": "Απενεργοποιημένη σε ιστότοπους"
   },
-  "optionBlockedSitesDesc": {
-    "message": "Η επέκταση δεν θα εκτελεστεί σε αυτούς τους ιστότοπους. Εισαγάγετε έναν ιστότοπο ανά γραμμή."
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
+    "message": "Η επέκταση δεν θα εκτελεστεί σε αυτούς τους ιστότοπους, μπορείτε να απενεργοποιήσετε έναν ιστότοπο προσθέτοντας σε αυτόν τον κατάλογο."
+  },
+  "Successfully_updated_settings": {
+    "message": "Ενημερωμένες ρυθμίσεις με επιτυχία"
+  },
+  "Search__amp__Link_Preview_Options": {
+    "message": "Search & amp; Επιλογές προεπισκόπησης συνδέσμου"
+  },
+  "Show_Sample_Preview": {
+    "message": "Εμφάνιση δείγματος προεπισκόπησης"
+  },
+  "Report_an_Issue": {
+    "message": "Αναφέρετε ένα πρόβλημα"
   }
 }

@@ -1,52 +1,122 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Previsualització de cerca i enllaç",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Previsualitzacions d'enllaços",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Consulteu les previsualitzacions dels enllaços i realitzen de forma instantània les cerques a la mateixa pàgina mitjançant aquest previsualitzador en lloc d’obrir noves pestanyes",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Com estem?"
+  "@testMarkup": {
+    "message": "<div> <p> Hola món </p> Aquest és el <strong> llenguatge </strong> del web </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Encantat de que t'agradi! Ens podeu ajudar a compartir el ❤️?"
+  "Search_engine": {
+    "message": "Motor de cerca"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Com podem millorar?"
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
+    "message": "El motor de cerca que s’utilitzaria per a les previsualitzacions de cerca en línia."
   },
-  "fdbkThanks": {
-    "message": "Gràcies pels comentaris!"
+  "Google_Search": {
+    "message": "Google recerca"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Valora a la botiga web"
+  "Bing_Search": {
+    "message": "Cerca Bing"
   },
-  "fdbkNoResponse": {
-    "message": "No"
+  "Yahoo_Search": {
+    "message": "Cerca de Yahoo"
   },
-  "fdbkSumbit": {
-    "message": "Presentar"
+  "Baidu_Search": {
+    "message": "Cerca de Baidu"
   },
-  "reportAnIssue": {
-    "message": "Informeu d’un problema",
-    "description": "Button text for reporting an issue"
+  "Yandex_Search": {
+    "message": "Cerca Yandex"
   },
-  "showDemo": {
-    "message": "Demostració d'espectacle",
-    "description": "Button text for showing demo"
+  "Preview_Width____": {
+    "message": "Amplada de previsualització (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Configuració actualitzada amb èxit"
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
+    "message": "L'amplada del tauler de vista prèvia respecte a la pàgina."
   },
-  "optionBlockedSites": {
+  "Preview_Height____": {
+    "message": "Vista prèvia alçada (%)"
+  },
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
+    "message": "L'alçada del tauler de vista prèvia respecte a la pàgina."
+  },
+  "Panel_Position": {
+    "message": "Posició del panell"
+  },
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
+    "message": "El costat de la pàgina on es mostra la vista prèvia."
+  },
+  "Right_side": {
+    "message": "Costat dret"
+  },
+  "Left_side": {
+    "message": "Costat esquerre"
+  },
+  "Close_on_Escape_Key": {
+    "message": "Tanca la clau d’escapament"
+  },
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
+    "message": "Utilitzeu la tecla ESC (Escape) per tancar el tauler de vista prèvia."
+  },
+  "Automatically_Hide_Previews": {
+    "message": "Amagueu automàticament les previsualitzacions"
+  },
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
+    "message": "Amaga el tauler de previsualització quan es desplaça o interactua amb la pàgina principal."
+  },
+  "Preview_in_Side_Panel": {
+    "message": "Vista prèvia al tauler lateral"
+  },
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
+    "message": "Mostra la vista al panell lateral cromat en lloc d'una caixa flotant."
+  },
+  "Preview_on_Hover_Delay": {
+    "message": "Retard de previsualització sobre-recurs"
+  },
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
+    "message": "Quan la previsualització automàtica sobre el HOver està habilitada, aquest és el retard abans que es mostri la vista prèvia."
+  },
+  "_Advanced__Force_Preview": {
+    "message": "[Avançat] Vista prèvia de la força"
+  },
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
+    "message": "Per als llocs web que ** realment ** no volen ser previsualitzats (per exemple, stackoverflow.com), això obliga una vista prèvia. Alerta de Nerd: es tracta d’un Buster que s’aconsegueix amb un marc."
+  },
+  "_Advanced__Disable_Incognito_Google": {
+    "message": "[Avançat] Desactivar Incognito Google"
+  },
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
+    "message": "De manera predeterminada, la versió de Google Search usada sempre està signada per motius de privadesa i seguretat. Tot i que això pot donar lloc a les indicacions de sessió sempre."
+  },
+  "Disable_Previews_on_this_site": {
+    "message": "Desactiveu les previsualitzacions en aquest lloc"
+  },
+  "The_detail_information_about_the_checkbox_here_": {
+    "message": "La informació detallada sobre la casella de selecció aquí."
+  },
+  "Disabled_on_Websites": {
     "message": "Desactivat en llocs web"
   },
-  "optionBlockedSitesDesc": {
-    "message": "L’extensió no s’executarà en aquests llocs. Introduïu un lloc per línia."
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
+    "message": "L’extensió no s’executarà en aquests llocs, podeu desactivar un lloc afegint a aquesta llista."
+  },
+  "Successfully_updated_settings": {
+    "message": "Configuració actualitzada amb èxit"
+  },
+  "Search__amp__Link_Preview_Options": {
+    "message": "Cerca & amp; Opcions de vista prèvia d'enllaç"
+  },
+  "Show_Sample_Preview": {
+    "message": "Mostra la vista prèvia de la mostra"
+  },
+  "Report_an_Issue": {
+    "message": "Informeu d’un problema"
   }
 }

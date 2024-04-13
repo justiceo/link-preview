@@ -1,52 +1,122 @@
 {
-  "appName": {
+  "@appName": {
     "message": "תצוגה מקדימה של חיפוש וקישור",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "תצוגה מקדימה של קישור",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "ראה תצוגה מקדימה של קישורים ומבצע מייד חיפושים באותו עמוד באמצעות תצוגה מקדימה זו במקום לפתוח כרטיסיות חדשות",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "מה שלומנו?"
+  "@testMarkup": {
+    "message": "<div> <p> שלום עולם </p> זוהי שפה <strong> </strong> של האינטרנט </div>"
   },
-  "fdbkCareToShare": {
-    "message": "שמח שאתה אוהב את זה! אתה יכול לעזור לנו לשתף את ❤️?"
+  "Search_engine": {
+    "message": "מנוע חיפוש"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "איך אנחנו יכולים להשתפר?"
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
+    "message": "מנוע החיפוש שישמש לתצוגה מקדימה של חיפוש מוטבע."
   },
-  "fdbkThanks": {
-    "message": "תודה על המשוב!"
+  "Google_Search": {
+    "message": "חיפוש בגוגל"
   },
-  "fdbkRateOnWebstore": {
-    "message": "דרג בחנות האינטרנט"
+  "Bing_Search": {
+    "message": "חיפוש בינג"
   },
-  "fdbkNoResponse": {
-    "message": "לא"
+  "Yahoo_Search": {
+    "message": "חיפוש יאהו"
   },
-  "fdbkSumbit": {
-    "message": "שלח"
+  "Baidu_Search": {
+    "message": "חיפוש ביידו"
   },
-  "reportAnIssue": {
-    "message": "דווח על בעיה",
-    "description": "Button text for reporting an issue"
+  "Yandex_Search": {
+    "message": "חיפוש Yandex"
   },
-  "showDemo": {
-    "message": "להראות הדגמה",
-    "description": "Button text for showing demo"
+  "Preview_Width____": {
+    "message": "רוחב תצוגה מקדימה (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "הגדרות מעודכנות בהצלחה"
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
+    "message": "רוחב לוח התצוגה המקדימה ביחס לדף."
   },
-  "optionBlockedSites": {
+  "Preview_Height____": {
+    "message": "גובה תצוגה מקדימה (%)"
+  },
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
+    "message": "גובה לוח התצוגה המקדימה ביחס לדף."
+  },
+  "Panel_Position": {
+    "message": "מיקום הפאנל"
+  },
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
+    "message": "הצד של הדף בו ניתן להציג את התצוגה המקדימה."
+  },
+  "Right_side": {
+    "message": "צד ימין"
+  },
+  "Left_side": {
+    "message": "צד שמאל"
+  },
+  "Close_on_Escape_Key": {
+    "message": "סגור את מפתח הבריחה"
+  },
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
+    "message": "השתמש במפתח ESC (Escape) כדי לסגור את לוח התצוגה המקדימה."
+  },
+  "Automatically_Hide_Previews": {
+    "message": "הסתירה אוטומטית תצוגה מקדימה"
+  },
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
+    "message": "מסתיר את לוח התצוגה המקדימה כשאתה גולש או אינטראקציה עם העמוד הראשי."
+  },
+  "Preview_in_Side_Panel": {
+    "message": "תצוגה מקדימה בלוח הצדדי"
+  },
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
+    "message": "מציג את התצוגה בלוח הצד של Chrome במקום קופסה צפה."
+  },
+  "Preview_on_Hover_Delay": {
+    "message": "עיכוב מקדימה על העופות"
+  },
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
+    "message": "כאשר מופעלת תצוגה מקדימה אוטומטית על רחף, זהו העיכוב לפני שמוצג התצוגה המקדימה."
+  },
+  "_Advanced__Force_Preview": {
+    "message": "תצוגה מקדימה של כוח [מתקדם]"
+  },
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
+    "message": "עבור אתרים ש- ** באמת ** לא רוצים לתצוגה מקדימה (למשל StackOverFlow.com) זה מכריח תצוגה מקדימה. התראת חנונים: זהו באסטר שוחק מסגרת."
+  },
+  "_Advanced__Disable_Incognito_Google": {
+    "message": "[מתקדם] השבתו את הסתר גוגל"
+  },
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
+    "message": "כברירת מחדל, גרסת ה- Google Search המשמשת תמיד חתומה מסיבות פרטיות ואבטחה. אם כי זה עלול לגרום תמיד לראות הנחיות כניסה."
+  },
+  "Disable_Previews_on_this_site": {
+    "message": "השבת תצוגה מקדימה באתר זה"
+  },
+  "The_detail_information_about_the_checkbox_here_": {
+    "message": "פרטי הפרט אודות תיבת הסימון כאן."
+  },
+  "Disabled_on_Websites": {
     "message": "מושבת באתרים"
   },
-  "optionBlockedSitesDesc": {
-    "message": "ההרחבה לא תפעל באתרים אלה. הזן אתר אחד בשורה."
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
+    "message": "ההרחבה לא תפעל באתרים אלה, באפשרותך להשבית אתר על ידי הוספת לרשימה זו."
+  },
+  "Successfully_updated_settings": {
+    "message": "הגדרות מעודכנות בהצלחה"
+  },
+  "Search__amp__Link_Preview_Options": {
+    "message": "חיפוש & amp; אפשרויות תצוגה מקדימה של קישור"
+  },
+  "Show_Sample_Preview": {
+    "message": "הצג תצוגה מקדימה לדוגמא"
+  },
+  "Report_an_Issue": {
+    "message": "דווח על בעיה"
   }
 }

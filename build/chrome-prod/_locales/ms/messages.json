@@ -1,52 +1,122 @@
 {
-  "appName": {
+  "@appName": {
     "message": "Pratonton Cari & Pautan",
     "description": "The name of the extension"
   },
-  "appShortName": {
+  "@appShortName": {
     "message": "Pratonton pautan",
     "description": "The short-version name of the extension name"
   },
-  "appDesc": {
+  "@appDesc": {
     "message": "Lihat pratonton pautan dan dengan serta -merta melakukan carian pada halaman yang sama menggunakan pratonton ini dan bukannya membuka tab baru",
     "description": "A description of its function"
   },
-  "fdbkHowAreWeDoing": {
-    "message": "Bagaimana keadaan kita?"
+  "@testMarkup": {
+    "message": "<div> <p> hello world </p> Ini adalah <strong> bahasa </strong> dari web </div>"
   },
-  "fdbkCareToShare": {
-    "message": "Gembira anda menyukainya! Bolehkah anda membantu kami berkongsi ❤️?"
+  "Search_engine": {
+    "message": "Enjin carian"
   },
-  "fdbkHowCanWeImprove": {
-    "message": "Bagaimana kita dapat memperbaiki?"
+  "The_search_engine_that_would_be_used_for_inline_search_previews_": {
+    "message": "Enjin carian yang akan digunakan untuk pratonton carian sebaris."
   },
-  "fdbkThanks": {
-    "message": "Terima kasih atas maklum balas!"
+  "Google_Search": {
+    "message": "Carian Google"
   },
-  "fdbkRateOnWebstore": {
-    "message": "Kadar di WebStore"
+  "Bing_Search": {
+    "message": "Carian bing"
   },
-  "fdbkNoResponse": {
-    "message": "Tidak"
+  "Yahoo_Search": {
+    "message": "Carian Yahoo"
   },
-  "fdbkSumbit": {
-    "message": "Hantar"
+  "Baidu_Search": {
+    "message": "Carian Baidu"
   },
-  "reportAnIssue": {
-    "message": "Melaporkan isu",
-    "description": "Button text for reporting an issue"
+  "Yandex_Search": {
+    "message": "Yandex Search"
   },
-  "showDemo": {
-    "message": "Tunjukkan demo",
-    "description": "Button text for showing demo"
+  "Preview_Width____": {
+    "message": "Lebar Pratonton (%)"
   },
-  "optionsSaveSuccess": {
-    "message": "Tetapan yang berjaya dikemas kini"
+  "The_width_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Lebar panel pratonton relatif kepada halaman."
   },
-  "optionBlockedSites": {
+  "Preview_Height____": {
+    "message": "Ketinggian pratonton (%)"
+  },
+  "The_height_of_the_preview_panel_relative_to_the_page_": {
+    "message": "Ketinggian panel pratonton relatif kepada halaman."
+  },
+  "Panel_Position": {
+    "message": "Kedudukan panel"
+  },
+  "The_side_of_the_page_in_which_to_display_the_preview_": {
+    "message": "Bahagian halaman di mana untuk memaparkan pratonton."
+  },
+  "Right_side": {
+    "message": "Sebelah kanan"
+  },
+  "Left_side": {
+    "message": "Sebelah kiri"
+  },
+  "Close_on_Escape_Key": {
+    "message": "Tutup pada kunci Escape"
+  },
+  "Use_the_ESC__escape__key_to_close_the_preview_panel_": {
+    "message": "Gunakan kekunci ESC (Escape) untuk menutup panel pratonton."
+  },
+  "Automatically_Hide_Previews": {
+    "message": "Secara automatik menyembunyikan pratonton"
+  },
+  "Hides_the_preview_panel_when_you_scroll_away_or_interact_with_the_main_page_": {
+    "message": "Menyembunyikan panel pratonton apabila anda menatal atau berinteraksi dengan halaman utama."
+  },
+  "Preview_in_Side_Panel": {
+    "message": "Pratonton di panel sampingan"
+  },
+  "Displays_the_view_in_Chrome_Side_Panel_instead_of_a_floating_box_": {
+    "message": "Memaparkan pandangan dalam panel sisi krom dan bukannya kotak terapung."
+  },
+  "Preview_on_Hover_Delay": {
+    "message": "Penangguhan pratonton-on-hover"
+  },
+  "When_automatic_preview_on_hover_is_enabled__this_is_the_delay_before_the_preview_is_shown_": {
+    "message": "Apabila pratonton automatik pada hover didayakan, ini adalah kelewatan sebelum pratonton ditunjukkan."
+  },
+  "_Advanced__Force_Preview": {
+    "message": "[Advanced] Force Pratonton"
+  },
+  "For_websites_that___really___do_not_want_to_be_previewed__e_g__stackoverflow_com__this_forces_a_preview__Nerd_alert__this_is_a_frame_busting_buster_": {
+    "message": "Untuk laman web yang ** benar -benar ** tidak mahu dipratonton (mis. Stackoverflow.com) ini memaksa pratonton. Nerd Alert: Ini adalah buster bingkai."
+  },
+  "_Advanced__Disable_Incognito_Google": {
+    "message": "[Advanced] Lumpuhkan Incognito Google"
+  },
+  "By_default__the_version_of_Google_search_used_is_always_signed_out_for_privacy_and_security_reasons__Though_this_may_result_in_always_seeing_sign_in_prompts_": {
+    "message": "Secara lalai, versi carian Google yang digunakan sentiasa ditandatangani untuk alasan privasi dan keselamatan. Walaupun ini mungkin mengakibatkan selalu melihat log masuk."
+  },
+  "Disable_Previews_on_this_site": {
+    "message": "Lumpuhkan pratonton di laman web ini"
+  },
+  "The_detail_information_about_the_checkbox_here_": {
+    "message": "Maklumat terperinci mengenai kotak semak di sini."
+  },
+  "Disabled_on_Websites": {
     "message": "Dilumpuhkan di laman web"
   },
-  "optionBlockedSitesDesc": {
-    "message": "Pelanjutan tidak akan berjalan di laman web ini. Masukkan satu tapak setiap baris."
+  "Extension_will_not_run_on_these_sites__you_can_disable_a_site_by_adding_to_this_list_": {
+    "message": "Pelanjutan tidak akan berjalan di laman web ini, anda boleh melumpuhkan tapak dengan menambah senarai ini."
+  },
+  "Successfully_updated_settings": {
+    "message": "Tetapan yang berjaya dikemas kini"
+  },
+  "Search__amp__Link_Preview_Options": {
+    "message": "Cari & amp; Pilihan pratonton pautan"
+  },
+  "Show_Sample_Preview": {
+    "message": "Tunjukkan pratonton sampel"
+  },
+  "Report_an_Issue": {
+    "message": "Melaporkan isu"
   }
 }

@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
-    <title>Better previews options</title>
+    <title i18n>Search & Link Preview Options</title>
     <link rel="stylesheet" href="./options.css" />
   </head>
 
@@ -14,15 +14,15 @@
     <div class="container" style="margin-top: 100px">
       <div class="header">
         <img class="logo" alt="logo" src="../assets/logo-48x48.png" />
-        <h1>Better Previews</h1>
-        <p>
+        <h1 i18n="@appName">Better Previews</h1>
+        <p i18n="@appDesc">
           Perform search and preview links in sidebars instead of opening new
           tabs.
         </p>
       </div>
       <div class="options-container"></div>
       <p class="p-3 d-flex justify-content-evenly">
-        <button id="show-preview" class="btn btn-primary">
+        <button id="show-preview" class="btn btn-primary" i18n>
           Show Sample Preview
         </button>
         <a
@@ -30,7 +30,8 @@
           target="_blank"
           href="https://github.com/essentialkit/link-previews/issues/new/choose"
           class="btn btn-outline-primary"
-          >Report an issue</a
+          i18n
+          >Report an Issue</a
         >
       </p>
     </div>

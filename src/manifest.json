@@ -1,4 +1,10 @@
 {
+  "__file_overview": [
+    "This file serves as both a manifest for the chrome webstore and for the extension itself.",
+    "Extension specific properties are prefixed with __, and a remove from the final generated manifest.json.",
+    "Browser specific properties are prefixed with __browser__, and are only included for that browser's manifest.json.",
+    "This file is ideal for storing extension specific constants that should not be hardcoded for portability sake."
+  ],
   "name": "__MSG_@appName__",
   "description": "__MSG_@appDesc__",
   "short_name": "__MSG_@appShortName_",
@@ -82,5 +88,13 @@
     "gecko": {
       "id": "search-preview@essentialkit.org"
     }
+  },
+  "__additionalEntryPoints": [
+    "src/utils/settings/settings.ts",
+    "src/sidepanel/side-panel.ts",
+    "src/utils/winbox/winbox.js"
+  ],
+  "__additionalAssetsToCopy": {
+    "src/sidepanel/side-panel.html": "sidepanel/side-panel.html"
   }
 }

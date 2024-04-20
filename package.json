@@ -9,7 +9,7 @@
     "start": "node build-tools/esbuild.js --task=start",
     "start:firefox": "node build-tools/esbuild.js --task=start --browser=firefox",
     "format": "npx prettier . --write",
-    "prepare": "husky install"
+    "postinstall": "cd build-tools && npm install"
   },
   "type": "module",
   "private": true,
@@ -29,9 +29,6 @@
     "recording",
     "notes"
   ],
-  "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
-  },
   "dependencies": {
     "@braintree/sanitize-url": "^6.0.2",
     "@floating-ui/dom": "^1.1.0",
@@ -41,23 +38,10 @@
     "webextension-polyfill": "^0.10.0"
   },
   "devDependencies": {
-    "@mdn/browser-compat-data": "^5.5.22",
     "@types/chrome": "^0.0.204",
     "@types/jasmine": "^4.3.1",
     "@types/node": "^18.11.18",
     "@types/puppeteer": "^7.0.4",
-    "axios": "^1.6.8",
-    "esbuild": "0.16.4",
-    "glob": "^10.3.10",
-    "fs-extra": "^11.2.0",
-    "google-translate-api-x": "^10.5.2",
-    "husky": "^8.0.3",
-    "jasmine": "^4.5.0",
-    "jimp": "^0.16.2",
-    "jsdom": "^24.0.0",
-    "lint-staged": "^15.1.0",
-    "node-stream-zip": "^1.15.0",
-    "prettier": "3.0.3",
     "puppeteer": "^19.4.0"
   }
 }

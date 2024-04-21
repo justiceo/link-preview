@@ -2,3 +2,6 @@
 [submodule "build-tools"]
 	path = build-tools
 	url = git@github.com:justiceo/xtensions-tools.git
+[submodule "src/utils"]
+	path = src/utils
+	url = git@github.com:justiceo/extension-components.git

@@ -1,6 +1,6 @@
-import Analytics from "../utils/analytics";
-import { Logger } from "../utils/logger";
-import Storage from "../utils/storage";
+import Analytics from "./analytics";
+import { Logger } from "./logger";
+import Storage from "./storage";
 /*
  * Set up context menu (right-click menu) for different conexts.
  * See reference https://developer.chrome.com/docs/extensions/reference/contextMenus/#method-create.
@@ -130,7 +130,7 @@ export class ContextMenu {
     this.DISABLE_ON_SITE,
   ];
 
-  init = () => {
+  run = () => {
     // Maybe add dev-only actions.
     if (IS_DEV_BUILD) {
       this.browserActionContextMenu.push(
@@ -179,4 +179,3 @@ export class ContextMenu {
     });
   }
 }
-new ContextMenu().init();

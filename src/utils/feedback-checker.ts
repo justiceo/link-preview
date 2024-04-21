@@ -1,10 +1,10 @@
-import Storage from "../utils/storage";
+import Storage from "./storage";
 import {
   FEEDBACK_DATA_KEY,
   INSTALL_TIME_MS,
   SUCCESSFUL_INTERACTIONS,
-} from "../utils/storage";
-import { Logger } from "../utils/logger";
+} from "./storage";
+import { Logger } from "./logger";
 
 export type FeedbackData = {
   status: "honored" | "ignored" | "eligible" | "ineligible" | undefined;
@@ -16,9 +16,20 @@ export type FeedbackData = {
 // It marks this determination by setting feedback_status="is_eligible_for_feedback" in the Storage area.
 // Considerations: call #shouldRequestFeedback directly from feedback form: FeedbackForm maybe embedded in page context, which has no access to some Chrome APIs
 // Ideally, feedback should be shown after one of many successful interactions, to a long-term user, who is not in Incognito.
-class FeedbackChecker {
+export class FeedbackChecker {
   DAY_MS = 86_400_000;
   logger = new Logger(this);
+
+  async run() {
+    // Run the checker everytime the user navigates to new page.
+    // This strategy would work even for popup-based extensions (since chrome.action.Onclicked won't fire when there's a popup).
+    chrome.tabs.onActivated.addListener((activeInfo) => {
+      chrome.tabs.get(activeInfo.tabId, (tab) => this.runFeedbackCheck(tab));
+    });
+    chrome.tabs.onUpdated.addListener((tabId, changeInfo, _tab) => {
+      chrome.tabs.get(tabId, (tab) => this.runFeedbackCheck(tab));
+    });
+  }
 
   // Runs a check to determine if the trigger for showing feedback form should be set.
   async runFeedbackCheck(tabInfo?: chrome.tabs.Tab) {
@@ -64,7 +75,7 @@ class FeedbackChecker {
       isSignedIn: ${isSignedIn}, 
       isAgedInstallation: ${isAgedInstallation}, 
       hasSufficientSuccessfulInteractions: ${hasSufficientSuccessfulInteractions}, 
-      isEligibleForReissue: ${isEligibleForReissue}`,
+      isEligibleForReissue: ${isEligibleForReissue}`
     );
 
     return isEligible;
@@ -99,7 +110,7 @@ class FeedbackChecker {
           } else {
             resolve(false);
           }
-        },
+        }
       );
     });
   }
@@ -140,13 +151,3 @@ class FeedbackChecker {
     return Promise.resolve(true);
   }
 }
-
-// Run the checker everytime the user navigates to new page.
-// This strategy would work even for popup-based extensions (since chrome.action.Onclicked won't fire when there's a popup).
-const checker = new FeedbackChecker();
-chrome.tabs.onActivated.addListener((activeInfo) => {
-  chrome.tabs.get(activeInfo.tabId, (tab) => checker.runFeedbackCheck(tab));
-});
-chrome.tabs.onUpdated.addListener((tabId, changeInfo, _tab) => {
-  chrome.tabs.get(tabId, (tab) => checker.runFeedbackCheck(tab));
-});

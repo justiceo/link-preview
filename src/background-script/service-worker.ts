@@ -1,15 +1,15 @@
-import "./post-install";
-import "./context-menus";
-import "./icon-updater";
-import "./feedback-checker";
-import "./coffee";
+import { runPostInstall } from "../utils/post-install";
+import { ContextMenu } from "../utils/context-menus";
+import { initIconUpdater } from "../utils/icon-updater";
+import { FeedbackChecker } from "../utils/feedback-checker";
+import { Coffee } from "../utils/coffee";
 import { getOrCreateSessionId } from "../utils/session-id";
 
 // All service-worker messages should go through this function.
 const onMessage = (
   message: any,
   sender: chrome.runtime.MessageSender,
-  callback: (response?: any) => void,
+  callback: (response?: any) => void
 ) => {
   // Check if the message is from this extension.
   if (!sender.id || sender.id !== chrome.i18n.getMessage("@@extension_id")) {
@@ -46,3 +46,9 @@ const onMessage = (
 };
 
 chrome.runtime.onMessage.addListener(onMessage);
+
+runPostInstall();
+new Coffee().run();
+new FeedbackChecker().run();
+new ContextMenu().run();
+initIconUpdater();

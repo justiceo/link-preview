@@ -1,5 +1,5 @@
 import analytics from "../utils/analytics";
-import ExtPay from "../background-script/ExtPay";
+import ExtPay from "../utils/ExtPay";
 import { extensionId } from "../utils/i18n";
 
 const extpay = ExtPay(extensionId);

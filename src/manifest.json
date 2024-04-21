@@ -15,6 +15,8 @@
   "__sentry_dsn__": "https://bf0a1e40a1784502aad701a201efdf08@o526305.ingest.sentry.io/4504743520436224",
   "__measurement_id__": "G-XN737SN9S2",
   "__ga_api_secret__": "zigXBV_3TjyIjkXuSPjo8w",
+  "__uninstall_url": "https://forms.gle/PdZ9U61QawXSa4qH8",
+  "__welcome_page": "welcome/welcome.html",
   "manifest_version": 3,
   "default_locale": "en",
   "author": "Justice Ogbonna",
@@ -86,9 +88,11 @@
   "__firefox__key": "",
   "__firefox__browser_specific_settings": {
     "gecko": {
-      "id": "search-preview@essentialkit.org"
+      "id": "search-preview@essentialkit.org",
+      "strict_min_version": "50"
     }
   },
+  "__chrome__minimum_chrome_version": "98",
   "__additionalEntryPoints": [
     "src/utils/settings/settings.ts",
     "src/sidepanel/side-panel.ts",

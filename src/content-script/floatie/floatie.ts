@@ -317,13 +317,28 @@ export class Floatie {
       return !isNaN(Date.parse(dataStr));
     };
 
-    const hasLetters = (text: string) => {
-      return /[a-zA-Z]/.test(text);
+    const isNotSymbols = function (str: string) {
+      let notSymbols: boolean = false;
+      for (let i = 0; i < str.length; i++) {
+        let code = str.charCodeAt(i);
+        if (
+          (code >= 0 && code <= 47) ||
+          (code >= 58 && code <= 64) ||
+          (code >= 91 && code <= 96) ||
+          (code >= 123 && code <= 255)
+        ) {
+          continue;
+        } else {
+          notSymbols = true;
+          break;
+        }
+      }
+      return notSymbols;
     };
 
     return (
       isQuerySize(selectedText) &&
-      hasLetters(selectedText) &&
+      isNotSymbols(selectedText) &&
       !isEmail(selectedText) &&
       !isDate(selectedText) &&
       !this.shouldShowPreview(e, selectedText)
